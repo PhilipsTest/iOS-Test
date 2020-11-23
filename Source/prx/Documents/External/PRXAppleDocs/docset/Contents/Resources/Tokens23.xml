@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXSupportRequest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXSupportRequest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXSupportRequest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="23"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSupportRequest/initWithSector:ctnNumber:catalog:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXSupportRequest.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithSector:(Sector)sec ctnNumber:(NSString *)ctnNumber catalog:(Catalog)cat</Declaration>
+			
+			
+			<Anchor>//api/name/initWithSector:ctnNumber:catalog:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXSupportRequest/getResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXSupportRequest.m</DeclaredIn>
+			
+			<Declaration>- (PRXResponseData *)getResponse:(id)data</Declaration>
+			
+			
+			<Anchor>//api/name/getResponse:</Anchor>
+            <NodeRef refid="23"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

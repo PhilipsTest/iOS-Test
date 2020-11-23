@@ -1,0 +1,27 @@
+/* 
+  DCBazaarVoiceResponseWithServerError.json
+  DigitalCareLibrary
+
+  Created by sameer sulaiman on 9/27/15.
+  Copyright (c) 2015 Philips. All rights reserved.
+*/
+
+{
+    AuthorSubmissionToken = "<null>";
+    Data =     {
+    };
+    Errors =     (
+                  {
+                  Code = "ERROR_UNKNOWN";
+                  Message = "500 - The server encountered an internal error. Please retry the request.";
+                  }
+                  );
+    Form =     (
+    );
+    FormErrors =     {
+    };
+    HasErrors = 1;
+    Locale = "<null>";
+    SubmissionId = "<null>";
+    TypicalHoursToPost = "<null>";
+}

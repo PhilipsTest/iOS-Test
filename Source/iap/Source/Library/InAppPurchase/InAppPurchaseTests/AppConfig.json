@@ -1,0 +1,68 @@
+{
+    "UserRegistration": {
+        "JanRainConfiguration.RegistrationClientID.Development": "8kaxdrpvkwyr7pnp987amu4aqb4wmnte",
+        "JanRainConfiguration.RegistrationClientID.Testing": "g52bfma28yjbd24hyjcswudwedcmqy7c",
+        "JanRainConfiguration.RegistrationClientID.Evaluation": "durhrkq6ezqcvmqf6mq77ev48fuubdbj",
+        "JanRainConfiguration.RegistrationClientID.Staging": "durhrkq6ezqcvmqf6mq77ev48fuubdbj",
+        "JanRainConfiguration.RegistrationClientID.Production": "tygvkmbxkaact4rjtnh7ugkyqq9tf8z6",
+        "JanRainConfiguration.EngageAppID.Staging": {"CN":"uyfpympodtnesxejzuic","default":"kjfbdljaacbfkpddabjc"},
+        "JanRainConfiguration.EngageAppID.Production": {"CN":"cfwaqwuwcwzlcozyyjpa","default":"fggegljadcmlcnlkgleh"},
+        "PILConfiguration.CampaignID": "CL20150501_PC_TB_COPPA",
+        "Flow.EmailVerificationRequired" : true,
+        "Flow.TermsAndConditionsAcceptanceRequired" : true,
+        "Flow.MinimumAgeLimit" : { "NL":12 ,"GB":14,"default": 16},
+        "SigninProviders.default": ["myphilips","facebook","googleplus"],
+        "SigninProviders.CN": ["myphilips","sinaweibo"]
+    },
+    "appinfra": {
+        "appidentity.micrositeId": "77000",
+        "appidentity.sector": "b2c",
+        "appidentity.appState": "Staging",
+        "appidentity.serviceDiscoveryEnvironment": "Production",
+        "languagepack.serviceId" : "app.languagepack",
+        "tagging.sensitiveData":["bundleId, language"],
+        "abtest.precache":["philipsmobileappabtest1content","philipsmobileappabtest1success","ReceiveMarketingOptIn"],
+        "servicediscovery.platformMicrositeId": "70000",
+        "servicediscovery.platformEnvironment":"Production",
+        "timesync.ntp.hosts":["0.pool.ntp.org","1.pool.ntp.org","2.pool.ntp.org","3.pool.ntp.org","0.cn.pool.ntp.org"],
+        "logging.releaseConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Debug",
+            "fileLogEnabled":true,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": [
+                             "DemoApp",
+                             "usr",
+                             "PhilipsConsumerCare",
+                             "PhilipsProductRegistration",
+                             "CommShineLibAdapter",
+                             "DataServices"
+                             ]
+        },
+        "logging.debugConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Info",
+            "fileLogEnabled":true,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": [
+                             "DemoApp",
+                             "usr",
+                             "PhilipsConsumerCare",
+                             "PhilipsProductRegistration",
+                             "CommShineLibAdapter",
+                             "DataServices"
+                             ]
+        }
+    },
+    "IAP": {
+        "hostport" : "https://www.occ.shop.philips.com",
+        "propositionId": "Tuscany2016",
+        "voucherCode.enable": true
+    }
+}

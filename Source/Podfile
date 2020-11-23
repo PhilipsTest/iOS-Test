@@ -1,0 +1,471 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'ssh://tfsemea1.ta.philips.com:22/tfs/TPC_Region02/Innersource/_git/csw-ios-podspecs'
+source 'ssh://tfsemea1.ta.philips.com:22/tfs/TPC_Region14/UID/_git/mobile-dls-cocoapod-specs'
+source 'ssh://tfsemea1.ta.philips.com:22/tfs/TPC_Region02/Innersource/_git/mobile-ios-podspecs-develop'
+
+use_frameworks!
+require_relative '../ci-build-support/Versions'
+platform :ios, '11.0'
+workspace 'PLF-IOS-WORKSPACE'
+
+$status = ENV['BUILD_FROM_ARTIFACTORY']
+puts $status
+
+$podSource = {:path => '../'}
+
+if $status != 'true'
+    puts "Get locally"
+    puts $podSource
+else
+    puts "Get from artifactory"
+    $podSource = DependencyCDP2Platform
+end
+
+def shared_pods
+    pod 'AdobeMobileSDK', '4.19.3'
+    pod 'CocoaLumberjack', '3.6.1'
+    pod 'AFNetworking', '4.0.1'
+    pod 'TrueTime', '5.0.3'
+    pod 'PlatformInterfaces', $podSource
+end
+
+def usr_pods
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'libPhoneNumber-iOS', '0.9.15'
+end
+
+def pim_pods
+    pod 'AppAuth', '1.4.0'
+    pod 'SFHFKeychainUtils', '1.0.0'
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+end
+
+def dcc_Pods
+    pod 'PhilipsProductSelection', $podSource
+    pod 'UAPPFramework', $podSource
+end
+
+def prg_pods
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'PhilipsPRXClient', $podSource
+end
+
+target 'PlatformInterfacesDev' do
+     project 'pif/PlatformInterfaces/PlatformInterfacesDev.xcodeproj'
+     target 'PlatformInterfacesTests' do
+     end
+ end
+
+target 'AppInfraDev' do
+    project 'ail/Source/Library/AppInfraDev.xcodeproj'
+    shared_pods
+end
+
+target 'AppInfraTests' do
+    project 'ail/Source/Library/AppInfraDev.xcodeproj'
+    shared_pods
+    pod 'OCMock', '3.4.3'
+end
+
+target 'AppInfraDemoApp' do
+    project 'ail/Source/DemoApp/AppInfraDemoApp.xcodeproj'
+
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'AppInfra', $podSource
+    pod 'AppInfraMicroApp', $podSource
+    pod 'AppInfraDevTools', '~> 1.0.0-SNAPSHOT'
+end
+
+target 'AppInfraMicroAppDev' do
+    project 'ail/Source/DemoUApp/AppInfraMicroAppDev.xcodeproj'
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'AppInfra', $podSource
+end
+
+target 'PRXClientTests' do
+    project 'prx/Source/Library/PRXClient/PhilipsPRXClientDev.xcodeproj'
+    pod 'AppInfra', $podSource
+end
+
+target 'PhilipsPRXClientDev' do
+    project 'prx/Source/Library/PRXClient/PhilipsPRXClientDev.xcodeproj'
+    pod 'AppInfra', $podSource
+end
+
+target 'DemoPRXClient' do
+    project 'prx/Source/DemoApp/DemoPRXClient.xcodeproj'
+    pod 'PhilipsPRXClient', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+end
+
+target 'UAPPFrameworkDev' do
+    project 'ufw/Source/Library/UAPPFrameworkDev.xcodeproj'
+    pod 'AppInfra', $podSource
+end
+
+target 'UAPPFrameworkTests' do
+    project 'ufw/Source/Library/UAPPFrameworkDev.xcodeproj'
+    pod 'AppInfra', $podSource
+end
+
+target 'PhilipsEcommerceSDKDev' do
+    project 'ecs/Source/Library/PhilipsEcommerceSDK/PhilipsEcommerceSDKDev.xcodeproj'
+    pod 'AppInfra', $podSource
+    pod 'PhilipsPRXClient', $podSource
+end
+
+target 'PhilipsEcommerceSDKTests' do
+    project 'ecs/Source/Library/PhilipsEcommerceSDK/PhilipsEcommerceSDKDev.xcodeproj'
+end
+
+target 'ECSTestUAppDev' do
+    project 'ecs/Source/TestApp/ECSTestUAPP/ECSTestUAPPDev.xcodeproj'
+    pod 'PhilipsEcommerceSDK', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'PhilipsRegistration', $podSource
+    pod 'UAPPFramework', $podSource
+end
+
+ target 'PhilipsEcommerceSDKDemoApp' do
+     project 'ecs/Source/DemoApp/PhilipsEcommerceSDKDemoApp/PhilipsEcommerceSDKDemoApp.xcodeproj'
+     pod 'ECSTestUApp', $podSource
+     pod 'libPhoneNumber-iOS', '0.9.15'
+ end
+
+target 'MobileEcommerceDev' do 
+  project 'mec/Source/Library/MobileEcommerce/MobileEcommerceDev.xcodeproj'
+    pod 'PhilipsEcommerceSDK', $podSource
+    pod 'PhilipsRegistration', $podSource
+    pod 'BVSDK/BVConversations', '8.2.2'
+    pod 'libPhoneNumber-iOS', '0.9.15'
+end
+
+target 'MobileEcommerceTests' do 
+	project 'mec/Source/Library/MobileEcommerce/MobileEcommerceDev.xcodeproj'
+  	pod 'PhilipsEcommerceSDK', $podSource
+  	pod 'BVSDK/BVConversations', '8.2.2'
+end
+
+target 'MobileEcommerceDemoUAppDev' do 
+	pod 'MobileEcommerce', $podSource
+	project 'mec/Source/DemoUApp/MobileEcommerceDemoUApp/MobileEcommerceDemoUAppDev.xcodeproj'
+end
+
+target 'MobileEcommerceDemoApp' do 
+	pod 'MobileEcommerceDemoUApp', $podSource
+	project 'mec/Source/DemoApp/MobileEcommerceDemoApp/MobileEcommerceDemoApp.xcodeproj'
+end
+
+target 'InAppPurchaseDev' do
+    project 'iap/Source/Library/InAppPurchase/InAppPurchaseDev.xcodeproj'
+
+    pod 'PhilipsPRXClient', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'UAPPFramework', $podSource
+    pod 'libPhoneNumber-iOS', '0.9.15'
+
+end
+
+target 'InAppPurchaseDemoApp' do
+    project 'iap/Source/DemoApp/InAppPurchaseDemoApp/InAppPurchaseDemoApp.xcodeproj'
+    pod 'InAppPurchaseDemoUApp', $podSource
+end
+
+target 'InAppPurchaseTests' do
+    project 'iap/Source/Library/InAppPurchase/InAppPurchaseDev.xcodeproj'
+
+     pod 'PhilipsRegistration', $podSource
+     pod 'PhilipsPRXClient', $podSource
+end
+
+ target 'InAppPurchaseDemoUAppDev' do
+     project 'iap/Source/DemoUApp/InAppPurchaseDemoUApp/InAppPurchaseDemoUAppDev.xcodeproj'
+
+     pod 'InAppPurchase', $podSource
+end
+
+target 'PhilipsRegistrationDev' do
+  use_frameworks!
+    project 'usr/Source/Library/PhilipsRegistrationDev.xcodeproj'
+    usr_pods
+end
+
+target 'RegistrationTests' do
+    project 'usr/Source/Library/PhilipsRegistrationDev.xcodeproj'
+    usr_pods
+    pod 'EarlGrey', '1.16.0'
+    pod 'Kiwi', '3.0.0'
+end
+
+target 'RegistrationiOS' do
+    project 'usr/Source/Library/PhilipsRegistrationDev.xcodeproj'
+    pod 'FLEX', '4.1.1'
+    pod 'FBSDKLoginKit', '7.1.1'
+    pod 'FBSDKCoreKit', '7.1.1'
+    usr_pods
+end
+
+target 'ChatBot' do
+    project 'ccb/Source/Library/ConversationalChatbot/ConversationalChatbotDev.xcodeproj'
+    pod 'ConversationalChatbot', $podSource
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'Starscream', '4.0.4'
+    pod "youtube-ios-player-helper", "1.0.2"
+    pod "markymark", "9.2.1"
+end
+
+target 'USRDemoApp' do
+    project 'usr/Source/DemoApp/USRDemoApp.xcodeproj'
+    pod 'PhilipsRegistrationMicroApp', $podSource
+    pod 'PhilipsRegistration', $podSource
+end
+
+target 'PIMDev' do
+    project 'pim/Source/Library/PIMDev.xcodeproj'
+    pim_pods
+end
+
+target 'PIMTests' do
+    project 'pim/Source/Library/PIMDev.xcodeproj'
+    pim_pods
+end
+
+target 'PIMDemoUAppDev' do
+    project 'pim/Source/DemoUApp/PIMDemoUAppDev.xcodeproj'
+    pod 'PIM', $podSource
+    pod 'ECSTestUApp', $podSource
+    pod 'InAppPurchase', $podSource
+    pod 'MobileEcommerceDemoUApp', $podSource
+    pod 'PhilipsProductRegistrationUApp', $podSource
+    pod 'PhilipsRegistration', $podSource
+end
+
+target 'PIMDemoApp' do
+    project 'pim/Source/DemoApp/PIMDemoApp.xcodeproj'
+    pod 'PIMDemoUApp', $podSource
+    pod 'PIM', $podSource
+    pod 'FBSDKLoginKit', '7.1.1'
+    pod 'FBSDKCoreKit', '7.1.1'
+    pod 'FLEX', '4.1.1'
+end
+
+target 'ConversationalChatbotDev' do
+    project 'ccb/Source/Library/ConversationalChatbot/ConversationalChatbotDev.xcodeproj'
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'Starscream', '4.0.4'
+    pod "youtube-ios-player-helper", "1.0.2"
+    pod "markymark", "9.2.1"
+end
+
+target 'ConversationalChatbotTests' do
+  project 'ccb/Source/Library/ConversationalChatbot/ConversationalChatbotDev.xcodeproj'
+  pod 'UAPPFramework', $podSource
+  pod 'Starscream', '4.0.4'
+end
+
+target 'ConversationalChatbotDemoUAppDev' do
+    project 'ccb/Source/DemoUApp/ConversationalChatbotDemoUApp/ConversationalChatbotDemoUAppDev.xcodeproj'
+    pod 'ConversationalChatbot', $podSource
+end
+
+target 'ConversationalChatbotDemoApp' do
+    project 'ccb/Source/DemoApp/ConversationalChatbotDemoApp/ConversationalChatbotDemoApp.xcodeproj'
+    pod 'ConversationalChatbot', $podSource
+    pod 'ConversationalChatbotDemoUApp', $podSource
+end
+
+target 'PhilipsProductRegistrationDev' do
+    project 'prg/Source/Library/PhilipsProductRegistration/PhilipsProductRegistrationDev.xcodeproj'
+    prg_pods
+end
+
+target 'PhilipsProductRegistrationTests' do
+    project 'prg/Source/Library/PhilipsProductRegistration/PhilipsProductRegistrationDev.xcodeproj'
+    pod 'PhilipsRegistration', $podSource
+    prg_pods
+end
+
+target 'PhilipsProductRegistrationUAppDev' do
+    project 'prg/Source/DemoUApp/PhilipsProductRegistrationUAppDev.xcodeproj'
+    pod 'PhilipsProductRegistration', $podSource
+end
+
+target 'PRGDemoApp' do
+    project 'prg/Source/DemoApp/PRGDemoApp.xcodeproj'
+    pod 'PhilipsProductRegistration', $podSource
+    pod 'PhilipsProductRegistrationUApp', $podSource
+    pod 'PhilipsRegistration', $podSource
+
+    target 'PRGDemoAppTests' do
+        pod 'EarlGrey', '1.16.0'
+    end
+end
+
+target 'PhilipsProductSelectionDev' do
+    project 'pse/Source/PhilipsProductSelection/PhilipsProductSelectionDev.xcodeproj'
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+    pod 'AppInfra', $podSource
+    pod 'PhilipsPRXClient', $podSource
+
+    target 'PhilipsProductSelectionDemoApp' do
+    end
+
+    target 'ProductSelectionTests' do
+    end
+end
+
+target 'MyAccountDev' do
+    project 'mya/Source/Library/MyAccount/MyAccountDev.xcodeproj'
+
+    pod 'UAPPFramework', $podSource
+    pod 'AppInfra', $podSource
+    pod 'PhilipsUIKitDLS', PhilipsUIKitDLSVersion
+
+    target 'MyAccountTests' do
+        inherit! :search_paths
+    end
+end
+
+target 'PhilipsConsumerCareDev' do
+    project 'dcc/Source/Library/PhilipsConsumerCareDev.xcodeproj'
+    dcc_Pods
+end
+
+target 'DigitalCareLibraryTests' do
+    project 'dcc/Source/Library/PhilipsConsumerCareDev.xcodeproj'
+        dcc_Pods
+end
+
+target 'PhilipsConsumerCareDemo' do
+
+    project 'dcc/Source/Library/PhilipsConsumerCareDev.xcodeproj'
+        dcc_Pods
+end
+
+
+target 'ConsumerCareMicroAppDev' do
+    project 'dcc/Source/DemoUApp/ConsumerCareMicroAppDev.xcodeproj'
+    pod 'UAPPFramework', $podSource
+    pod 'PhilipsConsumerCare', $podSource
+end
+
+target 'ConsumerCareDemoApp' do
+    project 'dcc/Source/DemoApp/ConsumerCareDemoApp.xcodeproj'
+    pod 'ConsumerCareMicroApp', $podSource
+    pod 'PhilipsConsumerCare', $podSource
+end
+
+def rap_pods
+    pod 'PhilipsProductRegistration', $podSource
+    pod 'PhilipsConsumerCare', $podSource
+    pod 'InAppPurchase', $podSource
+    pod 'PhilipsEcommerceSDK', $podSource
+    pod 'MobileEcommerce', $podSource
+    pod 'MyAccount', $podSource
+    pod 'AppInfraMicroApp', $podSource
+    pod 'FBSDKLoginKit', '7.1.1'
+    pod 'FBSDKCoreKit', '7.1.1'
+    pod 'Firebase/Core', '6.25.0'
+    pod 'Firebase/RemoteConfig', '6.25.0'
+end
+
+def rap_demoFrameworksPods
+    pod 'ConsumerCareMicroApp', $podSource
+    pod 'PhilipsRegistrationMicroApp', $podSource
+    pod 'PhilipsProductRegistrationUApp', $podSource
+    pod 'InAppPurchaseDemoUApp', $podSource
+    pod 'MYADemoUApp', $podSource
+    pod 'MobileEcommerceDemoUApp', $podSource
+    pod 'ECSTestUApp', $podSource
+    pod 'ConversationalChatbotDemoUApp', $podSource
+end
+
+target 'AppFramework' do
+    project 'rap/Source/App/AppFramework/AppFramework.xcodeproj'
+
+    rap_pods
+    rap_demoFrameworksPods
+end
+
+target 'PSRARelease' do
+    project 'rap/Source/App/AppFramework/AppFramework.xcodeproj'
+
+    rap_pods
+    rap_demoFrameworksPods
+end
+
+target 'AppFrameworkTests' do
+    project 'rap/Source/App/AppFramework/AppFramework.xcodeproj'
+
+    rap_pods
+    rap_demoFrameworksPods
+end
+
+target 'AppFrameworkUITests' do
+    project 'rap/Source/App/AppFramework/AppFramework.xcodeproj'
+
+    rap_pods
+    rap_demoFrameworksPods
+end
+
+post_install do |installer|
+    installer.pods_project.build_configurations.each do |config|
+      config.build_settings['CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER'] = 'NO'
+    end
+    
+    installer.pods_project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings['EXPANDED_CODE_SIGN_IDENTITY'] = ""
+            config.build_settings['CODE_SIGNING_REQUIRED'] = "NO"
+            config.build_settings['CODE_SIGNING_ALLOWED'] = "NO"
+            config.build_settings['ENABLE_BITCODE'] = "NO"
+            config.build_settings['SWIFT_VERSION'] = "5.1"
+            config.build_settings['IPHONEOS_DEPLOYMENT_TARGET'] = "11.0"
+            config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = "NO"
+        end
+
+        if target.name != "FBSDKCoreKit" && target.name != "FBSDKLoginKit"
+            target.build_configurations.each do |config|
+                if config.name == 'Release'
+                    config.build_settings['OTHER_CFLAGS'] = ['-DNDEBUG', '${inherited}']
+                end
+            end
+        end
+        
+        if target.name == "AppInfra"
+            puts "Adding AppInfra private module path to #{target.name}"
+            target.build_configurations.each do |config|
+                if $status != 'true'
+                    if config.name == 'Debug'
+                        config.build_settings['EMBEDDED_CONTENT_CONTAINS_SWIFT'] = ['YES']
+                    end
+                end
+            end
+        end
+
+        if target.name == 'OCMock'
+            target.build_configurations.each do |config|
+                config.build_settings['GCC_OPTIMIZATION_LEVEL'] = 0
+            end
+        end
+
+        if target.name == 'DIComm'
+            target.build_configurations.each do |config|
+                config.build_settings['ENABLE_TESTABILITY'] = 'YES'
+            end
+        end
+        
+        if target.name == "PhilipsUIKitDLS" || target.name == "PhilipsIconFontDLS"
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = "5.0"
+            end
+        end
+        
+    end
+end

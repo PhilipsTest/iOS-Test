@@ -1,0 +1,54 @@
+{
+    "UserRegistration": {
+        "JanRainConfiguration.RegistrationClientID.Development": {"CN":"qhq9jvkx35q8duef2fh6wwzceujjs9gs","default":"8kaxdrpvkwyr7pnp987amu4aqb4wmnte"},
+        "JanRainConfiguration.RegistrationClientID.Testing": {"CN":"g8r8rbk4n5688xpsxqewmnwuqjb5ugag","default":"g52bfma28yjbd24hyjcswudwedcmqy7c"},
+        "JanRainConfiguration.RegistrationClientID.Evaluation": {"CN":"4rdpm7afu7bny6xnacw32etmt7htfraa","default":"durhrkq6ezqcvmqf6mq77ev48fuubdbj"},
+        "JanRainConfiguration.RegistrationClientID.Staging": {"CN":"4rdpm7afu7bny6xnacw32etmt7htfraa","default":"durhrkq6ezqcvmqf6mq77ev48fuubdbj"},
+        "JanRainConfiguration.RegistrationClientID.Production": {"CN":"brhyp23jh8jrutmghjtht68yv4mvqvhu","default":"tygvkmbxkaact4rjtnh7ugkyqq9tf8z6"},
+        "JanRainConfiguration.EngageAppID.Staging": {"CN":"uyfpympodtnesxejzuic","default":"kjfbdljaacbfkpddabjc"},
+        "JanRainConfiguration.EngageAppID.Production": {"CN":"cfwaqwuwcwzlcozyyjpa","default":"fggegljadcmlcnlkgleh"},
+        "PILConfiguration.CampaignID": "CL20150501_PC_TB_COPPA",
+        "Flow.TermsAndConditionsAcceptanceRequired" : true,
+        "Flow.MinimumAgeLimit" : { "NL":12 ,"GB":14,"default": 16},
+        "SigninProviders": {"CN":["wechat"],"default":["facebook","googleplus"]},
+        "WeChatAppId":"wxbdf2ab8822f6022f",
+        "WeChatAppSecret":"df749e21c43c65a042df6f3f4ebe18f1",
+        "GooglePlusClientId":"346000571262-r3n50oucoenomggrfjvhdpfvm95kdl5q.apps.googleusercontent.com",
+        "GooglePlusRedirectUri":"com.googleusercontent.apps.346000571262-r3n50oucoenomggrfjvhdpfvm95kdl5q:/oauthredirect",
+        "supportedHomeCountries":["RW","BG","CZ","DK","AT","CH","DE","GR","AU","CA","GB","HK","ID","IE","IN","MY","NZ","PH","PK","SA","SG","US","ZA","AR","CL","CO","ES","MX","PE","EE","FI","BE","FR","HR","HU","IT","JP","KR","LT","LV","NL","NO","PL","BR","PT","RO","RU","UA","SI","SK","SE","TH","TR","VN","CN","TW","LU","MO","AE","BH","EG","KW","LB","OM","QA","BY"],
+        "fallbackHomeCountry":"US"
+    },
+    "ProductRegistration": {
+        "ApiKey":"Euqjw7YWRa5pc7c6jKliv1odg5vLUT2m465k7FJ8"
+    },
+    "appinfra": {
+        "appidentity.micrositeId" : "77000",
+        "appidentity.sector"  : "b2c",
+        "appidentity.appState"  : "Staging",
+        "appidentity.serviceDiscoveryEnvironment"  : "Production",
+        "abtest.precache":["ReceiveMarketingOptIn"],
+        "servicediscovery.platformMicrositeId": "70000",
+        "servicediscovery.platformEnvironment": "Production",
+        "servicediscovery.countryMapping" : {"LU":"BE","MO":"HK","BY":"RU"},
+        "logging.releaseConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Warn",
+            "fileLogEnabled":true,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": ["usr"]
+        },
+        "logging.debugConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Debug",
+            "fileLogEnabled":true,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": ["usr"]
+        }
+    }
+}

@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "app infra object を提供してください";
+"ECSBaseURLNotFound" = "ベース URL が見つかりません";
+"ECSCartEntryError" = "この製品はカードに追加されていません";
+"ECSCartError" = "カートはまだ作成されていません";
+"ECSCommerceCartModificationError" = "数量は 0 以上で指定してください";
+"ECSCtnNotProvided" = "CTN を提供してください";
+"ECSHybrisNotAvailable" = "選択された国ではフィリップスショップはご利用いただけません。リテーラーモードのみご利用いただけます。";
+"ECSIllegalArgumentError" = "有効な入力データを提供してください";
+"ECSInsufficientStockError" = "製品は在庫切れのため発送できません";
+"ECSInvalidPaymentInfoError" = "有効は支払い詳細を提供してください";
+"ECSInvalidTokenError" = "技術的な問題が発生しました（無効なアクセストークン）。Hybris Re-Auth を実行してください";
+"ECSLocaleNotFound" = "ロケールを設定してください";
+"ECSNoSuchElementError" = "サーバーからのデータ取得中にエラーが発生しました";
+"ECSOAuthDetailError" = "OAuth の完全な詳細を提供してください";
+"ECSOAuthNotCalled" = "この操作にはユーザー認証が必要です";
+"ECSPIL_BAD_REQUEST" = "技術的な問題が発生しました。しばらくしてから再試行してください";
+"ECSPIL_BAD_REQUEST_cartId" = "カートはまだ作成されていません";
+"ECSPIL_INTEGRATION_TIMEOUT" = "技術的な問題が発生しました。しばらくしてから再試行してください";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "技術的な問題が発生しました（無効なアクセストークン）。Hybris Re-Auth を実行してください";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "メールアドレスが無効です。確認してください。";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "この製品はカードに追加されていません";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "ロケールを設定してください";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "有効な CTN を入力してください";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "有効な数量を入力してください";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "選択された国ではフィリップスショップはご利用いただけません。リテーラーモードのみご利用いただけます。";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "数量は 1 以上で指定してください";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "ロケールを設定してください";
+"ECSPIL_MISSING_PARAMETER_language" = "ロケールを設定してください";
+"ECSPIL_MISSING_PARAMETER_productId" = "CTN を提供してください";
+"ECSPIL_MISSING_PARAMETER_siteId" = "選択された国ではフィリップスショップはご利用いただけません。リテーラーモードのみご利用いただけます。";
+"ECSPIL_NEGATIVE_QUANTITY" = "数量は 0 以上で指定してください";
+"ECSPIL_NOT_ACCEPTABLE" = "技術的な問題が発生しました。しばらくしてから再試行してください";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "技術的な問題が発生しました。しばらくしてから再試行してください";
+"ECSPIL_NOT_FOUND_cartId" = "有効なカート ID を入力してください";
+"ECSPIL_NOT_FOUND_productId" = "有効な CTN を入力してください";
+"ECSPIL_STOCK_EXCEPTION" = "製品は在庫切れのため発送できません";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "技術的な問題が発生しました。しばらくしてから再試行してください";
+"ECSPaymentAuthorizationError" = "支払い認証に失敗しました";
+"ECSPropositionIdNotFound" = "有効な Proposition  ID を設定してください";
+"ECSSiteIdNotFound" = "選択された国ではフィリップスショップはご利用いただけません。リテーラーモードのみご利用いただけます。";
+"ECSUnknownIdentifierError" = "要求されたリソースは利用できません";
+"ECSUnsupportedDeliveryModeError" = "選択された配送モードはサポートされていません";
+"ECSUnsupportedVoucherError" = "申し訳ございません。このバウチャーは引き換えできません";
+"ECSValidationError" = "データ検証に失敗しました";
+"ECSVoucherOperationError" = "申し訳ございません。このバウチャーは引き換えできません";
+"ECSaddressId" = "提供された住所は存在しないか、別のユーザーが指定済みです";
+"ECScountryCodeNotGiven" = "有効な国コードを提供してください";
+"ECScountryisocode" = "選択された国は無効です";
+"ECSfirstName" = "次の記号は使用できませんのでご注意ください：\\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "技術的な問題が発生しました（不正なクライアント認証情報）。ログインし直してください";
+"ECSinvalid_grant" = "技術的な問題が発生しました（無効な Janrain トークン）。ログインし直してください";
+"ECSlastName" = "次の記号は使用できませんのでご注意ください：\\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "有効な注文を提供してください";
+"ECSphone1" = "選択された電話番号は無効です";
+"ECSphone2" = "選択された電話番号は無効です";
+"ECSpostUrl" = "注文ステータスは支払い済み／完了です";
+"ECSpostalCode" = "選択された郵便番号は無効です";
+"ECSregionisocode" = "選択された地域は無効です";
+"ECSsessionCart" = "ご注文を送信する前に、配送先住所、配送モード、支払い方法を選択してください";
+"ECSsomethingWentWrong" = "技術的な問題が発生しました。しばらくしてから再試行してください";
+"ECSunsupported_grant_type" = "技術的な問題が発生しました（サポートされていない付与タイプ）。ログインし直してください";

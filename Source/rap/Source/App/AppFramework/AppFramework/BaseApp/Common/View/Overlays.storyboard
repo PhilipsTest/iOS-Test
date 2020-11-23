@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Overlay View Controller-->
+        <scene sceneID="6Ch-0B-aYI">
+            <objects>
+                <viewController storyboardIdentifier="ShopOverlay" id="Awv-1Y-RZY" customClass="OverlayViewController" customModule="AppFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7Rp-1e-XWb"/>
+                        <viewControllerLayoutGuide type="bottom" id="9dh-hr-afI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ShopOverlayView" id="VN3-q5-rJl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CartIcon" translatesAutoresizingMaskIntoConstraints="NO" id="QuE-2g-WRV" userLabel="Image">
+                                <rect key="frame" x="32" y="160" width="256" height="40"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You can make Philips purchases or via 3rd party retailers here." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cur-8g-tE3" userLabel="Description" customClass="ParagraphUIDLabel" customModule="AppFramework" customModuleProvider="target">
+                                <rect key="frame" x="42" y="216" width="236" height="58"/>
+                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paragraphLocalizedTextparagraphLocalizedText" value="RA_DLS_Help_Philips_Shop"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEo-uX-o1V" userLabel="DismissButton" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="486" width="288" height="34"/>
+                                <state key="normal" title="Got it"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="RA_DLS_overlay_got_it"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissOverlay" destination="Awv-1Y-RZY" eventType="touchUpInside" id="hpb-eW-ota"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="XEo-uX-o1V" firstAttribute="leading" secondItem="VN3-q5-rJl" secondAttribute="leading" constant="16" id="3Rp-zc-Yd4"/>
+                            <constraint firstItem="Cur-8g-tE3" firstAttribute="leading" secondItem="VN3-q5-rJl" secondAttribute="leading" constant="42" id="ViE-pY-72K"/>
+                            <constraint firstAttribute="trailing" secondItem="QuE-2g-WRV" secondAttribute="trailing" constant="32" id="d9C-Kg-ver"/>
+                            <constraint firstAttribute="trailing" secondItem="Cur-8g-tE3" secondAttribute="trailing" constant="42" id="eG2-3p-Tya"/>
+                            <constraint firstAttribute="bottom" secondItem="XEo-uX-o1V" secondAttribute="bottom" constant="48" id="nvc-Hd-fpF"/>
+                            <constraint firstItem="QuE-2g-WRV" firstAttribute="leading" secondItem="VN3-q5-rJl" secondAttribute="leading" constant="32" id="qT4-M0-i2Q"/>
+                            <constraint firstItem="QuE-2g-WRV" firstAttribute="top" secondItem="VN3-q5-rJl" secondAttribute="topMargin" constant="160" id="vE6-ht-h6N"/>
+                            <constraint firstItem="Cur-8g-tE3" firstAttribute="top" secondItem="QuE-2g-WRV" secondAttribute="bottom" constant="16" id="yPq-t6-GDs"/>
+                            <constraint firstAttribute="trailing" secondItem="XEo-uX-o1V" secondAttribute="trailing" constant="16" id="yQF-JT-Ngw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionBaseLabel" destination="Cur-8g-tE3" id="kfb-Do-fdq"/>
+                        <outlet property="dismissButton" destination="XEo-uX-o1V" id="N0F-P8-JTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7aE-dR-hB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-778.39999999999998" y="-312.59370314842579"/>
+        </scene>
+        <!--Overlay View Controller-->
+        <scene sceneID="q03-Cl-9Zg">
+            <objects>
+                <viewController storyboardIdentifier="ConsumerCareOverlay" id="rOp-Zh-nrj" customClass="OverlayViewController" customModule="AppFramework" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nr4-2m-TpQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="G47-XH-7xB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="ConsumerCareOverlayView" id="eRo-LR-bAy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SupportIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yxz-Yl-4ib" userLabel="Image">
+                                <rect key="frame" x="32" y="160" width="256" height="36"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQo-5d-eoQ" userLabel="Description" customClass="ParagraphUIDLabel" customModule="AppFramework" customModuleProvider="target">
+                                <rect key="frame" x="42" y="212" width="236" height="96.5"/>
+                                <string key="text">You can contact Philips consumer care here. Consumer Care is the destination for all Philips questions product informations and reviews.</string>
+                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="paragraphLocalizedText" value="RA_DLS_Help_Support_screen_sub"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cd9-LW-M5J" userLabel="DismissButton" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="434" width="288" height="34"/>
+                                <state key="normal" title="Got it"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="RA_DLS_overlay_got_it"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="dismissOverlay" destination="rOp-Zh-nrj" eventType="touchUpInside" id="bte-Mc-pvk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="yxz-Yl-4ib" secondAttribute="trailing" constant="32" id="Csp-vW-PB2"/>
+                            <constraint firstAttribute="bottom" secondItem="cd9-LW-M5J" secondAttribute="bottom" constant="100" id="EzN-ol-A0i"/>
+                            <constraint firstItem="yxz-Yl-4ib" firstAttribute="leading" secondItem="eRo-LR-bAy" secondAttribute="leading" constant="32" id="L4l-8b-dDz"/>
+                            <constraint firstItem="cd9-LW-M5J" firstAttribute="leading" secondItem="eRo-LR-bAy" secondAttribute="leading" constant="16" id="Us8-b0-xyB"/>
+                            <constraint firstAttribute="trailing" secondItem="cd9-LW-M5J" secondAttribute="trailing" constant="16" id="Xsj-a1-5QD"/>
+                            <constraint firstAttribute="trailing" secondItem="FQo-5d-eoQ" secondAttribute="trailing" constant="42" id="bop-1C-W1r"/>
+                            <constraint firstItem="yxz-Yl-4ib" firstAttribute="top" secondItem="eRo-LR-bAy" secondAttribute="topMargin" constant="160" id="gd2-1k-inx"/>
+                            <constraint firstItem="FQo-5d-eoQ" firstAttribute="top" secondItem="yxz-Yl-4ib" secondAttribute="bottom" constant="16" id="lDC-S1-Jq7"/>
+                            <constraint firstItem="FQo-5d-eoQ" firstAttribute="leading" secondItem="eRo-LR-bAy" secondAttribute="leading" constant="42" id="oMj-c2-20y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="FQo-5d-eoQ" id="evw-It-GFC"/>
+                        <outlet property="dismissButton" destination="cd9-LW-M5J" id="97j-3b-vj2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PBD-66-14v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="-313"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CartIcon" width="40" height="40"/>
+        <image name="SupportIcon" width="36" height="36"/>
+    </resources>
+</document>

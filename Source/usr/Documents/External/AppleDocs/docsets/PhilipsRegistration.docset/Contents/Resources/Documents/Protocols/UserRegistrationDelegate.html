@@ -1,0 +1,1330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UserRegistrationDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/UserRegistrationDelegate" class="dashAnchor"></a>
+    <a title="UserRegistrationDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PhilipsRegistration Docs</a> (87% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PhilipsRegistration Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UserRegistrationDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DICOPPAExtension.html">DICOPPAExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIConsumerInterest.html">DIConsumerInterest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationContentConfiguration.html">DIRegistrationContentConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationFlowConfiguration.html">DIRegistrationFlowConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationVersion.html">DIRegistrationVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIUser.html">DIUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URConsentProvider.html">URConsentProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URDependencies">URDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URInterface.html">URInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLaunchInput.html">URLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URMarketingConsentHandler">URMarketingConsentHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DICOPPASTATUS.html">DICOPPASTATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RegistrationCompletionErrorCode.html">RegistrationCompletionErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLoggedInScreen.html">URLoggedInScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URPriorityFunction.html">URPriorityFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserGender.html">UserGender</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DIRegistrationConfigurationDelegate.html">DIRegistrationConfigurationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UserRegistrationDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">UserRegistrationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Use this delegate to receive callbacks about user registration, login, forgot passowrd, resend verfication, account merging and logout events.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didLoginWithSuccessWithUser:"></a>
+                    <a name="//apple_ref/objc/Method/-didLoginWithSuccessWithUser:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didLoginWithSuccessWithUser:">-didLoginWithSuccessWithUser:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user has been authenticated successfully.</p>
+
+<p>@discussion This callback does not gaurantee that user login process has completed. User might not have accepted TnC of application. This callback merely indicates that user&rsquo;s authentication with backend was successful.
+  @since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didLoginWithSuccessWithUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/DIUser.html">DIUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">profile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didLoginWithSuccess</span><span class="p">(</span><span class="n">with</span> <span class="nv">profile</span><span class="p">:</span> <span class="kt"><a href="../Classes/DIUser.html">DIUser</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>profile</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>DIUser object that wraps the logged in user&rsquo;s profile.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didLoginFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didLoginFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didLoginFailedwithError:">-didLoginFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user&rsquo;s authentication with backend has failed.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didLoginFailedwithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didLoginFailedwithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Contains description of error that occurred during authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didSocialRegistrationReachedSecoundStepWithUser:withProvide:"></a>
+                    <a name="//apple_ref/objc/Method/-didSocialRegistrationReachedSecoundStepWithUser:withProvide:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didSocialRegistrationReachedSecoundStepWithUser:withProvide:">-didSocialRegistrationReachedSecoundStepWithUser:withProvide:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user has been authenticated with social provider and user profile has been received from social provider. Typically used to add any more info to registration for e.g. marketing opt-in etc. before account is created in Janrain.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="nf">didSocialRegistrationReachedSecoundStepWithUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/DIUser.html">DIUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">profile</span>
+                                    <span class="nf">withProvide</span><span class="p">:</span>
+                                        <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">providerName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didSocialRegistrationReachedSecoundStep</span><span class="p">(</span><span class="n">with</span> <span class="nv">profile</span><span class="p">:</span> <span class="kt"><a href="../Classes/DIUser.html">DIUser</a></span><span class="p">,</span> <span class="n">withProvide</span> <span class="nv">providerName</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>profile</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>DIUser object that wraps the logged in user&rsquo;s profile.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>providerName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the provider with user has been authenticated.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didAuthenticationCompleteForLogin:"></a>
+                    <a name="//apple_ref/objc/Method/-didAuthenticationCompleteForLogin:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didAuthenticationCompleteForLogin:">-didAuthenticationCompleteForLogin:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user has succesfully authenticated with social provider or user account has been merged successfully.</p>
+
+<p>@discussion This callback does not gaurantee that user login process has completed. User might not have accepted TnC of application. This callback merely indicates that user&rsquo;s authentication with social provider was successful.
+  @since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didAuthenticationCompleteForLogin</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">email</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didAuthenticationComplete</span><span class="p">(</span><span class="n">forLogin</span> <span class="nv">email</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>email</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Email of the authenticated user.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)socialLoginCannotLaunch:"></a>
+                    <a name="//apple_ref/objc/Method/-socialLoginCannotLaunch:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)socialLoginCannotLaunch:">-socialLoginCannotLaunch:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when social login cannot be launched.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">socialLoginCannotLaunch</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">socialLoginCannotLaunch</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of the error that occurred during social launch.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)socialAuthenticationCanceled"></a>
+                    <a name="//apple_ref/objc/Method/-socialAuthenticationCanceled" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)socialAuthenticationCanceled">-socialAuthenticationCanceled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user has cancelled the social login.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">socialAuthenticationCanceled</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">socialAuthenticationCanceled</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)socialAuthenticationDidFailedWithError:withProvider:"></a>
+                    <a name="//apple_ref/objc/Method/-socialAuthenticationDidFailedWithError:withProvider:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)socialAuthenticationDidFailedWithError:withProvider:">-socialAuthenticationDidFailedWithError:withProvider:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when social authentication has failed. Typically when user has denied the permission.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">socialAuthenticationDidFailedWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span>
+                                  <span class="nf">withProvider</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">provider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">socialAuthenticationDidFailedWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">,</span> <span class="n">withProvider</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred during social authentication.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of provider with which authentication was tried.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didRegisterSuccessWithUser:"></a>
+                    <a name="//apple_ref/objc/Method/-didRegisterSuccessWithUser:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didRegisterSuccessWithUser:">-didRegisterSuccessWithUser:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user has been registered successfully either via traditional or social method.</p>
+
+<p>@discussion This callback does not gaurantee that user creation process has completed. User might not have accepted TnC of application. This callback merely indicates that user creation in backend was successful
+  @since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didRegisterSuccessWithUser</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n"><a href="../Classes/DIUser.html">DIUser</a></span> <span class="o">*</span><span class="p">)</span><span class="nv">profile</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didRegisterSuccess</span><span class="p">(</span><span class="n">with</span> <span class="nv">profile</span><span class="p">:</span> <span class="kt"><a href="../Classes/DIUser.html">DIUser</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>profile</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>DIUser object that wraps the created user&rsquo;s profile.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didRegisterFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didRegisterFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didRegisterFailedwithError:">-didRegisterFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user registration has failed.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didRegisterFailedwithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didRegisterFailedwithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Contains decription of error occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didSendForgotPasswordSuccess"></a>
+                    <a name="//apple_ref/objc/Method/-didSendForgotPasswordSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didSendForgotPasswordSuccess">-didSendForgotPasswordSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an email to reset password was sent successfully.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didSendForgotPasswordSuccess</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didSendForgotPasswordSuccess</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didSendForgotPasswordFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didSendForgotPasswordFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didSendForgotPasswordFailedwithError:">-didSendForgotPasswordFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when failed to send email to reset password.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didSendForgotPasswordFailedwithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didSendForgotPasswordFailedwithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didResendEmailverificationSuccess"></a>
+                    <a name="//apple_ref/objc/Method/-didResendEmailverificationSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didResendEmailverificationSuccess">-didResendEmailverificationSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an email was resent with a link for account verification.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didResendEmailverificationSuccess</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didResendEmailverificationSuccess</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didResendEmailverificationFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didResendEmailverificationFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didResendEmailverificationFailedwithError:">-didResendEmailverificationFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when failed to resend account verification email.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didResendEmailverificationFailedwithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didResendEmailverificationFailedwithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didResendMobileverificationSuccess"></a>
+                    <a name="//apple_ref/objc/Method/-didResendMobileverificationSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didResendMobileverificationSuccess">-didResendMobileverificationSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when account OTP verification code has been resent successfully to user&rsquo;s mobile number.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didResendMobileverificationSuccess</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didResendMobileverificationSuccess</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didResendMobileverificationFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didResendMobileverificationFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didResendMobileverificationFailedwithError:">-didResendMobileverificationFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when failed to resend OTP verification code for account verification.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didResendMobileverificationFailedwithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didResendMobileverificationFailedwithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileSuccess"></a>
+                    <a name="//apple_ref/objc/Method/-didVerificationForMobileSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileSuccess">-didVerificationForMobileSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user account was verified successfully via SMS OTP.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didVerificationForMobileSuccess</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didVerificationForMobileSuccess</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didVerificationForMobileFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileFailedwithError:">-didVerificationForMobileFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user account could not be verfied for the entered SMS OTP.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didVerificationForMobileFailedwithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didVerification</span><span class="p">(</span><span class="n">forMobileFailedwithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileToResetPasswordSuccessWithToken:"></a>
+                    <a name="//apple_ref/objc/Method/-didVerificationForMobileToResetPasswordSuccessWithToken:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileToResetPasswordSuccessWithToken:">-didVerificationForMobileToResetPasswordSuccessWithToken:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an SMS OTP was successfully sent to user&rsquo;s mobile number and a resepective reset token was generated for password reset.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didVerificationForMobileToResetPasswordSuccessWithToken</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">resetToken</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didVerificationForMobileToResetPasswordSuccess</span><span class="p">(</span><span class="n">withToken</span> <span class="nv">resetToken</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>resetToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Reset token to be used with OTP for password reset.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileToResetPasswordFailedwithError:"></a>
+                    <a name="//apple_ref/objc/Method/-didVerificationForMobileToResetPasswordFailedwithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didVerificationForMobileToResetPasswordFailedwithError:">-didVerificationForMobileToResetPasswordFailedwithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when an SMS OTP could not be sent to user&rsquo;s mobile number for password reset.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didVerificationForMobileToResetPasswordFailedwithError</span><span class="p">:</span>
+    <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didVerificationForMobile</span><span class="p">(</span><span class="n">toResetPasswordFailedwithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didHandleMergingSuccess"></a>
+                    <a name="//apple_ref/objc/Method/-didHandleMergingSuccess" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didHandleMergingSuccess">-didHandleMergingSuccess</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user accounts have been merged successfully.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">didHandleMergingSuccess</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didHandleMergingSuccess</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)didFailHandleMerging:"></a>
+                    <a name="//apple_ref/objc/Method/-didFailHandleMerging:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)didFailHandleMerging:">-didFailHandleMerging:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when merging user accounts has failed.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">didFailHandleMerging</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">didFailHandleMerging</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)logoutDidSucceed"></a>
+                    <a name="//apple_ref/objc/Method/-logoutDidSucceed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)logoutDidSucceed">-logoutDidSucceed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user was successfully logged out and all their data was purged from device.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">logoutDidSucceed</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">logoutDidSucceed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)logoutFailedWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-logoutFailedWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)logoutFailedWithError:">-logoutFailedWithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when logout has failed.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">logoutFailedWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">logoutFailedWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate(im)handleAccountSocailMergeWithExistingAccountProvider:provider:"></a>
+                    <a name="//apple_ref/objc/Method/-handleAccountSocailMergeWithExistingAccountProvider:provider:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate(im)handleAccountSocailMergeWithExistingAccountProvider:provider:">-handleAccountSocailMergeWithExistingAccountProvider:provider:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user is trying to login with one provider while user&rsquo;s account already exists with different provider. In such case, user need to merge the accounts to be able to login with both providers or go back to provider with which the account was originally created.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">handleAccountSocailMergeWithExistingAccountProvider</span><span class="p">:</span>
+            <span class="p">(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">existingAccountProvider</span>
+                                                   <span class="nf">provider</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSString</span> <span class="o">*</span><span class="p">)</span>
+                                                                <span class="n">provider</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">handleAccountSocailMerge</span><span class="p">(</span><span class="n">withExistingAccountProvider</span> <span class="nv">existingAccountProvider</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">provider</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>existingAccountProvider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the provider with which user is already registered.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>provider</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Name of the provider with which user is trying to login.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,3984 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AIRESTClientProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/attemptsToRecreateUploadTasksForBackgroundSessions">attemptsToRecreateUploadTasksForBackgroundSessions</option>
+		
+		<option value="//api/name/baseURL">baseURL</option>
+		
+		<option value="//api/name/completionGroup">completionGroup</option>
+		
+		<option value="//api/name/completionQueue">completionQueue</option>
+		
+		<option value="//api/name/dataTasks">dataTasks</option>
+		
+		<option value="//api/name/delegate">delegate</option>
+		
+		<option value="//api/name/downloadTasks">downloadTasks</option>
+		
+		<option value="//api/name/operationQueue">operationQueue</option>
+		
+		<option value="//api/name/reachabilityManager">reachabilityManager</option>
+		
+		<option value="//api/name/requestSerializer">requestSerializer</option>
+		
+		<option value="//api/name/responseSerializer">responseSerializer</option>
+		
+		<option value="//api/name/securityPolicy">securityPolicy</option>
+		
+		<option value="//api/name/session">session</option>
+		
+		<option value="//api/name/tasks">tasks</option>
+		
+		<option value="//api/name/uploadTasks">uploadTasks</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/DELETE:parameters:success:failure:">- DELETE:parameters:success:failure:</option>
+		
+		<option value="//api/name/DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">- DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</option>
+		
+		<option value="//api/name/GET:parameters:progress:success:failure:">- GET:parameters:progress:success:failure:</option>
+		
+		<option value="//api/name/GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:">- GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</option>
+		
+		<option value="//api/name/HEAD:parameters:success:failure:">- HEAD:parameters:success:failure:</option>
+		
+		<option value="//api/name/HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">- HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</option>
+		
+		<option value="//api/name/PATCH:parameters:success:failure:">- PATCH:parameters:success:failure:</option>
+		
+		<option value="//api/name/PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">- PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</option>
+		
+		<option value="//api/name/POST:parameters:constructingBodyWithBlock:progress:success:failure:">- POST:parameters:constructingBodyWithBlock:progress:success:failure:</option>
+		
+		<option value="//api/name/POST:parameters:progress:success:failure:">- POST:parameters:progress:success:failure:</option>
+		
+		<option value="//api/name/POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:">- POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</option>
+		
+		<option value="//api/name/PUT:parameters:success:failure:">- PUT:parameters:success:failure:</option>
+		
+		<option value="//api/name/PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">- PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</option>
+		
+		<option value="//api/name/createInstanceWithBaseURL:">- createInstanceWithBaseURL:</option>
+		
+		<option value="//api/name/createInstanceWithBaseURL:sessionConfiguration:">- createInstanceWithBaseURL:sessionConfiguration:</option>
+		
+		<option value="//api/name/createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:">- createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:</option>
+		
+		<option value="//api/name/createInstanceWithSessionConfiguration:">- createInstanceWithSessionConfiguration:</option>
+		
+		<option value="//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</option>
+		
+		<option value="//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">- dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</option>
+		
+		<option value="//api/name/downloadProgressForTask:">- downloadProgressForTask:</option>
+		
+		<option value="//api/name/downloadTaskWithRequest:progress:destination:completionHandler:">- downloadTaskWithRequest:progress:destination:completionHandler:</option>
+		
+		<option value="//api/name/downloadTaskWithResumeData:progress:destination:completionHandler:">- downloadTaskWithResumeData:progress:destination:completionHandler:</option>
+		
+		<option value="//api/name/getNetworkReachabilityStatus">- getNetworkReachabilityStatus</option>
+		
+		<option value="//api/name/invalidateSessionCancelingTasks:">- invalidateSessionCancelingTasks:</option>
+		
+		<option value="//api/name/isInternetReachable">- isInternetReachable</option>
+		
+		<option value="//api/name/manager">- manager</option>
+		
+		<option value="//api/name/setDataTaskDidBecomeDownloadTaskBlock:">- setDataTaskDidBecomeDownloadTaskBlock:</option>
+		
+		<option value="//api/name/setDataTaskDidReceiveDataBlock:">- setDataTaskDidReceiveDataBlock:</option>
+		
+		<option value="//api/name/setDataTaskDidReceiveResponseBlock:">- setDataTaskDidReceiveResponseBlock:</option>
+		
+		<option value="//api/name/setDataTaskWillCacheResponseBlock:">- setDataTaskWillCacheResponseBlock:</option>
+		
+		<option value="//api/name/setDidFinishEventsForBackgroundURLSessionBlock:">- setDidFinishEventsForBackgroundURLSessionBlock:</option>
+		
+		<option value="//api/name/setDownloadTaskDidFinishDownloadingBlock:">- setDownloadTaskDidFinishDownloadingBlock:</option>
+		
+		<option value="//api/name/setDownloadTaskDidResumeBlock:">- setDownloadTaskDidResumeBlock:</option>
+		
+		<option value="//api/name/setDownloadTaskDidWriteDataBlock:">- setDownloadTaskDidWriteDataBlock:</option>
+		
+		<option value="//api/name/setSessionDidBecomeInvalidBlock:">- setSessionDidBecomeInvalidBlock:</option>
+		
+		<option value="//api/name/setSessionDidReceiveAuthenticationChallengeBlock:">- setSessionDidReceiveAuthenticationChallengeBlock:</option>
+		
+		<option value="//api/name/setTaskDidCompleteBlock:">- setTaskDidCompleteBlock:</option>
+		
+		<option value="//api/name/setTaskDidReceiveAuthenticationChallengeBlock:">- setTaskDidReceiveAuthenticationChallengeBlock:</option>
+		
+		<option value="//api/name/setTaskDidSendBodyDataBlock:">- setTaskDidSendBodyDataBlock:</option>
+		
+		<option value="//api/name/setTaskNeedNewBodyStreamBlock:">- setTaskNeedNewBodyStreamBlock:</option>
+		
+		<option value="//api/name/setTaskWillPerformHTTPRedirectionBlock:">- setTaskWillPerformHTTPRedirectionBlock:</option>
+		
+		<option value="//api/name/startNotifier">- startNotifier</option>
+		
+		<option value="//api/name/stopNotifier">- stopNotifier</option>
+		
+		<option value="//api/name/uploadProgressForTask:">- uploadProgressForTask:</option>
+		
+		<option value="//api/name/uploadTaskWithRequest:fromData:progress:completionHandler:">- uploadTaskWithRequest:fromData:progress:completionHandler:</option>
+		
+		<option value="//api/name/uploadTaskWithRequest:fromFile:progress:completionHandler:">- uploadTaskWithRequest:fromFile:progress:completionHandler:</option>
+		
+		<option value="//api/name/uploadTaskWithStreamedRequest:progress:completionHandler:">- uploadTaskWithStreamedRequest:progress:completionHandler:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AIRESTClientProtocol Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIRESTClientProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getNetworkReachabilityStatus" title="getNetworkReachabilityStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getNetworkReachabilityStatus">&ndash;&nbsp;getNetworkReachabilityStatus</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Used to check the internet availability
+possible return values are
+AIRESTClientReachabilityStatusNotReachable ,
+AIRESTClientReachabilityStatusReachableViaWWAN,
+AIRESTClientReachabilityStatusReachableViaWiFi,</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AIRESTClientReachabilityStatus)getNetworkReachabilityStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isInternetReachable" title="isInternetReachable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isInternetReachable">&ndash;&nbsp;isInternetReachable</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>  Used to check the internet availability Which returns the bool</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isInternetReachable</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/startNotifier" title="startNotifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/startNotifier">&ndash;&nbsp;startNotifier</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start listening for reachability notifications on the current run loop.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)startNotifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/stopNotifier" title="stopNotifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/stopNotifier">&ndash;&nbsp;stopNotifier</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)stopNotifier</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/baseURL" title="baseURL"></a>
+	<h3 class="method-title"><code><a href="#//api/name/baseURL">&nbsp;&nbsp;baseURL</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The URL used to construct requests from relative paths in methods like <code>requestWithMethod:URLString:parameters:</code>, and the <code>GET</code> / <code>POST</code> / et al. convenience methods.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSURL *baseURL</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/requestSerializer" title="requestSerializer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/requestSerializer">&nbsp;&nbsp;requestSerializer</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Requests created with <code>requestWithMethod:URLString:parameters:</code> &amp; <code>multipartFormRequestWithMethod:URLString:parameters:constructingBodyWithBlock:</code> are constructed with a set of default headers using a parameter serialization specified by this property. By default, this is set to an instance of <code>AFHTTPRequestSerializer</code>, which serializes query string parameters for <code>GET</code>, <code>HEAD</code>, and <code>DELETE</code> requests, or otherwise URL-form-encodes HTTP message bodies.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AFHTTPRequestSerializer&lt;AFURLRequestSerialization&gt; *requestSerializer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> <code>requestSerializer</code> must not be <code>nil</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/manager" title="manager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/manager">&ndash;&nbsp;manager</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and returns an <code>AFHTTPSessionManager</code> object.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;AIRESTClientProtocol&gt;)manager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createInstanceWithBaseURL:" title="createInstanceWithBaseURL:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createInstanceWithBaseURL:">&ndash;&nbsp;createInstanceWithBaseURL:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes an <code>AIRESTClientProtocol</code> object with the specified base URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithBaseURL:(nullable NSURL *)<em>url</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The base URL for the HTTP client.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly-initialized HTTP client</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createInstanceWithBaseURL:sessionConfiguration:" title="createInstanceWithBaseURL:sessionConfiguration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createInstanceWithBaseURL:sessionConfiguration:">&ndash;&nbsp;createInstanceWithBaseURL:sessionConfiguration:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes an <code>AIRESTClientProtocol</code> object with the specified base URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithBaseURL:(nullable NSURL *)<em>url</em> sessionConfiguration:(nullable NSURLSessionConfiguration *)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The base URL for the HTTP client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The configuration used to create the managed <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly-initialized HTTP client</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the designated initializer.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createInstanceWithSessionConfiguration:" title="createInstanceWithSessionConfiguration:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createInstanceWithSessionConfiguration:">&ndash;&nbsp;createInstanceWithSessionConfiguration:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and returns a <a href="../Protocols/AIRESTClientProtocol.html#//api/name/manager">manager</a> for a <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> created with the specified configuration. This is the designated initializer.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithSessionConfiguration:(nullable NSURLSessionConfiguration *)<em>configuration</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The configuration used to create the managed <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>A <a href="../Protocols/AIRESTClientProtocol.html#//api/name/manager">manager</a> for a newly-created <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:" title="createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:">&ndash;&nbsp;createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Initializes an <code>AIRESTClientProtocol</code> object with the specified base URL.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithBaseURL:(nullable NSURL *)<em>url</em> sessionConfiguration:(nullable NSURLSessionConfiguration *)<em>configuration</em> withCachePolicy:(AIRESTURLRequestCachePolicy)<em>cachePolicy</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>The base URL for the HTTP client.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>configuration</code></th>
+						<td><p>The configuration used to create the managed <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a>.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cachePolicy</code></th>
+						<td><p>its an enum of the cache policies</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>The newly-initialized HTTP client</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This is the designated initializer.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Making HTTP Requests" name="task_Making HTTP Requests"></a>
+						<h2 class="task-title">Making HTTP Requests</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/GET:parameters:progress:success:failure:" title="GET:parameters:progress:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GET:parameters:progress:success:failure:">&ndash;&nbsp;GET:parameters:progress:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>GET</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)GET:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> progress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgress</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgress</code></th>
+						<td><p>A block object to be executed when the download progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">- dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:" title="GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:">&ndash;&nbsp;GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>GET</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)GETWithServiceID:(NSString *)<em>serviceID</em> preference:(AIRESTServiceIDPreference)<em>preference</em> pathComponent:(nullable NSString *)<em>pathComponent</em> serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>serviceURLCompletion</em> parameters:(nullable id)<em>parameters</em> progress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgress</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceID</code></th>
+						<td><p>The serviceID used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preference</code></th>
+						<td><p>AIRESTServiceIDPreference prefrence</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pathComponent</code></th>
+						<td><p>The path component to be appended to service URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceURLCompletion</code></th>
+						<td><p>The completion block with task object will be called when the service discovery fetches URL from server.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgress</code></th>
+						<td><p>A block object to be executed when the download progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">- dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/HEAD:parameters:success:failure:" title="HEAD:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/HEAD:parameters:success:failure:">&ndash;&nbsp;HEAD:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>HEAD</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)HEAD:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:" title="HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">&ndash;&nbsp;HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>HEAD</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)HEADWithServiceID:(NSString *)<em>serviceID</em> preference:(AIRESTServiceIDPreference)<em>preference</em> pathComponent:(nullable NSString *)<em>pathComponent</em> serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>serviceURLCompletion</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceID</code></th>
+						<td><p>The serviceID used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preference</code></th>
+						<td><p>AIRESTServiceIDPreference prefrence</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pathComponent</code></th>
+						<td><p>The path component to be appended to service URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceURLCompletion</code></th>
+						<td><p>The completion block with task object will be called when the service discovery fetches URL from server.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/POST:parameters:progress:success:failure:" title="POST:parameters:progress:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/POST:parameters:progress:success:failure:">&ndash;&nbsp;POST:parameters:progress:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>POST</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)POST:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgress</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgress</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">- dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/POST:parameters:constructingBodyWithBlock:progress:success:failure:" title="POST:parameters:constructingBodyWithBlock:progress:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/POST:parameters:constructingBodyWithBlock:progress:success:failure:">&ndash;&nbsp;POST:parameters:constructingBodyWithBlock:progress:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a multipart <code>POST</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)POST:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> constructingBodyWithBlock:(nullable void ( ^ ) ( id&lt;AFMultipartFormData&gt; formData ))<em>block</em> progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgress</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block that takes a single argument and appends data to the HTTP body. The block argument is an object adopting the <code>AFMultipartFormData</code> protocol.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgress</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">- dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:" title="POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:">&ndash;&nbsp;POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>POST</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)POSTWithServiceID:(NSString *)<em>serviceID</em> preference:(AIRESTServiceIDPreference)<em>preference</em> pathComponent:(nullable NSString *)<em>pathComponent</em> serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>serviceURLCompletion</em> parameters:(nullable id)<em>parameters</em> progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgress</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceID</code></th>
+						<td><p>The serviceID used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preference</code></th>
+						<td><p>AIRESTServiceIDPreference prefrence</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pathComponent</code></th>
+						<td><p>The path component to be appended to service URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceURLCompletion</code></th>
+						<td><p>The completion block with task object will be called when the service discovery fetches URL from server.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgress</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">- dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PUT:parameters:success:failure:" title="PUT:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PUT:parameters:success:failure:">&ndash;&nbsp;PUT:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>PUT</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)PUT:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:" title="PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">&ndash;&nbsp;PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>PUT</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)PUTWithServiceID:(NSString *)<em>serviceID</em> preference:(AIRESTServiceIDPreference)<em>preference</em> pathComponent:(nullable NSString *)<em>pathComponent</em> serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>serviceURLCompletion</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceID</code></th>
+						<td><p>The serviceID used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preference</code></th>
+						<td><p>AIRESTServiceIDPreference prefrence</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pathComponent</code></th>
+						<td><p>The path component to be appended to service URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceURLCompletion</code></th>
+						<td><p>The completion block with task object will be called when the service discovery fetches URL from server.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PATCH:parameters:success:failure:" title="PATCH:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PATCH:parameters:success:failure:">&ndash;&nbsp;PATCH:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>PATCH</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)PATCH:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:" title="PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">&ndash;&nbsp;PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>PATCH</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)PATCHWithServiceID:(NSString *)<em>serviceID</em> preference:(AIRESTServiceIDPreference)<em>preference</em> pathComponent:(nullable NSString *)<em>pathComponent</em> serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>serviceURLCompletion</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceID</code></th>
+						<td><p>The serviceID used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preference</code></th>
+						<td><p>AIRESTServiceIDPreference prefrence</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pathComponent</code></th>
+						<td><p>The path component to be appended to service URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceURLCompletion</code></th>
+						<td><p>The completion block with task object will be called when the service discovery fetches URL from server.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DELETE:parameters:success:failure:" title="DELETE:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DELETE:parameters:success:failure:">&ndash;&nbsp;DELETE:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>DELETE</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSURLSessionDataTask *)DELETE:(NSString *)<em>URLString</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>URLString</code></th>
+						<td><p>The URL string used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:" title="DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:">&ndash;&nbsp;DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates and runs an <code>NSURLSessionDataTask</code> with a <code>DELETE</code> request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)DELETEWithServiceID:(NSString *)<em>serviceID</em> preference:(AIRESTServiceIDPreference)<em>preference</em> pathComponent:(nullable NSString *)<em>pathComponent</em> serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))<em>serviceURLCompletion</em> parameters:(nullable id)<em>parameters</em> success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))<em>success</em> failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))<em>failure</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceID</code></th>
+						<td><p>The serviceID used to create the request URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>preference</code></th>
+						<td><p>AIRESTServiceIDPreference prefrence</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>pathComponent</code></th>
+						<td><p>The path component to be appended to service URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceURLCompletion</code></th>
+						<td><p>The completion block with task object will be called when the service discovery fetches URL from server.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>parameters</code></th>
+						<td><p>The parameters to be encoded according to the client request serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>success</code></th>
+						<td><p>A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>failure</code></th>
+						<td><p>A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="../Protocols/AIRESTClientProtocol.html#//api/name/dataTaskWithRequest:completionHandler:">- dataTaskWithRequest:completionHandler:</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/session" title="session"></a>
+	<h3 class="method-title"><code><a href="#//api/name/session">&nbsp;&nbsp;session</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The managed session.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSURLSession *session</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/operationQueue" title="operationQueue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/operationQueue">&nbsp;&nbsp;operationQueue</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The operation queue on which <a href="#//api/name/delegate">delegate</a> callbacks are run.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSOperationQueue *operationQueue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/responseSerializer" title="responseSerializer"></a>
+	<h3 class="method-title"><code><a href="#//api/name/responseSerializer">&nbsp;&nbsp;responseSerializer</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Responses sent from the server in data <a href="#//api/name/tasks">tasks</a> created with <code>dataTaskWithRequest:success:failure:</code> and run using the <code>GET</code> / <code>POST</code> / et al. convenience methods are automatically validated and serialized by the response serializer. By default, this property is set to an instance of <code>AFJSONResponseSerializer</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) id&lt;AIRESTClientURLResponseSerialization&gt; responseSerializer</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> <code>responseSerializer</code> must not be <code>nil</code>.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Managing Security Policy" name="task_Managing Security Policy"></a>
+						<h2 class="task-title">Managing Security Policy</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/securityPolicy" title="securityPolicy"></a>
+	<h3 class="method-title"><code><a href="#//api/name/securityPolicy">&nbsp;&nbsp;securityPolicy</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The security policy used by created <a href="#//api/name/session">session</a> to evaluate server trust for secure connections. <code>AFURLSessionManager</code> uses the <code>defaultPolicy</code> unless otherwise specified.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AFSecurityPolicy *securityPolicy</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Monitoring Network Reachability" name="task_Monitoring Network Reachability"></a>
+						<h2 class="task-title">Monitoring Network Reachability</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/reachabilityManager" title="reachabilityManager"></a>
+	<h3 class="method-title"><code><a href="#//api/name/reachabilityManager">&nbsp;&nbsp;reachabilityManager</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The network reachability <a href="#//api/name/manager">manager</a>. <code>AFURLSessionManager</code> uses the <code>sharedManager</code> by default.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readwrite, nonatomic, strong) AFNetworkReachabilityManager *reachabilityManager</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getting Session Tasks" name="task_Getting Session Tasks"></a>
+						<h2 class="task-title">Getting Session Tasks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/tasks" title="tasks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/tasks">&nbsp;&nbsp;tasks</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The data, upload, and download tasks currently run by the managed <a href="#//api/name/session">session</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSArray&lt;NSURLSessionTask*&gt; *tasks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dataTasks" title="dataTasks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataTasks">&nbsp;&nbsp;dataTasks</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The data <a href="#//api/name/tasks">tasks</a> currently run by the managed <a href="#//api/name/session">session</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSArray&lt;NSURLSessionDataTask*&gt; *dataTasks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadTasks" title="uploadTasks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadTasks">&nbsp;&nbsp;uploadTasks</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The upload <a href="#//api/name/tasks">tasks</a> currently run by the managed <a href="#//api/name/session">session</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSArray&lt;NSURLSessionUploadTask*&gt; *uploadTasks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadTasks" title="downloadTasks"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadTasks">&nbsp;&nbsp;downloadTasks</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The download <a href="#//api/name/tasks">tasks</a> currently run by the managed <a href="#//api/name/session">session</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong) NSArray&lt;NSURLSessionDownloadTask*&gt; *downloadTasks</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Managing Callback Queues" name="task_Managing Callback Queues"></a>
+						<h2 class="task-title">Managing Callback Queues</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/completionQueue" title="completionQueue"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completionQueue">&nbsp;&nbsp;completionQueue</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The dispatch queue for <code>completionBlock</code>. If <code>NULL</code> (default), the main queue is used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, nullable) dispatch_queue_t completionQueue</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/completionGroup" title="completionGroup"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completionGroup">&nbsp;&nbsp;completionGroup</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>The dispatch group for <code>completionBlock</code>. If <code>NULL</code> (default), a private dispatch group is used.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign, nullable) dispatch_group_t completionGroup</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Working Around System Bugs" name="task_Working Around System Bugs"></a>
+						<h2 class="task-title">Working Around System Bugs</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/attemptsToRecreateUploadTasksForBackgroundSessions" title="attemptsToRecreateUploadTasksForBackgroundSessions"></a>
+	<h3 class="method-title"><code><a href="#//api/name/attemptsToRecreateUploadTasksForBackgroundSessions">&nbsp;&nbsp;attemptsToRecreateUploadTasksForBackgroundSessions</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Whether to attempt to retry creation of upload <a href="#//api/name/tasks">tasks</a> for background sessions when initial call returns <code>nil</code>. <code>NO</code> by default.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL attemptsToRecreateUploadTasksForBackgroundSessions</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="bug"><p><strong>Bug:</strong> As of iOS 7.0, there is a bug where upload <a href="#//api/name/tasks">tasks</a> created for background <a href="#//api/name/tasks">tasks</a> are sometimes <code>nil</code>. As a workaround, if this property is <code>YES</code>, AFNetworking will follow Apple&rsquo;s recommendation to try creating the task again.</p></div>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection see-also-section">
+				<h4 class="method-subtitle">See Also</h4>
+				<ul>
+					
+					<li><code><p><a href="https://github.com/AFNetworking/AFNetworking/issues/1675">https://github.com/AFNetworking/AFNetworking/issues/1675</a></p></code></li>
+					
+				</ul>
+			</div>
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Initialization" name="task_Initialization"></a>
+						<h2 class="task-title">Initialization</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/invalidateSessionCancelingTasks:" title="invalidateSessionCancelingTasks:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/invalidateSessionCancelingTasks:">&ndash;&nbsp;invalidateSessionCancelingTasks:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Invalidates the managed <a href="#//api/name/session">session</a>, optionally canceling pending <a href="#//api/name/tasks">tasks</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)invalidateSessionCancelingTasks:(BOOL)<em>cancelPendingTasks</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>cancelPendingTasks</code></th>
+						<td><p>Whether or not to cancel pending <a href="#//api/name/tasks">tasks</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Running Data Tasks" name="task_Running Data Tasks"></a>
+						<h2 class="task-title">Running Data Tasks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/dataTaskWithRequest:completionHandler:" title="dataTaskWithRequest:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataTaskWithRequest:completionHandler:">&ndash;&nbsp;dataTaskWithRequest:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionDataTask</code> with the specified request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)<em>request</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>The HTTP request for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:" title="dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:">&ndash;&nbsp;dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionDataTask</code> with the specified request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)<em>request</em> uploadProgress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgressBlock</em> downloadProgress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgressBlock</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>The HTTP request for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgressBlock</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgressBlock</code></th>
+						<td><p>A block object to be executed when the download progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Running Upload Tasks" name="task_Running Upload Tasks"></a>
+						<h2 class="task-title">Running Upload Tasks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/uploadTaskWithRequest:fromFile:progress:completionHandler:" title="uploadTaskWithRequest:fromFile:progress:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadTaskWithRequest:fromFile:progress:completionHandler:">&ndash;&nbsp;uploadTaskWithRequest:fromFile:progress:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionUploadTask</code> with the specified request for a local file.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionUploadTask *)uploadTaskWithRequest:(NSURLRequest *)<em>request</em> fromFile:(NSURL *)<em>fileURL</em> progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgressBlock</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>The HTTP request for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>fileURL</code></th>
+						<td><p>A URL to the local file to be uploaded.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgressBlock</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadTaskWithRequest:fromData:progress:completionHandler:" title="uploadTaskWithRequest:fromData:progress:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadTaskWithRequest:fromData:progress:completionHandler:">&ndash;&nbsp;uploadTaskWithRequest:fromData:progress:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionUploadTask</code> with the specified request for an HTTP body.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionUploadTask *)uploadTaskWithRequest:(NSURLRequest *)<em>request</em> fromData:(nullable NSData *)<em>bodyData</em> progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgressBlock</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>The HTTP request for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>bodyData</code></th>
+						<td><p>A data object containing the HTTP body to be uploaded.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgressBlock</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uploadTaskWithStreamedRequest:progress:completionHandler:" title="uploadTaskWithStreamedRequest:progress:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadTaskWithStreamedRequest:progress:completionHandler:">&ndash;&nbsp;uploadTaskWithStreamedRequest:progress:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionUploadTask</code> with the specified streaming request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionUploadTask *)uploadTaskWithStreamedRequest:(NSURLRequest *)<em>request</em> progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))<em>uploadProgressBlock</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>The HTTP request for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>uploadProgressBlock</code></th>
+						<td><p>A block object to be executed when the upload progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Running Download Tasks" name="task_Running Download Tasks"></a>
+						<h2 class="task-title">Running Download Tasks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/downloadTaskWithRequest:progress:destination:completionHandler:" title="downloadTaskWithRequest:progress:destination:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadTaskWithRequest:progress:destination:completionHandler:">&ndash;&nbsp;downloadTaskWithRequest:progress:destination:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionDownloadTask</code> with the specified request.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDownloadTask *)downloadTaskWithRequest:(NSURLRequest *)<em>request</em> progress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgressBlock</em> destination:(nullable NSURL *( ^ ) ( NSURL *targetPath , NSURLResponse *response ))<em>destination</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , NSURL *_Nullable filePath , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>request</code></th>
+						<td><p>The HTTP request for the request.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgressBlock</code></th>
+						<td><p>A block object to be executed when the download progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destination</code></th>
+						<td><p>A block object to be executed in order to determine the destination of the downloaded file. This block takes two arguments, the target path &amp; the server response, and returns the desired file URL of the resulting download. The temporary file used during the download will be automatically deleted after being moved to the returned URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block to be executed when a task finishes. This block has no return value and takes three arguments: the server response, the path of the downloaded file, and the error describing the network or parsing error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<div class="warning"><p><strong>Warning:</strong> If using a background <code>NSURLSessionConfiguration</code> on iOS, these blocks will be lost when the app is terminated. Background sessions may prefer to use <a href="../Protocols/AIRESTClientProtocol.html#//api/name/setDownloadTaskDidFinishDownloadingBlock:"><code>setDownloadTaskDidFinishDownloadingBlock:</code></a> to specify the URL for saving the downloaded file, rather than the destination block of this method.</p></div>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadTaskWithResumeData:progress:destination:completionHandler:" title="downloadTaskWithResumeData:progress:destination:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadTaskWithResumeData:progress:destination:completionHandler:">&ndash;&nbsp;downloadTaskWithResumeData:progress:destination:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Creates an <code>NSURLSessionDownloadTask</code> with the specified resume data.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSURLSessionDownloadTask *)downloadTaskWithResumeData:(NSData *)<em>resumeData</em> progress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))<em>downloadProgressBlock</em> destination:(nullable NSURL *( ^ ) ( NSURL *targetPath , NSURLResponse *response ))<em>destination</em> completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , NSURL *_Nullable filePath , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>resumeData</code></th>
+						<td><p>The data used to resume downloading.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadProgressBlock</code></th>
+						<td><p>A block object to be executed when the download progress is updated. Note this block is called on the <a href="../Protocols/AIRESTClientProtocol.html#//api/name/session">session</a> queue, not the main queue.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>destination</code></th>
+						<td><p>A block object to be executed in order to determine the destination of the downloaded file. This block takes two arguments, the target path &amp; the server response, and returns the desired file URL of the resulting download. The temporary file used during the download will be automatically deleted after being moved to the returned URL.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>A block to be executed when a task finishes. This block has no return value and takes three arguments: the server response, the path of the downloaded file, and the error describing the network or parsing error that occurred, if any.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Getting Progress for Tasks" name="task_Getting Progress for Tasks"></a>
+						<h2 class="task-title">Getting Progress for Tasks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/uploadProgressForTask:" title="uploadProgressForTask:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uploadProgressForTask:">&ndash;&nbsp;uploadProgressForTask:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the upload progress of the specified task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSProgress *)uploadProgressForTask:(NSURLSessionTask *)<em>task</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>task</code></th>
+						<td><p>The <a href="#//api/name/session">session</a> task. Must not be <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <code>NSProgress</code> object reporting the upload progress of a task, or <code>nil</code> if the progress is unavailable.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadProgressForTask:" title="downloadProgressForTask:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadProgressForTask:">&ndash;&nbsp;downloadProgressForTask:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the download progress of the specified task.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSProgress *)downloadProgressForTask:(NSURLSessionTask *)<em>task</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>task</code></th>
+						<td><p>The <a href="#//api/name/session">session</a> task. Must not be <code>nil</code>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>An <code>NSProgress</code> object reporting the download progress of a task, or <code>nil</code> if the progress is unavailable.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Setting Session Delegate Callbacks" name="task_Setting Session Delegate Callbacks"></a>
+						<h2 class="task-title">Setting Session Delegate Callbacks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setSessionDidBecomeInvalidBlock:" title="setSessionDidBecomeInvalidBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSessionDidBecomeInvalidBlock:">&ndash;&nbsp;setSessionDidBecomeInvalidBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when the managed <a href="#//api/name/session">session</a> becomes invalid, as handled by the <code>NSURLSessionDelegate</code> method <code>URLSession:didBecomeInvalidWithError:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSessionDidBecomeInvalidBlock:(nullable void ( ^ ) ( NSURLSession *session , NSError *error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when the managed <a href="#//api/name/session">session</a> becomes invalid. The block has no return value, and takes two arguments: the <a href="#//api/name/session">session</a>, and the error related to the cause of invalidation.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setSessionDidReceiveAuthenticationChallengeBlock:" title="setSessionDidReceiveAuthenticationChallengeBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setSessionDidReceiveAuthenticationChallengeBlock:">&ndash;&nbsp;setSessionDidReceiveAuthenticationChallengeBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a connection level authentication challenge has occurred, as handled by the <code>NSURLSessionDelegate</code> method <code>URLSession:didReceiveChallenge:completionHandler:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setSessionDidReceiveAuthenticationChallengeBlock:(nullable NSURLSessionAuthChallengeDisposition ( ^ ) ( NSURLSession *session , NSURLAuthenticationChallenge *challenge , NSURLCredential *_Nullable __autoreleasing *_Nullable credential ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a connection level authentication challenge has occurred. The block returns the disposition of the authentication challenge, and takes three arguments: the <a href="#//api/name/session">session</a>, the authentication challenge, and a pointer to the credential that should be used to resolve the challenge.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Setting Task Delegate Callbacks" name="task_Setting Task Delegate Callbacks"></a>
+						<h2 class="task-title">Setting Task Delegate Callbacks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setTaskNeedNewBodyStreamBlock:" title="setTaskNeedNewBodyStreamBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTaskNeedNewBodyStreamBlock:">&ndash;&nbsp;setTaskNeedNewBodyStreamBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a task requires a new request body stream to send to the remote server, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:needNewBodyStream:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTaskNeedNewBodyStreamBlock:(nullable NSInputStream *( ^ ) ( NSURLSession *session , NSURLSessionTask *task ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a task requires a new request body stream.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTaskWillPerformHTTPRedirectionBlock:" title="setTaskWillPerformHTTPRedirectionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTaskWillPerformHTTPRedirectionBlock:">&ndash;&nbsp;setTaskWillPerformHTTPRedirectionBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when an HTTP request is attempting to perform a redirection to a different URL, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:willPerformHTTPRedirection:newRequest:completionHandler:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTaskWillPerformHTTPRedirectionBlock:(nullable NSURLRequest *( ^ ) ( NSURLSession *session , NSURLSessionTask *task , NSURLResponse *response , NSURLRequest *request ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when an HTTP request is attempting to perform a redirection to a different URL. The block returns the request to be made for the redirection, and takes four arguments: the <a href="#//api/name/session">session</a>, the task, the redirection response, and the request corresponding to the redirection response.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTaskDidReceiveAuthenticationChallengeBlock:" title="setTaskDidReceiveAuthenticationChallengeBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTaskDidReceiveAuthenticationChallengeBlock:">&ndash;&nbsp;setTaskDidReceiveAuthenticationChallengeBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a <a href="#//api/name/session">session</a> task has received a request specific authentication challenge, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:didReceiveChallenge:completionHandler:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTaskDidReceiveAuthenticationChallengeBlock:(nullable NSURLSessionAuthChallengeDisposition ( ^ ) ( NSURLSession *session , NSURLSessionTask *task , NSURLAuthenticationChallenge *challenge , NSURLCredential *_Nullable __autoreleasing *_Nullable credential ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a <a href="#//api/name/session">session</a> task has received a request specific authentication challenge. The block returns the disposition of the authentication challenge, and takes four arguments: the <a href="#//api/name/session">session</a>, the task, the authentication challenge, and a pointer to the credential that should be used to resolve the challenge.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTaskDidSendBodyDataBlock:" title="setTaskDidSendBodyDataBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTaskDidSendBodyDataBlock:">&ndash;&nbsp;setTaskDidSendBodyDataBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed periodically to track upload progress, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:didSendBodyData:totalBytesSent:totalBytesExpectedToSend:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTaskDidSendBodyDataBlock:(nullable void ( ^ ) ( NSURLSession *session , NSURLSessionTask *task , int64_t bytesSent , int64_t totalBytesSent , int64_t totalBytesExpectedToSend ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be called when an undetermined number of bytes have been uploaded to the server. This block has no return value and takes five arguments: the <a href="#//api/name/session">session</a>, the task, the number of bytes written since the last time the upload progress block was called, the total bytes written, and the total bytes expected to be written during the request, as initially determined by the length of the HTTP body. This block may be called multiple times, and will execute on the main thread.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setTaskDidCompleteBlock:" title="setTaskDidCompleteBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setTaskDidCompleteBlock:">&ndash;&nbsp;setTaskDidCompleteBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed as the last message related to a specific task, as handled by the <code>NSURLSessionTaskDelegate</code> method <code>URLSession:task:didCompleteWithError:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setTaskDidCompleteBlock:(nullable void ( ^ ) ( NSURLSession *session , NSURLSessionTask *task , NSError *_Nullable error ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a <a href="#//api/name/session">session</a> task is completed. The block has no return value, and takes three arguments: the <a href="#//api/name/session">session</a>, the task, and any error that occurred in the process of executing the task.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Setting Data Task Delegate Callbacks" name="task_Setting Data Task Delegate Callbacks"></a>
+						<h2 class="task-title">Setting Data Task Delegate Callbacks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setDataTaskDidReceiveResponseBlock:" title="setDataTaskDidReceiveResponseBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDataTaskDidReceiveResponseBlock:">&ndash;&nbsp;setDataTaskDidReceiveResponseBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a data task has received a response, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:didReceiveResponse:completionHandler:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDataTaskDidReceiveResponseBlock:(nullable NSURLSessionResponseDisposition ( ^ ) ( NSURLSession *session , NSURLSessionDataTask *dataTask , NSURLResponse *response ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a data task has received a response. The block returns the disposition of the <a href="#//api/name/session">session</a> response, and takes three arguments: the <a href="#//api/name/session">session</a>, the data task, and the received response.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDataTaskDidBecomeDownloadTaskBlock:" title="setDataTaskDidBecomeDownloadTaskBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDataTaskDidBecomeDownloadTaskBlock:">&ndash;&nbsp;setDataTaskDidBecomeDownloadTaskBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a data task has become a download task, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:didBecomeDownloadTask:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDataTaskDidBecomeDownloadTaskBlock:(nullable void ( ^ ) ( NSURLSession *session , NSURLSessionDataTask *dataTask , NSURLSessionDownloadTask *downloadTask ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a data task has become a download task. The block has no return value, and takes three arguments: the <a href="#//api/name/session">session</a>, the data task, and the download task it has become.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDataTaskDidReceiveDataBlock:" title="setDataTaskDidReceiveDataBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDataTaskDidReceiveDataBlock:">&ndash;&nbsp;setDataTaskDidReceiveDataBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a data task receives data, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:didReceiveData:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDataTaskDidReceiveDataBlock:(nullable void ( ^ ) ( NSURLSession *session , NSURLSessionDataTask *dataTask , NSData *data ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be called when an undetermined number of bytes have been downloaded from the server. This block has no return value and takes three arguments: the <a href="#//api/name/session">session</a>, the data task, and the data received. This block may be called multiple times, and will execute on the <a href="#//api/name/session">session</a> <a href="#//api/name/manager">manager</a> operation queue.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDataTaskWillCacheResponseBlock:" title="setDataTaskWillCacheResponseBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDataTaskWillCacheResponseBlock:">&ndash;&nbsp;setDataTaskWillCacheResponseBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed to determine the caching behavior of a data task, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSession:dataTask:willCacheResponse:completionHandler:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDataTaskWillCacheResponseBlock:(nullable NSCachedURLResponse *( ^ ) ( NSURLSession *session , NSURLSessionDataTask *dataTask , NSCachedURLResponse *proposedResponse ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed to determine the caching behavior of a data task. The block returns the response to cache, and takes three arguments: the <a href="#//api/name/session">session</a>, the data task, and the proposed cached URL response.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDidFinishEventsForBackgroundURLSessionBlock:" title="setDidFinishEventsForBackgroundURLSessionBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDidFinishEventsForBackgroundURLSessionBlock:">&ndash;&nbsp;setDidFinishEventsForBackgroundURLSessionBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed once all messages enqueued for a <a href="#//api/name/session">session</a> have been delivered, as handled by the <code>NSURLSessionDataDelegate</code> method <code>URLSessionDidFinishEventsForBackgroundURLSession:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDidFinishEventsForBackgroundURLSessionBlock:(nullable void ( ^ ) ( NSURLSession *session ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed once all messages enqueued for a <a href="#//api/name/session">session</a> have been delivered. The block has no return value and takes a single argument: the <a href="#//api/name/session">session</a>.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Setting Download Task Delegate Callbacks" name="task_Setting Download Task Delegate Callbacks"></a>
+						<h2 class="task-title">Setting Download Task Delegate Callbacks</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/setDownloadTaskDidFinishDownloadingBlock:" title="setDownloadTaskDidFinishDownloadingBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDownloadTaskDidFinishDownloadingBlock:">&ndash;&nbsp;setDownloadTaskDidFinishDownloadingBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a download task has completed a download, as handled by the <code>NSURLSessionDownloadDelegate</code> method <code>URLSession:downloadTask:didFinishDownloadingToURL:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDownloadTaskDidFinishDownloadingBlock:(nullable NSURL *_Nullable ( ^ ) ( NSURLSession *session , NSURLSessionDownloadTask *downloadTask , NSURL *location ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a download task has completed. The block returns the URL the download should be moved to, and takes three arguments: the <a href="#//api/name/session">session</a>, the download task, and the temporary location of the downloaded file. If the file <a href="#//api/name/manager">manager</a> encounters an error while attempting to move the temporary file to the destination, an <code>AFURLSessionDownloadTaskDidFailToMoveFileNotification</code> will be posted, with the download task as its object, and the user info of the error.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDownloadTaskDidWriteDataBlock:" title="setDownloadTaskDidWriteDataBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDownloadTaskDidWriteDataBlock:">&ndash;&nbsp;setDownloadTaskDidWriteDataBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed periodically to track download progress, as handled by the <code>NSURLSessionDownloadDelegate</code> method <code>URLSession:downloadTask:didWriteData:totalBytesWritten:totalBytesWritten:totalBytesExpectedToWrite:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDownloadTaskDidWriteDataBlock:(nullable void ( ^ ) ( NSURLSession *session , NSURLSessionDownloadTask *downloadTask , int64_t bytesWritten , int64_t totalBytesWritten , int64_t totalBytesExpectedToWrite ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be called when an undetermined number of bytes have been downloaded from the server. This block has no return value and takes five arguments: the <a href="#//api/name/session">session</a>, the download task, the number of bytes read since the last time the download progress block was called, the total bytes read, and the total bytes expected to be read during the request, as initially determined by the expected content size of the <code>NSHTTPURLResponse</code> object. This block may be called multiple times, and will execute on the <a href="#//api/name/session">session</a> <a href="#//api/name/manager">manager</a> operation queue.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setDownloadTaskDidResumeBlock:" title="setDownloadTaskDidResumeBlock:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setDownloadTaskDidResumeBlock:">&ndash;&nbsp;setDownloadTaskDidResumeBlock:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets a block to be executed when a download task has been resumed, as handled by the <code>NSURLSessionDownloadDelegate</code> method <code>URLSession:downloadTask:didResumeAtOffset:expectedTotalBytes:</code>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setDownloadTaskDidResumeBlock:(nullable void ( ^ ) ( NSURLSession *session , NSURLSessionDownloadTask *downloadTask , int64_t fileOffset , int64_t expectedTotalBytes ))<em>block</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>block</code></th>
+						<td><p>A block object to be executed when a download task has been resumed. The block has no return value and takes four arguments: the <a href="#//api/name/session">session</a>, the download task, the file offset of the resumed download, and the total number of bytes expected to be downloaded.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIRESTClientProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) id&lt;AIRESTClientDelegate&gt; delegate</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "請提供 app infra object";
+"ECSBaseURLNotFound" = "找不到文檔根 URL";
+"ECSCartEntryError" = "產品未加入購物車";
+"ECSCartError" = "尚未創建購物車";
+"ECSCommerceCartModificationError" = "數量不可少於零";
+"ECSCtnNotProvided" = "請提供 CTN";
+"ECSHybrisNotAvailable" = "所選國家/地區不提供 Philips 商店服務，只提供零售商模式";
+"ECSIllegalArgumentError" = "請輸入有效數據";
+"ECSInsufficientStockError" = "產品缺貨，無法運送";
+"ECSInvalidPaymentInfoError" = "請提供有效付款詳情";
+"ECSInvalidTokenError" = "技術故障（存取權杖無效）。請進行 Hybris Re-Auth";
+"ECSLocaleNotFound" = "請設定地域";
+"ECSNoSuchElementError" = "從伺服器獲取數據時出現錯誤";
+"ECSOAuthDetailError" = "請提供完整的 OAuth 詳情";
+"ECSOAuthNotCalled" = "獲得用戶授權後方可執行此操作";
+"ECSPIL_BAD_REQUEST" = "技術故障。請稍後重試";
+"ECSPIL_BAD_REQUEST_cartId" = "尚未創建購物車";
+"ECSPIL_INTEGRATION_TIMEOUT" = "技術故障。請稍後重試";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "技術故障（存取權杖無效）。請進行 Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "電郵地址無效。請檢查。";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "產品未加入購物車";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "請設定地域";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "請提供有效的 CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "請提供有效的數量";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "所選國家/地區不提供 Philips 商店服務，只提供零售商模式";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "數量必須大於零";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "請設定地域";
+"ECSPIL_MISSING_PARAMETER_language" = "請設定地域";
+"ECSPIL_MISSING_PARAMETER_productId" = "請提供 CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "所選國家/地區不提供 Philips 商店服務，只提供零售商模式";
+"ECSPIL_NEGATIVE_QUANTITY" = "數量不可少於零";
+"ECSPIL_NOT_ACCEPTABLE" = "技術故障。請稍後重試";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "技術故障。請稍後重試";
+"ECSPIL_NOT_FOUND_cartId" = "請提供有效的購物車 ID";
+"ECSPIL_NOT_FOUND_productId" = "請提供有效的 CTN";
+"ECSPIL_STOCK_EXCEPTION" = "產品缺貨，無法運送";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "技術故障。請稍後重試";
+"ECSPaymentAuthorizationError" = "付款授權並未成功";
+"ECSPropositionIdNotFound" = "請設定有效的 Proposition ID";
+"ECSSiteIdNotFound" = "所選國家/地區不提供 Philips 商店服務，只提供零售商模式";
+"ECSUnknownIdentifierError" = "無法獲取所請求的資源";
+"ECSUnsupportedDeliveryModeError" = "不支援所選的送貨模式";
+"ECSUnsupportedVoucherError" = "抱歉，無法兌換此優惠券";
+"ECSValidationError" = "數據驗證失敗";
+"ECSVoucherOperationError" = "抱歉，無法兌換此優惠券";
+"ECSaddressId" = "所給地址不存在或屬於另一個用戶";
+"ECScountryCodeNotGiven" = "請提供有效國家代碼";
+"ECScountryisocode" = "所選國家無效";
+"ECSfirstName" = "請注意以下字元不可使用：\\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "技術故障（客戶端憑證錯誤）。請重新登入";
+"ECSinvalid_grant" = "技術故障（Janrain 權杖無效）。請重新登入";
+"ECSlastName" = "請注意以下字元不可使用：\\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "請提供有效訂單";
+"ECSphone1" = "所選電話號碼無效";
+"ECSphone2" = "所選電話號碼無效";
+"ECSpostUrl" = "訂單已處於已付款/完成狀態";
+"ECSpostalCode" = "所選郵政編碼無效";
+"ECSregionisocode" = "所選地區無效";
+"ECSsessionCart" = "請在提交訂單前選擇您的送貨地址、送貨模式及付款方式";
+"ECSsomethingWentWrong" = "技術故障。請稍後重試";
+"ECSunsupported_grant_type" = "技術故障（授權類型不受支援）。請重新登入";

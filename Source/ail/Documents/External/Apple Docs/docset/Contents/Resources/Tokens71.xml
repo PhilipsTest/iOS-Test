@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIServiceDiscoveryProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIServiceDiscoveryProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="71"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getHomeCountry:</TokenIdentifier>
+			<Abstract type="html">Returns a two character country code (ISO 3166-1)
+When not yet set, the country code is automatically determined from the SIM card&apos;s country of registration.
+If no SIM card is available/accessible; then geo-IP is used to determine the country.
+Once determined the country is stored persistently and the stored country will be returned.
+Using setHomeCountry() it is possible to change the stored home country.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getHomeCountry:(void ( ^ ) ( NSString *countryCode , NSString *sourceType , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronously returns in main queue the home country code according to ISO 3166-1, source indicates how the returned country code
+was determined;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getHomeCountry:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getHomeCountry</TokenIdentifier>
+			<Abstract type="html">synchronous method to return the home country.
+If the home country is not set the function returns null</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getHomeCountry</Declaration>
+			
+			<ReturnValue><Abstract type="html">the saved home country</Abstract></ReturnValue>
+			<Anchor>//api/name/getHomeCountry</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/setHomeCountry:</TokenIdentifier>
+			<Abstract type="html">Persistently store Home country, overwrites any existing country value.
+Changing the country automatically clears the cached service list and triggers a refresh.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setHomeCountry:(NSString *)countryCode</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>countryCode</Name>
+					<Abstract type="html">country code to persistently store, code must be according to ISO 3166-1</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setHomeCountry:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServiceUrlWithLanguagePreference:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns the URL for a specific service with a preference for the current language.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceUrlWithLanguagePreference:(NSString *)serviceId withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">name of the service for which the URL is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:</TokenIdentifier>
+			<Abstract type="html">Returns the URL for a specific service with a preference for the current language.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceUrlWithLanguagePreference:(NSString *)serviceId withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler replacement:(NSDictionary *)replacement</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">name of the service for which the URL is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>replacement</Name>
+					<Abstract type="html">lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServiceUrlWithCountryPreference:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns the URL for a specific service with a preference for the current home country.we first select the URL set with the best matching locale before looking for the requested service ID in this set.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceUrlWithCountryPreference:(NSString *)serviceId withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">name of the service for which the URL is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServiceUrlWithCountryPreference:withCompletionHandler:replacement:</TokenIdentifier>
+			<Abstract type="html">Returns the URL for a specific service with a preference for the current home country.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceUrlWithCountryPreference:(NSString *)serviceId withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler replacement:(NSDictionary *)replacement</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">name of the service for which the URL is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>replacement</Name>
+					<Abstract type="html">lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:replacement:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServicesWithLanguagePreference:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns the URL and locale for a specific services with a preference for the current language.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServicesWithLanguagePreference:(NSArray *)serviceIds withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">array of service name for which the URL and locale is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess the  dictionary which containing key as service name and value as AISDService object which have the properties url and locale of the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServicesWithLanguagePreference:withCompletionHandler:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServicesWithLanguagePreference:withCompletionHandler:replacement:</TokenIdentifier>
+			<Abstract type="html">Returns the URLs + locales for a set of services with a preference for the current language.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServicesWithLanguagePreference:(NSArray *)serviceIds withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))completionHandler replacement:(NSDictionary *)replacement</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceIds</Name>
+					<Abstract type="html">list of service names for which the URL + locale are to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronously returns in main queue using onSuccess a map containing the requested service names (key)
+and their URL + locale (value), the value will be null if the service is unknown;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>replacement</Name>
+					<Abstract type="html">lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServicesWithLanguagePreference:withCompletionHandler:replacement:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServicesWithCountryPreference:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns the service url and locale for a specific services with a preference for the current home country.we first select the URLs set with the best matching locale before looking for the requested service ID in this set.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServicesWithCountryPreference:(NSArray *)serviceIds withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceIds</Name>
+					<Abstract type="html">array of service names for which the URLs and locale is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess the  dictionary which containing key as service name and value as AISDService object which have the properties url and locale of the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServicesWithCountryPreference:withCompletionHandler:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServicesWithCountryPreference:withCompletionHandler:replacement:</TokenIdentifier>
+			<Abstract type="html">Returns the URLs + locales for a set of services with a preference for the current home country.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServicesWithCountryPreference:(NSArray *)serviceIds withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))completionHandler replacement:(NSDictionary *)replacement</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceIds</Name>
+					<Abstract type="html">list of service names for which the URL + locale are to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronously returns in main queue using onSuccess a map containing the requested service names (key)
+and their URL + locale (value), the value will be null if the service is unknown;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter><Parameter>
+					<Name>replacement</Name>
+					<Abstract type="html">lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServicesWithCountryPreference:withCompletionHandler:replacement:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServiceLocaleWithLanguagePreference:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns the locale to be used for a specific service with a preference for the current language.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceLocaleWithLanguagePreference:(NSString *)serviceId withCompletionHandler:(void ( ^ ) ( NSString *serviceLocale , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">name of the service for which the URL is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess the recommended locale for the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServiceLocaleWithLanguagePreference:withCompletionHandler:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/getServiceLocaleWithCountryPreference:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Returns the locale to be used for a specific service with a preference for the current home country.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceLocaleWithCountryPreference:(NSString *)serviceId withCompletionHandler:(void ( ^ ) ( NSString *serviceLocale , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">name of the service for which the URL is to be retrieved</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess the recommended locale for the requested service;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getServiceLocaleWithCountryPreference:withCompletionHandler:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/refresh:</TokenIdentifier>
+			<Abstract type="html">Start negotiation with cloud service for the list of service for this application. List is based on sector, microsite, home country, and language.
+The retrieved list is cached internally (not persistently).
+The cached list is automatically refreshed every 24hours.
+A refresh is only required, to ensure the very first service request after app start can be processed from the cache quickly, or when a previous sync failed.</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)refresh:(void ( ^ ) ( NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">is a block which asynchronously returns in main queue using onSuccess when retrieval was successful;
+or returns onError the error code when retrieval failed.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refresh:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIServiceDiscoveryProtocol/applyURLParameters:parameters:</TokenIdentifier>
+			<Abstract type="html">Replaces all &apos;%key%&apos; placeholders in the given URL, where the key is the key in the replacement table and the placeholder is replaced with the value of the entry in the replacement table</Abstract>
+			<DeclaredIn>AIServiceDiscoveryProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)applyURLParameters:(NSString *)URLString parameters:(NSDictionary *)map</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">url in which to search for the key strings given by replacement</Abstract>
+				</Parameter><Parameter>
+					<Name>replacement</Name>
+					<Abstract type="html">mapping of placeholder string (key) to the replacement string (value)</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">input url with all placeholders keys replaced with the respective value in the replacement table</Abstract></ReturnValue>
+			<Anchor>//api/name/applyURLParameters:parameters:</Anchor>
+            <NodeRef refid="71"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

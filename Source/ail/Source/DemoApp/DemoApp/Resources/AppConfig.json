@@ -1,0 +1,53 @@
+{
+    "appinfra": {
+        "appidentity.micrositeId": 77001,
+        "appidentity.sector": "b2c",
+        "appidentity.appState": "staging",
+        "appidentity.serviceDiscoveryEnvironment": "PRODUCTION",
+        "restclient.cacheSizeInKB": 51200,
+        "tagging.sensitiveData": ["language"],
+        "abtest.precache": ["testStart", "testUpdate", "philipsmobileappabtest1content","ReceiveMarketingOptIn"],
+        "servicediscovery.platformMicrositeId": 70000,
+        "servicediscovery.platformEnvironment": "production",
+        "appconfig.cloudServiceId": "appinfra.appconfigdownload",
+        "languagePack.serviceId": "appinfra.languagepack",
+        "servicediscovery.propositionEnabled": true,
+        "servicediscovery.countryMapping":{"LU":"BE","MO":"HK","BY":"RU"},
+        "logging.releaseConfig": {
+            "fileName": "AppInfraLog",
+            "numberOfFiles": 5,
+            "fileSizeInBytes": 50000,
+            "logLevel": "Off",
+            "fileLogEnabled": false,
+            "consoleLogEnabled": false,
+            "componentLevelLogEnabled": false,
+            "componentIds": [],
+            "cloudLogEnabled": true,
+            "cloudBatchLimit": 10
+        },
+        "logging.debugConfig": {
+            "fileName": "AppInfraLog",
+            "numberOfFiles": 5,
+            "fileSizeInBytes": 50000,
+            "logLevel": "error",
+            "fileLogEnabled": true,
+            "consoleLogEnabled": true,
+            "componentLevelLogEnabled": true,
+            "componentIds": ["comp1", "comp2", "ail"],
+            "cloudLogEnabled": true,
+            "cloudBatchLimit": 5
+        },
+        "appUpdate.serviceId.test": "appinfra.appupdate",
+        "appUpdate.serviceId": "appinfra.testing.version",
+        "appUpdate.autoRefresh": true,
+        "abtest.mapping":{
+            "usr.login":"ReceiveMarketingOptIn"
+        },
+        "enableAdobeLogs":false
+    },
+    "hsdp":{
+    "appInfra.cloudLoggingSecretKey":"96a5cd559d9299e4632faae2320777347d0e35acd77e3c1e9edcf244a30443ad3fcefdbb62806f15bb758c5903a0d7be635e0240cc671261f14cb37cc2ef1153",
+        "appInfra.cloudLoggingSharedKey": "YMV5QLdKOW9vlQ1fgG0txw8Tdglfe2ePIFwkub68eN8=",
+        "appInfra.cloudLoggingProductKey":"a074cf36-ab05-4ad7-9fb8-cb315087c727"
+    }
+}

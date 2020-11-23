@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		54BB6BC81EBB4FEF00E73250 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BB6BC71EBB4FEF00E73250 /* AppDelegate.m */; };
+		54BB6BCB1EBB4FEF00E73250 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BB6BCA1EBB4FEF00E73250 /* main.m */; };
+		54BB6BCE1EBB4FEF00E73250 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BB6BCD1EBB4FEF00E73250 /* ViewController.m */; };
+		54BB6BD01EBB4FEF00E73250 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54BB6BCF1EBB4FEF00E73250 /* Assets.xcassets */; };
+		54BB6BD31EBB4FEF00E73250 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54BB6BD11EBB4FEF00E73250 /* Main.storyboard */; };
+		54BB6BDE1EBB4FEF00E73250 /* KeyManagerToolTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 54BB6BDD1EBB4FEF00E73250 /* KeyManagerToolTests.m */; };
+		CEDC67091F5FF46600A1A159 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = CEDC67081F5FF46600A1A159 /* CHCSVParser.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		54BB6BDA1EBB4FEF00E73250 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54BB6BBB1EBB4FEF00E73250 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54BB6BC21EBB4FEF00E73250;
+			remoteInfo = KeyManagerTool;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		54BB6BC31EBB4FEF00E73250 /* KeyManagerTool.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyManagerTool.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BB6BC61EBB4FEF00E73250 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		54BB6BC71EBB4FEF00E73250 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		54BB6BCA1EBB4FEF00E73250 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		54BB6BCC1EBB4FEF00E73250 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		54BB6BCD1EBB4FEF00E73250 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		54BB6BCF1EBB4FEF00E73250 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		54BB6BD21EBB4FEF00E73250 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		54BB6BD41EBB4FEF00E73250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		54BB6BD91EBB4FEF00E73250 /* KeyManagerToolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyManagerToolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BB6BDD1EBB4FEF00E73250 /* KeyManagerToolTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KeyManagerToolTests.m; sourceTree = "<group>"; };
+		54BB6BDF1EBB4FEF00E73250 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEDC67071F5FF46600A1A159 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		CEDC67081F5FF46600A1A159 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		CEF5AFB61F1F3652006D908D /* KeyManagerTool.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyManagerTool.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		54BB6BC01EBB4FEF00E73250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BB6BD61EBB4FEF00E73250 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		54BB6BBA1EBB4FEF00E73250 = {
+			isa = PBXGroup;
+			children = (
+				54BB6BC51EBB4FEF00E73250 /* KeyManagerTool */,
+				54BB6BDC1EBB4FEF00E73250 /* KeyManagerToolTests */,
+				54BB6BC41EBB4FEF00E73250 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		54BB6BC41EBB4FEF00E73250 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				54BB6BC31EBB4FEF00E73250 /* KeyManagerTool.app */,
+				54BB6BD91EBB4FEF00E73250 /* KeyManagerToolTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		54BB6BC51EBB4FEF00E73250 /* KeyManagerTool */ = {
+			isa = PBXGroup;
+			children = (
+				CEF5AFB61F1F3652006D908D /* KeyManagerTool.entitlements */,
+				54BB6BC61EBB4FEF00E73250 /* AppDelegate.h */,
+				54BB6BC71EBB4FEF00E73250 /* AppDelegate.m */,
+				54BB6BCC1EBB4FEF00E73250 /* ViewController.h */,
+				54BB6BCD1EBB4FEF00E73250 /* ViewController.m */,
+				CEDC67061F5FF44E00A1A159 /* Third party */,
+				54BB6BCF1EBB4FEF00E73250 /* Assets.xcassets */,
+				54BB6BD11EBB4FEF00E73250 /* Main.storyboard */,
+				54BB6BD41EBB4FEF00E73250 /* Info.plist */,
+				54BB6BC91EBB4FEF00E73250 /* Supporting Files */,
+			);
+			path = KeyManagerTool;
+			sourceTree = "<group>";
+		};
+		54BB6BC91EBB4FEF00E73250 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				54BB6BCA1EBB4FEF00E73250 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54BB6BDC1EBB4FEF00E73250 /* KeyManagerToolTests */ = {
+			isa = PBXGroup;
+			children = (
+				54BB6BDD1EBB4FEF00E73250 /* KeyManagerToolTests.m */,
+				54BB6BDF1EBB4FEF00E73250 /* Info.plist */,
+			);
+			path = KeyManagerToolTests;
+			sourceTree = "<group>";
+		};
+		CEDC67061F5FF44E00A1A159 /* Third party */ = {
+			isa = PBXGroup;
+			children = (
+				CEDC67071F5FF46600A1A159 /* CHCSVParser.h */,
+				CEDC67081F5FF46600A1A159 /* CHCSVParser.m */,
+			);
+			path = "Third party";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		54BB6BC21EBB4FEF00E73250 /* KeyManagerTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BB6BE21EBB4FEF00E73250 /* Build configuration list for PBXNativeTarget "KeyManagerTool" */;
+			buildPhases = (
+				54BB6BBF1EBB4FEF00E73250 /* Sources */,
+				54BB6BC01EBB4FEF00E73250 /* Frameworks */,
+				54BB6BC11EBB4FEF00E73250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyManagerTool;
+			productName = KeyManagerTool;
+			productReference = 54BB6BC31EBB4FEF00E73250 /* KeyManagerTool.app */;
+			productType = "com.apple.product-type.application";
+		};
+		54BB6BD81EBB4FEF00E73250 /* KeyManagerToolTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54BB6BE51EBB4FEF00E73250 /* Build configuration list for PBXNativeTarget "KeyManagerToolTests" */;
+			buildPhases = (
+				54BB6BD51EBB4FEF00E73250 /* Sources */,
+				54BB6BD61EBB4FEF00E73250 /* Frameworks */,
+				54BB6BD71EBB4FEF00E73250 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54BB6BDB1EBB4FEF00E73250 /* PBXTargetDependency */,
+			);
+			name = KeyManagerToolTests;
+			productName = KeyManagerToolTests;
+			productReference = 54BB6BD91EBB4FEF00E73250 /* KeyManagerToolTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		54BB6BBB1EBB4FEF00E73250 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					54BB6BC21EBB4FEF00E73250 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+					54BB6BD81EBB4FEF00E73250 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 54BB6BC21EBB4FEF00E73250;
+					};
+				};
+			};
+			buildConfigurationList = 54BB6BBE1EBB4FEF00E73250 /* Build configuration list for PBXProject "KeyManagerTool" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 54BB6BBA1EBB4FEF00E73250;
+			productRefGroup = 54BB6BC41EBB4FEF00E73250 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				54BB6BC21EBB4FEF00E73250 /* KeyManagerTool */,
+				54BB6BD81EBB4FEF00E73250 /* KeyManagerToolTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		54BB6BC11EBB4FEF00E73250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BB6BD01EBB4FEF00E73250 /* Assets.xcassets in Resources */,
+				54BB6BD31EBB4FEF00E73250 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BB6BD71EBB4FEF00E73250 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		54BB6BBF1EBB4FEF00E73250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEDC67091F5FF46600A1A159 /* CHCSVParser.m in Sources */,
+				54BB6BCE1EBB4FEF00E73250 /* ViewController.m in Sources */,
+				54BB6BCB1EBB4FEF00E73250 /* main.m in Sources */,
+				54BB6BC81EBB4FEF00E73250 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54BB6BD51EBB4FEF00E73250 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54BB6BDE1EBB4FEF00E73250 /* KeyManagerToolTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54BB6BDB1EBB4FEF00E73250 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54BB6BC21EBB4FEF00E73250 /* KeyManagerTool */;
+			targetProxy = 54BB6BDA1EBB4FEF00E73250 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		54BB6BD11EBB4FEF00E73250 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				54BB6BD21EBB4FEF00E73250 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		54BB6BE01EBB4FEF00E73250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		54BB6BE11EBB4FEF00E73250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		54BB6BE31EBB4FEF00E73250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyManagerTool/KeyManagerTool.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyManagerTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cdpp.keymanagertool.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54BB6BE41EBB4FEF00E73250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = KeyManagerTool/KeyManagerTool.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyManagerTool/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cdpp.keymanagertool.dev;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54BB6BE61EBB4FEF00E73250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyManagerToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hashim.test.KeyManagerToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyManagerTool.app/Contents/MacOS/KeyManagerTool";
+			};
+			name = Debug;
+		};
+		54BB6BE71EBB4FEF00E73250 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = KeyManagerToolTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hashim.test.KeyManagerToolTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KeyManagerTool.app/Contents/MacOS/KeyManagerTool";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		54BB6BBE1EBB4FEF00E73250 /* Build configuration list for PBXProject "KeyManagerTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BB6BE01EBB4FEF00E73250 /* Debug */,
+				54BB6BE11EBB4FEF00E73250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BB6BE21EBB4FEF00E73250 /* Build configuration list for PBXNativeTarget "KeyManagerTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BB6BE31EBB4FEF00E73250 /* Debug */,
+				54BB6BE41EBB4FEF00E73250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54BB6BE51EBB4FEF00E73250 /* Build configuration list for PBXNativeTarget "KeyManagerToolTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54BB6BE61EBB4FEF00E73250 /* Debug */,
+				54BB6BE71EBB4FEF00E73250 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 54BB6BBB1EBB4FEF00E73250 /* Project object */;
+}

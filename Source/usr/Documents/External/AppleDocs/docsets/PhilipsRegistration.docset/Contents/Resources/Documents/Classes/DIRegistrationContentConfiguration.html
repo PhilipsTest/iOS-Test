@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DIRegistrationContentConfiguration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DIRegistrationContentConfiguration" class="dashAnchor"></a>
+    <a title="DIRegistrationContentConfiguration Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PhilipsRegistration Docs</a> (87% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PhilipsRegistration Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DIRegistrationContentConfiguration Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DICOPPAExtension.html">DICOPPAExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIConsumerInterest.html">DIConsumerInterest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationContentConfiguration.html">DIRegistrationContentConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationFlowConfiguration.html">DIRegistrationFlowConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationVersion.html">DIRegistrationVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIUser.html">DIUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URConsentProvider.html">URConsentProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URDependencies">URDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URInterface.html">URInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLaunchInput.html">URLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URMarketingConsentHandler">URMarketingConsentHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DICOPPASTATUS.html">DICOPPASTATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RegistrationCompletionErrorCode.html">RegistrationCompletionErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLoggedInScreen.html">URLoggedInScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URPriorityFunction.html">URPriorityFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserGender.html">UserGender</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DIRegistrationConfigurationDelegate.html">DIRegistrationConfigurationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DIRegistrationContentConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DIRegistrationContentConfiguration</span> <span class="p">:</span> <span class="nc">NSObject</span>
+
+<span class="cm">/**
+ *  Set the title of 'why the user needs to register'. To be displayed at screen UR-1.(Please refer to the flow document for more info)
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">valueForRegistrationTitle</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the description of 'why the user needs to register'. To be displayed at screen UR-1.(Please refer to the flow document for more info)
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">valueForRegistrationDescription</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the description why the user needs to verify the account. To be displayed at screen UR-2c.(Please refer to the flow document for more info)
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">valueForEmailVerification</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the title of the Opt-In Screen
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInTitleText</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the quessionary text of the Opt-In Screen
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInQuessionaryText</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the description text of the Opt-In Screen
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInDetailDescription</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the banner text of the Opt-In Screen
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInBannerText</span><span class="p">;</span>
+
+<span class="cm">/**
+ *  Set the Navigation Bar title of the Opt-In Screen
+ *
+ *  @since 1.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInBarTitleText</span><span class="p">;</span>
+
+<span class="cm">/**
+ * Set the image of the opt-In screen
+ * If not set then no image will be displayed in the optin screen
+ *
+ * @since 1803.0.0
+ */</span>
+<span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">optinImage</span><span class="p">;</span>
+
+<span class="k">@end</span></code></pre>
+
+                </div>
+              </div>
+            <p>Undocumented</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)valueForRegistrationTitle"></a>
+                    <a name="//apple_ref/objc/Property/valueForRegistrationTitle" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)valueForRegistrationTitle">valueForRegistrationTitle</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the title of &lsquo;why the user needs to register&rsquo;. To be displayed at screen UR-1.(Please refer to the flow document for more info)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">valueForRegistrationTitle</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">valueForRegistrationTitle</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)valueForRegistrationDescription"></a>
+                    <a name="//apple_ref/objc/Property/valueForRegistrationDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)valueForRegistrationDescription">valueForRegistrationDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the description of &lsquo;why the user needs to register&rsquo;. To be displayed at screen UR-1.(Please refer to the flow document for more info)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">NSAttributedString</span> <span class="o">*</span><span class="n">valueForRegistrationDescription</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">valueForRegistrationDescription</span><span class="p">:</span> <span class="kt">NSAttributedString</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)valueForEmailVerification"></a>
+                    <a name="//apple_ref/objc/Property/valueForEmailVerification" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)valueForEmailVerification">valueForEmailVerification</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the description why the user needs to verify the account. To be displayed at screen UR-2c.(Please refer to the flow document for more info)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">valueForEmailVerification</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">valueForEmailVerification</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)optInTitleText"></a>
+                    <a name="//apple_ref/objc/Property/optInTitleText" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)optInTitleText">optInTitleText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the title of the Opt-In Screen</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInTitleText</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">optInTitleText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)optInQuessionaryText"></a>
+                    <a name="//apple_ref/objc/Property/optInQuessionaryText" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)optInQuessionaryText">optInQuessionaryText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the quessionary text of the Opt-In Screen</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInQuessionaryText</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">optInQuessionaryText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)optInDetailDescription"></a>
+                    <a name="//apple_ref/objc/Property/optInDetailDescription" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)optInDetailDescription">optInDetailDescription</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the description text of the Opt-In Screen</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInDetailDescription</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">optInDetailDescription</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)optInBannerText"></a>
+                    <a name="//apple_ref/objc/Property/optInBannerText" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)optInBannerText">optInBannerText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the banner text of the Opt-In Screen</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInBannerText</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">optInBannerText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)optInBarTitleText"></a>
+                    <a name="//apple_ref/objc/Property/optInBarTitleText" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)optInBarTitleText">optInBarTitleText</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the Navigation Bar title of the Opt-In Screen</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readwrite</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">optInBarTitleText</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">optInBarTitleText</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationContentConfiguration(py)optinImage"></a>
+                    <a name="//apple_ref/objc/Property/optinImage" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationContentConfiguration(py)optinImage">optinImage</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the image of the opt-In screen
+ If not set then no image will be displayed in the optin screen</p>
+
+<p>@since 1803.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">nonatomic</span><span class="p">,</span> <span class="n">strong</span><span class="p">)</span> <span class="n">UIImage</span> <span class="o">*</span><span class="n">optinImage</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">optinImage</span><span class="p">:</span> <span class="kt">NSImage</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

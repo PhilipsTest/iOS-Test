@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Lūdzu, norādiet app infra object";
+"ECSBaseURLNotFound" = "Pamata vietrādis URL nav atrasts";
+"ECSCartEntryError" = "Izstrādājums nav ievietots grozā";
+"ECSCartError" = "Grozs vēl nav izveidots";
+"ECSCommerceCartModificationError" = "Daudzums nedrīkst būt mazāks par nulli";
+"ECSCtnNotProvided" = "Lūdzu, norādiet CTN";
+"ECSHybrisNotAvailable" = "Atlasītajā valstī nav pieejams Philips veikals, tajā ir pieejams tikai mazumtirgotāja režīms";
+"ECSIllegalArgumentError" = "Lūdzu, norādiet derīgus ievades datus";
+"ECSInsufficientStockError" = "Izstrādājumu nav iespējams nosūtīt, jo tā vairs nav noliktavā";
+"ECSInvalidPaymentInfoError" = "Lūdzu, norādiet derīgu maksājuma informāciju";
+"ECSInvalidTokenError" = "Radusies tehniska kļūme (nederīgs piekļuves marķieris). Lūdzu, veiciet Hybris Re-Auth";
+"ECSLocaleNotFound" = "Lūdzu, iestatiet lokalizāciju";
+"ECSNoSuchElementError" = "Veicot datu ieguvi no servera, radusies kļūda";
+"ECSOAuthDetailError" = "Lūdzu, norādiet pilnīgu OAuth informāciju";
+"ECSOAuthNotCalled" = "Šīs darbības veikšanai nepieciešama lietotāja autorizācija";
+"ECSPIL_BAD_REQUEST" = "Radusies tehniska kļūme. Lūdzu, vēlāk mēģiniet vēlreiz";
+"ECSPIL_BAD_REQUEST_cartId" = "Grozs vēl nav izveidots";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Radusies tehniska kļūme. Lūdzu, vēlāk mēģiniet vēlreiz";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Radusies tehniska kļūme (nederīgs piekļuves marķieris). Lūdzu, veiciet Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Epasta adrese nav derīga. Lūdzu, pārbaudiet.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Izstrādājums nav ievietots grozā";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Lūdzu, iestatiet lokalizāciju";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Lūdzu, norādiet derīgu CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Lūdzu, norādiet derīgu daudzumu";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Atlasītajā valstī nav pieejams Philips veikals, tajā ir pieejams tikai mazumtirgotāja režīms";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Daudzumam jābūt lielākam par nulli";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Lūdzu, iestatiet lokalizāciju";
+"ECSPIL_MISSING_PARAMETER_language" = "Lūdzu, iestatiet lokalizāciju";
+"ECSPIL_MISSING_PARAMETER_productId" = "Lūdzu, norādiet CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Atlasītajā valstī nav pieejams Philips veikals, tajā ir pieejams tikai mazumtirgotāja režīms";
+"ECSPIL_NEGATIVE_QUANTITY" = "Daudzums nedrīkst būt mazāks par nulli";
+"ECSPIL_NOT_ACCEPTABLE" = "Radusies tehniska kļūme. Lūdzu, vēlāk mēģiniet vēlreiz";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Radusies tehniska kļūme. Lūdzu, vēlāk mēģiniet vēlreiz";
+"ECSPIL_NOT_FOUND_cartId" = "Lūdzu, norādiet derīgu groza ID";
+"ECSPIL_NOT_FOUND_productId" = "Lūdzu, norādiet derīgu CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Izstrādājumu nav iespējams nosūtīt, jo tā vairs nav noliktavā";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Radusies tehniska kļūme. Lūdzu, vēlāk mēģiniet vēlreiz";
+"ECSPaymentAuthorizationError" = "Maksājuma autorizācija neizdevās";
+"ECSPropositionIdNotFound" = "Lūdzu, iestatiet derīgu Proposition ID";
+"ECSSiteIdNotFound" = "Atlasītajā valstī nav pieejams Philips veikals, tajā ir pieejams tikai mazumtirgotāja režīms";
+"ECSUnknownIdentifierError" = "Pieprasītais resurss nav pieejams";
+"ECSUnsupportedDeliveryModeError" = "Atlasītais piegādes veids netiek atbalstīts";
+"ECSUnsupportedVoucherError" = "Diemžēl šo kuponu nav iespējams izpirkt";
+"ECSValidationError" = "Datu validācija neizdevās";
+"ECSVoucherOperationError" = "Diemžēl šo kuponu nav iespējams izpirkt";
+"ECSaddressId" = "Norādītā adrese nepastāv vai pieder citam lietotājam";
+"ECScountryCodeNotGiven" = "Lūdzu, norādiet derīgu valsts kodu";
+"ECScountryisocode" = "Atlasītā valsts nav derīga";
+"ECSfirstName" = "Lūdzu, ņemiet vērā, ka šādas rakstzīmes nav atļautas: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Radusies tehniska kļūme (nederīgi klienta akreditācijas dati). Lūdzu, piesakieties vēlreiz";
+"ECSinvalid_grant" = "Radusies tehniska kļūme (nederīgs Janrain marķieris). Lūdzu, piesakieties vēlreiz";
+"ECSlastName" = "Lūdzu, ņemiet vērā, ka šādas rakstzīmes nav atļautas: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Lūdzu, norādiet derīgu pasūtījumu";
+"ECSphone1" = "Atlasītais tālruņa numurs nav derīgs";
+"ECSphone2" = "Atlasītais tālruņa numurs nav derīgs";
+"ECSpostUrl" = "Pasūtījums jau ir apmaksāts/pabeigts";
+"ECSpostalCode" = "Atlasītais pasta indekss nav derīgs";
+"ECSregionisocode" = "Atlasītais reģions nav derīgs";
+"ECSsessionCart" = "Lūdzu, pirms pasūtījuma iesniegšanas atlasiet savu piegādes adresi, piegādes veidu un apmaksas metodi";
+"ECSsomethingWentWrong" = "Radusies tehniska kļūme. Lūdzu, vēlāk mēģiniet vēlreiz";
+"ECSunsupported_grant_type" = "Radusies tehniska kļūme (neatbalstīts piešķīruma tips). Lūdzu, piesakieties vēlreiz";

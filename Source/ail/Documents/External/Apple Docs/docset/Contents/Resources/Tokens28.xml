@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIRESTClientInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIRESTClientInterface</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.h</DeclaredIn>
+            
+			
+			<NodeRef refid="28"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/setDelegate:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AIRESTClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AIRESTClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIRESTClientInterface/delegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AIRESTClientDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAppInfra:(AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/manager</TokenIdentifier>
+			<Abstract type="html">Creates and returns an AFHTTPSessionManager object.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)manager</Declaration>
+			
+			
+			<Anchor>//api/name/manager</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/createInstanceWithBaseURL:</TokenIdentifier>
+			<Abstract type="html">Initializes an AIRESTClientProtocol object with the specified base URL.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithBaseURL:(nullable NSURL *)url</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The base URL for the HTTP client.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly-initialized HTTP client</Abstract></ReturnValue>
+			<Anchor>//api/name/createInstanceWithBaseURL:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/createInstanceWithBaseURL:sessionConfiguration:</TokenIdentifier>
+			<Abstract type="html">Initializes an AIRESTClientProtocol object with the specified base URL.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithBaseURL:(nullable NSURL *)url sessionConfiguration:(nullable NSURLSessionConfiguration *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The base URL for the HTTP client.</Abstract>
+				</Parameter><Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">The configuration used to create the managed session.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly-initialized HTTP client</Abstract></ReturnValue>
+			<Anchor>//api/name/createInstanceWithBaseURL:sessionConfiguration:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/createInstanceWithSessionConfiguration:</TokenIdentifier>
+			<Abstract type="html">Creates and returns a manager for a session created with the specified configuration. This is the designated initializer.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithSessionConfiguration:(NSURLSessionConfiguration *)configuration</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">The configuration used to create the managed session.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">A manager for a newly-created session.</Abstract></ReturnValue>
+			<Anchor>//api/name/createInstanceWithSessionConfiguration:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:</TokenIdentifier>
+			<Abstract type="html">Initializes an AIRESTClientProtocol object with the specified base URL.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)createInstanceWithBaseURL:(nullable NSURL *)url sessionConfiguration:(nullable NSURLSessionConfiguration *)configuration withCachePolicy:(AIRESTURLRequestCachePolicy)cachePolicy</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>url</Name>
+					<Abstract type="html">The base URL for the HTTP client.</Abstract>
+				</Parameter><Parameter>
+					<Name>configuration</Name>
+					<Abstract type="html">The configuration used to create the managed session.</Abstract>
+				</Parameter><Parameter>
+					<Name>cachePolicy</Name>
+					<Abstract type="html">its an enum of the cache policies</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">The newly-initialized HTTP client</Abstract></ReturnValue>
+			<Anchor>//api/name/createInstanceWithBaseURL:sessionConfiguration:withCachePolicy:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/getNetworkReachabilityStatus</TokenIdentifier>
+			<Abstract type="html">Used to check the internet availability
+possible return values are
+AIRESTClientReachabilityStatusNotReachable ,
+AIRESTClientReachabilityStatusReachableViaWWAN,
+AIRESTClientReachabilityStatusReachableViaWiFi,</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (AIRESTClientReachabilityStatus)getNetworkReachabilityStatus</Declaration>
+			
+			
+			<Anchor>//api/name/getNetworkReachabilityStatus</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/isInternetReachable</TokenIdentifier>
+			<Abstract type="html">  Used to check the internet availability Which returns the bool</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isInternetReachable</Declaration>
+			
+			
+			<Anchor>//api/name/isInternetReachable</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/startNotifier</TokenIdentifier>
+			<Abstract type="html">Start listening for reachability notifications on the current run loop.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)startNotifier</Declaration>
+			
+			
+			<Anchor>//api/name/startNotifier</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/stopNotifier</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)stopNotifier</Declaration>
+			
+			
+			<Anchor>//api/name/stopNotifier</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/encryptResponseForCaching:request:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSCachedURLResponse *)encryptResponseForCaching:(NSCachedURLResponse *)proposedResponse request:(NSURLRequest *)request</Declaration>
+			
+			
+			<Anchor>//api/name/encryptResponseForCaching:request:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/isValidUrl:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValidUrl:(NSString *)urlString</Declaration>
+			
+			
+			<Anchor>//api/name/isValidUrl:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/createCompleteURL:pathComponent:error:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)createCompleteURL:(NSString *)serviceURL pathComponent:(nullable NSString *)pathComponent error:(NSError *)error completion:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/createCompleteURL:pathComponent:error:completion:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/serviceURLWithServiceID:preference:pathComponent:completion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)serviceURLWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent completion:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/serviceURLWithServiceID:preference:pathComponent:completion:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/GET:parameters:progress:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a GET request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (NSURLSessionDataTask *)GET:(NSString *)URLString parameters:(id)parameters progress:(void ( ^ ) ( NSProgress *_Nonnull ))downloadProgress success:(void ( ^ ) ( NSURLSessionDataTask *_Nonnull , id _Nullable ))success failure:(void ( ^ ) ( NSURLSessionDataTask *_Nullable , NSError *_Nonnull ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadProgress</Name>
+					<Abstract type="html">A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/GET:parameters:progress:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a GET request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)GETWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))serviceURLCompletion parameters:(nullable id)parameters progress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))downloadProgress success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The serviceID used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">AIRESTServiceIDPreference prefrence</Abstract>
+				</Parameter><Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to be appended to service URL</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceURLCompletion</Name>
+					<Abstract type="html">The completion block with task object will be called when the service discovery fetches URL from server.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadProgress</Name>
+					<Abstract type="html">A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/GETWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/HEAD:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a HEAD request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable NSURLSessionDataTask *)HEAD:(NSString *)URLString parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/HEAD:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a HEAD request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)HEADWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))serviceURLCompletion parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The serviceID used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">AIRESTServiceIDPreference prefrence</Abstract>
+				</Parameter><Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to be appended to service URL</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceURLCompletion</Name>
+					<Abstract type="html">The completion block with task object will be called when the service discovery fetches URL from server.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes a single arguments: the data task.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/HEADWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/POST:parameters:progress:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a POST request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable NSURLSessionDataTask *)POST:(NSString *)URLString parameters:(nullable id)parameters progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))uploadProgress success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgress</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/POST:parameters:progress:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a POST request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)POSTWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))serviceURLCompletion parameters:(nullable id)parameters progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))uploadProgress success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The serviceID used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">AIRESTServiceIDPreference prefrence</Abstract>
+				</Parameter><Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to be appended to service URL</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceURLCompletion</Name>
+					<Abstract type="html">The completion block with task object will be called when the service discovery fetches URL from server.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgress</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/POSTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:progress:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/POST:parameters:constructingBodyWithBlock:progress:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a multipart POST request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable NSURLSessionDataTask *)POST:(NSString *)URLString parameters:(nullable id)parameters constructingBodyWithBlock:(nullable void ( ^ ) ( id&lt;AFMultipartFormData&gt; formData ))block progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))uploadProgress success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">A block that takes a single argument and appends data to the HTTP body. The block argument is an object adopting the AFMultipartFormData protocol.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgress</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/POST:parameters:constructingBodyWithBlock:progress:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/PUT:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a PUT request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable NSURLSessionDataTask *)PUT:(NSString *)URLString parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/PUT:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a PUT request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)PUTWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))serviceURLCompletion parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The serviceID used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">AIRESTServiceIDPreference prefrence</Abstract>
+				</Parameter><Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to be appended to service URL</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceURLCompletion</Name>
+					<Abstract type="html">The completion block with task object will be called when the service discovery fetches URL from server.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/PUTWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/PATCH:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a PATCH request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable NSURLSessionDataTask *)PATCH:(NSString *)URLString parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/PATCH:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a PATCH request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)PATCHWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))serviceURLCompletion parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The serviceID used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">AIRESTServiceIDPreference prefrence</Abstract>
+				</Parameter><Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to be appended to service URL</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceURLCompletion</Name>
+					<Abstract type="html">The completion block with task object will be called when the service discovery fetches URL from server.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/PATCHWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/DELETE:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a DELETE request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (nullable NSURLSessionDataTask *)DELETE:(NSString *)URLString parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>URLString</Name>
+					<Abstract type="html">The URL string used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/DELETE:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</TokenIdentifier>
+			<Abstract type="html">Creates and runs an NSURLSessionDataTask with a DELETE request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+	<RelatedTokens>
+		<TokenIdentifier>//apple_ref/occ/intfm/AIRESTClientProtocol/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+		
+	</RelatedTokens>
+	
+			<Declaration>- (void)DELETEWithServiceID:(NSString *)serviceID preference:(AIRESTServiceIDPreference)preference pathComponent:(nullable NSString *)pathComponent serviceURLCompletion:(nullable void ( ^ ) ( NSURLSessionDataTask *task ))serviceURLCompletion parameters:(nullable id)parameters success:(nullable void ( ^ ) ( NSURLSessionDataTask *task , id _Nullable responseObject ))success failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceID</Name>
+					<Abstract type="html">The serviceID used to create the request URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">AIRESTServiceIDPreference prefrence</Abstract>
+				</Parameter><Parameter>
+					<Name>pathComponent</Name>
+					<Abstract type="html">The path component to be appended to service URL</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceURLCompletion</Name>
+					<Abstract type="html">The completion block with task object will be called when the service discovery fetches URL from server.</Abstract>
+				</Parameter><Parameter>
+					<Name>parameters</Name>
+					<Abstract type="html">The parameters to be encoded according to the client request serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>success</Name>
+					<Abstract type="html">A block object to be executed when the task finishes successfully. This block has no return value and takes two arguments: the data task, and the response object created by the client response serializer.</Abstract>
+				</Parameter><Parameter>
+					<Name>failure</Name>
+					<Abstract type="html">A block object to be executed when the task finishes unsuccessfully, or that finishes successfully, but encountered an error while parsing the response data. This block has no return value and takes a two arguments: the data task and the error describing the network or parsing error that occurred.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/DELETEWithServiceID:preference:pathComponent:serviceURLCompletion:parameters:success:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/downloadTaskWithRequest:progress:destination:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionDownloadTask with the specified request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionDownloadTask *)downloadTaskWithRequest:(NSURLRequest *)request progress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))downloadProgressBlock destination:(nullable NSURL *( ^ ) ( NSURL *targetPath , NSURLResponse *response ))destination completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , NSURL *_Nullable filePath , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The HTTP request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>destination</Name>
+					<Abstract type="html">A block object to be executed in order to determine the destination of the downloaded file. This block takes two arguments, the target path &amp;amp; the server response, and returns the desired file URL of the resulting download. The temporary file used during the download will be automatically deleted after being moved to the returned URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block to be executed when a task finishes. This block has no return value and takes three arguments: the server response, the path of the downloaded file, and the error describing the network or parsing error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadTaskWithRequest:progress:destination:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/downloadTaskWithResumeData:progress:destination:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionDownloadTask with the specified resume data.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionDownloadTask *)downloadTaskWithResumeData:(NSData *)resumeData progress:(void ( ^ ) ( NSProgress *downloadProgress ))downloadProgressBlock destination:(NSURL *( ^ ) ( NSURL *targetPath , NSURLResponse *response ))destination completionHandler:(void ( ^ ) ( NSURLResponse *response , NSURL *filePath , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>resumeData</Name>
+					<Abstract type="html">The data used to resume downloading.</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>destination</Name>
+					<Abstract type="html">A block object to be executed in order to determine the destination of the downloaded file. This block takes two arguments, the target path &amp;amp; the server response, and returns the desired file URL of the resulting download. The temporary file used during the download will be automatically deleted after being moved to the returned URL.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block to be executed when a task finishes. This block has no return value and takes three arguments: the server response, the path of the downloaded file, and the error describing the network or parsing error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/downloadTaskWithResumeData:progress:destination:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/uploadTaskWithRequest:fromFile:progress:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionUploadTask with the specified request for a local file.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionUploadTask *)uploadTaskWithRequest:(NSURLRequest *)request fromFile:(NSURL *)fileURL progress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))uploadProgressBlock completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The HTTP request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>fileURL</Name>
+					<Abstract type="html">A URL to the local file to be uploaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadTaskWithRequest:fromFile:progress:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/uploadTaskWithRequest:fromData:progress:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionUploadTask with the specified request for an HTTP body.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionUploadTask *)uploadTaskWithRequest:(NSURLRequest *)request fromData:(NSData *)bodyData progress:(void ( ^ ) ( NSProgress *uploadProgress ))uploadProgressBlock completionHandler:(void ( ^ ) ( NSURLResponse *response , id responseObject , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The HTTP request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>bodyData</Name>
+					<Abstract type="html">A data object containing the HTTP body to be uploaded.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadTaskWithRequest:fromData:progress:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/uploadTaskWithStreamedRequest:progress:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionUploadTask with the specified streaming request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionUploadTask *)uploadTaskWithStreamedRequest:(NSURLRequest *)request progress:(void ( ^ ) ( NSProgress *uploadProgress ))uploadProgressBlock completionHandler:(void ( ^ ) ( NSURLResponse *response , id responseObject , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The HTTP request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/uploadTaskWithStreamedRequest:progress:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/dataTaskWithRequest:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionDataTask with the specified request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The HTTP request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dataTaskWithRequest:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Creates an NSURLSessionDataTask with the specified request.</Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSURLSessionDataTask *)dataTaskWithRequest:(NSURLRequest *)request uploadProgress:(nullable void ( ^ ) ( NSProgress *uploadProgress ))uploadProgressBlock downloadProgress:(nullable void ( ^ ) ( NSProgress *downloadProgress ))downloadProgressBlock completionHandler:(nullable void ( ^ ) ( NSURLResponse *response , id _Nullable responseObject , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>request</Name>
+					<Abstract type="html">The HTTP request for the request.</Abstract>
+				</Parameter><Parameter>
+					<Name>uploadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the upload progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadProgressBlock</Name>
+					<Abstract type="html">A block object to be executed when the download progress is updated. Note this block is called on the session queue, not the main queue.</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when the task finishes. This block has no return value and takes three arguments: the server response, the response object created by that serializer, and the error that occurred, if any.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/dataTaskWithRequest:uploadProgress:downloadProgress:completionHandler:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/addAuthenticationData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)addAuthenticationData</Declaration>
+			
+			
+			<Anchor>//api/name/addAuthenticationData</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/isAuthTypeSupported:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isAuthTypeSupported:(AIRESTClientTokenType)authType</Declaration>
+			
+			
+			<Anchor>//api/name/isAuthTypeSupported:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/validateURL:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)validateURL:(NSString *)URLString failure:(nullable void ( ^ ) ( NSURLSessionDataTask *_Nullable task , NSError *error ))failure</Declaration>
+			
+			
+			<Anchor>//api/name/validateURL:failure:</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/setAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/appInfra</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/appInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/appInfra</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIRESTClientInterface/appInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/appInfra</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/setReachablility:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) RESTClientReachability *reachablility</Declaration>
+			
+			
+			<Anchor>//api/name/reachablility</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIRESTClientInterface/reachablility</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) RESTClientReachability *reachablility</Declaration>
+			
+			
+			<Anchor>//api/name/reachablility</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIRESTClientInterface/reachablility</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIRESTClientInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) RESTClientReachability *reachablility</Declaration>
+			
+			
+			<Anchor>//api/name/reachablility</Anchor>
+            <NodeRef refid="28"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

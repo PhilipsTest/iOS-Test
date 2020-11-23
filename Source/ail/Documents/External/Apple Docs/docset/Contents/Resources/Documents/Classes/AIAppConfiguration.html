@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AIAppConfiguration Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/aiAppInfra">aiAppInfra</option>
+		
+		<option value="//api/name/cloudConfiguration">cloudConfiguration</option>
+		
+		<option value="//api/name/configuration">configuration</option>
+		
+		<option value="//api/name/downloadLock">downloadLock</option>
+		
+		<option value="//api/name/staticConfiguration">staticConfiguration</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearCloudConfigFile:">- clearCloudConfigFile:</option>
+		
+		<option value="//api/name/cloudConfigPath">- cloudConfigPath</option>
+		
+		<option value="//api/name/downloadConfigFromCloud:">- downloadConfigFromCloud:</option>
+		
+		<option value="//api/name/getDefaultPropertyForKey:group:error:">- getDefaultPropertyForKey:group:error:</option>
+		
+		<option value="//api/name/getPropertyForKey:group:error:">- getPropertyForKey:group:error:</option>
+		
+		<option value="//api/name/getSavedConfig">- getSavedConfig</option>
+		
+		<option value="//api/name/initWithAppInfra:">- initWithAppInfra:</option>
+		
+		<option value="//api/name/isEmptyString:">- isEmptyString:</option>
+		
+		<option value="//api/name/isValidKey:">- isValidKey:</option>
+		
+		<option value="//api/name/isValidValue:">- isValidValue:</option>
+		
+		<option value="//api/name/migrateIfNeeded">- migrateIfNeeded</option>
+		
+		<option value="//api/name/propertyForKey:group:error:source:">- propertyForKey:group:error:source:</option>
+		
+		<option value="//api/name/readAppConfigurationFromFile">- readAppConfigurationFromFile</option>
+		
+		<option value="//api/name/refreshCloudConfig:">- refreshCloudConfig:</option>
+		
+		<option value="//api/name/removeCommonKeysforDictionary:withDictionary:">- removeCommonKeysforDictionary:withDictionary:</option>
+		
+		<option value="//api/name/resetConfig:">- resetConfig:</option>
+		
+		<option value="//api/name/saveDownloadedConfig:">- saveDownloadedConfig:</option>
+		
+		<option value="//api/name/savedCouldConfig">- savedCouldConfig</option>
+		
+		<option value="//api/name/setPropertyForKey:group:value:error:">- setPropertyForKey:group:value:error:</option>
+		
+		<option value="//api/name/storeConfigSecurely:">- storeConfigSecurely:</option>
+		
+		<option value="//api/name/uppercaseKeysForDictionary:">- uppercaseKeysForDictionary:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AIAppConfiguration Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/AIAppConfigurationProtocol.html">AIAppConfigurationProtocol</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIAppConfiguration.h<br />AIAppConfiguration.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithAppInfra:" title="initWithAppInfra:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAppInfra:">&ndash;&nbsp;initWithAppInfra:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithAppInfra:(AIAppInfra *)<em>appInfra</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/isValidKey:" title="isValidKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isValidKey:">&ndash;&nbsp;isValidKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isValidKey:(NSString *)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEmptyString:" title="isEmptyString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEmptyString:">&ndash;&nbsp;isEmptyString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isEmptyString:(NSString *)<em>string</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isValidValue:" title="isValidValue:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isValidValue:">&ndash;&nbsp;isValidValue:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isValidValue:(id)<em>value</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/propertyForKey:group:error:source:" title="propertyForKey:group:error:source:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/propertyForKey:group:error:source:">&ndash;&nbsp;propertyForKey:group:error:source:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)propertyForKey:(NSString *)<em>key</em> group:(NSString *)<em>group</em> error:(NSError **)<em>error</em> source:(NSDictionary *)<em>source</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDefaultPropertyForKey:group:error:" title="getDefaultPropertyForKey:group:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDefaultPropertyForKey:group:error:">&ndash;&nbsp;getDefaultPropertyForKey:group:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets property for key from the static file</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)getDefaultPropertyForKey:(NSString *)<em>key</em> group:(NSString *)<em>group</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>the key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>the group name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the value for key mapped by name, or null if no such mapping exists
+if value is literal then &lsquo;String&rsquo; Object is returned
+if value is number then &lsquo;Integer&rsquo; Object is returned
+if value is array of literal then &lsquo;array of String&rsquo; Object is returned
+if value is array of number then &lsquo;array of Integer&rsquo; Object is returned</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIAppConfigurationProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPropertyForKey:group:error:" title="getPropertyForKey:group:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPropertyForKey:group:error:">&ndash;&nbsp;getPropertyForKey:group:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Gets property for key</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)getPropertyForKey:(NSString *)<em>key</em> group:(NSString *)<em>group</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>the key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>the group name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the value for key mapped by name, or null if no such mapping exists
+if value is literal then &lsquo;String&rsquo; Object is returned
+if value is number then &lsquo;Integer&rsquo; Object is returned
+if value is array of literal then &lsquo;array of String&rsquo; Object is returned
+if value is array of number then &lsquo;array of Integer&rsquo; Object is returned</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIAppConfigurationProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setPropertyForKey:group:value:error:" title="setPropertyForKey:group:value:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setPropertyForKey:group:value:error:">&ndash;&nbsp;setPropertyForKey:group:value:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Sets property for key</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)setPropertyForKey:(NSString *)<em>key</em> group:(NSString *)<em>group</em> value:(id)<em>value</em> error:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>the key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>group</code></th>
+						<td><p>the group name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>value</code></th>
+						<td><p>new value that needs to be set for the key. Value can be String, Number, Array of Strings, Array of Numbers and Dictionary</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key or value are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Bool indicating whether value is set correctly</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIAppConfigurationProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/readAppConfigurationFromFile" title="readAppConfigurationFromFile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/readAppConfigurationFromFile">&ndash;&nbsp;readAppConfigurationFromFile</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)readAppConfigurationFromFile</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/storeConfigSecurely:" title="storeConfigSecurely:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/storeConfigSecurely:">&ndash;&nbsp;storeConfigSecurely:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)storeConfigSecurely:(NSDictionary *)<em>config</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSavedConfig" title="getSavedConfig"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSavedConfig">&ndash;&nbsp;getSavedConfig</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)getSavedConfig</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/migrateIfNeeded" title="migrateIfNeeded"></a>
+	<h3 class="method-title"><code><a href="#//api/name/migrateIfNeeded">&ndash;&nbsp;migrateIfNeeded</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)migrateIfNeeded</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeCommonKeysforDictionary:withDictionary:" title="removeCommonKeysforDictionary:withDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeCommonKeysforDictionary:withDictionary:">&ndash;&nbsp;removeCommonKeysforDictionary:withDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)removeCommonKeysforDictionary:(NSDictionary *)<em>dictionary1</em> withDictionary:(NSDictionary *)<em>dictionary2</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/uppercaseKeysForDictionary:" title="uppercaseKeysForDictionary:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/uppercaseKeysForDictionary:">&ndash;&nbsp;uppercaseKeysForDictionary:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)uppercaseKeysForDictionary:(NSDictionary *)<em>inputDict</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshCloudConfig:" title="refreshCloudConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshCloudConfig:">&ndash;&nbsp;refreshCloudConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refresh cloud config.
+It will be downloaded if the URL of the config in Service Discovery has changed compared to last time the config was downloaded</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshCloudConfig:(void ( ^ ) ( AIACRefreshResult , NSError *))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>asynchronous callback reporting result of refresh. This block has no return value and takes two arguments:refreshResult and error
+completionHandler will be called on main thread.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIAppConfigurationProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearCloudConfigFile:" title="clearCloudConfigFile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearCloudConfigFile:">&ndash;&nbsp;clearCloudConfigFile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)clearCloudConfigFile:(NSError **)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadConfigFromCloud:" title="downloadConfigFromCloud:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadConfigFromCloud:">&ndash;&nbsp;downloadConfigFromCloud:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadConfigFromCloud:(void ( ^ ) ( AIACRefreshResult , NSError *))<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cloudConfigPath" title="cloudConfigPath"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cloudConfigPath">&ndash;&nbsp;cloudConfigPath</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)cloudConfigPath</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveDownloadedConfig:" title="saveDownloadedConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveDownloadedConfig:">&ndash;&nbsp;saveDownloadedConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)saveDownloadedConfig:(NSDictionary *)<em>config</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/savedCouldConfig" title="savedCouldConfig"></a>
+	<h3 class="method-title"><code><a href="#//api/name/savedCouldConfig">&ndash;&nbsp;savedCouldConfig</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSDictionary *)savedCouldConfig</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetConfig:" title="resetConfig:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetConfig:">&ndash;&nbsp;resetConfig:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: used to reset the dynamic config as well as cloud config</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)resetConfig:(NSError **)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>error</code></th>
+						<td><p>error description</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>returns bool status</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIAppConfigurationProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/configuration" title="configuration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configuration">&nbsp;&nbsp;configuration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *configuration</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/staticConfiguration" title="staticConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/staticConfiguration">&nbsp;&nbsp;staticConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *staticConfiguration</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cloudConfiguration" title="cloudConfiguration"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cloudConfiguration">&nbsp;&nbsp;cloudConfiguration</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSDictionary *cloudConfiguration</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/aiAppInfra" title="aiAppInfra"></a>
+	<h3 class="method-title"><code><a href="#//api/name/aiAppInfra">&nbsp;&nbsp;aiAppInfra</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AIAppInfra *aiAppInfra</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadLock" title="downloadLock"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadLock">&nbsp;&nbsp;downloadLock</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSLock *downloadLock</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

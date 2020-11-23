@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UIBaseState Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/UIBaseState" class="dashAnchor"></a>
+    <a title="UIBaseState Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (23% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        UIBaseState Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AFBaseViewController.html">AFBaseViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/AppInfraSharedInstance.html">AppInfraSharedInstance</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BasePresenter.html">BasePresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ComponentBaseInterface.html">ComponentBaseInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ComponentModel.html">ComponentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConsumerCareComponent.html">ConsumerCareComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConsumerCareComponentModel.html">ConsumerCareComponentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConsumerCareFactory.html">ConsumerCareFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ConsumerCareState.html">ConsumerCareState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Event.html">Event</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/EventBus.html">EventBus</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HamburgerMenuPresenter.html">HamburgerMenuPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HamburgerMenuState.html">HamburgerMenuState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HamburgerMenuViewController.html">HamburgerMenuViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HelpPresenter.html">HelpPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HelpState.html">HelpState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HelpViewController.html">HelpViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HomePresenter.html">HomePresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HomeState.html">HomeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/HomeViewController.html">HomeViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppPurchaseComponent.html">InAppPurchaseComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppPurchaseFactory.html">InAppPurchaseFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppPurchaseModel.html">InAppPurchaseModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/InAppPurchaseState.html">InAppPurchaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductRegistrationComponent.html">ProductRegistrationComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductRegistrationComponentModel.html">ProductRegistrationComponentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductRegistrationFactory.html">ProductRegistrationFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ProductRegistrationState.html">ProductRegistrationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Receiver.html">Receiver</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SectionHeaderView.html">SectionHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Sender.html">Sender</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsCustomTableViewCell.html">SettingsCustomTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsPresenter.html">SettingsPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsState.html">SettingsState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SettingsViewController.html">SettingsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShoppingPresenter.html">ShoppingPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShoppingState.html">ShoppingState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ShoppingViewController.html">ShoppingViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/StartPresenter.html">StartPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:C12AppFramework10StartState">StartState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UIBaseState.html">UIBaseState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UIStateManager.html">UIStateManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegEnvSettingsPresenter.html">UserRegEnvSettingsPresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegEnvSettingsState.html">UserRegEnvSettingsState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegEnvSettingsViewController.html">UserRegEnvSettingsViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegistrationComponent.html">UserRegistrationComponent</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegistrationComponentModel.html">UserRegistrationComponentModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegistrationFactory.html">UserRegistrationFactory</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/UserRegistrationState.html">UserRegistrationState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/Utilites.html">Utilites</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomeChildViewController.html">WelcomeChildViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomePageViewController.html">WelcomePageViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomePresenter.html">WelcomePresenter</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomeState.html">WelcomeState</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/WelcomeViewController.html">WelcomeViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/State.html">State</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ViewControllerLoadType.html">ViewControllerLoadType</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/ComponentInterface.html">ComponentInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NavigationProtocol.html">NavigationProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/PresenterProtocol.html">PresenterProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/WelcomeViewControllerDelegate.html">WelcomeViewControllerDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/Constants.html">Constants</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ScreenToLoadModel.html">ScreenToLoadModel</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>UIBaseState</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UIBaseState</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/NavigationProtocol.html">NavigationProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>UIBaseState is the base State class from which all State classes will be derived</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Variable%20declarations"></a>
+                <a name="//apple_ref/swift/Section/Variable declarations" class="dashAnchor"></a>
+                <a href="#/Variable%20declarations">
+                  <h3 class="section-name">Variable declarations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12AppFramework11UIBaseState7stateIdGSqOS_5State_"></a>
+                    <a name="//apple_ref/swift/Property/stateId" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12AppFramework11UIBaseState7stateIdGSqOS_5State_">stateId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>State Id of the State Object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">stateId</span> <span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:vC12AppFramework11UIBaseState17presenterForStateGSqCS_13BasePresenter_"></a>
+                    <a name="//apple_ref/swift/Property/presenterForState" class="dashAnchor"></a>
+                    <a class="token" href="#/s:vC12AppFramework11UIBaseState17presenterForStateGSqCS_13BasePresenter_">presenterForState</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Presenter for the State Object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">private(set)</span> <span class="k">var</span> <span class="nv">presenterForState</span> <span class="p">:</span> <span class="kt"><a href="../Classes/BasePresenter.html">BasePresenter</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Default%20methods"></a>
+                <a name="//apple_ref/swift/Section/Default methods" class="dashAnchor"></a>
+                <a href="#/Default%20methods">
+                  <h3 class="section-name">Default methods</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12AppFramework11UIBaseStatecFT7stateIdGSqOS_5State__S0_"></a>
+                    <a name="//apple_ref/swift/Method/init(stateId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12AppFramework11UIBaseStatecFT7stateIdGSqOS_5State__S0_">init(stateId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>State Initialiser
+- parameter stateId State Id of the new State object</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="nf">init</span><span class="p">(</span><span class="nv">stateId</span> <span class="p">:</span> <span class="kt"><a href="../Enums/State.html">State</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>stateId State Id of the new State object</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12AppFramework11UIBaseState12setPresenterFGSqCS_13BasePresenter_T_"></a>
+                    <a name="//apple_ref/swift/Method/setPresenter(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12AppFramework11UIBaseState12setPresenterFGSqCS_13BasePresenter_T_">setPresenter(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Setter of presenter for the State Object
+- parameter presenter Presenter of the State Object to set</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">setPresenter</span><span class="p">(</span><span class="nv">presenter</span> <span class="p">:</span> <span class="kt"><a href="../Classes/BasePresenter.html">BasePresenter</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>presenter Presenter of the State Object to set</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/NavigatorProtocol%20method%20implementations"></a>
+                <a name="//apple_ref/swift/Section/NavigatorProtocol method implementations" class="dashAnchor"></a>
+                <a href="#/NavigatorProtocol%20method%20implementations">
+                  <h3 class="section-name">NavigatorProtocol method implementations</h3>
+                </a>
+              </div>
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC12AppFramework11UIBaseState8navigateFT_GSqCSo16UIViewController_"></a>
+                    <a name="//apple_ref/swift/Method/navigate()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC12AppFramework11UIBaseState8navigateFT_GSqCSo16UIViewController_">navigate()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UIBaseState</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="../Protocols/NavigationProtocol.html">NavigationProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2016-08-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.0</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

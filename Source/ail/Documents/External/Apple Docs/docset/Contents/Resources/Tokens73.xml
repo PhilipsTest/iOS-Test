@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AITimeProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AITimeProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="73"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AITimeProtocol/getUTCTime</TokenIdentifier>
+			<Abstract type="html">Description: method to get server UTC time</Abstract>
+			<DeclaredIn>AITimeProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSDate *)getUTCTime</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns the local time</Abstract></ReturnValue>
+			<Anchor>//api/name/getUTCTime</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AITimeProtocol/refreshTime</TokenIdentifier>
+			<Abstract type="html">Description: method to refresh UTC time could call</Abstract>
+			<DeclaredIn>AITimeProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshTime</Declaration>
+			
+			
+			<Anchor>//api/name/refreshTime</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AITimeProtocol/isSynchronized</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSynchronized</Declaration>
+			
+			
+			<Anchor>//api/name/isSynchronized</Anchor>
+            <NodeRef refid="73"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

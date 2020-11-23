@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AISSSecureStorage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AISSSecureStorage</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.h</DeclaredIn>
+            
+			
+			<NodeRef refid="44"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/storeValueForKey:value:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)storeValueForKey:(nonnull NSString *)key value:(nonnull id&lt;NSCoding&gt;)object error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/storeValueForKey:value:error:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/fetchValueForKey:error:</TokenIdentifier>
+			<Abstract type="html">Description: Method to fetch the object stored against the key provided</Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (nullable id)fetchValueForKey:(nonnull NSString *)key error:(NSError *_Nullable *_Nullable)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">&quot;key&quot; a string to identify the data on user defaults</Abstract>
+				</Parameter><Parameter>
+					<Name>&quot;error&quot;</Name>
+					<Abstract type="html">retruns an NSError object if error occurs</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/fetchValueForKey:error:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/unArchiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)unArchiveData:(NSData *)data</Declaration>
+			
+			
+			<Anchor>//api/name/unArchiveData:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/archiveData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)archiveData:(id&lt;NSCoding&gt;)data</Declaration>
+			
+			
+			<Anchor>//api/name/archiveData:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/removeValueForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (void)removeValueForKey:(nonnull NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/removeValueForKey:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/encryptData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)encryptData:(nonnull id&lt;NSCoding&gt;)object error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/encryptData:error:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/decryptData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (id)decryptData:(nonnull NSData *)data error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/decryptData:error:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/parseData:forType:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (id)parseData:(nonnull NSData *)data forType:(nonnull NSString *)name error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/parseData:forType:error:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/deviceHasPasscode</TokenIdentifier>
+			<Abstract type="html">Method to check whether passcode lock is enabled in devie</Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)deviceHasPasscode</Declaration>
+			
+			<ReturnValue><Abstract type="html">Bool value indicating whether passcode is enabled or not</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceHasPasscode</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/getDeviceCapability</TokenIdentifier>
+			<Abstract type="html">Method to check whether devices is rooted or not</Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getDeviceCapability</Declaration>
+			
+			<ReturnValue><Abstract type="html">&quot;true&quot; if device is jailbroken else returns &quot;false&quot;</Abstract></ReturnValue>
+			<Anchor>//api/name/getDeviceCapability</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/storeSecureAccessKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (void)storeSecureAccessKey:(NSData *)key</Declaration>
+			
+			
+			<Anchor>//api/name/storeSecureAccessKey:</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISSSecureStorage/fetchSecureAccessKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProvider.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)fetchSecureAccessKey</Declaration>
+			
+			
+			<Anchor>//api/name/fetchSecureAccessKey</Anchor>
+            <NodeRef refid="44"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

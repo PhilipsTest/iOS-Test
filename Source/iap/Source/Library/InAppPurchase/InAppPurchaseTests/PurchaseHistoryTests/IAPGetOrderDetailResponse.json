@@ -1,0 +1,308 @@
+{
+    "type": "orderWsDTO",
+    "calculated": false,
+    "code": "14000133596",
+    "deliveryAddress": {
+        "country": {
+            "isocode": "US",
+            "name": "United States"
+        },
+        "firstName": "John",
+        "formattedAddress": "Lane 1, Lane 2, Iowa, Town, 52402",
+        "id": "8813562855447",
+        "lastName": "Snow",
+        "line1": "Lane 1",
+        "line2": "Lane 2",
+        "phone1": "(319)804-0862",
+        "postalCode": "52402",
+        "region": {
+            "countryIso": "US",
+            "isocode": "US-IA",
+            "isocodeShort": "IA",
+            "name": "Iowa"
+        },
+        "shippingAddress": true,
+        "title": "Mr.",
+        "titleCode": "mr",
+        "town": "Town",
+        "visibleInAddressBook": true
+    },
+    "deliveryCost": {
+        "currencyIso": "USD",
+        "formattedValue": "$8.99",
+        "priceType": "BUY",
+        "value": 8.99
+    },
+    "deliveryItemsQuantity": 1,
+    "deliveryMode": {
+        "code": "standard-net",
+        "deliveryCost": {
+            "currencyIso": "USD",
+            "formattedValue": "$8.99",
+            "priceType": "BUY",
+            "value": 8.99
+        },
+        "description": "3-5 business days",
+        "name": "Standard Delivery Mode"
+    },
+    "deliveryOrderGroups": [
+                            {
+                            "entries": [
+                                        {
+                                        "basePrice": {
+                                        "currencyIso": "USD",
+                                        "formattedValue": "$20.00",
+                                        "priceType": "BUY",
+                                        "value": 20
+                                        },
+                                        "entryNumber": 0,
+                                        "product": {
+                                        "availableForPickup": false,
+                                        "categories": [
+                                                       {
+                                                       "code": "Tuscany_Campaign",
+                                                       "url": "/Tuscany-Category/c/Tuscany_Campaign"
+                                                       }
+                                                       ],
+                                        "code": "HX9042/64",
+                                        "discountPrice": {
+                                        "currencyIso": "USD",
+                                        "value": 20
+                                        },
+                                        "name": "HX9042/64 REPL BH PKS BLISTER PK 4/16PK",
+                                        "purchasable": true,
+                                        "stock": {
+                                        "stockLevel": 0,
+                                        "stockLevelStatus": "outOfStock"
+                                        },
+                                        "url": "/Tuscany-Category//p/HX9042_64"
+                                        },
+                                        "quantity": 1,
+                                        "totalPrice": {
+                                        "currencyIso": "USD",
+                                        "formattedValue": "$20.00",
+                                        "priceType": "BUY",
+                                        "value": 20
+                                        },
+                                        "updateable": true
+                                        }
+                                        ],
+                            "totalPriceWithTax": {
+                            "currencyIso": "USD",
+                            "formattedValue": "$21.74",
+                            "priceType": "BUY",
+                            "value": 21.74
+                            }
+                            }
+                            ],
+    "entries": [
+                {
+                "basePrice": {
+                "currencyIso": "USD",
+                "formattedValue": "$20.00",
+                "priceType": "BUY",
+                "value": 20
+                },
+                "entryNumber": 0,
+                "product": {
+                "availableForPickup": false,
+                "categories": [
+                               {
+                               "code": "Tuscany_Campaign",
+                               "url": "/Tuscany-Category/c/Tuscany_Campaign"
+                               }
+                               ],
+                "code": "HX9042/64",
+                "discountPrice": {
+                "currencyIso": "USD",
+                "value": 20
+                },
+                "name": "HX9042/64 REPL BH PKS BLISTER PK 4/16PK",
+                "purchasable": true,
+                "stock": {
+                "stockLevel": 0,
+                "stockLevelStatus": "outOfStock"
+                },
+                "url": "/Tuscany-Category//p/HX9042_64"
+                },
+                "quantity": 1,
+                "totalPrice": {
+                "currencyIso": "USD",
+                "formattedValue": "$20.00",
+                "priceType": "BUY",
+                "value": 20
+                },
+                "updateable": true
+                }
+                ],
+    "guid": "5d50f331-901b-4422-9b83-515128f6ac2d",
+    "net": true,
+    "orderDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "paymentInfo": {
+        "billingAddress": {
+            "country": {
+                "isocode": "US",
+                "name": "United States"
+            },
+            "firstName": "John",
+            "formattedAddress": "Lane 1, Lane 2, Iowa, Town, 52402",
+            "id": "8813595033623",
+            "lastName": "Snow",
+            "line1": "Lane 1",
+            "line2": "Lane 2",
+            "phone1": "(319)804-0862",
+            "postalCode": "52402",
+            "region": {
+                "countryIso": "US",
+                "isocode": "US-IA",
+                "isocodeShort": "IA",
+                "name": "Iowa"
+            },
+            "shippingAddress": true,
+            "title": "Mr.",
+            "titleCode": "mr",
+            "town": "Town",
+            "visibleInAddressBook": true
+        },
+        "cardNumber": "************1111",
+        "cardType": {
+            "code": "VISA"
+        },
+        "defaultPayment": false,
+        "expiryMonth": "03",
+        "expiryYear": "2021",
+        "saved": false
+    },
+    "pickupItemsQuantity": 0,
+    "productDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "site": "US_Tuscany",
+    "store": "US_Pub",
+    "subTotal": {
+        "currencyIso": "USD",
+        "formattedValue": "$20.00",
+        "priceType": "BUY",
+        "value": 20
+    },
+    "totalDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "totalItems": 1,
+    "totalPrice": {
+        "currencyIso": "USD",
+        "formattedValue": "$28.99",
+        "priceType": "BUY",
+        "value": 28.99
+    },
+    "totalPriceWithTax": {
+        "currencyIso": "USD",
+        "formattedValue": "$30.73",
+        "priceType": "BUY",
+        "value": 30.73
+    },
+    "totalTax": {
+        "currencyIso": "USD",
+        "formattedValue": "$1.74",
+        "priceType": "BUY",
+        "value": 1.74
+    },
+    "user": {
+        "name": "darshan",
+        "uid": "darshan.n.s@philips.com"
+    },
+    "consignments": [
+                     {
+                     "code": "14000133596",
+                     "entries": [
+                                 {
+                                 "orderEntry": {
+                                 "basePrice": {
+                                 "currencyIso": "USD",
+                                 "formattedValue": "$20.00",
+                                 "priceType": "BUY",
+                                 "value": 20
+                                 },
+                                 "entryNumber": 0,
+                                 "product": {
+                                 "availableForPickup": false,
+                                 "categories": [
+                                                {
+                                                "code": "Tuscany_Campaign",
+                                                "url": "/Tuscany-Category/c/Tuscany_Campaign"
+                                                }
+                                                ],
+                                 "code": "HX9042/64",
+                                 "discountPrice": {
+                                 "currencyIso": "USD",
+                                 "value": 20
+                                 },
+                                 "name": "HX9042/64 REPL BH PKS BLISTER PK 4/16PK",
+                                 "purchasable": true,
+                                 "stock": {
+                                 "stockLevel": 0,
+                                 "stockLevelStatus": "outOfStock"
+                                 },
+                                 "url": "/Tuscany-Category//p/HX9042_64"
+                                 },
+                                 "quantity": 1,
+                                 "totalPrice": {
+                                 "currencyIso": "USD",
+                                 "formattedValue": "$20.00",
+                                 "priceType": "BUY",
+                                 "value": 20
+                                 },
+                                 "updateable": true
+                                 },
+                                 "quantity": 1,
+                                 "shippedQuantity": 1
+                                 }
+                                 ],
+                     "shippingAddress": {
+                     "country": {
+                     "isocode": "US",
+                     "name": "United States"
+                     },
+                     "firstName": "John",
+                     "formattedAddress": "Lane 1, Lane 2, Iowa, Town, 52402",
+                     "id": "8813562855447",
+                     "lastName": "Snow",
+                     "line1": "Lane 1",
+                     "line2": "Lane 2",
+                     "phone1": "(319)804-0862",
+                     "postalCode": "52402",
+                     "region": {
+                     "countryIso": "US",
+                     "isocode": "US-IA",
+                     "isocodeShort": "IA",
+                     "name": "Iowa"
+                     },
+                     "shippingAddress": true,
+                     "title": "Mr.",
+                     "titleCode": "mr",
+                     "town": "Town",
+                     "visibleInAddressBook": true
+                     },
+                     "status": "SHIPPED",
+                     "statusDate": "2015-08-17T00:00:00+0000",
+                     "trackingID": "1Z9V788X6871220000"
+                     }
+                     ],
+    "created": "2016-08-17T04:59:47+0000",
+    "deliveryStatus": "SHIPPED",
+    "guestCustomer": false,
+    "ordertrackUrl": "http://www.fedex.com/Tracking?action=track&cntry_code=en_US&tracknumber_list=1Z9V788X6871220000",
+    "status": "COMPLETED",
+    "statusDisplay": "completed"
+}

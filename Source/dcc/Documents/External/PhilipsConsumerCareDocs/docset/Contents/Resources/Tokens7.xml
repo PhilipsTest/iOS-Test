@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DCProductMenuDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DCProductMenuDelegate</TokenIdentifier>
+			<Abstract type="html">DCProductMenuDelegate is a protocol provides a call back to vertical app on selecting product menu items</Abstract>
+			<DeclaredIn>DCProductMenuProtocol.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="7"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DCProductMenuDelegate/productMenuItemSelected:</TokenIdentifier>
+			<Abstract type="html">This delegate method is used to handle the call back on selecting Product menu</Abstract>
+			<DeclaredIn>DCProductMenuProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)productMenuItemSelected:(NSString *)item</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>item</Name>
+					<Abstract type="html">- Product menu name</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Bool value, YES for controlling in vertical app and NO for sending the control back to DigitalCare library</Abstract></ReturnValue>
+			<Anchor>//api/name/productMenuItemSelected:</Anchor>
+            <NodeRef refid="7"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

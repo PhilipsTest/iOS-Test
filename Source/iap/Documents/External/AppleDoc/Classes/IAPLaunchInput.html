@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IAPLaunchInput Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/IAPLaunchInput" class="dashAnchor"></a>
+    <a title="IAPLaunchInput Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InAppPurchase Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InAppPurchase Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IAPLaunchInput Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13InAppPurchase15IAPDependenciesC">IAPDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPFlowInput.html">IAPFlowInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPInterface.html">IAPInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPLaunchInput.html">IAPLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPLaunchInput/IAPFlow.html">– IAPFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13InAppPurchase11IAPSettingsC">IAPSettings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IAPCartIconProtocol.html">IAPCartIconProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IAPLaunchInput</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">IAPLaunchInput</span><span class="p">:</span> <span class="kt">UAPPLaunchInput</span></code></pre>
+
+                </div>
+              </div>
+            <p>IAPLaunchInput is responsible for initializing the settings required for launching.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase14IAPLaunchInputC11landingViewAC7IAPFlowOSgv"></a>
+                    <a name="//apple_ref/swift/Property/landingView" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase14IAPLaunchInputC11landingViewAC7IAPFlowOSgv">landingView</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>landingView is responsible for initializing the flow required for launching.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">landingView</span> <span class="p">:</span> <span class="kt"><a href="../Classes/IAPLaunchInput/IAPFlow.html">IAPFlow</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase14IAPLaunchInputC5themeXev"></a>
+                    <a name="//apple_ref/swift/Property/theme" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase14IAPLaunchInputC5themeXev">theme</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>theme is responsible for initializing the theme required for launching.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">var</span> <span class="nv">theme</span> <span class="o">=</span> <span class="kt">UIDThemeManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">defaultTheme</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase14IAPLaunchInputC16cartIconDelegateAA07IAPCartG8Protocol_pSgXwv"></a>
+                    <a name="//apple_ref/swift/Property/cartIconDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase14IAPLaunchInputC16cartIconDelegateAA07IAPCartG8Protocol_pSgXwv">cartIconDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>cartIconDelegate is the delegate responsible for handling the communication between micro app and vertical app.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">cartIconDelegate</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/IAPCartIconProtocol.html">IAPCartIconProtocol</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase14IAPLaunchInputCXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(theme:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase14IAPLaunchInputCXeXecfc">init(theme:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPLaunchInput init method to initialize IAPLaunchInput with UIDTheme</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">?(</span><span class="nv">theme</span><span class="p">:</span> <span class="kt">UIDTheme</span> <span class="o">=</span> <span class="kt">UIDThemeManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">defaultTheme</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of IAPLaunchInput</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase14IAPLaunchInputC10setIAPFlowyAC0G0O_AA0gE0C12withSettingsSaySSG20ignoredRetailersListtF"></a>
+                    <a name="//apple_ref/swift/Method/setIAPFlow(_:withSettings:ignoredRetailersList:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase14IAPLaunchInputC10setIAPFlowyAC0G0O_AA0gE0C12withSettingsSaySSG20ignoredRetailersListtF">setIAPFlow(_:withSettings:ignoredRetailersList:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPLaunchInput setIAPFlow method to set the flow of uApp with required inputs</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">setIAPFlow</span><span class="p">(</span><span class="n">_</span> <span class="nv">inIAPFlow</span><span class="p">:</span><span class="kt"><a href="../Classes/IAPLaunchInput/IAPFlow.html">IAPFlow</a></span><span class="p">,</span> <span class="nv">withSettings</span><span class="p">:</span><span class="kt"><a href="../Classes/IAPFlowInput.html">IAPFlowInput</a></span><span class="p">,</span> <span class="nv">ignoredRetailersList</span><span class="p">:[</span><span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase14IAPLaunchInputC7IAPFlowO"></a>
+                    <a name="//apple_ref/swift/Enum/IAPFlow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase14IAPLaunchInputC7IAPFlowO">IAPFlow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This enum is used to set the landing view of IAP</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                        <a href="../Classes/IAPLaunchInput/IAPFlow.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">enum</span> <span class="kt">IAPFlow</span><span class="p">:</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-01-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

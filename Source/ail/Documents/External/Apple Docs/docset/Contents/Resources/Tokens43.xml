@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AISSKeychainService.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AISSKeychainService</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISSKeychainService.h</DeclaredIn>
+            
+			
+			<NodeRef refid="43"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AISSKeychainService/storeValue:forKey:andTokenType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISSKeychainService.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)storeValue:(NSData *)value forKey:(NSString *)key andTokenType:(NSString *)tokenType</Declaration>
+			
+			
+			<Anchor>//api/name/storeValue:forKey:andTokenType:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AISSKeychainService/getValueForTokenType:andKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISSKeychainService.h</DeclaredIn>
+			
+			<Declaration>+ (NSData *)getValueForTokenType:(NSString *)tokenType andKey:(NSString *)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/getValueForTokenType:andKey:error:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AISSKeychainService/deleteValueForKey:andtokenType:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISSKeychainService.h</DeclaredIn>
+			
+			<Declaration>+ (BOOL)deleteValueForKey:(NSString *)key andtokenType:(NSString *)tokenType error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/deleteValueForKey:andtokenType:error:</Anchor>
+            <NodeRef refid="43"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

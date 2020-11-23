@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Εισαγάγετε app infra object";
+"ECSBaseURLNotFound" = "Δεν βρέθηκε διεύθυνση URL βάσης";
+"ECSCartEntryError" = "Το προϊόν δεν προστέθηκε στο καλάθι";
+"ECSCartError" = "Δεν δημιουργήθηκε καλάθι ακόμη";
+"ECSCommerceCartModificationError" = "Η ποσότητα δεν πρέπει να είναι μικρότερη από μηδέν";
+"ECSCtnNotProvided" = "Εισαγάγετε το CTN";
+"ECSHybrisNotAvailable" = "Το κατάστημα της Philips δεν είναι διαθέσιμο για την επιλεγμένη χώρα, είναι διαθέσιμη μόνο η λειτουργία καταστήματος λιανικής";
+"ECSIllegalArgumentError" = "Εισαγάγετε έγκυρα δεδομένα εισόδου";
+"ECSInsufficientStockError" = "Το προϊόν δεν μπορεί να αποσταλεί καθώς έχει εξαντληθεί";
+"ECSInvalidPaymentInfoError" = "Εισαγάγετε έγκυρα στοιχεία πληρωμής";
+"ECSInvalidTokenError" = "Αντιμετωπίσαμε τεχνικό πρόβλημα (μη έγκυρο διακριτικό πρόσβασης). Πραγματοποιήστε Hybris Re-Auth";
+"ECSLocaleNotFound" = "Επιλέξτε τοπικές ρυθμίσεις";
+"ECSNoSuchElementError" = "Παρουσιάστηκε σφάλμα κατά τη λήψη δεδομένων από τον διακομιστή";
+"ECSOAuthDetailError" = "Εισαγάγετε πλήρη στοιχεία OAuth";
+"ECSOAuthNotCalled" = "Απαιτείται έλεγχος ταυτότητας χρήστη για αυτήν την ενέργεια";
+"ECSPIL_BAD_REQUEST" = "Αντιμετωπίσαμε τεχνικό πρόβλημα. Δοκιμάστε ξανά σε λίγη ώρα";
+"ECSPIL_BAD_REQUEST_cartId" = "Δεν δημιουργήθηκε καλάθι ακόμη";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Αντιμετωπίσαμε τεχνικό πρόβλημα. Δοκιμάστε ξανά σε λίγη ώρα";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Αντιμετωπίσαμε τεχνικό πρόβλημα (μη έγκυρο διακριτικό πρόσβασης). Πραγματοποιήστε Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Μη έγκυρη διεύθυνση email. Ελέγξτε.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Το προϊόν δεν προστέθηκε στο καλάθι";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Επιλέξτε τοπικές ρυθμίσεις";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Εισαγάγετε έγκυρο CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Εισαγάγετε έγκυρη ποσότητα";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Το κατάστημα της Philips δεν είναι διαθέσιμο για την επιλεγμένη χώρα, είναι διαθέσιμη μόνο η λειτουργία καταστήματος λιανικής";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Η ποσότητα δεν πρέπει να είναι μεγαλύτερη από μηδέν";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Επιλέξτε τοπικές ρυθμίσεις";
+"ECSPIL_MISSING_PARAMETER_language" = "Επιλέξτε τοπικές ρυθμίσεις";
+"ECSPIL_MISSING_PARAMETER_productId" = "Εισαγάγετε το CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Το κατάστημα της Philips δεν είναι διαθέσιμο για την επιλεγμένη χώρα, είναι διαθέσιμη μόνο η λειτουργία καταστήματος λιανικής";
+"ECSPIL_NEGATIVE_QUANTITY" = "Η ποσότητα δεν πρέπει να είναι μικρότερη από μηδέν";
+"ECSPIL_NOT_ACCEPTABLE" = "Αντιμετωπίσαμε τεχνικό πρόβλημα. Δοκιμάστε ξανά σε λίγη ώρα";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Αντιμετωπίσαμε τεχνικό πρόβλημα. Δοκιμάστε ξανά σε λίγη ώρα";
+"ECSPIL_NOT_FOUND_cartId" = "Εισαγάγετε ένα έγκυρο αναγνωριστικό καλαθιού";
+"ECSPIL_NOT_FOUND_productId" = "Εισαγάγετε έγκυρο CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Το προϊόν δεν μπορεί να αποσταλεί καθώς έχει εξαντληθεί";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Αντιμετωπίσαμε τεχνικό πρόβλημα. Δοκιμάστε ξανά σε λίγη ώρα";
+"ECSPaymentAuthorizationError" = "Η εξουσιοδότηση πληρωμής δεν ήταν επιτυχής";
+"ECSPropositionIdNotFound" = "Ορίστε ένα έγκυρο Proposition ID";
+"ECSSiteIdNotFound" = "Το κατάστημα της Philips δεν είναι διαθέσιμο για την επιλεγμένη χώρα, είναι διαθέσιμη μόνο η λειτουργία καταστήματος λιανικής";
+"ECSUnknownIdentifierError" = "Ο ζητούμενος πόρος δεν είναι διαθέσιμος";
+"ECSUnsupportedDeliveryModeError" = "Ο επιλεγμένος τρόπος παράδοσης δεν υποστηρίζεται";
+"ECSUnsupportedVoucherError" = "Λυπούμαστε, αυτό το κουπόνι δεν μπορεί να εξαργυρωθεί";
+"ECSValidationError" = "Η επικύρωση δεδομένων απέτυχε";
+"ECSVoucherOperationError" = "Λυπούμαστε, αυτό το κουπόνι δεν μπορεί να εξαργυρωθεί";
+"ECSaddressId" = "Η διεύθυνση που εισαγάγατε δεν υπάρχει ή ανήκει σε άλλον χρήστη";
+"ECScountryCodeNotGiven" = "Εισαγάγετε έγκυρο κωδικό χώρας";
+"ECScountryisocode" = "Η επιλεγμένη χώρα δεν είναι έγκυρη";
+"ECSfirstName" = "Λάβετε υπόψη ότι δεν επιτρέπονται οι ακόλουθοι χαρακτήρες: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Αντιμετωπίσαμε τεχνικό πρόβλημα (εσφαλμένα διαπιστευτήρια υπολογιστή-πελάτη). Συνδεθείτε ξανά";
+"ECSinvalid_grant" = "Αντιμετωπίσαμε τεχνικό πρόβλημα (μη έγκυρο διακριτικό Janrain). Συνδεθείτε ξανά";
+"ECSlastName" = "Λάβετε υπόψη ότι δεν επιτρέπονται οι ακόλουθοι χαρακτήρες: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Εισαγάγετε έγκυρη παραγγελία";
+"ECSphone1" = "Ο επιλεγμένος αριθμός τηλεφώνου δεν είναι έγκυρος";
+"ECSphone2" = "Ο επιλεγμένος αριθμός τηλεφώνου δεν είναι έγκυρος";
+"ECSpostUrl" = "Η παραγγελία βρίσκεται ήδη σε κατάσταση πληρωμής/ολοκλήρωσης";
+"ECSpostalCode" = "Ο επιλεγμένος Τ.Κ. δεν είναι έγκυρος";
+"ECSregionisocode" = "Η επιλεγμένη περιοχή δεν είναι έγκυρη";
+"ECSsessionCart" = "Επιλέξτε τη διεύθυνση παράδοσης, τον τρόπο παράδοσης και τον τρόπο πληρωμής πριν υποβάλετε μια παραγγελία";
+"ECSsomethingWentWrong" = "Αντιμετωπίσαμε τεχνικό πρόβλημα. Δοκιμάστε ξανά σε λίγη ώρα";
+"ECSunsupported_grant_type" = "Αντιμετωπίσαμε τεχνικό πρόβλημα (μη υποστηριζόμενος τύπος εκχώρησης). Συνδεθείτε ξανά";

@@ -1,0 +1,738 @@
+{
+    "type": "productCategorySearchPageWsDTO",
+    "breadcrumbs": [
+        {
+            "facetCode": "category",
+            "facetName": "category",
+            "facetValueCode": "Tuscany_Campaign",
+            "facetValueName": "Tuscany Category",
+            "removeQuery": {
+                "query": {
+                    "value": ":relevance"
+                },
+                "url": "/search?q=%3Arelevance"
+            }
+        }
+    ],
+    "currentQuery": {
+        "query": {
+            "value": ":relevance:category:Tuscany_Campaign"
+        },
+        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign"
+    },
+    "facets": [
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "hidden",
+            "priority": 2147483646,
+            "values": [
+                {
+                    "count": 12,
+                    "name": "false",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:hidden:false"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3Ahidden%3Afalse"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": true,
+            "multiSelect": false,
+            "name": "category",
+            "priority": 2147483645,
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Skin comfort",
+            "priority": 2147483636,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "•••",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGSKINCOMFORT:%E2%80%A2%E2%80%A2%E2%80%A2"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGSKINCOMFORT%3A%25E2%2580%25A2%25E2%2580%25A2%25E2%2580%25A2"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Number of heads",
+            "priority": 2147483604,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "3 Heads",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGNUMBEROFHEADS:3+Heads"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGNUMBEROFHEADS%3A3%2BHeads"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Contour following",
+            "priority": 2147483572,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "5-direction Flex Heads",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGCONTOURFOLLOWING:5-direction+Flex+Heads"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGCONTOURFOLLOWING%3A5-direction%2BFlex%2BHeads"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Shave wet and dry",
+            "priority": 2147483565,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "Wet or dry shave",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGSHAVEWETDRY:Wet+or+dry+shave"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGSHAVEWETDRY%3AWet%2Bor%2Bdry%2Bshave"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Color",
+            "priority": 2147483554,
+            "values": [
+                {
+                    "count": 3,
+                    "name": "Pink",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCCOLOR:Pink"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCCOLOR%3APink"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "Green",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCCOLOR:Green"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCCOLOR%3AGreen"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "Purple",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCCOLOR:Purple"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCCOLOR%3APurple"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "Red",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCCOLOR:Red"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCCOLOR%3ARed"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Series",
+            "priority": 2147483501,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "Shaver series 5000",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:PCNORELCOSERIESUS:Shaver+series+5000"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3APCNORELCOSERIESUS%3AShaver%2Bseries%2B5000"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Type",
+            "priority": 2147483498,
+            "values": [
+                {
+                    "count": 2,
+                    "name": "Soft Spout",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCTYPE:Soft+Spout"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCTYPE%3ASoft%2BSpout"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "Spoutless",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCTYPE:Spoutless"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCTYPE%3ASpoutless"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Nipple",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCTYPE:Nipple"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCTYPE%3ANipple"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Straw",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCTYPE:Straw"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCTYPE%3AStraw"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Ease of use",
+            "priority": 2147483497,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "5-min quick charge",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGEASEOFUSE:5-min+quick+charge"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGEASEOFUSE%3A5-min%2Bquick%2Bcharge"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Fully washable",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGEASEOFUSE:Fully+washable"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGEASEOFUSE%3AFully%2Bwashable"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Size",
+            "priority": 2147483477,
+            "values": [
+                {
+                    "count": 3,
+                    "name": "9oz/260ml",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCSIZE:9oz%2F260ml"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCSIZE%3A9oz%252F260ml"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "5oz/150ml",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCSIZE:5oz%2F150ml"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCSIZE%3A5oz%252F150ml"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Sustainability",
+            "priority": 2147483320,
+            "values": [
+                {
+                    "count": 5,
+                    "name": "Green products",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:GENERICSUSTAINABILITY:Green+products"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AGENERICSUSTAINABILITY%3AGreen%2Bproducts"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Skin type",
+            "priority": 2147483308,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "Normal",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGSKINTYPE:Normal"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGSKINTYPE%3ANormal"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Shaving performance",
+            "priority": 2147483275,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "•••",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGSHAVINGPERFORMANCE:%E2%80%A2%E2%80%A2%E2%80%A2"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGSHAVINGPERFORMANCE%3A%25E2%2580%25A2%25E2%2580%25A2%25E2%2580%25A2"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Usage time per charge",
+            "priority": 2147483256,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "40–59 minutes",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGTIMEPERCHARGE:40%E2%80%9359%C2%A0minutes"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGTIMEPERCHARGE%3A40%25E2%2580%259359%25C2%25A0minutes"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Stage",
+            "priority": 2147483227,
+            "values": [
+                {
+                    "count": 2,
+                    "name": "Stage 4",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCSTAGE:Stage+4"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCSTAGE%3AStage%2B4"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Stage 1",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCSTAGE:Stage+1"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCSTAGE%3AStage%2B1"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Stage 2",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCSTAGE:Stage+2"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCSTAGE%3AStage%2B2"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Stage 3",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:MCCSTAGE:Stage+3"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AMCCSTAGE%3AStage%2B3"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Versatility with SmartClick",
+            "priority": 2147483224,
+            "values": [
+                {
+                    "count": 1,
+                    "name": "Facial Trimming",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:SHAVINGVERSATILITYSMARTCLICK:Facial+Trimming"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3ASHAVINGVERSATILITYSMARTCLICK%3AFacial%2BTrimming"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "actualPriceValue",
+            "priority": 2147483174,
+            "values": [
+                {
+                    "count": 2,
+                    "name": "4.49",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:4.49"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A4.49"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "6.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:6.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A6.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "4.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:4.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A4.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "5.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:5.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A5.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "7.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:7.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A7.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "8.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:8.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A8.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "9.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:9.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A9.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "10.0",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:10.0"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A10.0"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "12.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:12.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A12.99"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "104.99",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:actualPriceValue:104.99"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AactualPriceValue%3A104.99"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": true,
+            "name": "Promotion",
+            "priority": 2147483172,
+            "values": [
+                {
+                    "count": 2,
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:Promotion:BMfWS"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3APromotion%3ABMfWS"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "Bundle 2.4Release US",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:Promotion:Bundle+2.4Release+US"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3APromotion%3ABundle%2B2.4Release%2BUS"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:Promotion:percent"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3APromotion%3Apercent"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        },
+        {
+            "category": false,
+            "multiSelect": false,
+            "name": "averageOverallRating",
+            "priority": 2147483171,
+            "values": [
+                {
+                    "count": 3,
+                    "name": "4.5",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:4.5"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A4.5"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "3.1176",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:3.1176"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A3.1176"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 2,
+                    "name": "4.4048",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:4.4048"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A4.4048"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "3.75",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:3.75"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A3.75"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "3.9529",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:3.9529"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A3.9529"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "4.16",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:4.16"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A4.16"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "4.3015",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:4.3015"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A4.3015"
+                    },
+                    "selected": false
+                },
+                {
+                    "count": 1,
+                    "name": "4.534",
+                    "query": {
+                        "query": {
+                            "value": ":relevance:category:Tuscany_Campaign:averageOverallRating:4.534"
+                        },
+                        "url": "/search?q=%3Arelevance%3Acategory%3ATuscany_Campaign%3AaverageOverallRating%3A4.534"
+                    },
+                    "selected": false
+                }
+            ],
+            "visible": true
+        }
+    ],
+    "freeTextSearch": "",
+    "pagination": {
+        "currentPage": 0,
+        "pageSize": 20,
+        "sort": "relevance",
+        "totalPages": 1,
+        "totalResults": 12
+    },
+    "products": []
+}

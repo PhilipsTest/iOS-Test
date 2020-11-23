@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "โปรดระบุวัตถุอินฟราเรดของแอป";
+"ECSBaseURLNotFound" = "ไม่พบ URL หลัก";
+"ECSCartEntryError" = "ยังไม่ได้เพิ่มสินค้าลงในตะกร้า";
+"ECSCartError" = "ยังไม่ได้สร้างตะกร้า";
+"ECSCommerceCartModificationError" = "จำนวนต้องไม่ต่ำกว่าศูนย์";
+"ECSCtnNotProvided" = "โปรดระบุ CTN";
+"ECSHybrisNotAvailable" = "ร้านค้า Philips ไม่พร้อมให้บริการในประเทศที่เลือก มีเฉพาะโหมดร้านค้าปลีกเท่านั้น";
+"ECSIllegalArgumentError" = "โปรดป้อนข้อมูลที่ถูกต้อง";
+"ECSInsufficientStockError" = "ไม่สามารถจัดส่งผลิตภัณฑ์ได้เนื่องจากผลิตภัณฑ์หมด";
+"ECSInvalidPaymentInfoError" = "โปรดระบุรายละเอียดการชำระเงินที่ถูกต้อง";
+"ECSInvalidTokenError" = "เราพบข้อผิดพลาดทางเทคนิค (โทเค็นการเข้าถึงไม่ถูกต้อง). โปรดทำการการยืนยันตัวตน Hybris ซ้ำ";
+"ECSLocaleNotFound" = "โปรดตั้งค่าสถานที่";
+"ECSNoSuchElementError" = "เกิดข้อผิดพลาดขณะดึงข้อมูลจากเซิร์ฟเวอร์";
+"ECSOAuthDetailError" = "โปรดระบุรายละเอียด OAuth ที่สมบูรณ์";
+"ECSOAuthNotCalled" = "ต้องมีการตรวจสอบผู้ใช้สำหรับการดำเนินการนี้";
+"ECSPIL_BAD_REQUEST" = "เราพบข้อผิดพลาดทางเทคนิค โปรดลองอีกครั้งในภายหลัง";
+"ECSPIL_BAD_REQUEST_cartId" = "ยังไม่ได้สร้างตะกร้า";
+"ECSPIL_INTEGRATION_TIMEOUT" = "เราพบข้อผิดพลาดทางเทคนิค โปรดลองอีกครั้งในภายหลัง";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "เราพบข้อผิดพลาดทางเทคนิค (โทเค็นการเข้าถึงไม่ถูกต้อง). โปรดทำการการยืนยันตัวตน Hybris ซ้ำ";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "อีเมล์แอดเดรสไม่ถูกต้อง โปรดตรวจสอบ";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "ยังไม่ได้เพิ่มสินค้าลงในตะกร้า";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "โปรดตั้งค่าสถานที่";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "โปรดระบุ CTN ที่ถูกต้อง";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "โปรดระบุจำนวนที่ถูกต้อง";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "ร้านค้า Philips ไม่พร้อมให้บริการในประเทศที่เลือก มีเฉพาะโหมดร้านค้าปลีกเท่านั้น";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "จำนวนต้องมากกว่าศูนย์";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "โปรดตั้งค่าสถานที่";
+"ECSPIL_MISSING_PARAMETER_language" = "โปรดตั้งค่าสถานที่";
+"ECSPIL_MISSING_PARAMETER_productId" = "โปรดระบุ CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "ร้านค้า Philips ไม่พร้อมให้บริการในประเทศที่เลือก มีเฉพาะโหมดร้านค้าปลีกเท่านั้น";
+"ECSPIL_NEGATIVE_QUANTITY" = "จำนวนต้องไม่ต่ำกว่าศูนย์";
+"ECSPIL_NOT_ACCEPTABLE" = "เราพบข้อผิดพลาดทางเทคนิค โปรดลองอีกครั้งในภายหลัง";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "เราพบข้อผิดพลาดทางเทคนิค โปรดลองอีกครั้งในภายหลัง";
+"ECSPIL_NOT_FOUND_cartId" = "โปรดระบุ ID รถเข็นที่ถูกต้อง";
+"ECSPIL_NOT_FOUND_productId" = "โปรดระบุ CTN ที่ถูกต้อง";
+"ECSPIL_STOCK_EXCEPTION" = "ไม่สามารถจัดส่งผลิตภัณฑ์ได้เนื่องจากผลิตภัณฑ์หมด";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "เราพบข้อผิดพลาดทางเทคนิค โปรดลองอีกครั้งในภายหลัง";
+"ECSPaymentAuthorizationError" = "การอนุมัติการชำระเงินไม่สำเร็จ";
+"ECSPropositionIdNotFound" = "โปรดตั้งค่า Proposition ID ที่ถูกต้อง";
+"ECSSiteIdNotFound" = "ร้านค้า Philips ไม่พร้อมให้บริการในประเทศที่เลือก มีเฉพาะโหมดร้านค้าปลีกเท่านั้น";
+"ECSUnknownIdentifierError" = "ทรัพยากรที่ขอไม่พร้อมใช้งาน";
+"ECSUnsupportedDeliveryModeError" = "ไม่รองรับโหมดการส่งที่เลือก";
+"ECSUnsupportedVoucherError" = "ขออภัย ไม่สามารถแลกใช้บัตรกำนัลนี้ได้";
+"ECSValidationError" = "การตรวจสอบข้อมูลล้มเหลว";
+"ECSVoucherOperationError" = "ขออภัย ไม่สามารถแลกใช้บัตรกำนัลนี้ได้";
+"ECSaddressId" = "ไม่พบที่อยู่ที่ให้มาหรือที่อยู่นี้เป็นของผู้ใช้อื่น";
+"ECScountryCodeNotGiven" = "โปรดระบุรหัสประเทศที่ถูกต้อง";
+"ECScountryisocode" = "ประเทศที่เลือกไม่ถูกต้อง";
+"ECSfirstName" = "โปรดทราบว่าไม่อนุญาตให้ใช้อักขระต่อไปนี้: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "เราพบข้อผิดพลาดทางเทคนิค (ข้อมูลส่วนตัวของลูกค้าผิดพลาด) โปรดเข้าสู่ระบบอีกครั้ง";
+"ECSinvalid_grant" = "เราพบข้อผิดพลาดทางเทคนิค (โทเค็น Janrain ไม่ถูกต้อง) โปรดเข้าสู่ระบบอีกครั้ง";
+"ECSlastName" = "โปรดทราบว่าไม่อนุญาตให้ใช้อักขระต่อไปนี้: \\\" < > ) ( * ^ % $ @ ! &   , ? / : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "โปรดระบุการสั่งซื้อที่ถูกต้อง";
+"ECSphone1" = "หมายเลขโทรศัพท์ที่เลือกไม่ถูกต้อง";
+"ECSphone2" = "หมายเลขโทรศัพท์ที่เลือกไม่ถูกต้อง";
+"ECSpostUrl" = "คำสั่งซื้ออยู่ในสถานะชำระเงิน/เสร็จสมบูรณ์แล้ว";
+"ECSpostalCode" = "รหัสไปรษณีย์ที่เลือกไม่ถูกต้อง";
+"ECSregionisocode" = "ภูมิภาคที่เลือกไม่ถูกต้อง";
+"ECSsessionCart" = "โปรดเลือกที่อยู่การจัดส่ง โหมดการจัดส่ง และวิธีการชำระเงินของคุณก่อนส่งการสั่งซื้อ";
+"ECSsomethingWentWrong" = "เราพบข้อผิดพลาดทางเทคนิค โปรดลองอีกครั้งในภายหลัง";
+"ECSunsupported_grant_type" = "เราพบข้อผิดพลาดทางเทคนิค (ประเภทการให้สิทธิ์ที่ไม่สนับสนุน) โปรดเข้าสู่ระบบอีกครั้ง";

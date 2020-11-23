@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIAppConfigurationProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIAppConfigurationProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfigurationProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="55"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppConfigurationProtocol/getPropertyForKey:group:error:</TokenIdentifier>
+			<Abstract type="html">Gets property for key</Abstract>
+			<DeclaredIn>AIAppConfigurationProtocol.h</DeclaredIn>
+			
+			<Declaration>- (id)getPropertyForKey:(NSString *)key group:(NSString *)group error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">the key</Abstract>
+				</Parameter><Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the group name</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the value for key mapped by name, or null if no such mapping exists
+if value is literal then &apos;String&apos; Object is returned
+if value is number then &apos;Integer&apos; Object is returned
+if value is array of literal then &apos;array of String&apos; Object is returned
+if value is array of number then &apos;array of Integer&apos; Object is returned</Abstract></ReturnValue>
+			<Anchor>//api/name/getPropertyForKey:group:error:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppConfigurationProtocol/setPropertyForKey:group:value:error:</TokenIdentifier>
+			<Abstract type="html">Sets property for key</Abstract>
+			<DeclaredIn>AIAppConfigurationProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)setPropertyForKey:(NSString *)key group:(NSString *)group value:(id)value error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">the key</Abstract>
+				</Parameter><Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the group name</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">new value that needs to be set for the key. Value can be String, Number, Array of Strings, Array of Numbers and Dictionary</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key or value are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Bool indicating whether value is set correctly</Abstract></ReturnValue>
+			<Anchor>//api/name/setPropertyForKey:group:value:error:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppConfigurationProtocol/getDefaultPropertyForKey:group:error:</TokenIdentifier>
+			<Abstract type="html">Gets property for key from the static file</Abstract>
+			<DeclaredIn>AIAppConfigurationProtocol.h</DeclaredIn>
+			
+			<Declaration>- (id)getDefaultPropertyForKey:(NSString *)key group:(NSString *)group error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">the key</Abstract>
+				</Parameter><Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the group name</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the value for key mapped by name, or null if no such mapping exists
+if value is literal then &apos;String&apos; Object is returned
+if value is number then &apos;Integer&apos; Object is returned
+if value is array of literal then &apos;array of String&apos; Object is returned
+if value is array of number then &apos;array of Integer&apos; Object is returned</Abstract></ReturnValue>
+			<Anchor>//api/name/getDefaultPropertyForKey:group:error:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppConfigurationProtocol/refreshCloudConfig:</TokenIdentifier>
+			<Abstract type="html">Refresh cloud config.
+It will be downloaded if the URL of the config in Service Discovery has changed compared to last time the config was downloaded</Abstract>
+			<DeclaredIn>AIAppConfigurationProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)refreshCloudConfig:(void ( ^ ) ( AIACRefreshResult refreshResult , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronous callback reporting result of refresh. This block has no return value and takes two arguments:refreshResult and error
+completionHandler will be called on main thread.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refreshCloudConfig:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppConfigurationProtocol/resetConfig:</TokenIdentifier>
+			<Abstract type="html">Description: used to reset the dynamic config as well as cloud config</Abstract>
+			<DeclaredIn>AIAppConfigurationProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)resetConfig:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">error description</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">returns bool status</Abstract></ReturnValue>
+			<Anchor>//api/name/resetConfig:</Anchor>
+            <NodeRef refid="55"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AILanguagePack.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AILanguagePack</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.h</DeclaredIn>
+            
+			
+			<NodeRef refid="20"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/init</TokenIdentifier>
+			<Abstract type="html">Initializes an instance of a Language Pack
+use initWithAppInfra init method</Abstract>
+			<DeclaredIn>AILanguagePack.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)init</Declaration>
+			
+			<ReturnValue><Abstract type="html">nil as this method is unavailable</Abstract></ReturnValue>
+			<Anchor>//api/name/init</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithAppInfra:(nonnull AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/invalidateLanguagePack</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)invalidateLanguagePack</Declaration>
+			
+			
+			<Anchor>//api/name/invalidateLanguagePack</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/removeFileAtPath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)removeFileAtPath:(NSString *)path</Declaration>
+			
+			
+			<Anchor>//api/name/removeFileAtPath:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/RESTClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)RESTClient</Declaration>
+			
+			
+			<Anchor>//api/name/RESTClient</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/refresh:</TokenIdentifier>
+			<Abstract type="html">refreshes the overview file containing the list of languages available in the server
+and also downloads the language pack based on the user preferred ui locale</Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)refresh:(nullable void ( ^ ) ( AILPRefreshStatus refreshResult , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>:</Name>
+					<Abstract type="html">completion handler with refresh status and error if refresh failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refresh:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/getServiceIdWithError:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getServiceIdWithError:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/getServiceIdWithError:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/downloadOverviewFileforServiceId:withCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadOverviewFileforServiceId:(NSString *)serviceId withCompletion:(nullable void ( ^ ) ( AILPRefreshStatus refreshResult , NSError *_Nullable error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/downloadOverviewFileforServiceId:withCompletion:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/downloadLanguagePackWithCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadLanguagePackWithCompletion:(nullable void ( ^ ) ( AILPRefreshStatus refreshResult , NSError *_Nullable error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/downloadLanguagePackWithCompletion:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/getPreferredLanguagePackInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getPreferredLanguagePackInfo</Declaration>
+			
+			
+			<Anchor>//api/name/getPreferredLanguagePackInfo</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/getPreferredLocales</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getPreferredLocales</Declaration>
+			
+			
+			<Anchor>//api/name/getPreferredLocales</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/shouldUpdateCurrentLanguagePack</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)shouldUpdateCurrentLanguagePack</Declaration>
+			
+			
+			<Anchor>//api/name/shouldUpdateCurrentLanguagePack</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/activate:</TokenIdentifier>
+			<Abstract type="html">activates the Language Pack downloaded for the preferred ui locale</Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)activate:(nullable void ( ^ ) ( AILPActivateStatus activatedStatus , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>:</Name>
+					<Abstract type="html">completion handler with activate status and error if activate failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/activate:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/updateLanguagePackLocalInfo</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (void)updateLanguagePackLocalInfo</Declaration>
+			
+			
+			<Anchor>//api/name/updateLanguagePackLocalInfo</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/description</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)description</Declaration>
+			
+			
+			<Anchor>//api/name/description</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/cachedLanguagePackOverviewDetails</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)cachedLanguagePackOverviewDetails</Declaration>
+			
+			
+			<Anchor>//api/name/cachedLanguagePackOverviewDetails</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/localizedStringForKey:</TokenIdentifier>
+			<Abstract type="html">returns the localized string from cloud bundle
+if it not there in cloud will look in main bundle
+if not found will return the key</Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (nullable NSString *)localizedStringForKey:(NSString *_Nonnull)key</Declaration>
+			
+			
+			<Anchor>//api/name/localizedStringForKey:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/localizedStringForKey:value:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)localizedStringForKey:(NSString *)key value:(nullable NSString *)value</Declaration>
+			
+			
+			<Anchor>//api/name/localizedStringForKey:value:</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/metedataFilePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)metedataFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/metedataFilePath</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/activatedJasonFilePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)activatedJasonFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/activatedJasonFilePath</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/downloadedJasonFilePath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)downloadedJasonFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/downloadedJasonFilePath</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILanguagePack/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/setCachedLanguagePackOverviewDetails:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *cachedLanguagePackOverviewDetails</Declaration>
+			
+			
+			<Anchor>//api/name/cachedLanguagePackOverviewDetails</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/cachedLanguagePackOverviewDetails</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *cachedLanguagePackOverviewDetails</Declaration>
+			
+			
+			<Anchor>//api/name/cachedLanguagePackOverviewDetails</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILanguagePack/cachedLanguagePackOverviewDetails</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *cachedLanguagePackOverviewDetails</Declaration>
+			
+			
+			<Anchor>//api/name/cachedLanguagePackOverviewDetails</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/setRESTClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AIRESTClientProtocol&gt; RESTClient</Declaration>
+			
+			
+			<Anchor>//api/name/RESTClient</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILanguagePack/RESTClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AIRESTClientProtocol&gt; RESTClient</Declaration>
+			
+			
+			<Anchor>//api/name/RESTClient</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILanguagePack/RESTClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePack.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) id&lt;AIRESTClientProtocol&gt; RESTClient</Declaration>
+			
+			
+			<Anchor>//api/name/RESTClient</Anchor>
+            <NodeRef refid="20"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,134 @@
+/* 
+  Localizable.strings
+  Registration
+
+  Created by kamal jaiswal on 31/03/15.
+  Copyright (c) 2015 Philips. All rights reserved.
+*/
+
+"ForgotPwdEmailResendMsg" = "A link is sent to your email to reset the password of your Philips Account";
+"ForgotPwdEmailResendMsg_Title"="Reset Password";
+"Continue_Btntxt"="Continue";
+"InvalidEmailAdddress_ErrorMsg"="Invalid email address";
+"InValid_PwdErrorMsg"="The password is not valid, please choose another password ";
+"InValidFirstName_ErrorMsg" = "Invalid first name";
+"EmptyField_ErrorMsg"= "Field cannot be empty";
+"MaxiumCharacters_ErrorMsg"="Field Should not exceed 200 Characters";
+"NoNetworkConnection"="Registration is not available because you are offline";
+"SocialAccountMerger_ErrorMsg"="You have already registered with another %@ account, please sign in to %@ account.";
+
+
+//Registration Error
+//DIInvalidCredentials
+"Janrain_Error_Need_Email_Verification"="Please verify your email address through the activation link sent to you";
+"JanRain_Invalid_Input" = "Invalid input ,Please check and enter correct details.";
+"JanRain_Invalid_Credentials" = "The email or password you entered is incorrect.";
+"JanRain_Error_Check_Internet" = "Problem in network connection.";
+"JanRain_LogIn_Failed" = "Failed to login, Please try again after some time.";
+
+
+///
+"SigIn_TitleTxt"="Sign In";
+
+//Registration Base View Controller
+"RegBaseViewNav_TitleTxt" = "Account";
+"RegWelcomeText" = "Welcome";
+
+//Registration Create View Controller
+"RegCreateAccount_NavTitle" = "Create Account";
+"NameField_ErrorText" = "Please enter first name.";
+"kemailFieldErrorText" = "Please enter valid email address.";
+"EmailAlreadyUsed_TxtFieldErrorAlertMsg" = "Email address is already in use";
+"EmailAlreadyUsedErrorMsg_LabelTxt" = "This email address is already in use with a MyPhilips or a social media account.\nPlease go back to sign in, or use an other email address.";
+
+//Registration Welcome View Controller
+"RegWelcomeView_NavTitleTxt" = "Sign In";
+"LegalNoticeText" = "By creating an account or signing in you certify that you are 16 years or older and you agree to our Privacy Policy and Terms and Conditions.";
+"PrivacyPolicyText" = "Privacy Policy";
+"TermsAndConditionsText" = "Terms and Conditions";
+
+//Registration Verify View Controller
+"RegVerifyEmailView_NavTitleTxt" = "Sign In";
+"RegEmailNotVerified_AlertPopupErrorText" = "You have not verified your account yet . Check your email and click the link to activate your account.";
+"RegVerifyEmailView_VerificationEmailText" = "We have sent an email to: %@";
+
+//Register Social Sign In
+"RegSignWith_Lbltxt" = "Sign in with";
+
+//Registration Merge Screen
+"RegMerge_MergeLbltxt" = "Please enter your MyPhilips password for %@, to merge your account";
+//Registration TraditionSignIn ViewController
+"TraditionalSignIn_SignInWithMyPhilips_lbltxt"="Sign with My Philips";
+"TraditionalSignIn_EmailAddPlaceHolder_txtFiled"="Enter email address";
+"TraditionalSignIn_PwdPlaceHolder_txtFiled"="Enter password";
+"TraditionalSignIn_Resend_lbltxt"="Press \"Resend\" button if you have not received an email";
+"TraditionalSignIn_SignIn_btntxt"="Sign In";
+"TraditionalSignIn_ForgotPwd_btntxt"="Forgot Password";
+"TraditionalSignIn_Resend_btntxt"="Resend";
+
+//Registration SignIn Success ViewController
+"SignInSuccess_Welcome_lbltxt"="Welcome";
+"SignInSuccess_Continue_btntxt"="Continue";
+"SignInSuccess_SignOut_btntxt"="Sign Out";
+
+//Registration Welcome ViewController
+"Welcome_needAccountto_lbltxt"="You will need an account to [related content]";
+"Welcome_Alternate_SignInAccount_lbltxt"="Or Sign in with";
+"Welcome_Create_MyPhilips_btntxt"="Create MyPhilips Account";
+"Welcome_MyPhilips_btntxt"="MyPhilips";
+"Welcome_Facebook_btntxt"="Facebook";
+"Welcome_Twitter_btntxt"="Twitter";
+"Welcome_Welcome_lbltxt"="Welcome!";
+
+
+//Registration Create Account ViewController
+"Create_Account_EnterEmail_PlaceHolder_txtField"="Enter e-mail";
+"Create_Account_ChoosePwd_PlaceHolder_txtField"="Choose a password";
+"Create_Account_CreateMyPhilips_btntxt"="Create MyPhilips Account";
+"Create_Account_FirstName__Placeholder_txtFiled"="Enter first name";
+"Create_Account_Hint_Password_lbltxt"="Your password can contain:\n  -  Minimum of 8 characters\n  -  At least 2 out of 3 types of characters: Letters (a-z) or (A-Z), digits (0-9) or symbols (*^%)";
+"Create_Account_PeridicOffers_lbltxt"="I would like to receive periodic offers and updates from philips";
+"Create_Account_ForgotPwd_btntxt"="Forgot Password";
+
+//Registration Accounts Merge ViewController
+
+"Account_Merge_SignIn_lbltxt"="Sign in with Facebook";
+"Account_Merge_UsedEmail_Error_lbltxt"="You have used this email address before. For creating a MyPhilips account.";
+"Account_Merge_EnterPassword_lbltxt"="Please enter your MyPhilips password to merge your account.";
+"Account_Merge_EnterEmail_Placeholder_txtFiled"="Enter email address";
+"Account_Merge_EnterPassword_Placeholder_txtFiled"="Enter password";
+"Account_Merge_ForgotPassword_btntxt"="Forgot Password";
+"Account_Merge_Merge_btntxt"="Merge";
+
+
+//Registration Social Sign In  ViewController
+"Social_SignIn_Email_PlaceHolder_txtFiled"="Please enter email";
+"Social_SignIn_AlmostDone_lbltxt"="Almost done !";
+"Social_SignIn_Continue_btntxt"="Continue";
+"Social_SocialSignIn_lbltxt"="Sign in with [Social Account]";
+"Social_ReciveOffers_lbltxt"="I would like to reiceive periodic offers and updates from philips";
+
+
+//Registration Initial Sign In  ViewController
+"InitialSignedIn_Welcome_User_lbltxt"="Welcome [Name User]";
+"InitialSignedIn_SignedInUsing_lbltxt"="You have signed in using:";
+"InitialSignedIn_EmailInfo_lbltxt"="email@email.com";
+"InitialSignedIn_SignOut_btntxt"="Sign out";
+"InitialSignedIn_Periodic_lbltxt"="I would like to receive periodic offers and updates from Philips";
+"InitialSignedIn_SigninEmailText" = "You have signed in using: %@";
+
+//Registration Verify Email Scene  ViewController
+"VerifyEmail_VerifyEmail_lbltxt"="Please verify your email";
+"VerifyEmail_EmailSentto_lbltxt"="We have sent an email to:";
+"VerifyEmail_EmailSenttoEmailInfo_lbltxt"="email@email.net";
+"VerifyEmail_ActivateInfo_lbltxt"="When you are ready, please check your email to activate your account.";
+"VerifyEmail_EmailSenttoEmailInfo_lbltxt"="[Explain value to user]";
+"VerifyEmail_Activated_btntxt"="I have activated my account";
+"VerifyEmail_Resend_btntxt"="Resend";
+"VerifyEmail_ResendErrorMsg_lbltxt"="Press “Resend” button if you have not received an email.";
+
+
+
+
+
+

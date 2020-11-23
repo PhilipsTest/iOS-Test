@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SessionRefreshDelegate Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Protocol/SessionRefreshDelegate" class="dashAnchor"></a>
+    <a title="SessionRefreshDelegate Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PhilipsRegistration Docs</a> (87% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PhilipsRegistration Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        SessionRefreshDelegate Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DICOPPAExtension.html">DICOPPAExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIConsumerInterest.html">DIConsumerInterest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationContentConfiguration.html">DIRegistrationContentConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationFlowConfiguration.html">DIRegistrationFlowConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationVersion.html">DIRegistrationVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIUser.html">DIUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URConsentProvider.html">URConsentProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URDependencies">URDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URInterface.html">URInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLaunchInput.html">URLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URMarketingConsentHandler">URMarketingConsentHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DICOPPASTATUS.html">DICOPPASTATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RegistrationCompletionErrorCode.html">RegistrationCompletionErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLoggedInScreen.html">URLoggedInScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URPriorityFunction.html">URPriorityFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserGender.html">UserGender</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DIRegistrationConfigurationDelegate.html">DIRegistrationConfigurationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>SessionRefreshDelegate</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SessionRefreshDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                </div>
+              </div>
+            <p>Implement this protocol to receive callbacks about user session refresh.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SessionRefreshDelegate(im)loginSessionRefreshSucceed"></a>
+                    <a name="//apple_ref/objc/Method/-loginSessionRefreshSucceed" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SessionRefreshDelegate(im)loginSessionRefreshSucceed">-loginSessionRefreshSucceed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when user&rsquo;s login session has been refreshed successfully.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">loginSessionRefreshSucceed</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">loginSessionRefreshSucceed</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SessionRefreshDelegate(im)loginSessionRefreshFailedWithError:"></a>
+                    <a name="//apple_ref/objc/Method/-loginSessionRefreshFailedWithError:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SessionRefreshDelegate(im)loginSessionRefreshFailedWithError:">-loginSessionRefreshFailedWithError:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when failed to refresh login session.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loginSessionRefreshFailedWithError</span><span class="p">:(</span><span class="n">nonnull</span> <span class="n">NSError</span> <span class="o">*</span><span class="p">)</span><span class="nv">error</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">loginSessionRefreshFailedWithError</span><span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Description of error that occurred.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SessionRefreshDelegate(im)loginSessionRefreshFailedAndLoggedout"></a>
+                    <a name="//apple_ref/objc/Method/-loginSessionRefreshFailedAndLoggedout" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SessionRefreshDelegate(im)loginSessionRefreshFailedAndLoggedout">-loginSessionRefreshFailedAndLoggedout</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called when failed to refresh login session because user&rsquo;s current session was invalidated by the backend. User needs to login again to continue in such cases.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">loginSessionRefreshFailedAndLoggedout</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">optional</span> <span class="kd">func</span> <span class="nf">loginSessionRefreshFailedAndLoggedout</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

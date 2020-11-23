@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Furnizează app infra object";
+"ECSBaseURLNotFound" = "Adresa URL de bază nu a fost găsită";
+"ECSCartEntryError" = "Produsul nu este adăugat în coş";
+"ECSCartError" = "Nu a fost creat încă niciun coş";
+"ECSCommerceCartModificationError" = "Cantitatea nu trebuie să fie mai mică de zero";
+"ECSCtnNotProvided" = "Furnizează CTN";
+"ECSHybrisNotAvailable" = "Magazinul Philips nu este disponibil pentru ţara selectată; este disponibil numai modul de vânzare cu amănuntul";
+"ECSIllegalArgumentError" = "Furnizează date valide";
+"ECSInsufficientStockError" = "Produsul nu poate fi expediat deoarece nu este pe stoc";
+"ECSInvalidPaymentInfoError" = "Furnizează detalii de plată valide";
+"ECSInvalidTokenError" = "Am întâmpinat probleme tehnice (token de acces nevalid). Te rugăm să te reconectezi";
+"ECSLocaleNotFound" = "Setează locaţia";
+"ECSNoSuchElementError" = "A apărut o eroare la obţinerea datelor de la server";
+"ECSOAuthDetailError" = "Introdu detalii OAuth complete";
+"ECSOAuthNotCalled" = "Este necesară autorizarea utilizatorului pentru această acţiune";
+"ECSPIL_BAD_REQUEST" = "Am întâmpinat probleme tehnice. Încearcă din nou mai târziu";
+"ECSPIL_BAD_REQUEST_cartId" = "Nu a fost creat încă niciun coş";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Am întâmpinat probleme tehnice. Încearcă din nou mai târziu";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Am întâmpinat probleme tehnice (token de acces nevalid). Te rugăm să te reconectezi";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Adresă de e-mail nevalidă. Te rugăm să verifici.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Produsul nu este adăugat în coş";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Setează locaţia";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Introdu un CTN valid";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Introdu o cantitate validă";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Magazinul Philips nu este disponibil pentru ţara selectată; este disponibil numai modul de vânzare cu amănuntul";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Cantitatea trebuie să fie mai mare de zero";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Setează locaţia";
+"ECSPIL_MISSING_PARAMETER_language" = "Setează locaţia";
+"ECSPIL_MISSING_PARAMETER_productId" = "Furnizează CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Magazinul Philips nu este disponibil pentru ţara selectată; este disponibil numai modul de vânzare cu amănuntul";
+"ECSPIL_NEGATIVE_QUANTITY" = "Cantitatea nu trebuie să fie mai mică de zero";
+"ECSPIL_NOT_ACCEPTABLE" = "Am întâmpinat probleme tehnice. Încearcă din nou mai târziu";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Am întâmpinat probleme tehnice. Încearcă din nou mai târziu";
+"ECSPIL_NOT_FOUND_cartId" = "Introdu un ID de coş valid";
+"ECSPIL_NOT_FOUND_productId" = "Introdu un CTN valid";
+"ECSPIL_STOCK_EXCEPTION" = "Produsul nu poate fi expediat deoarece nu este pe stoc";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Am întâmpinat probleme tehnice. Încearcă din nou mai târziu";
+"ECSPaymentAuthorizationError" = "Autorizarea plăţii nu a reuşit";
+"ECSPropositionIdNotFound" = "Setează un Proposition ID valid";
+"ECSSiteIdNotFound" = "Magazinul Philips nu este disponibil pentru ţara selectată; este disponibil numai modul de vânzare cu amănuntul";
+"ECSUnknownIdentifierError" = "Resursa solicitată nu este disponibilă";
+"ECSUnsupportedDeliveryModeError" = "Modul de livrare selectat nu este acceptat";
+"ECSUnsupportedVoucherError" = "Ne pare rău, acest voucher nu poate fi valorificat";
+"ECSValidationError" = "Validarea datelor nu a reuşit";
+"ECSVoucherOperationError" = "Ne pare rău, acest voucher nu poate fi valorificat";
+"ECSaddressId" = "Adresa specificată nu există sau aparţine altui utilizator";
+"ECScountryCodeNotGiven" = "Introdu un cod de ţară valid";
+"ECScountryisocode" = "Ţara selectată este nu este validă";
+"ECSfirstName" = "Următoarele caractere nu sunt permise: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Am întâmpinat probleme tehnice (date de conectare client incorecte). Te rugăm să te reconectezi";
+"ECSinvalid_grant" = "Am întâmpinat probleme tehnice (token Janrain nevalid). Te rugăm să te reconectezi";
+"ECSlastName" = "Următoarele caractere nu sunt permise: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Furnizează o comandă validă";
+"ECSphone1" = "Numărul de telefon selectat nu este valid";
+"ECSphone2" = "Numărul de telefon selectat nu este valid";
+"ECSpostUrl" = "Comanda este deja într-o stare plătită/finalizată";
+"ECSpostalCode" = "Codul poştal selectat nu este valid";
+"ECSregionisocode" = "Regiunea selectată nu este validă";
+"ECSsessionCart" = "Selectează adresa de livrare, modul de livrare şi metoda de plată înainte de a trimite o comandă";
+"ECSsomethingWentWrong" = "Am întâmpinat probleme tehnice. Încearcă din nou mai târziu";
+"ECSunsupported_grant_type" = "Am întâmpinat probleme tehnice (tip neacceptat de alocare). Te rugăm să te reconectezi";

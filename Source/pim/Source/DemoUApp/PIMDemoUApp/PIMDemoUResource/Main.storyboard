@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DemoU App View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PIMDemoUAppViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="PIMDemoUAppViewController" customModule="PIMDemoUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rHv-bD-7sN">
+                                <rect key="frame" x="0.0" y="269" width="375" height="128"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hrj-2f-ScE" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3tH-yj-t7P" userLabel="Top Stack View">
+                                                <rect key="frame" x="20" y="20" width="335" height="586"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yg9-oa-RMR" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Guest User Login"/>
+                                                        <connections>
+                                                            <action selector="launchGuestUser:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F2d-Nk-AU0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CN0-8n-NOD" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="43" width="335" height="33"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pim_demouappscreen_login_button"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="UDI Login"/>
+                                                        <connections>
+                                                            <action selector="launchPimLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WcT-5J-Asv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zjm-S0-gCN" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="86" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Logout"/>
+                                                        <connections>
+                                                            <action selector="logoutAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3zv-f6-l9Y"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Kd-H0-7Zf" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="129" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Refresh Session"/>
+                                                        <connections>
+                                                            <action selector="refreshAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h5U-Ev-RXW"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTe-Z5-u0u" userLabel="Migration API call" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="172" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Migrate User To UDI"/>
+                                                        <connections>
+                                                            <action selector="migrateURUserTouchedUpIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O7L-Xx-x51"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEr-fr-SfF" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="215" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Fetch User Details"/>
+                                                        <connections>
+                                                            <action selector="getUserDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9n-Sb-VDz"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwX-Zp-ib4" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="258" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Refetch User Details"/>
+                                                        <connections>
+                                                            <action selector="refetchUserDetails:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HS0-wZ-mYh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4E0-jY-L2L" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="301" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Check UDI Token"/>
+                                                        <connections>
+                                                            <action selector="checkUDIToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Alq-Aa-DV9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dND-qH-P3P" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="344" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Invalidate UDI Token"/>
+                                                        <connections>
+                                                            <action selector="invalidateUDIToken:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUc-WN-6zq"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2N-Qw-xjk" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="387" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Launch PR"/>
+                                                        <connections>
+                                                            <action selector="launchProductRegistration:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AeM-lK-fbQ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ChA-k8-1Vg" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="430" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Launch ECS"/>
+                                                        <connections>
+                                                            <action selector="launchEcommerceTestApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7v-XD-Yrv"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rnx-5n-Jgs" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="473" width="335" height="33"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Launch MEC"/>
+                                                        <connections>
+                                                            <action selector="launchMECDemoUApp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTZ-qX-3wu"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wBV-dr-f1c" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="516" width="335" height="30"/>
+                                                        <state key="normal" title="Launch IAP"/>
+                                                        <connections>
+                                                            <action selector="launchInAppPurchase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AuI-t2-Stj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6e-qp-t4w" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="556" width="335" height="30"/>
+                                                        <state key="normal" title="Legacy UR Login"/>
+                                                        <connections>
+                                                            <action selector="launchURLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Y5-OJ-6mg"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="t28-CN-sXc" userLabel="Marketing Stack View">
+                                                <rect key="frame" x="20" y="573" width="335" height="31"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0A-wI-D1p" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="266" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <state key="normal" title="Update Marketing Optin"/>
+                                                        <connections>
+                                                            <action selector="updateMarketingOptinConsent:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tj6-Cs-6QD"/>
+                                                        </connections>
+                                                    </button>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="I9Q-rF-H8g">
+                                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BkF-S9-b2H" userLabel="Migration Stack View">
+                                                <rect key="frame" x="20" y="-36" width="335" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Migration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6os-dB-4FZ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ZUh-zA-m8l" userLabel="Migration Switch">
+                                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pim_demouappscreen_consent_switch"/>
+                                                        <connections>
+                                                            <action selector="enableMigrationValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="B9W-Va-GEO"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X39-aL-ABd" userLabel="Analytics Stack View">
+                                                <rect key="frame" x="20" y="-36" width="335" height="31"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Analytics Consent" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WBW-Lc-27L">
+                                                        <rect key="frame" x="0.0" y="0.0" width="286" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hRj-mY-ziY">
+                                                        <rect key="frame" x="286" y="0.0" width="51" height="31"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="pim_demouappscreen_consent_switch"/>
+                                                        <connections>
+                                                            <action selector="analyticsConsentValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="2bC-D8-9da"/>
+                                                        </connections>
+                                                    </switch>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="3tH-yj-t7P" secondAttribute="trailing" constant="20" id="0Mt-fk-CTr"/>
+                                            <constraint firstItem="3tH-yj-t7P" firstAttribute="leading" secondItem="Hrj-2f-ScE" secondAttribute="leading" constant="20" id="3oL-z8-XGY"/>
+                                            <constraint firstItem="X39-aL-ABd" firstAttribute="leading" secondItem="Hrj-2f-ScE" secondAttribute="leading" constant="20" id="FJ8-l8-kMu"/>
+                                            <constraint firstAttribute="bottom" secondItem="X39-aL-ABd" secondAttribute="bottom" constant="20" id="FtR-0c-pR1"/>
+                                            <constraint firstItem="3tH-yj-t7P" firstAttribute="top" secondItem="Hrj-2f-ScE" secondAttribute="top" constant="20" id="MyA-gZ-9Vf"/>
+                                            <constraint firstAttribute="trailing" secondItem="BkF-S9-b2H" secondAttribute="trailing" constant="20" id="Zvy-uy-PHD"/>
+                                            <constraint firstAttribute="trailing" secondItem="X39-aL-ABd" secondAttribute="trailing" constant="20" id="awT-d7-Fvj"/>
+                                            <constraint firstItem="t28-CN-sXc" firstAttribute="leading" secondItem="Hrj-2f-ScE" secondAttribute="leading" constant="20" id="awi-Fe-wvO"/>
+                                            <constraint firstItem="BkF-S9-b2H" firstAttribute="top" secondItem="t28-CN-sXc" secondAttribute="bottom" constant="10" id="jzf-vd-iRa"/>
+                                            <constraint firstItem="t28-CN-sXc" firstAttribute="top" secondItem="3tH-yj-t7P" secondAttribute="bottom" constant="30" id="lD4-wM-TS6"/>
+                                            <constraint firstItem="BkF-S9-b2H" firstAttribute="leading" secondItem="Hrj-2f-ScE" secondAttribute="leading" constant="20" id="quv-x7-UAY"/>
+                                            <constraint firstAttribute="trailing" secondItem="t28-CN-sXc" secondAttribute="trailing" constant="20" id="sUl-fR-OBT"/>
+                                            <constraint firstItem="X39-aL-ABd" firstAttribute="top" secondItem="BkF-S9-b2H" secondAttribute="bottom" constant="10" id="x1f-TX-vXB"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Hrj-2f-ScE" firstAttribute="leading" secondItem="rHv-bD-7sN" secondAttribute="leading" id="16G-1T-WjX"/>
+                                    <constraint firstItem="Hrj-2f-ScE" firstAttribute="top" secondItem="rHv-bD-7sN" secondAttribute="top" id="K57-Pl-BOP"/>
+                                    <constraint firstItem="Hrj-2f-ScE" firstAttribute="trailing" secondItem="rHv-bD-7sN" secondAttribute="trailing" id="OO4-OY-863"/>
+                                    <constraint firstItem="Hrj-2f-ScE" firstAttribute="bottom" secondItem="rHv-bD-7sN" secondAttribute="bottom" id="W9Y-qX-9S9"/>
+                                </constraints>
+                            </scrollView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q1X-sv-57y" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="162" y="309" width="51" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="51" id="CAF-lS-1p6"/>
+                                    <constraint firstAttribute="height" constant="49" id="VJ2-sA-z9p"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hrj-2f-ScE" firstAttribute="width" secondItem="h45-Es-w0y" secondAttribute="width" id="EUj-kJ-NDg"/>
+                            <constraint firstItem="h45-Es-w0y" firstAttribute="bottom" secondItem="rHv-bD-7sN" secondAttribute="bottom" id="PEu-AL-r5X"/>
+                            <constraint firstItem="rHv-bD-7sN" firstAttribute="leading" secondItem="h45-Es-w0y" secondAttribute="leading" id="qVv-nr-gQE"/>
+                            <constraint firstItem="rHv-bD-7sN" firstAttribute="top" secondItem="h45-Es-w0y" secondAttribute="top" id="u2m-U6-eYc"/>
+                            <constraint firstItem="h45-Es-w0y" firstAttribute="trailing" secondItem="rHv-bD-7sN" secondAttribute="trailing" id="x0c-MG-QiM"/>
+                            <constraint firstItem="Q1X-sv-57y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xUj-7P-dEY"/>
+                            <constraint firstItem="Q1X-sv-57y" firstAttribute="centerX" secondItem="h45-Es-w0y" secondAttribute="centerX" id="zT7-ij-yvI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="h45-Es-w0y"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="Q1X-sv-57y" id="ffM-GV-YCW"/>
+                        <outlet property="consentSwitch" destination="hRj-mY-ziY" id="2GM-UY-tG3"/>
+                        <outlet property="guestUserButton" destination="Yg9-oa-RMR" id="3Ar-NB-Tea"/>
+                        <outlet property="launchPRButton" destination="Y2N-Qw-xjk" id="fgm-Pq-HBB"/>
+                        <outlet property="leagcyURButton" destination="C6e-qp-t4w" id="AvX-xZ-ej6"/>
+                        <outlet property="marketingConsentSwitch" destination="I9Q-rF-H8g" id="zBV-Hj-QTw"/>
+                        <outlet property="migrationButton" destination="UTe-Z5-u0u" id="Enw-Dk-p8z"/>
+                        <outlet property="migrationSwitch" destination="ZUh-zA-m8l" id="huh-9Q-xnz"/>
+                        <outlet property="udiLoginButton" destination="CN0-8n-NOD" id="f9t-pW-TwF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="75"/>
+        </scene>
+    </scenes>
+</document>

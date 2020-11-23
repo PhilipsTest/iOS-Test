@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Palun esitage rakenduse infraobjekt";
+"ECSBaseURLNotFound" = "Baas-URL-i ei leitud";
+"ECSCartEntryError" = "Toodet ei lisatud ostukorvi";
+"ECSCartError" = "Ostukorvi ei ole veel loodud";
+"ECSCommerceCartModificationError" = "Kogus ei saa olla väiksem kui null";
+"ECSCtnNotProvided" = "Palun esitage CTN";
+"ECSHybrisNotAvailable" = "Philipsi pood ei ole valitud riikides saadaval; saadaval on ainult edasimüüja režiim";
+"ECSIllegalArgumentError" = "Palun esitage kehtivad sisendandmed";
+"ECSInsufficientStockError" = "Toodet ei saa transportida, kuna seda ei ole laos";
+"ECSInvalidPaymentInfoError" = "Palun esitage kehtivad makseandmed";
+"ECSInvalidTokenError" = "Meil tekkis tehniline tõrge (kehtetu juurdepääsuluba). Palun autentige Hybrises uuesti";
+"ECSLocaleNotFound" = "Palun määrake lokaat";
+"ECSNoSuchElementError" = "Meil tekkis tõrge andmete serverist toomisel";
+"ECSOAuthDetailError" = "Palun esitage täielikud OAuthi andmed";
+"ECSOAuthNotCalled" = "Selle tegevuse jaoks on vajalik kasutaja autentimine";
+"ECSPIL_BAD_REQUEST" = "Meil tekkis tehniline tõrge. Proovige uuesti mõne aja pärast";
+"ECSPIL_BAD_REQUEST_cartId" = "Ostukorvi ei ole veel loodud";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Meil tekkis tehniline tõrge. Proovige uuesti mõne aja pärast";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Meil tekkis tehniline tõrge (kehtetu juurdepääsuluba). Palun autentige Hybrises uuesti";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Vale e-posti aadress. Palun kontrollige.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Toodet ei lisatud ostukorvi";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Palun määrake lokaat";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Palun esitage kehtiv CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Palun esitage õige kogus";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philipsi pood ei ole valitud riikides saadaval; saadaval on ainult edasimüüja režiim";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Kogus peab olema suurem kui null";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Palun määrake lokaat";
+"ECSPIL_MISSING_PARAMETER_language" = "Palun määrake lokaat";
+"ECSPIL_MISSING_PARAMETER_productId" = "Palun esitage CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philipsi pood ei ole valitud riikides saadaval; saadaval on ainult edasimüüja režiim";
+"ECSPIL_NEGATIVE_QUANTITY" = "Kogus ei saa olla väiksem kui null";
+"ECSPIL_NOT_ACCEPTABLE" = "Meil tekkis tehniline tõrge. Proovige uuesti mõne aja pärast";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Meil tekkis tehniline tõrge. Proovige uuesti mõne aja pärast";
+"ECSPIL_NOT_FOUND_cartId" = "Palun esitage kehtiv ostukäru ID";
+"ECSPIL_NOT_FOUND_productId" = "Palun esitage kehtiv CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Toodet ei saa transportida, kuna seda ei ole laos";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Meil tekkis tehniline tõrge. Proovige uuesti mõne aja pärast";
+"ECSPaymentAuthorizationError" = "Makse autoriseerimine ebaõnnestus";
+"ECSPropositionIdNotFound" = "Palun määrake kehtiv propositsiooni ID";
+"ECSSiteIdNotFound" = "Philipsi pood ei ole valitud riikides saadaval; saadaval on ainult edasimüüja režiim";
+"ECSUnknownIdentifierError" = "Soovitud vahend ei ole saadaval";
+"ECSUnsupportedDeliveryModeError" = "Valitud transpordiviis ei ole toetatud";
+"ECSUnsupportedVoucherError" = "Kahjuks ei saa seda kupongi kasutada";
+"ECSValidationError" = "Andmete valideerimine ebaõnnestus";
+"ECSVoucherOperationError" = "Kahjuks ei saa seda kupongi kasutada";
+"ECSaddressId" = "Sisestatud aadresi ei ole olemas või kuulub teisele kasutajale";
+"ECScountryCodeNotGiven" = "Palun esitage kehtiv riigikood";
+"ECScountryisocode" = "Valitud riik ei ole õige";
+"ECSfirstName" = "Pöörame teie tähelepanu sellele, et järgmised tähemärgid ei ole lubatud: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Meil tekkis tehniline tõrge (vale identimisteave). Palun logige uuesti sisse";
+"ECSinvalid_grant" = "Meil tekkis tehniline tõrge (vale Janraini luba). Palun logige uuesti sisse";
+"ECSlastName" = "Pöörame teie tähelepanu sellele, et järgmised tähemärgid ei ole lubatud: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Palun esitage kehtiv tellimus";
+"ECSphone1" = "Valitud telefoninumber ei ole õige";
+"ECSphone2" = "Valitud telefoninumber ei ole õige";
+"ECSpostUrl" = "Tellimus on juba makstud või lõpetatud faasis";
+"ECSpostalCode" = "Valitud sihtnumber ei ole õige";
+"ECSregionisocode" = "Valitud piirkond ei ole õige";
+"ECSsessionCart" = "Enne tellimuse esitamist valige oma tarneaadress, tarneviis ja maksemeetod";
+"ECSsomethingWentWrong" = "Meil tekkis tehniline tõrge. Proovige uuesti mõne aja pärast";
+"ECSunsupported_grant_type" = "Meil tekkis tehniline tõrge (toetuseta hüvitise tüüp). Palun logige uuesti sisse";

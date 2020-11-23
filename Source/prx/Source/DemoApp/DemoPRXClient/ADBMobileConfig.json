@@ -1,0 +1,55 @@
+{
+    "target": {
+        "clientCode": "amsdk",
+        "timeout": 5
+    },
+    "analytics": {
+        "rsids": "adobemobiledemo",
+        "server": "obumobile1.sc.omtrdc.net",
+        "ssl": false,
+        "offlineEnabled": true,
+        "charset": "ISO-8859-1",
+        "lifecycleTimeout": 5,
+        "privacyDefault": "optedin",
+        "batchLimit": 0,
+        "timezone": "MDT",
+        "timezoneOffset": -360,
+        "referrerTimeout": 5,
+        "backdateSessionInfo": false,
+        "poi": [
+                [
+                 "Seattle, WA",
+                 47.60621,
+                 -122.33207,
+                 500
+                 ],
+                [
+                 "San Jose, CA",
+                 37.33939,
+                 -121.89496,
+                 500
+                 ],
+                [
+                 "New York City, NY",
+                 40.71435,
+                 -74.00597,
+                 500
+                 ],
+                [
+                 "Dallas, TX",
+                 32.78014,
+                 -96.80045,
+                 500
+                 ],
+                [
+                 "Miami, FL",
+                 25.78897,
+                 -80.22644,
+                 500
+                 ]
+                ]
+    },
+    "marketingCloud" : {
+        "org": "7D976F3055DC96AB7F000101@AdobeOrg"
+    }
+}

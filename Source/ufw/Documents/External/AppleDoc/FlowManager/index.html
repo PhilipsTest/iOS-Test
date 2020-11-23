@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>UAPPFramework  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="UAPPFramework  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">UAPPFramework Docs</a> (92% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">UAPPFramework Reference</a>
+        <img id="carat" src="img/carat.png" />
+        UAPPFramework  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/BaseCondition.html">BaseCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BaseFlowManager.html">BaseFlowManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/BaseState.html">BaseState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/FlowManagerErrors.html">FlowManagerErrors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Functions.html#/s:13UAPPFramework2eeoiySbAA13BaseConditionC_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/StateCommunicationListener.html">StateCommunicationListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:13UAPPFramework12AppFlowModelV">AppFlowModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:13UAPPFramework14ConditionModelV">ConditionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:13UAPPFramework10EventModelV">EventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Structs.html#/s:13UAPPFramework10StateModelV">StateModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:13UAPPFramework16ConditionMapTypea">ConditionMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:13UAPPFramework12StateMapTypea">StateMapType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h2 id='latest-version-1803' class='heading'>Latest Version 1803</h2>
+
+<ul>
+<li>Removed Objectmapper dependancy</li>
+<li>Updated Apple docs</li>
+</ul>
+<h2 id='latest-version-2017-5-0' class='heading'>Latest Version 2017.5.0</h2>
+
+<ul>
+<li>Updated Apple docs</li>
+</ul>
+<h2 id='platform-version-2-3-0' class='heading'>Platform version 2.3.0</h2>
+
+<p>### changes</p>
+
+<p>Deprecated parameters/API:<br/></p>
+
+<p>1) public static var appFlowJsonPath : String?</p>
+
+<ul>
+<li>Variable to save the json path in BaseFlowManager Class<br/>
+2) public init(withAppFlowJsonPath jsonPath : String) {}</li>
+<li>Initialzer method of BaseFlowManager class.</li>
+</ul>
+
+<p>Added :<br/></p>
+<pre class="highlight plaintext"><code>1) public func initialize(withAppFlowJsonPath jsonPath : String, @escaping successBlock : () -&gt; (),@escaping  failureBlock : (FlowManagerErrors) -&gt; () ) {}
+</code></pre>
+<h2 id='platform-version-1-1-0' class='heading'>Platform Version 1.1.0</h2>
+
+<p>Flow manager added.</p>
+<h2 id='platform-version-1-0-0' class='heading'>Platform version 1.0.0</h2>
+
+<p>UappSettings, UappDependencies and UappLaunchInput added.<br/>
+First version of the component is created.</p>
+<h2 id='description' class='heading'>Description</h2>
+
+<p>UApp-framework is a component which provides framework to all common components to integrate each common component in uniform way and provides support of flow manager to support dynamic flow of micro-app.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<ul>
+<li>Using cocoapods - add philips cocoapod repo and add  <code>pod &#39;UAPPFramework&#39;</code> to pod file</li>
+<li>Using Frameworks -</li>
+</ul>
+<h2 id='references' class='heading'>References:</h2>
+<h3 id='code-example-quick-integration' class='heading'>Code Example - Quick integration</h3>
+
+<ul>
+<li>Refer integration document - <a href="http://tfsemea1.ta.philips.com:8080/tfs/TPC_Region24/CDP2/TEAM%20Griffin/_git/ufw-ios-uappframework?path=%2FDocuments%2FExternal%2FUFW000008_Integration%20Document_UAPPFramework_iOS_2.1.1.docx&version=GBdevelop&_a=contents">Document</a></li>
+</ul>
+<h2 id='a-name-team-members-a-team-members' class='heading'><a name="team-members"></a>Team Members</h2>
+
+<ul>
+<li>Team Huma - <DL_Huma@philips.com></li>
+</ul>
+<h2 id='license' class='heading'>License</h2>
+<div class="aside aside-copyright">
+    <p class="aside-title">Copyright</p>
+    Copyright &copy; Koninklijke Philips N.V., 2018 All rights are reserved. Reproduction or dissemination in whole or in part is prohibited without the prior written consent of the copyright holder. 
+
+</div>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

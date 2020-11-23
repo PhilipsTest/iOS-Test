@@ -1,0 +1,509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIAppConfiguration.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIAppConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.h</DeclaredIn>
+            
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAppInfra:(AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/isValidKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValidKey:(NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/isValidKey:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/isEmptyString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isEmptyString:(NSString *)string</Declaration>
+			
+			
+			<Anchor>//api/name/isEmptyString:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/isValidValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValidValue:(id)value</Declaration>
+			
+			
+			<Anchor>//api/name/isValidValue:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/propertyForKey:group:error:source:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (id)propertyForKey:(NSString *)key group:(NSString *)group error:(NSError **)error source:(NSDictionary *)source</Declaration>
+			
+			
+			<Anchor>//api/name/propertyForKey:group:error:source:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/getDefaultPropertyForKey:group:error:</TokenIdentifier>
+			<Abstract type="html">Gets property for key from the static file</Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (id)getDefaultPropertyForKey:(NSString *)key group:(NSString *)group error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">the key</Abstract>
+				</Parameter><Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the group name</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the value for key mapped by name, or null if no such mapping exists
+if value is literal then &apos;String&apos; Object is returned
+if value is number then &apos;Integer&apos; Object is returned
+if value is array of literal then &apos;array of String&apos; Object is returned
+if value is array of number then &apos;array of Integer&apos; Object is returned</Abstract></ReturnValue>
+			<Anchor>//api/name/getDefaultPropertyForKey:group:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/getPropertyForKey:group:error:</TokenIdentifier>
+			<Abstract type="html">Gets property for key</Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (id)getPropertyForKey:(NSString *)key group:(NSString *)group error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">the key</Abstract>
+				</Parameter><Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the group name</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">the value for key mapped by name, or null if no such mapping exists
+if value is literal then &apos;String&apos; Object is returned
+if value is number then &apos;Integer&apos; Object is returned
+if value is array of literal then &apos;array of String&apos; Object is returned
+if value is array of number then &apos;array of Integer&apos; Object is returned</Abstract></ReturnValue>
+			<Anchor>//api/name/getPropertyForKey:group:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/setPropertyForKey:group:value:error:</TokenIdentifier>
+			<Abstract type="html">Sets property for key</Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)setPropertyForKey:(NSString *)key group:(NSString *)group value:(id)value error:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>key</Name>
+					<Abstract type="html">the key</Abstract>
+				</Parameter><Parameter>
+					<Name>group</Name>
+					<Abstract type="html">the group name</Abstract>
+				</Parameter><Parameter>
+					<Name>value</Name>
+					<Abstract type="html">new value that needs to be set for the key. Value can be String, Number, Array of Strings, Array of Numbers and Dictionary</Abstract>
+				</Parameter><Parameter>
+					<Name>error</Name>
+					<Abstract type="html">the configError as OUT parameter; errorCode is null in case of success, or contains error value on failure
+@throws IllegalArgumentException if group or key or value are null, empty string, or contain other characters than [a-zA-Z0-9_.-]</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Bool indicating whether value is set correctly</Abstract></ReturnValue>
+			<Anchor>//api/name/setPropertyForKey:group:value:error:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/readAppConfigurationFromFile</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)readAppConfigurationFromFile</Declaration>
+			
+			
+			<Anchor>//api/name/readAppConfigurationFromFile</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/storeConfigSecurely:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)storeConfigSecurely:(NSDictionary *)config</Declaration>
+			
+			
+			<Anchor>//api/name/storeConfigSecurely:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/getSavedConfig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getSavedConfig</Declaration>
+			
+			
+			<Anchor>//api/name/getSavedConfig</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/migrateIfNeeded</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (void)migrateIfNeeded</Declaration>
+			
+			
+			<Anchor>//api/name/migrateIfNeeded</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/removeCommonKeysforDictionary:withDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)removeCommonKeysforDictionary:(NSDictionary *)dictionary1 withDictionary:(NSDictionary *)dictionary2</Declaration>
+			
+			
+			<Anchor>//api/name/removeCommonKeysforDictionary:withDictionary:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/uppercaseKeysForDictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)uppercaseKeysForDictionary:(NSDictionary *)inputDict</Declaration>
+			
+			
+			<Anchor>//api/name/uppercaseKeysForDictionary:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/refreshCloudConfig:</TokenIdentifier>
+			<Abstract type="html">Refresh cloud config.
+It will be downloaded if the URL of the config in Service Discovery has changed compared to last time the config was downloaded</Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (void)refreshCloudConfig:(void ( ^ ) ( AIACRefreshResult , NSError *))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">asynchronous callback reporting result of refresh. This block has no return value and takes two arguments:refreshResult and error
+completionHandler will be called on main thread.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refreshCloudConfig:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/clearCloudConfigFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (void)clearCloudConfigFile:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/clearCloudConfigFile:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/downloadConfigFromCloud:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadConfigFromCloud:(void ( ^ ) ( AIACRefreshResult , NSError *))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/downloadConfigFromCloud:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/cloudConfigPath</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)cloudConfigPath</Declaration>
+			
+			
+			<Anchor>//api/name/cloudConfigPath</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/saveDownloadedConfig:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (void)saveDownloadedConfig:(NSDictionary *)config</Declaration>
+			
+			
+			<Anchor>//api/name/saveDownloadedConfig:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/savedCouldConfig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)savedCouldConfig</Declaration>
+			
+			
+			<Anchor>//api/name/savedCouldConfig</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/resetConfig:</TokenIdentifier>
+			<Abstract type="html">Description: used to reset the dynamic config as well as cloud config</Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)resetConfig:(NSError **)error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>error</Name>
+					<Abstract type="html">error description</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">returns bool status</Abstract></ReturnValue>
+			<Anchor>//api/name/resetConfig:</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/setConfiguration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/configuration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppConfiguration/configuration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *configuration</Declaration>
+			
+			
+			<Anchor>//api/name/configuration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/setStaticConfiguration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *staticConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/staticConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/staticConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *staticConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/staticConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppConfiguration/staticConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *staticConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/staticConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/setCloudConfiguration:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *cloudConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/cloudConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/cloudConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *cloudConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/cloudConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppConfiguration/cloudConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *cloudConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/cloudConfiguration</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppConfiguration/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/setDownloadLock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSLock *downloadLock</Declaration>
+			
+			
+			<Anchor>//api/name/downloadLock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppConfiguration/downloadLock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSLock *downloadLock</Declaration>
+			
+			
+			<Anchor>//api/name/downloadLock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppConfiguration/downloadLock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppConfiguration.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSLock *downloadLock</Declaration>
+			
+			
+			<Anchor>//api/name/downloadLock</Anchor>
+            <NodeRef refid="5"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

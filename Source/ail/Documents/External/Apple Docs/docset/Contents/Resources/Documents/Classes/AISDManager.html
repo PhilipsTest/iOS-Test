@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AISDManager Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/aiAppInfra">aiAppInfra</option>
+		
+		<option value="//api/name/homeCountryCode">homeCountryCode</option>
+		
+		<option value="//api/name/homeCountrySourceType">homeCountrySourceType</option>
+		
+		<option value="//api/name/networkWrapper">networkWrapper</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/cacheDownloadedURLs:URLString:URLType:">- cacheDownloadedURLs:URLString:URLType:</option>
+		
+		<option value="//api/name/cachedURLsExpired">- cachedURLsExpired</option>
+		
+		<option value="//api/name/clearDownloadedURLs">- clearDownloadedURLs</option>
+		
+		<option value="//api/name/downloadData:SDURLs:URL:shouldContinueForPlatform:">- downloadData:SDURLs:URL:shouldContinueForPlatform:</option>
+		
+		<option value="//api/name/downloadPlatformAndPropositionData:">- downloadPlatformAndPropositionData:</option>
+		
+		<option value="//api/name/downloadPlatformData:SDURLs:">- downloadPlatformData:SDURLs:</option>
+		
+		<option value="//api/name/getAppStateStringFromState:">- getAppStateStringFromState:</option>
+		
+		<option value="//api/name/getCachedData">- getCachedData</option>
+		
+		<option value="//api/name/getCachedURLsPathForURLType:">- getCachedURLsPathForURLType:</option>
+		
+		<option value="//api/name/getCountryCodeFromSIM">- getCountryCodeFromSIM</option>
+		
+		<option value="//api/name/getCountryMapping:">- getCountryMapping:</option>
+		
+		<option value="//api/name/getModelFromFile:">- getModelFromFile:</option>
+		
+		<option value="//api/name/getPlatformEnvironment">- getPlatformEnvironment</option>
+		
+		<option value="//api/name/getPlatformMicrositeID">- getPlatformMicrositeID</option>
+		
+		<option value="//api/name/getSDBaseURLForEnvironment:">- getSDBaseURLForEnvironment:</option>
+		
+		<option value="//api/name/getSDURLForType:">- getSDURLForType:</option>
+		
+		<option value="//api/name/getServiceDiscoveryDataWithcompletionHandler:">- getServiceDiscoveryDataWithcompletionHandler:</option>
+		
+		<option value="//api/name/homeCountryCodeWithCompletion:">- homeCountryCodeWithCompletion:</option>
+		
+		<option value="//api/name/initWithAppInfra:">- initWithAppInfra:</option>
+		
+		<option value="//api/name/isPropostionEnabled">- isPropostionEnabled</option>
+		
+		<option value="//api/name/saveCountryCode:sourceType:">- saveCountryCode:sourceType:</option>
+		
+		<option value="//api/name/savedCountryCode">- savedCountryCode</option>
+		
+		<option value="//api/name/savedCountryCodeSourceType">- savedCountryCodeSourceType</option>
+		
+		<option value="//api/name/savedURLsOlderthan24Hours">- savedURLsOlderthan24Hours</option>
+		
+		<option value="//api/name/storeURLString:URLType:">- storeURLString:URLType:</option>
+		
+		<option value="//api/name/validatePlatformMicroSiteID">- validatePlatformMicroSiteID</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AISDManager Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td>NSURLSessionDelegate</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AISDManager.h<br />AISDManager.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithAppInfra:" title="initWithAppInfra:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAppInfra:">&ndash;&nbsp;initWithAppInfra:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (instancetype)initWithAppInfra:(AIAppInfra *)<em>appInfra</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceDiscoveryDataWithcompletionHandler:" title="getServiceDiscoveryDataWithcompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceDiscoveryDataWithcompletionHandler:">&ndash;&nbsp;getServiceDiscoveryDataWithcompletionHandler:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceDiscoveryDataWithcompletionHandler:(void ( ^ ) ( AISDURLs *SDURLs , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeCountryCodeWithCompletion:" title="homeCountryCodeWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeCountryCodeWithCompletion:">&ndash;&nbsp;homeCountryCodeWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)homeCountryCodeWithCompletion:(void ( ^ ) ( NSString *countryCode , NSString *sourceType , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/saveCountryCode:sourceType:" title="saveCountryCode:sourceType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/saveCountryCode:sourceType:">&ndash;&nbsp;saveCountryCode:sourceType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)saveCountryCode:(NSString *)<em>countryCode</em> sourceType:(NSString *)<em>sourceType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCachedData" title="getCachedData"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCachedData">&ndash;&nbsp;getCachedData</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (AISDURLs *)getCachedData</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearDownloadedURLs" title="clearDownloadedURLs"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearDownloadedURLs">&ndash;&nbsp;clearDownloadedURLs</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)clearDownloadedURLs</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cachedURLsExpired" title="cachedURLsExpired"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cachedURLsExpired">&ndash;&nbsp;cachedURLsExpired</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)cachedURLsExpired</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/savedCountryCode" title="savedCountryCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/savedCountryCode">&ndash;&nbsp;savedCountryCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)savedCountryCode</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/downloadPlatformData:SDURLs:" title="downloadPlatformData:SDURLs:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadPlatformData:SDURLs:">&ndash;&nbsp;downloadPlatformData:SDURLs:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadPlatformData:(void ( ^ ) ( AISDURLs *, NSError *))<em>completionHandler</em> SDURLs:(AISDURLs *)<em>SDURLs</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadPlatformAndPropositionData:" title="downloadPlatformAndPropositionData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadPlatformAndPropositionData:">&ndash;&nbsp;downloadPlatformAndPropositionData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadPlatformAndPropositionData:(void ( ^ ) ( AISDURLs *, NSError *))<em>completionHandler</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/downloadData:SDURLs:URL:shouldContinueForPlatform:" title="downloadData:SDURLs:URL:shouldContinueForPlatform:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/downloadData:SDURLs:URL:shouldContinueForPlatform:">&ndash;&nbsp;downloadData:SDURLs:URL:shouldContinueForPlatform:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)downloadData:(void ( ^ ) ( AISDURLs *, NSError *))<em>completionHandler</em> SDURLs:(AISDURLs *)<em>SDURLs</em> URL:(NSString *)<em>url</em> shouldContinueForPlatform:(BOOL)<em>shouldContinue</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/validatePlatformMicroSiteID" title="validatePlatformMicroSiteID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/validatePlatformMicroSiteID">&ndash;&nbsp;validatePlatformMicroSiteID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)validatePlatformMicroSiteID</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCountryCodeFromSIM" title="getCountryCodeFromSIM"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCountryCodeFromSIM">&ndash;&nbsp;getCountryCodeFromSIM</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getCountryCodeFromSIM</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSDBaseURLForEnvironment:" title="getSDBaseURLForEnvironment:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSDBaseURLForEnvironment:">&ndash;&nbsp;getSDBaseURLForEnvironment:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getSDBaseURLForEnvironment:(NSString *)<em>environment</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAppStateStringFromState:" title="getAppStateStringFromState:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAppStateStringFromState:">&ndash;&nbsp;getAppStateStringFromState:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getAppStateStringFromState:(AIAIAppState)<em>state</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPlatformMicrositeID" title="getPlatformMicrositeID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPlatformMicrositeID">&ndash;&nbsp;getPlatformMicrositeID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getPlatformMicrositeID</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getPlatformEnvironment" title="getPlatformEnvironment"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getPlatformEnvironment">&ndash;&nbsp;getPlatformEnvironment</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getPlatformEnvironment</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getSDURLForType:" title="getSDURLForType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getSDURLForType:">&ndash;&nbsp;getSDURLForType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getSDURLForType:(AISDURLType)<em>URLType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCachedURLsPathForURLType:" title="getCachedURLsPathForURLType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCachedURLsPathForURLType:">&ndash;&nbsp;getCachedURLsPathForURLType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getCachedURLsPathForURLType:(AISDURLType)<em>URLType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/savedURLsOlderthan24Hours" title="savedURLsOlderthan24Hours"></a>
+	<h3 class="method-title"><code><a href="#//api/name/savedURLsOlderthan24Hours">&ndash;&nbsp;savedURLsOlderthan24Hours</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)savedURLsOlderthan24Hours</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isPropostionEnabled" title="isPropostionEnabled"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isPropostionEnabled">&ndash;&nbsp;isPropostionEnabled</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isPropostionEnabled</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getModelFromFile:" title="getModelFromFile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getModelFromFile:">&ndash;&nbsp;getModelFromFile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (AISDModel *)getModelFromFile:(NSString *)<em>filePath</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/storeURLString:URLType:" title="storeURLString:URLType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/storeURLString:URLType:">&ndash;&nbsp;storeURLString:URLType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)storeURLString:(NSString *)<em>URLString</em> URLType:(AISDURLType)<em>URLType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/cacheDownloadedURLs:URLString:URLType:" title="cacheDownloadedURLs:URLString:URLType:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cacheDownloadedURLs:URLString:URLType:">&ndash;&nbsp;cacheDownloadedURLs:URLString:URLType:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)cacheDownloadedURLs:(NSDictionary *)<em>downloadedJson</em> URLString:(NSString *)<em>URLString</em> URLType:(AISDURLType)<em>URLType</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/savedCountryCodeSourceType" title="savedCountryCodeSourceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/savedCountryCodeSourceType">&ndash;&nbsp;savedCountryCodeSourceType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)savedCountryCodeSourceType</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getCountryMapping:" title="getCountryMapping:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getCountryMapping:">&ndash;&nbsp;getCountryMapping:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getCountryMapping:(NSString *)<em>country</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/aiAppInfra" title="aiAppInfra"></a>
+	<h3 class="method-title"><code><a href="#//api/name/aiAppInfra">&nbsp;&nbsp;aiAppInfra</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, weak) AIAppInfra *aiAppInfra</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/networkWrapper" title="networkWrapper"></a>
+	<h3 class="method-title"><code><a href="#//api/name/networkWrapper">&nbsp;&nbsp;networkWrapper</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) AISDNetworkWrapper *networkWrapper</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeCountryCode" title="homeCountryCode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeCountryCode">&nbsp;&nbsp;homeCountryCode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *homeCountryCode</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/homeCountrySourceType" title="homeCountrySourceType"></a>
+	<h3 class="method-title"><code><a href="#//api/name/homeCountrySourceType">&nbsp;&nbsp;homeCountrySourceType</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSString *homeCountrySourceType</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

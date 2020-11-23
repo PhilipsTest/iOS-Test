@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Protocols  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Section/Protocols" class="dashAnchor"></a>
+    <a title="Protocols  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">PhilipsRegistration Docs</a> (87% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">PhilipsRegistration Reference</a>
+        <img id="carat" src="img/carat.png" />
+        Protocols  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/DICOPPAExtension.html">DICOPPAExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DIConsumerInterest.html">DIConsumerInterest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DIRegistrationContentConfiguration.html">DIRegistrationContentConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DIRegistrationFlowConfiguration.html">DIRegistrationFlowConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DIRegistrationVersion.html">DIRegistrationVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/DIUser.html">DIUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/URConsentProvider.html">URConsentProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)URDependencies">URDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/URInterface.html">URInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/URLaunchInput.html">URLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:objc(cs)URMarketingConsentHandler">URMarketingConsentHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/DICOPPASTATUS.html">DICOPPASTATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/RegistrationCompletionErrorCode.html">RegistrationCompletionErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/URLoggedInScreen.html">URLoggedInScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/URPriorityFunction.html">URPriorityFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/UserGender.html">UserGender</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/DIRegistrationConfigurationDelegate.html">DIRegistrationConfigurationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>Protocols</h1>
+            <p>The following protocols are available globally.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)DIRegistrationConfigurationDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/DIRegistrationConfigurationDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)DIRegistrationConfigurationDelegate">DIRegistrationConfigurationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement this protocol to receive callbacks and display appropriate content when user&rsquo;s tap on TnC or PrivacyPolicy inside <code>PhilipsRegistration</code>.</p>
+
+<p>@since 1.0.0</p>
+
+                        <a href="Protocols/DIRegistrationConfigurationDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">DIRegistrationConfigurationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">DIRegistrationConfigurationDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)JanrainFlowDownloadDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/JanrainFlowDownloadDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)JanrainFlowDownloadDelegate">JanrainFlowDownloadDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement this protocol to be informed about success or failure of <code>PhilipsRegistration</code> URLs, configurations and flow download.</p>
+
+<p>@since 1.0.0</p>
+
+                        <a href="Protocols/JanrainFlowDownloadDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">JanrainFlowDownloadDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">JanrainFlowDownloadDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserRegistrationDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/UserRegistrationDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserRegistrationDelegate">UserRegistrationDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Use this delegate to receive callbacks about user registration, login, forgot passowrd, resend verfication, account merging and logout events.</p>
+
+<p>@since 1.0.0</p>
+
+                        <a href="Protocols/UserRegistrationDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">UserRegistrationDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">UserRegistrationDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)UserDetailsDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/UserDetailsDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)UserDetailsDelegate">UserDetailsDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement this protocol to receive callbacks about fetching and updation to user details.</p>
+
+                        <a href="Protocols/UserDetailsDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">UserDetailsDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">UserDetailsDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(pl)SessionRefreshDelegate"></a>
+                    <a name="//apple_ref/objc/Protocol/SessionRefreshDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(pl)SessionRefreshDelegate">SessionRefreshDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Implement this protocol to receive callbacks about user session refresh.</p>
+
+                        <a href="Protocols/SessionRefreshDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@protocol</span> <span class="nc">SessionRefreshDelegate</span> <span class="o">&lt;</span><span class="n">NSObject</span><span class="o">&gt;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">protocol</span> <span class="kt">SessionRefreshDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

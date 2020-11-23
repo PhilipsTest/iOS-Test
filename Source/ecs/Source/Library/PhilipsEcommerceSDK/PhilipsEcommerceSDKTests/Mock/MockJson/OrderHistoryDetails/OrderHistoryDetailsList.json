@@ -1,0 +1,344 @@
+{
+   "type" : "orderWsDTO",
+   "calculated" : true,
+   "code" : "24003330178",
+   "deliveryAddress" : {
+      "billingAddress" : true,
+      "country" : {
+         "isocode" : "US",
+         "name" : "United States"
+      },
+      "defaultAddress" : false,
+      "firstName" : "Prasad",
+      "formattedAddress" : "Prasad Devadiga</strong><br>Line 1 <br>New York 10024<br>United States",
+      "id" : "9318352945175",
+      "lastName" : "Devadiga",
+      "line1" : "Line 1",
+      "phone" : "2139999999",
+      "phone1" : "2139999999",
+      "phone2" : "2139999999",
+      "postalCode" : "10024",
+      "region" : {
+         "countryIso" : "US",
+         "isocode" : "US-NY",
+         "isocodeShort" : "NY"
+      },
+      "shippingAddress" : true,
+      "titleCode" : "mr.",
+      "town" : "New York",
+      "visibleInAddressBook" : true
+   },
+   "deliveryCost" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 10.00",
+      "priceType" : "BUY",
+      "value" : 10.00
+   },
+   "deliveryItemsQuantity" : 1,
+   "deliveryMode" : {
+      "code" : "STANDARD-GROUND",
+      "deliveryCost" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "$ 10.00",
+         "priceType" : "BUY",
+         "value" : 10.00
+      },
+      "description" : "3-9 business days",
+      "name" : "standard ground"
+   },
+   "deliveryOrderGroups" : [ {
+      "entries" : [ {
+         "basePrice" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "$ 9.99",
+            "priceType" : "BUY",
+            "value" : 9.99
+         },
+         "entryNumber" : 0,
+         "product" : {
+            "availableForPickup" : false,
+            "categories" : [ {
+               "code" : "PHILIPS_SONICARE_BREATHRX_SU",
+               "url" : "/personal-care/fresh-breath/c/PHILIPS_SONICARE_BREATHRX_SU"
+            }, {
+               "code" : "Tuscany_Campaign",
+               "url" : "//c/Tuscany_Campaign"
+            } ],
+            "code" : "DIS363/03",
+            "configurable" : false,
+            "deliveryTime" : "3-9 business days",
+            "isTaxExemptionApplicable" : false,
+            "name" : "DIS363/03",
+            "price" : {
+               "currencyIso" : "USD",
+               "formattedValue" : "$ 9.99",
+               "priceType" : "BUY",
+               "value" : 9.99
+            },
+            "productType" : "Normal",
+            "purchasable" : true,
+            "stock" : {
+               "stockLevel" : 135,
+               "stockLevelStatus" : "inStock"
+            },
+            "url" : "/personal-care/fresh-breath/sonicare-breathrx-whitening-toothpaste/p/DIS363_03"
+         },
+         "quantity" : 1,
+         "totalPrice" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "$ 9.99",
+            "priceType" : "BUY",
+            "value" : 9.99
+         },
+         "updateable" : true,
+         "vertexTaxAmount" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "$ 0.00",
+            "priceType" : "BUY",
+            "value" : 0.00
+         },
+         "vertexTaxPercent" : 0.0
+      } ],
+      "totalPriceWithTax" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "$ 11.76",
+         "priceType" : "BUY",
+         "value" : 11.76
+      }
+   } ],
+   "entries" : [ {
+      "basePrice" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "$ 9.99",
+         "priceType" : "BUY",
+         "value" : 9.99
+      },
+      "entryNumber" : 0,
+      "product" : {
+         "availableForPickup" : false,
+         "categories" : [ {
+            "code" : "PHILIPS_SONICARE_BREATHRX_SU",
+            "url" : "/personal-care/fresh-breath/c/PHILIPS_SONICARE_BREATHRX_SU"
+         }, {
+            "code" : "Tuscany_Campaign",
+            "url" : "//c/Tuscany_Campaign"
+         } ],
+         "code" : "DIS363/03",
+         "configurable" : false,
+         "deliveryTime" : "3-9 business days",
+         "isTaxExemptionApplicable" : false,
+         "name" : "DIS363/03",
+         "price" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "$ 9.99",
+            "priceType" : "BUY",
+            "value" : 9.99
+         },
+         "productType" : "Normal",
+         "purchasable" : true,
+         "stock" : {
+            "stockLevel" : 135,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/personal-care/fresh-breath/sonicare-breathrx-whitening-toothpaste/p/DIS363_03"
+      },
+      "quantity" : 1,
+      "totalPrice" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "$ 9.99",
+         "priceType" : "BUY",
+         "value" : 9.99
+      },
+      "updateable" : true,
+      "vertexTaxAmount" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "$ 0.00",
+         "priceType" : "BUY",
+         "value" : 0.00
+      },
+      "vertexTaxPercent" : 0.0
+   } ],
+   "guid" : "4b61a023-27a5-471f-b6e2-90a9f98415b8",
+   "net" : true,
+   "orderDiscounts" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 0.00",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "paymentInfo" : {
+      "billingAddress" : {
+         "billingAddress" : true,
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "firstName" : "Prasad",
+         "formattedAddress" : "Prasad Devadiga</strong><br>Line 1 <br>New York 10024<br>United States",
+         "id" : "9318352977943",
+         "lastName" : "Devadiga",
+         "line1" : "Line 1",
+         "phone" : "2139999999",
+         "phone1" : "2139999999",
+         "phone2" : "2139999999",
+         "postalCode" : "10024",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-NY",
+            "isocodeShort" : "NY"
+         },
+         "shippingAddress" : true,
+         "titleCode" : "mr.",
+         "town" : "New York",
+         "visibleInAddressBook" : true
+      },
+      "cardNumber" : "************1111",
+      "cardType" : {
+         "code" : "VISA"
+      },
+      "defaultPayment" : false,
+      "expiryMonth" : "10",
+      "expiryYear" : "2034",
+      "saved" : false
+   },
+   "pickupItemsQuantity" : 0,
+   "productDiscounts" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 0.00",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "site" : "US_Tuscany",
+   "store" : "US_Pub",
+   "subTotal" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 9.99",
+      "priceType" : "BUY",
+      "value" : 9.99
+   },
+   "totalDiscounts" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 0.00",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "totalItems" : 1,
+   "totalPrice" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 19.99",
+      "priceType" : "BUY",
+      "value" : 19.99
+   },
+   "totalPriceWithTax" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 22.65",
+      "priceType" : "BUY",
+      "value" : 22.65
+   },
+   "totalTax" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "$ 2.66",
+      "priceType" : "BUY",
+      "value" : 2.66
+   },
+   "user" : {
+      "janrainUUID" : "74d974dc-08cc-4176-84d0-d933a1118dfc",
+      "name" : "Prasad Devadiga",
+      "uid" : "prasad.devadiga@philips.com"
+   },
+   "consignments" : [ {
+      "code" : "24003330178",
+      "entries" : [ {
+         "orderEntry" : {
+            "basePrice" : {
+               "currencyIso" : "USD",
+               "formattedValue" : "$ 9.99",
+               "priceType" : "BUY",
+               "value" : 9.99
+            },
+            "entryNumber" : 0,
+            "product" : {
+               "availableForPickup" : false,
+               "categories" : [ {
+                  "code" : "PHILIPS_SONICARE_BREATHRX_SU",
+                  "url" : "/personal-care/fresh-breath/c/PHILIPS_SONICARE_BREATHRX_SU"
+               }, {
+                  "code" : "Tuscany_Campaign",
+                  "url" : "//c/Tuscany_Campaign"
+               } ],
+               "code" : "DIS363/03",
+               "configurable" : false,
+               "deliveryTime" : "3-9 business days",
+               "isTaxExemptionApplicable" : false,
+               "name" : "DIS363/03",
+               "price" : {
+                  "currencyIso" : "USD",
+                  "formattedValue" : "$ 9.99",
+                  "priceType" : "BUY",
+                  "value" : 9.99
+               },
+               "productType" : "Normal",
+               "purchasable" : true,
+               "stock" : {
+                  "stockLevel" : 135,
+                  "stockLevelStatus" : "inStock"
+               },
+               "url" : "/personal-care/fresh-breath/sonicare-breathrx-whitening-toothpaste/p/DIS363_03"
+            },
+            "quantity" : 1,
+            "totalPrice" : {
+               "currencyIso" : "USD",
+               "formattedValue" : "$ 9.99",
+               "priceType" : "BUY",
+               "value" : 9.99
+            },
+            "updateable" : true,
+            "vertexTaxAmount" : {
+               "currencyIso" : "USD",
+               "formattedValue" : "$ 0.00",
+               "priceType" : "BUY",
+               "value" : 0.00
+            },
+            "vertexTaxPercent" : 0.0
+         },
+         "quantity" : 1,
+         "shippedQuantity" : 1,
+         "trackAndTraceIDs" : [ "300068874" ],
+         "trackAndTraceUrls" : [ "{300068874=http://www.fedex.com/Tracking?action=track&cntry_code=us&tracknumber_list=300068874}" ]
+      } ],
+      "shippingAddress" : {
+         "billingAddress" : true,
+         "country" : {
+            "isocode" : "US",
+            "name" : "United States"
+         },
+         "defaultAddress" : false,
+         "firstName" : "Prasad",
+         "formattedAddress" : "Prasad Devadiga</strong><br>Line 1 <br>New York 10024<br>United States",
+         "id" : "9318352945175",
+         "lastName" : "Devadiga",
+         "line1" : "Line 1",
+         "phone" : "2139999999",
+         "phone1" : "2139999999",
+         "phone2" : "2139999999",
+         "postalCode" : "10024",
+         "region" : {
+            "countryIso" : "US",
+            "isocode" : "US-NY",
+            "isocodeShort" : "NY"
+         },
+         "shippingAddress" : true,
+         "titleCode" : "mr.",
+         "town" : "New York",
+         "visibleInAddressBook" : true
+      },
+      "status" : "SHIPPED",
+      "statusDate" : "2019-05-02T00:00:00+0000"
+   } ],
+   "created" : "2019-05-02T07:45:34+0000",
+   "deliveryStatus" : "SHIPPED",
+   "guestCustomer" : false,
+   "status" : "COMPLETED",
+   "statusDisplay" : "completed"
+}

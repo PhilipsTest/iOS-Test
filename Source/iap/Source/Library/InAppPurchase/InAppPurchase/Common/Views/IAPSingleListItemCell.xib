@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IAPSingleListItemCell" rowHeight="101" id="5Mr-qc-fH3" userLabel="Single List Item Cell" customClass="IAPSingleListItemCell" customModule="InAppPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mr-qc-fH3" id="NCD-2U-BHS">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="101"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hBu-Kb-gzk" userLabel="Title Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="28" y="47.666666666666664" width="288" height="0.0"/>
+                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PFZ-VY-lfR" userLabel="Right Arrow Icon">
+                        <rect key="frame" x="332" y="33.666666666666664" width="24" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="24" id="CoY-H0-FDO"/>
+                            <constraint firstAttribute="height" constant="24" id="KHQ-XX-zbL"/>
+                        </constraints>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JpW-nz-UQl" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="93" width="376" height="8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="rbZ-gQ-S7W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PFZ-VY-lfR" firstAttribute="centerY" secondItem="NCD-2U-BHS" secondAttribute="centerY" constant="-5" id="Cca-kR-RBh"/>
+                    <constraint firstItem="JpW-nz-UQl" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leading" id="Ert-0a-34L"/>
+                    <constraint firstItem="hBu-Kb-gzk" firstAttribute="centerY" secondItem="NCD-2U-BHS" secondAttribute="centerY" constant="-3" id="LKB-OK-f0d"/>
+                    <constraint firstItem="hBu-Kb-gzk" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leadingMargin" constant="8" id="Lsy-5u-6Cx"/>
+                    <constraint firstItem="PFZ-VY-lfR" firstAttribute="leading" secondItem="hBu-Kb-gzk" secondAttribute="trailing" constant="16" id="N5O-dk-3J1"/>
+                    <constraint firstAttribute="bottom" secondItem="JpW-nz-UQl" secondAttribute="bottom" id="WAs-Ny-4wI"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PFZ-VY-lfR" secondAttribute="trailing" id="Y6w-nR-Hhc"/>
+                    <constraint firstAttribute="trailing" secondItem="JpW-nz-UQl" secondAttribute="trailing" id="xXw-MR-noX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellContextTitle" destination="hBu-Kb-gzk" id="Xl4-Cn-tuv"/>
+                <outlet property="rightArrowIcongray" destination="PFZ-VY-lfR" id="NEV-dR-gaZ"/>
+            </connections>
+            <point key="canvasLocation" x="-330" y="-349.5"/>
+        </tableViewCell>
+    </objects>
+</document>

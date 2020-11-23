@@ -1,0 +1,1647 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		95407B8C1C80671800413550 /* Universal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 95407B8F1C80671800413550 /* Build configuration list for PBXAggregateTarget "Universal" */;
+			buildPhases = (
+				95407B901C80671C00413550 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Universal;
+			productName = Universal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		27F357EDBD7FDCD17D03E029 /* Pods_PhilipsProductRegistrationTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA02482A852E98F4BF84B1E4 /* Pods_PhilipsProductRegistrationTests.framework */; };
+		41001EEF1C856AD800E0F18E /* PRXRegisterProductInfoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41001EEE1C856AD800E0F18E /* PRXRegisterProductInfoDataTests.swift */; };
+		41001EF11C85786300E0F18E /* PRXProductMetadataSerialContentDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41001EF01C85786300E0F18E /* PRXProductMetadataSerialContentDataTests.swift */; };
+		41001EF31C857C7100E0F18E /* PRXProductMetaDataInfoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41001EF21C857C7100E0F18E /* PRXProductMetaDataInfoDataTests.swift */; };
+		41032A851CA2620E00FF7801 /* PPRTestConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41032A841CA2620E00FF7801 /* PPRTestConstant.swift */; };
+		410BBF0B1D092F6500FEC7A5 /* PPRProductRegistrationUIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410BBF0A1D092F6500FEC7A5 /* PPRProductRegistrationUIHelper.swift */; };
+		410BBF121D09A80600FEC7A5 /* PPRRegisterProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410BBF111D09A80600FEC7A5 /* PPRRegisterProductsViewController.swift */; };
+		410BBF161D09B80D00FEC7A5 /* PPRBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 410BBF151D09B80D00FEC7A5 /* PPRBaseViewController.swift */; };
+		411A357C1CEC412800BA3760 /* PPRProductMetaDataJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A356D1CEC412800BA3760 /* PPRProductMetaDataJSONObject.swift */; };
+		411A357D1CEC412800BA3760 /* PPRProductObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A356E1CEC412800BA3760 /* PPRProductObject.swift */; };
+		411A357E1CEC412800BA3760 /* PPRRegisteredProductListJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A356F1CEC412800BA3760 /* PPRRegisteredProductListJSONObject.swift */; };
+		411A357F1CEC412800BA3760 /* PPRRegisterProductJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35701CEC412800BA3760 /* PPRRegisterProductJSONObject.swift */; };
+		411A35811CEC412800BA3760 /* DIUserMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35741CEC412800BA3760 /* DIUserMock.swift */; };
+		411A35821CEC412800BA3760 /* PPRProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35751CEC412800BA3760 /* PPRProductMock.swift */; };
+		411A35831CEC412800BA3760 /* PPRProductRegistrationHelperMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35761CEC412800BA3760 /* PPRProductRegistrationHelperMock.swift */; };
+		411A35841CEC412800BA3760 /* PPRRegisteredProductListStoreMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35771CEC412800BA3760 /* PPRRegisteredProductListStoreMock.swift */; };
+		411A35851CEC412800BA3760 /* PPRRegisteredProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35781CEC412800BA3760 /* PPRRegisteredProductMock.swift */; };
+		411A35861CEC412800BA3760 /* PPRRegisterProductDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A35791CEC412800BA3760 /* PPRRegisterProductDelegateMock.swift */; };
+		411A35871CEC412800BA3760 /* PPRUserProductMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A357A1CEC412800BA3760 /* PPRUserProductMock.swift */; };
+		411A35881CEC412800BA3760 /* PRXRequestManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 411A357B1CEC412800BA3760 /* PRXRequestManagerMock.swift */; };
+		412050AB1D0E8B03008E54C7 /* UINavigationViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412050A71D0E8B03008E54C7 /* UINavigationViewControllerExt.swift */; };
+		412050AD1D0E9001008E54C7 /* PPRSuccessViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412050AC1D0E9001008E54C7 /* PPRSuccessViewControllerExt.swift */; };
+		412050AF1D0EC66F008E54C7 /* PPRProductExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412050AE1D0EC66F008E54C7 /* PPRProductExt.swift */; };
+		4122008A1CC4E55300535A58 /* PPRRegisteredProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 412200891CC4E55300535A58 /* PPRRegisteredProductTests.swift */; };
+		4122D06B1CC100B700C3A631 /* PPRProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122D06A1CC100B700C3A631 /* PPRProductListResponse.swift */; };
+		4122D06D1CC110BD00C3A631 /* PPRProductListResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122D06C1CC110BD00C3A631 /* PPRProductListResponseTests.swift */; };
+		4122D06F1CC1344600C3A631 /* PPRConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122D06E1CC1344600C3A631 /* PPRConstants.swift */; };
+		4122D0731CC1377F00C3A631 /* StorageProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122D0721CC1377F00C3A631 /* StorageProviderTests.swift */; };
+		4125ED6A1C841CF100D6068C /* NSDateExtensionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A231901C8031CB00A0780B /* NSDateExtensionTest.swift */; };
+		41302D971CA53E14009ABEDE /* PRXProductMetaDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4135373E1C84529C0003CFD6 /* PRXProductMetaDataRequestTests.swift */; };
+		41302D9A1CA548DC009ABEDE /* PRXRegisterProductDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41001EE51C85596A00E0F18E /* PRXRegisterProductDataRequestTests.swift */; };
+		413064BB1D4125B3008833F2 /* PPRTagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413064BA1D4125B3008833F2 /* PPRTagging.swift */; };
+		413064C01D4125E1008833F2 /* NSBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413064BF1D4125E1008833F2 /* NSBundle.swift */; };
+		413064C21D424364008833F2 /* PhilipsProductRegistrationDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 954731E41C58BA5700503093 /* PhilipsProductRegistrationDev.framework */; };
+		414779F11D18018300521324 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414779F01D18018300521324 /* UIViewController.swift */; };
+		415E7A5B1D1BBAF200063C92 /* ProductRegistration.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 415E7A5A1D1BBAF200063C92 /* ProductRegistration.xcassets */; };
+		417016E81C9970CB0034EAF2 /* PRXRegisterProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDA65D1C74386400477924 /* PRXRegisterProductRequest.swift */; };
+		417016E91C9970CB0034EAF2 /* PRXProductMetaDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D25E1C75C177004773B6 /* PRXProductMetaDataRequest.swift */; };
+		417961581CB527A90099AF0F /* PPRProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417961561CB527A90099AF0F /* PPRProduct.swift */; };
+		4179615F1CB527F80099AF0F /* PPRErrorHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4179615E1CB527F80099AF0F /* PPRErrorHelperTests.swift */; };
+		417961631CB5287D0099AF0F /* PPRProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417961621CB5287D0099AF0F /* PPRProductTests.swift */; };
+		417961681CB528A70099AF0F /* PPRErrorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417961661CB528A70099AF0F /* PPRErrorHelper.swift */; };
+		4179616B1CB528A70099AF0F /* PRXRequestManagerWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417961671CB528A70099AF0F /* PRXRequestManagerWrapper.swift */; };
+		41859EFB1CBBAA6100D21CCD /* PPRUserProductTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41859EFA1CBBAA6100D21CCD /* PPRUserProductTests.swift */; };
+		41859EFF1CBBF5CB00D21CCD /* PPRRequestHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41859EFE1CBBF5CB00D21CCD /* PPRRequestHandlerTests.swift */; };
+		4193692D1C88E8E90018A32D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 413537471C847CF20003CFD6 /* String.swift */; };
+		4193692F1C8910F00018A32D /* PPRError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4193692E1C8910F00018A32D /* PPRError.swift */; };
+		419B49F51CD1D9F300B28976 /* PPRProductRegistrationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B49F31CD1D9F300B28976 /* PPRProductRegistrationHelper.swift */; };
+		419B49F71CD1D9F300B28976 /* PPRUserWithProducts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B49F41CD1D9F300B28976 /* PPRUserWithProducts.swift */; };
+		419B49FA1CD1DA0900B28976 /* AccessRefreshToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B49F91CD1DA0900B28976 /* AccessRefreshToken.swift */; };
+		419B49FD1CD1DBAF00B28976 /* AccessTokenRefreshTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419B49FC1CD1DBAF00B28976 /* AccessTokenRefreshTests.swift */; };
+		41A7F63E1D1ABAA000AD664E /* NSMutableAttributedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7F63D1D1ABAA000AD664E /* NSMutableAttributedString.swift */; };
+		41A7F6401D1ABE5300AD664E /* UITextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A7F63F1D1ABE5300AD664E /* UITextView.swift */; };
+		41C25A291C88CC57000A3D2B /* StringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41C25A281C88CC57000A3D2B /* StringExtensionTests.swift */; };
+		41CB4FFA1D0A72CC00472DD0 /* PPRSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41CB4FF91D0A72CC00472DD0 /* PPRSuccessViewController.swift */; };
+		41D401BF1D06D8ED008CE927 /* PPRMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D401BE1D06D8ED008CE927 /* PPRMain.storyboard */; };
+		41D401C11D06EB73008CE927 /* PPRWelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D401C01D06EB73008CE927 /* PPRWelcomeViewController.swift */; };
+		41DB903C1D3E7AA6000E4118 /* LocalizationExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB903B1D3E7AA6000E4118 /* LocalizationExt.swift */; };
+		41DB90451D3F5100000E4118 /* PPRContentConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB90431D3F5100000E4118 /* PPRContentConfiguration.swift */; };
+		41DB90461D3F5100000E4118 /* PPRUIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB90441D3F5100000E4118 /* PPRUIConfiguration.swift */; };
+		41DB90481D3F57CB000E4118 /* PPRConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DB90471D3F57CB000E4118 /* PPRConfiguration.swift */; };
+		41DBEC711C841C7A00063C3F /* NSDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A2318E1C802EF300A0780B /* NSDate.swift */; };
+		41FC0BD41D0CA3C800FADCC4 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41FC0BD31D0CA3C800FADCC4 /* UILabel.swift */; };
+		463159461D9502AA004388AD /* PPRFakeSelectorClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463159451D9502AA004388AD /* PPRFakeSelectorClass.swift */; };
+		464A3ED61E60176200059A6E /* NSBundleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 464A3ED51E60176200059A6E /* NSBundleTests.swift */; };
+		466084C41D6DAE5600B081A3 /* PPRInterfaceDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 466084C31D6DAE5600B081A3 /* PPRInterfaceDependency.swift */; };
+		467041E81E37860C00405929 /* PRXProductSummaryDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467041E61E37860C00405929 /* PRXProductSummaryDataRequest.swift */; };
+		467041E91E37860C00405929 /* PRXProductSummaryDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 467041E71E37860C00405929 /* PRXProductSummaryDataResponse.swift */; };
+		468AF71A1DE5A19E0087B9F9 /* PPRFindSerialNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4606BA891DD243C300BEE47E /* PPRFindSerialNumberViewController.swift */; };
+		469C4E941E388B5E0025DF95 /* PPRProductSummaryDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C4E931E388B5E0025DF95 /* PPRProductSummaryDataRequestTests.swift */; };
+		469C4E961E3897EA0025DF95 /* PPRProductSummaryDataJSONObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C4E951E3897EA0025DF95 /* PPRProductSummaryDataJSONObject.swift */; };
+		469C4E981E389D410025DF95 /* PRXProductSummaryDataInfoDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C4E971E389D410025DF95 /* PRXProductSummaryDataInfoDataTests.swift */; };
+		469C4E9A1E38C81B0025DF95 /* PPRInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469C4E991E38C81B0025DF95 /* PPRInterfaceTests.swift */; };
+		46A00DAB1D65DB2800B89D9F /* PPRInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A00DAA1D65DB2800B89D9F /* PPRInterface.swift */; };
+		46A00DAD1D65DE5A00B89D9F /* PPRInterfaceInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46A00DAC1D65DE5A00B89D9F /* PPRInterfaceInput.swift */; };
+		46BBF0DF1D92A1D800D7E067 /* PPRBaseClassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BBF0DE1D92A1D800D7E067 /* PPRBaseClassTests.swift */; };
+		46F5BE9A1D5CCACB0075EA1C /* PPRLaunchInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F5BE991D5CCACB0075EA1C /* PPRLaunchInput.swift */; };
+		507696A823DFFAF1009036A2 /* AuthenticationServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 507696A723DFFAF1009036A2 /* AuthenticationServices.swift */; };
+		544ED6222186EACD00360A05 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED6212186EACD00360A05 /* AppDelegate.swift */; };
+		544ED6242186EACE00360A05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 544ED6232186EACE00360A05 /* ViewController.swift */; };
+		544ED6272186EACE00360A05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544ED6252186EACE00360A05 /* Main.storyboard */; };
+		544ED6292186EAD000360A05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544ED6282186EAD000360A05 /* Assets.xcassets */; };
+		544ED62C2186EAD000360A05 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544ED62A2186EAD000360A05 /* LaunchScreen.storyboard */; };
+		5D457A9C2047F6AC0051C278 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5D457A732047F6AC0051C278 /* Localizable.strings */; };
+		9518D2611C75C210004773B6 /* PRXProductMetaDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D2601C75C210004773B6 /* PRXProductMetaDataResponse.swift */; };
+		9518D2631C75C234004773B6 /* PRXProductMetaDataInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D2621C75C234004773B6 /* PRXProductMetaDataInfoData.swift */; };
+		9518D2651C75E9F0004773B6 /* PRXProductMetadataSerialContentData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9518D2641C75E9F0004773B6 /* PRXProductMetadataSerialContentData.swift */; };
+		953379CD1C7AE3F8009A16C6 /* PPRUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953379CC1C7AE3F8009A16C6 /* PPRUtils.swift */; };
+		953BE5C01C870F26002D6C1D /* PRXProductListDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BE5BF1C870F26002D6C1D /* PRXProductListDataRequest.swift */; };
+		953BE5C21C870F3B002D6C1D /* PRXProductResultData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BE5C11C870F3B002D6C1D /* PRXProductResultData.swift */; };
+		953BE5C41C870F4C002D6C1D /* PRXProductListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953BE5C31C870F4C002D6C1D /* PRXProductListResponse.swift */; };
+		954731E81C58BA5700503093 /* PhilipsProductRegistration.h in Headers */ = {isa = PBXBuildFile; fileRef = 954731E71C58BA5700503093 /* PhilipsProductRegistration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		955DEEF11C88164D009B6347 /* PRXProductListDataRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DEEF01C88164D009B6347 /* PRXProductListDataRequestTests.swift */; };
+		955DEEF31C88166F009B6347 /* PRXProductResultDataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DEEF21C88166F009B6347 /* PRXProductResultDataTests.swift */; };
+		958AD5801CC4B9BD00962919 /* PPRUtilsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 958AD57F1CC4B9BD00962919 /* PPRUtilsTests.swift */; };
+		9591D3491CBE2D0C00D76D1A /* PPRRegisteredProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591D3451CBE2D0C00D76D1A /* PPRRegisteredProduct.swift */; };
+		9591D34A1CBE2D0C00D76D1A /* PPRRegisteredProductListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591D3461CBE2D0C00D76D1A /* PPRRegisteredProductListStore.swift */; };
+		9591D34B1CBE2D0C00D76D1A /* PPRStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591D3471CBE2D0C00D76D1A /* PPRStorageProvider.swift */; };
+		9591D34D1CBE2D3500D76D1A /* PPRRegisteredProductListStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9591D34C1CBE2D3500D76D1A /* PPRRegisteredProductListStoreTest.swift */; };
+		95FDA6601C743DF100477924 /* PRXRegisterProductResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDA65F1C743DF100477924 /* PRXRegisterProductResponse.swift */; };
+		95FDA6621C743E4800477924 /* PRXRegisterProductInfoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95FDA6611C743E4800477924 /* PRXRegisterProductInfoData.swift */; };
+		9CFA3FAF1EE179150015777F /* PPRUIConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA3FAE1EE179150015777F /* PPRUIConfigurationTests.swift */; };
+		9CFA3FB11EE17D380015777F /* PPRProductExtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CFA3FB01EE17D370015777F /* PPRProductExtTests.swift */; };
+		ADF605EAB69A6B87E54CF952 /* Pods_PhilipsProductRegistrationDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF4D0BE90F32669A301C6D8 /* Pods_PhilipsProductRegistrationDev.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41F73D531C9144EE0020D11A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 954731DB1C58BA5700503093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954731E31C58BA5700503093;
+			remoteInfo = PhilipsProductRegistration;
+		};
+		544ED6312186EADD00360A05 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 954731DB1C58BA5700503093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 544ED61E2186EACD00360A05;
+			remoteInfo = PRGTest;
+		};
+		954731F01C58BA5700503093 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 954731DB1C58BA5700503093 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 954731E31C58BA5700503093;
+			remoteInfo = PhilipsProductRegistration;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		417F4BE81C9153E000AA7EF7 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95A6564C1C7F2BDE0034A220 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		41001EE51C85596A00E0F18E /* PRXRegisterProductDataRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXRegisterProductDataRequestTests.swift; sourceTree = "<group>"; };
+		41001EEE1C856AD800E0F18E /* PRXRegisterProductInfoDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXRegisterProductInfoDataTests.swift; sourceTree = "<group>"; };
+		41001EF01C85786300E0F18E /* PRXProductMetadataSerialContentDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetadataSerialContentDataTests.swift; sourceTree = "<group>"; };
+		41001EF21C857C7100E0F18E /* PRXProductMetaDataInfoDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetaDataInfoDataTests.swift; sourceTree = "<group>"; };
+		41032A841CA2620E00FF7801 /* PPRTestConstant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRTestConstant.swift; sourceTree = "<group>"; };
+		410BBF0A1D092F6500FEC7A5 /* PPRProductRegistrationUIHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductRegistrationUIHelper.swift; sourceTree = "<group>"; };
+		410BBF111D09A80600FEC7A5 /* PPRRegisterProductsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisterProductsViewController.swift; sourceTree = "<group>"; };
+		410BBF151D09B80D00FEC7A5 /* PPRBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRBaseViewController.swift; sourceTree = "<group>"; };
+		411A356D1CEC412800BA3760 /* PPRProductMetaDataJSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductMetaDataJSONObject.swift; sourceTree = "<group>"; };
+		411A356E1CEC412800BA3760 /* PPRProductObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductObject.swift; sourceTree = "<group>"; };
+		411A356F1CEC412800BA3760 /* PPRRegisteredProductListJSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisteredProductListJSONObject.swift; sourceTree = "<group>"; };
+		411A35701CEC412800BA3760 /* PPRRegisterProductJSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisterProductJSONObject.swift; sourceTree = "<group>"; };
+		411A35741CEC412800BA3760 /* DIUserMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DIUserMock.swift; sourceTree = "<group>"; };
+		411A35751CEC412800BA3760 /* PPRProductMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductMock.swift; sourceTree = "<group>"; };
+		411A35761CEC412800BA3760 /* PPRProductRegistrationHelperMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductRegistrationHelperMock.swift; sourceTree = "<group>"; };
+		411A35771CEC412800BA3760 /* PPRRegisteredProductListStoreMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisteredProductListStoreMock.swift; sourceTree = "<group>"; };
+		411A35781CEC412800BA3760 /* PPRRegisteredProductMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisteredProductMock.swift; sourceTree = "<group>"; };
+		411A35791CEC412800BA3760 /* PPRRegisterProductDelegateMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisterProductDelegateMock.swift; sourceTree = "<group>"; };
+		411A357A1CEC412800BA3760 /* PPRUserProductMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRUserProductMock.swift; sourceTree = "<group>"; };
+		411A357B1CEC412800BA3760 /* PRXRequestManagerMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXRequestManagerMock.swift; sourceTree = "<group>"; };
+		412050A71D0E8B03008E54C7 /* UINavigationViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationViewControllerExt.swift; sourceTree = "<group>"; };
+		412050AC1D0E9001008E54C7 /* PPRSuccessViewControllerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRSuccessViewControllerExt.swift; sourceTree = "<group>"; };
+		412050AE1D0EC66F008E54C7 /* PPRProductExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductExt.swift; sourceTree = "<group>"; };
+		412200891CC4E55300535A58 /* PPRRegisteredProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisteredProductTests.swift; sourceTree = "<group>"; };
+		4122D06A1CC100B700C3A631 /* PPRProductListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductListResponse.swift; sourceTree = "<group>"; };
+		4122D06C1CC110BD00C3A631 /* PPRProductListResponseTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductListResponseTests.swift; sourceTree = "<group>"; };
+		4122D06E1CC1344600C3A631 /* PPRConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRConstants.swift; sourceTree = "<group>"; };
+		4122D0721CC1377F00C3A631 /* StorageProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StorageProviderTests.swift; sourceTree = "<group>"; };
+		413064BA1D4125B3008833F2 /* PPRTagging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRTagging.swift; sourceTree = "<group>"; };
+		413064BF1D4125E1008833F2 /* NSBundle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundle.swift; sourceTree = "<group>"; };
+		4135373E1C84529C0003CFD6 /* PRXProductMetaDataRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetaDataRequestTests.swift; sourceTree = "<group>"; };
+		413537471C847CF20003CFD6 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		414779F01D18018300521324 /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		415E7A5A1D1BBAF200063C92 /* ProductRegistration.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = ProductRegistration.xcassets; sourceTree = "<group>"; };
+		417961561CB527A90099AF0F /* PPRProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRProduct.swift; sourceTree = "<group>"; };
+		4179615E1CB527F80099AF0F /* PPRErrorHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRErrorHelperTests.swift; sourceTree = "<group>"; };
+		417961621CB5287D0099AF0F /* PPRProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductTests.swift; sourceTree = "<group>"; };
+		417961661CB528A70099AF0F /* PPRErrorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRErrorHelper.swift; sourceTree = "<group>"; };
+		417961671CB528A70099AF0F /* PRXRequestManagerWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PRXRequestManagerWrapper.swift; sourceTree = "<group>"; };
+		41859EFA1CBBAA6100D21CCD /* PPRUserProductTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRUserProductTests.swift; sourceTree = "<group>"; };
+		41859EFE1CBBF5CB00D21CCD /* PPRRequestHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRequestHandlerTests.swift; sourceTree = "<group>"; };
+		4193692E1C8910F00018A32D /* PPRError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRError.swift; sourceTree = "<group>"; };
+		419B49F31CD1D9F300B28976 /* PPRProductRegistrationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRProductRegistrationHelper.swift; sourceTree = "<group>"; };
+		419B49F41CD1D9F300B28976 /* PPRUserWithProducts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRUserWithProducts.swift; sourceTree = "<group>"; };
+		419B49F91CD1DA0900B28976 /* AccessRefreshToken.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessRefreshToken.swift; sourceTree = "<group>"; };
+		419B49FC1CD1DBAF00B28976 /* AccessTokenRefreshTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenRefreshTests.swift; sourceTree = "<group>"; };
+		41A2318E1C802EF300A0780B /* NSDate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDate.swift; sourceTree = "<group>"; };
+		41A231901C8031CB00A0780B /* NSDateExtensionTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDateExtensionTest.swift; sourceTree = "<group>"; };
+		41A7F63D1D1ABAA000AD664E /* NSMutableAttributedString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSMutableAttributedString.swift; sourceTree = "<group>"; };
+		41A7F63F1D1ABE5300AD664E /* UITextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextView.swift; sourceTree = "<group>"; };
+		41BD937E1C89901D006FB6EB /* PhilipsProductRegistrationTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhilipsProductRegistrationTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		41C25A281C88CC57000A3D2B /* StringExtensionTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionTests.swift; sourceTree = "<group>"; };
+		41CB4FF91D0A72CC00472DD0 /* PPRSuccessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRSuccessViewController.swift; sourceTree = "<group>"; };
+		41D401BE1D06D8ED008CE927 /* PPRMain.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PPRMain.storyboard; sourceTree = "<group>"; };
+		41D401C01D06EB73008CE927 /* PPRWelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRWelcomeViewController.swift; sourceTree = "<group>"; };
+		41DB903B1D3E7AA6000E4118 /* LocalizationExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalizationExt.swift; sourceTree = "<group>"; };
+		41DB90431D3F5100000E4118 /* PPRContentConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRContentConfiguration.swift; sourceTree = "<group>"; };
+		41DB90441D3F5100000E4118 /* PPRUIConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRUIConfiguration.swift; sourceTree = "<group>"; };
+		41DB90471D3F57CB000E4118 /* PPRConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRConfiguration.swift; sourceTree = "<group>"; };
+		41F73D4D1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilipsProductRegistrationIntegrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F73D511C9144EE0020D11A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F73D5A1C9145410020D11A /* PhilipsProductRegistrationIntegrationTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhilipsProductRegistrationIntegrationTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		41FC0BD31D0CA3C800FADCC4 /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		42BE677E9056C01E217E26A3 /* Pods-PhilipsProductRegistrationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationTests.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationTests/Pods-PhilipsProductRegistrationTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4606BA891DD243C300BEE47E /* PPRFindSerialNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRFindSerialNumberViewController.swift; sourceTree = "<group>"; };
+		463159451D9502AA004388AD /* PPRFakeSelectorClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRFakeSelectorClass.swift; sourceTree = "<group>"; };
+		464A3ED51E60176200059A6E /* NSBundleTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleTests.swift; sourceTree = "<group>"; };
+		466084C31D6DAE5600B081A3 /* PPRInterfaceDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRInterfaceDependency.swift; sourceTree = "<group>"; };
+		467041E61E37860C00405929 /* PRXProductSummaryDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductSummaryDataRequest.swift; sourceTree = "<group>"; };
+		467041E71E37860C00405929 /* PRXProductSummaryDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductSummaryDataResponse.swift; sourceTree = "<group>"; };
+		469C4E931E388B5E0025DF95 /* PPRProductSummaryDataRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductSummaryDataRequestTests.swift; sourceTree = "<group>"; };
+		469C4E951E3897EA0025DF95 /* PPRProductSummaryDataJSONObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductSummaryDataJSONObject.swift; sourceTree = "<group>"; };
+		469C4E971E389D410025DF95 /* PRXProductSummaryDataInfoDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductSummaryDataInfoDataTests.swift; sourceTree = "<group>"; };
+		469C4E991E38C81B0025DF95 /* PPRInterfaceTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRInterfaceTests.swift; sourceTree = "<group>"; };
+		46A00DAA1D65DB2800B89D9F /* PPRInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRInterface.swift; sourceTree = "<group>"; };
+		46A00DAC1D65DE5A00B89D9F /* PPRInterfaceInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRInterfaceInput.swift; sourceTree = "<group>"; };
+		46BBF0DE1D92A1D800D7E067 /* PPRBaseClassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRBaseClassTests.swift; sourceTree = "<group>"; };
+		46BBF1221D93EAD500D7E067 /* PhilipsIconFont.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhilipsIconFont.framework; path = "Pods/../build/Release-iphoneos/PhilipsIconFont/PhilipsIconFont.framework"; sourceTree = "<group>"; };
+		46BBF1241D93EAE500D7E067 /* PhilipsUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhilipsUIKit.framework; path = "Pods/../build/Release-iphoneos/PhilipsUIKit/PhilipsUIKit.framework"; sourceTree = "<group>"; };
+		46F5BE991D5CCACB0075EA1C /* PPRLaunchInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRLaunchInput.swift; sourceTree = "<group>"; };
+		507696A723DFFAF1009036A2 /* AuthenticationServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationServices.swift; sourceTree = "<group>"; };
+		5084EDD920D38ADA002D5B89 /* zh-Hant-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-HK"; path = "zh-Hant-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		50DF870B214FEE5B003F381D /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		544ED61F2186EACD00360A05 /* PRGTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRGTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		544ED6212186EACD00360A05 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		544ED6232186EACE00360A05 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		544ED6262186EACE00360A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		544ED6282186EAD000360A05 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		544ED62B2186EAD000360A05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		544ED62D2186EAD000360A05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D457A742047F6AC0051C278 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A752047F6AC0051C278 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A762047F6AC0051C278 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A772047F6AC0051C278 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A782047F6AC0051C278 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A792047F6AC0051C278 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A7A2047F6AC0051C278 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D457A7B2047F6AC0051C278 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A7C2047F6AC0051C278 /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D457A7D2047F6AC0051C278 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D457A7E2047F6AC0051C278 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A7F2047F6AC0051C278 /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A802047F6AC0051C278 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A812047F6AC0051C278 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D457A822047F6AC0051C278 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A832047F6AC0051C278 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A842047F6AC0051C278 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A852047F6AC0051C278 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A862047F6AC0051C278 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A872047F6AC0051C278 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A882047F6AC0051C278 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A892047F6AC0051C278 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A8A2047F6AC0051C278 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A8B2047F6AC0051C278 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A8C2047F6AC0051C278 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A8D2047F6AC0051C278 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A8E2047F6AC0051C278 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5D457A8F2047F6AC0051C278 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A902047F6AC0051C278 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A912047F6AC0051C278 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A922047F6AC0051C278 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A932047F6AC0051C278 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A942047F6AC0051C278 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A952047F6AC0051C278 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A962047F6AC0051C278 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A972047F6AC0051C278 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A982047F6AC0051C278 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5D457A9A2047F6AC0051C278 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		6BF4D0BE90F32669A301C6D8 /* Pods_PhilipsProductRegistrationDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsProductRegistrationDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D087A3D23558FB254344273 /* Pods-PhilipsProductRegistration.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistration.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsProductRegistration/Pods-PhilipsProductRegistration.debug.xcconfig"; sourceTree = "<group>"; };
+		8A76E9665811B067903286F6 /* Pods-PhilipsProductRegistrationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationDev.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationDev/Pods-PhilipsProductRegistrationDev.release.xcconfig"; sourceTree = "<group>"; };
+		9518D25E1C75C177004773B6 /* PRXProductMetaDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetaDataRequest.swift; sourceTree = "<group>"; };
+		9518D2601C75C210004773B6 /* PRXProductMetaDataResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetaDataResponse.swift; sourceTree = "<group>"; };
+		9518D2621C75C234004773B6 /* PRXProductMetaDataInfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetaDataInfoData.swift; sourceTree = "<group>"; };
+		9518D2641C75E9F0004773B6 /* PRXProductMetadataSerialContentData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductMetadataSerialContentData.swift; sourceTree = "<group>"; };
+		953379CC1C7AE3F8009A16C6 /* PPRUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRUtils.swift; sourceTree = "<group>"; };
+		953BE5BF1C870F26002D6C1D /* PRXProductListDataRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductListDataRequest.swift; sourceTree = "<group>"; };
+		953BE5C11C870F3B002D6C1D /* PRXProductResultData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductResultData.swift; sourceTree = "<group>"; };
+		953BE5C31C870F4C002D6C1D /* PRXProductListResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductListResponse.swift; sourceTree = "<group>"; };
+		954731E41C58BA5700503093 /* PhilipsProductRegistrationDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhilipsProductRegistrationDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		954731E71C58BA5700503093 /* PhilipsProductRegistration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhilipsProductRegistration.h; sourceTree = "<group>"; };
+		954731E91C58BA5700503093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		954731EE1C58BA5700503093 /* PhilipsProductRegistrationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilipsProductRegistrationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		954731F51C58BA5700503093 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		955DEEF01C88164D009B6347 /* PRXProductListDataRequestTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductListDataRequestTests.swift; sourceTree = "<group>"; };
+		955DEEF21C88166F009B6347 /* PRXProductResultDataTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXProductResultDataTests.swift; sourceTree = "<group>"; };
+		958AD57F1CC4B9BD00962919 /* PPRUtilsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRUtilsTests.swift; sourceTree = "<group>"; };
+		9591D3451CBE2D0C00D76D1A /* PPRRegisteredProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = PPRRegisteredProduct.swift; sourceTree = "<group>"; };
+		9591D3461CBE2D0C00D76D1A /* PPRRegisteredProductListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisteredProductListStore.swift; sourceTree = "<group>"; };
+		9591D3471CBE2D0C00D76D1A /* PPRStorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRStorageProvider.swift; sourceTree = "<group>"; };
+		9591D34C1CBE2D3500D76D1A /* PPRRegisteredProductListStoreTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRRegisteredProductListStoreTest.swift; sourceTree = "<group>"; };
+		95FDA65D1C74386400477924 /* PRXRegisterProductRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXRegisterProductRequest.swift; sourceTree = "<group>"; };
+		95FDA65F1C743DF100477924 /* PRXRegisterProductResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXRegisterProductResponse.swift; sourceTree = "<group>"; };
+		95FDA6611C743E4800477924 /* PRXRegisterProductInfoData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PRXRegisterProductInfoData.swift; sourceTree = "<group>"; };
+		9CFA3FAE1EE179150015777F /* PPRUIConfigurationTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRUIConfigurationTests.swift; sourceTree = "<group>"; };
+		9CFA3FB01EE17D370015777F /* PPRProductExtTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PPRProductExtTests.swift; sourceTree = "<group>"; };
+		A0863431261943BB13484841 /* Pods-PhilipsProductRegistration.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistration.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsProductRegistration/Pods-PhilipsProductRegistration.release.xcconfig"; sourceTree = "<group>"; };
+		AE7C839A2B9532506674C53E /* Pods-PhilipsProductRegistrationDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationDev.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationDev/Pods-PhilipsProductRegistrationDev.debug.xcconfig"; sourceTree = "<group>"; };
+		BB7F88CFA81C2BC1B3A89747 /* Pods-PhilipsProductRegistrationTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationTests.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationTests/Pods-PhilipsProductRegistrationTests.release.xcconfig"; sourceTree = "<group>"; };
+		FA02482A852E98F4BF84B1E4 /* Pods_PhilipsProductRegistrationTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsProductRegistrationTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41F73D4A1C9144EE0020D11A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544ED61C2186EACD00360A05 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954731E01C58BA5700503093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF605EAB69A6B87E54CF952 /* Pods_PhilipsProductRegistrationDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954731EB1C58BA5700503093 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				413064C21D424364008833F2 /* PhilipsProductRegistrationDev.framework in Frameworks */,
+				27F357EDBD7FDCD17D03E029 /* Pods_PhilipsProductRegistrationTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		411A356C1CEC412800BA3760 /* FakeObjects */ = {
+			isa = PBXGroup;
+			children = (
+				411A356D1CEC412800BA3760 /* PPRProductMetaDataJSONObject.swift */,
+				411A356E1CEC412800BA3760 /* PPRProductObject.swift */,
+				411A356F1CEC412800BA3760 /* PPRRegisteredProductListJSONObject.swift */,
+				411A35701CEC412800BA3760 /* PPRRegisterProductJSONObject.swift */,
+				469C4E951E3897EA0025DF95 /* PPRProductSummaryDataJSONObject.swift */,
+			);
+			path = FakeObjects;
+			sourceTree = "<group>";
+		};
+		411A35731CEC412800BA3760 /* MockObjects */ = {
+			isa = PBXGroup;
+			children = (
+				411A35741CEC412800BA3760 /* DIUserMock.swift */,
+				411A35751CEC412800BA3760 /* PPRProductMock.swift */,
+				411A35761CEC412800BA3760 /* PPRProductRegistrationHelperMock.swift */,
+				411A35771CEC412800BA3760 /* PPRRegisteredProductListStoreMock.swift */,
+				411A35781CEC412800BA3760 /* PPRRegisteredProductMock.swift */,
+				411A35791CEC412800BA3760 /* PPRRegisterProductDelegateMock.swift */,
+				411A357A1CEC412800BA3760 /* PPRUserProductMock.swift */,
+				411A357B1CEC412800BA3760 /* PRXRequestManagerMock.swift */,
+			);
+			path = MockObjects;
+			sourceTree = "<group>";
+		};
+		413064B91D4125B3008833F2 /* Tagging */ = {
+			isa = PBXGroup;
+			children = (
+				413064BA1D4125B3008833F2 /* PPRTagging.swift */,
+			);
+			path = Tagging;
+			sourceTree = "<group>";
+		};
+		41D401BD1D06D88C008CE927 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				5D457A722047F6AC0051C278 /* Localization */,
+				413064B91D4125B3008833F2 /* Tagging */,
+				41DB90421D3F5100000E4118 /* Configuration */,
+				41FC0BD01D0C7F4900FADCC4 /* Extensions */,
+				41D401BE1D06D8ED008CE927 /* PPRMain.storyboard */,
+				410BBF151D09B80D00FEC7A5 /* PPRBaseViewController.swift */,
+				41D401C01D06EB73008CE927 /* PPRWelcomeViewController.swift */,
+				410BBF111D09A80600FEC7A5 /* PPRRegisterProductsViewController.swift */,
+				41CB4FF91D0A72CC00472DD0 /* PPRSuccessViewController.swift */,
+				410BBF0A1D092F6500FEC7A5 /* PPRProductRegistrationUIHelper.swift */,
+				4606BA891DD243C300BEE47E /* PPRFindSerialNumberViewController.swift */,
+				415E7A5A1D1BBAF200063C92 /* ProductRegistration.xcassets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		41DB90421D3F5100000E4118 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				41DB90431D3F5100000E4118 /* PPRContentConfiguration.swift */,
+				41DB90441D3F5100000E4118 /* PPRUIConfiguration.swift */,
+				41DB90471D3F57CB000E4118 /* PPRConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		41F73D4E1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				41F73D511C9144EE0020D11A /* Info.plist */,
+				41F73D5A1C9145410020D11A /* PhilipsProductRegistrationIntegrationTests-Bridging-Header.h */,
+			);
+			path = PhilipsProductRegistrationIntegrationTests;
+			sourceTree = "<group>";
+		};
+		41FC0BD01D0C7F4900FADCC4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41FC0BD31D0CA3C800FADCC4 /* UILabel.swift */,
+				41A7F63F1D1ABE5300AD664E /* UITextView.swift */,
+				41A7F63D1D1ABAA000AD664E /* NSMutableAttributedString.swift */,
+				412050AC1D0E9001008E54C7 /* PPRSuccessViewControllerExt.swift */,
+				412050A71D0E8B03008E54C7 /* UINavigationViewControllerExt.swift */,
+				414779F01D18018300521324 /* UIViewController.swift */,
+				41DB903B1D3E7AA6000E4118 /* LocalizationExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		467041E51E37860C00405929 /* SummaryData */ = {
+			isa = PBXGroup;
+			children = (
+				467041E61E37860C00405929 /* PRXProductSummaryDataRequest.swift */,
+				467041E71E37860C00405929 /* PRXProductSummaryDataResponse.swift */,
+			);
+			path = SummaryData;
+			sourceTree = "<group>";
+		};
+		544ED6202186EACD00360A05 /* PRGTest */ = {
+			isa = PBXGroup;
+			children = (
+				544ED6212186EACD00360A05 /* AppDelegate.swift */,
+				544ED6232186EACE00360A05 /* ViewController.swift */,
+				544ED6252186EACE00360A05 /* Main.storyboard */,
+				544ED6282186EAD000360A05 /* Assets.xcassets */,
+				544ED62A2186EAD000360A05 /* LaunchScreen.storyboard */,
+				544ED62D2186EAD000360A05 /* Info.plist */,
+			);
+			path = PRGTest;
+			sourceTree = "<group>";
+		};
+		5D457A722047F6AC0051C278 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				5D457A732047F6AC0051C278 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		8B35057BA7D6DAFBE8BEA46A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D087A3D23558FB254344273 /* Pods-PhilipsProductRegistration.debug.xcconfig */,
+				A0863431261943BB13484841 /* Pods-PhilipsProductRegistration.release.xcconfig */,
+				42BE677E9056C01E217E26A3 /* Pods-PhilipsProductRegistrationTests.debug.xcconfig */,
+				BB7F88CFA81C2BC1B3A89747 /* Pods-PhilipsProductRegistrationTests.release.xcconfig */,
+				AE7C839A2B9532506674C53E /* Pods-PhilipsProductRegistrationDev.debug.xcconfig */,
+				8A76E9665811B067903286F6 /* Pods-PhilipsProductRegistrationDev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		953379CB1C7AE3EA009A16C6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				413064BF1D4125E1008833F2 /* NSBundle.swift */,
+				419B49F91CD1DA0900B28976 /* AccessRefreshToken.swift */,
+				953379CC1C7AE3F8009A16C6 /* PPRUtils.swift */,
+				41A2318E1C802EF300A0780B /* NSDate.swift */,
+				413537471C847CF20003CFD6 /* String.swift */,
+				4193692E1C8910F00018A32D /* PPRError.swift */,
+				417961661CB528A70099AF0F /* PPRErrorHelper.swift */,
+				417961671CB528A70099AF0F /* PRXRequestManagerWrapper.swift */,
+				4122D06E1CC1344600C3A631 /* PPRConstants.swift */,
+				412050AE1D0EC66F008E54C7 /* PPRProductExt.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		953BE5BE1C870F08002D6C1D /* RegisteredProdList */ = {
+			isa = PBXGroup;
+			children = (
+				953BE5BF1C870F26002D6C1D /* PRXProductListDataRequest.swift */,
+				953BE5C11C870F3B002D6C1D /* PRXProductResultData.swift */,
+				953BE5C31C870F4C002D6C1D /* PRXProductListResponse.swift */,
+				4122D06A1CC100B700C3A631 /* PPRProductListResponse.swift */,
+			);
+			path = RegisteredProdList;
+			sourceTree = "<group>";
+		};
+		954731DA1C58BA5700503093 = {
+			isa = PBXGroup;
+			children = (
+				954731E61C58BA5700503093 /* PhilipsProductRegistration */,
+				954731F21C58BA5700503093 /* PhilipsProductRegistrationTests */,
+				41F73D4E1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests */,
+				544ED6202186EACD00360A05 /* PRGTest */,
+				954731E51C58BA5700503093 /* Products */,
+				DE7BD5D802B53E9CB4DEE13D /* Frameworks */,
+				8B35057BA7D6DAFBE8BEA46A /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		954731E51C58BA5700503093 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				954731E41C58BA5700503093 /* PhilipsProductRegistrationDev.framework */,
+				954731EE1C58BA5700503093 /* PhilipsProductRegistrationTests.xctest */,
+				41F73D4D1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests.xctest */,
+				544ED61F2186EACD00360A05 /* PRGTest.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		954731E61C58BA5700503093 /* PhilipsProductRegistration */ = {
+			isa = PBXGroup;
+			children = (
+				41D401BD1D06D88C008CE927 /* UI */,
+				9591D3431CBE2D0C00D76D1A /* Catche */,
+				954731E91C58BA5700503093 /* Info.plist */,
+				954731E71C58BA5700503093 /* PhilipsProductRegistration.h */,
+				417961561CB527A90099AF0F /* PPRProduct.swift */,
+				466084C31D6DAE5600B081A3 /* PPRInterfaceDependency.swift */,
+				419B49F31CD1D9F300B28976 /* PPRProductRegistrationHelper.swift */,
+				419B49F41CD1D9F300B28976 /* PPRUserWithProducts.swift */,
+				95FDA6581C7437D700477924 /* PRXExtensions */,
+				953379CB1C7AE3EA009A16C6 /* Utils */,
+				46F5BE991D5CCACB0075EA1C /* PPRLaunchInput.swift */,
+				46A00DAA1D65DB2800B89D9F /* PPRInterface.swift */,
+				46A00DAC1D65DE5A00B89D9F /* PPRInterfaceInput.swift */,
+				507696A723DFFAF1009036A2 /* AuthenticationServices.swift */,
+			);
+			path = PhilipsProductRegistration;
+			sourceTree = "<group>";
+		};
+		954731F21C58BA5700503093 /* PhilipsProductRegistrationTests */ = {
+			isa = PBXGroup;
+			children = (
+				411A356C1CEC412800BA3760 /* FakeObjects */,
+				411A35731CEC412800BA3760 /* MockObjects */,
+				4122D0721CC1377F00C3A631 /* StorageProviderTests.swift */,
+				954731F51C58BA5700503093 /* Info.plist */,
+				41A231901C8031CB00A0780B /* NSDateExtensionTest.swift */,
+				41BD937E1C89901D006FB6EB /* PhilipsProductRegistrationTests-Bridging-Header.h */,
+				4179615E1CB527F80099AF0F /* PPRErrorHelperTests.swift */,
+				417961621CB5287D0099AF0F /* PPRProductTests.swift */,
+				9591D34C1CBE2D3500D76D1A /* PPRRegisteredProductListStoreTest.swift */,
+				41859EFE1CBBF5CB00D21CCD /* PPRRequestHandlerTests.swift */,
+				41032A841CA2620E00FF7801 /* PPRTestConstant.swift */,
+				41859EFA1CBBAA6100D21CCD /* PPRUserProductTests.swift */,
+				955DEEF01C88164D009B6347 /* PRXProductListDataRequestTests.swift */,
+				41001EF21C857C7100E0F18E /* PRXProductMetaDataInfoDataTests.swift */,
+				4135373E1C84529C0003CFD6 /* PRXProductMetaDataRequestTests.swift */,
+				41001EF01C85786300E0F18E /* PRXProductMetadataSerialContentDataTests.swift */,
+				955DEEF21C88166F009B6347 /* PRXProductResultDataTests.swift */,
+				41001EE51C85596A00E0F18E /* PRXRegisterProductDataRequestTests.swift */,
+				41001EEE1C856AD800E0F18E /* PRXRegisterProductInfoDataTests.swift */,
+				41C25A281C88CC57000A3D2B /* StringExtensionTests.swift */,
+				4122D06C1CC110BD00C3A631 /* PPRProductListResponseTests.swift */,
+				958AD57F1CC4B9BD00962919 /* PPRUtilsTests.swift */,
+				412200891CC4E55300535A58 /* PPRRegisteredProductTests.swift */,
+				419B49FC1CD1DBAF00B28976 /* AccessTokenRefreshTests.swift */,
+				46BBF0DE1D92A1D800D7E067 /* PPRBaseClassTests.swift */,
+				463159451D9502AA004388AD /* PPRFakeSelectorClass.swift */,
+				469C4E931E388B5E0025DF95 /* PPRProductSummaryDataRequestTests.swift */,
+				469C4E971E389D410025DF95 /* PRXProductSummaryDataInfoDataTests.swift */,
+				469C4E991E38C81B0025DF95 /* PPRInterfaceTests.swift */,
+				464A3ED51E60176200059A6E /* NSBundleTests.swift */,
+				9CFA3FAE1EE179150015777F /* PPRUIConfigurationTests.swift */,
+				9CFA3FB01EE17D370015777F /* PPRProductExtTests.swift */,
+			);
+			path = PhilipsProductRegistrationTests;
+			sourceTree = "<group>";
+		};
+		9591D3431CBE2D0C00D76D1A /* Catche */ = {
+			isa = PBXGroup;
+			children = (
+				9591D3451CBE2D0C00D76D1A /* PPRRegisteredProduct.swift */,
+				9591D3461CBE2D0C00D76D1A /* PPRRegisteredProductListStore.swift */,
+				9591D3471CBE2D0C00D76D1A /* PPRStorageProvider.swift */,
+			);
+			path = Catche;
+			sourceTree = "<group>";
+		};
+		95FDA6581C7437D700477924 /* PRXExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				467041E51E37860C00405929 /* SummaryData */,
+				953BE5BE1C870F08002D6C1D /* RegisteredProdList */,
+				95FDA65B1C74386400477924 /* MetaData */,
+				95FDA65C1C74386400477924 /* RegisterProduct */,
+			);
+			path = PRXExtensions;
+			sourceTree = "<group>";
+		};
+		95FDA65B1C74386400477924 /* MetaData */ = {
+			isa = PBXGroup;
+			children = (
+				9518D25E1C75C177004773B6 /* PRXProductMetaDataRequest.swift */,
+				9518D2601C75C210004773B6 /* PRXProductMetaDataResponse.swift */,
+				9518D2621C75C234004773B6 /* PRXProductMetaDataInfoData.swift */,
+				9518D2641C75E9F0004773B6 /* PRXProductMetadataSerialContentData.swift */,
+			);
+			path = MetaData;
+			sourceTree = "<group>";
+		};
+		95FDA65C1C74386400477924 /* RegisterProduct */ = {
+			isa = PBXGroup;
+			children = (
+				95FDA65D1C74386400477924 /* PRXRegisterProductRequest.swift */,
+				95FDA65F1C743DF100477924 /* PRXRegisterProductResponse.swift */,
+				95FDA6611C743E4800477924 /* PRXRegisterProductInfoData.swift */,
+			);
+			path = RegisterProduct;
+			sourceTree = "<group>";
+		};
+		DE7BD5D802B53E9CB4DEE13D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46BBF1241D93EAE500D7E067 /* PhilipsUIKit.framework */,
+				46BBF1221D93EAD500D7E067 /* PhilipsIconFont.framework */,
+				FA02482A852E98F4BF84B1E4 /* Pods_PhilipsProductRegistrationTests.framework */,
+				6BF4D0BE90F32669A301C6D8 /* Pods_PhilipsProductRegistrationDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		954731E11C58BA5700503093 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				954731E81C58BA5700503093 /* PhilipsProductRegistration.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		41F73D4C1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41F73D571C9144EE0020D11A /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationIntegrationTests" */;
+			buildPhases = (
+				41F73D491C9144EE0020D11A /* Sources */,
+				41F73D4A1C9144EE0020D11A /* Frameworks */,
+				41F73D4B1C9144EE0020D11A /* Resources */,
+				417F4BE81C9153E000AA7EF7 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41F73D541C9144EE0020D11A /* PBXTargetDependency */,
+			);
+			name = PhilipsProductRegistrationIntegrationTests;
+			productName = PhilipsProductRegistrationIntegrationTests;
+			productReference = 41F73D4D1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		544ED61E2186EACD00360A05 /* PRGTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 544ED6302186EAD000360A05 /* Build configuration list for PBXNativeTarget "PRGTest" */;
+			buildPhases = (
+				544ED61B2186EACD00360A05 /* Sources */,
+				544ED61C2186EACD00360A05 /* Frameworks */,
+				544ED61D2186EACD00360A05 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PRGTest;
+			productName = PRGTest;
+			productReference = 544ED61F2186EACD00360A05 /* PRGTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		954731E31C58BA5700503093 /* PhilipsProductRegistrationDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954731F81C58BA5700503093 /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationDev" */;
+			buildPhases = (
+				2C8DC2B673DA8E4C357F72D8 /* [CP] Check Pods Manifest.lock */,
+				C98A02BF2084D6A6000C4833 /* ShellScript */,
+				954731DF1C58BA5700503093 /* Sources */,
+				954731E01C58BA5700503093 /* Frameworks */,
+				954731E11C58BA5700503093 /* Headers */,
+				954731E21C58BA5700503093 /* Resources */,
+				410BA4CF1D3CFA0300C02E50 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsProductRegistrationDev;
+			productName = PhilipsProductRegistration;
+			productReference = 954731E41C58BA5700503093 /* PhilipsProductRegistrationDev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		954731ED1C58BA5700503093 /* PhilipsProductRegistrationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 954731FB1C58BA5700503093 /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationTests" */;
+			buildPhases = (
+				67943E78A915D14594881873 /* [CP] Check Pods Manifest.lock */,
+				C98A02C02084D6B3000C4833 /* ShellScript */,
+				954731EA1C58BA5700503093 /* Sources */,
+				954731EB1C58BA5700503093 /* Frameworks */,
+				954731EC1C58BA5700503093 /* Resources */,
+				95A6564C1C7F2BDE0034A220 /* Copy Frameworks */,
+				A298696B413C1D9B771E3A32 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				954731F11C58BA5700503093 /* PBXTargetDependency */,
+				544ED6322186EADD00360A05 /* PBXTargetDependency */,
+			);
+			name = PhilipsProductRegistrationTests;
+			productName = PhilipsProductRegistrationTests;
+			productReference = 954731EE1C58BA5700503093 /* PhilipsProductRegistrationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		954731DB1C58BA5700503093 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PPR;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					41F73D4C1C9144EE0020D11A = {
+						CreatedOnToolsVersion = 7.2.1;
+						LastSwiftMigration = 0820;
+					};
+					544ED61E2186EACD00360A05 = {
+						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
+					};
+					95407B8C1C80671800413550 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					954731E31C58BA5700503093 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 7YY4NV42A9;
+						LastSwiftMigration = 0820;
+					};
+					954731ED1C58BA5700503093 = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
+						TestTargetID = 544ED61E2186EACD00360A05;
+					};
+				};
+			};
+			buildConfigurationList = 954731DE1C58BA5700503093 /* Build configuration list for PBXProject "PhilipsProductRegistrationDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				ar,
+				bg,
+				bs,
+				cs,
+				da,
+				de,
+				el,
+				"en-GB",
+				"es-AR",
+				"es-MX",
+				es,
+				et,
+				fa,
+				fi,
+				"fr-CA",
+				fr,
+				gd,
+				he,
+				hi,
+				hr,
+				hu,
+				id,
+				it,
+				ja,
+				kk,
+				ko,
+				lt,
+				lv,
+				mk,
+				ms,
+				nb,
+				nl,
+				pl,
+				"pt-BR",
+				pt,
+				ro,
+				ru,
+				sk,
+				sl,
+				"sq-AL",
+				sr,
+				sv,
+				th,
+				tr,
+				uk,
+				vi,
+				"zh-Hans",
+				"sr-ME",
+				Base,
+				"zh-Hant-HK",
+				"zh-Hant-TW",
+			);
+			mainGroup = 954731DA1C58BA5700503093;
+			productRefGroup = 954731E51C58BA5700503093 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				954731E31C58BA5700503093 /* PhilipsProductRegistrationDev */,
+				954731ED1C58BA5700503093 /* PhilipsProductRegistrationTests */,
+				95407B8C1C80671800413550 /* Universal */,
+				41F73D4C1C9144EE0020D11A /* PhilipsProductRegistrationIntegrationTests */,
+				544ED61E2186EACD00360A05 /* PRGTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41F73D4B1C9144EE0020D11A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544ED61D2186EACD00360A05 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544ED62C2186EAD000360A05 /* LaunchScreen.storyboard in Resources */,
+				544ED6292186EAD000360A05 /* Assets.xcassets in Resources */,
+				544ED6272186EACE00360A05 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954731E21C58BA5700503093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				415E7A5B1D1BBAF200063C92 /* ProductRegistration.xcassets in Resources */,
+				5D457A9C2047F6AC0051C278 /* Localizable.strings in Resources */,
+				41D401BF1D06D8ED008CE927 /* PPRMain.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954731EC1C58BA5700503093 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C8DC2B673DA8E4C357F72D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsProductRegistrationDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		410BA4CF1D3CFA0300C02E50 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "
+";
+		};
+		67943E78A915D14594881873 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsProductRegistrationTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95407B901C80671C00413550 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -workspace \"${PROJECT_NAME}.xcworkspace\" -scheme ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -workspace \"${PROJECT_NAME}.xcworkspace\" -scheme ${PROJECT_NAME} ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/Modules/${PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${PROJECT_NAME}.framework/${PROJECT_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${PROJECT_NAME}.framework/${PROJECT_NAME}\"\n\n# Step 5. Convenience step to copy the framework to the project's directory\n#cp -R \"${UNIVERSAL_OUTPUTFOLDER}/${PROJECT_NAME}.framework\" \"${PROJECT_DIR}\"\n\n# Step 6. Convenience step to open the project's directory in Finder\nopen \"${PROJECT_DIR}\"";
+		};
+		A298696B413C1D9B771E3A32 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhilipsProductRegistrationTests/Pods-PhilipsProductRegistrationTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AdobeMobileSDK/AdobeMobileSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/PlatformInterfaces/PlatformInterfaces.framework",
+				"${BUILT_PRODUCTS_DIR}/TrueTime/TrueTime.framework",
+				"${BUILT_PRODUCTS_DIR}/AppInfra/AppInfra.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsIconFontDLS/PhilipsIconFontDLS.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsUIKitDLS/PhilipsUIKitDLS.framework",
+				"${BUILT_PRODUCTS_DIR}/UAPPFramework/UAPPFramework.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsPRXClient/PhilipsPRXClient.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsRegistration/PhilipsRegistration.framework",
+				"${BUILT_PRODUCTS_DIR}/libPhoneNumber-iOS/libPhoneNumber_iOS.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMobileSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlatformInterfaces.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrueTime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppInfra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsIconFontDLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsUIKitDLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UAPPFramework.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsPRXClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsRegistration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/libPhoneNumber_iOS.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhilipsProductRegistrationTests/Pods-PhilipsProductRegistrationTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A02BF2084D6A6000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		C98A02C02084D6B3000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41F73D491C9144EE0020D11A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		544ED61B2186EACD00360A05 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				544ED6242186EACE00360A05 /* ViewController.swift in Sources */,
+				544ED6222186EACD00360A05 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954731DF1C58BA5700503093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410BBF161D09B80D00FEC7A5 /* PPRBaseViewController.swift in Sources */,
+				412050AD1D0E9001008E54C7 /* PPRSuccessViewControllerExt.swift in Sources */,
+				953BE5C01C870F26002D6C1D /* PRXProductListDataRequest.swift in Sources */,
+				41DB90461D3F5100000E4118 /* PPRUIConfiguration.swift in Sources */,
+				9518D2651C75E9F0004773B6 /* PRXProductMetadataSerialContentData.swift in Sources */,
+				468AF71A1DE5A19E0087B9F9 /* PPRFindSerialNumberViewController.swift in Sources */,
+				466084C41D6DAE5600B081A3 /* PPRInterfaceDependency.swift in Sources */,
+				4122D06F1CC1344600C3A631 /* PPRConstants.swift in Sources */,
+				412050AF1D0EC66F008E54C7 /* PPRProductExt.swift in Sources */,
+				41A7F6401D1ABE5300AD664E /* UITextView.swift in Sources */,
+				419B49FA1CD1DA0900B28976 /* AccessRefreshToken.swift in Sources */,
+				410BBF0B1D092F6500FEC7A5 /* PPRProductRegistrationUIHelper.swift in Sources */,
+				95FDA6601C743DF100477924 /* PRXRegisterProductResponse.swift in Sources */,
+				419B49F51CD1D9F300B28976 /* PPRProductRegistrationHelper.swift in Sources */,
+				41FC0BD41D0CA3C800FADCC4 /* UILabel.swift in Sources */,
+				46F5BE9A1D5CCACB0075EA1C /* PPRLaunchInput.swift in Sources */,
+				41DB903C1D3E7AA6000E4118 /* LocalizationExt.swift in Sources */,
+				414779F11D18018300521324 /* UIViewController.swift in Sources */,
+				410BBF121D09A80600FEC7A5 /* PPRRegisterProductsViewController.swift in Sources */,
+				953BE5C21C870F3B002D6C1D /* PRXProductResultData.swift in Sources */,
+				41DB90451D3F5100000E4118 /* PPRContentConfiguration.swift in Sources */,
+				95FDA6621C743E4800477924 /* PRXRegisterProductInfoData.swift in Sources */,
+				9591D34A1CBE2D0C00D76D1A /* PPRRegisteredProductListStore.swift in Sources */,
+				417961681CB528A70099AF0F /* PPRErrorHelper.swift in Sources */,
+				9518D2631C75C234004773B6 /* PRXProductMetaDataInfoData.swift in Sources */,
+				417016E81C9970CB0034EAF2 /* PRXRegisterProductRequest.swift in Sources */,
+				467041E81E37860C00405929 /* PRXProductSummaryDataRequest.swift in Sources */,
+				9591D3491CBE2D0C00D76D1A /* PPRRegisteredProduct.swift in Sources */,
+				467041E91E37860C00405929 /* PRXProductSummaryDataResponse.swift in Sources */,
+				46A00DAB1D65DB2800B89D9F /* PPRInterface.swift in Sources */,
+				4193692F1C8910F00018A32D /* PPRError.swift in Sources */,
+				419B49F71CD1D9F300B28976 /* PPRUserWithProducts.swift in Sources */,
+				41CB4FFA1D0A72CC00472DD0 /* PPRSuccessViewController.swift in Sources */,
+				4122D06B1CC100B700C3A631 /* PPRProductListResponse.swift in Sources */,
+				9518D2611C75C210004773B6 /* PRXProductMetaDataResponse.swift in Sources */,
+				9591D34B1CBE2D0C00D76D1A /* PPRStorageProvider.swift in Sources */,
+				41A7F63E1D1ABAA000AD664E /* NSMutableAttributedString.swift in Sources */,
+				507696A823DFFAF1009036A2 /* AuthenticationServices.swift in Sources */,
+				41DB90481D3F57CB000E4118 /* PPRConfiguration.swift in Sources */,
+				413064C01D4125E1008833F2 /* NSBundle.swift in Sources */,
+				953379CD1C7AE3F8009A16C6 /* PPRUtils.swift in Sources */,
+				46A00DAD1D65DE5A00B89D9F /* PPRInterfaceInput.swift in Sources */,
+				41D401C11D06EB73008CE927 /* PPRWelcomeViewController.swift in Sources */,
+				953BE5C41C870F4C002D6C1D /* PRXProductListResponse.swift in Sources */,
+				41DBEC711C841C7A00063C3F /* NSDate.swift in Sources */,
+				4193692D1C88E8E90018A32D /* String.swift in Sources */,
+				417961581CB527A90099AF0F /* PPRProduct.swift in Sources */,
+				4179616B1CB528A70099AF0F /* PRXRequestManagerWrapper.swift in Sources */,
+				412050AB1D0E8B03008E54C7 /* UINavigationViewControllerExt.swift in Sources */,
+				417016E91C9970CB0034EAF2 /* PRXProductMetaDataRequest.swift in Sources */,
+				413064BB1D4125B3008833F2 /* PPRTagging.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		954731EA1C58BA5700503093 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41001EF31C857C7100E0F18E /* PRXProductMetaDataInfoDataTests.swift in Sources */,
+				41302D971CA53E14009ABEDE /* PRXProductMetaDataRequestTests.swift in Sources */,
+				41C25A291C88CC57000A3D2B /* StringExtensionTests.swift in Sources */,
+				411A357C1CEC412800BA3760 /* PPRProductMetaDataJSONObject.swift in Sources */,
+				417961631CB5287D0099AF0F /* PPRProductTests.swift in Sources */,
+				41032A851CA2620E00FF7801 /* PPRTestConstant.swift in Sources */,
+				4122D06D1CC110BD00C3A631 /* PPRProductListResponseTests.swift in Sources */,
+				9CFA3FAF1EE179150015777F /* PPRUIConfigurationTests.swift in Sources */,
+				411A35811CEC412800BA3760 /* DIUserMock.swift in Sources */,
+				4122008A1CC4E55300535A58 /* PPRRegisteredProductTests.swift in Sources */,
+				41302D9A1CA548DC009ABEDE /* PRXRegisterProductDataRequestTests.swift in Sources */,
+				955DEEF31C88166F009B6347 /* PRXProductResultDataTests.swift in Sources */,
+				9CFA3FB11EE17D380015777F /* PPRProductExtTests.swift in Sources */,
+				958AD5801CC4B9BD00962919 /* PPRUtilsTests.swift in Sources */,
+				411A35861CEC412800BA3760 /* PPRRegisterProductDelegateMock.swift in Sources */,
+				4125ED6A1C841CF100D6068C /* NSDateExtensionTest.swift in Sources */,
+				411A35871CEC412800BA3760 /* PPRUserProductMock.swift in Sources */,
+				9591D34D1CBE2D3500D76D1A /* PPRRegisteredProductListStoreTest.swift in Sources */,
+				41001EF11C85786300E0F18E /* PRXProductMetadataSerialContentDataTests.swift in Sources */,
+				955DEEF11C88164D009B6347 /* PRXProductListDataRequestTests.swift in Sources */,
+				4122D0731CC1377F00C3A631 /* StorageProviderTests.swift in Sources */,
+				419B49FD1CD1DBAF00B28976 /* AccessTokenRefreshTests.swift in Sources */,
+				411A357D1CEC412800BA3760 /* PPRProductObject.swift in Sources */,
+				4179615F1CB527F80099AF0F /* PPRErrorHelperTests.swift in Sources */,
+				411A35831CEC412800BA3760 /* PPRProductRegistrationHelperMock.swift in Sources */,
+				46BBF0DF1D92A1D800D7E067 /* PPRBaseClassTests.swift in Sources */,
+				411A35881CEC412800BA3760 /* PRXRequestManagerMock.swift in Sources */,
+				411A35821CEC412800BA3760 /* PPRProductMock.swift in Sources */,
+				41859EFB1CBBAA6100D21CCD /* PPRUserProductTests.swift in Sources */,
+				464A3ED61E60176200059A6E /* NSBundleTests.swift in Sources */,
+				463159461D9502AA004388AD /* PPRFakeSelectorClass.swift in Sources */,
+				469C4E981E389D410025DF95 /* PRXProductSummaryDataInfoDataTests.swift in Sources */,
+				469C4E941E388B5E0025DF95 /* PPRProductSummaryDataRequestTests.swift in Sources */,
+				41859EFF1CBBF5CB00D21CCD /* PPRRequestHandlerTests.swift in Sources */,
+				411A35841CEC412800BA3760 /* PPRRegisteredProductListStoreMock.swift in Sources */,
+				411A35851CEC412800BA3760 /* PPRRegisteredProductMock.swift in Sources */,
+				469C4E9A1E38C81B0025DF95 /* PPRInterfaceTests.swift in Sources */,
+				41001EEF1C856AD800E0F18E /* PRXRegisterProductInfoDataTests.swift in Sources */,
+				469C4E961E3897EA0025DF95 /* PPRProductSummaryDataJSONObject.swift in Sources */,
+				411A357F1CEC412800BA3760 /* PPRRegisterProductJSONObject.swift in Sources */,
+				411A357E1CEC412800BA3760 /* PPRRegisteredProductListJSONObject.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41F73D541C9144EE0020D11A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954731E31C58BA5700503093 /* PhilipsProductRegistrationDev */;
+			targetProxy = 41F73D531C9144EE0020D11A /* PBXContainerItemProxy */;
+		};
+		544ED6322186EADD00360A05 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 544ED61E2186EACD00360A05 /* PRGTest */;
+			targetProxy = 544ED6312186EADD00360A05 /* PBXContainerItemProxy */;
+		};
+		954731F11C58BA5700503093 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 954731E31C58BA5700503093 /* PhilipsProductRegistrationDev */;
+			targetProxy = 954731F01C58BA5700503093 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		544ED6252186EACE00360A05 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				544ED6262186EACE00360A05 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		544ED62A2186EAD000360A05 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				544ED62B2186EAD000360A05 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		5D457A732047F6AC0051C278 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5D457A742047F6AC0051C278 /* ar */,
+				5D457A752047F6AC0051C278 /* bg */,
+				5D457A762047F6AC0051C278 /* cs */,
+				5D457A772047F6AC0051C278 /* da */,
+				5D457A782047F6AC0051C278 /* de */,
+				5D457A792047F6AC0051C278 /* el */,
+				5D457A7A2047F6AC0051C278 /* en-GB */,
+				5D457A7B2047F6AC0051C278 /* en */,
+				5D457A7C2047F6AC0051C278 /* es-AR */,
+				5D457A7D2047F6AC0051C278 /* es-MX */,
+				5D457A7E2047F6AC0051C278 /* es */,
+				5D457A7F2047F6AC0051C278 /* et */,
+				5D457A802047F6AC0051C278 /* fi */,
+				5D457A812047F6AC0051C278 /* fr-CA */,
+				5D457A822047F6AC0051C278 /* fr */,
+				5D457A832047F6AC0051C278 /* he */,
+				5D457A842047F6AC0051C278 /* hr */,
+				5D457A852047F6AC0051C278 /* hu */,
+				5D457A862047F6AC0051C278 /* it */,
+				5D457A872047F6AC0051C278 /* ja */,
+				5D457A882047F6AC0051C278 /* ko */,
+				5D457A892047F6AC0051C278 /* lt */,
+				5D457A8A2047F6AC0051C278 /* lv */,
+				5D457A8B2047F6AC0051C278 /* nb */,
+				5D457A8C2047F6AC0051C278 /* nl */,
+				5D457A8D2047F6AC0051C278 /* pl */,
+				5D457A8E2047F6AC0051C278 /* pt-BR */,
+				5D457A8F2047F6AC0051C278 /* pt */,
+				5D457A902047F6AC0051C278 /* ro */,
+				5D457A912047F6AC0051C278 /* ru */,
+				5D457A922047F6AC0051C278 /* sk */,
+				5D457A932047F6AC0051C278 /* sl */,
+				5D457A942047F6AC0051C278 /* sv */,
+				5D457A952047F6AC0051C278 /* th */,
+				5D457A962047F6AC0051C278 /* tr */,
+				5D457A972047F6AC0051C278 /* uk */,
+				5D457A982047F6AC0051C278 /* vi */,
+				5D457A9A2047F6AC0051C278 /* zh-Hans */,
+				5084EDD920D38ADA002D5B89 /* zh-Hant-HK */,
+				50DF870B214FEE5B003F381D /* zh-Hant-TW */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41F73D551C9144EE0020D11A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Philips Consumer Lifestyle B.V.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Philips Consumer Lifestyle B.V.";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductRegistrationIntegrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.dev.dptest.PhilipsProductRegistrationIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "663a1e6e-85ba-4457-8909-52d34c33d6c3";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhilipsProductRegistrationIntegrationTests/PhilipsProductRegistrationIntegrationTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		41F73D561C9144EE0020D11A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Philips Consumer Lifestyle B.V.";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Philips Consumer Lifestyle B.V.";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductRegistrationIntegrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.dev.dptest.PhilipsProductRegistrationIntegrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "663a1e6e-85ba-4457-8909-52d34c33d6c3";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhilipsProductRegistrationIntegrationTests/PhilipsProductRegistrationIntegrationTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		544ED62E2186EAD000360A05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PRGTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hashim.test.PRGTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		544ED62F2186EAD000360A05 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = PRGTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hashim.test.PRGTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		95407B8D1C80671800413550 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		95407B8E1C80671800413550 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		954731F61C58BA5700503093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		954731F71C58BA5700503093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		954731F91C58BA5700503093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE7C839A2B9532506674C53E /* Pods-PhilipsProductRegistrationDev.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1.0.1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductRegistration/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.ProductRegistration.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		954731FA1C58BA5700503093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A76E9665811B067903286F6 /* Pods-PhilipsProductRegistrationDev.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1.0.1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductRegistration/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.ProductRegistration.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		954731FC1C58BA5700503093 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42BE677E9056C01E217E26A3 /* Pods-PhilipsProductRegistrationTests.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductRegistrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Philips.cl.di.dev.PhilipsProductRegistrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "663a1e6e-85ba-4457-8909-52d34c33d6c3";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhilipsProductRegistrationTests/PhilipsProductRegistrationTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRGTest.app/PRGTest";
+			};
+			name = Debug;
+		};
+		954731FD1C58BA5700503093 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB7F88CFA81C2BC1B3A89747 /* Pods-PhilipsProductRegistrationTests.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductRegistrationTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Philips.cl.di.dev.PhilipsProductRegistrationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "663a1e6e-85ba-4457-8909-52d34c33d6c3";
+				SWIFT_OBJC_BRIDGING_HEADER = "PhilipsProductRegistrationTests/PhilipsProductRegistrationTests-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PRGTest.app/PRGTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41F73D571C9144EE0020D11A /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationIntegrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F73D551C9144EE0020D11A /* Debug */,
+				41F73D561C9144EE0020D11A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		544ED6302186EAD000360A05 /* Build configuration list for PBXNativeTarget "PRGTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				544ED62E2186EAD000360A05 /* Debug */,
+				544ED62F2186EAD000360A05 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95407B8F1C80671800413550 /* Build configuration list for PBXAggregateTarget "Universal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95407B8D1C80671800413550 /* Debug */,
+				95407B8E1C80671800413550 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954731DE1C58BA5700503093 /* Build configuration list for PBXProject "PhilipsProductRegistrationDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954731F61C58BA5700503093 /* Debug */,
+				954731F71C58BA5700503093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954731F81C58BA5700503093 /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954731F91C58BA5700503093 /* Debug */,
+				954731FA1C58BA5700503093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		954731FB1C58BA5700503093 /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				954731FC1C58BA5700503093 /* Debug */,
+				954731FD1C58BA5700503093 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 954731DB1C58BA5700503093 /* Project object */;
+}

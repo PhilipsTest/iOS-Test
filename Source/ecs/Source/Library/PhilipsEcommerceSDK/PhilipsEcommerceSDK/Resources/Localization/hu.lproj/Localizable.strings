@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Adja meg az app infra objectet";
+"ECSBaseURLNotFound" = "Az alap URL nem található";
+"ECSCartEntryError" = "A termék nincs hozzáadva a kosárhoz";
+"ECSCartError" = "Még nincs létrehozva kosár";
+"ECSCommerceCartModificationError" = "A mennyiség nem lehet nullánál kisebb";
+"ECSCtnNotProvided" = "Adja meg a CTN-t";
+"ECSHybrisNotAvailable" = "A Philips bolt nem érhető el a kiválasztott országban, csak a viszonteladói mód érhető el";
+"ECSIllegalArgumentError" = "Adjon meg érvényes bemeneti adatokat";
+"ECSInsufficientStockError" = "A termék nem szállítható, mert nincs raktáron";
+"ECSInvalidPaymentInfoError" = "Adjon meg érvényes fizetési adatokat";
+"ECSInvalidTokenError" = "Műszaki hiba történt (érvénytelen hozzáférési token). Végezze el a Hybris Re-Auth műveletet";
+"ECSLocaleNotFound" = "Állítsa be a régiót";
+"ECSNoSuchElementError" = "Hiba történt az adatok kiszolgálóról való lekérése közben";
+"ECSOAuthDetailError" = "Adjon meg teljes OAuth-adatokat";
+"ECSOAuthNotCalled" = "Ehhez a művelethez felhasználói jogosultság szükséges";
+"ECSPIL_BAD_REQUEST" = "Műszaki hiba történt. Próbálja meg később";
+"ECSPIL_BAD_REQUEST_cartId" = "Még nincs létrehozva kosár";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Műszaki hiba történt. Próbálja meg később";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Műszaki hiba történt (érvénytelen hozzáférési token). Végezze el a Hybris Re-Auth műveletet";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Érvénytelen e-mail cím. Kérjük, ellenőrizze.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "A termék nincs hozzáadva a kosárhoz";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Állítsa be a régiót";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Adjon meg érvényes CTN-t";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Adjon meg érvényes mennyiséget";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "A Philips bolt nem érhető el a kiválasztott országban, csak a viszonteladói mód érhető el";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "A mennyiségnek nagyobbnak kell lennie nullánál";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Állítsa be a régiót";
+"ECSPIL_MISSING_PARAMETER_language" = "Állítsa be a régiót";
+"ECSPIL_MISSING_PARAMETER_productId" = "Adja meg a CTN-t";
+"ECSPIL_MISSING_PARAMETER_siteId" = "A Philips bolt nem érhető el a kiválasztott országban, csak a viszonteladói mód érhető el";
+"ECSPIL_NEGATIVE_QUANTITY" = "A mennyiség nem lehet nullánál kisebb";
+"ECSPIL_NOT_ACCEPTABLE" = "Műszaki hiba történt. Próbálja meg később";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Műszaki hiba történt. Próbálja meg később";
+"ECSPIL_NOT_FOUND_cartId" = "Adjon meg érvényes kosárazonosítót";
+"ECSPIL_NOT_FOUND_productId" = "Adjon meg érvényes CTN-t";
+"ECSPIL_STOCK_EXCEPTION" = "A termék nem szállítható, mert nincs raktáron";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Műszaki hiba történt. Próbálja meg később";
+"ECSPaymentAuthorizationError" = "A fizetés engedélyezése sikertelen volt";
+"ECSPropositionIdNotFound" = "Adjon meg egy érvényes Proposition ID-t";
+"ECSSiteIdNotFound" = "A Philips bolt nem érhető el a kiválasztott országban, csak a viszonteladói mód érhető el";
+"ECSUnknownIdentifierError" = "A kért erőforrás nem elérhető";
+"ECSUnsupportedDeliveryModeError" = "A kiválasztott szállítási mód nem támogatott";
+"ECSUnsupportedVoucherError" = "Sajnáljuk, ez az utalvány nem váltható be";
+"ECSValidationError" = "Az adatok érvényesítése sikertelen";
+"ECSVoucherOperationError" = "Sajnáljuk, ez az utalvány nem váltható be";
+"ECSaddressId" = "A megadott cím nem létezik vagy egy másik felhasználóhoz tartozik";
+"ECScountryCodeNotGiven" = "Adjon meg egy érvényes országkódot";
+"ECScountryisocode" = "A kiválasztott ország érvénytelen";
+"ECSfirstName" = "A következő karakterek nem engedélyezettek: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Műszaki hiba történt (helytelen ügyfél-hitelesítő adatok). Jelentkezzen be újra";
+"ECSinvalid_grant" = "Műszaki hiba történt (érvénytelen Janrain token). Jelentkezzen be újra";
+"ECSlastName" = "A következő karakterek nem engedélyezettek: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Adjon meg érvényes rendelést";
+"ECSphone1" = "A kiválasztott telefonszám érvénytelen";
+"ECSphone2" = "A kiválasztott telefonszám érvénytelen";
+"ECSpostUrl" = "A rendelés már kifizetett/befejezett állapotban van";
+"ECSpostalCode" = "A kiválasztott irányítószám érvénytelen";
+"ECSregionisocode" = "A kiválasztott régió érvénytelen";
+"ECSsessionCart" = "A megrendelés elküldése előtt válassza ki a szállítási címet, a szállítási módot és a fizetési módot";
+"ECSsomethingWentWrong" = "Műszaki hiba történt. Próbálja meg később";
+"ECSunsupported_grant_type" = "Műszaki hiba történt (nem támogatott engedélyezési típus). Jelentkezzen be újra";

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PhilipsProductRegistration  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="PhilipsProductRegistration  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">PhilipsProductRegistration Docs</a> (97% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">PhilipsProductRegistration Reference</a>
+        <img id="carat" src="img/carat.png" />
+        PhilipsProductRegistration  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/PPRConfiguration.html">PPRConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRContentConfiguration.html">PPRContentConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRInterface.html">PPRInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:@M@PhilipsProductRegistration@objc(cs)PPRInterfaceDependency">PPRInterfaceDependency</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRInterfaceInput.html">PPRInterfaceInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRLaunchInput.html">PPRLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRProduct.html">PPRProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRProductListResponse.html">PPRProductListResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRProductRegistrationHelper.html">PPRProductRegistrationHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes.html#/c:@M@PhilipsProductRegistration@objc(cs)PPRProductRegistrationUIHelper">PPRProductRegistrationUIHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRRegisteredProduct.html">PPRRegisteredProduct</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRUIConfiguration.html">PPRUIConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PPRUserWithProducts.html">PPRUserWithProducts</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/PPRError.html">PPRError</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/PPRUILaunchOption.html">PPRUILaunchOption</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Enums/State.html">State</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Protocols/PPRRegisterProductDelegate.html">PPRRegisterProductDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Protocols/PPRUserInterfaceDelegate.html">PPRUserInterfaceDelegate</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:26PhilipsProductRegistration21PPRComplectionHandlera">PPRComplectionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Typealiases.html#/s:26PhilipsProductRegistration10PPRSuccessa">PPRSuccess</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <h1 id='philipsproductregistration' class='heading'>PhilipsProductRegistration</h1>
+
+<p><img src="http://cdp2-jenkins.htce.nl.philips.com:8080/buildStatus/icon?job=ProductRegistration/prg_iOS/develop" alt="Build Status"> <img src="https://img.shields.io/badge/platform-ios-lightgrey.svg" alt="Platform"> <img src="https://img.shields.io/badge/pod-v2017.5.0-blue.svg" alt="CocoaPods"> <img src="https://img.shields.io/badge/language-Swift-yellow.svg" alt="Language"></p>
+
+<p>PhilipsProductRegistration is an <strong>Product Management framework</strong> that enables iOS applications across Philips to perform product registration.</p>
+
+<p>With PhilipsProductRegistration framework, you can allow your users to register products and fetch the registered product.</p>
+
+<p>PhilipsProductRegistration APIs allow applications to build their own UI or launch framework&rsquo;s UI, which uses Philips wide <strong>DLS standard</strong>, for product registration.</p>
+<h2 id='compatibility' class='heading'>Compatibility</h2>
+
+<p>PhilipsRegistration requires <strong>iOS 10+</strong> and is compatible with <strong>Objective-C</strong> or <strong>Swift 3</strong> and above.</p>
+<h2 id='dependencies' class='heading'>Dependencies</h2>
+
+<p>PhilipsProductRegistration has dependency on following frameworks:</p>
+
+<ul>
+<li>AppInfra</li>
+<li>AppAuth</li>
+<li>libPhoneNumber-iOS</li>
+<li>PhilipsUIKitDLS</li>
+<li>PhilipsIconFontDLS</li>
+<li>UAPPFramework</li>
+<li>PhilipsRegistration</li>
+</ul>
+<h2 id='installation' class='heading'>Installation</h2>
+
+<p>PhilipsProductRegistration supports installation via pods or can be included as framework.</p>
+
+<ul>
+<li>Installation via <a href="https://guides.cocoapods.org/using/using-cocoapods.html">CocoaPods</a></li>
+</ul>
+<pre class="highlight ruby"><code>  <span class="n">source</span> <span class="s1">'http://tfsemea1.ta.philips.com:8080/tfs/TPC_Region24/CDP2/_git/cocoapod-specs’
+
+  platform :ios, '</span><span class="mi">10</span><span class="o">.</span><span class="mi">0</span><span class="s1">'
+  target '</span><span class="no">ProjectName</span><span class="s1">' do
+    use_frameworks!
+    pod '</span><span class="no">PhilipsProductRegistration</span><span class="err">'</span>
+  <span class="k">end</span>
+</code></pre>
+
+<ul>
+<li>Embed <strong>PhilipsProductRegistration.framework</strong> into your project by downloading it from Artifactory. Make sure to download and include dependent frameworks as well.</li>
+</ul>
+
+<p>For more details, please find the <a href="https://confluence.atlas.philips.com/display/UC/PR+%7C+Product+Registration">integration document</a></p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2018-10-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

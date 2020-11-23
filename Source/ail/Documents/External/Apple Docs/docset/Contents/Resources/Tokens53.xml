@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIABTestProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIABTestProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTestProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIABTestProtocol/getTestValue:defaultContent:updateType:parameters:</TokenIdentifier>
+			<Abstract type="html">* 	@brief Processes a Target service request to return the experience value.
+* 	@param name a string pointer containing the name of the mbox
+*  @param defaultValue a string pointer containing the content to be returned on failure
+*  @param updateType of test name it can be always appstart or appupdate
+*  @param parameters a dictionary of key-value pairs that will be added to the request.
+*  @return experience value for the testName.</Abstract>
+			<DeclaredIn>AIABTestProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSString *)getTestValue:(nullable NSString *)testName defaultContent:(nullable NSString *)defaultValue updateType:(AIABTestUpdateType)updateType parameters:(nullable NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/getTestValue:defaultContent:updateType:parameters:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIABTestProtocol/getCacheStatus</TokenIdentifier>
+			<Abstract type="html">Returns the status of the cached experiences for the configured list of tests.
+At initialization of the module, the status is either NoTestsDefined, NoCachedExperiences, or ExperiencesNotUpdated.
+An updateCache may change the state to ExperiencesPartiallyUpdated or ExperiencesUpdated.</Abstract>
+			<DeclaredIn>AIABTestProtocol.h</DeclaredIn>
+			
+			<Declaration>- (AIABTestCacheStatus)getCacheStatus</Declaration>
+			
+			<ReturnValue><Abstract type="html">status of the experience cache.</Abstract></ReturnValue>
+			<Anchor>//api/name/getCacheStatus</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIABTestProtocol/updateCacheWithSuccess:error:</TokenIdentifier>
+			<Abstract type="html">Download experience values from the server. Call will have no effect if state equals NOTESTSDEFINED or EXPERIENCES_UPDATED and return onSuccess.</Abstract>
+			<DeclaredIn>AIABTestProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)updateCacheWithSuccess:(nullable void ( ^ ) ( ))successBlock error:(nullable void ( ^ ) ( NSError *_Nullable error ))errorBlock</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">and error callback blocks. success bock will be called once all experiences that is specified in the appconfig file was updated</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateCacheWithSuccess:error:</Anchor>
+            <NodeRef refid="53"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

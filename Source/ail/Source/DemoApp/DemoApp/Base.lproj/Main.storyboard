@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LaunchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BWc-ia-YrR" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="10" y="267" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Iem-Nf-3TW"/>
+                                </constraints>
+                                <state key="normal" title="Launch AppInfra Demo"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="launchAppInfraClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aZi-sP-2aP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use local service discocery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1ym-2q-nwK" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="30.5" y="326.5" width="209" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="A3K-ad-E9N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jyj-q5-ukV" customClass="UIDSwitch" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="248" y="326.5" width="57" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="QLD-Jf-Gd8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isOn" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9pV-Ds-ZNs"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9U5-16-HrR" customClass="UIDSwitch" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="248" y="367.5" width="57" height="31"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="wbO-8c-6Ji"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="consentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="blT-nW-Ut5"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Cloud Logging" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5qm-nv-p5w" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="30.5" y="372.5" width="209" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="2Oh-uE-Nks"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9U5-16-HrR" firstAttribute="trailing" secondItem="Jyj-q5-ukV" secondAttribute="trailing" id="0ZE-18-kQf"/>
+                            <constraint firstItem="5qm-nv-p5w" firstAttribute="trailing" secondItem="1ym-2q-nwK" secondAttribute="trailing" id="0ac-w7-R41"/>
+                            <constraint firstItem="1ym-2q-nwK" firstAttribute="top" secondItem="BWc-ia-YrR" secondAttribute="bottom" constant="25.5" id="9YV-yG-Nwq"/>
+                            <constraint firstItem="9U5-16-HrR" firstAttribute="leading" secondItem="Jyj-q5-ukV" secondAttribute="leading" id="J1T-ZD-Mkq"/>
+                            <constraint firstItem="BWc-ia-YrR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RHg-Mz-zX7"/>
+                            <constraint firstItem="BWc-ia-YrR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Yei-s3-2Yu"/>
+                            <constraint firstItem="5qm-nv-p5w" firstAttribute="leading" secondItem="1ym-2q-nwK" secondAttribute="leading" id="a1E-Cw-M5X"/>
+                            <constraint firstItem="9U5-16-HrR" firstAttribute="top" secondItem="Jyj-q5-ukV" secondAttribute="bottom" constant="10" id="cLC-84-7jN"/>
+                            <constraint firstItem="Jyj-q5-ukV" firstAttribute="top" secondItem="1ym-2q-nwK" secondAttribute="top" id="eH2-Pt-jhJ"/>
+                            <constraint firstItem="1ym-2q-nwK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-25" id="h78-D1-T8z"/>
+                            <constraint firstAttribute="trailing" secondItem="Jyj-q5-ukV" secondAttribute="trailing" constant="15" id="l3I-RK-SJh"/>
+                            <constraint firstItem="5qm-nv-p5w" firstAttribute="top" secondItem="1ym-2q-nwK" secondAttribute="bottom" constant="25" id="uaa-As-V1c"/>
+                            <constraint firstItem="Jyj-q5-ukV" firstAttribute="leading" secondItem="1ym-2q-nwK" secondAttribute="trailing" constant="8.5" id="vkx-os-tFE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="consentSwitch" destination="9U5-16-HrR" id="oWv-jr-iw6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1368.75" y="-9.5070422535211261"/>
+        </scene>
+    </scenes>
+</document>

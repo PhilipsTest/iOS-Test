@@ -1,0 +1,934 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		500B61AC2240E7DA0082A23B /* PIMRequestInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B61AB2240E7DA0082A23B /* PIMRequestInterface.swift */; };
+		500B61AE2240EBD00082A23B /* PIMSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B61AD2240EBD00082A23B /* PIMSettingsManager.swift */; };
+		500B61B422410FAD0082A23B /* PIMOIDCDiscoveryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B61B322410FAD0082A23B /* PIMOIDCDiscoveryManager.swift */; };
+		500B61B6224110C20082A23B /* PIMAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B61B5224110C20082A23B /* PIMAuthManager.swift */; };
+		500B61DD2242171D0082A23B /* PIMConfigManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500B61DC2242171D0082A23B /* PIMConfigManager.swift */; };
+		500F22512369B7BE00CA64CA /* PIMProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 500F22502369B7BE00CA64CA /* PIMProfileViewController.swift */; };
+		5021E2102252956D0081E511 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 5021E20F2252956D0081E511 /* AppConfig.json */; };
+		5021E21D225341250081E511 /* AppAuthSwizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5021E21C225341250081E511 /* AppAuthSwizzle.swift */; };
+		5021E223225498420081E511 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5021E222225498420081E511 /* Main.storyboard */; };
+		502946AE22EDB9E200AC8A5A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 502946B022EDB9E200AC8A5A /* Localizable.strings */; };
+		5030FFB522CDF213004F0304 /* PIMMigrator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030FFB422CDF213004F0304 /* PIMMigrator.swift */; };
+		5030FFB922CDFD3C004F0304 /* PIMJanrainHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5030FFB822CDFD3C004F0304 /* PIMJanrainHandler.swift */; };
+		50406F24225B0B5D000805A2 /* PIMDataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50406F23225B0B5D000805A2 /* PIMDataImplementation.swift */; };
+		5043C871223F938900F4FD96 /* PIMOIDCConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043C870223F938900F4FD96 /* PIMOIDCConfiguration.swift */; };
+		5043C87C223FBC4300F4FD96 /* PIMUserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5043C87B223FBC4300F4FD96 /* PIMUserManager.swift */; };
+		5045923822393741008F9685 /* PIMUserProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5045923722393741008F9685 /* PIMUserProfileModel.swift */; };
+		50A9D5C5238BC8F700815EAD /* PIMJRSignatureCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A9D5C3238BC8F700815EAD /* PIMJRSignatureCreator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50A9D5C6238BC8F700815EAD /* PIMJRSignatureCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 50A9D5C4238BC8F700815EAD /* PIMJRSignatureCreator.m */; };
+		50B2A5FC238D440E00E086A8 /* PIMEncrypter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2A5FB238D440E00E086A8 /* PIMEncrypter.swift */; };
+		50F5E36522437B9F0063BE79 /* PIMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F5E36422437B9F0063BE79 /* PIMViewController.swift */; };
+		5D161B87222D8DC90091137E /* UserProfileRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D161B86222D8DC90091137E /* UserProfileRequest.swift */; };
+		5D161B8B222D8E100091137E /* LogoutRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D161B8A222D8E100091137E /* LogoutRequest.swift */; };
+		5D161B8D222D8F7C0091137E /* PIMRestClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D161B8C222D8F7C0091137E /* PIMRestClient.swift */; };
+		5D2D2E0522706AEC00A5AADC /* PIMUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D2E0422706AEC00A5AADC /* PIMUtility.swift */; };
+		5D346DCB2514AA3500327BD8 /* PIMGuestUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D346DCA2514AA3500327BD8 /* PIMGuestUserViewController.swift */; };
+		5D42C6542226998200A15DC7 /* PIMDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42C6532226998200A15DC7 /* PIMDependencies.swift */; };
+		5D42C6562226998200A15DC7 /* PIMInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42C6552226998200A15DC7 /* PIMInterface.swift */; };
+		5D42C6582226998200A15DC7 /* PIMLaunchInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42C6572226998200A15DC7 /* PIMLaunchInput.swift */; };
+		5D42C65A2226998200A15DC7 /* PIMSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42C6592226998200A15DC7 /* PIMSettings.swift */; };
+		5D42C6692226998200A15DC7 /* PIMDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D42C64D2226998200A15DC7 /* PIMDev.framework */; };
+		5D42F2A72278541D0080BF76 /* PIMLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42F2A62278541D0080BF76 /* PIMLoginManager.swift */; };
+		5D42F2AB2278610B0080BF76 /* PIMExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D42F2AA2278610B0080BF76 /* PIMExtensions.swift */; };
+		5D47855824F69F360025CE3E /* PIMErrorBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D47855724F69F360025CE3E /* PIMErrorBuilder.swift */; };
+		5D4A609D24C8441D00329B8E /* PIMDev.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D4A609C24C8441D00329B8E /* PIMDev.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D65B2C022E97D0D00911403 /* PIMErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D65B2BF22E97D0D00911403 /* PIMErrorUtility.swift */; };
+		5D97B6F1228C310100EF1D21 /* PIMConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D97B6F0228C310100EF1D21 /* PIMConstants.swift */; };
+		5DB4F8A822D4B0A90040EF84 /* LegacyJanrainRefreshRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB4F8A722D4B0A90040EF84 /* LegacyJanrainRefreshRequest.swift */; };
+		5DB8980F223EA05A003BD4A4 /* PIMOIDCUserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DB8980E223EA05A003BD4A4 /* PIMOIDCUserProfile.swift */; };
+		5DCDC0E6246BF31E00EF629E /* PIMMigrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0E5246BF31E00EF629E /* PIMMigrationRequest.swift */; };
+		5DCDC0E8246BF35600EF629E /* PIMMigrationAuthRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0E7246BF35600EF629E /* PIMMigrationAuthRequest.swift */; };
+		5DCDC0EA246C0A2100EF629E /* PIMMigrationRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0E9246C0A2100EF629E /* PIMMigrationRequestTest.swift */; };
+		5DCDC0EC246C0AC400EF629E /* PIMMigrationAuthRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0EB246C0AC400EF629E /* PIMMigrationAuthRequestTest.swift */; };
+		5DCDC0EE246D28A500EF629E /* PIMEncryptorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0ED246D28A500EF629E /* PIMEncryptorTests.swift */; };
+		5DCDC0F0246D58B300EF629E /* PIMLoginManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0EF246D58B200EF629E /* PIMLoginManagerTests.swift */; };
+		5DCDC0F2246D58C600EF629E /* PIMUserManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0F1246D58C600EF629E /* PIMUserManagerTests.swift */; };
+		5DCDC0F4246D58EB00EF629E /* PIMAuthManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0F3246D58EB00EF629E /* PIMAuthManagerTests.swift */; };
+		5DCDC0F6246D591400EF629E /* PIMConfigManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0F5246D591400EF629E /* PIMConfigManagerTests.swift */; };
+		5DCDC0F8246D592700EF629E /* PIMOIDCDiscoveryManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCDC0F7246D592700EF629E /* PIMOIDCDiscoveryManagerTests.swift */; };
+		5DCF0680245AA6BD00CD30F0 /* PIMserviceDiscoveryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF067F245AA6BD00CD30F0 /* PIMserviceDiscoveryMock.swift */; };
+		5DCF0682245AC83A00CD30F0 /* PIMRestClientMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0681245AC83A00CD30F0 /* PIMRestClientMock.swift */; };
+		5DCF0684245AC94500CD30F0 /* PIMAppInfraMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0683245AC94500CD30F0 /* PIMAppInfraMock.swift */; };
+		5DCF0686245AD1AA00CD30F0 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 5DCF0685245AD1AA00CD30F0 /* ADBMobileConfig.json */; };
+		5DCF0690245AD28000CD30F0 /* PIMErrorUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0688245AD28000CD30F0 /* PIMErrorUtilityTests.swift */; };
+		5DCF0691245AD28000CD30F0 /* PIMAuthManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0689245AD28000CD30F0 /* PIMAuthManagerTest.swift */; };
+		5DCF0692245AD28000CD30F0 /* PIMTestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF068A245AD28000CD30F0 /* PIMTestHelper.swift */; };
+		5DCF0693245AD28000CD30F0 /* PIMMigratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF068B245AD28000CD30F0 /* PIMMigratorTests.swift */; };
+		5DCF0694245AD28000CD30F0 /* PIMConfigManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF068C245AD28000CD30F0 /* PIMConfigManagerTest.swift */; };
+		5DCF0695245AD28000CD30F0 /* PIMInterfaceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF068D245AD28000CD30F0 /* PIMInterfaceTest.swift */; };
+		5DCF0696245AD28000CD30F0 /* NSBundleSwizzlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF068F245AD28000CD30F0 /* NSBundleSwizzlers.swift */; };
+		5DCF0698245AD6B200CD30F0 /* PIMLaunchInputTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0697245AD6B200CD30F0 /* PIMLaunchInputTests.swift */; };
+		5DCF069A245AEE3B00CD30F0 /* PIMSettingsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF0699245AEE3B00CD30F0 /* PIMSettingsManagerTests.swift */; };
+		5DCF069C245FEB1900CD30F0 /* PIMUtilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF069B245FEB1900CD30F0 /* PIMUtilityTests.swift */; };
+		5DCF069E245FF45B00CD30F0 /* PIMOIDServiceConfigurationMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF069D245FF45B00CD30F0 /* PIMOIDServiceConfigurationMock.swift */; };
+		5DCF06C024653C6F00CD30F0 /* PIMOIDCConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DCF06BF24653C6F00CD30F0 /* PIMOIDCConfigurationTests.swift */; };
+		5DD9FB4A2418AE4C00538BA3 /* MarketingOptinRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DD9FB492418AE4C00538BA3 /* MarketingOptinRequest.swift */; };
+		B6E210418F6AC49BAD8EF910 /* Pods_PIMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 859981F596589BAA1D2CA125 /* Pods_PIMTests.framework */; };
+		E6D5E50D5297EE45246CB52C /* Pods_PIMDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE49801D2BC315E5E93DB0A1 /* Pods_PIMDev.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D42C66A2226998200A15DC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D42C6442226998200A15DC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D42C64C2226998200A15DC7;
+			remoteInfo = PIM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		500B61AB2240E7DA0082A23B /* PIMRequestInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMRequestInterface.swift; sourceTree = "<group>"; };
+		500B61AD2240EBD00082A23B /* PIMSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMSettingsManager.swift; sourceTree = "<group>"; };
+		500B61B322410FAD0082A23B /* PIMOIDCDiscoveryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMOIDCDiscoveryManager.swift; sourceTree = "<group>"; };
+		500B61B5224110C20082A23B /* PIMAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMAuthManager.swift; sourceTree = "<group>"; };
+		500B61DC2242171D0082A23B /* PIMConfigManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMConfigManager.swift; sourceTree = "<group>"; };
+		500F22502369B7BE00CA64CA /* PIMProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMProfileViewController.swift; sourceTree = "<group>"; };
+		5021E20F2252956D0081E511 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
+		5021E21C225341250081E511 /* AppAuthSwizzle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAuthSwizzle.swift; sourceTree = "<group>"; };
+		5021E222225498420081E511 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		502946AF22EDB9E200AC8A5A /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		502946B122EDBA0600AC8A5A /* en-US */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-US"; path = "en-US.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		5030FFB422CDF213004F0304 /* PIMMigrator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMMigrator.swift; sourceTree = "<group>"; };
+		5030FFB822CDFD3C004F0304 /* PIMJanrainHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMJanrainHandler.swift; sourceTree = "<group>"; };
+		50406F23225B0B5D000805A2 /* PIMDataImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMDataImplementation.swift; sourceTree = "<group>"; };
+		5043C870223F938900F4FD96 /* PIMOIDCConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMOIDCConfiguration.swift; sourceTree = "<group>"; };
+		5043C87B223FBC4300F4FD96 /* PIMUserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMUserManager.swift; sourceTree = "<group>"; };
+		5045923722393741008F9685 /* PIMUserProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMUserProfileModel.swift; sourceTree = "<group>"; };
+		5075168D22EDC65F0060ACF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		50A9D5C3238BC8F700815EAD /* PIMJRSignatureCreator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PIMJRSignatureCreator.h; sourceTree = "<group>"; };
+		50A9D5C4238BC8F700815EAD /* PIMJRSignatureCreator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PIMJRSignatureCreator.m; sourceTree = "<group>"; };
+		50B2A5FB238D440E00E086A8 /* PIMEncrypter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMEncrypter.swift; sourceTree = "<group>"; };
+		50F5E36422437B9F0063BE79 /* PIMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMViewController.swift; sourceTree = "<group>"; };
+		535E4A2AA351FDBA67B14CAA /* Pods-PIMDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIMDev.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PIMDev/Pods-PIMDev.debug.xcconfig"; sourceTree = "<group>"; };
+		5D161B86222D8DC90091137E /* UserProfileRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileRequest.swift; sourceTree = "<group>"; };
+		5D161B8A222D8E100091137E /* LogoutRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoutRequest.swift; sourceTree = "<group>"; };
+		5D161B8C222D8F7C0091137E /* PIMRestClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMRestClient.swift; sourceTree = "<group>"; };
+		5D2D2E0422706AEC00A5AADC /* PIMUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMUtility.swift; sourceTree = "<group>"; };
+		5D346DCA2514AA3500327BD8 /* PIMGuestUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMGuestUserViewController.swift; sourceTree = "<group>"; };
+		5D42C64D2226998200A15DC7 /* PIMDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PIMDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D42C6532226998200A15DC7 /* PIMDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PIMDependencies.swift; path = PIM/UAPPClasses/PIMDependencies.swift; sourceTree = "<group>"; };
+		5D42C6552226998200A15DC7 /* PIMInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PIMInterface.swift; path = PIM/UAPPClasses/PIMInterface.swift; sourceTree = "<group>"; };
+		5D42C6572226998200A15DC7 /* PIMLaunchInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PIMLaunchInput.swift; path = PIM/UAPPClasses/PIMLaunchInput.swift; sourceTree = "<group>"; };
+		5D42C6592226998200A15DC7 /* PIMSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PIMSettings.swift; path = PIM/UAPPClasses/PIMSettings.swift; sourceTree = "<group>"; };
+		5D42C6632226998200A15DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D42C6682226998200A15DC7 /* PIMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PIMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D42C66F2226998200A15DC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D42F2A62278541D0080BF76 /* PIMLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMLoginManager.swift; sourceTree = "<group>"; };
+		5D42F2AA2278610B0080BF76 /* PIMExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMExtensions.swift; sourceTree = "<group>"; };
+		5D47855724F69F360025CE3E /* PIMErrorBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMErrorBuilder.swift; sourceTree = "<group>"; };
+		5D4A609C24C8441D00329B8E /* PIMDev.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PIMDev.h; sourceTree = "<group>"; };
+		5D65B2BF22E97D0D00911403 /* PIMErrorUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMErrorUtility.swift; sourceTree = "<group>"; };
+		5D97B6F0228C310100EF1D21 /* PIMConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMConstants.swift; sourceTree = "<group>"; };
+		5DB4F8A722D4B0A90040EF84 /* LegacyJanrainRefreshRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegacyJanrainRefreshRequest.swift; sourceTree = "<group>"; };
+		5DB8980E223EA05A003BD4A4 /* PIMOIDCUserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMOIDCUserProfile.swift; sourceTree = "<group>"; };
+		5DCDC0E5246BF31E00EF629E /* PIMMigrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMMigrationRequest.swift; sourceTree = "<group>"; };
+		5DCDC0E7246BF35600EF629E /* PIMMigrationAuthRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMMigrationAuthRequest.swift; sourceTree = "<group>"; };
+		5DCDC0E9246C0A2100EF629E /* PIMMigrationRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMMigrationRequestTest.swift; sourceTree = "<group>"; };
+		5DCDC0EB246C0AC400EF629E /* PIMMigrationAuthRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMMigrationAuthRequestTest.swift; sourceTree = "<group>"; };
+		5DCDC0ED246D28A500EF629E /* PIMEncryptorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMEncryptorTests.swift; sourceTree = "<group>"; };
+		5DCDC0EF246D58B200EF629E /* PIMLoginManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMLoginManagerTests.swift; sourceTree = "<group>"; };
+		5DCDC0F1246D58C600EF629E /* PIMUserManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMUserManagerTests.swift; sourceTree = "<group>"; };
+		5DCDC0F3246D58EB00EF629E /* PIMAuthManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMAuthManagerTests.swift; sourceTree = "<group>"; };
+		5DCDC0F5246D591400EF629E /* PIMConfigManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMConfigManagerTests.swift; sourceTree = "<group>"; };
+		5DCDC0F7246D592700EF629E /* PIMOIDCDiscoveryManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMOIDCDiscoveryManagerTests.swift; sourceTree = "<group>"; };
+		5DCF067F245AA6BD00CD30F0 /* PIMserviceDiscoveryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMserviceDiscoveryMock.swift; sourceTree = "<group>"; };
+		5DCF0681245AC83A00CD30F0 /* PIMRestClientMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMRestClientMock.swift; sourceTree = "<group>"; };
+		5DCF0683245AC94500CD30F0 /* PIMAppInfraMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMAppInfraMock.swift; sourceTree = "<group>"; };
+		5DCF0685245AD1AA00CD30F0 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		5DCF0688245AD28000CD30F0 /* PIMErrorUtilityTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMErrorUtilityTests.swift; sourceTree = "<group>"; };
+		5DCF0689245AD28000CD30F0 /* PIMAuthManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMAuthManagerTest.swift; sourceTree = "<group>"; };
+		5DCF068A245AD28000CD30F0 /* PIMTestHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMTestHelper.swift; sourceTree = "<group>"; };
+		5DCF068B245AD28000CD30F0 /* PIMMigratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMMigratorTests.swift; sourceTree = "<group>"; };
+		5DCF068C245AD28000CD30F0 /* PIMConfigManagerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMConfigManagerTest.swift; sourceTree = "<group>"; };
+		5DCF068D245AD28000CD30F0 /* PIMInterfaceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PIMInterfaceTest.swift; sourceTree = "<group>"; };
+		5DCF068F245AD28000CD30F0 /* NSBundleSwizzlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSBundleSwizzlers.swift; sourceTree = "<group>"; };
+		5DCF0697245AD6B200CD30F0 /* PIMLaunchInputTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMLaunchInputTests.swift; sourceTree = "<group>"; };
+		5DCF0699245AEE3B00CD30F0 /* PIMSettingsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMSettingsManagerTests.swift; sourceTree = "<group>"; };
+		5DCF069B245FEB1900CD30F0 /* PIMUtilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMUtilityTests.swift; sourceTree = "<group>"; };
+		5DCF069D245FF45B00CD30F0 /* PIMOIDServiceConfigurationMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMOIDServiceConfigurationMock.swift; sourceTree = "<group>"; };
+		5DCF06BF24653C6F00CD30F0 /* PIMOIDCConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PIMOIDCConfigurationTests.swift; sourceTree = "<group>"; };
+		5DD9FB492418AE4C00538BA3 /* MarketingOptinRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketingOptinRequest.swift; sourceTree = "<group>"; };
+		63947ECCA265D3B5C39620E1 /* Pods-PIMDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIMDev.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PIMDev/Pods-PIMDev.release.xcconfig"; sourceTree = "<group>"; };
+		859981F596589BAA1D2CA125 /* Pods_PIMTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIMTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		86AD56D00482E01523C955A6 /* Pods-PIMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIMTests.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PIMTests/Pods-PIMTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F01EDF0B274C58732CA0FFC1 /* Pods-PIMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PIMTests.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PIMTests/Pods-PIMTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE49801D2BC315E5E93DB0A1 /* Pods_PIMDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PIMDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5D42C64A2226998200A15DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6D5E50D5297EE45246CB52C /* Pods_PIMDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D42C6652226998200A15DC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D42C6692226998200A15DC7 /* PIMDev.framework in Frameworks */,
+				B6E210418F6AC49BAD8EF910 /* Pods_PIMTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C2636D776578936E0FB4983 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				859981F596589BAA1D2CA125 /* Pods_PIMTests.framework */,
+				FE49801D2BC315E5E93DB0A1 /* Pods_PIMDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		500B61DB224217020082A23B /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				5D42F2A62278541D0080BF76 /* PIMLoginManager.swift */,
+				500B61B322410FAD0082A23B /* PIMOIDCDiscoveryManager.swift */,
+				500B61DC2242171D0082A23B /* PIMConfigManager.swift */,
+				500B61AD2240EBD00082A23B /* PIMSettingsManager.swift */,
+				500B61B5224110C20082A23B /* PIMAuthManager.swift */,
+				5043C87B223FBC4300F4FD96 /* PIMUserManager.swift */,
+				5030FFB422CDF213004F0304 /* PIMMigrator.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		5021E20E2252956D0081E511 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF0685245AD1AA00CD30F0 /* ADBMobileConfig.json */,
+				5021E20F2252956D0081E511 /* AppConfig.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5021E21522531D950081E511 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5021E21C225341250081E511 /* AppAuthSwizzle.swift */,
+				5DCF067F245AA6BD00CD30F0 /* PIMserviceDiscoveryMock.swift */,
+				5DCF0681245AC83A00CD30F0 /* PIMRestClientMock.swift */,
+				5DCF0683245AC94500CD30F0 /* PIMAppInfraMock.swift */,
+				5DCF069D245FF45B00CD30F0 /* PIMOIDServiceConfigurationMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		5021E221225498420081E511 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5021E222225498420081E511 /* Main.storyboard */,
+				502946B022EDB9E200AC8A5A /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		503AB351223629A000AA9F30 /* UserObject */ = {
+			isa = PBXGroup;
+			children = (
+				5030FFB822CDFD3C004F0304 /* PIMJanrainHandler.swift */,
+				5045923722393741008F9685 /* PIMUserProfileModel.swift */,
+				5DB8980E223EA05A003BD4A4 /* PIMOIDCUserProfile.swift */,
+				50406F23225B0B5D000805A2 /* PIMDataImplementation.swift */,
+			);
+			path = UserObject;
+			sourceTree = "<group>";
+		};
+		5043C86D223F925500F4FD96 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5043C870223F938900F4FD96 /* PIMOIDCConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		50F5E36322437B850063BE79 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				500F22502369B7BE00CA64CA /* PIMProfileViewController.swift */,
+				50F5E36422437B9F0063BE79 /* PIMViewController.swift */,
+				5D346DCA2514AA3500327BD8 /* PIMGuestUserViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5D161B83222D8C280091137E /* RestClientLayer */ = {
+			isa = PBXGroup;
+			children = (
+				5D161B8C222D8F7C0091137E /* PIMRestClient.swift */,
+				5D161B86222D8DC90091137E /* UserProfileRequest.swift */,
+				5D161B8A222D8E100091137E /* LogoutRequest.swift */,
+				500B61AB2240E7DA0082A23B /* PIMRequestInterface.swift */,
+				5DB4F8A722D4B0A90040EF84 /* LegacyJanrainRefreshRequest.swift */,
+				5DD9FB492418AE4C00538BA3 /* MarketingOptinRequest.swift */,
+				5DCDC0E5246BF31E00EF629E /* PIMMigrationRequest.swift */,
+				5DCDC0E7246BF35600EF629E /* PIMMigrationAuthRequest.swift */,
+			);
+			name = RestClientLayer;
+			path = PIM/RestClientLayer;
+			sourceTree = "<group>";
+		};
+		5D2D2E0322706ADC00A5AADC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				5D2D2E0422706AEC00A5AADC /* PIMUtility.swift */,
+				5D42F2AA2278610B0080BF76 /* PIMExtensions.swift */,
+				5D97B6F0228C310100EF1D21 /* PIMConstants.swift */,
+				5D65B2BF22E97D0D00911403 /* PIMErrorUtility.swift */,
+				50B2A5FB238D440E00E086A8 /* PIMEncrypter.swift */,
+				50A9D5C3238BC8F700815EAD /* PIMJRSignatureCreator.h */,
+				50A9D5C4238BC8F700815EAD /* PIMJRSignatureCreator.m */,
+				5D47855724F69F360025CE3E /* PIMErrorBuilder.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		5D42C6432226998200A15DC7 = {
+			isa = PBXGroup;
+			children = (
+				5D42C64F2226998200A15DC7 /* PIM */,
+				5D42C66C2226998200A15DC7 /* PIMTests */,
+				5D42C64E2226998200A15DC7 /* Products */,
+				E91749482F6B97D08FA5299A /* Pods */,
+				2C2636D776578936E0FB4983 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5D42C64E2226998200A15DC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5D42C64D2226998200A15DC7 /* PIMDev.framework */,
+				5D42C6682226998200A15DC7 /* PIMTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5D42C64F2226998200A15DC7 /* PIM */ = {
+			isa = PBXGroup;
+			children = (
+				5D2D2E0322706ADC00A5AADC /* Utility */,
+				5021E221225498420081E511 /* Resources */,
+				50F5E36322437B850063BE79 /* Controllers */,
+				500B61DB224217020082A23B /* Manager */,
+				5043C86D223F925500F4FD96 /* Configuration */,
+				503AB351223629A000AA9F30 /* UserObject */,
+				5D161B83222D8C280091137E /* RestClientLayer */,
+				5D42C6522226998200A15DC7 /* UAPPClasses */,
+				5D4A609C24C8441D00329B8E /* PIMDev.h */,
+				5D42C6632226998200A15DC7 /* Info.plist */,
+			);
+			path = PIM;
+			sourceTree = "<group>";
+		};
+		5D42C6522226998200A15DC7 /* UAPPClasses */ = {
+			isa = PBXGroup;
+			children = (
+				5D42C6532226998200A15DC7 /* PIMDependencies.swift */,
+				5D42C6552226998200A15DC7 /* PIMInterface.swift */,
+				5D42C6572226998200A15DC7 /* PIMLaunchInput.swift */,
+				5D42C6592226998200A15DC7 /* PIMSettings.swift */,
+			);
+			name = UAPPClasses;
+			sourceTree = "<group>";
+		};
+		5D42C66C2226998200A15DC7 /* PIMTests */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF068E245AD28000CD30F0 /* Swizzle */,
+				5DCF0687245AD28000CD30F0 /* TestClass */,
+				5021E21522531D950081E511 /* Mock */,
+				5021E20E2252956D0081E511 /* Resources */,
+				5D42C66F2226998200A15DC7 /* Info.plist */,
+			);
+			path = PIMTests;
+			sourceTree = "<group>";
+		};
+		5DCF0687245AD28000CD30F0 /* TestClass */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF0688245AD28000CD30F0 /* PIMErrorUtilityTests.swift */,
+				5DCF0689245AD28000CD30F0 /* PIMAuthManagerTest.swift */,
+				5DCF068A245AD28000CD30F0 /* PIMTestHelper.swift */,
+				5DCF068B245AD28000CD30F0 /* PIMMigratorTests.swift */,
+				5DCF068C245AD28000CD30F0 /* PIMConfigManagerTest.swift */,
+				5DCF068D245AD28000CD30F0 /* PIMInterfaceTest.swift */,
+				5DCF0697245AD6B200CD30F0 /* PIMLaunchInputTests.swift */,
+				5DCF0699245AEE3B00CD30F0 /* PIMSettingsManagerTests.swift */,
+				5DCF069B245FEB1900CD30F0 /* PIMUtilityTests.swift */,
+				5DCF06BF24653C6F00CD30F0 /* PIMOIDCConfigurationTests.swift */,
+				5DCDC0E9246C0A2100EF629E /* PIMMigrationRequestTest.swift */,
+				5DCDC0EB246C0AC400EF629E /* PIMMigrationAuthRequestTest.swift */,
+				5DCDC0ED246D28A500EF629E /* PIMEncryptorTests.swift */,
+				5DCDC0EF246D58B200EF629E /* PIMLoginManagerTests.swift */,
+				5DCDC0F1246D58C600EF629E /* PIMUserManagerTests.swift */,
+				5DCDC0F3246D58EB00EF629E /* PIMAuthManagerTests.swift */,
+				5DCDC0F5246D591400EF629E /* PIMConfigManagerTests.swift */,
+				5DCDC0F7246D592700EF629E /* PIMOIDCDiscoveryManagerTests.swift */,
+			);
+			path = TestClass;
+			sourceTree = "<group>";
+		};
+		5DCF068E245AD28000CD30F0 /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				5DCF068F245AD28000CD30F0 /* NSBundleSwizzlers.swift */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
+		E91749482F6B97D08FA5299A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				86AD56D00482E01523C955A6 /* Pods-PIMTests.debug.xcconfig */,
+				F01EDF0B274C58732CA0FFC1 /* Pods-PIMTests.release.xcconfig */,
+				535E4A2AA351FDBA67B14CAA /* Pods-PIMDev.debug.xcconfig */,
+				63947ECCA265D3B5C39620E1 /* Pods-PIMDev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5D42C6482226998200A15DC7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A9D5C5238BC8F700815EAD /* PIMJRSignatureCreator.h in Headers */,
+				5D4A609D24C8441D00329B8E /* PIMDev.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D42C64C2226998200A15DC7 /* PIMDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D42C6722226998200A15DC7 /* Build configuration list for PBXNativeTarget "PIMDev" */;
+			buildPhases = (
+				0CA126671FF73551A37EB426 /* [CP] Check Pods Manifest.lock */,
+				5D42C6482226998200A15DC7 /* Headers */,
+				5D42C6492226998200A15DC7 /* Sources */,
+				5D42C64A2226998200A15DC7 /* Frameworks */,
+				5D42C64B2226998200A15DC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PIMDev;
+			productName = PIM;
+			productReference = 5D42C64D2226998200A15DC7 /* PIMDev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5D42C6672226998200A15DC7 /* PIMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D42C6752226998200A15DC7 /* Build configuration list for PBXNativeTarget "PIMTests" */;
+			buildPhases = (
+				9D9EABA9389BB14F7BEC3BD7 /* [CP] Check Pods Manifest.lock */,
+				5D42C6642226998200A15DC7 /* Sources */,
+				5D42C6652226998200A15DC7 /* Frameworks */,
+				5D42C6662226998200A15DC7 /* Resources */,
+				7049226D7E1F0E7CB4664D06 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D42C66B2226998200A15DC7 /* PBXTargetDependency */,
+			);
+			name = PIMTests;
+			productName = PIMTests;
+			productReference = 5D42C6682226998200A15DC7 /* PIMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5D42C6442226998200A15DC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					5D42C64C2226998200A15DC7 = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1110;
+					};
+					5D42C6672226998200A15DC7 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 5D42C6472226998200A15DC7 /* Build configuration list for PBXProject "PIMDev" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"en-GB",
+				"en-US",
+				Base,
+			);
+			mainGroup = 5D42C6432226998200A15DC7;
+			productRefGroup = 5D42C64E2226998200A15DC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D42C64C2226998200A15DC7 /* PIMDev */,
+				5D42C6672226998200A15DC7 /* PIMTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5D42C64B2226998200A15DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				502946AE22EDB9E200AC8A5A /* Localizable.strings in Resources */,
+				5021E223225498420081E511 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D42C6662226998200A15DC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5021E2102252956D0081E511 /* AppConfig.json in Resources */,
+				5DCF0686245AD1AA00CD30F0 /* ADBMobileConfig.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CA126671FF73551A37EB426 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PIMDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7049226D7E1F0E7CB4664D06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIMTests/Pods-PIMTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PIMTests/Pods-PIMTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PIMTests/Pods-PIMTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D9EABA9389BB14F7BEC3BD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PIMTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5D42C6492226998200A15DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				500B61B422410FAD0082A23B /* PIMOIDCDiscoveryManager.swift in Sources */,
+				5D2D2E0522706AEC00A5AADC /* PIMUtility.swift in Sources */,
+				5D97B6F1228C310100EF1D21 /* PIMConstants.swift in Sources */,
+				5D42C6582226998200A15DC7 /* PIMLaunchInput.swift in Sources */,
+				500B61DD2242171D0082A23B /* PIMConfigManager.swift in Sources */,
+				50A9D5C6238BC8F700815EAD /* PIMJRSignatureCreator.m in Sources */,
+				5030FFB522CDF213004F0304 /* PIMMigrator.swift in Sources */,
+				5DB4F8A822D4B0A90040EF84 /* LegacyJanrainRefreshRequest.swift in Sources */,
+				5DB8980F223EA05A003BD4A4 /* PIMOIDCUserProfile.swift in Sources */,
+				5043C871223F938900F4FD96 /* PIMOIDCConfiguration.swift in Sources */,
+				5DCDC0E8246BF35600EF629E /* PIMMigrationAuthRequest.swift in Sources */,
+				5045923822393741008F9685 /* PIMUserProfileModel.swift in Sources */,
+				5D346DCB2514AA3500327BD8 /* PIMGuestUserViewController.swift in Sources */,
+				5D42F2A72278541D0080BF76 /* PIMLoginManager.swift in Sources */,
+				5DCDC0E6246BF31E00EF629E /* PIMMigrationRequest.swift in Sources */,
+				5D42F2AB2278610B0080BF76 /* PIMExtensions.swift in Sources */,
+				5043C87C223FBC4300F4FD96 /* PIMUserManager.swift in Sources */,
+				5D161B8B222D8E100091137E /* LogoutRequest.swift in Sources */,
+				50F5E36522437B9F0063BE79 /* PIMViewController.swift in Sources */,
+				500B61AC2240E7DA0082A23B /* PIMRequestInterface.swift in Sources */,
+				5D42C6562226998200A15DC7 /* PIMInterface.swift in Sources */,
+				5DD9FB4A2418AE4C00538BA3 /* MarketingOptinRequest.swift in Sources */,
+				50B2A5FC238D440E00E086A8 /* PIMEncrypter.swift in Sources */,
+				500F22512369B7BE00CA64CA /* PIMProfileViewController.swift in Sources */,
+				5D65B2C022E97D0D00911403 /* PIMErrorUtility.swift in Sources */,
+				5D161B8D222D8F7C0091137E /* PIMRestClient.swift in Sources */,
+				5030FFB922CDFD3C004F0304 /* PIMJanrainHandler.swift in Sources */,
+				5D42C6542226998200A15DC7 /* PIMDependencies.swift in Sources */,
+				5D42C65A2226998200A15DC7 /* PIMSettings.swift in Sources */,
+				500B61B6224110C20082A23B /* PIMAuthManager.swift in Sources */,
+				5D161B87222D8DC90091137E /* UserProfileRequest.swift in Sources */,
+				500B61AE2240EBD00082A23B /* PIMSettingsManager.swift in Sources */,
+				5D47855824F69F360025CE3E /* PIMErrorBuilder.swift in Sources */,
+				50406F24225B0B5D000805A2 /* PIMDataImplementation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D42C6642226998200A15DC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5DCDC0F8246D592700EF629E /* PIMOIDCDiscoveryManagerTests.swift in Sources */,
+				5DCF0695245AD28000CD30F0 /* PIMInterfaceTest.swift in Sources */,
+				5DCDC0EC246C0AC400EF629E /* PIMMigrationAuthRequestTest.swift in Sources */,
+				5DCDC0F0246D58B300EF629E /* PIMLoginManagerTests.swift in Sources */,
+				5DCDC0EE246D28A500EF629E /* PIMEncryptorTests.swift in Sources */,
+				5DCDC0F6246D591400EF629E /* PIMConfigManagerTests.swift in Sources */,
+				5DCF0691245AD28000CD30F0 /* PIMAuthManagerTest.swift in Sources */,
+				5DCF0682245AC83A00CD30F0 /* PIMRestClientMock.swift in Sources */,
+				5DCF0696245AD28000CD30F0 /* NSBundleSwizzlers.swift in Sources */,
+				5DCF0698245AD6B200CD30F0 /* PIMLaunchInputTests.swift in Sources */,
+				5DCF069C245FEB1900CD30F0 /* PIMUtilityTests.swift in Sources */,
+				5DCDC0F2246D58C600EF629E /* PIMUserManagerTests.swift in Sources */,
+				5DCF0690245AD28000CD30F0 /* PIMErrorUtilityTests.swift in Sources */,
+				5DCF069E245FF45B00CD30F0 /* PIMOIDServiceConfigurationMock.swift in Sources */,
+				5DCDC0F4246D58EB00EF629E /* PIMAuthManagerTests.swift in Sources */,
+				5DCF0692245AD28000CD30F0 /* PIMTestHelper.swift in Sources */,
+				5DCF069A245AEE3B00CD30F0 /* PIMSettingsManagerTests.swift in Sources */,
+				5DCF06C024653C6F00CD30F0 /* PIMOIDCConfigurationTests.swift in Sources */,
+				5021E21D225341250081E511 /* AppAuthSwizzle.swift in Sources */,
+				5DCF0694245AD28000CD30F0 /* PIMConfigManagerTest.swift in Sources */,
+				5DCF0680245AA6BD00CD30F0 /* PIMserviceDiscoveryMock.swift in Sources */,
+				5DCF0684245AC94500CD30F0 /* PIMAppInfraMock.swift in Sources */,
+				5DCF0693245AD28000CD30F0 /* PIMMigratorTests.swift in Sources */,
+				5DCDC0EA246C0A2100EF629E /* PIMMigrationRequestTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5D42C66B2226998200A15DC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D42C64C2226998200A15DC7 /* PIMDev */;
+			targetProxy = 5D42C66A2226998200A15DC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		502946B022EDB9E200AC8A5A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				502946AF22EDB9E200AC8A5A /* en-GB */,
+				502946B122EDBA0600AC8A5A /* en-US */,
+				5075168D22EDC65F0060ACF0 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5D42C6702226998200A15DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D42C6712226998200A15DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D42C6732226998200A15DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 535E4A2AA351FDBA67B14CAA /* Pods-PIMDev.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PIM/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.PIM;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D42C6742226998200A15DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 63947ECCA265D3B5C39620E1 /* Pods-PIMDev.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PIM/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.PIM;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5D42C6762226998200A15DC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86AD56D00482E01523C955A6 /* Pods-PIMTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PIMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.PIMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5D42C6772226998200A15DC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F01EDF0B274C58732CA0FFC1 /* Pods-PIMTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PIMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.PIMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5D42C6472226998200A15DC7 /* Build configuration list for PBXProject "PIMDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D42C6702226998200A15DC7 /* Debug */,
+				5D42C6712226998200A15DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D42C6722226998200A15DC7 /* Build configuration list for PBXNativeTarget "PIMDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D42C6732226998200A15DC7 /* Debug */,
+				5D42C6742226998200A15DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D42C6752226998200A15DC7 /* Build configuration list for PBXNativeTarget "PIMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D42C6762226998200A15DC7 /* Debug */,
+				5D42C6772226998200A15DC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5D42C6442226998200A15DC7 /* Project object */;
+}

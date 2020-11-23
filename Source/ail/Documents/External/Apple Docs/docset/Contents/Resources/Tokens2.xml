@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIABTest.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIABTest</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="2"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/getTestValue:defaultContent:updateType:parameters:</TokenIdentifier>
+			<Abstract type="html">* 	@brief Processes a Target service request to return the experience value.
+* 	@param name a string pointer containing the name of the mbox
+*  @param defaultValue a string pointer containing the content to be returned on failure
+*  @param updateType of test name it can be always appstart or appupdate
+*  @param parameters a dictionary of key-value pairs that will be added to the request.
+*  @return experience value for the testName.</Abstract>
+			<DeclaredIn>AIABTest.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSString *)getTestValue:(nullable NSString *)testName defaultContent:(nullable NSString *)defaultValue updateType:(AIABTestUpdateType)updateType parameters:(nullable NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/getTestValue:defaultContent:updateType:parameters:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithAppInfra:(nonnull AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/getCacheStatus</TokenIdentifier>
+			<Abstract type="html">Returns the status of the cached experiences for the configured list of tests.
+At initialization of the module, the status is either NoTestsDefined, NoCachedExperiences, or ExperiencesNotUpdated.
+An updateCache may change the state to ExperiencesPartiallyUpdated or ExperiencesUpdated.</Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (AIABTestCacheStatus)getCacheStatus</Declaration>
+			
+			<ReturnValue><Abstract type="html">status of the experience cache.</Abstract></ReturnValue>
+			<Anchor>//api/name/getCacheStatus</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/appRestarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)appRestarted</Declaration>
+			
+			
+			<Anchor>//api/name/appRestarted</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/updateCacheWithSuccess:error:</TokenIdentifier>
+			<Abstract type="html">Download experience values from the server. Call will have no effect if state equals NOTESTSDEFINED or EXPERIENCES_UPDATED and return onSuccess.</Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)updateCacheWithSuccess:(nullable void ( ^ ) ( ))success error:(nullable void ( ^ ) ( NSError *_Nullable ))error</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>success</Name>
+					<Abstract type="html">and error callback blocks. success bock will be called once all experiences that is specified in the appconfig file was updated</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/updateCacheWithSuccess:error:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/loadFromDisk</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)loadFromDisk</Declaration>
+			
+			
+			<Anchor>//api/name/loadFromDisk</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/getVariableType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)getVariableType</Declaration>
+			
+			
+			<Anchor>//api/name/getVariableType</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/isAppUpdated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isAppUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/isAppUpdated</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/currentAppVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)currentAppVersion</Declaration>
+			
+			
+			<Anchor>//api/name/currentAppVersion</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/saveCurrentVersionasUpdated</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)saveCurrentVersionasUpdated</Declaration>
+			
+			
+			<Anchor>//api/name/saveCurrentVersionasUpdated</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/isAppRestarted</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isAppRestarted</Declaration>
+			
+			
+			<Anchor>//api/name/isAppRestarted</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/persistCacheForTestName:Value:updateType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)persistCacheForTestName:(NSString *)testName Value:(NSString *)content updateType:(AIABTestUpdateType)updateType</Declaration>
+			
+			
+			<Anchor>//api/name/persistCacheForTestName:Value:updateType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/removeCacheForTestName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)removeCacheForTestName:(NSString *)testName</Declaration>
+			
+			
+			<Anchor>//api/name/removeCacheForTestName:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/refreshForVariableType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)refreshForVariableType:(NSUInteger)type</Declaration>
+			
+			
+			<Anchor>//api/name/refreshForVariableType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/updateMemorycacheForTestName:Value:updateType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (void)updateMemorycacheForTestName:(NSString *)testName Value:(NSString *)content updateType:(AIABTestUpdateType)updateType</Declaration>
+			
+			
+			<Anchor>//api/name/updateMemorycacheForTestName:Value:updateType:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/getTestValueFromServer:defaultContent:updateType:parameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getTestValueFromServer:(nullable NSString *)requestName defaultContent:(nullable NSString *)defaultValue updateType:(AIABTestUpdateType)updateType parameters:(nullable NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/getTestValueFromServer:defaultContent:updateType:parameters:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/getTestValueFromCache:defaultContent:parameters:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getTestValueFromCache:(nullable NSString *)requestName defaultContent:(nullable NSString *)defaultContent parameters:(nullable NSDictionary *)parameters</Declaration>
+			
+			
+			<Anchor>//api/name/getTestValueFromCache:defaultContent:parameters:</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/setAbTestingCache:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *abTestingCache</Declaration>
+			
+			
+			<Anchor>//api/name/abTestingCache</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/abTestingCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *abTestingCache</Declaration>
+			
+			
+			<Anchor>//api/name/abTestingCache</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIABTest/abTestingCache</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSMutableDictionary *abTestingCache</Declaration>
+			
+			
+			<Anchor>//api/name/abTestingCache</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIABTest/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIABTest/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIABTest.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="2"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIAppTaggingWrapper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIAppTaggingWrapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingWrapper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppTaggingWrapper/initWithComponent:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer</Abstract>
+			<DeclaredIn>AIAppTaggingWrapper.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithComponent:(AIClientComponent *)component</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>component</Name>
+					<Abstract type="html">component requesting for tagging wrapper</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a tagging wrapper object for given component</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithComponent:</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppTaggingWrapper/getAnalyticsDefaultParams</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingWrapper.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getAnalyticsDefaultParams</Declaration>
+			
+			
+			<Anchor>//api/name/getAnalyticsDefaultParams</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppTaggingWrapper/setComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *component</Declaration>
+			
+			
+			<Anchor>//api/name/component</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppTaggingWrapper/component</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *component</Declaration>
+			
+			
+			<Anchor>//api/name/component</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppTaggingWrapper/component</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *component</Declaration>
+			
+			
+			<Anchor>//api/name/component</Anchor>
+            <NodeRef refid="9"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

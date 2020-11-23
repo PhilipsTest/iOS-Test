@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Veuillez fournir le app infra object";
+"ECSBaseURLNotFound" = "URL de base introuvable";
+"ECSCartEntryError" = "Le produit n’a pas été ajouté au panier";
+"ECSCartError" = "Aucun panier créé pour l’instant";
+"ECSCommerceCartModificationError" = "La quantité ne doit pas être inférieure à zéro";
+"ECSCtnNotProvided" = "Veuillez fournir le CTN";
+"ECSHybrisNotAvailable" = "La boutique Philips n’est pas disponible pour le pays sélectionné; seul le mode revendeur est disponible";
+"ECSIllegalArgumentError" = "Veuillez saisir des données valides";
+"ECSInsufficientStockError" = "Le produit ne peut pas être expédié puisqu’il est en rupture de stock";
+"ECSInvalidPaymentInfoError" = "Veuillez saisir des détails de paiement valides";
+"ECSInvalidTokenError" = "Un problème technique est survenu (jeton d’accès non valide). Veuillez procéder à un Hybris Re-Auth";
+"ECSLocaleNotFound" = "Veuillez définir les paramètres régionaux";
+"ECSNoSuchElementError" = "Une erreur s’est produite lors de la récupération des données du serveur";
+"ECSOAuthDetailError" = "Veuillez fournir les informations OAuth complètes";
+"ECSOAuthNotCalled" = "L’autorisation de l’utilisateur est requise pour cette action";
+"ECSPIL_BAD_REQUEST" = "Un problème technique est survenu. Veuillez réessayer plus tard";
+"ECSPIL_BAD_REQUEST_cartId" = "Aucun panier créé pour l’instant";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Un problème technique est survenu. Veuillez réessayer plus tard";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Un problème technique est survenu (jeton d’accès non valide). Veuillez procéder à un Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Adresse courriel non valide. Veuillez vérifier.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Le produit n’a pas été ajouté au panier";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Veuillez définir les paramètres régionaux";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Veuillez fournir le CTN valide";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Veuillez fournir une quantité valide";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "La boutique Philips n’est pas disponible pour le pays sélectionné; seul le mode revendeur est disponible";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "La quantité doit être supérieure à zéro";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Veuillez définir les paramètres régionaux";
+"ECSPIL_MISSING_PARAMETER_language" = "Veuillez définir les paramètres régionaux";
+"ECSPIL_MISSING_PARAMETER_productId" = "Veuillez fournir le CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "La boutique Philips n’est pas disponible pour le pays sélectionné; seul le mode revendeur est disponible";
+"ECSPIL_NEGATIVE_QUANTITY" = "La quantité ne doit pas être inférieure à zéro";
+"ECSPIL_NOT_ACCEPTABLE" = "Un problème technique est survenu. Veuillez réessayer plus tard";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Un problème technique est survenu. Veuillez réessayer plus tard";
+"ECSPIL_NOT_FOUND_cartId" = "Veuillez fournir un ID de panier valide";
+"ECSPIL_NOT_FOUND_productId" = "Veuillez fournir le CTN valide";
+"ECSPIL_STOCK_EXCEPTION" = "Le produit ne peut pas être expédié puisqu’il est en rupture de stock";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Un problème technique est survenu. Veuillez réessayer plus tard";
+"ECSPaymentAuthorizationError" = "L’autorisation de paiement a échoué";
+"ECSPropositionIdNotFound" = "Veuillez définir un Proposition ID valide";
+"ECSSiteIdNotFound" = "La boutique Philips n’est pas disponible pour le pays sélectionné; seul le mode revendeur est disponible";
+"ECSUnknownIdentifierError" = "La ressource demandée n’est pas disponible";
+"ECSUnsupportedDeliveryModeError" = "Le mode de livraison sélectionné n’est pas pris en charge";
+"ECSUnsupportedVoucherError" = "Désolé, ce bon ne peut pas être utilisé";
+"ECSValidationError" = "La validation des données a échoué";
+"ECSVoucherOperationError" = "Désolé, ce bon ne peut pas être utilisé";
+"ECSaddressId" = "L’adresse indiquée n’existe pas ou appartient à un autre utilisateur";
+"ECScountryCodeNotGiven" = "Veuillez fournir un code de pays valide";
+"ECScountryisocode" = "Le pays sélectionné n’est pas valide";
+"ECSfirstName" = "Veuillez noter que les caractères suivants ne sont pas autorisés : \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Un problème technique est survenu (informations d’identification du client incorrectes). Veuillez vous connecter de nouveau";
+"ECSinvalid_grant" = "Un problème technique est survenu (jeton Janrain non valide). Veuillez vous connecter de nouveau";
+"ECSlastName" = "Veuillez noter que les caractères suivants ne sont pas autorisés : \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Veuillez saisir une commande valide";
+"ECSphone1" = "Le numéro de téléphone sélectionné n’est pas valide";
+"ECSphone2" = "Le numéro de téléphone sélectionné n’est pas valide";
+"ECSpostUrl" = "La commande a déjà le statut payé/terminé";
+"ECSpostalCode" = "Le code postal sélectionné n’est pas valide";
+"ECSregionisocode" = "La région sélectionnée n’est pas valide";
+"ECSsessionCart" = "Veuillez sélectionner vos adresse de livraison, mode de livraison et méthode de paiement avant de soumettre une commande";
+"ECSsomethingWentWrong" = "Un problème technique est survenu. Veuillez réessayer plus tard";
+"ECSunsupported_grant_type" = "Un problème technique est survenu (type d’attribution non reconnu). Veuillez vous connecter de nouveau";

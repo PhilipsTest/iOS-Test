@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>MAX_NUMBER_OF_LOG_FILE</key>
+	<integer>5</integer>
+	<key>MAX_FILE_SIZE</key>
+	<integer>50000</integer>
+	<key>Debug_Log_Config</key>
+	<dict>
+		<key>AI_LOGLEVEL</key>
+		<string>DDLogLevelAll</string>
+		<key>FILE_LOG_ENABLED</key>
+		<integer>1</integer>
+		<key>CONSOLE_LOG_ENABLED</key>
+		<integer>1</integer>
+		<key>COMPONENT_LEVEL_LOG_ENABLED</key>
+		<integer>1</integer>
+		<key>LIST_COMPONENTID</key>
+		<array>
+			<string>usr</string>
+		</array>
+	</dict>
+	<key>Release_Log_Config</key>
+	<dict>
+		<key>AI_LOGLEVEL</key>
+		<string>DDLogLevelOff</string>
+		<key>FILE_LOG_ENABLED</key>
+		<integer>0</integer>
+		<key>CONSOLE_LOG_ENABLED</key>
+		<integer>0</integer>
+		<key>COMPONENT_LEVEL_LOG_ENABLED</key>
+		<integer>0</integer>
+		<key>LIST_COMPONENTID</key>
+		<array>
+			<string>PhilipsRegistration</string>
+		</array>
+	</dict>
+</dict>
+</plist>

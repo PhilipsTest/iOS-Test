@@ -1,0 +1,35 @@
+{
+    "version" : "1.0",
+    "acquisition": {
+        "server": "c00.adobe.com",
+        "appid": ""
+    },
+    "analytics" : {
+        "referrerTimeout": 5,
+        "rsids" : "philipsmobileappsregistrationdev",
+        "server" : "philips.sc.omtrdc.net",
+        "charset" : "UTF-8",
+        "ssl" : true,
+        "offlineEnabled" : true,
+        "lifecycleTimeout" : 300,
+        "batchLimit" : 0,
+        "privacyDefault" : "optedin",
+        "timezone": "CET",
+        "timezoneOffset": 60,
+        "referrerTimeout": 0,
+        "backdateSessionInfo": false,
+        "poi" : [
+        ]
+    },
+    "target" : {
+        "clientCode" : "amsdk",
+        "timeout" : 5
+    },
+    "audienceManager" : {
+        "server" : "",
+        "analyticsForwardingEnabled": false
+    },
+    "marketingCloud" : {
+        "org": "7D976F3055DC96AB7F000101@AdobeOrg"
+    }
+}

@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AIContentLoaderProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/clearCache">- clearCache</option>
+		
+		<option value="//api/name/getAllContent:">- getAllContent:</option>
+		
+		<option value="//api/name/getContentById:completionHandler:">- getContentById:completionHandler:</option>
+		
+		<option value="//api/name/getContentByIds:completionHandler:">- getContentByIds:completionHandler:</option>
+		
+		<option value="//api/name/getContentByTag:completionHandler:">- getContentByTag:completionHandler:</option>
+		
+		<option value="//api/name/getContentByTags:operatorName:completionHandler:">- getContentByTags:operatorName:completionHandler:</option>
+		
+		<option value="//api/name/getStatus">- getStatus</option>
+		
+		<option value="//api/name/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:">- initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:</option>
+		
+		<option value="//api/name/refresh:">- refresh:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AIContentLoaderProtocol Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIContentLoaderProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:" title="initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:">&ndash;&nbsp;initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: create intance with the following params</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable instancetype)initWithAppInfra:(AIAppInfra *_Nonnull)<em>appInfra</em> serviceId:(NSString *_Nonnull)<em>serviceId</em> maxAgeInHours:(NSInteger)<em>maxAgeInHours</em> modelClass:(Class _Nonnull)<em>modelClass</em> contentType:(NSString *_Nonnull)<em>contentType</em> downloadLimit:(NSUInteger)<em>downloadLimit</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>appInfra</code></th>
+						<td><p>AppInfra instance</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>serviceId of the cq5 url</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>maxAgeInHours</code></th>
+						<td><p>expery time for the contents cached</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>modelClass</code></th>
+						<td><p>name of the model class</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentType</code></th>
+						<td><p>type of the content</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>downloadLimit</code></th>
+						<td><p>no of pages that should be downloaded in one attempt. This will override the limit set in the app config. Pass &lsquo;0&rsquo; for taking the default limit from app config.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>content loader instance</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refresh:" title="refresh:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refresh:">&ndash;&nbsp;refresh:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refresh content in cache.
+If database is empty, loads from server.
+If content is outdated, starts download from server.
+If content URL has changed (e.g. locale changed) the cached content is automatically cleared and download is started.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refresh:(nullable void ( ^ ) ( AICLRefreshResult refreshResult , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>refreshListener</code></th>
+						<td><p>asynchronous callback reporting result of refresh</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/clearCache" title="clearCache"></a>
+	<h3 class="method-title"><code><a href="#//api/name/clearCache">&ndash;&nbsp;clearCache</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Remove all cached content</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)clearCache</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getStatus" title="getStatus"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getStatus">&ndash;&nbsp;getStatus</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: Used to get the current status of the contentloader</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (AICLState)getStatus</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getAllContent:" title="getAllContent:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getAllContent:">&ndash;&nbsp;getAllContent:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: used to get all the contents</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getAllContent:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>returns array of contents along with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getContentById:completionHandler:" title="getContentById:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getContentById:completionHandler:">&ndash;&nbsp;getContentById:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: used to get the contents based on ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getContentById:(NSString *_Nonnull)<em>contentId</em> completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentId</code></th>
+						<td><p>id of the content required</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>returns array of contents along with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getContentByIds:completionHandler:" title="getContentByIds:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getContentByIds:completionHandler:">&ndash;&nbsp;getContentByIds:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: used to get the contents based on ID</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getContentByIds:(NSArray *_Nonnull)<em>contentIds</em> completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>contentIds</code></th>
+						<td><p>ids of the contents required</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>returns array of contents along with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getContentByTag:completionHandler:" title="getContentByTag:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getContentByTag:completionHandler:">&ndash;&nbsp;getContentByTag:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description:used to get the contents based on tag</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getContentByTag:(NSString *_Nonnull)<em>tag</em> completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tag</code></th>
+						<td><p>tag name</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>returns array of contents along with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getContentByTags:operatorName:completionHandler:" title="getContentByTags:operatorName:completionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getContentByTags:operatorName:completionHandler:">&ndash;&nbsp;getContentByTags:operatorName:completionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: used to get the contents based on tag</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getContentByTags:(NSArray *_Nonnull)<em>tags</em> operatorName:(AICLOperator)<em>operatorName</em> completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>tags</code></th>
+						<td><p>tag names</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>operatorName</code></th>
+						<td><p>name of the operator either AICL_AND or AICL_OR</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>returns array of contents along with the error object</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIContentLoaderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

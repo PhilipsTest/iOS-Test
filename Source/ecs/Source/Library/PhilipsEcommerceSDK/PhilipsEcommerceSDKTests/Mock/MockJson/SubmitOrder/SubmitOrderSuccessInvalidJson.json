@@ -1,0 +1,307 @@
+{
+   "type" : "orderWsDTO",
+   "appliedOrderPromotions" : [ {
+      "description" : 123,
+      "promotion" : {
+         "code" : "Pranshu",
+         "description" : "Pranshu",
+         "enabled" : false,
+         "endDate" : "2099-01-01T00:00:00Z",
+         "itemType" : "OrderThresholdShippingPromotion",
+         "promotionDiscount" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "0.00 $",
+            "priceType" : "BUY",
+            "value" : 0.00
+         }
+      }
+   } ],
+   "calculated" : true,
+   "code" : "24013388542",
+   "deliveryAddress" : {
+      "billingAddress" : true,
+      "country" : {
+         "isocode" : "US",
+         "name" : "United States"
+      },
+      "defaultAddress" : false,
+      "firstName" : "Christmas",
+      "formattedAddress" : "Christmas sahoo</strong><br>Line 1 <br>New york 10024<br>United States",
+      "id" : "9334682091543",
+      "lastName" : "sahoo",
+      "line1" : "Line 1",
+      "phone" : "2139999999",
+      "phone1" : "2139999999",
+      "phone2" : "2139999999",
+      "postalCode" : "10024",
+      "region" : {
+         "countryIso" : "US",
+         "isocode" : "US-NY",
+         "isocodeShort" : "NY"
+      },
+      "shippingAddress" : true,
+      "titleCode" : "mr.",
+      "town" : "New york",
+      "visibleInAddressBook" : true
+   },
+   "deliveryCost" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "0.00 $",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "deliveryItemsQuantity" : 1,
+   "deliveryMode" : {
+      "code" : "UPS_COLLECTION_POINT",
+      "deliveryCost" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "0.00 $",
+         "priceType" : "BUY",
+         "value" : 0.00
+      }
+   },
+   "deliveryOrderGroups" : [ {
+      "entries" : [ {
+         "basePrice" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "314.99 $",
+            "priceType" : "BUY",
+            "value" : 314.99
+         },
+         "entryNumber" : 0,
+         "product" : {
+            "availableForPickup" : false,
+            "categories" : [ {
+               "code" : "SERIES_SHAVERS_SU",
+               "url" : "/personal-care/face-shavers/c/SERIES_SHAVERS_SU"
+            }, {
+               "code" : "SUB_US_IAP_MOB_PHC",
+               "url" : "//c/SUB_US_IAP_MOB_PHC"
+            } ],
+            "code" : "S9721/84",
+            "configurable" : false,
+            "deliveryTime" : "3-9 business days",
+            "discountPrice" : {
+               "currencyIso" : "USD",
+               "formattedValue" : "314.99 $",
+               "priceType" : "BUY",
+               "value" : 314.99
+            },
+            "isTaxExemptionApplicable" : false,
+            "name" : "S9721/84",
+            "price" : {
+               "currencyIso" : "USD",
+               "formattedValue" : "319.99 $",
+               "priceType" : "BUY",
+               "value" : 319.99
+            },
+            "priceRange" : {
+            },
+            "productType" : "MCI",
+            "purchasable" : true,
+            "stock" : {
+               "stockLevel" : 37945,
+               "stockLevelStatus" : "inStock"
+            },
+            "url" : "/personal-care/face-shavers/norelco-shaver-9700-wet-dry-electric-shaver-series-9000/p/S9721_84"
+         },
+         "quantity" : 1,
+         "totalPrice" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "314.99 $",
+            "priceType" : "BUY",
+            "value" : 314.99
+         },
+         "updateable" : true,
+         "vertexTaxAmount" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "0.00 $",
+            "priceType" : "BUY",
+            "value" : 0.00
+         },
+         "vertexTaxPercent" : 0.0
+      } ],
+      "totalPriceWithTax" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "342.95 $",
+         "priceType" : "BUY",
+         "value" : 342.95
+      }
+   } ],
+   "entries" : [ {
+      "basePrice" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "314.99 $",
+         "priceType" : "BUY",
+         "value" : 314.99
+      },
+      "entryNumber" : 0,
+      "product" : {
+         "availableForPickup" : false,
+         "categories" : [ {
+            "code" : "SERIES_SHAVERS_SU",
+            "url" : "/personal-care/face-shavers/c/SERIES_SHAVERS_SU"
+         }, {
+            "code" : "SUB_US_IAP_MOB_PHC",
+            "url" : "//c/SUB_US_IAP_MOB_PHC"
+         } ],
+         "code" : "S9721/84",
+         "configurable" : false,
+         "deliveryTime" : "3-9 business days",
+         "discountPrice" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "314.99 $",
+            "priceType" : "BUY",
+            "value" : 314.99
+         },
+         "isTaxExemptionApplicable" : false,
+         "name" : "S9721/84",
+         "price" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "319.99 $",
+            "priceType" : "BUY",
+            "value" : 319.99
+         },
+         "priceRange" : {
+         },
+         "productType" : "MCI",
+         "purchasable" : true,
+         "stock" : {
+            "stockLevel" : 37945,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/personal-care/face-shavers/norelco-shaver-9700-wet-dry-electric-shaver-series-9000/p/S9721_84"
+      },
+      "quantity" : 1,
+      "totalPrice" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "314.99 $",
+         "priceType" : "BUY",
+         "value" : 314.99
+      },
+      "updateable" : true,
+      "vertexTaxAmount" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "0.00 $",
+         "priceType" : "BUY",
+         "value" : 0.00
+      },
+      "vertexTaxPercent" : 0.0
+   } ],
+   "guid" : "40a94a1f-3768-46f3-b4dc-b75808d81a58",
+   "net" : true,
+   "orderDiscounts" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "0.00 $",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "pickupItemsQuantity" : 0,
+   "productDiscounts" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "0.00 $",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "site" : "US_Pub",
+   "store" : "US_Pub",
+   "subTotal" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "314.99 $",
+      "priceType" : "BUY",
+      "value" : 314.99
+   },
+   "totalDiscounts" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "0.00 $",
+      "priceType" : "BUY",
+      "value" : 0.00
+   },
+   "totalItems" : 1,
+   "totalPrice" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "314.99 $",
+      "priceType" : "BUY",
+      "value" : 314.99
+   },
+   "totalPriceWithTax" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "342.95 $",
+      "priceType" : "BUY",
+      "value" : 342.95
+   },
+   "totalTax" : {
+      "currencyIso" : "USD",
+      "formattedValue" : "27.96 $",
+      "priceType" : "BUY",
+      "value" : 27.96
+   },
+   "user" : {
+      "janrainUUID" : "2be04d3f-6214-48cf-9db8-3695a3611ab4",
+      "name" : "Christmas sahoo",
+      "uid" : "1805@mailinator.com"
+   },
+   "created" : "2019-08-13T06:18:41+0000",
+   "guestCustomer" : false,
+   "statusDisplay" : "processing",
+   "unconsignedEntries" : [ {
+      "basePrice" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "314.99 $",
+         "priceType" : "BUY",
+         "value" : 314.99
+      },
+      "entryNumber" : 0,
+      "product" : {
+         "availableForPickup" : false,
+         "categories" : [ {
+            "code" : "SERIES_SHAVERS_SU",
+            "url" : "/personal-care/face-shavers/c/SERIES_SHAVERS_SU"
+         }, {
+            "code" : "SUB_US_IAP_MOB_PHC",
+            "url" : "//c/SUB_US_IAP_MOB_PHC"
+         } ],
+         "code" : "S9721/84",
+         "configurable" : false,
+         "deliveryTime" : "3-9 business days",
+         "discountPrice" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "314.99 $",
+            "priceType" : "BUY",
+            "value" : 314.99
+         },
+         "isTaxExemptionApplicable" : false,
+         "name" : "S9721/84",
+         "price" : {
+            "currencyIso" : "USD",
+            "formattedValue" : "319.99 $",
+            "priceType" : "BUY",
+            "value" : 319.99
+         },
+         "priceRange" : {
+         },
+         "productType" : "MCI",
+         "purchasable" : true,
+         "stock" : {
+            "stockLevel" : 37945,
+            "stockLevelStatus" : "inStock"
+         },
+         "url" : "/personal-care/face-shavers/norelco-shaver-9700-wet-dry-electric-shaver-series-9000/p/S9721_84"
+      },
+      "quantity" : 1,
+      "totalPrice" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "314.99 $",
+         "priceType" : "BUY",
+         "value" : 314.99
+      },
+      "updateable" : true,
+      "vertexTaxAmount" : {
+         "currencyIso" : "USD",
+         "formattedValue" : "0.00 $",
+         "priceType" : "BUY",
+         "value" : 0.00
+      },
+      "vertexTaxPercent" : 0.0
+   } ]
+}

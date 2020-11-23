@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AIServiceDiscoveryProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/applyURLParameters:parameters:">- applyURLParameters:parameters:</option>
+		
+		<option value="//api/name/getHomeCountry">- getHomeCountry</option>
+		
+		<option value="//api/name/getHomeCountry:">- getHomeCountry:</option>
+		
+		<option value="//api/name/getServiceLocaleWithCountryPreference:withCompletionHandler:">- getServiceLocaleWithCountryPreference:withCompletionHandler:</option>
+		
+		<option value="//api/name/getServiceLocaleWithLanguagePreference:withCompletionHandler:">- getServiceLocaleWithLanguagePreference:withCompletionHandler:</option>
+		
+		<option value="//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:">- getServiceUrlWithCountryPreference:withCompletionHandler:</option>
+		
+		<option value="//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:replacement:">- getServiceUrlWithCountryPreference:withCompletionHandler:replacement:</option>
+		
+		<option value="//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:">- getServiceUrlWithLanguagePreference:withCompletionHandler:</option>
+		
+		<option value="//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:">- getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:</option>
+		
+		<option value="//api/name/getServicesWithCountryPreference:withCompletionHandler:">- getServicesWithCountryPreference:withCompletionHandler:</option>
+		
+		<option value="//api/name/getServicesWithCountryPreference:withCompletionHandler:replacement:">- getServicesWithCountryPreference:withCompletionHandler:replacement:</option>
+		
+		<option value="//api/name/getServicesWithLanguagePreference:withCompletionHandler:">- getServicesWithLanguagePreference:withCompletionHandler:</option>
+		
+		<option value="//api/name/getServicesWithLanguagePreference:withCompletionHandler:replacement:">- getServicesWithLanguagePreference:withCompletionHandler:replacement:</option>
+		
+		<option value="//api/name/refresh:">- refresh:</option>
+		
+		<option value="//api/name/setHomeCountry:">- setHomeCountry:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AIServiceDiscoveryProtocol Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIServiceDiscoveryProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/getHomeCountry:" title="getHomeCountry:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHomeCountry:">&ndash;&nbsp;getHomeCountry:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns a two character country code (ISO 3166-1)
+When not yet set, the country code is automatically determined from the SIM card&rsquo;s country of registration.
+If no SIM card is available/accessible; then geo-IP is used to determine the country.
+Once determined the country is stored persistently and the stored country will be returned.
+Using setHomeCountry() it is possible to change the stored home country.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getHomeCountry:(void ( ^ ) ( NSString *countryCode , NSString *sourceType , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>asynchronously returns in main queue the home country code according to ISO 3166-1, source indicates how the returned country code
+was determined;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getHomeCountry" title="getHomeCountry"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getHomeCountry">&ndash;&nbsp;getHomeCountry</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>synchronous method to return the home country.
+If the home country is not set the function returns null</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getHomeCountry</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>the saved home country</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/setHomeCountry:" title="setHomeCountry:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/setHomeCountry:">&ndash;&nbsp;setHomeCountry:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Persistently store Home country, overwrites any existing country value.
+Changing the country automatically clears the cached service list and triggers a refresh.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)setHomeCountry:(NSString *)<em>countryCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>countryCode</code></th>
+						<td><p>country code to persistently store, code must be according to ISO 3166-1</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:" title="getServiceUrlWithLanguagePreference:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:">&ndash;&nbsp;getServiceUrlWithLanguagePreference:withCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URL for a specific service with a preference for the current language.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceUrlWithLanguagePreference:(NSString *)<em>serviceId</em> withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>name of the service for which the URL is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:" title="getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:">&ndash;&nbsp;getServiceUrlWithLanguagePreference:withCompletionHandler:replacement:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URL for a specific service with a preference for the current language.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceUrlWithLanguagePreference:(NSString *)<em>serviceId</em> withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))<em>completionHandler</em> replacement:(NSDictionary *)<em>replacement</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>name of the service for which the URL is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>replacement</code></th>
+						<td><p>lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:" title="getServiceUrlWithCountryPreference:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:">&ndash;&nbsp;getServiceUrlWithCountryPreference:withCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URL for a specific service with a preference for the current home country.we first select the URL set with the best matching locale before looking for the requested service ID in this set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceUrlWithCountryPreference:(NSString *)<em>serviceId</em> withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>name of the service for which the URL is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:replacement:" title="getServiceUrlWithCountryPreference:withCompletionHandler:replacement:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceUrlWithCountryPreference:withCompletionHandler:replacement:">&ndash;&nbsp;getServiceUrlWithCountryPreference:withCompletionHandler:replacement:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URL for a specific service with a preference for the current home country.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceUrlWithCountryPreference:(NSString *)<em>serviceId</em> withCompletionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))<em>completionHandler</em> replacement:(NSDictionary *)<em>replacement</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>name of the service for which the URL is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>asynchronously returns in main queue using onSuccess the URL of the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>replacement</code></th>
+						<td><p>lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServicesWithLanguagePreference:withCompletionHandler:" title="getServicesWithLanguagePreference:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServicesWithLanguagePreference:withCompletionHandler:">&ndash;&nbsp;getServicesWithLanguagePreference:withCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URL and locale for a specific services with a preference for the current language.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServicesWithLanguagePreference:(NSArray *)<em>serviceIds</em> withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>array of service name for which the URL and locale is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess the  dictionary which containing key as service name and value as <a href="../Classes/AISDService.html">AISDService</a> object which have the properties url and locale of the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServicesWithLanguagePreference:withCompletionHandler:replacement:" title="getServicesWithLanguagePreference:withCompletionHandler:replacement:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServicesWithLanguagePreference:withCompletionHandler:replacement:">&ndash;&nbsp;getServicesWithLanguagePreference:withCompletionHandler:replacement:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URLs + locales for a set of services with a preference for the current language.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServicesWithLanguagePreference:(NSArray *)<em>serviceIds</em> withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))<em>completionHandler</em> replacement:(NSDictionary *)<em>replacement</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceIds</code></th>
+						<td><p>list of service names for which the URL + locale are to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>asynchronously returns in main queue using onSuccess a map containing the requested service names (key)
+and their URL + locale (value), the value will be null if the service is unknown;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>replacement</code></th>
+						<td><p>lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServicesWithCountryPreference:withCompletionHandler:" title="getServicesWithCountryPreference:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServicesWithCountryPreference:withCompletionHandler:">&ndash;&nbsp;getServicesWithCountryPreference:withCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the service url and locale for a specific services with a preference for the current home country.we first select the URLs set with the best matching locale before looking for the requested service ID in this set.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServicesWithCountryPreference:(NSArray *)<em>serviceIds</em> withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceIds</code></th>
+						<td><p>array of service names for which the URLs and locale is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess the  dictionary which containing key as service name and value as <a href="../Classes/AISDService.html">AISDService</a> object which have the properties url and locale of the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServicesWithCountryPreference:withCompletionHandler:replacement:" title="getServicesWithCountryPreference:withCompletionHandler:replacement:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServicesWithCountryPreference:withCompletionHandler:replacement:">&ndash;&nbsp;getServicesWithCountryPreference:withCompletionHandler:replacement:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the URLs + locales for a set of services with a preference for the current home country.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServicesWithCountryPreference:(NSArray *)<em>serviceIds</em> withCompletionHandler:(void ( ^ ) ( NSDictionary&lt;NSString*,AISDService*&gt; *services , NSError *error ))<em>completionHandler</em> replacement:(NSDictionary *)<em>replacement</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceIds</code></th>
+						<td><p>list of service names for which the URL + locale are to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>asynchronously returns in main queue using onSuccess a map containing the requested service names (key)
+and their URL + locale (value), the value will be null if the service is unknown;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>replacement</code></th>
+						<td><p>lookup table to be use to replace placeholders (key) with the given value, see {@link #applyURLParameters(URL, Map)}</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceLocaleWithLanguagePreference:withCompletionHandler:" title="getServiceLocaleWithLanguagePreference:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceLocaleWithLanguagePreference:withCompletionHandler:">&ndash;&nbsp;getServiceLocaleWithLanguagePreference:withCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the locale to be used for a specific service with a preference for the current language.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceLocaleWithLanguagePreference:(NSString *)<em>serviceId</em> withCompletionHandler:(void ( ^ ) ( NSString *serviceLocale , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>name of the service for which the URL is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess the recommended locale for the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getServiceLocaleWithCountryPreference:withCompletionHandler:" title="getServiceLocaleWithCountryPreference:withCompletionHandler:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getServiceLocaleWithCountryPreference:withCompletionHandler:">&ndash;&nbsp;getServiceLocaleWithCountryPreference:withCompletionHandler:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Returns the locale to be used for a specific service with a preference for the current home country.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)getServiceLocaleWithCountryPreference:(NSString *)<em>serviceId</em> withCompletionHandler:(void ( ^ ) ( NSString *serviceLocale , NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>serviceId</code></th>
+						<td><p>name of the service for which the URL is to be retrieved</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess the recommended locale for the requested service;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refresh:" title="refresh:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refresh:">&ndash;&nbsp;refresh:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Start negotiation with cloud service for the list of service for this application. List is based on sector, microsite, home country, and language.
+The retrieved list is cached internally (not persistently).
+The cached list is automatically refreshed every 24hours.
+A refresh is only required, to ensure the very first service request after app start can be processed from the cache quickly, or when a previous sync failed.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refresh:(void ( ^ ) ( NSError *error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>is a block which asynchronously returns in main queue using onSuccess when retrieval was successful;
+or returns onError the error code when retrieval failed.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/applyURLParameters:parameters:" title="applyURLParameters:parameters:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/applyURLParameters:parameters:">&ndash;&nbsp;applyURLParameters:parameters:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Replaces all &lsquo;%key%&rsquo; placeholders in the given URL, where the key is the key in the replacement table and the placeholder is replaced with the value of the entry in the replacement table</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)applyURLParameters:(NSString *)<em>URLString</em> parameters:(NSDictionary *)<em>map</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>url</code></th>
+						<td><p>url in which to search for the key strings given by replacement</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>replacement</code></th>
+						<td><p>mapping of placeholder string (key) to the replacement string (value)</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>input url with all placeholders keys replaced with the respective value in the replacement table</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIServiceDiscoveryProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

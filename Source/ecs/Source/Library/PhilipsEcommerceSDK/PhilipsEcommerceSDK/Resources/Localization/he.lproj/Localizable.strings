@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "ספק בבקשה app infra object";
+"ECSBaseURLNotFound" = "כתובת URL בסיסית לא נמצאת";
+"ECSCartEntryError" = "המוצר לא הוסף לעגלה";
+"ECSCartError" = "עדיין לא נוצרה עגלה";
+"ECSCommerceCartModificationError" = "הכמות לא יכולה להיות פחות מאפס";
+"ECSCtnNotProvided" = "ספק CTN בבקשה";
+"ECSHybrisNotAvailable" = "החנות של פיליפס אינה זמינה במדינה שנבחרה, רק מצב קמעונאי זמין";
+"ECSIllegalArgumentError" = "ספק נתוני כניסה חוקיים בבקשה";
+"ECSInsufficientStockError" = "לא ניתן לשלוח את המוצר כיוון שהוא אזל מהמלאי";
+"ECSInvalidPaymentInfoError" = "ספק פרטי תשלום חוקיים בבקשה";
+"ECSInvalidTokenError" = "נתקלנו בתקלה טכנית (אסימון גישה לא חוקי). בצע בבקשה Hybris Re-Auth";
+"ECSLocaleNotFound" = "הגדר מקום בבקשה";
+"ECSNoSuchElementError" = "אירעה שגיאה בשליפת הנתונים מהשרת";
+"ECSOAuthDetailError" = "ספק פרטי OAuth מלאים בבקשה";
+"ECSOAuthNotCalled" = "לביצוע פעולה זו נדרש אישור משתמש";
+"ECSPIL_BAD_REQUEST" = "נתקלנו בתקלה טכנית. נסה שוב במועד מאוחר יותר בבקשה";
+"ECSPIL_BAD_REQUEST_cartId" = "עדיין לא נוצרה עגלה";
+"ECSPIL_INTEGRATION_TIMEOUT" = "נתקלנו בתקלה טכנית. נסה שוב במועד מאוחר יותר בבקשה";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "נתקלנו בתקלה טכנית (אסימון גישה לא חוקי). בצע בבקשה Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "כתובת דוא\"ל לא חוקית. אנא בדוק.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "המוצר לא הוסף לעגלה";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "הגדר מקום בבקשה";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "ספק CTN תקף בבקשה";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "ספק כמות תקפה בבקשה";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "החנות של פיליפס אינה זמינה במדינה שנבחרה, רק מצב קמעונאי זמין";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "הכמות חייבת להיות גדולה מאפס";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "הגדר מקום בבקשה";
+"ECSPIL_MISSING_PARAMETER_language" = "הגדר מקום בבקשה";
+"ECSPIL_MISSING_PARAMETER_productId" = "ספק CTN בבקשה";
+"ECSPIL_MISSING_PARAMETER_siteId" = "החנות של פיליפס אינה זמינה במדינה שנבחרה, רק מצב קמעונאי זמין";
+"ECSPIL_NEGATIVE_QUANTITY" = "הכמות לא יכולה להיות פחות מאפס";
+"ECSPIL_NOT_ACCEPTABLE" = "נתקלנו בתקלה טכנית. נסה שוב במועד מאוחר יותר בבקשה";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "נתקלנו בתקלה טכנית. נסה שוב במועד מאוחר יותר בבקשה";
+"ECSPIL_NOT_FOUND_cartId" = "ספק מזהה עגלה תקף בבקשה";
+"ECSPIL_NOT_FOUND_productId" = "ספק CTN תקף בבקשה";
+"ECSPIL_STOCK_EXCEPTION" = "לא ניתן לשלוח את המוצר כיוון שהוא אזל מהמלאי";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "נתקלנו בתקלה טכנית. נסה שוב במועד מאוחר יותר בבקשה";
+"ECSPaymentAuthorizationError" = "אימות התשלום נכשל";
+"ECSPropositionIdNotFound" = "קבע בבקשה Proposition ID תקפה";
+"ECSSiteIdNotFound" = "החנות של פיליפס אינה זמינה במדינה שנבחרה, רק מצב קמעונאי זמין";
+"ECSUnknownIdentifierError" = "המשאב המבוקש אינו זמין";
+"ECSUnsupportedDeliveryModeError" = "שיטת המשלוח שנבחרה אינה נתמכת";
+"ECSUnsupportedVoucherError" = "מצטערים, לא ניתן לממש שובר זה";
+"ECSValidationError" = "אימות הנתונים נכשל";
+"ECSVoucherOperationError" = "מצטערים, לא ניתן לממש שובר זה";
+"ECSaddressId" = "הכתובת שנמסרה אינה קיימת או שייכת למשתמש אחר";
+"ECScountryCodeNotGiven" = "ספק קידומת מדינה תקפה בבקשה";
+"ECScountryisocode" = "המדינה שנבחרה לא חוקית";
+"ECSfirstName" = "שים לב: התווים הבאים אינם מותרים לשימוש: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "נתקלנו בתקלה טכנית (פרטי זיהוי לא נכונים של הלקוח) התחבר שוב בבקשה";
+"ECSinvalid_grant" = "נתקלנו בתקלה טכנית (אסימון Janrain לא חוקי). התחבר שוב בבקשה";
+"ECSlastName" = "שים לב: התווים הבאים אינם מותרים לשימוש: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "ספק הזמנה תקפה בבקשה";
+"ECSphone1" = "מספר הטלפון שנבחר לא חוקי";
+"ECSphone2" = "מספר הטלפון שנבחר לא חוקי";
+"ECSpostUrl" = "הזמנה כבר שולמה/הושלמה";
+"ECSpostalCode" = "המיקוד שנבחר לא חוקי";
+"ECSregionisocode" = "האזור שנבחר לא חוקי";
+"ECSsessionCart" = "בחר את הכתובת למשלוח, אופן המשלוח ושיטת התשלום לפני ביצוע הזמנה";
+"ECSsomethingWentWrong" = "נתקלנו בתקלה טכנית. נסה שוב במועד מאוחר יותר בבקשה";
+"ECSunsupported_grant_type" = "נתקלנו בתקלה טכנית (סוג בקשת גישה לא נתמך). התחבר שוב בבקשה";

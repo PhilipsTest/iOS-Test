@@ -1,0 +1,2515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22037B19237B1AEF0055A718 /* MECZeroSearchResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22037B18237B1AEF0055A718 /* MECZeroSearchResultView.swift */; };
+		22037B29237C6EED0055A718 /* MECBannerViewContainerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22037B27237C6EED0055A718 /* MECBannerViewContainerCell.swift */; };
+		22037B2A237C6EED0055A718 /* MECBannerViewContainerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22037B28237C6EED0055A718 /* MECBannerViewContainerCell.xib */; };
+		2204735A238C3DB100FF059E /* MECBasePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22047359238C3DB100FF059E /* MECBasePresenter.swift */; };
+		2206204E23F2CD9600A0DB08 /* MECDataBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206204D23F2CD9600A0DB08 /* MECDataBus.swift */; };
+		2206208023F54F4C00A0DB08 /* MECErrorUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206207E23F54F4C00A0DB08 /* MECErrorUtility.swift */; };
+		2206208223F54F9300A0DB08 /* MECOAuthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2206208123F54F9300A0DB08 /* MECOAuthHandler.swift */; };
+		2211FC6C23C880B300218C25 /* ServiceDiscoveryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211FC6B23C880B300218C25 /* ServiceDiscoveryTests.swift */; };
+		2211FC6E23C8BE5200218C25 /* TaggingHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2211FC6D23C8BE5200218C25 /* TaggingHelperTests.swift */; };
+		2229CD5C2431C90800EA2703 /* MECSummaryVoucherDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD5B2431C90800EA2703 /* MECSummaryVoucherDataProviderTests.swift */; };
+		2229CD5E2431CF5D00EA2703 /* MECSummaryProoductDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD5D2431CF5D00EA2703 /* MECSummaryProoductDataProviderTests.swift */; };
+		2229CD602431D1B900EA2703 /* MECAppliedVoucherDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD5F2431D1B900EA2703 /* MECAppliedVoucherDataProviderTests.swift */; };
+		2229CD622431DA2800EA2703 /* MECDeliveryCostDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD612431DA2800EA2703 /* MECDeliveryCostDataProviderTests.swift */; };
+		2229CD642431FBB900EA2703 /* MECApplyVoucherDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD632431FBB900EA2703 /* MECApplyVoucherDataProviderTests.swift */; };
+		2229CD662432113900EA2703 /* MECCartProductDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD652432113800EA2703 /* MECCartProductDataProviderTests.swift */; };
+		2229CD682432192300EA2703 /* MECOrderPromotionDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD672432192300EA2703 /* MECOrderPromotionDataProviderTests.swift */; };
+		2229CD6A24322A5400EA2703 /* MECDataImplementationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229CD6924322A5400EA2703 /* MECDataImplementationTests.swift */; };
+		2229FE932350ECF600600334 /* MECBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FE922350ECF500600334 /* MECBaseViewController.swift */; };
+		2229FE992350EEB900600334 /* MECConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2229FE982350EEB900600334 /* MECConfiguration.swift */; };
+		2229FE9B2351B79100600334 /* MECCustomActivityProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2229FE9A2351B79100600334 /* MECCustomActivityProgressView.xib */; };
+		222AB60D240E15CB00D2C2DF /* MockShoppingCartDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222AB60C240E15CB00D2C2DF /* MockShoppingCartDelegate.swift */; };
+		222AB612240E214800D2C2DF /* MECOAuthHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222AB611240E214800D2C2DF /* MECOAuthHandlerTests.swift */; };
+		222AB618240E55B800D2C2DF /* MECCheckout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 222AB615240E55B800D2C2DF /* MECCheckout.storyboard */; };
+		22547BA22461481C00DF0444 /* MECOrderDetailProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BA02461481C00DF0444 /* MECOrderDetailProductCell.swift */; };
+		22547BA32461481C00DF0444 /* MECOrderDetailProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22547BA12461481C00DF0444 /* MECOrderDetailProductCell.xib */; };
+		22547BA624614BCD00DF0444 /* MECCancelOrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BA524614BCD00DF0444 /* MECCancelOrderViewController.swift */; };
+		22547BCA2462A96500DF0444 /* MECOrderDetailShippingDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BC92462A96500DF0444 /* MECOrderDetailShippingDataProviderTests.swift */; };
+		22547BCC2463BFBF00DF0444 /* MECOrderDetailDeliveryModeDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BCB2463BFBF00DF0444 /* MECOrderDetailDeliveryModeDataProviderTests.swift */; };
+		22547BCE2463C1C900DF0444 /* MECOrderDetailPaymentDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BCD2463C1C900DF0444 /* MECOrderDetailPaymentDataProviderTests.swift */; };
+		22547BD02463DCAC00DF0444 /* MECOrderDetailProductDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BCF2463DCAC00DF0444 /* MECOrderDetailProductDataProviderTests.swift */; };
+		22547BD22463EC8C00DF0444 /* MECOrderDetailContactProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BD12463EC8C00DF0444 /* MECOrderDetailContactProviderTests.swift */; };
+		22547BD42464044B00DF0444 /* MECOrderDetailSummaryVoucherDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BD32464044B00DF0444 /* MECOrderDetailSummaryVoucherDataProviderTests.swift */; };
+		22547BD6246408B400DF0444 /* MECOrderDetailDeliveryCostDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BD5246408B400DF0444 /* MECOrderDetailDeliveryCostDataProviderTests.swift */; };
+		22547BD824640D4E00DF0444 /* MECOrderDetailVoucherDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BD724640D4E00DF0444 /* MECOrderDetailVoucherDataProviderTests.swift */; };
+		22547BDA2464131600DF0444 /* MECOrderDetailPromotionDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BD92464131600DF0444 /* MECOrderDetailPromotionDataProviderTests.swift */; };
+		22547BDC24641BE700DF0444 /* MECOrderDetailPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22547BDB24641BE700DF0444 /* MECOrderDetailPresenterTests.swift */; };
+		225ED8FE2354C3D6008C8DD6 /* MECUtilities+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225ED8FD2354C3D6008C8DD6 /* MECUtilities+Extensions.swift */; };
+		225ED9002355814E008C8DD6 /* MECTopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225ED8FF2355814E008C8DD6 /* MECTopBarView.swift */; };
+		225ED908235827D2008C8DD6 /* MECListViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225ED907235827D2008C8DD6 /* MECListViewLayout.swift */; };
+		225ED90C2358AD48008C8DD6 /* MECProductCellUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225ED90B2358AD48008C8DD6 /* MECProductCellUpdater.swift */; };
+		225ED90E2358DE46008C8DD6 /* MECUI+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225ED90D2358DE46008C8DD6 /* MECUI+Extenstions.swift */; };
+		226138A723FD613A00FF14CF /* MECSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138A523FD613A00FF14CF /* MECSummaryCell.swift */; };
+		226138A823FD613A00FF14CF /* MECSummaryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226138A623FD613A00FF14CF /* MECSummaryCell.xib */; };
+		226138E623FEDA0C00FF14CF /* MECCartTableDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138E523FEDA0C00FF14CF /* MECCartTableDataProvider.swift */; };
+		226138E823FEDA9E00FF14CF /* MECCartProductDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138E723FEDA9E00FF14CF /* MECCartProductDataProvider.swift */; };
+		226138EA23FEDAE500FF14CF /* MECDeliveryCostDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138E923FEDAE500FF14CF /* MECDeliveryCostDataProvider.swift */; };
+		226138EC23FEDAFF00FF14CF /* MECApplyVoucherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138EB23FEDAFF00FF14CF /* MECApplyVoucherDataProvider.swift */; };
+		226138EE23FEDB1C00FF14CF /* MECAppliedVoucherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138ED23FEDB1C00FF14CF /* MECAppliedVoucherDataProvider.swift */; };
+		226138F023FEDB4200FF14CF /* MECSummaryProoductDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138EF23FEDB4200FF14CF /* MECSummaryProoductDataProvider.swift */; };
+		226138F423FEDBC100FF14CF /* MECOrderPromotionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138F323FEDBC100FF14CF /* MECOrderPromotionDataProvider.swift */; };
+		226138F723FFA7A900FF14CF /* MECSummaryVoucherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138F623FFA7A900FF14CF /* MECSummaryVoucherDataProvider.swift */; };
+		226138FA2403AD5F00FF14CF /* MECApplyVoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138F82403AD5F00FF14CF /* MECApplyVoucherCell.swift */; };
+		226138FB2403AD5F00FF14CF /* MECApplyVoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226138F92403AD5F00FF14CF /* MECApplyVoucherCell.xib */; };
+		226138FE2403AD6C00FF14CF /* MECAppliedVoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226138FC2403AD6C00FF14CF /* MECAppliedVoucherCell.swift */; };
+		226138FF2403AD6C00FF14CF /* MECAppliedVoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226138FD2403AD6C00FF14CF /* MECAppliedVoucherCell.xib */; };
+		226139022403AD7800FF14CF /* MECShoppingCartProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 226139002403AD7800FF14CF /* MECShoppingCartProductCell.xib */; };
+		226139032403AD7800FF14CF /* MECShoppingCartProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226139012403AD7800FF14CF /* MECShoppingCartProductCell.swift */; };
+		2261395A2407867400FF14CF /* MECShoppingCartPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226139592407867400FF14CF /* MECShoppingCartPresenterTests.swift */; };
+		2261395C240786DC00FF14CF /* MockDataBus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2261395B240786DC00FF14CF /* MockDataBus.swift */; };
+		2279A2382387038500BD3E2D /* MECNoCartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2279A2372387038500BD3E2D /* MECNoCartView.swift */; };
+		2281C13124EAEA2500968063 /* MECProductFilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C13024EAEA2500968063 /* MECProductFilterViewController.swift */; };
+		2281C13324EAEA6E00968063 /* MECProductFilter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2281C13224EAEA6E00968063 /* MECProductFilter.storyboard */; };
+		2281C13624EAEB3D00968063 /* MECStockFilterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C13524EAEB3D00968063 /* MECStockFilterDataProvider.swift */; };
+		2281C13924EAEBB100968063 /* MECStockFilterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2281C13724EAEBB100968063 /* MECStockFilterCell.swift */; };
+		2281C13A24EAEBB100968063 /* MECStockFilterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2281C13824EAEBB100968063 /* MECStockFilterCell.xib */; };
+		2287C5A3235F1B1600FB1AF2 /* MECGridViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287C5A2235F1B1600FB1AF2 /* MECGridViewLayout.swift */; };
+		2287C5A6235F220900FB1AF2 /* MECProductGridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287C5A4235F220900FB1AF2 /* MECProductGridCell.swift */; };
+		2287C5A7235F220900FB1AF2 /* MECProductGridCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2287C5A5235F220900FB1AF2 /* MECProductGridCell.xib */; };
+		2287C5AE23616B9F00FB1AF2 /* MECPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2287C5AD23616B9E00FB1AF2 /* MECPaginationHelper.swift */; };
+		228E5E9624332A25009F9096 /* MockUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5E9524332A25009F9096 /* MockUtility.swift */; };
+		228E5E992433B7DB009F9096 /* MECCheckoutVoucherDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5E982433B7DB009F9096 /* MECCheckoutVoucherDataProviderTests.swift */; };
+		228E5E9B2433BC7E009F9096 /* MECCheckoutPaymentDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5E9A2433BC7E009F9096 /* MECCheckoutPaymentDataProviderTests.swift */; };
+		228E5E9D2433BE43009F9096 /* MECCheckoutProductDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5E9C2433BE43009F9096 /* MECCheckoutProductDataProviderTests.swift */; };
+		228E5E9F2433C0FA009F9096 /* MECCheckoutShippingDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5E9E2433C0FA009F9096 /* MECCheckoutShippingDataProviderTests.swift */; };
+		228E5EA524372C11009F9096 /* MECStepDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5EA324372C11009F9096 /* MECStepDetail.swift */; };
+		228E5EA624372C11009F9096 /* MECStepDetail.xib in Resources */ = {isa = PBXBuildFile; fileRef = 228E5EA424372C11009F9096 /* MECStepDetail.xib */; };
+		228E5EA824372C22009F9096 /* MECCheckoutStepProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228E5EA724372C22009F9096 /* MECCheckoutStepProvider.swift */; };
+		2292DD7123CF340A00558877 /* RetailerViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2292DD7023CF340A00558877 /* RetailerViewControllerTests.swift */; };
+		22A7942D24419F34004E90B8 /* MECPaymentConfirmationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A7942C24419F34004E90B8 /* MECPaymentConfirmationViewControllerTests.swift */; };
+		22A794302441C9E8004E90B8 /* MECWorldPayViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A7942F2441C9E8004E90B8 /* MECWorldPayViewControllerTests.swift */; };
+		22A794322441CAB0004E90B8 /* MockWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A794312441CAB0004E90B8 /* MockWebView.swift */; };
+		22A794342441CE89004E90B8 /* MockNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A794332441CE89004E90B8 /* MockNavigationController.swift */; };
+		22A794362441D02B004E90B8 /* MockNavigationAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A794352441D02B004E90B8 /* MockNavigationAction.swift */; };
+		22A794382441D97B004E90B8 /* FlowCompletionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A794372441D97B004E90B8 /* FlowCompletionDelegate.swift */; };
+		22B44CC623791AAD00AF054D /* MECServiceDiscoveryUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B44CC523791AAD00AF054D /* MECServiceDiscoveryUtility.swift */; };
+		22BDE3EE2423C12100FFF8B7 /* MECWorldPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22BDE3ED2423C12100FFF8B7 /* MECWorldPayViewController.swift */; };
+		22C2969C234F599B0004BDC2 /* MECProductCatalogueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2969B234F599B0004BDC2 /* MECProductCatalogueViewController.swift */; };
+		22C2969E234F59C60004BDC2 /* MECProductCataloguePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2969D234F59C60004BDC2 /* MECProductCataloguePresenter.swift */; };
+		22C296A0234F5D920004BDC2 /* MECConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C2969F234F5D920004BDC2 /* MECConstants.swift */; };
+		22C296A2234F5DE40004BDC2 /* MECUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C296A1234F5DE40004BDC2 /* MECUtility.swift */; };
+		22C296A4234F5E9F0004BDC2 /* MECLocalizedString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C296A3234F5E9F0004BDC2 /* MECLocalizedString.swift */; };
+		22C296A6234F62080004BDC2 /* MECAppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C296A5234F62080004BDC2 /* MECAppStoryboard.swift */; };
+		22C296A8234F6EB60004BDC2 /* MECProductCatalogue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C296A7234F6EB60004BDC2 /* MECProductCatalogue.storyboard */; };
+		22C296AB234F89690004BDC2 /* MECProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C296AA234F89690004BDC2 /* MECProductCell.swift */; };
+		22C296AD234F89760004BDC2 /* MECProductListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C296AC234F89760004BDC2 /* MECProductListCell.swift */; };
+		22C529142345C8C800918F44 /* MobileEcommerceDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22C5290A2345C8C700918F44 /* MobileEcommerceDev.framework */; };
+		22C529192345C8C800918F44 /* MobileEcommerceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C529182345C8C800918F44 /* MobileEcommerceTests.swift */; };
+		22C5291B2345C8C800918F44 /* MobileEcommerce.h in Headers */ = {isa = PBXBuildFile; fileRef = 22C5290D2345C8C700918F44 /* MobileEcommerce.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22CF35D4244A041B00042308 /* MECOrderDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF35D3244A041B00042308 /* MECOrderDetailViewController.swift */; };
+		22CF362A244A050F00042308 /* MECOrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22CF3629244A050F00042308 /* MECOrderDetail.storyboard */; };
+		22CF362C244A052F00042308 /* MECOrderDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF362B244A052F00042308 /* MECOrderDetailPresenter.swift */; };
+		22CF362E244A081C00042308 /* MECOrderDetailShippingDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF362D244A081C00042308 /* MECOrderDetailShippingDataProvider.swift */; };
+		22CF3630244A087600042308 /* MECOrderDetailPaymentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF362F244A087600042308 /* MECOrderDetailPaymentDataProvider.swift */; };
+		22CF3632244A089100042308 /* MECOrderDetailProductDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF3631244A089100042308 /* MECOrderDetailProductDataProvider.swift */; };
+		22CF3634244A08B400042308 /* MECOrderDetailVoucherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF3633244A08B400042308 /* MECOrderDetailVoucherDataProvider.swift */; };
+		22CF3637244A094A00042308 /* MECOrderDetailContactProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF3636244A094A00042308 /* MECOrderDetailContactProvider.swift */; };
+		22CF363C244A099800042308 /* MECOrderDetailContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF363A244A099800042308 /* MECOrderDetailContactCell.swift */; };
+		22CF363D244A099800042308 /* MECOrderDetailContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22CF363B244A099800042308 /* MECOrderDetailContactCell.xib */; };
+		22CF363F244ABFBB00042308 /* MECOrderDetailPromotionDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF363E244ABFBB00042308 /* MECOrderDetailPromotionDataProvider.swift */; };
+		22CF3641244ACA2F00042308 /* MECOrderDetailDeliveryCostDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF3640244ACA2F00042308 /* MECOrderDetailDeliveryCostDataProvider.swift */; };
+		22CF3643244ACA7300042308 /* MECOrderDetailSummaryVoucherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22CF3642244ACA7300042308 /* MECOrderDetailSummaryVoucherDataProvider.swift */; };
+		22D2624F23A759A9009C72C5 /* MECTagging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2624E23A759A9009C72C5 /* MECTagging.swift */; };
+		22D2625123A89599009C72C5 /* MECAnalyticsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D2625023A89599009C72C5 /* MECAnalyticsConstants.swift */; };
+		22D4AC6224F6E1CB001F5078 /* MockTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22D4AC6124F6E1CB001F5078 /* MockTableView.swift */; };
+		22DDD38B23DAA8D400450FA9 /* MECShoppingCartBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DDD38A23DAA8D400450FA9 /* MECShoppingCartBottomView.swift */; };
+		22E22A682417607B009BB1A1 /* MECCheckoutPaymentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E22A662417607A009BB1A1 /* MECCheckoutPaymentCell.xib */; };
+		22E22A692417607B009BB1A1 /* MECCheckoutPaymentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E22A672417607B009BB1A1 /* MECCheckoutPaymentCell.swift */; };
+		22E22A6E24176087009BB1A1 /* MECCheckoutVoucherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E22A6B24176087009BB1A1 /* MECCheckoutVoucherCell.swift */; };
+		22E22A6F24176087009BB1A1 /* MECCheckoutVoucherDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E22A6C24176087009BB1A1 /* MECCheckoutVoucherDataProvider.swift */; };
+		22E22A7024176087009BB1A1 /* MECCheckoutVoucherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E22A6D24176087009BB1A1 /* MECCheckoutVoucherCell.xib */; };
+		22E9275F238034E900BC8081 /* MECShoppingCart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E9275E238034E900BC8081 /* MECShoppingCart.storyboard */; };
+		22E927632380373700BC8081 /* MECShoppingCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E927622380373700BC8081 /* MECShoppingCartViewController.swift */; };
+		22E92767238037C500BC8081 /* MECShoppingCartPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E92766238037C500BC8081 /* MECShoppingCartPresenter.swift */; };
+		22F1DDE524F2385400A89F80 /* ECSPILProductFilter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F1DDE424F2385400A89F80 /* ECSPILProductFilter+Extension.swift */; };
+		22F53E1323D5FC6F001F988A /* MECInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F53E1223D5FC6F001F988A /* MECInitializer.swift */; };
+		22FB6EB52410F32C004753D1 /* MECOrderSummaryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EB42410F32C004753D1 /* MECOrderSummaryPresenter.swift */; };
+		22FB6EB72410F3E7004753D1 /* MECOrderSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EB62410F3E6004753D1 /* MECOrderSummaryViewController.swift */; };
+		22FB6EBF2410F44E004753D1 /* MECCheckoutDeliveryModeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FB6EBA2410F44E004753D1 /* MECCheckoutDeliveryModeCell.xib */; };
+		22FB6EC02410F44E004753D1 /* MECCheckoutDeliveryModeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EBB2410F44E004753D1 /* MECCheckoutDeliveryModeCell.swift */; };
+		22FB6EC12410F44E004753D1 /* MECCheckoutShippingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EBD2410F44E004753D1 /* MECCheckoutShippingCell.swift */; };
+		22FB6EC22410F44E004753D1 /* MECCheckoutShippingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FB6EBE2410F44E004753D1 /* MECCheckoutShippingCell.xib */; };
+		22FB6EDD2410F508004753D1 /* MECCheckoutProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6ED62410F507004753D1 /* MECCheckoutProductCell.swift */; };
+		22FB6EDE2410F508004753D1 /* MECCheckoutProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22FB6ED72410F507004753D1 /* MECCheckoutProductCell.xib */; };
+		22FB6EE22410F86D004753D1 /* MECCheckoutShippingDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EE12410F86D004753D1 /* MECCheckoutShippingDataProvider.swift */; };
+		22FB6EF2241171A7004753D1 /* MECCheckoutPaymentDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EF1241171A7004753D1 /* MECCheckoutPaymentDataProvider.swift */; };
+		22FB6EF4241171DE004753D1 /* MECCheckoutProductDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FB6EF3241171DE004753D1 /* MECCheckoutProductDataProvider.swift */; };
+		7804E1C424FF819B0061211E /* MECProductSortDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804E1C324FF819B0061211E /* MECProductSortDataProvider.swift */; };
+		7804E1CB24FF8E690061211E /* MECProductSortCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7804E1C924FF8E690061211E /* MECProductSortCell.swift */; };
+		7804E1CC24FF8E690061211E /* MECProductSortCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7804E1CA24FF8E690061211E /* MECProductSortCell.xib */; };
+		7805105C23F439FD00AC973C /* MECAddAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7805105B23F439FD00AC973C /* MECAddAddressTests.swift */; };
+		78063E70241B551A00B9C527 /* MECPaymentConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78063E6F241B551A00B9C527 /* MECPaymentConfirmationViewController.swift */; };
+		78063E72241B553B00B9C527 /* MECPaymentConfirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78063E71241B553B00B9C527 /* MECPaymentConfirmation.storyboard */; };
+		78068B802446197A0026B1EA /* MECOrderHistoryProductDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78068B7F2446197A0026B1EA /* MECOrderHistoryProductDetailCell.swift */; };
+		780876DB23BE1B950009A129 /* MECFlowConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780876D423BE1B950009A129 /* MECFlowConfiguration.swift */; };
+		780876DC23BE1B950009A129 /* MECInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780876D523BE1B950009A129 /* MECInterface.swift */; };
+		780876DD23BE1B950009A129 /* MECSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780876D623BE1B950009A129 /* MECSettings.swift */; };
+		780876DE23BE1B950009A129 /* MECDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780876D723BE1B950009A129 /* MECDependencies.swift */; };
+		780876E223BE1F710009A129 /* MECLaunchInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780876E123BE1F700009A129 /* MECLaunchInput.swift */; };
+		780876E423BE1F780009A129 /* MECLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780876E323BE1F780009A129 /* MECLauncher.swift */; };
+		780AD80223EDA7CB005F6574 /* MECAddressDisplayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780AD80123EDA7CB005F6574 /* MECAddressDisplayCell.swift */; };
+		780C288D23AA854B0061A067 /* MECProductSpecsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C288C23AA854B0061A067 /* MECProductSpecsTableViewManager.swift */; };
+		780C288F23AA8A100061A067 /* MECProductFeaturesTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C288E23AA8A100061A067 /* MECProductFeaturesTableViewManager.swift */; };
+		780C289123AA8A1E0061A067 /* MECProductReviewsTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780C289023AA8A1E0061A067 /* MECProductReviewsTableViewManager.swift */; };
+		78150CED23526B5B0038EC9F /* MECProductImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78150CEC23526B5B0038EC9F /* MECProductImageViewController.swift */; };
+		78150CF223526E3C0038EC9F /* MECImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78150CF123526E3C0038EC9F /* MECImages.xcassets */; };
+		781C510223A275B600B2983E /* MECPRXHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781C510123A275B600B2983E /* MECPRXHandlerTests.swift */; };
+		781E080F23FAD0220018F15A /* MECManageAddressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E080E23FAD0220018F15A /* MECManageAddressPresenter.swift */; };
+		781E081123FAD5460018F15A /* MECAddAddressCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781E081023FAD5460018F15A /* MECAddAddressCollectionViewCell.swift */; };
+		782F488923DEBFC500676D15 /* MECAddressValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F488823DEBFC500676D15 /* MECAddressValidator.swift */; };
+		782F48BC23DF268600676D15 /* MECLoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 782F48B723DF268600676D15 /* MECLoadingCell.xib */; };
+		782F48BD23DF268600676D15 /* MECLoadingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F48B823DF268600676D15 /* MECLoadingCell.swift */; };
+		782F48BE23DF268600676D15 /* MECPopoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F48BA23DF268600676D15 /* MECPopoverViewController.swift */; };
+		782F48BF23DF268600676D15 /* MECPopover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 782F48BB23DF268600676D15 /* MECPopover.storyboard */; };
+		782F48C123DF26A600676D15 /* MECPopoverTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782F48C023DF26A600676D15 /* MECPopoverTableViewCell.swift */; };
+		7831D25923771F4C00CE0B39 /* MECProductRetailersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831D25823771F4C00CE0B39 /* MECProductRetailersViewController.swift */; };
+		7831D25B23771FDD00CE0B39 /* MECProductRetailers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7831D25A23771FDD00CE0B39 /* MECProductRetailers.storyboard */; };
+		7831D25E2377203200CE0B39 /* MECProductRetailersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7831D25C2377203200CE0B39 /* MECProductRetailersCell.swift */; };
+		7836B473244C444100B28727 /* MECNoOrderDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7836B472244C444100B28727 /* MECNoOrderDetailView.swift */; };
+		7836B475244C445A00B28727 /* MECNoOrderDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7836B474244C445A00B28727 /* MECNoOrderDetailView.xib */; };
+		783D4DA4237EB1830089A06D /* mec_iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 783D4DA3237EB1830089A06D /* mec_iconfont.ttf */; };
+		783D4DA6237EB3B80089A06D /* MECIconFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 783D4DA5237EB3B80089A06D /* MECIconFont.swift */; };
+		784D33A523F99518000CF65F /* MECManageAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D33A423F99518000CF65F /* MECManageAddressViewController.swift */; };
+		784D33A723F99543000CF65F /* MECManageAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784D33A623F99543000CF65F /* MECManageAddress.storyboard */; };
+		784D33AA23F99722000CF65F /* MECAddressDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784D33A923F99722000CF65F /* MECAddressDetailsCollectionViewCell.swift */; };
+		78529F6923AA8EAE00F204AE /* MECProductDetailsBaseTableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78529F6823AA8EAE00F204AE /* MECProductDetailsBaseTableViewManager.swift */; };
+		78537F3025137EC100769D68 /* MECNotifyMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78537F2F25137EC100769D68 /* MECNotifyMeViewController.swift */; };
+		78537F3225137EDB00769D68 /* MECNotifyMePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78537F3125137EDB00769D68 /* MECNotifyMePresenter.swift */; };
+		78537F3425137EEE00769D68 /* MECNotifyMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78537F3325137EEE00769D68 /* MECNotifyMe.storyboard */; };
+		785496F623FFD19C00F4A948 /* MECDeliveryModesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785496F523FFD19C00F4A948 /* MECDeliveryModesCell.swift */; };
+		7855678E23508D4300A4140F /* MECProductDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7855678D23508D4300A4140F /* MECProductDetailsViewController.swift */; };
+		7855679023508D5B00A4140F /* MECProductDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7855678F23508D5B00A4140F /* MECProductDetailsPresenter.swift */; };
+		7855679223508D7000A4140F /* MECProductDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7855679123508D7000A4140F /* MECProductDetails.storyboard */; };
+		785F0FDA240E53C500AAF88A /* MECPaymentDetailsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 785F0FD9240E53C500AAF88A /* MECPaymentDetailsCollectionViewCell.swift */; };
+		7860805A239AB9AB0068FEAB /* MECPRXHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78608059239AB9AB0068FEAB /* MECPRXHandler.swift */; };
+		786C74A723E03D2E00DF753F /* MECAddressModelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786C74A623E03D2E00DF753F /* MECAddressModelExtensions.swift */; };
+		786D6CF023C5FFBE002D4C21 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 786D6CC523C5FFBD002D4C21 /* Localizable.strings */; };
+		7871E0D7240C0C5400F452A0 /* MECPaymentsListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7871E0D6240C0C5400F452A0 /* MECPaymentsListCell.swift */; };
+		787574152370566F0080CDF7 /* BazaarVoiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787574142370566F0080CDF7 /* BazaarVoiceHandler.swift */; };
+		78770A9D23EC685F00BB151B /* MECDeliveryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78770A9C23EC685F00BB151B /* MECDeliveryDetailsPresenter.swift */; };
+		7879808D2445B6E400604AE3 /* MECOrderHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7879808C2445B6E400604AE3 /* MECOrderHistoryViewController.swift */; };
+		7879808F2445B8A900604AE3 /* MECOrderHistory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7879808E2445B8A900604AE3 /* MECOrderHistory.storyboard */; };
+		787980912445B8FD00604AE3 /* MECOrderHistoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787980902445B8FD00604AE3 /* MECOrderHistoryPresenter.swift */; };
+		787980932445DD5900604AE3 /* MECOrderHistoryProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787980922445DD5900604AE3 /* MECOrderHistoryProductDetailView.swift */; };
+		787980952445DD6E00604AE3 /* MECOrderHistoryProductDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 787980942445DD6E00604AE3 /* MECOrderHistoryProductDetailView.xib */; };
+		78841389242BC01D00A05D29 /* MECDataImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78841388242BC01D00A05D29 /* MECDataImplementation.swift */; };
+		7884971B2406B44700751651 /* MECManageAddressTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884971A2406B44700751651 /* MECManageAddressTests.swift */; };
+		7884971D2406B47B00751651 /* MECDeliveryModesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7884971C2406B47B00751651 /* MECDeliveryModesTests.swift */; };
+		788A978D2417F6B000A95776 /* MECCVVPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788A978C2417F6B000A95776 /* MECCVVPaymentViewController.swift */; };
+		788A978F2417F6E900A95776 /* MECCVVPayment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 788A978E2417F6E900A95776 /* MECCVVPayment.storyboard */; };
+		788FCBC223A79D9700337507 /* MECProductSpecsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FCBB823A79D9700337507 /* MECProductSpecsHeaderView.swift */; };
+		788FCBC323A79D9700337507 /* MECReviewsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FCBB923A79D9700337507 /* MECReviewsHeaderView.swift */; };
+		788FCBC423A79D9700337507 /* MECPriceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788FCBBA23A79D9700337507 /* MECPriceView.xib */; };
+		788FCBC523A79D9700337507 /* MECPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FCBBB23A79D9700337507 /* MECPriceView.swift */; };
+		788FCBC623A79D9700337507 /* MECProductSpecsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788FCBBC23A79D9700337507 /* MECProductSpecsHeaderView.xib */; };
+		788FCBC723A79D9700337507 /* MECReviewsHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 788FCBBD23A79D9700337507 /* MECReviewsHeaderView.xib */; };
+		788FCBC823A79D9700337507 /* MECProductReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FCBBF23A79D9700337507 /* MECProductReviewCell.swift */; };
+		788FCBC923A79D9700337507 /* MECProductFeaturesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FCBC023A79D9700337507 /* MECProductFeaturesCell.swift */; };
+		788FCBCA23A79D9700337507 /* MECProductSpecsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788FCBC123A79D9700337507 /* MECProductSpecsCell.swift */; };
+		789034B423EAEA3100210F9B /* MECDeliveryDetailsStepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789034B323EAEA3100210F9B /* MECDeliveryDetailsStepCell.swift */; };
+		789034B823EB449000210F9B /* MECManageAddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789034B723EB449000210F9B /* MECManageAddressCell.swift */; };
+		78919DE223F6A04E00B2D9BC /* MECDeliveryDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78919DE123F6A04E00B2D9BC /* MECDeliveryDetailsPresenterTests.swift */; };
+		789C58522504D13000686C26 /* MockBazaarVoiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C58482504D13000686C26 /* MockBazaarVoiceHandler.swift */; };
+		789C58532504D13000686C26 /* MockProductCatalogueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C58492504D13000686C26 /* MockProductCatalogueDelegate.swift */; };
+		789C58542504D13000686C26 /* MockPaginationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C584A2504D13000686C26 /* MockPaginationHelper.swift */; };
+		789C58552504D13000686C26 /* MECProductCataloguePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C584B2504D13000686C26 /* MECProductCataloguePresenterTests.swift */; };
+		789C58562504D13000686C26 /* PaginationHelperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C584C2504D13000686C26 /* PaginationHelperTests.swift */; };
+		789C58572504D13000686C26 /* MECStockFilterDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C58502504D13000686C26 /* MECStockFilterDataProviderTests.swift */; };
+		789C58582504D13000686C26 /* MECProductFilterViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C58512504D13000686C26 /* MECProductFilterViewControllerTests.swift */; };
+		789C585A2504D1C000686C26 /* MECProductSortDataProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 789C58592504D1C000686C26 /* MECProductSortDataProviderTests.swift */; };
+		78A410B323DB33280038F19A /* MECBaseDeliveryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A410B223DB33280038F19A /* MECBaseDeliveryDetailsPresenter.swift */; };
+		78A881552424AF0E00D9B9D3 /* MECOrderSummaryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A881542424AF0E00D9B9D3 /* MECOrderSummaryPresenterTests.swift */; };
+		78A967A523D9A997005CDFED /* MECAddAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9679C23D9A997005CDFED /* MECAddAddressViewController.swift */; };
+		78A967A623D9A997005CDFED /* MECAddAddressPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9679D23D9A997005CDFED /* MECAddAddressPresenter.swift */; };
+		78A967A723D9A997005CDFED /* MECAddressTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A9679F23D9A997005CDFED /* MECAddressTextField.swift */; };
+		78A967A823D9A997005CDFED /* MECAddressFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A967A023D9A997005CDFED /* MECAddressFieldView.swift */; };
+		78A967A923D9A997005CDFED /* MECAddressFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78A967A123D9A997005CDFED /* MECAddressFieldView.xib */; };
+		78A967AA23D9A997005CDFED /* MECAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A967A223D9A997005CDFED /* MECAddressView.swift */; };
+		78A967AB23D9A997005CDFED /* MECAddAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78A967A323D9A997005CDFED /* MECAddAddress.storyboard */; };
+		78A967AD23D9AB2F005CDFED /* MECAddressFieldsConfigModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A967AC23D9AB2F005CDFED /* MECAddressFieldsConfigModel.swift */; };
+		78A967AF23D9BC58005CDFED /* MECAddressFieldsConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 78A967AE23D9BC58005CDFED /* MECAddressFieldsConfiguration.plist */; };
+		78AC3A602411024500030DF6 /* MECLoadingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AC3A5F2411024500030DF6 /* MECLoadingCollectionViewCell.swift */; };
+		78AE338A238EAE51000663CC /* MECBazaarVoiceHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78AE3389238EAE51000663CC /* MECBazaarVoiceHandlerTests.swift */; };
+		78C32DCD23E1A1EF00789304 /* MECDeliveryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78C32DCC23E1A1EF00789304 /* MECDeliveryDetailsViewController.swift */; };
+		78C32DCF23E1A21200789304 /* MECDeliveryDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78C32DCE23E1A21200789304 /* MECDeliveryDetails.storyboard */; };
+		78CC23EF23E97E4F00F1425E /* MECDeliveryDetailsStepView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 78CC23EE23E97E4F00F1425E /* MECDeliveryDetailsStepView.xib */; };
+		78CC23F123E9B74100F1425E /* MECDeliveryDetailsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CC23F023E9B74100F1425E /* MECDeliveryDetailsStepView.swift */; };
+		78CDE6F5242105FF00BE39D7 /* MECPaymentMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78CDE6F4242105FF00BE39D7 /* MECPaymentMethodTests.swift */; };
+		78D030C02451FB2200253558 /* MECOrderHistoryPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D030BF2451FB2200253558 /* MECOrderHistoryPresenterTests.swift */; };
+		78D323EA23BF15CD00A41753 /* MockPRXHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323E623BF15CD00A41753 /* MockPRXHandler.swift */; };
+		78D323EB23BF15CD00A41753 /* MockECSService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323E723BF15CD00A41753 /* MockECSService.swift */; };
+		78D323EC23BF15CD00A41753 /* ServiceDiscoveryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323E823BF15CD00A41753 /* ServiceDiscoveryMock.swift */; };
+		78D323ED23BF15CD00A41753 /* MockAppInfra.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323E923BF15CD00A41753 /* MockAppInfra.swift */; };
+		78D323F023BF187300A41753 /* MECLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323EF23BF187300A41753 /* MECLaunchTests.swift */; };
+		78D323F223BF188C00A41753 /* MECInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323F123BF188C00A41753 /* MECInterfaceTests.swift */; };
+		78D323F623BF595200A41753 /* MECMockBannerConfigDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323F523BF595200A41753 /* MECMockBannerConfigDelegate.swift */; };
+		78D323FA23BF859F00A41753 /* MECMockLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323F923BF859F00A41753 /* MECMockLogger.swift */; };
+		78D323FC23BF85AF00A41753 /* MECMockTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323FB23BF85AF00A41753 /* MECMockTagger.swift */; };
+		78D323FE23BF892300A41753 /* MECMockUserDataInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D323FD23BF892300A41753 /* MECMockUserDataInterface.swift */; };
+		78E0013823609C08002982CE /* MECProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E0013723609C08002982CE /* MECProduct.swift */; };
+		78E1599F251CB23000A09FAC /* MECNotifyMePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E1599E251CB23000A09FAC /* MECNotifyMePresenterTests.swift */; };
+		78E8C28C2387BED000B729B8 /* MECProductDetailsPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78E8C28B2387BED000B729B8 /* MECProductDetailsPresenterTests.swift */; };
+		8772759EA6563B8B0B68FD6E /* Pods_MobileEcommerceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D651C15005EC1D51DC3C91B /* Pods_MobileEcommerceTests.framework */; };
+		F12A695D240903AAD675372D /* Pods_MobileEcommerceDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 862A41BA02BFF396648F369D /* Pods_MobileEcommerceDev.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22C529152345C8C800918F44 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22C529012345C8C700918F44 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22C529092345C8C700918F44;
+			remoteInfo = MobileEcommerce;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D651C15005EC1D51DC3C91B /* Pods_MobileEcommerceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileEcommerceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22037B18237B1AEF0055A718 /* MECZeroSearchResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECZeroSearchResultView.swift; sourceTree = "<group>"; };
+		22037B27237C6EED0055A718 /* MECBannerViewContainerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECBannerViewContainerCell.swift; sourceTree = "<group>"; };
+		22037B28237C6EED0055A718 /* MECBannerViewContainerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECBannerViewContainerCell.xib; sourceTree = "<group>"; };
+		22047359238C3DB100FF059E /* MECBasePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECBasePresenter.swift; sourceTree = "<group>"; };
+		2206204D23F2CD9600A0DB08 /* MECDataBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDataBus.swift; sourceTree = "<group>"; };
+		2206207E23F54F4C00A0DB08 /* MECErrorUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECErrorUtility.swift; sourceTree = "<group>"; };
+		2206208123F54F9300A0DB08 /* MECOAuthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOAuthHandler.swift; sourceTree = "<group>"; };
+		2211FC6B23C880B300218C25 /* ServiceDiscoveryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceDiscoveryTests.swift; sourceTree = "<group>"; };
+		2211FC6D23C8BE5200218C25 /* TaggingHelperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaggingHelperTests.swift; sourceTree = "<group>"; };
+		2229CD5B2431C90800EA2703 /* MECSummaryVoucherDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECSummaryVoucherDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD5D2431CF5D00EA2703 /* MECSummaryProoductDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECSummaryProoductDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD5F2431D1B900EA2703 /* MECAppliedVoucherDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAppliedVoucherDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD612431DA2800EA2703 /* MECDeliveryCostDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryCostDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD632431FBB900EA2703 /* MECApplyVoucherDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECApplyVoucherDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD652432113800EA2703 /* MECCartProductDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCartProductDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD672432192300EA2703 /* MECOrderPromotionDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderPromotionDataProviderTests.swift; sourceTree = "<group>"; };
+		2229CD6924322A5400EA2703 /* MECDataImplementationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDataImplementationTests.swift; sourceTree = "<group>"; };
+		2229FE922350ECF500600334 /* MECBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECBaseViewController.swift; sourceTree = "<group>"; };
+		2229FE982350EEB900600334 /* MECConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECConfiguration.swift; sourceTree = "<group>"; };
+		2229FE9A2351B79100600334 /* MECCustomActivityProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MECCustomActivityProgressView.xib; path = XIBFiles/MECCustomActivityProgressView.xib; sourceTree = "<group>"; };
+		222AB60C240E15CB00D2C2DF /* MockShoppingCartDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockShoppingCartDelegate.swift; sourceTree = "<group>"; };
+		222AB611240E214800D2C2DF /* MECOAuthHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOAuthHandlerTests.swift; sourceTree = "<group>"; };
+		222AB615240E55B800D2C2DF /* MECCheckout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MECCheckout.storyboard; sourceTree = "<group>"; };
+		22547BA02461481C00DF0444 /* MECOrderDetailProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailProductCell.swift; sourceTree = "<group>"; };
+		22547BA12461481C00DF0444 /* MECOrderDetailProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECOrderDetailProductCell.xib; sourceTree = "<group>"; };
+		22547BA524614BCD00DF0444 /* MECCancelOrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCancelOrderViewController.swift; sourceTree = "<group>"; };
+		22547BC92462A96500DF0444 /* MECOrderDetailShippingDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailShippingDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BCB2463BFBF00DF0444 /* MECOrderDetailDeliveryModeDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailDeliveryModeDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BCD2463C1C900DF0444 /* MECOrderDetailPaymentDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailPaymentDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BCF2463DCAC00DF0444 /* MECOrderDetailProductDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailProductDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BD12463EC8C00DF0444 /* MECOrderDetailContactProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailContactProviderTests.swift; sourceTree = "<group>"; };
+		22547BD32464044B00DF0444 /* MECOrderDetailSummaryVoucherDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailSummaryVoucherDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BD5246408B400DF0444 /* MECOrderDetailDeliveryCostDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailDeliveryCostDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BD724640D4E00DF0444 /* MECOrderDetailVoucherDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailVoucherDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BD92464131600DF0444 /* MECOrderDetailPromotionDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailPromotionDataProviderTests.swift; sourceTree = "<group>"; };
+		22547BDB24641BE700DF0444 /* MECOrderDetailPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailPresenterTests.swift; sourceTree = "<group>"; };
+		225ED8FD2354C3D6008C8DD6 /* MECUtilities+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MECUtilities+Extensions.swift"; sourceTree = "<group>"; };
+		225ED8FF2355814E008C8DD6 /* MECTopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECTopBarView.swift; sourceTree = "<group>"; };
+		225ED907235827D2008C8DD6 /* MECListViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECListViewLayout.swift; sourceTree = "<group>"; };
+		225ED90B2358AD48008C8DD6 /* MECProductCellUpdater.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductCellUpdater.swift; sourceTree = "<group>"; };
+		225ED90D2358DE46008C8DD6 /* MECUI+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MECUI+Extenstions.swift"; sourceTree = "<group>"; };
+		226138A523FD613A00FF14CF /* MECSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECSummaryCell.swift; sourceTree = "<group>"; };
+		226138A623FD613A00FF14CF /* MECSummaryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECSummaryCell.xib; sourceTree = "<group>"; };
+		226138E523FEDA0C00FF14CF /* MECCartTableDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCartTableDataProvider.swift; sourceTree = "<group>"; };
+		226138E723FEDA9E00FF14CF /* MECCartProductDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCartProductDataProvider.swift; sourceTree = "<group>"; };
+		226138E923FEDAE500FF14CF /* MECDeliveryCostDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryCostDataProvider.swift; sourceTree = "<group>"; };
+		226138EB23FEDAFF00FF14CF /* MECApplyVoucherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECApplyVoucherDataProvider.swift; sourceTree = "<group>"; };
+		226138ED23FEDB1C00FF14CF /* MECAppliedVoucherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAppliedVoucherDataProvider.swift; sourceTree = "<group>"; };
+		226138EF23FEDB4200FF14CF /* MECSummaryProoductDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECSummaryProoductDataProvider.swift; sourceTree = "<group>"; };
+		226138F323FEDBC100FF14CF /* MECOrderPromotionDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderPromotionDataProvider.swift; sourceTree = "<group>"; };
+		226138F623FFA7A900FF14CF /* MECSummaryVoucherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECSummaryVoucherDataProvider.swift; sourceTree = "<group>"; };
+		226138F82403AD5F00FF14CF /* MECApplyVoucherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECApplyVoucherCell.swift; sourceTree = "<group>"; };
+		226138F92403AD5F00FF14CF /* MECApplyVoucherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECApplyVoucherCell.xib; sourceTree = "<group>"; };
+		226138FC2403AD6C00FF14CF /* MECAppliedVoucherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECAppliedVoucherCell.swift; sourceTree = "<group>"; };
+		226138FD2403AD6C00FF14CF /* MECAppliedVoucherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECAppliedVoucherCell.xib; sourceTree = "<group>"; };
+		226139002403AD7800FF14CF /* MECShoppingCartProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECShoppingCartProductCell.xib; sourceTree = "<group>"; };
+		226139012403AD7800FF14CF /* MECShoppingCartProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECShoppingCartProductCell.swift; sourceTree = "<group>"; };
+		226139592407867400FF14CF /* MECShoppingCartPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECShoppingCartPresenterTests.swift; sourceTree = "<group>"; };
+		2261395B240786DC00FF14CF /* MockDataBus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataBus.swift; sourceTree = "<group>"; };
+		2279A2372387038500BD3E2D /* MECNoCartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECNoCartView.swift; sourceTree = "<group>"; };
+		2281C13024EAEA2500968063 /* MECProductFilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductFilterViewController.swift; sourceTree = "<group>"; };
+		2281C13224EAEA6E00968063 /* MECProductFilter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECProductFilter.storyboard; sourceTree = "<group>"; };
+		2281C13524EAEB3D00968063 /* MECStockFilterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECStockFilterDataProvider.swift; sourceTree = "<group>"; };
+		2281C13724EAEBB100968063 /* MECStockFilterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECStockFilterCell.swift; sourceTree = "<group>"; };
+		2281C13824EAEBB100968063 /* MECStockFilterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECStockFilterCell.xib; sourceTree = "<group>"; };
+		2287C5A2235F1B1600FB1AF2 /* MECGridViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECGridViewLayout.swift; sourceTree = "<group>"; };
+		2287C5A4235F220900FB1AF2 /* MECProductGridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductGridCell.swift; sourceTree = "<group>"; };
+		2287C5A5235F220900FB1AF2 /* MECProductGridCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECProductGridCell.xib; sourceTree = "<group>"; };
+		2287C5AD23616B9E00FB1AF2 /* MECPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECPaginationHelper.swift; sourceTree = "<group>"; };
+		228E5E9524332A25009F9096 /* MockUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUtility.swift; sourceTree = "<group>"; };
+		228E5E982433B7DB009F9096 /* MECCheckoutVoucherDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutVoucherDataProviderTests.swift; sourceTree = "<group>"; };
+		228E5E9A2433BC7E009F9096 /* MECCheckoutPaymentDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutPaymentDataProviderTests.swift; sourceTree = "<group>"; };
+		228E5E9C2433BE43009F9096 /* MECCheckoutProductDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutProductDataProviderTests.swift; sourceTree = "<group>"; };
+		228E5E9E2433C0FA009F9096 /* MECCheckoutShippingDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutShippingDataProviderTests.swift; sourceTree = "<group>"; };
+		228E5EA324372C11009F9096 /* MECStepDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECStepDetail.swift; sourceTree = "<group>"; };
+		228E5EA424372C11009F9096 /* MECStepDetail.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECStepDetail.xib; sourceTree = "<group>"; };
+		228E5EA724372C22009F9096 /* MECCheckoutStepProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutStepProvider.swift; sourceTree = "<group>"; };
+		2292DD7023CF340A00558877 /* RetailerViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetailerViewControllerTests.swift; sourceTree = "<group>"; };
+		22A7942C24419F34004E90B8 /* MECPaymentConfirmationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPaymentConfirmationViewControllerTests.swift; sourceTree = "<group>"; };
+		22A7942F2441C9E8004E90B8 /* MECWorldPayViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECWorldPayViewControllerTests.swift; sourceTree = "<group>"; };
+		22A794312441CAB0004E90B8 /* MockWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWebView.swift; sourceTree = "<group>"; };
+		22A794332441CE89004E90B8 /* MockNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigationController.swift; sourceTree = "<group>"; };
+		22A794352441D02B004E90B8 /* MockNavigationAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNavigationAction.swift; sourceTree = "<group>"; };
+		22A794372441D97B004E90B8 /* FlowCompletionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowCompletionDelegate.swift; sourceTree = "<group>"; };
+		22B44CC523791AAD00AF054D /* MECServiceDiscoveryUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECServiceDiscoveryUtility.swift; sourceTree = "<group>"; };
+		22BDE3ED2423C12100FFF8B7 /* MECWorldPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECWorldPayViewController.swift; sourceTree = "<group>"; };
+		22C2969B234F599B0004BDC2 /* MECProductCatalogueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductCatalogueViewController.swift; sourceTree = "<group>"; };
+		22C2969D234F59C60004BDC2 /* MECProductCataloguePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductCataloguePresenter.swift; sourceTree = "<group>"; };
+		22C2969F234F5D920004BDC2 /* MECConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECConstants.swift; sourceTree = "<group>"; };
+		22C296A1234F5DE40004BDC2 /* MECUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECUtility.swift; sourceTree = "<group>"; };
+		22C296A3234F5E9F0004BDC2 /* MECLocalizedString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECLocalizedString.swift; sourceTree = "<group>"; };
+		22C296A5234F62080004BDC2 /* MECAppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAppStoryboard.swift; sourceTree = "<group>"; };
+		22C296A7234F6EB60004BDC2 /* MECProductCatalogue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECProductCatalogue.storyboard; sourceTree = "<group>"; };
+		22C296AA234F89690004BDC2 /* MECProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductCell.swift; sourceTree = "<group>"; };
+		22C296AC234F89760004BDC2 /* MECProductListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductListCell.swift; sourceTree = "<group>"; };
+		22C5290A2345C8C700918F44 /* MobileEcommerceDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MobileEcommerceDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C5290D2345C8C700918F44 /* MobileEcommerce.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileEcommerce.h; sourceTree = "<group>"; };
+		22C5290E2345C8C700918F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22C529132345C8C800918F44 /* MobileEcommerceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobileEcommerceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22C529182345C8C800918F44 /* MobileEcommerceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileEcommerceTests.swift; sourceTree = "<group>"; };
+		22C5291A2345C8C800918F44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22CF35D3244A041B00042308 /* MECOrderDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailViewController.swift; sourceTree = "<group>"; };
+		22CF3629244A050F00042308 /* MECOrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECOrderDetail.storyboard; sourceTree = "<group>"; };
+		22CF362B244A052F00042308 /* MECOrderDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailPresenter.swift; sourceTree = "<group>"; };
+		22CF362D244A081C00042308 /* MECOrderDetailShippingDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailShippingDataProvider.swift; sourceTree = "<group>"; };
+		22CF362F244A087600042308 /* MECOrderDetailPaymentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailPaymentDataProvider.swift; sourceTree = "<group>"; };
+		22CF3631244A089100042308 /* MECOrderDetailProductDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailProductDataProvider.swift; sourceTree = "<group>"; };
+		22CF3633244A08B400042308 /* MECOrderDetailVoucherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailVoucherDataProvider.swift; sourceTree = "<group>"; };
+		22CF3636244A094A00042308 /* MECOrderDetailContactProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailContactProvider.swift; sourceTree = "<group>"; };
+		22CF363A244A099800042308 /* MECOrderDetailContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailContactCell.swift; sourceTree = "<group>"; };
+		22CF363B244A099800042308 /* MECOrderDetailContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECOrderDetailContactCell.xib; sourceTree = "<group>"; };
+		22CF363E244ABFBB00042308 /* MECOrderDetailPromotionDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailPromotionDataProvider.swift; sourceTree = "<group>"; };
+		22CF3640244ACA2F00042308 /* MECOrderDetailDeliveryCostDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailDeliveryCostDataProvider.swift; sourceTree = "<group>"; };
+		22CF3642244ACA7300042308 /* MECOrderDetailSummaryVoucherDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderDetailSummaryVoucherDataProvider.swift; sourceTree = "<group>"; };
+		22D2624E23A759A9009C72C5 /* MECTagging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECTagging.swift; sourceTree = "<group>"; };
+		22D2625023A89599009C72C5 /* MECAnalyticsConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAnalyticsConstants.swift; sourceTree = "<group>"; };
+		22D4AC6124F6E1CB001F5078 /* MockTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTableView.swift; sourceTree = "<group>"; };
+		22DDD38A23DAA8D400450FA9 /* MECShoppingCartBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECShoppingCartBottomView.swift; sourceTree = "<group>"; };
+		22E22A662417607A009BB1A1 /* MECCheckoutPaymentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECCheckoutPaymentCell.xib; sourceTree = "<group>"; };
+		22E22A672417607B009BB1A1 /* MECCheckoutPaymentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECCheckoutPaymentCell.swift; sourceTree = "<group>"; };
+		22E22A6B24176087009BB1A1 /* MECCheckoutVoucherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECCheckoutVoucherCell.swift; sourceTree = "<group>"; };
+		22E22A6C24176087009BB1A1 /* MECCheckoutVoucherDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECCheckoutVoucherDataProvider.swift; sourceTree = "<group>"; };
+		22E22A6D24176087009BB1A1 /* MECCheckoutVoucherCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECCheckoutVoucherCell.xib; sourceTree = "<group>"; };
+		22E9275E238034E900BC8081 /* MECShoppingCart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECShoppingCart.storyboard; sourceTree = "<group>"; };
+		22E927622380373700BC8081 /* MECShoppingCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECShoppingCartViewController.swift; sourceTree = "<group>"; };
+		22E92766238037C500BC8081 /* MECShoppingCartPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECShoppingCartPresenter.swift; sourceTree = "<group>"; };
+		22F1DDE424F2385400A89F80 /* ECSPILProductFilter+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ECSPILProductFilter+Extension.swift"; sourceTree = "<group>"; };
+		22F53E1223D5FC6F001F988A /* MECInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECInitializer.swift; sourceTree = "<group>"; };
+		22FB6EB42410F32C004753D1 /* MECOrderSummaryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderSummaryPresenter.swift; sourceTree = "<group>"; };
+		22FB6EB62410F3E6004753D1 /* MECOrderSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECOrderSummaryViewController.swift; sourceTree = "<group>"; };
+		22FB6EBA2410F44E004753D1 /* MECCheckoutDeliveryModeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECCheckoutDeliveryModeCell.xib; sourceTree = "<group>"; };
+		22FB6EBB2410F44E004753D1 /* MECCheckoutDeliveryModeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECCheckoutDeliveryModeCell.swift; sourceTree = "<group>"; };
+		22FB6EBD2410F44E004753D1 /* MECCheckoutShippingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECCheckoutShippingCell.swift; sourceTree = "<group>"; };
+		22FB6EBE2410F44E004753D1 /* MECCheckoutShippingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECCheckoutShippingCell.xib; sourceTree = "<group>"; };
+		22FB6ED62410F507004753D1 /* MECCheckoutProductCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECCheckoutProductCell.swift; sourceTree = "<group>"; };
+		22FB6ED72410F507004753D1 /* MECCheckoutProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECCheckoutProductCell.xib; sourceTree = "<group>"; };
+		22FB6EE12410F86D004753D1 /* MECCheckoutShippingDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutShippingDataProvider.swift; sourceTree = "<group>"; };
+		22FB6EF1241171A7004753D1 /* MECCheckoutPaymentDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutPaymentDataProvider.swift; sourceTree = "<group>"; };
+		22FB6EF3241171DE004753D1 /* MECCheckoutProductDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCheckoutProductDataProvider.swift; sourceTree = "<group>"; };
+		392667A91DAD1C7F1B440A72 /* Pods-MobileEcommerceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileEcommerceTests.debug.xcconfig"; path = "Target Support Files/Pods-MobileEcommerceTests/Pods-MobileEcommerceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7060ED6F0E0F5BA660696C73 /* Pods-MobileEcommerceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileEcommerceTests.release.xcconfig"; path = "Target Support Files/Pods-MobileEcommerceTests/Pods-MobileEcommerceTests.release.xcconfig"; sourceTree = "<group>"; };
+		7804E1C324FF819B0061211E /* MECProductSortDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductSortDataProvider.swift; sourceTree = "<group>"; };
+		7804E1C924FF8E690061211E /* MECProductSortCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductSortCell.swift; sourceTree = "<group>"; };
+		7804E1CA24FF8E690061211E /* MECProductSortCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECProductSortCell.xib; sourceTree = "<group>"; };
+		7805105B23F439FD00AC973C /* MECAddAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddAddressTests.swift; sourceTree = "<group>"; };
+		78063E6F241B551A00B9C527 /* MECPaymentConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPaymentConfirmationViewController.swift; sourceTree = "<group>"; };
+		78063E71241B553B00B9C527 /* MECPaymentConfirmation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECPaymentConfirmation.storyboard; sourceTree = "<group>"; };
+		78068B7F2446197A0026B1EA /* MECOrderHistoryProductDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderHistoryProductDetailCell.swift; sourceTree = "<group>"; };
+		780876D423BE1B950009A129 /* MECFlowConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECFlowConfiguration.swift; sourceTree = "<group>"; };
+		780876D523BE1B950009A129 /* MECInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECInterface.swift; sourceTree = "<group>"; };
+		780876D623BE1B950009A129 /* MECSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECSettings.swift; sourceTree = "<group>"; };
+		780876D723BE1B950009A129 /* MECDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECDependencies.swift; sourceTree = "<group>"; };
+		780876E123BE1F700009A129 /* MECLaunchInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECLaunchInput.swift; sourceTree = "<group>"; };
+		780876E323BE1F780009A129 /* MECLauncher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECLauncher.swift; sourceTree = "<group>"; };
+		780AD80123EDA7CB005F6574 /* MECAddressDisplayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddressDisplayCell.swift; sourceTree = "<group>"; };
+		780C288C23AA854B0061A067 /* MECProductSpecsTableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductSpecsTableViewManager.swift; sourceTree = "<group>"; };
+		780C288E23AA8A100061A067 /* MECProductFeaturesTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductFeaturesTableViewManager.swift; sourceTree = "<group>"; };
+		780C289023AA8A1E0061A067 /* MECProductReviewsTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductReviewsTableViewManager.swift; sourceTree = "<group>"; };
+		78150CEC23526B5B0038EC9F /* MECProductImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductImageViewController.swift; sourceTree = "<group>"; };
+		78150CF123526E3C0038EC9F /* MECImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = MECImages.xcassets; sourceTree = "<group>"; };
+		781C510123A275B600B2983E /* MECPRXHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPRXHandlerTests.swift; sourceTree = "<group>"; };
+		781E080E23FAD0220018F15A /* MECManageAddressPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECManageAddressPresenter.swift; sourceTree = "<group>"; };
+		781E081023FAD5460018F15A /* MECAddAddressCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddAddressCollectionViewCell.swift; sourceTree = "<group>"; };
+		782F488823DEBFC500676D15 /* MECAddressValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddressValidator.swift; sourceTree = "<group>"; };
+		782F48B723DF268600676D15 /* MECLoadingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECLoadingCell.xib; sourceTree = "<group>"; };
+		782F48B823DF268600676D15 /* MECLoadingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECLoadingCell.swift; sourceTree = "<group>"; };
+		782F48BA23DF268600676D15 /* MECPopoverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECPopoverViewController.swift; sourceTree = "<group>"; };
+		782F48BB23DF268600676D15 /* MECPopover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MECPopover.storyboard; sourceTree = "<group>"; };
+		782F48C023DF26A600676D15 /* MECPopoverTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPopoverTableViewCell.swift; sourceTree = "<group>"; };
+		7831D25823771F4C00CE0B39 /* MECProductRetailersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductRetailersViewController.swift; sourceTree = "<group>"; };
+		7831D25A23771FDD00CE0B39 /* MECProductRetailers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECProductRetailers.storyboard; sourceTree = "<group>"; };
+		7831D25C2377203200CE0B39 /* MECProductRetailersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductRetailersCell.swift; sourceTree = "<group>"; };
+		7836B472244C444100B28727 /* MECNoOrderDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECNoOrderDetailView.swift; sourceTree = "<group>"; };
+		7836B474244C445A00B28727 /* MECNoOrderDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECNoOrderDetailView.xib; sourceTree = "<group>"; };
+		783D4DA3237EB1830089A06D /* mec_iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = mec_iconfont.ttf; sourceTree = "<group>"; };
+		783D4DA5237EB3B80089A06D /* MECIconFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECIconFont.swift; sourceTree = "<group>"; };
+		784D33A423F99518000CF65F /* MECManageAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECManageAddressViewController.swift; sourceTree = "<group>"; };
+		784D33A623F99543000CF65F /* MECManageAddress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECManageAddress.storyboard; sourceTree = "<group>"; };
+		784D33A923F99722000CF65F /* MECAddressDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddressDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		78529F6823AA8EAE00F204AE /* MECProductDetailsBaseTableViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductDetailsBaseTableViewManager.swift; sourceTree = "<group>"; };
+		78537F2F25137EC100769D68 /* MECNotifyMeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECNotifyMeViewController.swift; sourceTree = "<group>"; };
+		78537F3125137EDB00769D68 /* MECNotifyMePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECNotifyMePresenter.swift; sourceTree = "<group>"; };
+		78537F3325137EEE00769D68 /* MECNotifyMe.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECNotifyMe.storyboard; sourceTree = "<group>"; };
+		785496F523FFD19C00F4A948 /* MECDeliveryModesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryModesCell.swift; sourceTree = "<group>"; };
+		7855678D23508D4300A4140F /* MECProductDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductDetailsViewController.swift; sourceTree = "<group>"; };
+		7855678F23508D5B00A4140F /* MECProductDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductDetailsPresenter.swift; sourceTree = "<group>"; };
+		7855679123508D7000A4140F /* MECProductDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECProductDetails.storyboard; sourceTree = "<group>"; };
+		785F0FD9240E53C500AAF88A /* MECPaymentDetailsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPaymentDetailsCollectionViewCell.swift; sourceTree = "<group>"; };
+		78608059239AB9AB0068FEAB /* MECPRXHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPRXHandler.swift; sourceTree = "<group>"; };
+		786C74A623E03D2E00DF753F /* MECAddressModelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddressModelExtensions.swift; sourceTree = "<group>"; };
+		786D6CC623C5FFBD002D4C21 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CC723C5FFBD002D4C21 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CC823C5FFBD002D4C21 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CC923C5FFBD002D4C21 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CCA23C5FFBD002D4C21 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CCB23C5FFBD002D4C21 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CCC23C5FFBD002D4C21 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CCD23C5FFBD002D4C21 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CCE23C5FFBD002D4C21 /* zh-Hant-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-HK"; path = "zh-Hant-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CCF23C5FFBD002D4C21 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD023C5FFBD002D4C21 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD123C5FFBD002D4C21 /* ca-ES */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "ca-ES"; path = "ca-ES.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CD223C5FFBD002D4C21 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CD323C5FFBD002D4C21 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD423C5FFBD002D4C21 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD523C5FFBD002D4C21 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD623C5FFBE002D4C21 /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD723C5FFBE002D4C21 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD823C5FFBE002D4C21 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CD923C5FFBE002D4C21 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CDA23C5FFBE002D4C21 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CDB23C5FFBE002D4C21 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CDC23C5FFBE002D4C21 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CDD23C5FFBE002D4C21 /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CDE23C5FFBE002D4C21 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CDF23C5FFBE002D4C21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE023C5FFBE002D4C21 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE123C5FFBE002D4C21 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE223C5FFBE002D4C21 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE323C5FFBE002D4C21 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CE423C5FFBE002D4C21 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE523C5FFBE002D4C21 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE623C5FFBE002D4C21 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		786D6CE723C5FFBE002D4C21 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE823C5FFBE002D4C21 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CE923C5FFBE002D4C21 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CEA23C5FFBE002D4C21 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CEB23C5FFBE002D4C21 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CEC23C5FFBE002D4C21 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CED23C5FFBE002D4C21 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CEE23C5FFBE002D4C21 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		786D6CEF23C5FFBE002D4C21 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7871E0D6240C0C5400F452A0 /* MECPaymentsListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPaymentsListCell.swift; sourceTree = "<group>"; };
+		787574142370566F0080CDF7 /* BazaarVoiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BazaarVoiceHandler.swift; sourceTree = "<group>"; };
+		78770A9C23EC685F00BB151B /* MECDeliveryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryDetailsPresenter.swift; sourceTree = "<group>"; };
+		7879808C2445B6E400604AE3 /* MECOrderHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderHistoryViewController.swift; sourceTree = "<group>"; };
+		7879808E2445B8A900604AE3 /* MECOrderHistory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECOrderHistory.storyboard; sourceTree = "<group>"; };
+		787980902445B8FD00604AE3 /* MECOrderHistoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderHistoryPresenter.swift; sourceTree = "<group>"; };
+		787980922445DD5900604AE3 /* MECOrderHistoryProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderHistoryProductDetailView.swift; sourceTree = "<group>"; };
+		787980942445DD6E00604AE3 /* MECOrderHistoryProductDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECOrderHistoryProductDetailView.xib; sourceTree = "<group>"; };
+		78841388242BC01D00A05D29 /* MECDataImplementation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECDataImplementation.swift; sourceTree = "<group>"; };
+		7884971A2406B44700751651 /* MECManageAddressTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECManageAddressTests.swift; sourceTree = "<group>"; };
+		7884971C2406B47B00751651 /* MECDeliveryModesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryModesTests.swift; sourceTree = "<group>"; };
+		788A978C2417F6B000A95776 /* MECCVVPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECCVVPaymentViewController.swift; sourceTree = "<group>"; };
+		788A978E2417F6E900A95776 /* MECCVVPayment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECCVVPayment.storyboard; sourceTree = "<group>"; };
+		788FCBB823A79D9700337507 /* MECProductSpecsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductSpecsHeaderView.swift; sourceTree = "<group>"; };
+		788FCBB923A79D9700337507 /* MECReviewsHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECReviewsHeaderView.swift; sourceTree = "<group>"; };
+		788FCBBA23A79D9700337507 /* MECPriceView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECPriceView.xib; sourceTree = "<group>"; };
+		788FCBBB23A79D9700337507 /* MECPriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECPriceView.swift; sourceTree = "<group>"; };
+		788FCBBC23A79D9700337507 /* MECProductSpecsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECProductSpecsHeaderView.xib; sourceTree = "<group>"; };
+		788FCBBD23A79D9700337507 /* MECReviewsHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECReviewsHeaderView.xib; sourceTree = "<group>"; };
+		788FCBBF23A79D9700337507 /* MECProductReviewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductReviewCell.swift; sourceTree = "<group>"; };
+		788FCBC023A79D9700337507 /* MECProductFeaturesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductFeaturesCell.swift; sourceTree = "<group>"; };
+		788FCBC123A79D9700337507 /* MECProductSpecsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductSpecsCell.swift; sourceTree = "<group>"; };
+		789034B323EAEA3100210F9B /* MECDeliveryDetailsStepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryDetailsStepCell.swift; sourceTree = "<group>"; };
+		789034B723EB449000210F9B /* MECManageAddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECManageAddressCell.swift; sourceTree = "<group>"; };
+		78919DE123F6A04E00B2D9BC /* MECDeliveryDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		789C58482504D13000686C26 /* MockBazaarVoiceHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockBazaarVoiceHandler.swift; sourceTree = "<group>"; };
+		789C58492504D13000686C26 /* MockProductCatalogueDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockProductCatalogueDelegate.swift; sourceTree = "<group>"; };
+		789C584A2504D13000686C26 /* MockPaginationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPaginationHelper.swift; sourceTree = "<group>"; };
+		789C584B2504D13000686C26 /* MECProductCataloguePresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductCataloguePresenterTests.swift; sourceTree = "<group>"; };
+		789C584C2504D13000686C26 /* PaginationHelperTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationHelperTests.swift; sourceTree = "<group>"; };
+		789C58502504D13000686C26 /* MECStockFilterDataProviderTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECStockFilterDataProviderTests.swift; sourceTree = "<group>"; };
+		789C58512504D13000686C26 /* MECProductFilterViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECProductFilterViewControllerTests.swift; sourceTree = "<group>"; };
+		789C58592504D1C000686C26 /* MECProductSortDataProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductSortDataProviderTests.swift; sourceTree = "<group>"; };
+		78A410B223DB33280038F19A /* MECBaseDeliveryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECBaseDeliveryDetailsPresenter.swift; sourceTree = "<group>"; };
+		78A881542424AF0E00D9B9D3 /* MECOrderSummaryPresenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECOrderSummaryPresenterTests.swift; sourceTree = "<group>"; };
+		78A9679C23D9A997005CDFED /* MECAddAddressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECAddAddressViewController.swift; sourceTree = "<group>"; };
+		78A9679D23D9A997005CDFED /* MECAddAddressPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECAddAddressPresenter.swift; sourceTree = "<group>"; };
+		78A9679F23D9A997005CDFED /* MECAddressTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECAddressTextField.swift; sourceTree = "<group>"; };
+		78A967A023D9A997005CDFED /* MECAddressFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECAddressFieldView.swift; sourceTree = "<group>"; };
+		78A967A123D9A997005CDFED /* MECAddressFieldView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MECAddressFieldView.xib; sourceTree = "<group>"; };
+		78A967A223D9A997005CDFED /* MECAddressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECAddressView.swift; sourceTree = "<group>"; };
+		78A967A323D9A997005CDFED /* MECAddAddress.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MECAddAddress.storyboard; sourceTree = "<group>"; };
+		78A967AC23D9AB2F005CDFED /* MECAddressFieldsConfigModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECAddressFieldsConfigModel.swift; sourceTree = "<group>"; };
+		78A967AE23D9BC58005CDFED /* MECAddressFieldsConfiguration.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = MECAddressFieldsConfiguration.plist; sourceTree = "<group>"; };
+		78AC3A5F2411024500030DF6 /* MECLoadingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECLoadingCollectionViewCell.swift; sourceTree = "<group>"; };
+		78AE3389238EAE51000663CC /* MECBazaarVoiceHandlerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MECBazaarVoiceHandlerTests.swift; sourceTree = "<group>"; };
+		78C32DCC23E1A1EF00789304 /* MECDeliveryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryDetailsViewController.swift; sourceTree = "<group>"; };
+		78C32DCE23E1A21200789304 /* MECDeliveryDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MECDeliveryDetails.storyboard; sourceTree = "<group>"; };
+		78CC23EE23E97E4F00F1425E /* MECDeliveryDetailsStepView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MECDeliveryDetailsStepView.xib; sourceTree = "<group>"; };
+		78CC23F023E9B74100F1425E /* MECDeliveryDetailsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECDeliveryDetailsStepView.swift; sourceTree = "<group>"; };
+		78CDE6F4242105FF00BE39D7 /* MECPaymentMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECPaymentMethodTests.swift; sourceTree = "<group>"; };
+		78D030BF2451FB2200253558 /* MECOrderHistoryPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECOrderHistoryPresenterTests.swift; sourceTree = "<group>"; };
+		78D323E623BF15CD00A41753 /* MockPRXHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockPRXHandler.swift; sourceTree = "<group>"; };
+		78D323E723BF15CD00A41753 /* MockECSService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockECSService.swift; sourceTree = "<group>"; };
+		78D323E823BF15CD00A41753 /* ServiceDiscoveryMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDiscoveryMock.swift; sourceTree = "<group>"; };
+		78D323E923BF15CD00A41753 /* MockAppInfra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockAppInfra.swift; sourceTree = "<group>"; };
+		78D323EF23BF187300A41753 /* MECLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECLaunchTests.swift; sourceTree = "<group>"; };
+		78D323F123BF188C00A41753 /* MECInterfaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECInterfaceTests.swift; sourceTree = "<group>"; };
+		78D323F523BF595200A41753 /* MECMockBannerConfigDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECMockBannerConfigDelegate.swift; sourceTree = "<group>"; };
+		78D323F923BF859F00A41753 /* MECMockLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECMockLogger.swift; sourceTree = "<group>"; };
+		78D323FB23BF85AF00A41753 /* MECMockTagger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECMockTagger.swift; sourceTree = "<group>"; };
+		78D323FD23BF892300A41753 /* MECMockUserDataInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECMockUserDataInterface.swift; sourceTree = "<group>"; };
+		78E0013723609C08002982CE /* MECProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProduct.swift; sourceTree = "<group>"; };
+		78E1599E251CB23000A09FAC /* MECNotifyMePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECNotifyMePresenterTests.swift; sourceTree = "<group>"; };
+		78E8C28B2387BED000B729B8 /* MECProductDetailsPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MECProductDetailsPresenterTests.swift; sourceTree = "<group>"; };
+		862A41BA02BFF396648F369D /* Pods_MobileEcommerceDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobileEcommerceDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D11A93F0242283180D2D67BA /* Pods-MobileEcommerceDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileEcommerceDev.release.xcconfig"; path = "Target Support Files/Pods-MobileEcommerceDev/Pods-MobileEcommerceDev.release.xcconfig"; sourceTree = "<group>"; };
+		D69A1F9A79701403674DF689 /* Pods-MobileEcommerceDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileEcommerceDev.debug.xcconfig"; path = "Target Support Files/Pods-MobileEcommerceDev/Pods-MobileEcommerceDev.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22C529072345C8C700918F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F12A695D240903AAD675372D /* Pods_MobileEcommerceDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C529102345C8C800918F44 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C529142345C8C800918F44 /* MobileEcommerceDev.framework in Frameworks */,
+				8772759EA6563B8B0B68FD6E /* Pods_MobileEcommerceTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1234EF07F2FC964E2D51FC9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				392667A91DAD1C7F1B440A72 /* Pods-MobileEcommerceTests.debug.xcconfig */,
+				7060ED6F0E0F5BA660696C73 /* Pods-MobileEcommerceTests.release.xcconfig */,
+				D69A1F9A79701403674DF689 /* Pods-MobileEcommerceDev.debug.xcconfig */,
+				D11A93F0242283180D2D67BA /* Pods-MobileEcommerceDev.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../../../../Pods;
+			sourceTree = "<group>";
+		};
+		22037B24237C2DFD0055A718 /* BannerViewContainer */ = {
+			isa = PBXGroup;
+			children = (
+				22037B27237C6EED0055A718 /* MECBannerViewContainerCell.swift */,
+				22037B28237C6EED0055A718 /* MECBannerViewContainerCell.xib */,
+			);
+			path = BannerViewContainer;
+			sourceTree = "<group>";
+		};
+		2206207C23F54F4C00A0DB08 /* ErrorHandler */ = {
+			isa = PBXGroup;
+			children = (
+				2206207E23F54F4C00A0DB08 /* MECErrorUtility.swift */,
+				2206208123F54F9300A0DB08 /* MECOAuthHandler.swift */,
+			);
+			path = ErrorHandler;
+			sourceTree = "<group>";
+		};
+		2211FC6A23C8805800218C25 /* UtilityTest */ = {
+			isa = PBXGroup;
+			children = (
+				2211FC6B23C880B300218C25 /* ServiceDiscoveryTests.swift */,
+				2211FC6D23C8BE5200218C25 /* TaggingHelperTests.swift */,
+			);
+			path = UtilityTest;
+			sourceTree = "<group>";
+		};
+		2229CD5A2431C8D200EA2703 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				2229CD5B2431C90800EA2703 /* MECSummaryVoucherDataProviderTests.swift */,
+				2229CD5D2431CF5D00EA2703 /* MECSummaryProoductDataProviderTests.swift */,
+				2229CD5F2431D1B900EA2703 /* MECAppliedVoucherDataProviderTests.swift */,
+				2229CD612431DA2800EA2703 /* MECDeliveryCostDataProviderTests.swift */,
+				2229CD632431FBB900EA2703 /* MECApplyVoucherDataProviderTests.swift */,
+				2229CD652432113800EA2703 /* MECCartProductDataProviderTests.swift */,
+				2229CD672432192300EA2703 /* MECOrderPromotionDataProviderTests.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		2229FE912350ECE100600334 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				782F48B523DF268600676D15 /* CommonViews */,
+				2229FE922350ECF500600334 /* MECBaseViewController.swift */,
+				22047359238C3DB100FF059E /* MECBasePresenter.swift */,
+				225ED90B2358AD48008C8DD6 /* MECProductCellUpdater.swift */,
+				2206204D23F2CD9600A0DB08 /* MECDataBus.swift */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
+		222AB610240E212100D2C2DF /* Oauth */ = {
+			isa = PBXGroup;
+			children = (
+				222AB611240E214800D2C2DF /* MECOAuthHandlerTests.swift */,
+			);
+			path = Oauth;
+			sourceTree = "<group>";
+		};
+		222AB613240E55B800D2C2DF /* OrderSummary */ = {
+			isa = PBXGroup;
+			children = (
+				22FB6EB42410F32C004753D1 /* MECOrderSummaryPresenter.swift */,
+				22FB6EB62410F3E6004753D1 /* MECOrderSummaryViewController.swift */,
+				222AB615240E55B800D2C2DF /* MECCheckout.storyboard */,
+				222AB616240E55B800D2C2DF /* SummarySections */,
+			);
+			path = OrderSummary;
+			sourceTree = "<group>";
+		};
+		222AB616240E55B800D2C2DF /* SummarySections */ = {
+			isa = PBXGroup;
+			children = (
+				228E5EA024372B8D009F9096 /* StepDetail */,
+				22E22A6A24176087009BB1A1 /* VoucherDetails */,
+				22FB6EE62411716B004753D1 /* PaymentDetails */,
+				22FB6ED52410F507004753D1 /* Products */,
+				22FB6EB82410F44E004753D1 /* DeliveryDetalis */,
+			);
+			path = SummarySections;
+			sourceTree = "<group>";
+		};
+		22547B9F246147C700DF0444 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				22CF3631244A089100042308 /* MECOrderDetailProductDataProvider.swift */,
+				22547BA02461481C00DF0444 /* MECOrderDetailProductCell.swift */,
+				22547BA12461481C00DF0444 /* MECOrderDetailProductCell.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		22547BA424614BB000DF0444 /* CancelOrder */ = {
+			isa = PBXGroup;
+			children = (
+				22547BA524614BCD00DF0444 /* MECCancelOrderViewController.swift */,
+			);
+			path = CancelOrder;
+			sourceTree = "<group>";
+		};
+		22547BC82462A95900DF0444 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				22547BC92462A96500DF0444 /* MECOrderDetailShippingDataProviderTests.swift */,
+				22547BCB2463BFBF00DF0444 /* MECOrderDetailDeliveryModeDataProviderTests.swift */,
+				22547BCD2463C1C900DF0444 /* MECOrderDetailPaymentDataProviderTests.swift */,
+				22547BCF2463DCAC00DF0444 /* MECOrderDetailProductDataProviderTests.swift */,
+				22547BD12463EC8C00DF0444 /* MECOrderDetailContactProviderTests.swift */,
+				22547BD32464044B00DF0444 /* MECOrderDetailSummaryVoucherDataProviderTests.swift */,
+				22547BD5246408B400DF0444 /* MECOrderDetailDeliveryCostDataProviderTests.swift */,
+				22547BD724640D4E00DF0444 /* MECOrderDetailVoucherDataProviderTests.swift */,
+				22547BD92464131600DF0444 /* MECOrderDetailPromotionDataProviderTests.swift */,
+				22547BDB24641BE700DF0444 /* MECOrderDetailPresenterTests.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		225ED8FC2354C20A008C8DD6 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				225ED8FD2354C3D6008C8DD6 /* MECUtilities+Extensions.swift */,
+				22F1DDE424F2385400A89F80 /* ECSPILProductFilter+Extension.swift */,
+				225ED90D2358DE46008C8DD6 /* MECUI+Extenstions.swift */,
+				22F53E1223D5FC6F001F988A /* MECInitializer.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		226138DD23FED9E500FF14CF /* CartSections */ = {
+			isa = PBXGroup;
+			children = (
+				226138F523FFA78100FF14CF /* SummaryVoucher */,
+				226138DE23FED9E500FF14CF /* SummaryProduct */,
+				226138DF23FED9E500FF14CF /* AppliedVoucher */,
+				226138E023FED9E500FF14CF /* ApplyVoucher */,
+				226138E123FED9E500FF14CF /* SummaryShipping */,
+				226138E223FED9E500FF14CF /* CartProduct */,
+				226138E423FED9E500FF14CF /* SummaryOrderPromotion */,
+				226138E523FEDA0C00FF14CF /* MECCartTableDataProvider.swift */,
+			);
+			path = CartSections;
+			sourceTree = "<group>";
+		};
+		226138DE23FED9E500FF14CF /* SummaryProduct */ = {
+			isa = PBXGroup;
+			children = (
+				226138EF23FEDB4200FF14CF /* MECSummaryProoductDataProvider.swift */,
+			);
+			path = SummaryProduct;
+			sourceTree = "<group>";
+		};
+		226138DF23FED9E500FF14CF /* AppliedVoucher */ = {
+			isa = PBXGroup;
+			children = (
+				226138FC2403AD6C00FF14CF /* MECAppliedVoucherCell.swift */,
+				226138FD2403AD6C00FF14CF /* MECAppliedVoucherCell.xib */,
+				226138ED23FEDB1C00FF14CF /* MECAppliedVoucherDataProvider.swift */,
+			);
+			path = AppliedVoucher;
+			sourceTree = "<group>";
+		};
+		226138E023FED9E500FF14CF /* ApplyVoucher */ = {
+			isa = PBXGroup;
+			children = (
+				226138F82403AD5F00FF14CF /* MECApplyVoucherCell.swift */,
+				226138F92403AD5F00FF14CF /* MECApplyVoucherCell.xib */,
+				226138EB23FEDAFF00FF14CF /* MECApplyVoucherDataProvider.swift */,
+			);
+			path = ApplyVoucher;
+			sourceTree = "<group>";
+		};
+		226138E123FED9E500FF14CF /* SummaryShipping */ = {
+			isa = PBXGroup;
+			children = (
+				226138E923FEDAE500FF14CF /* MECDeliveryCostDataProvider.swift */,
+			);
+			path = SummaryShipping;
+			sourceTree = "<group>";
+		};
+		226138E223FED9E500FF14CF /* CartProduct */ = {
+			isa = PBXGroup;
+			children = (
+				226139012403AD7800FF14CF /* MECShoppingCartProductCell.swift */,
+				226139002403AD7800FF14CF /* MECShoppingCartProductCell.xib */,
+				226138E723FEDA9E00FF14CF /* MECCartProductDataProvider.swift */,
+			);
+			path = CartProduct;
+			sourceTree = "<group>";
+		};
+		226138E423FED9E500FF14CF /* SummaryOrderPromotion */ = {
+			isa = PBXGroup;
+			children = (
+				226138F323FEDBC100FF14CF /* MECOrderPromotionDataProvider.swift */,
+			);
+			path = SummaryOrderPromotion;
+			sourceTree = "<group>";
+		};
+		226138F523FFA78100FF14CF /* SummaryVoucher */ = {
+			isa = PBXGroup;
+			children = (
+				226138F623FFA7A900FF14CF /* MECSummaryVoucherDataProvider.swift */,
+			);
+			path = SummaryVoucher;
+			sourceTree = "<group>";
+		};
+		226139572407860A00FF14CF /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				2229CD5A2431C8D200EA2703 /* Sections */,
+				226139582407863800FF14CF /* Mocks */,
+				226139592407867400FF14CF /* MECShoppingCartPresenterTests.swift */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		226139582407863800FF14CF /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				2261395B240786DC00FF14CF /* MockDataBus.swift */,
+				222AB60C240E15CB00D2C2DF /* MockShoppingCartDelegate.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		2281C12F24EAE9EA00968063 /* ProductFilter */ = {
+			isa = PBXGroup;
+			children = (
+				7804E1C224FF81630061211E /* SortSection */,
+				2281C13424EAEAF800968063 /* FilterSections */,
+				2281C13024EAEA2500968063 /* MECProductFilterViewController.swift */,
+				2281C13224EAEA6E00968063 /* MECProductFilter.storyboard */,
+			);
+			path = ProductFilter;
+			sourceTree = "<group>";
+		};
+		2281C13424EAEAF800968063 /* FilterSections */ = {
+			isa = PBXGroup;
+			children = (
+				2281C13524EAEB3D00968063 /* MECStockFilterDataProvider.swift */,
+				2281C13724EAEBB100968063 /* MECStockFilterCell.swift */,
+				2281C13824EAEBB100968063 /* MECStockFilterCell.xib */,
+			);
+			path = FilterSections;
+			sourceTree = "<group>";
+		};
+		2287C5A1235F194100FB1AF2 /* GridView */ = {
+			isa = PBXGroup;
+			children = (
+				2287C5A4235F220900FB1AF2 /* MECProductGridCell.swift */,
+				2287C5A5235F220900FB1AF2 /* MECProductGridCell.xib */,
+			);
+			path = GridView;
+			sourceTree = "<group>";
+		};
+		2287C5AC23616B9E00FB1AF2 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2287C5AD23616B9E00FB1AF2 /* MECPaginationHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		228E5E972433B7C7009F9096 /* Sections */ = {
+			isa = PBXGroup;
+			children = (
+				228E5E982433B7DB009F9096 /* MECCheckoutVoucherDataProviderTests.swift */,
+				228E5E9A2433BC7E009F9096 /* MECCheckoutPaymentDataProviderTests.swift */,
+				228E5E9C2433BE43009F9096 /* MECCheckoutProductDataProviderTests.swift */,
+				228E5E9E2433C0FA009F9096 /* MECCheckoutShippingDataProviderTests.swift */,
+			);
+			path = Sections;
+			sourceTree = "<group>";
+		};
+		228E5EA024372B8D009F9096 /* StepDetail */ = {
+			isa = PBXGroup;
+			children = (
+				228E5EA724372C22009F9096 /* MECCheckoutStepProvider.swift */,
+				228E5EA324372C11009F9096 /* MECStepDetail.swift */,
+				228E5EA424372C11009F9096 /* MECStepDetail.xib */,
+			);
+			path = StepDetail;
+			sourceTree = "<group>";
+		};
+		2292DD6E23CF33DF00558877 /* RetailerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2292DD6F23CF33DF00558877 /* Mock */,
+				2292DD7023CF340A00558877 /* RetailerViewControllerTests.swift */,
+			);
+			path = RetailerTests;
+			sourceTree = "<group>";
+		};
+		2292DD6F23CF33DF00558877 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		22A7942B24419EFF004E90B8 /* PaymentConfirmation */ = {
+			isa = PBXGroup;
+			children = (
+				22A7942C24419F34004E90B8 /* MECPaymentConfirmationViewControllerTests.swift */,
+			);
+			path = PaymentConfirmation;
+			sourceTree = "<group>";
+		};
+		22A7942E2441C9D7004E90B8 /* WorldPay */ = {
+			isa = PBXGroup;
+			children = (
+				22A7942F2441C9E8004E90B8 /* MECWorldPayViewControllerTests.swift */,
+				22A794312441CAB0004E90B8 /* MockWebView.swift */,
+				22A794352441D02B004E90B8 /* MockNavigationAction.swift */,
+				22A794372441D97B004E90B8 /* FlowCompletionDelegate.swift */,
+			);
+			path = WorldPay;
+			sourceTree = "<group>";
+		};
+		22C29696234F592F0004BDC2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				786D6CC423C5FFBD002D4C21 /* Localisation */,
+				783D4DA2237EB1830089A06D /* CustomFonts */,
+				2229FE9A2351B79100600334 /* MECCustomActivityProgressView.xib */,
+				78A967AE23D9BC58005CDFED /* MECAddressFieldsConfiguration.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		22C29697234F592F0004BDC2 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				787980872445B68700604AE3 /* OrderHistory */,
+				788A978B2417F5B200A95776 /* Payment */,
+				222AB613240E55B800D2C2DF /* OrderSummary */,
+				78C32DCB23E1A1D400789304 /* DeliveryDetails */,
+				78A9679A23D9A997005CDFED /* Address */,
+				22E9275D2380349C00BC8081 /* ShoppingCart */,
+				2229FE912350ECE100600334 /* BaseView */,
+				22C29698234F592F0004BDC2 /* ProductCatalogue */,
+				7855678C23508D0D00A4140F /* ProductDetails */,
+				7831D25623771EB000CE0B39 /* ProductRetailers */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		22C29698234F592F0004BDC2 /* ProductCatalogue */ = {
+			isa = PBXGroup;
+			children = (
+				2281C12F24EAE9EA00968063 /* ProductFilter */,
+				22C296A9234F89340004BDC2 /* View */,
+				22C2969B234F599B0004BDC2 /* MECProductCatalogueViewController.swift */,
+				22C2969D234F59C60004BDC2 /* MECProductCataloguePresenter.swift */,
+				22C296A7234F6EB60004BDC2 /* MECProductCatalogue.storyboard */,
+			);
+			path = ProductCatalogue;
+			sourceTree = "<group>";
+		};
+		22C2969A234F592F0004BDC2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2206207C23F54F4C00A0DB08 /* ErrorHandler */,
+				22D2624D23A7593E009C72C5 /* Analytics */,
+				787574132370566F0080CDF7 /* BazaarVoice */,
+				225ED8FC2354C20A008C8DD6 /* Categories */,
+				2287C5AC23616B9E00FB1AF2 /* Helpers */,
+				22C296A5234F62080004BDC2 /* MECAppStoryboard.swift */,
+				2229FE982350EEB900600334 /* MECConfiguration.swift */,
+				22C2969F234F5D920004BDC2 /* MECConstants.swift */,
+				22C296A3234F5E9F0004BDC2 /* MECLocalizedString.swift */,
+				22C296A1234F5DE40004BDC2 /* MECUtility.swift */,
+				22B44CC523791AAD00AF054D /* MECServiceDiscoveryUtility.swift */,
+				783D4DA5237EB3B80089A06D /* MECIconFont.swift */,
+				78608059239AB9AB0068FEAB /* MECPRXHandler.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		22C296A9234F89340004BDC2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22037B24237C2DFD0055A718 /* BannerViewContainer */,
+				2287C5A1235F194100FB1AF2 /* GridView */,
+				22C296AA234F89690004BDC2 /* MECProductCell.swift */,
+				225ED8FF2355814E008C8DD6 /* MECTopBarView.swift */,
+				22C296AC234F89760004BDC2 /* MECProductListCell.swift */,
+				225ED907235827D2008C8DD6 /* MECListViewLayout.swift */,
+				2287C5A2235F1B1600FB1AF2 /* MECGridViewLayout.swift */,
+				22037B18237B1AEF0055A718 /* MECZeroSearchResultView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22C529002345C8C700918F44 = {
+			isa = PBXGroup;
+			children = (
+				22C5290C2345C8C700918F44 /* MobileEcommerce */,
+				22C529172345C8C800918F44 /* MobileEcommerceTests */,
+				22C5290B2345C8C700918F44 /* Products */,
+				1234EF07F2FC964E2D51FC9B /* Pods */,
+				A720119A0091C7BF31D32681 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22C5290B2345C8C700918F44 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22C5290A2345C8C700918F44 /* MobileEcommerceDev.framework */,
+				22C529132345C8C800918F44 /* MobileEcommerceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22C5290C2345C8C700918F44 /* MobileEcommerce */ = {
+			isa = PBXGroup;
+			children = (
+				780876D223BE1B950009A129 /* UAPPCompliant */,
+				78150CF023526E3C0038EC9F /* Images */,
+				22C5290E2345C8C700918F44 /* Info.plist */,
+				22C5290D2345C8C700918F44 /* MobileEcommerce.h */,
+				78E0013623609BF3002982CE /* Models */,
+				22C29696234F592F0004BDC2 /* Resources */,
+				22C29697234F592F0004BDC2 /* Screens */,
+				22C2969A234F592F0004BDC2 /* Utilities */,
+			);
+			path = MobileEcommerce;
+			sourceTree = "<group>";
+		};
+		22C529172345C8C800918F44 /* MobileEcommerceTests */ = {
+			isa = PBXGroup;
+			children = (
+				789C58462504D13000686C26 /* ProductCatalogue */,
+				78D030BB2451FACA00253558 /* OrderHistoryTests */,
+				22A7942E2441C9D7004E90B8 /* WorldPay */,
+				22A7942B24419EFF004E90B8 /* PaymentConfirmation */,
+				78A881532424AF0E00D9B9D3 /* OrderPlacementTests */,
+				222AB610240E212100D2C2DF /* Oauth */,
+				226139572407860A00FF14CF /* ShoppingCart */,
+				7805105923F438B000AC973C /* DeliveryDetailsTests */,
+				2292DD6E23CF33DF00558877 /* RetailerTests */,
+				2211FC6A23C8805800218C25 /* UtilityTest */,
+				78D323EE23BF15E500A41753 /* UAPPTests */,
+				78D323E523BF15CD00A41753 /* CommonMocks */,
+				22C5291A2345C8C800918F44 /* Info.plist */,
+				22C529182345C8C800918F44 /* MobileEcommerceTests.swift */,
+				78E8C2892387BE9300B729B8 /* ProductDetails */,
+			);
+			path = MobileEcommerceTests;
+			sourceTree = "<group>";
+		};
+		22CF35D2244A03F600042308 /* OrderHistoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				22CF35FF244A047500042308 /* HistoryDetailSections */,
+				22CF35D3244A041B00042308 /* MECOrderDetailViewController.swift */,
+				22CF362B244A052F00042308 /* MECOrderDetailPresenter.swift */,
+				22CF3629244A050F00042308 /* MECOrderDetail.storyboard */,
+			);
+			path = OrderHistoryDetail;
+			sourceTree = "<group>";
+		};
+		22CF35FF244A047500042308 /* HistoryDetailSections */ = {
+			isa = PBXGroup;
+			children = (
+				22547B9F246147C700DF0444 /* Product */,
+				22CF3635244A090500042308 /* Contactus */,
+				22CF362D244A081C00042308 /* MECOrderDetailShippingDataProvider.swift */,
+				22CF362F244A087600042308 /* MECOrderDetailPaymentDataProvider.swift */,
+				22CF3633244A08B400042308 /* MECOrderDetailVoucherDataProvider.swift */,
+				22CF363E244ABFBB00042308 /* MECOrderDetailPromotionDataProvider.swift */,
+				22CF3640244ACA2F00042308 /* MECOrderDetailDeliveryCostDataProvider.swift */,
+				22CF3642244ACA7300042308 /* MECOrderDetailSummaryVoucherDataProvider.swift */,
+			);
+			path = HistoryDetailSections;
+			sourceTree = "<group>";
+		};
+		22CF3635244A090500042308 /* Contactus */ = {
+			isa = PBXGroup;
+			children = (
+				22CF3636244A094A00042308 /* MECOrderDetailContactProvider.swift */,
+				22CF363A244A099800042308 /* MECOrderDetailContactCell.swift */,
+				22CF363B244A099800042308 /* MECOrderDetailContactCell.xib */,
+			);
+			path = Contactus;
+			sourceTree = "<group>";
+		};
+		22D2624D23A7593E009C72C5 /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				22D2624E23A759A9009C72C5 /* MECTagging.swift */,
+				22D2625023A89599009C72C5 /* MECAnalyticsConstants.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		22E22A6A24176087009BB1A1 /* VoucherDetails */ = {
+			isa = PBXGroup;
+			children = (
+				22E22A6C24176087009BB1A1 /* MECCheckoutVoucherDataProvider.swift */,
+				22E22A6B24176087009BB1A1 /* MECCheckoutVoucherCell.swift */,
+				22E22A6D24176087009BB1A1 /* MECCheckoutVoucherCell.xib */,
+			);
+			path = VoucherDetails;
+			sourceTree = "<group>";
+		};
+		22E9275D2380349C00BC8081 /* ShoppingCart */ = {
+			isa = PBXGroup;
+			children = (
+				226138DD23FED9E500FF14CF /* CartSections */,
+				22E9276823814D8A00BC8081 /* View */,
+				22E927622380373700BC8081 /* MECShoppingCartViewController.swift */,
+				22E92766238037C500BC8081 /* MECShoppingCartPresenter.swift */,
+				22E9275E238034E900BC8081 /* MECShoppingCart.storyboard */,
+			);
+			path = ShoppingCart;
+			sourceTree = "<group>";
+		};
+		22E9276823814D8A00BC8081 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				226138A523FD613A00FF14CF /* MECSummaryCell.swift */,
+				226138A623FD613A00FF14CF /* MECSummaryCell.xib */,
+				2279A2372387038500BD3E2D /* MECNoCartView.swift */,
+				22DDD38A23DAA8D400450FA9 /* MECShoppingCartBottomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		22FB6EB82410F44E004753D1 /* DeliveryDetalis */ = {
+			isa = PBXGroup;
+			children = (
+				22FB6EB92410F44E004753D1 /* Mode */,
+				22FB6EBC2410F44E004753D1 /* Address */,
+			);
+			path = DeliveryDetalis;
+			sourceTree = "<group>";
+		};
+		22FB6EB92410F44E004753D1 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				22FB6EBA2410F44E004753D1 /* MECCheckoutDeliveryModeCell.xib */,
+				22FB6EBB2410F44E004753D1 /* MECCheckoutDeliveryModeCell.swift */,
+			);
+			path = Mode;
+			sourceTree = "<group>";
+		};
+		22FB6EBC2410F44E004753D1 /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				22FB6EBD2410F44E004753D1 /* MECCheckoutShippingCell.swift */,
+				22FB6EBE2410F44E004753D1 /* MECCheckoutShippingCell.xib */,
+				22FB6EE12410F86D004753D1 /* MECCheckoutShippingDataProvider.swift */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		22FB6ED52410F507004753D1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22FB6ED62410F507004753D1 /* MECCheckoutProductCell.swift */,
+				22FB6ED72410F507004753D1 /* MECCheckoutProductCell.xib */,
+				22FB6EF3241171DE004753D1 /* MECCheckoutProductDataProvider.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		22FB6EE62411716B004753D1 /* PaymentDetails */ = {
+			isa = PBXGroup;
+			children = (
+				22E22A672417607B009BB1A1 /* MECCheckoutPaymentCell.swift */,
+				22E22A662417607A009BB1A1 /* MECCheckoutPaymentCell.xib */,
+				22FB6EF1241171A7004753D1 /* MECCheckoutPaymentDataProvider.swift */,
+			);
+			path = PaymentDetails;
+			sourceTree = "<group>";
+		};
+		7804E1C224FF81630061211E /* SortSection */ = {
+			isa = PBXGroup;
+			children = (
+				7804E1C324FF819B0061211E /* MECProductSortDataProvider.swift */,
+				7804E1C924FF8E690061211E /* MECProductSortCell.swift */,
+				7804E1CA24FF8E690061211E /* MECProductSortCell.xib */,
+			);
+			path = SortSection;
+			sourceTree = "<group>";
+		};
+		7805105923F438B000AC973C /* DeliveryDetailsTests */ = {
+			isa = PBXGroup;
+			children = (
+				78919DE023F69E1A00B2D9BC /* DeliveryTests */,
+				7805105A23F438B000AC973C /* AddressTests */,
+			);
+			path = DeliveryDetailsTests;
+			sourceTree = "<group>";
+		};
+		7805105A23F438B000AC973C /* AddressTests */ = {
+			isa = PBXGroup;
+			children = (
+				7805105B23F439FD00AC973C /* MECAddAddressTests.swift */,
+				7884971A2406B44700751651 /* MECManageAddressTests.swift */,
+			);
+			path = AddressTests;
+			sourceTree = "<group>";
+		};
+		780876D223BE1B950009A129 /* UAPPCompliant */ = {
+			isa = PBXGroup;
+			children = (
+				780876D323BE1B950009A129 /* UAPPClasses */,
+				780876D923BE1B950009A129 /* UAPPHelperClasses */,
+			);
+			path = UAPPCompliant;
+			sourceTree = "<group>";
+		};
+		780876D323BE1B950009A129 /* UAPPClasses */ = {
+			isa = PBXGroup;
+			children = (
+				78841388242BC01D00A05D29 /* MECDataImplementation.swift */,
+				780876E123BE1F700009A129 /* MECLaunchInput.swift */,
+				780876D423BE1B950009A129 /* MECFlowConfiguration.swift */,
+				780876D523BE1B950009A129 /* MECInterface.swift */,
+				780876D623BE1B950009A129 /* MECSettings.swift */,
+				780876D723BE1B950009A129 /* MECDependencies.swift */,
+			);
+			path = UAPPClasses;
+			sourceTree = "<group>";
+		};
+		780876D923BE1B950009A129 /* UAPPHelperClasses */ = {
+			isa = PBXGroup;
+			children = (
+				780876E323BE1F780009A129 /* MECLauncher.swift */,
+			);
+			path = UAPPHelperClasses;
+			sourceTree = "<group>";
+		};
+		780C288923AA84220061A067 /* TableManagers */ = {
+			isa = PBXGroup;
+			children = (
+				780C288C23AA854B0061A067 /* MECProductSpecsTableViewManager.swift */,
+				780C288E23AA8A100061A067 /* MECProductFeaturesTableViewManager.swift */,
+				780C289023AA8A1E0061A067 /* MECProductReviewsTableViewManager.swift */,
+				78529F6823AA8EAE00F204AE /* MECProductDetailsBaseTableViewManager.swift */,
+			);
+			path = TableManagers;
+			sourceTree = "<group>";
+		};
+		78150CF023526E3C0038EC9F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				78150CF123526E3C0038EC9F /* MECImages.xcassets */,
+			);
+			name = Images;
+			path = Resources/Images;
+			sourceTree = "<group>";
+		};
+		782F48B523DF268600676D15 /* CommonViews */ = {
+			isa = PBXGroup;
+			children = (
+				782F48B623DF268600676D15 /* LoadingCell */,
+				782F48B923DF268600676D15 /* PopoverController */,
+			);
+			path = CommonViews;
+			sourceTree = "<group>";
+		};
+		782F48B623DF268600676D15 /* LoadingCell */ = {
+			isa = PBXGroup;
+			children = (
+				782F48B723DF268600676D15 /* MECLoadingCell.xib */,
+				782F48B823DF268600676D15 /* MECLoadingCell.swift */,
+			);
+			path = LoadingCell;
+			sourceTree = "<group>";
+		};
+		782F48B923DF268600676D15 /* PopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				782F48BA23DF268600676D15 /* MECPopoverViewController.swift */,
+				782F48BB23DF268600676D15 /* MECPopover.storyboard */,
+				782F48C023DF26A600676D15 /* MECPopoverTableViewCell.swift */,
+			);
+			path = PopoverController;
+			sourceTree = "<group>";
+		};
+		7831D25623771EB000CE0B39 /* ProductRetailers */ = {
+			isa = PBXGroup;
+			children = (
+				7831D25723771F1900CE0B39 /* Views */,
+				7831D25823771F4C00CE0B39 /* MECProductRetailersViewController.swift */,
+				7831D25A23771FDD00CE0B39 /* MECProductRetailers.storyboard */,
+			);
+			path = ProductRetailers;
+			sourceTree = "<group>";
+		};
+		7831D25723771F1900CE0B39 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7831D25C2377203200CE0B39 /* MECProductRetailersCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		783D4DA2237EB1830089A06D /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				783D4DA3237EB1830089A06D /* mec_iconfont.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		784D33A323F994F8000CF65F /* ManageAddress */ = {
+			isa = PBXGroup;
+			children = (
+				784D33A823F996E9000CF65F /* Views */,
+				784D33A423F99518000CF65F /* MECManageAddressViewController.swift */,
+				784D33A623F99543000CF65F /* MECManageAddress.storyboard */,
+				781E080E23FAD0220018F15A /* MECManageAddressPresenter.swift */,
+			);
+			path = ManageAddress;
+			sourceTree = "<group>";
+		};
+		784D33A823F996E9000CF65F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				784D33A923F99722000CF65F /* MECAddressDetailsCollectionViewCell.swift */,
+				781E081023FAD5460018F15A /* MECAddAddressCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78537F2E25137E6900769D68 /* NotifyMe */ = {
+			isa = PBXGroup;
+			children = (
+				78537F2F25137EC100769D68 /* MECNotifyMeViewController.swift */,
+				78537F3125137EDB00769D68 /* MECNotifyMePresenter.swift */,
+				78537F3325137EEE00769D68 /* MECNotifyMe.storyboard */,
+			);
+			path = NotifyMe;
+			sourceTree = "<group>";
+		};
+		7855678C23508D0D00A4140F /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				78537F2E25137E6900769D68 /* NotifyMe */,
+				780C288923AA84220061A067 /* TableManagers */,
+				788FCBB623A79D9700337507 /* Views */,
+				7855678D23508D4300A4140F /* MECProductDetailsViewController.swift */,
+				7855678F23508D5B00A4140F /* MECProductDetailsPresenter.swift */,
+				7855679123508D7000A4140F /* MECProductDetails.storyboard */,
+				78150CEC23526B5B0038EC9F /* MECProductImageViewController.swift */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		786D6CC423C5FFBD002D4C21 /* Localisation */ = {
+			isa = PBXGroup;
+			children = (
+				786D6CC523C5FFBD002D4C21 /* Localizable.strings */,
+			);
+			path = Localisation;
+			sourceTree = "<group>";
+		};
+		787574132370566F0080CDF7 /* BazaarVoice */ = {
+			isa = PBXGroup;
+			children = (
+				787574142370566F0080CDF7 /* BazaarVoiceHandler.swift */,
+			);
+			path = BazaarVoice;
+			sourceTree = "<group>";
+		};
+		787980872445B68700604AE3 /* OrderHistory */ = {
+			isa = PBXGroup;
+			children = (
+				22547BA424614BB000DF0444 /* CancelOrder */,
+				22CF35D2244A03F600042308 /* OrderHistoryDetail */,
+				787980882445B68700604AE3 /* OrderHistoryList */,
+				7879808B2445B68700604AE3 /* Common */,
+			);
+			path = OrderHistory;
+			sourceTree = "<group>";
+		};
+		787980882445B68700604AE3 /* OrderHistoryList */ = {
+			isa = PBXGroup;
+			children = (
+				787980892445B68700604AE3 /* Views */,
+				7879808C2445B6E400604AE3 /* MECOrderHistoryViewController.swift */,
+				7879808E2445B8A900604AE3 /* MECOrderHistory.storyboard */,
+				787980902445B8FD00604AE3 /* MECOrderHistoryPresenter.swift */,
+			);
+			path = OrderHistoryList;
+			sourceTree = "<group>";
+		};
+		787980892445B68700604AE3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				787980922445DD5900604AE3 /* MECOrderHistoryProductDetailView.swift */,
+				787980942445DD6E00604AE3 /* MECOrderHistoryProductDetailView.xib */,
+				78068B7F2446197A0026B1EA /* MECOrderHistoryProductDetailCell.swift */,
+				7836B472244C444100B28727 /* MECNoOrderDetailView.swift */,
+				7836B474244C445A00B28727 /* MECNoOrderDetailView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7879808B2445B68700604AE3 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		788A978B2417F5B200A95776 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				788A978C2417F6B000A95776 /* MECCVVPaymentViewController.swift */,
+				788A978E2417F6E900A95776 /* MECCVVPayment.storyboard */,
+				78063E6F241B551A00B9C527 /* MECPaymentConfirmationViewController.swift */,
+				78063E71241B553B00B9C527 /* MECPaymentConfirmation.storyboard */,
+				22BDE3ED2423C12100FFF8B7 /* MECWorldPayViewController.swift */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		788FCBB623A79D9700337507 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				788FCBB723A79D9700337507 /* CustomView */,
+				788FCBBE23A79D9700337507 /* CustomCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		788FCBB723A79D9700337507 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				788FCBB823A79D9700337507 /* MECProductSpecsHeaderView.swift */,
+				788FCBB923A79D9700337507 /* MECReviewsHeaderView.swift */,
+				788FCBBA23A79D9700337507 /* MECPriceView.xib */,
+				788FCBBB23A79D9700337507 /* MECPriceView.swift */,
+				788FCBBC23A79D9700337507 /* MECProductSpecsHeaderView.xib */,
+				788FCBBD23A79D9700337507 /* MECReviewsHeaderView.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
+		788FCBBE23A79D9700337507 /* CustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				788FCBBF23A79D9700337507 /* MECProductReviewCell.swift */,
+				788FCBC023A79D9700337507 /* MECProductFeaturesCell.swift */,
+				788FCBC123A79D9700337507 /* MECProductSpecsCell.swift */,
+			);
+			path = CustomCell;
+			sourceTree = "<group>";
+		};
+		78919DE023F69E1A00B2D9BC /* DeliveryTests */ = {
+			isa = PBXGroup;
+			children = (
+				78919DE123F6A04E00B2D9BC /* MECDeliveryDetailsPresenterTests.swift */,
+				7884971C2406B47B00751651 /* MECDeliveryModesTests.swift */,
+				78CDE6F4242105FF00BE39D7 /* MECPaymentMethodTests.swift */,
+			);
+			path = DeliveryTests;
+			sourceTree = "<group>";
+		};
+		789C58462504D13000686C26 /* ProductCatalogue */ = {
+			isa = PBXGroup;
+			children = (
+				789C58472504D13000686C26 /* MockClass */,
+				789C584B2504D13000686C26 /* MECProductCataloguePresenterTests.swift */,
+				789C584C2504D13000686C26 /* PaginationHelperTests.swift */,
+				789C584D2504D13000686C26 /* ProductFilters */,
+			);
+			path = ProductCatalogue;
+			sourceTree = "<group>";
+		};
+		789C58472504D13000686C26 /* MockClass */ = {
+			isa = PBXGroup;
+			children = (
+				789C58482504D13000686C26 /* MockBazaarVoiceHandler.swift */,
+				789C58492504D13000686C26 /* MockProductCatalogueDelegate.swift */,
+				789C584A2504D13000686C26 /* MockPaginationHelper.swift */,
+			);
+			path = MockClass;
+			sourceTree = "<group>";
+		};
+		789C584D2504D13000686C26 /* ProductFilters */ = {
+			isa = PBXGroup;
+			children = (
+				789C584E2504D13000686C26 /* Sort */,
+				789C584F2504D13000686C26 /* Filter */,
+			);
+			path = ProductFilters;
+			sourceTree = "<group>";
+		};
+		789C584E2504D13000686C26 /* Sort */ = {
+			isa = PBXGroup;
+			children = (
+				789C58592504D1C000686C26 /* MECProductSortDataProviderTests.swift */,
+			);
+			path = Sort;
+			sourceTree = "<group>";
+		};
+		789C584F2504D13000686C26 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				789C58502504D13000686C26 /* MECStockFilterDataProviderTests.swift */,
+				789C58512504D13000686C26 /* MECProductFilterViewControllerTests.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		78A881532424AF0E00D9B9D3 /* OrderPlacementTests */ = {
+			isa = PBXGroup;
+			children = (
+				78A881542424AF0E00D9B9D3 /* MECOrderSummaryPresenterTests.swift */,
+				228E5E972433B7C7009F9096 /* Sections */,
+			);
+			path = OrderPlacementTests;
+			sourceTree = "<group>";
+		};
+		78A9679A23D9A997005CDFED /* Address */ = {
+			isa = PBXGroup;
+			children = (
+				784D33A323F994F8000CF65F /* ManageAddress */,
+				78E943F323DCB77900302E72 /* AddressValidators */,
+				78A9679B23D9A997005CDFED /* AddAddress */,
+				78A967A423D9A997005CDFED /* Common */,
+			);
+			path = Address;
+			sourceTree = "<group>";
+		};
+		78A9679B23D9A997005CDFED /* AddAddress */ = {
+			isa = PBXGroup;
+			children = (
+				78A9679C23D9A997005CDFED /* MECAddAddressViewController.swift */,
+				78A9679D23D9A997005CDFED /* MECAddAddressPresenter.swift */,
+				78A9679E23D9A997005CDFED /* Views */,
+				78A967A323D9A997005CDFED /* MECAddAddress.storyboard */,
+			);
+			path = AddAddress;
+			sourceTree = "<group>";
+		};
+		78A9679E23D9A997005CDFED /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78A9679F23D9A997005CDFED /* MECAddressTextField.swift */,
+				78A967A023D9A997005CDFED /* MECAddressFieldView.swift */,
+				78A967A123D9A997005CDFED /* MECAddressFieldView.xib */,
+				78A967A223D9A997005CDFED /* MECAddressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78A967A423D9A997005CDFED /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				78A967AC23D9AB2F005CDFED /* MECAddressFieldsConfigModel.swift */,
+				78A410B223DB33280038F19A /* MECBaseDeliveryDetailsPresenter.swift */,
+				786C74A623E03D2E00DF753F /* MECAddressModelExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		78C32DCB23E1A1D400789304 /* DeliveryDetails */ = {
+			isa = PBXGroup;
+			children = (
+				78CC23EC23E94DD800F1425E /* Common */,
+				78C32DCC23E1A1EF00789304 /* MECDeliveryDetailsViewController.swift */,
+				78C32DCE23E1A21200789304 /* MECDeliveryDetails.storyboard */,
+				78770A9C23EC685F00BB151B /* MECDeliveryDetailsPresenter.swift */,
+			);
+			path = DeliveryDetails;
+			sourceTree = "<group>";
+		};
+		78CC23EC23E94DD800F1425E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				78CC23ED23E97DA500F1425E /* Views */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		78CC23ED23E97DA500F1425E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				78CC23EE23E97E4F00F1425E /* MECDeliveryDetailsStepView.xib */,
+				78CC23F023E9B74100F1425E /* MECDeliveryDetailsStepView.swift */,
+				789034B323EAEA3100210F9B /* MECDeliveryDetailsStepCell.swift */,
+				789034B723EB449000210F9B /* MECManageAddressCell.swift */,
+				780AD80123EDA7CB005F6574 /* MECAddressDisplayCell.swift */,
+				785496F523FFD19C00F4A948 /* MECDeliveryModesCell.swift */,
+				7871E0D6240C0C5400F452A0 /* MECPaymentsListCell.swift */,
+				785F0FD9240E53C500AAF88A /* MECPaymentDetailsCollectionViewCell.swift */,
+				78AC3A5F2411024500030DF6 /* MECLoadingCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		78D030BB2451FACA00253558 /* OrderHistoryTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D030BD2451FACA00253558 /* OrderHistoryListTests */,
+				78D030BE2451FACA00253558 /* OrderHistoryDetailTests */,
+			);
+			path = OrderHistoryTests;
+			sourceTree = "<group>";
+		};
+		78D030BD2451FACA00253558 /* OrderHistoryListTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D030BF2451FB2200253558 /* MECOrderHistoryPresenterTests.swift */,
+			);
+			path = OrderHistoryListTests;
+			sourceTree = "<group>";
+		};
+		78D030BE2451FACA00253558 /* OrderHistoryDetailTests */ = {
+			isa = PBXGroup;
+			children = (
+				22547BC82462A95900DF0444 /* Sections */,
+			);
+			path = OrderHistoryDetailTests;
+			sourceTree = "<group>";
+		};
+		78D323E523BF15CD00A41753 /* CommonMocks */ = {
+			isa = PBXGroup;
+			children = (
+				78D323E623BF15CD00A41753 /* MockPRXHandler.swift */,
+				228E5E9524332A25009F9096 /* MockUtility.swift */,
+				78D323E723BF15CD00A41753 /* MockECSService.swift */,
+				78D323E823BF15CD00A41753 /* ServiceDiscoveryMock.swift */,
+				78D323E923BF15CD00A41753 /* MockAppInfra.swift */,
+				78D323F923BF859F00A41753 /* MECMockLogger.swift */,
+				78D323FB23BF85AF00A41753 /* MECMockTagger.swift */,
+				78D323FD23BF892300A41753 /* MECMockUserDataInterface.swift */,
+				22A794332441CE89004E90B8 /* MockNavigationController.swift */,
+				22D4AC6124F6E1CB001F5078 /* MockTableView.swift */,
+			);
+			path = CommonMocks;
+			sourceTree = "<group>";
+		};
+		78D323EE23BF15E500A41753 /* UAPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				78D323F323BF590D00A41753 /* Mock */,
+				78D323EF23BF187300A41753 /* MECLaunchTests.swift */,
+				78D323F123BF188C00A41753 /* MECInterfaceTests.swift */,
+				2229CD6924322A5400EA2703 /* MECDataImplementationTests.swift */,
+			);
+			path = UAPPTests;
+			sourceTree = "<group>";
+		};
+		78D323F323BF590D00A41753 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				78D323F523BF595200A41753 /* MECMockBannerConfigDelegate.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		78E0013623609BF3002982CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				78E0013723609C08002982CE /* MECProduct.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		78E8C2892387BE9300B729B8 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+				78AE3389238EAE51000663CC /* MECBazaarVoiceHandlerTests.swift */,
+				78E8C28B2387BED000B729B8 /* MECProductDetailsPresenterTests.swift */,
+				781C510123A275B600B2983E /* MECPRXHandlerTests.swift */,
+				78E1599E251CB23000A09FAC /* MECNotifyMePresenterTests.swift */,
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
+		78E943F323DCB77900302E72 /* AddressValidators */ = {
+			isa = PBXGroup;
+			children = (
+				782F488823DEBFC500676D15 /* MECAddressValidator.swift */,
+			);
+			path = AddressValidators;
+			sourceTree = "<group>";
+		};
+		A720119A0091C7BF31D32681 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D651C15005EC1D51DC3C91B /* Pods_MobileEcommerceTests.framework */,
+				862A41BA02BFF396648F369D /* Pods_MobileEcommerceDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		22C529052345C8C700918F44 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C5291B2345C8C800918F44 /* MobileEcommerce.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		22C529092345C8C700918F44 /* MobileEcommerceDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C5291E2345C8C800918F44 /* Build configuration list for PBXNativeTarget "MobileEcommerceDev" */;
+			buildPhases = (
+				7DCB6E5B1D1C4215DE40B06A /* [CP] Check Pods Manifest.lock */,
+				22C529052345C8C700918F44 /* Headers */,
+				22C529062345C8C700918F44 /* Sources */,
+				22C529072345C8C700918F44 /* Frameworks */,
+				22C529082345C8C700918F44 /* Resources */,
+				786D6CF123C618B2002D4C21 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileEcommerceDev;
+			productName = MobileEcommerce;
+			productReference = 22C5290A2345C8C700918F44 /* MobileEcommerceDev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		22C529122345C8C800918F44 /* MobileEcommerceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22C529212345C8C800918F44 /* Build configuration list for PBXNativeTarget "MobileEcommerceTests" */;
+			buildPhases = (
+				1EE426CB721B6E9B342007FD /* [CP] Check Pods Manifest.lock */,
+				22C5290F2345C8C800918F44 /* Sources */,
+				22C529102345C8C800918F44 /* Frameworks */,
+				22C529112345C8C800918F44 /* Resources */,
+				B7631651DE29219AB950524B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22C529162345C8C800918F44 /* PBXTargetDependency */,
+			);
+			name = MobileEcommerceTests;
+			productName = MobileEcommerceTests;
+			productReference = 22C529132345C8C800918F44 /* MobileEcommerceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22C529012345C8C700918F44 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					22C529092345C8C700918F44 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					22C529122345C8C800918F44 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 22C529042345C8C700918F44 /* Build configuration list for PBXProject "MobileEcommerceDev" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				he,
+				"zh-Hant-TW",
+				ar,
+				el,
+				"zh-Hans",
+				ja,
+				"zh-Hant-HK",
+				uk,
+				nb,
+				"ca-ES",
+				"en-GB",
+				es,
+				sl,
+				da,
+				et,
+				it,
+				bg,
+				sk,
+				"fr-CA",
+				sv,
+				cs,
+				"es-AR",
+				ko,
+				hu,
+				tr,
+				pl,
+				"pt-BR",
+				vi,
+				lv,
+				"es-MX",
+				lt,
+				ru,
+				fr,
+				fi,
+				nl,
+				th,
+				pt,
+				ro,
+				hr,
+			);
+			mainGroup = 22C529002345C8C700918F44;
+			productRefGroup = 22C5290B2345C8C700918F44 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22C529092345C8C700918F44 /* MobileEcommerceDev */,
+				22C529122345C8C800918F44 /* MobileEcommerceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22C529082345C8C700918F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				786D6CF023C5FFBE002D4C21 /* Localizable.strings in Resources */,
+				78C32DCF23E1A21200789304 /* MECDeliveryDetails.storyboard in Resources */,
+				78150CF223526E3C0038EC9F /* MECImages.xcassets in Resources */,
+				22547BA32461481C00DF0444 /* MECOrderDetailProductCell.xib in Resources */,
+				22FB6EC22410F44E004753D1 /* MECCheckoutShippingCell.xib in Resources */,
+				22CF363D244A099800042308 /* MECOrderDetailContactCell.xib in Resources */,
+				2281C13A24EAEBB100968063 /* MECStockFilterCell.xib in Resources */,
+				226139022403AD7800FF14CF /* MECShoppingCartProductCell.xib in Resources */,
+				784D33A723F99543000CF65F /* MECManageAddress.storyboard in Resources */,
+				22C296A8234F6EB60004BDC2 /* MECProductCatalogue.storyboard in Resources */,
+				222AB618240E55B800D2C2DF /* MECCheckout.storyboard in Resources */,
+				78063E72241B553B00B9C527 /* MECPaymentConfirmation.storyboard in Resources */,
+				22FB6EBF2410F44E004753D1 /* MECCheckoutDeliveryModeCell.xib in Resources */,
+				22CF362A244A050F00042308 /* MECOrderDetail.storyboard in Resources */,
+				782F48BF23DF268600676D15 /* MECPopover.storyboard in Resources */,
+				22037B2A237C6EED0055A718 /* MECBannerViewContainerCell.xib in Resources */,
+				228E5EA624372C11009F9096 /* MECStepDetail.xib in Resources */,
+				7831D25B23771FDD00CE0B39 /* MECProductRetailers.storyboard in Resources */,
+				78CC23EF23E97E4F00F1425E /* MECDeliveryDetailsStepView.xib in Resources */,
+				22E9275F238034E900BC8081 /* MECShoppingCart.storyboard in Resources */,
+				788FCBC623A79D9700337507 /* MECProductSpecsHeaderView.xib in Resources */,
+				2287C5A7235F220900FB1AF2 /* MECProductGridCell.xib in Resources */,
+				2229FE9B2351B79100600334 /* MECCustomActivityProgressView.xib in Resources */,
+				788A978F2417F6E900A95776 /* MECCVVPayment.storyboard in Resources */,
+				22E22A7024176087009BB1A1 /* MECCheckoutVoucherCell.xib in Resources */,
+				78537F3425137EEE00769D68 /* MECNotifyMe.storyboard in Resources */,
+				7836B475244C445A00B28727 /* MECNoOrderDetailView.xib in Resources */,
+				226138A823FD613A00FF14CF /* MECSummaryCell.xib in Resources */,
+				2281C13324EAEA6E00968063 /* MECProductFilter.storyboard in Resources */,
+				22E22A682417607B009BB1A1 /* MECCheckoutPaymentCell.xib in Resources */,
+				22FB6EDE2410F508004753D1 /* MECCheckoutProductCell.xib in Resources */,
+				788FCBC423A79D9700337507 /* MECPriceView.xib in Resources */,
+				78A967AB23D9A997005CDFED /* MECAddAddress.storyboard in Resources */,
+				7855679223508D7000A4140F /* MECProductDetails.storyboard in Resources */,
+				226138FF2403AD6C00FF14CF /* MECAppliedVoucherCell.xib in Resources */,
+				782F48BC23DF268600676D15 /* MECLoadingCell.xib in Resources */,
+				78A967AF23D9BC58005CDFED /* MECAddressFieldsConfiguration.plist in Resources */,
+				788FCBC723A79D9700337507 /* MECReviewsHeaderView.xib in Resources */,
+				783D4DA4237EB1830089A06D /* mec_iconfont.ttf in Resources */,
+				7879808F2445B8A900604AE3 /* MECOrderHistory.storyboard in Resources */,
+				7804E1CC24FF8E690061211E /* MECProductSortCell.xib in Resources */,
+				78A967A923D9A997005CDFED /* MECAddressFieldView.xib in Resources */,
+				226138FB2403AD5F00FF14CF /* MECApplyVoucherCell.xib in Resources */,
+				787980952445DD6E00604AE3 /* MECOrderHistoryProductDetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C529112345C8C800918F44 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EE426CB721B6E9B342007FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileEcommerceTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		786D6CF123C618B2002D4C21 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#if which swiftlint >/dev/null; then\n#swiftlint\n#else\n#echo \"SwiftLint does not exist, download from https://github.com/realm/SwiftLint\"\n#fi\n";
+		};
+		7DCB6E5B1D1C4215DE40B06A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MobileEcommerceDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7631651DE29219AB950524B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileEcommerceTests/Pods-MobileEcommerceTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MobileEcommerceTests/Pods-MobileEcommerceTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MobileEcommerceTests/Pods-MobileEcommerceTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22C529062345C8C700918F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7855679023508D5B00A4140F /* MECProductDetailsPresenter.swift in Sources */,
+				782F48BE23DF268600676D15 /* MECPopoverViewController.swift in Sources */,
+				784D33AA23F99722000CF65F /* MECAddressDetailsCollectionViewCell.swift in Sources */,
+				22F1DDE524F2385400A89F80 /* ECSPILProductFilter+Extension.swift in Sources */,
+				226138EE23FEDB1C00FF14CF /* MECAppliedVoucherDataProvider.swift in Sources */,
+				789034B423EAEA3100210F9B /* MECDeliveryDetailsStepCell.swift in Sources */,
+				2281C13624EAEB3D00968063 /* MECStockFilterDataProvider.swift in Sources */,
+				22C296A6234F62080004BDC2 /* MECAppStoryboard.swift in Sources */,
+				22037B19237B1AEF0055A718 /* MECZeroSearchResultView.swift in Sources */,
+				780876DB23BE1B950009A129 /* MECFlowConfiguration.swift in Sources */,
+				226138FA2403AD5F00FF14CF /* MECApplyVoucherCell.swift in Sources */,
+				22FB6EF4241171DE004753D1 /* MECCheckoutProductDataProvider.swift in Sources */,
+				2287C5AE23616B9F00FB1AF2 /* MECPaginationHelper.swift in Sources */,
+				7871E0D7240C0C5400F452A0 /* MECPaymentsListCell.swift in Sources */,
+				22CF362C244A052F00042308 /* MECOrderDetailPresenter.swift in Sources */,
+				22C296AD234F89760004BDC2 /* MECProductListCell.swift in Sources */,
+				22CF3630244A087600042308 /* MECOrderDetailPaymentDataProvider.swift in Sources */,
+				226138F423FEDBC100FF14CF /* MECOrderPromotionDataProvider.swift in Sources */,
+				7831D25923771F4C00CE0B39 /* MECProductRetailersViewController.swift in Sources */,
+				22CF35D4244A041B00042308 /* MECOrderDetailViewController.swift in Sources */,
+				22547BA624614BCD00DF0444 /* MECCancelOrderViewController.swift in Sources */,
+				2204735A238C3DB100FF059E /* MECBasePresenter.swift in Sources */,
+				22BDE3EE2423C12100FFF8B7 /* MECWorldPayViewController.swift in Sources */,
+				78AC3A602411024500030DF6 /* MECLoadingCollectionViewCell.swift in Sources */,
+				2206204E23F2CD9600A0DB08 /* MECDataBus.swift in Sources */,
+				225ED9002355814E008C8DD6 /* MECTopBarView.swift in Sources */,
+				226138F723FFA7A900FF14CF /* MECSummaryVoucherDataProvider.swift in Sources */,
+				22D2624F23A759A9009C72C5 /* MECTagging.swift in Sources */,
+				781E080F23FAD0220018F15A /* MECManageAddressPresenter.swift in Sources */,
+				78770A9D23EC685F00BB151B /* MECDeliveryDetailsPresenter.swift in Sources */,
+				7860805A239AB9AB0068FEAB /* MECPRXHandler.swift in Sources */,
+				788FCBC523A79D9700337507 /* MECPriceView.swift in Sources */,
+				78A967A523D9A997005CDFED /* MECAddAddressViewController.swift in Sources */,
+				78841389242BC01D00A05D29 /* MECDataImplementation.swift in Sources */,
+				22E22A6E24176087009BB1A1 /* MECCheckoutVoucherCell.swift in Sources */,
+				78CC23F123E9B74100F1425E /* MECDeliveryDetailsStepView.swift in Sources */,
+				788FCBC823A79D9700337507 /* MECProductReviewCell.swift in Sources */,
+				225ED90E2358DE46008C8DD6 /* MECUI+Extenstions.swift in Sources */,
+				780C288F23AA8A100061A067 /* MECProductFeaturesTableViewManager.swift in Sources */,
+				22C296A2234F5DE40004BDC2 /* MECUtility.swift in Sources */,
+				22CF3637244A094A00042308 /* MECOrderDetailContactProvider.swift in Sources */,
+				780876E423BE1F780009A129 /* MECLauncher.swift in Sources */,
+				22547BA22461481C00DF0444 /* MECOrderDetailProductCell.swift in Sources */,
+				22E22A692417607B009BB1A1 /* MECCheckoutPaymentCell.swift in Sources */,
+				788FCBC223A79D9700337507 /* MECProductSpecsHeaderView.swift in Sources */,
+				780C289123AA8A1E0061A067 /* MECProductReviewsTableViewManager.swift in Sources */,
+				78A967AD23D9AB2F005CDFED /* MECAddressFieldsConfigModel.swift in Sources */,
+				7836B473244C444100B28727 /* MECNoOrderDetailView.swift in Sources */,
+				788FCBCA23A79D9700337507 /* MECProductSpecsCell.swift in Sources */,
+				22F53E1323D5FC6F001F988A /* MECInitializer.swift in Sources */,
+				7804E1CB24FF8E690061211E /* MECProductSortCell.swift in Sources */,
+				785F0FDA240E53C500AAF88A /* MECPaymentDetailsCollectionViewCell.swift in Sources */,
+				22C2969E234F59C60004BDC2 /* MECProductCataloguePresenter.swift in Sources */,
+				226138EA23FEDAE500FF14CF /* MECDeliveryCostDataProvider.swift in Sources */,
+				78537F3225137EDB00769D68 /* MECNotifyMePresenter.swift in Sources */,
+				22CF362E244A081C00042308 /* MECOrderDetailShippingDataProvider.swift in Sources */,
+				7831D25E2377203200CE0B39 /* MECProductRetailersCell.swift in Sources */,
+				225ED90C2358AD48008C8DD6 /* MECProductCellUpdater.swift in Sources */,
+				2229FE932350ECF600600334 /* MECBaseViewController.swift in Sources */,
+				785496F623FFD19C00F4A948 /* MECDeliveryModesCell.swift in Sources */,
+				78E0013823609C08002982CE /* MECProduct.swift in Sources */,
+				22B44CC623791AAD00AF054D /* MECServiceDiscoveryUtility.swift in Sources */,
+				786C74A723E03D2E00DF753F /* MECAddressModelExtensions.swift in Sources */,
+				22C296AB234F89690004BDC2 /* MECProductCell.swift in Sources */,
+				78537F3025137EC100769D68 /* MECNotifyMeViewController.swift in Sources */,
+				225ED8FE2354C3D6008C8DD6 /* MECUtilities+Extensions.swift in Sources */,
+				2287C5A3235F1B1600FB1AF2 /* MECGridViewLayout.swift in Sources */,
+				226138EC23FEDAFF00FF14CF /* MECApplyVoucherDataProvider.swift in Sources */,
+				22CF3643244ACA7300042308 /* MECOrderDetailSummaryVoucherDataProvider.swift in Sources */,
+				2206208023F54F4C00A0DB08 /* MECErrorUtility.swift in Sources */,
+				789034B823EB449000210F9B /* MECManageAddressCell.swift in Sources */,
+				2281C13124EAEA2500968063 /* MECProductFilterViewController.swift in Sources */,
+				78A967A723D9A997005CDFED /* MECAddressTextField.swift in Sources */,
+				787980912445B8FD00604AE3 /* MECOrderHistoryPresenter.swift in Sources */,
+				787980932445DD5900604AE3 /* MECOrderHistoryProductDetailView.swift in Sources */,
+				22C296A4234F5E9F0004BDC2 /* MECLocalizedString.swift in Sources */,
+				22CF363F244ABFBB00042308 /* MECOrderDetailPromotionDataProvider.swift in Sources */,
+				22C296A0234F5D920004BDC2 /* MECConstants.swift in Sources */,
+				78C32DCD23E1A1EF00789304 /* MECDeliveryDetailsViewController.swift in Sources */,
+				78A967AA23D9A997005CDFED /* MECAddressView.swift in Sources */,
+				22C2969C234F599B0004BDC2 /* MECProductCatalogueViewController.swift in Sources */,
+				2279A2382387038500BD3E2D /* MECNoCartView.swift in Sources */,
+				782F48C123DF26A600676D15 /* MECPopoverTableViewCell.swift in Sources */,
+				788FCBC923A79D9700337507 /* MECProductFeaturesCell.swift in Sources */,
+				2206208223F54F9300A0DB08 /* MECOAuthHandler.swift in Sources */,
+				781E081123FAD5460018F15A /* MECAddAddressCollectionViewCell.swift in Sources */,
+				782F488923DEBFC500676D15 /* MECAddressValidator.swift in Sources */,
+				780876DE23BE1B950009A129 /* MECDependencies.swift in Sources */,
+				780876E223BE1F710009A129 /* MECLaunchInput.swift in Sources */,
+				7855678E23508D4300A4140F /* MECProductDetailsViewController.swift in Sources */,
+				780AD80223EDA7CB005F6574 /* MECAddressDisplayCell.swift in Sources */,
+				78A967A823D9A997005CDFED /* MECAddressFieldView.swift in Sources */,
+				228E5EA824372C22009F9096 /* MECCheckoutStepProvider.swift in Sources */,
+				78068B802446197A0026B1EA /* MECOrderHistoryProductDetailCell.swift in Sources */,
+				2287C5A6235F220900FB1AF2 /* MECProductGridCell.swift in Sources */,
+				22FB6EB52410F32C004753D1 /* MECOrderSummaryPresenter.swift in Sources */,
+				780876DC23BE1B950009A129 /* MECInterface.swift in Sources */,
+				783D4DA6237EB3B80089A06D /* MECIconFont.swift in Sources */,
+				788FCBC323A79D9700337507 /* MECReviewsHeaderView.swift in Sources */,
+				22DDD38B23DAA8D400450FA9 /* MECShoppingCartBottomView.swift in Sources */,
+				780C288D23AA854B0061A067 /* MECProductSpecsTableViewManager.swift in Sources */,
+				22FB6EF2241171A7004753D1 /* MECCheckoutPaymentDataProvider.swift in Sources */,
+				787574152370566F0080CDF7 /* BazaarVoiceHandler.swift in Sources */,
+				22FB6EC02410F44E004753D1 /* MECCheckoutDeliveryModeCell.swift in Sources */,
+				784D33A523F99518000CF65F /* MECManageAddressViewController.swift in Sources */,
+				78A410B323DB33280038F19A /* MECBaseDeliveryDetailsPresenter.swift in Sources */,
+				22037B29237C6EED0055A718 /* MECBannerViewContainerCell.swift in Sources */,
+				78529F6923AA8EAE00F204AE /* MECProductDetailsBaseTableViewManager.swift in Sources */,
+				788A978D2417F6B000A95776 /* MECCVVPaymentViewController.swift in Sources */,
+				22FB6EC12410F44E004753D1 /* MECCheckoutShippingCell.swift in Sources */,
+				225ED908235827D2008C8DD6 /* MECListViewLayout.swift in Sources */,
+				2281C13924EAEBB100968063 /* MECStockFilterCell.swift in Sources */,
+				2229FE992350EEB900600334 /* MECConfiguration.swift in Sources */,
+				22CF3641244ACA2F00042308 /* MECOrderDetailDeliveryCostDataProvider.swift in Sources */,
+				22CF3634244A08B400042308 /* MECOrderDetailVoucherDataProvider.swift in Sources */,
+				22FB6EE22410F86D004753D1 /* MECCheckoutShippingDataProvider.swift in Sources */,
+				782F48BD23DF268600676D15 /* MECLoadingCell.swift in Sources */,
+				78A967A623D9A997005CDFED /* MECAddAddressPresenter.swift in Sources */,
+				7804E1C424FF819B0061211E /* MECProductSortDataProvider.swift in Sources */,
+				226138FE2403AD6C00FF14CF /* MECAppliedVoucherCell.swift in Sources */,
+				226138E623FEDA0C00FF14CF /* MECCartTableDataProvider.swift in Sources */,
+				228E5EA524372C11009F9096 /* MECStepDetail.swift in Sources */,
+				7879808D2445B6E400604AE3 /* MECOrderHistoryViewController.swift in Sources */,
+				22CF363C244A099800042308 /* MECOrderDetailContactCell.swift in Sources */,
+				226139032403AD7800FF14CF /* MECShoppingCartProductCell.swift in Sources */,
+				78063E70241B551A00B9C527 /* MECPaymentConfirmationViewController.swift in Sources */,
+				226138A723FD613A00FF14CF /* MECSummaryCell.swift in Sources */,
+				22D2625123A89599009C72C5 /* MECAnalyticsConstants.swift in Sources */,
+				780876DD23BE1B950009A129 /* MECSettings.swift in Sources */,
+				226138F023FEDB4200FF14CF /* MECSummaryProoductDataProvider.swift in Sources */,
+				22E927632380373700BC8081 /* MECShoppingCartViewController.swift in Sources */,
+				22FB6EDD2410F508004753D1 /* MECCheckoutProductCell.swift in Sources */,
+				22E22A6F24176087009BB1A1 /* MECCheckoutVoucherDataProvider.swift in Sources */,
+				22E92767238037C500BC8081 /* MECShoppingCartPresenter.swift in Sources */,
+				22CF3632244A089100042308 /* MECOrderDetailProductDataProvider.swift in Sources */,
+				226138E823FEDA9E00FF14CF /* MECCartProductDataProvider.swift in Sources */,
+				22FB6EB72410F3E7004753D1 /* MECOrderSummaryViewController.swift in Sources */,
+				78150CED23526B5B0038EC9F /* MECProductImageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22C5290F2345C8C800918F44 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				228E5E9624332A25009F9096 /* MockUtility.swift in Sources */,
+				789C58572504D13000686C26 /* MECStockFilterDataProviderTests.swift in Sources */,
+				78D323FE23BF892300A41753 /* MECMockUserDataInterface.swift in Sources */,
+				2229CD6A24322A5400EA2703 /* MECDataImplementationTests.swift in Sources */,
+				78919DE223F6A04E00B2D9BC /* MECDeliveryDetailsPresenterTests.swift in Sources */,
+				228E5E9D2433BE43009F9096 /* MECCheckoutProductDataProviderTests.swift in Sources */,
+				22A7942D24419F34004E90B8 /* MECPaymentConfirmationViewControllerTests.swift in Sources */,
+				22A794322441CAB0004E90B8 /* MockWebView.swift in Sources */,
+				78D323ED23BF15CD00A41753 /* MockAppInfra.swift in Sources */,
+				22A794382441D97B004E90B8 /* FlowCompletionDelegate.swift in Sources */,
+				22C529192345C8C800918F44 /* MobileEcommerceTests.swift in Sources */,
+				22A794302441C9E8004E90B8 /* MECWorldPayViewControllerTests.swift in Sources */,
+				78D323FC23BF85AF00A41753 /* MECMockTagger.swift in Sources */,
+				7805105C23F439FD00AC973C /* MECAddAddressTests.swift in Sources */,
+				22547BCC2463BFBF00DF0444 /* MECOrderDetailDeliveryModeDataProviderTests.swift in Sources */,
+				78D323F023BF187300A41753 /* MECLaunchTests.swift in Sources */,
+				22547BCE2463C1C900DF0444 /* MECOrderDetailPaymentDataProviderTests.swift in Sources */,
+				78D323EB23BF15CD00A41753 /* MockECSService.swift in Sources */,
+				78D323F623BF595200A41753 /* MECMockBannerConfigDelegate.swift in Sources */,
+				2229CD682432192300EA2703 /* MECOrderPromotionDataProviderTests.swift in Sources */,
+				22547BD02463DCAC00DF0444 /* MECOrderDetailProductDataProviderTests.swift in Sources */,
+				789C58552504D13000686C26 /* MECProductCataloguePresenterTests.swift in Sources */,
+				78D323EC23BF15CD00A41753 /* ServiceDiscoveryMock.swift in Sources */,
+				22547BCA2462A96500DF0444 /* MECOrderDetailShippingDataProviderTests.swift in Sources */,
+				78E1599F251CB23000A09FAC /* MECNotifyMePresenterTests.swift in Sources */,
+				7884971D2406B47B00751651 /* MECDeliveryModesTests.swift in Sources */,
+				222AB612240E214800D2C2DF /* MECOAuthHandlerTests.swift in Sources */,
+				22547BD42464044B00DF0444 /* MECOrderDetailSummaryVoucherDataProviderTests.swift in Sources */,
+				789C58542504D13000686C26 /* MockPaginationHelper.swift in Sources */,
+				2292DD7123CF340A00558877 /* RetailerViewControllerTests.swift in Sources */,
+				22A794362441D02B004E90B8 /* MockNavigationAction.swift in Sources */,
+				2211FC6E23C8BE5200218C25 /* TaggingHelperTests.swift in Sources */,
+				781C510223A275B600B2983E /* MECPRXHandlerTests.swift in Sources */,
+				2229CD662432113900EA2703 /* MECCartProductDataProviderTests.swift in Sources */,
+				22547BD22463EC8C00DF0444 /* MECOrderDetailContactProviderTests.swift in Sources */,
+				228E5E9F2433C0FA009F9096 /* MECCheckoutShippingDataProviderTests.swift in Sources */,
+				2229CD5E2431CF5D00EA2703 /* MECSummaryProoductDataProviderTests.swift in Sources */,
+				7884971B2406B44700751651 /* MECManageAddressTests.swift in Sources */,
+				78D323FA23BF859F00A41753 /* MECMockLogger.swift in Sources */,
+				22547BD824640D4E00DF0444 /* MECOrderDetailVoucherDataProviderTests.swift in Sources */,
+				22A794342441CE89004E90B8 /* MockNavigationController.swift in Sources */,
+				2229CD602431D1B900EA2703 /* MECAppliedVoucherDataProviderTests.swift in Sources */,
+				78A881552424AF0E00D9B9D3 /* MECOrderSummaryPresenterTests.swift in Sources */,
+				228E5E9B2433BC7E009F9096 /* MECCheckoutPaymentDataProviderTests.swift in Sources */,
+				22547BDC24641BE700DF0444 /* MECOrderDetailPresenterTests.swift in Sources */,
+				78E8C28C2387BED000B729B8 /* MECProductDetailsPresenterTests.swift in Sources */,
+				78D323F223BF188C00A41753 /* MECInterfaceTests.swift in Sources */,
+				222AB60D240E15CB00D2C2DF /* MockShoppingCartDelegate.swift in Sources */,
+				789C585A2504D1C000686C26 /* MECProductSortDataProviderTests.swift in Sources */,
+				78AE338A238EAE51000663CC /* MECBazaarVoiceHandlerTests.swift in Sources */,
+				2261395A2407867400FF14CF /* MECShoppingCartPresenterTests.swift in Sources */,
+				2229CD622431DA2800EA2703 /* MECDeliveryCostDataProviderTests.swift in Sources */,
+				2211FC6C23C880B300218C25 /* ServiceDiscoveryTests.swift in Sources */,
+				789C58562504D13000686C26 /* PaginationHelperTests.swift in Sources */,
+				2229CD5C2431C90800EA2703 /* MECSummaryVoucherDataProviderTests.swift in Sources */,
+				22547BD6246408B400DF0444 /* MECOrderDetailDeliveryCostDataProviderTests.swift in Sources */,
+				78D030C02451FB2200253558 /* MECOrderHistoryPresenterTests.swift in Sources */,
+				789C58582504D13000686C26 /* MECProductFilterViewControllerTests.swift in Sources */,
+				789C58532504D13000686C26 /* MockProductCatalogueDelegate.swift in Sources */,
+				22547BDA2464131600DF0444 /* MECOrderDetailPromotionDataProviderTests.swift in Sources */,
+				228E5E992433B7DB009F9096 /* MECCheckoutVoucherDataProviderTests.swift in Sources */,
+				22D4AC6224F6E1CB001F5078 /* MockTableView.swift in Sources */,
+				78CDE6F5242105FF00BE39D7 /* MECPaymentMethodTests.swift in Sources */,
+				2261395C240786DC00FF14CF /* MockDataBus.swift in Sources */,
+				2229CD642431FBB900EA2703 /* MECApplyVoucherDataProviderTests.swift in Sources */,
+				789C58522504D13000686C26 /* MockBazaarVoiceHandler.swift in Sources */,
+				78D323EA23BF15CD00A41753 /* MockPRXHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22C529162345C8C800918F44 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22C529092345C8C700918F44 /* MobileEcommerceDev */;
+			targetProxy = 22C529152345C8C800918F44 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		786D6CC523C5FFBD002D4C21 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				786D6CC623C5FFBD002D4C21 /* de */,
+				786D6CC723C5FFBD002D4C21 /* he */,
+				786D6CC823C5FFBD002D4C21 /* zh-Hant-TW */,
+				786D6CC923C5FFBD002D4C21 /* ar */,
+				786D6CCA23C5FFBD002D4C21 /* el */,
+				786D6CCB23C5FFBD002D4C21 /* zh-Hans */,
+				786D6CCC23C5FFBD002D4C21 /* ja */,
+				786D6CCD23C5FFBD002D4C21 /* en */,
+				786D6CCE23C5FFBD002D4C21 /* zh-Hant-HK */,
+				786D6CCF23C5FFBD002D4C21 /* uk */,
+				786D6CD023C5FFBD002D4C21 /* nb */,
+				786D6CD123C5FFBD002D4C21 /* ca-ES */,
+				786D6CD223C5FFBD002D4C21 /* en-GB */,
+				786D6CD323C5FFBD002D4C21 /* es */,
+				786D6CD423C5FFBD002D4C21 /* sl */,
+				786D6CD523C5FFBD002D4C21 /* da */,
+				786D6CD623C5FFBE002D4C21 /* et */,
+				786D6CD723C5FFBE002D4C21 /* it */,
+				786D6CD823C5FFBE002D4C21 /* bg */,
+				786D6CD923C5FFBE002D4C21 /* sk */,
+				786D6CDA23C5FFBE002D4C21 /* fr-CA */,
+				786D6CDB23C5FFBE002D4C21 /* sv */,
+				786D6CDC23C5FFBE002D4C21 /* cs */,
+				786D6CDD23C5FFBE002D4C21 /* es-AR */,
+				786D6CDE23C5FFBE002D4C21 /* ko */,
+				786D6CDF23C5FFBE002D4C21 /* Base */,
+				786D6CE023C5FFBE002D4C21 /* hu */,
+				786D6CE123C5FFBE002D4C21 /* tr */,
+				786D6CE223C5FFBE002D4C21 /* pl */,
+				786D6CE323C5FFBE002D4C21 /* pt-BR */,
+				786D6CE423C5FFBE002D4C21 /* vi */,
+				786D6CE523C5FFBE002D4C21 /* lv */,
+				786D6CE623C5FFBE002D4C21 /* es-MX */,
+				786D6CE723C5FFBE002D4C21 /* lt */,
+				786D6CE823C5FFBE002D4C21 /* ru */,
+				786D6CE923C5FFBE002D4C21 /* fr */,
+				786D6CEA23C5FFBE002D4C21 /* fi */,
+				786D6CEB23C5FFBE002D4C21 /* nl */,
+				786D6CEC23C5FFBE002D4C21 /* th */,
+				786D6CED23C5FFBE002D4C21 /* pt */,
+				786D6CEE23C5FFBE002D4C21 /* ro */,
+				786D6CEF23C5FFBE002D4C21 /* hr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22C5291C2345C8C800918F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		22C5291D2345C8C800918F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		22C5291F2345C8C800918F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D69A1F9A79701403674DF689 /* Pods-MobileEcommerceDev.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MobileEcommerce/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.MobileEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22C529202345C8C800918F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D11A93F0242283180D2D67BA /* Pods-MobileEcommerceDev.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MobileEcommerce/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.MobileEcommerce;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22C529222345C8C800918F44 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 392667A91DAD1C7F1B440A72 /* Pods-MobileEcommerceTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = MobileEcommerceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.MobileEcommerceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22C529232345C8C800918F44 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7060ED6F0E0F5BA660696C73 /* Pods-MobileEcommerceTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = MobileEcommerceTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.MobileEcommerceTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22C529042345C8C700918F44 /* Build configuration list for PBXProject "MobileEcommerceDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5291C2345C8C800918F44 /* Debug */,
+				22C5291D2345C8C800918F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C5291E2345C8C800918F44 /* Build configuration list for PBXNativeTarget "MobileEcommerceDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C5291F2345C8C800918F44 /* Debug */,
+				22C529202345C8C800918F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22C529212345C8C800918F44 /* Build configuration list for PBXNativeTarget "MobileEcommerceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C529222345C8C800918F44 /* Debug */,
+				22C529232345C8C800918F44 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22C529012345C8C700918F44 /* Project object */;
+}

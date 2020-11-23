@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Укажите app infra object";
+"ECSBaseURLNotFound" = "Базовый URL не найден";
+"ECSCartEntryError" = "Продукт не добавлен в корзину";
+"ECSCartError" = "Корзина еще не создана";
+"ECSCommerceCartModificationError" = "Количество не может быть меньше нуля";
+"ECSCtnNotProvided" = "Укажите CTN";
+"ECSHybrisNotAvailable" = "Магазин Philips недоступен для выбранной страны, доступен только режим ритейлера";
+"ECSIllegalArgumentError" = "Укажите допустимые сведения в полях для заполнения";
+"ECSInsufficientStockError" = "Продукт не может быть отправлен, поскольку он отсутствует на складе";
+"ECSInvalidPaymentInfoError" = "Укажите допустимые платежные данные";
+"ECSInvalidTokenError" = "Мы столкнулись с технической ошибкой (недопустимый маркер доступа). Выполните Hybris Re-Auth";
+"ECSLocaleNotFound" = "Выберите локаль";
+"ECSNoSuchElementError" = "При загрузке данных с сервера произошла ошибка";
+"ECSOAuthDetailError" = "Укажите полные сведения OAuth";
+"ECSOAuthNotCalled" = "Для этого действия требуется авторизация пользователя";
+"ECSPIL_BAD_REQUEST" = "Мы столкнулись с технической ошибкой. Повторите попытку через некоторое время";
+"ECSPIL_BAD_REQUEST_cartId" = "Корзина еще не создана";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Мы столкнулись с технической ошибкой. Повторите попытку через некоторое время";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Мы столкнулись с технической ошибкой (недопустимый маркер доступа). Выполните Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Недопустимый адрес электронной почты. Проверьте введенные данные.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Продукт не добавлен в корзину";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Выберите локаль";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Укажите действительный CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Укажите допустимое количество";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Магазин Philips недоступен для выбранной страны, доступен только режим ритейлера";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Количество не может быть меньше нуля";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Выберите локаль";
+"ECSPIL_MISSING_PARAMETER_language" = "Выберите локаль";
+"ECSPIL_MISSING_PARAMETER_productId" = "Укажите CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Магазин Philips недоступен для выбранной страны, доступен только режим ритейлера";
+"ECSPIL_NEGATIVE_QUANTITY" = "Количество не может быть меньше нуля";
+"ECSPIL_NOT_ACCEPTABLE" = "Мы столкнулись с технической ошибкой. Повторите попытку через некоторое время";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Мы столкнулись с технической ошибкой. Повторите попытку через некоторое время";
+"ECSPIL_NOT_FOUND_cartId" = "Укажите действительный ИД корзины";
+"ECSPIL_NOT_FOUND_productId" = "Укажите действительный CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Продукт не может быть отправлен, поскольку он отсутствует на складе";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Мы столкнулись с технической ошибкой. Повторите попытку через некоторое время";
+"ECSPaymentAuthorizationError" = "Не удалось выполнить авторизацию платежа";
+"ECSPropositionIdNotFound" = "Укажите действительный Proposition ID";
+"ECSSiteIdNotFound" = "Магазин Philips недоступен для выбранной страны, доступен только режим ритейлера";
+"ECSUnknownIdentifierError" = "Запрашиваемый ресурс недоступен";
+"ECSUnsupportedDeliveryModeError" = "Выбранный метод доставки не поддерживается";
+"ECSUnsupportedVoucherError" = "К сожалению, этот купон не может быть использован";
+"ECSValidationError" = "Не удалось проверить дату";
+"ECSVoucherOperationError" = "К сожалению, этот купон не может быть использован";
+"ECSaddressId" = "Предоставленный адрес не существует или принадлежит другому пользователю";
+"ECScountryCodeNotGiven" = "Укажите действительный код страны";
+"ECScountryisocode" = "Выбрана недопустимая страна";
+"ECSfirstName" = "Обратите внимание, что следующие символы недоступны к использованию: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Мы столкнулись с технической ошибкой (неверные учетные данные клиента). Повторите попытку входа";
+"ECSinvalid_grant" = "Мы столкнулись с технической ошибкой (недопустимый маркер Janrain). Повторите попытку входа";
+"ECSlastName" = "Обратите внимание, что следующие символы недоступны к использованию: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Укажите действительный заказ";
+"ECSphone1" = "Выбран недействительный номер телефона";
+"ECSphone2" = "Выбран недействительный номер телефона";
+"ECSpostUrl" = "Заказ уже имеет статус \"Оплачено\" или \"Завершено\"";
+"ECSpostalCode" = "Выбран недопустимый почтовый индекс";
+"ECSregionisocode" = "Выбран недопустимый регион";
+"ECSsessionCart" = "Выберите адрес доставки, метод доставки и способ оплаты перед отправкой заказа";
+"ECSsomethingWentWrong" = "Мы столкнулись с технической ошибкой. Повторите попытку через некоторое время";
+"ECSunsupported_grant_type" = "Мы столкнулись с технической ошибкой (неподдерживаемый тип гранта). Повторите попытку входа";

@@ -1,0 +1,164 @@
+{
+    "type": "orderWsDTO",
+    "calculated": true,
+    "code": "14000108364",
+    "deliveryAddress": {
+        "country": {
+            "isocode": "US"
+        },
+        "firstName": "Xyz",
+        "id": "8809678995479",
+        "lastName": "Sahu",
+        "line1": "200 E Main St",
+        "line2": "New York NY 10036",
+        "phone1": "(877)628-8027",
+        "postalCode": "90210",
+        "region": {
+            "isocode": "US-CA"
+        },
+        "town": "Beverly Hills"
+    },
+    "deliveryCost": {
+        "currencyIso": "USD",
+        "formattedValue": "$7.99",
+        "priceType": "BUY",
+        "value": 7.99
+    },
+    "deliveryItemsQuantity": 1,
+    "deliveryMode": {
+        "code": "standard-net",
+        "deliveryCost": {
+            "currencyIso": "USD",
+            "formattedValue": "$7.99",
+            "priceType": "BUY",
+            "value": 7.99
+        },
+        "description": "3-5 business days",
+        "name": "Standard Delivery Mode"
+    },
+    "deliveryOrderGroups": [
+                            {
+                            "entries": [
+                                        {
+                                        "entryNumber": 0,
+                                        "product": {
+                                        "availableForPickup": false,
+                                        "code": "HX8331/11",
+                                        "name": "HX8331/11 AF-PRO, RETAIL 1 NOZZLE LOW, S",
+                                        "purchasable": true,
+                                        "stock": {
+                                        "stockLevel": 2471
+                                        },
+                                        "url": "/US-Tuscany-Category//p/HX8331_11"
+                                        },
+                                        "quantity": 1,
+                                        "totalPrice": {
+                                        "currencyIso": "USD",
+                                        "value": 10
+                                        }
+                                        }
+                                        ],
+                            "totalPriceWithTax": {
+                            "currencyIso": "USD",
+                            "formattedValue": "$11.62",
+                            "priceType": "BUY",
+                            "value": 11.620000000000001
+                            }
+                            }
+                            ],
+    "entries": [
+                {
+                "entryNumber": 0,
+                "product": {
+                "availableForPickup": false,
+                "code": "HX8331/11",
+                "name": "HX8331/11 AF-PRO, RETAIL 1 NOZZLE LOW, S",
+                "purchasable": true,
+                "stock": {
+                "stockLevel": 2471
+                },
+                "url": "/US-Tuscany-Category//p/HX8331_11"
+                },
+                "quantity": 1,
+                "totalPrice": {
+                "currencyIso": "USD",
+                "value": 10
+                }
+                }
+                ],
+    "guid": "eefdd792-a17a-417d-a2e7-8f2d1d1baacb",
+    "net": true,
+    "orderDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "pickupItemsQuantity": 0,
+    "productDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "site": "US_Tuscany",
+    "store": "US_Pub",
+    "subTotal": {
+        "currencyIso": "USD",
+        "formattedValue": "$10.00",
+        "priceType": "BUY",
+        "value": 10
+    },
+    "totalDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "totalItems": 1,
+    "totalPrice": {
+        "currencyIso": "USD",
+        "formattedValue": "$17.99",
+        "priceType": "BUY",
+        "value": 17.99
+    },
+    "totalPriceWithTax": {
+        "currencyIso": "USD",
+        "formattedValue": "$19.61",
+        "priceType": "BUY",
+        "value": 19.61
+    },
+    "totalTax": {
+        "currencyIso": "USD",
+        "formattedValue": "$1.62",
+        "priceType": "BUY",
+        "value": 1.62
+    },
+    "user": {
+        "name": "chittaranjan",
+        "uid": "chittaranjan.sahu@philips.com"
+    },
+    "created": "2016-06-30T09:49:34+0000",
+    "guestCustomer": false,
+    "statusDisplay": "processing",
+    "unconsignedEntries": [
+                           {
+                           "entryNumber": 0,
+                           "product": {
+                           "availableForPickup": false,
+                           "code": "HX8331/11",
+                           "name": "HX8331/11 AF-PRO, RETAIL 1 NOZZLE LOW, S",
+                           "purchasable": true,
+                           "stock": {
+                           "stockLevel": 2471
+                           },
+                           "url": "/US-Tuscany-Category//p/HX8331_11"
+                           },
+                           "quantity": 1,
+                           "totalPrice": {
+                           "currencyIso": "USD",
+                           "value": 10
+                           }
+                           }
+                           ]
+}

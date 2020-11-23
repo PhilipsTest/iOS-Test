@@ -1,0 +1,265 @@
+{
+    "appflow": {
+        "firstState": "splash",
+        "states": [
+                   {
+                   "state": "home",
+                   "events": [
+                              {
+                              "eventId": "onAppStartEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": ["isLoggedIn"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": ["isDonePressed"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "welcome"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Home",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Settings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "settings"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "About",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "back",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": ""
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "welcome",
+                   "events": [
+                              {
+                              "eventId": "welcome_Button_Skip",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "welcome_Button_Done",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Settings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "welcome"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "BACK",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "hamburgerMenu",
+                   "events": [
+                              {
+                              "eventId": "Home",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "HomeFake",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": ""
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Settings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "settings"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "About",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Connectivity",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "connectivity"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Help",
+                              "nextStates": [
+                                             {
+                                             "condition": ["helpClicked"],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "settings",
+                   "events": [
+                              {
+                              "eventId": "Home",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Settings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "settings"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Hamburger",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "About",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "back",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "HomeFake",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": ""
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "about",
+                   "events": [
+                              {
+                              "eventId": "Home",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Settings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "settings"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "About",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "back",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "welcome"
+                                             }
+                                             ]
+                              }
+                              ]
+                   }
+                   ]
+    }
+}

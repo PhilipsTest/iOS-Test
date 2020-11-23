@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>App Config keys</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+
+<body class="appledoc">
+    <div class="section section-specification">
+    	<table class="relative-table wrapped confluenceTable tablesorter tablesorter-default stickyTableHeaders" style="width: 100%; padding: 0px;" role="grid">
+    <colgroup>
+        <col style="width: 18.6418%;">
+            <col style="width: 5.92543%;">
+                <col style="width: 14.3142%;">
+                    <col style="width: 8.38881%;">
+                        <col style="width: 28.9614%;">
+                            <col style="width: 23.7683%;">
+                                <col>
+    </colgroup>
+    <thead class="tableFloatingHeaderOriginal" style="position: static; margin-top: 0px; left: 445px; z-index: 3; width: 1251px; top: 92px;">
+        <tr role="row" class="tablesorter-headerRow">
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Config Name: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Config Name</div>
+            </th>
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Type: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Type</div>
+            </th>
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Values: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Values</div>
+            </th>
+            <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Module: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Module</div>
+            </th>
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Comments: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Comments</div>
+            </th>
+            <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Available from (platform release): No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Available from (platform release)</div>
+            </th>
+            <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Deprecated: No sort applied, activate to apply an ascending sort" style="user-select: none; min-width: 8px; max-width: none;">
+                <div class="tablesorter-header-inner">Deprecated</div>
+            </th>
+        </tr>
+    </thead>
+    <thead class="tableFloatingHeader" style="display: none;">
+        <tr role="row" class="tablesorter-headerRow">
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="0" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Config Name: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Config Name</div>
+            </th>
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Type: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Type</div>
+            </th>
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Values: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Values</div>
+            </th>
+            <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="3" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Module: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Module</div>
+            </th>
+            <th class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="4" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Comments: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Comments</div>
+            </th>
+            <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="5" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Available from (platform release): No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Available from (platform release)</div>
+            </th>
+            <th colspan="1" class="confluenceTh tablesorter-header sortableHeader tablesorter-headerUnSorted" data-column="6" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Deprecated: No sort applied, activate to apply an ascending sort" style="user-select: none;">
+                <div class="tablesorter-header-inner">Deprecated</div>
+            </th>
+        </tr>
+    </thead>
+    <tbody aria-live="polite" aria-relevant="all">
+        <tr role="row">
+            <td class="confluenceTd">appidentity.micrositeId</td>
+            <td class="confluenceTd">Mandatory</td>
+            <td class="confluenceTd">Proposition specific microsite ID</td>
+            <td colspan="1" class="confluenceTd"><span>appidentity</span></td>
+            <td class="confluenceTd">Value can be of type Integer or String,eg:- 77001</td>
+            <td colspan="1" class="confluenceTd">2.2.0</td>
+            <td colspan="1" class="confluenceTd">No</td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">appidentity.sector</td>
+            <td class="confluenceTd">Mandatory</td>
+            <td class="confluenceTd">String type value</td>
+            <td colspan="1" class="confluenceTd"><span>appidentity</span></td>
+            <td class="confluenceTd"><span>Value should be of type String,eg:- b2c</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">
+                <p>appidentity.appState</p>
+            </td>
+            <td class="confluenceTd"><span>Mandatory</span></td>
+            <td class="confluenceTd">Proposition specific state</td>
+            <td class="confluenceTd"><span>appidentity</span></td>
+            <td class="confluenceTd">
+                <p>
+                    <br>
+                </p>
+                <p>Value should of type String,eg:- Staging/Production</p>
+            </td>
+            <td colspan="1" class="confluenceTd">2.2.0</td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">appidentity.serviceDiscoveryEnvironment</td>
+            <td class="confluenceTd"><span>Mandatory</span></td>
+            <td class="confluenceTd"><span><span>Proposition specific service discovery environment</span></span>
+            </td>
+            <td class="confluenceTd"><span>appidentity</span></td>
+            <td class="confluenceTd"><span>Value should of type String and value should only be Staging or Production</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">restclient.cacheSizeInKB</td>
+            <td class="confluenceTd">Optional</td>
+            <td class="confluenceTd">Proposition specific cache Size</td>
+            <td class="confluenceTd"><span>restclient</span></td>
+            <td class="confluenceTd"><span>Value should of type String or Integer,eg:- 51200</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">tagging.sensitiveData</td>
+            <td class="confluenceTd"><span>Optional</span></td>
+            <td class="confluenceTd">Proposition should mention here,all the values for which they didn't get User's consent to send to Analytics team</td>
+            <td class="confluenceTd"><span>tagging</span></td>
+            <td class="confluenceTd">Value should be of type Array of Strings,eg:- ["language"]</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">
+                <p class="p1"><span class="s1">enableAdobeLogs</span></p>
+            </td>
+            <td colspan="1" class="confluenceTd">Optional</td>
+            <td colspan="1" class="confluenceTd"><span>Boolean value indicating whether to enable adobe debug logs</span></td>
+            <td colspan="1" class="confluenceTd">tagging</td>
+            <td colspan="1" class="confluenceTd">value can be true or false</td>
+            <td colspan="1" class="confluenceTd">3.0.0</td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">contentLoader.limitSize</td>
+            <td class="confluenceTd"><span>Optional</span></td>
+            <td class="confluenceTd">Proposition specific maximum number of articles to be downloaded for one page</td>
+            <td class="confluenceTd"><span>contentLoader</span></td>
+            <td class="confluenceTd">Value should be of type Integer or String,eg:- 100</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">servicediscovery.platformMicrositeId</td>
+            <td class="confluenceTd"><span>Mandatory</span></td>
+            <td class="confluenceTd">77000</td>
+            <td class="confluenceTd"><span>servicediscovery</span></td>
+            <td class="confluenceTd">Value should always be 77000</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">abtest.precache</td>
+            <td class="confluenceTd"><span><span>Optional</span>
+                <br>
+                </span>
+            </td>
+            <td class="confluenceTd">Propositions should give the values for which they want to get Cached values while using ABtest</td>
+            <td class="confluenceTd"><span>abtest</span></td>
+            <td class="confluenceTd">
+                <p>Value should be array of Strings,eg:-["testStart","testUpdate","philipsmobileappabtest1content"]</p>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">appconfig.cloudServiceId</td>
+            <td class="confluenceTd"><span>Optional</span></td>
+            <td class="confluenceTd">Proposition should give the value for Service Id of Cloud download</td>
+            <td colspan="1" class="confluenceTd"><span>appconfig</span></td>
+            <td class="confluenceTd">Value should be of type String,eg:- Invalid</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">servicediscovery.propositionEnabled</td>
+            <td class="confluenceTd"><span>Optional</span></td>
+            <td class="confluenceTd">If proposition microsite Id is not configured and this value is false,it will download URL from platform microsite Id</td>
+            <td class="confluenceTd"><span>servicediscovery</span></td>
+            <td class="confluenceTd"><span>Value should of type boolean and value should only be true or false</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">servicediscovery.platformEnvironment</td>
+            <td colspan="1" class="confluenceTd"><span>Mandatory</span></td>
+            <td colspan="1" class="confluenceTd">Platform specific service discovery environment</td>
+            <td colspan="1" class="confluenceTd"><span>servicediscovery</span></td>
+            <td colspan="1" class="confluenceTd"><span>Value should of type String and value should only be Staging or Production</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">logging.releaseConfig</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd">Proposition/Platform has to give logging information for Release Config</td>
+            <td class="confluenceTd"><span>logging</span></td>
+            <td class="confluenceTd">An array of Key/Value pairs containing details about Proposition logging information for Logging Config</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">fileName</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd">File Name where logs will be written for Release/Debug Configs</td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd">Value should be String value,eg:- AppInfraLog</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">numberOfFiles</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd"><span>Maximum number of files for logging for Release/Debug Configs</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd">Value can be Integer or String,eg:- 5</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">fileSizeInBytes</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd">Maximum size of each file for Logging for <span>Release/Debug Configs in Bytes</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span>Value can be Integer or String,eg:- 50000</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">logLevel</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd">The log Level for which the logging will happen for <span>Release/Debug Configs</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span>Value should be String value,eg:- </span><span>Verbose/Info/Error</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">fileLogEnabled</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd">Value decides whether logging is written in file or not <span>for </span><span>Release/Debug Configs</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span><span>Value should of type boolean and value should only be true or false</span>
+                <br>
+                </span>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">consoleLogEnabled</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd"><span>Value decides whether logging is written in console or not <span>for </span><span>Release/Debug Configs</span></span>
+            </td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span>Value should of type boolean and value should only be true or false</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">componentIds</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd">Value decides which are the components for which logging happens <span>for </span><span>Release/Debug Configs</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span><span>Value should of type Array of Strings,eg:-</span></span>
+                <p>["DemoAppInfra","Registration"]</p>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">logging.debugConfig</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd"><span>Proposition/Platform has to give logging information for Debug Config</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span>An array of Key/Value pairs containing details about Proposition logging information for Logging Config</span></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">logging.releaseConfig</td>
+            <td colspan="1" class="confluenceTd">Mandatory</td>
+            <td colspan="1" class="confluenceTd">Proposition/Platform has to give logging information for Release Config</td>
+            <td colspan="1" class="confluenceTd">logging</td>
+            <td colspan="1" class="confluenceTd">An array of Key/Value pairs containing details about Proposition logging information for Logging Config</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td class="confluenceTd">componentLevelLogEnabled</td>
+            <td class="confluenceTd"><span><span>Mandatory</span></span>
+            </td>
+            <td class="confluenceTd"><span>Value decides whether component logging is enabled or not </span><span>for </span><span>Release/Debug Configs. Only if this is true,component </span>logging for components listed in <span>componentIds array happens</span></td>
+            <td class="confluenceTd"><span><span>logging</span></span>
+            </td>
+            <td class="confluenceTd"><span><span>Value should of type boolean and value should only be true or false</span>
+                <br>
+                </span>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">
+                <p class="p1"><span class="s1">languagePack.serviceId</span></p>
+            </td>
+            <td colspan="1" class="confluenceTd">Optional</td>
+            <td colspan="1" class="confluenceTd">this value is the serviceid in SD which is mapped to the language pack overview file url</td>
+            <td colspan="1" class="confluenceTd">Language Pack</td>
+            <td colspan="1" class="confluenceTd">Value should be string</td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">timesync.ntp.hosts</td>
+            <td colspan="1" class="confluenceTd">Optional</td>
+            <td colspan="1" class="confluenceTd">Network time is used in Tagging and Logging .</td>
+            <td colspan="1" class="confluenceTd">TimeSync</td>
+            <td colspan="1" class="confluenceTd">Array of NTP servers <strong>["<a href="http://time1.google.com" class="external-link" rel="nofollow">time1.google.com</a>","<a href="http://time2.google.com" class="external-link" rel="nofollow">time2.google.com</a>","<a href="http://time3.google.com" class="external-link" rel="nofollow">time3.google.com</a> ","<a href="http://0.cn.pool.ntp.org" class="external-link" rel="nofollow">0.cn.pool.ntp.org</a>"]</strong></td>
+            <td colspan="1" class="confluenceTd"><span>2.2.0</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">
+                <p class="p1"><span class="s1">appUpdate.serviceId</span></p>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>Optional</span></td>
+            <td colspan="1" class="confluenceTd"><span>this value is the serviceid in SD which is mapped to the appupdate info url</span></td>
+            <td colspan="1" class="confluenceTd">App Update</td>
+            <td colspan="1" class="confluenceTd"><span>Value should be string</span></td>
+            <td colspan="1" class="confluenceTd">2.2.0</td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">
+                <p class="p1"><span class="s1">appUpdate.autoRefresh</span></p>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>Optional</span></td>
+            <td colspan="1" class="confluenceTd">This boolean value decided if appupdate info should be downloaded automaticaly</td>
+            <td colspan="1" class="confluenceTd">App Update</td>
+            <td colspan="1" class="confluenceTd">Value should of type boolean and value should only be true or false</td>
+            <td colspan="1" class="confluenceTd">2.2.0</td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">servicediscovery.countryMapping</td>
+            <td colspan="1" class="confluenceTd">optional</td>
+            <td colspan="1" class="confluenceTd">
+                <p>countries should be fallback to the preffered country (LU =&gt; BE, MO =&gt; HK). These mapping is applicable only for the data fetched from service discovery. getHomecountry should return the actual country not the mapped country</p>
+            </td>
+            <td colspan="1" class="confluenceTd">Service Discovery</td>
+            <td colspan="1" class="confluenceTd">
+                <p>Json</p>
+                <p>{“LU":"BE","MO":"HK"}</p>
+            </td>
+            <td colspan="1" class="confluenceTd"><span>2.1.3</span></td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+        <tr role="row">
+            <td colspan="1" class="confluenceTd">
+                <p><span style="color: rgb(255,255,255);"><span style="color: rgb(0,51,102);">&nbsp;&nbsp;</span></span><span style="color: rgb(0,51,102);">abtest.mapping</span></p>
+            </td>
+            <td colspan="1" class="confluenceTd">optional</td>
+            <td colspan="1" class="confluenceTd">mapping between coco testname and actual test name</td>
+            <td colspan="1" class="confluenceTd">A/B Testing</td>
+            <td colspan="1" class="confluenceTd">
+                <p><span style="color: rgb(0,51,102);">{ </span><span style="color: rgb(0,51,102);">"usr.login":"DOT-ReceiveMarketingOptIn"</span><span style="color: rgb(0,51,102);"> }</span></p>
+            </td>
+            <td colspan="1" class="confluenceTd">3.0.0</td>
+            <td colspan="1" class="confluenceTd"><span>No</span></td>
+        </tr>
+    </tbody>
+</table>
+    </div>
+</body>
+
+</html>

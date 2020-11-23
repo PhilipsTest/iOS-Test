@@ -1,0 +1,540 @@
+
+{
+    "success": true,
+    "payload": {
+        "country": "BE",
+        "matchByLanguage": {
+            "available": true,
+            "results": [
+                        {
+                        "locale": "fr_FR",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://www.philips.fr/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://www.philips.fr/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://prod.appinfra.testing.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://prod.appinfra.testing.identity.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://prod.appinfra.testing.configuration.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_FR&country=FR&testappstate=apps%2b%2benv%2bprod",
+                                    "prxclient.assets": "https://www.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://www.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://www.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_FR/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=fr&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.fr/content/%productSector%/fr_FR/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.fr%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_FR/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://www.philips.fr/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://www.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://www.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://www.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://www.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/prod",
+                                             "name": "prod",
+                                             "key": "apps++env+prod"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.eval.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://acc.philips.fr/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://acc.philips.fr/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://acc.appinfra.testing.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://acc.appinfra.testing.identity.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://acc.appinfra.testing.configuration.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_FR&country=FR&testappstate=apps%2b%2benv%2bacc",
+                                    "prxclient.assets": "https://acc.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://acc.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://acc.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_FR/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=fr&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.fr/content/%productSector%/fr_FR/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.fr%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_FR/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://acc.philips.fr/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://acc.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://acc.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://acc.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://acc.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/acc",
+                                             "name": "acc",
+                                             "key": "apps++env+acc"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.eval.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://dev.philips.fr/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://dev.philips.fr/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://stage.appinfra.testing.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://stage.appinfra.testing.identity.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://stage.appinfra.testing.configuration.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_FR&country=FR&testappstate=apps%2b%2benv%2bstage",
+                                    "prxclient.assets": "https://dev.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://dev.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://dev.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_FR/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=fr&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.fr/content/%productSector%/fr_FR/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.fr%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_FR/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://dev.philips.fr/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://dev.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://dev.philips.com/prx/registration",
+                                    "prodreg.productSummaryRequest": "https://dev.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://dev.philips.com/prx/registration.registeredProducts",
+                                    "ds.scheduledservice": "https://platforminfra-ds-platforminfrastaging.cloud.pcftest.com",
+                                    "ds.coachingservice": "https://platforminfra-cs-platforminfrastaging.cloud.pcftest.com",
+                                    "ds.dataservice": "https://platforminfra-ds-platforminfrastaging.cloud.pcftest.com"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/stage",
+                                             "name": "stage",
+                                             "key": "apps++env+stage"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips-test.dev.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://tst.philips.fr/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://tst.philips.fr/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://test.appinfra.testing.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://test.appinfra.testing.identity.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://test.appinfra.testing.configuration.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_FR&country=FR&testappstate=apps%2b%2benv%2btest",
+                                    "prxclient.assets": "https://tst.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://tst.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://tst.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_FR/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=fr&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.fr/content/%productSector%/fr_FR/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.fr%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_FR/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://tst.philips.fr/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://tst.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://tst.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://tst.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://tst.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/test",
+                                             "name": "test",
+                                             "key": "apps++env+test"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.dev.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://10.128.41.111:4503/content/B2C/fr_FR/verify-account.html",
+                                    "userreg.landing.resetpass": "https://10.128.41.111:4503/content/B2C/fr_FR/myphilips/reset-password.html?cl=mob.html",
+                                    "userreg.hsdp.userserv": "https://user-registration-assembly-testing.us-east.philips-healthsuite.com",
+                                    "appinfra.testing.service": "https://dev.appinfra.testing.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://dev.appinfra.testing.identity.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://dev.appinfra.testing.configuration.service/fr_FR/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_FR&country=FR&testappstate=apps%2b%2benv%2bdev",
+                                    "prxclient.assets": "https://tst.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://tst.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://tst.philips.com/prx/product/%sector%/fr_FR/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_FR/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=fr&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.fr/content/%productSector%/fr_FR/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.fr%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_FR/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://10.128.41.111:4503/content/B2C/fr_FR/myphilips/login.html?.html",
+                                    "prodreg.productmetadatarequest": "https://10.128.41.113/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://10.128.41.113/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://10.128.41.113/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://10.128.41.113/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        }
+                        ]
+        },
+        "matchByCountry": {
+            "available": true,
+            "results": [
+                        {
+                        "locale": "nl_BE",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://www.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://www.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://prod.appinfra.testing.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://prod.appinfra.testing.identity.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://prod.appinfra.testing.configuration.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=nl_BE&country=BE&testappstate=apps%2b%2benv%2bprod",
+                                    "prxclient.assets": "https://www.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://www.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://www.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/nl_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/nl_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/reviewandawards",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/nl_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://www.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://www.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://www.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://www.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://www.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/prod",
+                                             "name": "prod",
+                                             "key": "apps++env+prod"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.eval.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://acc.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://acc.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://acc.appinfra.testing.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://acc.appinfra.testing.identity.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://acc.appinfra.testing.configuration.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=nl_BE&country=BE&testappstate=apps%2b%2benv%2bacc",
+                                    "prxclient.assets": "https://acc.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://acc.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://acc.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/nl_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/nl_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/reviewandawards",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/nl_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://acc.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://acc.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://acc.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://acc.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://acc.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/acc",
+                                             "name": "acc",
+                                             "key": "apps++env+acc"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.eval.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://dev.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://dev.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://stage.appinfra.testing.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://stage.appinfra.testing.identity.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://stage.appinfra.testing.configuration.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=nl_BE&country=BE&testappstate=apps%2b%2benv%2bstage",
+                                    "prxclient.assets": "https://dev.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://dev.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://dev.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/nl_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/nl_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/reviewandawards",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/nl_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://dev.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://dev.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://dev.philips.com/prx/registration",
+                                    "prodreg.productSummaryRequest": "https://dev.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://dev.philips.com/prx/registration.registeredProducts",
+                                    "ds.scheduledservice": "https://platforminfra-ds-platforminfrastaging.cloud.pcftest.com",
+                                    "ds.coachingservice": "https://platforminfra-cs-platforminfrastaging.cloud.pcftest.com",
+                                    "ds.dataservice": "https://platforminfra-ds-platforminfrastaging.cloud.pcftest.com"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/stage",
+                                             "name": "stage",
+                                             "key": "apps++env+stage"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips-test.dev.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://tst.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://tst.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://test.appinfra.testing.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://test.appinfra.testing.identity.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://test.appinfra.testing.configuration.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=nl_BE&country=BE&testappstate=apps%2b%2benv%2btest",
+                                    "prxclient.assets": "https://tst.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://tst.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://tst.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/nl_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/nl_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/reviewandawards",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/nl_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://tst.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://tst.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://tst.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://tst.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://tst.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/test",
+                                             "name": "test",
+                                             "key": "apps++env+test"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.dev.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://10.128.41.111:4503/content/B2C/nl_BE/verify-account.html",
+                                    "userreg.landing.resetpass": "https://10.128.41.111:4503/content/B2C/nl_BE/myphilips/reset-password.html?cl=mob.html",
+                                    "userreg.hsdp.userserv": "https://user-registration-assembly-testing.us-east.philips-healthsuite.com",
+                                    "appinfra.testing.service": "https://dev.appinfra.testing.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://dev.appinfra.testing.identity.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://dev.appinfra.testing.configuration.service/nl_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=nl_BE&country=BE&testappstate=apps%2b%2benv%2bdev",
+                                    "prxclient.assets": "https://tst.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://tst.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://tst.philips.com/prx/product/%sector%/nl_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/nl_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/nl_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/reviewandawards",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/nl_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://10.128.41.111:4503/content/B2C/nl_BE/myphilips/login.html?.html",
+                                    "prodreg.productmetadatarequest": "https://10.128.41.113/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://10.128.41.113/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://10.128.41.113/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://10.128.41.113/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        },
+                        {
+                        "locale": "fr_BE",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://www.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://www.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://prod.appinfra.testing.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://prod.appinfra.testing.identity.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://prod.appinfra.testing.configuration.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_BE&country=BE&testappstate=apps%2b%2benv%2bprod",
+                                    "prxclient.assets": "https://www.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://www.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://www.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/fr_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://www.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://www.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://www.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://www.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://www.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/prod",
+                                             "name": "prod",
+                                             "key": "apps++env+prod"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.eval.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://acc.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://acc.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://acc.appinfra.testing.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://acc.appinfra.testing.identity.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://acc.appinfra.testing.configuration.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_BE&country=BE&testappstate=apps%2b%2benv%2bacc",
+                                    "prxclient.assets": "https://acc.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://acc.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://acc.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/fr_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://acc.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://acc.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://acc.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://acc.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://acc.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/acc",
+                                             "name": "acc",
+                                             "key": "apps++env+acc"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.eval.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://dev.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://dev.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://stage.appinfra.testing.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://stage.appinfra.testing.identity.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://stage.appinfra.testing.configuration.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_BE&country=BE&testappstate=apps%2b%2benv%2bstage",
+                                    "prxclient.assets": "https://dev.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://dev.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://dev.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/fr_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://dev.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://dev.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://dev.philips.com/prx/registration",
+                                    "prodreg.productSummaryRequest": "https://dev.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://dev.philips.com/prx/registration.registeredProducts",
+                                    "ds.scheduledservice": "https://platforminfra-ds-platforminfrastaging.cloud.pcftest.com",
+                                    "ds.coachingservice": "https://platforminfra-cs-platforminfrastaging.cloud.pcftest.com",
+                                    "ds.dataservice": "https://platforminfra-ds-platforminfrastaging.cloud.pcftest.com"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/stage",
+                                             "name": "stage",
+                                             "key": "apps++env+stage"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips-test.dev.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://tst.philips.be/c-w/verify-account.html",
+                                    "userreg.landing.resetpass": "https://tst.philips.be/myphilips/reset-password.html?cl=mob",
+                                    "appinfra.testing.service": "https://test.appinfra.testing.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://test.appinfra.testing.identity.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://test.appinfra.testing.configuration.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_BE&country=BE&testappstate=apps%2b%2benv%2btest",
+                                    "prxclient.assets": "https://tst.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://tst.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://tst.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/fr_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://tst.philips.be/myphilips/login.html",
+                                    "prodreg.productmetadatarequest": "https://tst.philips.com/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://tst.philips.com/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://tst.philips.com/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://tst.philips.com/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/test",
+                                             "name": "test",
+                                             "key": "apps++env+test"
+                                             }
+                                             ]
+                                    },
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "userreg.janrain.cdn.v2": "https://d1lqe9temigv1p.cloudfront.net",
+                                    "userreg.janrain.api.v2": "https://philips.dev.janraincapture.com",
+                                    "userreg.landing.emailverif": "https://10.128.41.111:4503/content/B2C/fr_BE/verify-account.html",
+                                    "userreg.landing.resetpass": "https://10.128.41.111:4503/content/B2C/fr_BE/myphilips/reset-password.html?cl=mob.html",
+                                    "userreg.hsdp.userserv": "https://user-registration-assembly-testing.us-east.philips-healthsuite.com",
+                                    "appinfra.testing.service": "https://dev.appinfra.testing.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.identity.service": "https://dev.appinfra.testing.identity.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.configuration.service": "https://dev.appinfra.testing.configuration.service/fr_BE/B2C/77000",
+                                    "appinfra.testing.discovery.service": "https://www.philips.com/api/v1/discovery/b2c/77000?locale=fr_BE&country=BE&testappstate=apps%2b%2benv%2bdev",
+                                    "prxclient.assets": "https://tst.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.assets",
+                                    "prxclient.summary": "https://tst.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.summary",
+                                    "prxclient.support": "https://tst.philips.com/prx/product/%sector%/fr_BE/%catalog%/products/%ctn%.support",
+                                    "cc.cdls": "https://www.philips.com/prx/cdls/%productSector%/fr_BE/%productCatalog%/%productCategory%.querytype.(fallback)",
+                                    "cc.atos": "https://www.philips.com/search/search?q=%22%22&lat=%lattitude%&lng=%longitude%&subcategory=%productSubCategory%&country=be&type=servicers&sid=cp-dlr&output=json",
+                                    "cc.emailformurl": "https://www.philips.be/content/%productSector%/fr_BE/support-home/support-contact-form-mrs.html?param1=%productCategory%&origin=15_global_en_%appName%-app_%appName%-app.html",
+                                    "cc.productreviewurl": "https://www.philips.be%productReviewURL%/récompenses",
+                                    "cc.prx.category": "https://www.philips.com/prx/category/%productSector%/fr_BE/%productCatalog%/%productSubcategory%.json",
+                                    "userreg.landing.myphilips": "https://10.128.41.111:4503/content/B2C/fr_BE/myphilips/login.html?.html",
+                                    "prodreg.productmetadatarequest": "https://10.128.41.113/prx/registration/",
+                                    "prodreg.productregistrationrequest": "https://10.128.41.113/prx/registration/",
+                                    "prodreg.productSummaryRequest": "https://10.128.41.113/prx/product/",
+                                    "prodreg.registeredProductsRequest": "https://10.128.41.113/prx/registration.registeredProducts"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        }
+                        ]
+        }
+    },
+    "httpStatus": "OK"
+}

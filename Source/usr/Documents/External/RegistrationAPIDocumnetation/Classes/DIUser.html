@@ -1,0 +1,3009 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>DIUser Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1333)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">PhilipsRegistration </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/birthday">birthday</option>
+		
+		<option value="//api/name/consents">consents</option>
+		
+		<option value="//api/name/consumerInterests">consumerInterests</option>
+		
+		<option value="//api/name/country">country</option>
+		
+		<option value="//api/name/email">email</option>
+		
+		<option value="//api/name/gender">gender</option>
+		
+		<option value="//api/name/givenName">givenName</option>
+		
+		<option value="//api/name/hasSocialAccount">hasSocialAccount</option>
+		
+		<option value="//api/name/hsdpAccessToken">hsdpAccessToken</option>
+		
+		<option value="//api/name/hsdpUUID">hsdpUUID</option>
+		
+		<option value="//api/name/isEmailVerified">isEmailVerified</option>
+		
+		<option value="//api/name/isLoggedIn">isLoggedIn</option>
+		
+		<option value="//api/name/isMobileNumberVerified">isMobileNumberVerified</option>
+		
+		<option value="//api/name/isOlderThanAgeLimit">isOlderThanAgeLimit</option>
+		
+		<option value="//api/name/isVerified">isVerified</option>
+		
+		<option value="//api/name/janrainAccessToken">janrainAccessToken</option>
+		
+		<option value="//api/name/janrainUUID">janrainUUID</option>
+		
+		<option value="//api/name/language">language</option>
+		
+		<option value="//api/name/mobileNumber">mobileNumber</option>
+		
+		<option value="//api/name/receiveMarketingEmails">receiveMarketingEmails</option>
+		
+		<option value="//api/name/resetToken">resetToken</option>
+		
+		<option value="//api/name/userIdentifier">userIdentifier</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Class Methods">
+		
+		<option value="//api/name/application:openURL:options:">+ application:openURL:options:</option>
+		
+	</optgroup>
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/addSessionRefreshListener:">- addSessionRefreshListener:</option>
+		
+		<option value="//api/name/addUserDetailsListener:">- addUserDetailsListener:</option>
+		
+		<option value="//api/name/addUserRegistrationListener:">- addUserRegistrationListener:</option>
+		
+		<option value="//api/name/checkIfJanrainFlowDownloadedWithCompletion:">- checkIfJanrainFlowDownloadedWithCompletion:</option>
+		
+		<option value="//api/name/completeSocialProviderLoginWithEmail:withMobileNumber:withOlderThanAgeLimit:withReceiveMarketingMails:">- completeSocialProviderLoginWithEmail:withMobileNumber:withOlderThanAgeLimit:withReceiveMarketingMails:</option>
+		
+		<option value="//api/name/forgotPasswordForEmail:">- forgotPasswordForEmail:</option>
+		
+		<option value="//api/name/getConsumerInterestForUser:">- getConsumerInterestForUser:</option>
+		
+		<option value="//api/name/getLocaleForProductRegistrationForLocale:">- getLocaleForProductRegistrationForLocale:</option>
+		
+		<option value="//api/name/handleMergeRegisterWithEmail:withPassword:">- handleMergeRegisterWithEmail:withPassword:</option>
+		
+		<option value="//api/name/handleMergeRegisterWithProvider:">- handleMergeRegisterWithProvider:</option>
+		
+		<option value="//api/name/loginUsingProvider:">- loginUsingProvider:</option>
+		
+		<option value="//api/name/loginUsingTraditionalWithEmail:password:">- loginUsingTraditionalWithEmail:password:</option>
+		
+		<option value="//api/name/logout">- logout</option>
+		
+		<option value="//api/name/refetchUserProfile">- refetchUserProfile</option>
+		
+		<option value="//api/name/refreshLoginSession">- refreshLoginSession</option>
+		
+		<option value="//api/name/registerNewUserUsingTraditional:withMobileNumber:withName:withOlderThanAgeLimit:withReceiveMarketingMails:withPassword:">- registerNewUserUsingTraditional:withMobileNumber:withName:withOlderThanAgeLimit:withReceiveMarketingMails:withPassword:</option>
+		
+		<option value="//api/name/removeSessionRefreshListener:">- removeSessionRefreshListener:</option>
+		
+		<option value="//api/name/removeUserDetailsListener:">- removeUserDetailsListener:</option>
+		
+		<option value="//api/name/removeUserRegistrationListener:">- removeUserRegistrationListener:</option>
+		
+		<option value="//api/name/replaceConsumerInterest:">- replaceConsumerInterest:</option>
+		
+		<option value="//api/name/resendVerificationCodeForMobile:">- resendVerificationCodeForMobile:</option>
+		
+		<option value="//api/name/resendVerificationMail:">- resendVerificationMail:</option>
+		
+		<option value="//api/name/updateCountry:withCompletion:">- updateCountry:withCompletion:</option>
+		
+		<option value="//api/name/updateGender:withBirthday:">- updateGender:withBirthday:</option>
+		
+		<option value="//api/name/updateReciveMarketingEmail:">- updateReciveMarketingEmail:</option>
+		
+		<option value="//api/name/updateUserConsent:withCompletion:">- updateUserConsent:withCompletion:</option>
+		
+		<option value="//api/name/updateUserConsentApproval:withCompletion:">- updateUserConsentApproval:withCompletion:</option>
+		
+		<option value="//api/name/verificationCodeForMobile:">- verificationCodeForMobile:</option>
+		
+		<option value="//api/name/verificationCodeToResetPassword:">- verificationCodeToResetPassword:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">DIUser Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>DIUser.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>DIUser contains all the data which is related to the user</p>
+					</div>
+					
+					
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/email" title="email"></a>
+	<h3 class="method-title"><code><a href="#//api/name/email">&nbsp;&nbsp;email</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>email id of the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *email</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>email id of the user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/mobileNumber" title="mobileNumber"></a>
+	<h3 class="method-title"><code><a href="#//api/name/mobileNumber">&nbsp;&nbsp;mobileNumber</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>mobile number of the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *mobileNumber</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>mobile number of the user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/userIdentifier" title="userIdentifier"></a>
+	<h3 class="method-title"><code><a href="#//api/name/userIdentifier">&nbsp;&nbsp;userIdentifier</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Identifier of the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *userIdentifier</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Identifier of the user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/givenName" title="givenName"></a>
+	<h3 class="method-title"><code><a href="#//api/name/givenName">&nbsp;&nbsp;givenName</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Given name of the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *givenName</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Given name of the user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isOlderThanAgeLimit" title="isOlderThanAgeLimit"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isOlderThanAgeLimit">&nbsp;&nbsp;isOlderThanAgeLimit</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>isOlderThanAgeLimit value is for user did he accepted that user is other than a prefred limit with respect to philips Legal policy</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL isOlderThanAgeLimit</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>isOlderThanAgeLimit value is for user did he accepted that user is other than a prefred limit with respect to philips Legal policy</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/receiveMarketingEmails" title="receiveMarketingEmails"></a>
+	<h3 class="method-title"><code><a href="#//api/name/receiveMarketingEmails">&nbsp;&nbsp;receiveMarketingEmails</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>receiveMarketingEmails value is for user has optedin or opted out for marketing <a href="#//api/name/email">email</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL receiveMarketingEmails</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>receiveMarketingEmails value is for user has optedin or opted out for marketing <a href="#//api/name/email">email</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isEmailVerified" title="isEmailVerified"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isEmailVerified">&nbsp;&nbsp;isEmailVerified</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>isEmailVerified value will provide is the user logged in or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL isEmailVerified</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>isEmailVerified value will provide is the user logged in or not.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isMobileNumberVerified" title="isMobileNumberVerified"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isMobileNumberVerified">&nbsp;&nbsp;isMobileNumberVerified</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>isMobileNumberVerified value will provide is the user logged in or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL isMobileNumberVerified</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>isMobileNumberVerified value will provide is the user logged in or not.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isVerified" title="isVerified"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isVerified">&nbsp;&nbsp;isVerified</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p><a href="#//api/name/isEmailVerified">isEmailVerified</a> value will provide is the user logged in or not.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL isVerified</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p><a href="#//api/name/isEmailVerified">isEmailVerified</a> value will provide is the user logged in or not.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/consumerInterests" title="consumerInterests"></a>
+	<h3 class="method-title"><code><a href="#//api/name/consumerInterests">&nbsp;&nbsp;consumerInterests</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>consumerInterests of the user w.r.t proposition, ex: Figaro is using for updating the user shaving advice</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSArray *consumerInterests</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>consumerInterests of the user w.r.t proposition, ex: Figaro is using for updating the user shaving advice</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/consents" title="consents"></a>
+	<h3 class="method-title"><code><a href="#//api/name/consents">&nbsp;&nbsp;consents</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>consents are of the user , currenlty used for the Coppa consnet</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSArray *consents</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>consents are of the user , currenlty used for the Coppa consnet</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/country" title="country"></a>
+	<h3 class="method-title"><code><a href="#//api/name/country">&nbsp;&nbsp;country</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>country of the user when he registred</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *country</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>country of the user when he registred</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/language" title="language"></a>
+	<h3 class="method-title"><code><a href="#//api/name/language">&nbsp;&nbsp;language</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>prefreredLanguge of the user when he registred</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *language</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>prefreredLanguge of the user when he registred</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/janrainUUID" title="janrainUUID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/janrainUUID">&nbsp;&nbsp;janrainUUID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UUID of the user for janrain</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *janrainUUID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>UUID of the user for janrain</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/janrainAccessToken" title="janrainAccessToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/janrainAccessToken">&nbsp;&nbsp;janrainAccessToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>accesstoken of the user for janrain</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nullable, readonly, nonatomic, getter=getJanrainAccessToken) NSString *janrainAccessToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>accesstoken of the user for janrain</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isLoggedIn" title="isLoggedIn"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isLoggedIn">&nbsp;&nbsp;isLoggedIn</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>isLoggedIn status of the user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL isLoggedIn</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>isLoggedIn status of the user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hsdpAccessToken" title="hsdpAccessToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hsdpAccessToken">&nbsp;&nbsp;hsdpAccessToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>accesstoken of the user for HSDP</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *hsdpAccessToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>accesstoken of the user for HSDP</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hsdpUUID" title="hsdpUUID"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hsdpUUID">&nbsp;&nbsp;hsdpUUID</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>UUID of the user for HSDP</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *hsdpUUID</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>UUID of the user for HSDP</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/gender" title="gender"></a>
+	<h3 class="method-title"><code><a href="#//api/name/gender">&nbsp;&nbsp;gender</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>gender of the user for janrain</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic) UserGender gender</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>gender of the user for janrain</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/birthday" title="birthday"></a>
+	<h3 class="method-title"><code><a href="#//api/name/birthday">&nbsp;&nbsp;birthday</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>birthday of the user for janrain</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSDate *birthday</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>birthday of the user for janrain</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resetToken" title="resetToken"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resetToken">&nbsp;&nbsp;resetToken</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>resetPassword of the user for janrain</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, strong, nullable) NSString *resetToken</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>resetPassword of the user for janrain</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hasSocialAccount" title="hasSocialAccount"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hasSocialAccount">&nbsp;&nbsp;hasSocialAccount</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>contains any social account of the user for janrain</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (readonly, nonatomic, assign) BOOL hasSocialAccount</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>contains any social account of the user for janrain</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginUsingTraditionalWithEmail:password:" title="loginUsingTraditionalWithEmail:password:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginUsingTraditionalWithEmail:password:">&ndash;&nbsp;loginUsingTraditionalWithEmail:password:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function registers the new user using traditional mechanism of <a href="#//api/name/email">email</a> and password combination.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginUsingTraditionalWithEmail:(nonnull NSString *)<em>emailAddress</em> password:(nonnull NSString *)<em>password</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailAddress</code></th>
+						<td><p>The <a href="#//api/name/email">email</a> address of the user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password of the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function registers the new user using traditional mechanism of <a href="#//api/name/email">email</a> and password combination.</p>
+
+<p>Requires that the flow name and Capture app ID be configured.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/logout" title="logout"></a>
+	<h3 class="method-title"><code><a href="#//api/name/logout">&ndash;&nbsp;logout</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function to logout user and clear the data of the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)logout</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function to logout user and clear the data of the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/loginUsingProvider:" title="loginUsingProvider:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/loginUsingProvider:">&ndash;&nbsp;loginUsingProvider:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Registers a new user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)loginUsingProvider:(nonnull NSString *)<em>provider</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>provider</code></th>
+						<td><p>The provider to be used for social login e.g. facebook or twitter etc.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Registers a new user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/registerNewUserUsingTraditional:withMobileNumber:withName:withOlderThanAgeLimit:withReceiveMarketingMails:withPassword:" title="registerNewUserUsingTraditional:withMobileNumber:withName:withOlderThanAgeLimit:withReceiveMarketingMails:withPassword:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/registerNewUserUsingTraditional:withMobileNumber:withName:withOlderThanAgeLimit:withReceiveMarketingMails:withPassword:">&ndash;&nbsp;registerNewUserUsingTraditional:withMobileNumber:withName:withOlderThanAgeLimit:withReceiveMarketingMails:withPassword:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Registers a new user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)registerNewUserUsingTraditional:(nullable NSString *)<em>email</em> withMobileNumber:(nullable NSString *)<em>mobileNumber</em> withName:(nonnull NSString *)<em>name</em> withOlderThanAgeLimit:(BOOL)<em>isOlderThanAgeLimit</em> withReceiveMarketingMails:(BOOL)<em>receiveMarketingEmails</em> withPassword:(nonnull NSString *)<em>password</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>The <a href="#//api/name/email">email</a> address of the user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>name</code></th>
+						<td><p>Given (first) name of the user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isOlderThanAgeLimit</code></th>
+						<td><p>Set if user is older than given age limit</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiveMarketingEmails</code></th>
+						<td><p>Set if user has agreed to receive marketing emails</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Registers a new user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/completeSocialProviderLoginWithEmail:withMobileNumber:withOlderThanAgeLimit:withReceiveMarketingMails:" title="completeSocialProviderLoginWithEmail:withMobileNumber:withOlderThanAgeLimit:withReceiveMarketingMails:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/completeSocialProviderLoginWithEmail:withMobileNumber:withOlderThanAgeLimit:withReceiveMarketingMails:">&ndash;&nbsp;completeSocialProviderLoginWithEmail:withMobileNumber:withOlderThanAgeLimit:withReceiveMarketingMails:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function completes the social provider login. It is called when user record was not found in the database and requires additional mandatory information to be registered.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)completeSocialProviderLoginWithEmail:(nullable NSString *)<em>email</em> withMobileNumber:(nullable NSString *)<em>mobileNumber</em> withOlderThanAgeLimit:(BOOL)<em>isOlderThanAgeLimit</em> withReceiveMarketingMails:(BOOL)<em>receiveMarketingEmails</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>Email of the user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>isOlderThanAgeLimit</code></th>
+						<td><p>Set if user is older than given age limit</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>receiveMarketingEmails</code></th>
+						<td><p>Set if user has agreed to receive marketing emails</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function completes the social provider login. It is called when user record was not found in the database and requires additional mandatory information to be registered.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resendVerificationMail:" title="resendVerificationMail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resendVerificationMail:">&ndash;&nbsp;resendVerificationMail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function starts the flow to resend verification <a href="#//api/name/email">email</a> to the user.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resendVerificationMail:(nonnull NSString *)<em>emailAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailAddress</code></th>
+						<td><p>Email address of the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function starts the flow to resend verification <a href="#//api/name/email">email</a> to the user.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/forgotPasswordForEmail:" title="forgotPasswordForEmail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/forgotPasswordForEmail:">&ndash;&nbsp;forgotPasswordForEmail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method when user has forgortten his password and wants to initiate process to reset it.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)forgotPasswordForEmail:(nonnull NSString *)<em>emailAddress</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>emailAddress</code></th>
+						<td><p>The emailAddress of the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method when user has forgortten his password and wants to initiate process to reset it.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/resendVerificationCodeForMobile:" title="resendVerificationCodeForMobile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/resendVerificationCodeForMobile:">&ndash;&nbsp;resendVerificationCodeForMobile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method when user has to verify his account using mobile and wants to initiate process to resend verification code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)resendVerificationCodeForMobile:(nonnull NSString *)<em>mobileNumber</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobileNumber</code></th>
+						<td><p>The <a href="#//api/name/mobileNumber">mobileNumber</a> of the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method when user has to verify his account using mobile and wants to initiate process to resend verification code.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/verificationCodeForMobile:" title="verificationCodeForMobile:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/verificationCodeForMobile:">&ndash;&nbsp;verificationCodeForMobile:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method when user has to verify his account using mobile and wants to initiate process to activate account.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)verificationCodeForMobile:(nonnull NSString *)<em>verificationCode</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>verificationCode</code></th>
+						<td><p>The verificationCode of the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method when user has to verify his account using mobile and wants to initiate process to activate account.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/verificationCodeToResetPassword:" title="verificationCodeToResetPassword:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/verificationCodeToResetPassword:">&ndash;&nbsp;verificationCodeToResetPassword:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Call this method when user has to reset his account using mobile and wants to initiate process to send verification code.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)verificationCodeToResetPassword:(nonnull NSString *)<em>mobileNumber</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>mobileNumber</code></th>
+						<td><p>The <a href="#//api/name/mobileNumber">mobileNumber</a> of the user</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Call this method when user has to reset his account using mobile and wants to initiate process to send verification code.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateReciveMarketingEmail:" title="updateReciveMarketingEmail:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateReciveMarketingEmail:">&ndash;&nbsp;updateReciveMarketingEmail:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update recive marketing emails of user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateReciveMarketingEmail:(BOOL)<em>reciveMarketingMails</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>reciveMarketingMails</code></th>
+						<td><p>recieve marketing emails Boolen</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update recive marketing emails of user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateGender:withBirthday:" title="updateGender:withBirthday:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateGender:withBirthday:">&ndash;&nbsp;updateGender:withBirthday:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function returns list of existing consumer interests.
+@param <a href="#//api/name/gender">gender</a>
+@param <a href="#//api/name/birthday">birthday</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateGender:(UserGender)<em>gender</em> withBirthday:(nonnull NSDate *)<em>birthday</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function returns list of existing consumer interests.
+@param <a href="#//api/name/gender">gender</a>
+@param <a href="#//api/name/birthday">birthday</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/replaceConsumerInterest:" title="replaceConsumerInterest:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/replaceConsumerInterest:">&ndash;&nbsp;replaceConsumerInterest:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Update consumer interests of user</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)replaceConsumerInterest:(nonnull NSArray *)<em>newElements</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>newElements</code></th>
+						<td><p>Consumer interests array</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Update consumer interests of user</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getConsumerInterestForUser:" title="getConsumerInterestForUser:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getConsumerInterestForUser:">&ndash;&nbsp;getConsumerInterestForUser:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function returns list of existing consumer interests.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSArray *)getConsumerInterestForUser:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>Key of the consumer interest</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Array of consumer interests</p>
+			</div>
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function returns list of existing consumer interests.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleMergeRegisterWithEmail:withPassword:" title="handleMergeRegisterWithEmail:withPassword:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleMergeRegisterWithEmail:withPassword:">&ndash;&nbsp;handleMergeRegisterWithEmail:withPassword:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handle Merging of users</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)handleMergeRegisterWithEmail:(nonnull NSString *)<em>email</em> withPassword:(nonnull NSString *)<em>password</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>email</code></th>
+						<td><p>The <a href="#//api/name/email">email</a> address of the user</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>password</code></th>
+						<td><p>The password</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Handle Merging of users</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/handleMergeRegisterWithProvider:" title="handleMergeRegisterWithProvider:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/handleMergeRegisterWithProvider:">&ndash;&nbsp;handleMergeRegisterWithProvider:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Handle Merging of users</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)handleMergeRegisterWithProvider:(nonnull NSString *)<em>existingAccountProvider</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>existingAccountProvider</code></th>
+						<td><p>The existing account provider name</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Handle Merging of users</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refetchUserProfile" title="refetchUserProfile"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refetchUserProfile">&ndash;&nbsp;refetchUserProfile</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refetch the loged in user details</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refetchUserProfile</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Refetch the loged in user details</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/refreshLoginSession" title="refreshLoginSession"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refreshLoginSession">&ndash;&nbsp;refreshLoginSession</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refresh login session</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refreshLoginSession</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Refresh login session</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getLocaleForProductRegistrationForLocale:" title="getLocaleForProductRegistrationForLocale:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getLocaleForProductRegistrationForLocale:">&ndash;&nbsp;getLocaleForProductRegistrationForLocale:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>This function is to get the locale for Product registration from LocaleMatch</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getLocaleForProductRegistrationForLocale:(nonnull NSString *)<em>locale</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>locale</code></th>
+						<td><p>Locale of the current janrain session</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>This function is to get the locale for Product registration from LocaleMatch</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/checkIfJanrainFlowDownloadedWithCompletion:" title="checkIfJanrainFlowDownloadedWithCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/checkIfJanrainFlowDownloadedWithCompletion:">&ndash;&nbsp;checkIfJanrainFlowDownloadedWithCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to check if janrain flow has been downloaded.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)checkIfJanrainFlowDownloadedWithCompletion:(void ( ^ _Nullable ) ( BOOL isFlowDownloaded ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will be called when janrain flow is downloaded/already downloaded.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to check if janrain flow has been downloaded.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateCountry:withCompletion:" title="updateCountry:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateCountry:withCompletion:">&ndash;&nbsp;updateCountry:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Use this method to change the <a href="#//api/name/country">country</a>.</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateCountry:(nonnull NSString *)<em>country</em> withCompletion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler</code></th>
+						<td><p>This block will be called when <a href="#//api/name/country">country</a> has been updated.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>Use this method to change the <a href="#//api/name/country">country</a>.</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addUserRegistrationListener:" title="addUserRegistrationListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addUserRegistrationListener:">&ndash;&nbsp;addUserRegistrationListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>add listener is for the <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a> and <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addUserRegistrationListener:(nonnull id&lt;UserRegistrationDelegate,JanrainFlowDownloadDelegate&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>object that implements the <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a> or <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>add listener is for the <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a> and <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addUserDetailsListener:" title="addUserDetailsListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addUserDetailsListener:">&ndash;&nbsp;addUserDetailsListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>add listener is for the <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addUserDetailsListener:(nonnull id&lt;UserDetailsDelegate&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>object that implements the <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>add listener is for the <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/addSessionRefreshListener:" title="addSessionRefreshListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/addSessionRefreshListener:">&ndash;&nbsp;addSessionRefreshListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>add listener is for the <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)addSessionRefreshListener:(nonnull id&lt;SessionRefreshDelegate&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>object that implements the <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>add listener is for the <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeUserRegistrationListener:" title="removeUserRegistrationListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeUserRegistrationListener:">&ndash;&nbsp;removeUserRegistrationListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>add listener is for the <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a> and <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeUserRegistrationListener:(nullable id&lt;UserRegistrationDelegate,JanrainFlowDownloadDelegate&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>object that need to remove the <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a> or <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>add listener is for the <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a> and <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeUserDetailsListener:" title="removeUserDetailsListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeUserDetailsListener:">&ndash;&nbsp;removeUserDetailsListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>add listener is for the <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeUserDetailsListener:(nullable id&lt;UserDetailsDelegate&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>object that need to remove the <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>add listener is for the <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeSessionRefreshListener:" title="removeSessionRefreshListener:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeSessionRefreshListener:">&ndash;&nbsp;removeSessionRefreshListener:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>add listener is for the <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a></p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)removeSessionRefreshListener:(nullable id&lt;SessionRefreshDelegate&gt;)<em>listener</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>listener</code></th>
+						<td><p>object that need to remove the <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a> protocol</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>add listener is for the <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a></p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateUserConsent:withCompletion:" title="updateUserConsent:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateUserConsent:withCompletion:">&ndash;&nbsp;updateUserConsent:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>update the user consent</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateUserConsent:(BOOL)<em>accepted</em> withCompletion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accepted</code></th>
+						<td><p>consent value</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will be called when user consent has been updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>update the user consent</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/updateUserConsentApproval:withCompletion:" title="updateUserConsentApproval:withCompletion:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/updateUserConsentApproval:withCompletion:">&ndash;&nbsp;updateUserConsentApproval:withCompletion:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>update the user consent approval</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)updateUserConsentApproval:(BOOL)<em>accepted</em> withCompletion:(void ( ^ _Nullable ) ( NSError *_Nullable error ))<em>completion</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>accepted</code></th>
+						<td><p>consent value</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completion</code></th>
+						<td><p>This block will be called when user consent approval has been updated</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>update the user consent approval</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/application:openURL:options:" title="application:openURL:options:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/application:openURL:options:">+&nbsp;application:openURL:options:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>handle open url for native social accounts (wechat, google+)</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>+ (BOOL)application:(nonnull UIApplication *)<em>application</em> openURL:(nonnull NSURL *)<em>url</em> options:(nonnull NSDictionary&lt;NSString*,id&gt; *)<em>options</em></code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>handle open url for native social accounts (wechat, google+)</p>
+
+<p>@param application
+@param url
+@param options</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">DIUser.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-04-21</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

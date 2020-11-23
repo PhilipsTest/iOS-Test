@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MECSummaryCell" id="KGk-i7-Jjw" customClass="MECSummaryCell" customModule="MobileEcommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2i8-XM-fsl" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6X-nL-haW" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="8" width="32" height="32"/>
+                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uxX-1p-gKe" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="272" y="8" width="32" height="32"/>
+                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="R6X-nL-haW" secondAttribute="bottom" constant="4" id="091-lc-LPb"/>
+                    <constraint firstItem="R6X-nL-haW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1Y2-FY-Z6v"/>
+                    <constraint firstItem="uxX-1p-gKe" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="R6X-nL-haW" secondAttribute="trailing" constant="32" id="3fT-HG-ZqU"/>
+                    <constraint firstItem="uxX-1p-gKe" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7b1-rl-kSc"/>
+                    <constraint firstItem="2i8-XM-fsl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="O8j-e2-VM8"/>
+                    <constraint firstItem="R6X-nL-haW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="QIs-Jn-JXe"/>
+                    <constraint firstAttribute="bottom" secondItem="uxX-1p-gKe" secondAttribute="bottom" constant="4" id="ZyI-XG-E6L"/>
+                    <constraint firstAttribute="trailing" secondItem="uxX-1p-gKe" secondAttribute="trailing" constant="16" id="jR6-3X-Y5A"/>
+                    <constraint firstAttribute="bottom" secondItem="2i8-XM-fsl" secondAttribute="bottom" id="mZa-J6-LSZ"/>
+                    <constraint firstItem="2i8-XM-fsl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nD3-jb-2WE"/>
+                    <constraint firstAttribute="trailing" secondItem="2i8-XM-fsl" secondAttribute="trailing" id="ud2-bx-0sA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="primaryLabel" destination="R6X-nL-haW" id="1f8-6R-Le9"/>
+                <outlet property="secondaryLabel" destination="uxX-1p-gKe" id="onP-Cl-AeG"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="145"/>
+        </tableViewCell>
+    </objects>
+</document>

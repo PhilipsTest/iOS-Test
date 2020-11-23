@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/UAPPProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/UAPPProtocol</TokenIdentifier>
+			<Abstract type="html">UAPPProtocol provides basic rules for uApps to follow.</Abstract>
+			<DeclaredIn>UAPPProtocol.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPPProtocol/initWithDependencies:andSettings:</TokenIdentifier>
+			<Abstract type="html">Documenting UAPPProtocol</Abstract>
+			<DeclaredIn>UAPPProtocol.h</DeclaredIn>
+			
+			<Declaration>- (instancetype _Nonnull)initWithDependencies:(UAPPDependencies *_Nonnull)dependencies andSettings:(UAPPSettings *_Nullable)settings</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dependencies</Name>
+					<Abstract type="html">Object of uAppDependencies class,for injecting Dependencies needed by uApp</Abstract>
+				</Parameter><Parameter>
+					<Name>settings</Name>
+					<Abstract type="html">Object of UAPPSettings class,for injecting one time initialisation parameters needed for uAPP Initialisation</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns instance of uAPP</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDependencies:andSettings:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/UAPPProtocol/instantiateViewController:withErrorHandler:</TokenIdentifier>
+			<Abstract type="html">Documenting UAPPProtocol</Abstract>
+			<DeclaredIn>UAPPProtocol.h</DeclaredIn>
+			
+			<Declaration>- (UIViewController *_Nullable)instantiateViewController:(UAPPLaunchInput *_Nonnull)launchInput withErrorHandler:(void ( ^ _Nullable ) ( NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>launchInput</Name>
+					<Abstract type="html">Instance of UAPPLaunchInput class,for setting the parameters needed for launch of uAPP</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">Block for handling error</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an instance of uApp&apos;s UIViewController which will be used for launching the uApp</Abstract></ReturnValue>
+			<Anchor>//api/name/instantiateViewController:withErrorHandler:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+        <array key="CentraleSansBold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Order History View Controller-->
+        <scene sceneID="vKL-bV-cSk">
+            <objects>
+                <viewController storyboardIdentifier="MECOrderHistoryViewController" id="Ipc-7p-m7d" customClass="MECOrderHistoryViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t9Z-1h-4e1" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PxK-AE-bXP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MECOrderHistoryProductDetailCell" id="LI5-Qq-9o8" customClass="MECOrderHistoryProductDetailCell" customModule="MobileEcommerce" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="342"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="LI5-Qq-9o8" id="ZlP-oM-WdX">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="342"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G4p-2P-Hfp" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="342"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bRh-3p-vDK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="342"/>
+                                                            <subviews>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mAs-di-6CY" userLabel="Order Details Stack View">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="113"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="76V-rH-I6R">
+                                                                            <rect key="frame" x="16" y="0.0" width="382" height="100"/>
+                                                                            <subviews>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="aWv-ks-UxT">
+                                                                                    <rect key="frame" x="0.0" y="16" width="382" height="24"/>
+                                                                                    <subviews>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TkZ-n6-5zu" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                            <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                                                            <accessibility key="accessibilityConfiguration" identifier="mec_order_status_icon_label"/>
+                                                                                            <constraints>
+                                                                                                <constraint firstAttribute="height" constant="24" id="BTl-87-9Fg"/>
+                                                                                                <constraint firstAttribute="width" constant="24" id="Sx8-ki-uZ9"/>
+                                                                                            </constraints>
+                                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                            <nil key="textColor"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                        </label>
+                                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZD2-PB-6op" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                            <rect key="frame" x="28" y="12" width="354" height="0.0"/>
+                                                                                            <accessibility key="accessibilityConfiguration" identifier="mec_order_status_value_label"/>
+                                                                                            <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                                                                            <nil key="textColor"/>
+                                                                                            <nil key="highlightedColor"/>
+                                                                                            <userDefinedRuntimeAttributes>
+                                                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                            </userDefinedRuntimeAttributes>
+                                                                                        </label>
+                                                                                    </subviews>
+                                                                                </stackView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q4S-ZW-BlB" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                    <rect key="frame" x="0.0" y="50" width="382" height="50"/>
+                                                                                    <accessibility key="accessibilityConfiguration" identifier="mec_order_id_label"/>
+                                                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <edgeInsets key="layoutMargins" top="16" left="0.0" bottom="0.0" right="0.0"/>
+                                                                        </stackView>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lM5-RF-VFB" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                                                            <rect key="frame" x="16" y="112" width="382" height="1"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="1" id="5yQ-na-BGk"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4tp-lM-RqD" userLabel="Product Details Stack View">
+                                                                    <rect key="frame" x="0.0" y="113" width="414" height="153"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="YqO-uG-lXR">
+                                                                            <rect key="frame" x="16" y="0.0" width="382" height="144"/>
+                                                                            <subviews>
+                                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="a4O-0m-NNG">
+                                                                                    <rect key="frame" x="0.0" y="16" width="352" height="128"/>
+                                                                                </stackView>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukk-bC-nlk" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                    <rect key="frame" x="358" y="16" width="24" height="128"/>
+                                                                                    <accessibility key="accessibilityConfiguration" identifier="mec_order_accessory_label"/>
+                                                                                    <constraints>
+                                                                                        <constraint firstAttribute="width" constant="24" id="QfC-NK-Bb5"/>
+                                                                                    </constraints>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <edgeInsets key="layoutMargins" top="16" left="0.0" bottom="0.0" right="0.0"/>
+                                                                        </stackView>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9x-Qm-bNY" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                                                            <rect key="frame" x="16" y="152" width="382" height="1"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="1" id="kUy-YK-Naj"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                    <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                                                </stackView>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="SfZ-IB-ccN" userLabel="Order Total Stack View">
+                                                                    <rect key="frame" x="0.0" y="266" width="414" height="76"/>
+                                                                    <subviews>
+                                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2HE-lQ-fa6">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="66"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNJ-el-SMS" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                    <rect key="frame" x="16" y="16" width="50" height="50"/>
+                                                                                    <accessibility key="accessibilityConfiguration" identifier="mec_order_total_label"/>
+                                                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                        <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_cart_total"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRz-Aq-zhl" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                    <rect key="frame" x="66" y="16" width="332" height="50"/>
+                                                                                    <accessibility key="accessibilityConfiguration" identifier="mec_order_total_value_label"/>
+                                                                                    <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="16"/>
+                                                                                    <nil key="textColor"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <edgeInsets key="layoutMargins" top="16" left="16" bottom="0.0" right="16"/>
+                                                                        </stackView>
+                                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rdA-rk-Ttw" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                                                            <rect key="frame" x="0.0" y="74" width="414" height="2"/>
+                                                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                                            <constraints>
+                                                                                <constraint firstAttribute="height" constant="2" id="YcD-DQ-s62"/>
+                                                                            </constraints>
+                                                                        </view>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="bRh-3p-vDK" firstAttribute="leading" secondItem="G4p-2P-Hfp" secondAttribute="leading" id="AIL-fu-MYF"/>
+                                                        <constraint firstAttribute="trailing" secondItem="bRh-3p-vDK" secondAttribute="trailing" id="Cha-sH-SOK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="bRh-3p-vDK" secondAttribute="bottom" id="ONB-47-oNJ"/>
+                                                        <constraint firstItem="bRh-3p-vDK" firstAttribute="top" secondItem="G4p-2P-Hfp" secondAttribute="top" id="S1T-cW-bqD"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="G4p-2P-Hfp" firstAttribute="top" secondItem="ZlP-oM-WdX" secondAttribute="top" id="0SL-cH-3Hl"/>
+                                                <constraint firstAttribute="bottom" secondItem="G4p-2P-Hfp" secondAttribute="bottom" id="Auj-gk-oMx"/>
+                                                <constraint firstAttribute="trailing" secondItem="G4p-2P-Hfp" secondAttribute="trailing" id="JQp-pa-WIF"/>
+                                                <constraint firstItem="G4p-2P-Hfp" firstAttribute="leading" secondItem="ZlP-oM-WdX" secondAttribute="leading" id="crg-kV-dEH"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="orderAccessoryLabel" destination="ukk-bC-nlk" id="0rg-Ye-dra"/>
+                                            <outlet property="orderIDLabel" destination="q4S-ZW-BlB" id="4eK-Qa-Ket"/>
+                                            <outlet property="orderProductsStackView" destination="a4O-0m-NNG" id="nps-le-lE1"/>
+                                            <outlet property="orderStatusIconLabel" destination="TkZ-n6-5zu" id="amR-0B-CNz"/>
+                                            <outlet property="orderStatusLabel" destination="ZD2-PB-6op" id="Oz8-d3-6BM"/>
+                                            <outlet property="orderTotalLabel" destination="VNJ-el-SMS" id="bdE-5p-0Jk"/>
+                                            <outlet property="orderTotalValueLabel" destination="nRz-Aq-zhl" id="OUq-h2-2bU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Ipc-7p-m7d" id="ah4-c9-NaC"/>
+                                    <outlet property="delegate" destination="Ipc-7p-m7d" id="yeY-KE-Ewg"/>
+                                </connections>
+                            </tableView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4gq-jk-YIr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="798"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="UwP-Ql-zAU">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="798"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="qAn-ck-3PV" userLabel="No Order Stack View">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="730"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HTN-Ny-qgP" userLabel="Header Stack View">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zr-2e-bGs" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="16" y="0.0" width="382" height="40"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_title_label"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="40" id="b8l-KE-2d9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_orders"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXe-4f-Hbg" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="40" width="414" height="690"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="16v-AM-X9F">
+                                                                <rect key="frame" x="0.0" y="0.0" width="414" height="690"/>
+                                                                <subviews>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3bZ-X3-Ubx">
+                                                                        <rect key="frame" x="16" y="12" width="378" height="24"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wk0-ID-tRI" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_icon_label"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="height" constant="24" id="YHr-Qi-Eoo"/>
+                                                                                    <constraint firstAttribute="width" constant="24" id="lS2-1Q-ne0"/>
+                                                                                </constraints>
+                                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ne6-MY-YO6" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                <rect key="frame" x="28" y="0.0" width="350" height="24"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_status_label"/>
+                                                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                    <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_order_not_received_items"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lv6-km-ThK">
+                                                                        <rect key="frame" x="16" y="48" width="378" height="626"/>
+                                                                        <subviews>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skC-Xs-GHx" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="378" height="618"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_first_instruction"/>
+                                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bdS-xU-7uI" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                                <rect key="frame" x="0.0" y="626" width="378" height="0.0"/>
+                                                                                <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_second_instruction"/>
+                                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                                                <nil key="textColor"/>
+                                                                                <nil key="highlightedColor"/>
+                                                                                <userDefinedRuntimeAttributes>
+                                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                                </userDefinedRuntimeAttributes>
+                                                                            </label>
+                                                                        </subviews>
+                                                                    </stackView>
+                                                                </subviews>
+                                                                <edgeInsets key="layoutMargins" top="12" left="16" bottom="16" right="20"/>
+                                                            </stackView>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="16v-AM-X9F" firstAttribute="leading" secondItem="ZXe-4f-Hbg" secondAttribute="leading" id="8tH-B3-OVc"/>
+                                                            <constraint firstAttribute="trailing" secondItem="16v-AM-X9F" secondAttribute="trailing" id="VA6-eF-TH7"/>
+                                                            <constraint firstAttribute="bottom" secondItem="16v-AM-X9F" secondAttribute="bottom" id="WjQ-0k-Hc8"/>
+                                                            <constraint firstItem="16v-AM-X9F" firstAttribute="top" secondItem="ZXe-4f-Hbg" secondAttribute="top" id="vuR-z9-312"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="SP6-yW-bdc" userLabel="Button Stack View">
+                                                <rect key="frame" x="0.0" y="754" width="414" height="44"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vts-OK-1ZM" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="16" y="0.0" width="382" height="44"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_continue_button"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="TDd-Yd-bMA"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedButtonNormalTitle" value="mec_continue_shopping"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="continueShoppingButtonClicked:" destination="Ipc-7p-m7d" eventType="touchUpInside" id="VhI-eK-DcZ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mec_no_order_history_view">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="UwP-Ql-zAU" firstAttribute="top" secondItem="4gq-jk-YIr" secondAttribute="top" id="dbf-VW-Hhw"/>
+                                    <constraint firstAttribute="trailing" secondItem="UwP-Ql-zAU" secondAttribute="trailing" id="uWN-14-C1U"/>
+                                    <constraint firstItem="UwP-Ql-zAU" firstAttribute="leading" secondItem="4gq-jk-YIr" secondAttribute="leading" id="wB9-50-IHH"/>
+                                    <constraint firstAttribute="bottom" secondItem="UwP-Ql-zAU" secondAttribute="bottom" id="ySh-FH-eiE"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MND-Uf-7Mb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4gq-jk-YIr" secondAttribute="bottom" priority="250" constant="8" id="4b0-Jk-qeB"/>
+                            <constraint firstItem="MND-Uf-7Mb" firstAttribute="trailing" secondItem="4gq-jk-YIr" secondAttribute="trailing" id="6uz-R2-87P"/>
+                            <constraint firstItem="PxK-AE-bXP" firstAttribute="top" secondItem="MND-Uf-7Mb" secondAttribute="top" id="Kbe-QZ-TrJ"/>
+                            <constraint firstItem="MND-Uf-7Mb" firstAttribute="trailing" secondItem="PxK-AE-bXP" secondAttribute="trailing" id="V2L-pj-phr"/>
+                            <constraint firstItem="4gq-jk-YIr" firstAttribute="leading" secondItem="MND-Uf-7Mb" secondAttribute="leading" id="a2t-kB-FYN"/>
+                            <constraint firstItem="PxK-AE-bXP" firstAttribute="leading" secondItem="MND-Uf-7Mb" secondAttribute="leading" id="enW-cj-azq"/>
+                            <constraint firstItem="4gq-jk-YIr" firstAttribute="top" secondItem="MND-Uf-7Mb" secondAttribute="top" id="gpe-8R-BZ8"/>
+                            <constraint firstItem="MND-Uf-7Mb" firstAttribute="bottom" secondItem="PxK-AE-bXP" secondAttribute="bottom" id="nIA-ap-vD6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MND-Uf-7Mb"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4b0-Jk-qeB"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="noOrderIconLabel" destination="Wk0-ID-tRI" id="IFt-ex-UyW"/>
+                        <outlet property="noOrderInstructionFirstLabel" destination="skC-Xs-GHx" id="VrE-SQ-QAD"/>
+                        <outlet property="noOrderInstructionSecondLabel" destination="bdS-xU-7uI" id="q6x-xp-Qju"/>
+                        <outlet property="noOrderInstructionView" destination="ZXe-4f-Hbg" id="RtY-gT-wwu"/>
+                        <outlet property="noOrderMainView" destination="4gq-jk-YIr" id="ut9-0e-inB"/>
+                        <outlet property="noOrderStatusLabel" destination="ne6-MY-YO6" id="TX2-bU-hkl"/>
+                        <outlet property="noOrderTitleLabel" destination="8zr-2e-bGs" id="elA-jf-jC8"/>
+                        <outlet property="orderHistoryTableView" destination="PxK-AE-bXP" id="MDY-Ub-4Yq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knK-Y8-ZzB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="114"/>
+        </scene>
+    </scenes>
+</document>

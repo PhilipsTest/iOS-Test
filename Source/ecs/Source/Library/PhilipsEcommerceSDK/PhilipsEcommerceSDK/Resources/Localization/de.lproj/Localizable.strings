@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Bitte geben Sie die App-Metrik für das Objekt an";
+"ECSBaseURLNotFound" = "Basis-URL nicht gefunden";
+"ECSCartEntryError" = "Das Produkt wurde nicht in den Warenkorb gelegt";
+"ECSCartError" = "Noch kein Warenkorb erstellt";
+"ECSCommerceCartModificationError" = "Die Menge darf nicht kleiner als Null sein";
+"ECSCtnNotProvided" = "Bitte geben Sie die CTN an";
+"ECSHybrisNotAvailable" = "Der Philips-Shop ist für das ausgewählte Land nicht verfügbar, es steht nur der Einzelhandelsmodus zur Verfügung";
+"ECSIllegalArgumentError" = "Bitte stellen Sie gültige Eingabedaten bereit";
+"ECSInsufficientStockError" = "Das Produkt kann nicht versendet werden, da es nicht vorrätig ist";
+"ECSInvalidPaymentInfoError" = "Bitte stellen Sie gültige Angaben zur Bezahlung bereit";
+"ECSInvalidTokenError" = "Es ist ein technischer Fehler aufgetreten (ungültiges Zugriffs-Token). Bitte führen Sie die Hybris-Neuauthentifizierung durch";
+"ECSLocaleNotFound" = "Bitte legen Sie das Gebietsschema fest";
+"ECSNoSuchElementError" = "Beim Abrufen der Daten vom Server ist ein Fehler aufgetreten";
+"ECSOAuthDetailError" = "Bitte stellen Sie vollständige OAuth-Datenblätter bereit";
+"ECSOAuthNotCalled" = "Für diese Handlung ist eine Benutzergenehmigung erforderlich";
+"ECSPIL_BAD_REQUEST" = "Es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut";
+"ECSPIL_BAD_REQUEST_cartId" = "Noch kein Warenkorb erstellt";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Es ist ein technischer Fehler aufgetreten (ungültiges Zugriffs-Token). Bitte führen Sie die Hybris-Neuauthentifizierung durch";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Ungültige E-Mail-Adresse. Bitte überprüfen Sie sie.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Das Produkt wurde nicht in den Warenkorb gelegt";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Bitte legen Sie das Gebietsschema fest";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Geben Sie eine gültige CTN an";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Bitte geben Sie eine gültige Menge an";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Der Philips-Shop ist für das ausgewählte Land nicht verfügbar, es steht nur der Einzelhandelsmodus zur Verfügung";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Die Menge muss größer als Null sein";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Bitte legen Sie das Gebietsschema fest";
+"ECSPIL_MISSING_PARAMETER_language" = "Bitte legen Sie das Gebietsschema fest";
+"ECSPIL_MISSING_PARAMETER_productId" = "Bitte geben Sie die CTN an";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Der Philips-Shop ist für das ausgewählte Land nicht verfügbar, es steht nur der Einzelhandelsmodus zur Verfügung";
+"ECSPIL_NEGATIVE_QUANTITY" = "Die Menge darf nicht kleiner als Null sein";
+"ECSPIL_NOT_ACCEPTABLE" = "Es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut";
+"ECSPIL_NOT_FOUND_cartId" = "Bitte geben Sie eine gültige Warenkorb-ID an";
+"ECSPIL_NOT_FOUND_productId" = "Geben Sie eine gültige CTN an";
+"ECSPIL_STOCK_EXCEPTION" = "Das Produkt kann nicht versendet werden, da es nicht vorrätig ist";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut";
+"ECSPaymentAuthorizationError" = "Zahlungsautorisierung war nicht erfolgreich";
+"ECSPropositionIdNotFound" = "Bitte legen Sie eine gültige Angebots-ID fest";
+"ECSSiteIdNotFound" = "Der Philips-Shop ist für das ausgewählte Land nicht verfügbar, es steht nur der Einzelhandelsmodus zur Verfügung";
+"ECSUnknownIdentifierError" = "Die angeforderte Ressource ist nicht verfügbar";
+"ECSUnsupportedDeliveryModeError" = "Der gewählte Zustellmodus wird nicht unterstützt";
+"ECSUnsupportedVoucherError" = "Dieser Gutschein kann leider nicht eingelöst werden";
+"ECSValidationError" = "Datenüberprüfung fehlgeschlagen";
+"ECSVoucherOperationError" = "Dieser Gutschein kann leider nicht eingelöst werden";
+"ECSaddressId" = "Die angegebene Adresse existiert nicht oder ist einem anderen Benutzer zugeteilt";
+"ECScountryCodeNotGiven" = "Bitte geben Sie den gültigen Ländercode an";
+"ECScountryisocode" = "Das gewählte Land ist ungültig";
+"ECSfirstName" = "Beachten Sie, dass die folgenden Zeichen nicht erlaubt sind: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Es ist ein technischer Fehler aufgetreten (falsche Kundenadaten). Melden Sie sich bitte wieder an";
+"ECSinvalid_grant" = "Es ist ein technischer Fehler aufgetreten (ungültiges Janrain-Token). Melden Sie sich bitte wieder an";
+"ECSlastName" = "Beachten Sie, dass die folgenden Zeichen nicht erlaubt sind: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Bitte übermitteln Sie eine gültige Bestellung";
+"ECSphone1" = "Die gewählte Telefonnummer ist ungültig";
+"ECSphone2" = "Die gewählte Telefonnummer ist ungültig";
+"ECSpostUrl" = "Die Bestellung ist bereits bezahlt/abgeschlossen";
+"ECSpostalCode" = "Die gewählte PLZ ist ungültig";
+"ECSregionisocode" = "Die gewählte Region ist ungültig";
+"ECSsessionCart" = "Bitte wählen Sie die Zustelladresse, Zustellart und Zahlungsart, bevor Sie eine Bestellung aufgeben";
+"ECSsomethingWentWrong" = "Es ist ein technischer Fehler aufgetreten. Bitte versuchen Sie es später erneut";
+"ECSunsupported_grant_type" = "Es ist ein technischer Fehler aufgetreten (nicht unterstützte Genehmigung). Melden Sie sich bitte wieder an";

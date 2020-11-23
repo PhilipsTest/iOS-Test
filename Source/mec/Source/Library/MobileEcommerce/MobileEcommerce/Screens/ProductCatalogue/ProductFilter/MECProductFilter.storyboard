@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Product Filter View Controller-->
+        <scene sceneID="syt-le-DPB">
+            <objects>
+                <viewController storyboardIdentifier="MECProductFilterViewController" id="1c1-MP-f1C" customClass="MECProductFilterViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzn-3E-4nD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsw-qm-xkP">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xw-8R-KrJ" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="0.0" y="358.5" width="414" height="537.5"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="G7v-A0-X7W">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="461.5"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="dataSource" destination="1c1-MP-f1C" id="EqG-Ym-XBl"/>
+                                            <outlet property="delegate" destination="1c1-MP-f1C" id="Rn1-Km-7zH"/>
+                                        </connections>
+                                    </tableView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YbK-AF-ykw" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="461.5" width="414" height="76"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="G2f-2q-ptV">
+                                                <rect key="frame" x="8" y="8" width="398" height="52"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0g-c4-C5c" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="4" width="195" height="44"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="mec_filter_clearButton"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="t9e-eH-ArW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Cancel"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedButtonNormalTitle" value="mec_clear"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="clearButtonClicked:" destination="1c1-MP-f1C" eventType="touchUpInside" id="jPY-qz-5Xn"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BFB-ZC-RQ6" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="203" y="4" width="195" height="44"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="mec_filter_applyButton"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="h0M-ZE-dh9"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Apply"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedButtonNormalTitle" value="mec_apply"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="applyButtonClicked:" destination="1c1-MP-f1C" eventType="touchUpInside" id="7ZD-OH-zQQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mec_filter_bottomview"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="76" id="TMC-IY-EvD"/>
+                                            <constraint firstAttribute="trailing" secondItem="G2f-2q-ptV" secondAttribute="trailing" constant="8" id="eRu-CA-3Yo"/>
+                                            <constraint firstItem="G2f-2q-ptV" firstAttribute="top" secondItem="YbK-AF-ykw" secondAttribute="top" constant="8" id="qPd-f0-6Ci"/>
+                                            <constraint firstAttribute="bottom" secondItem="G2f-2q-ptV" secondAttribute="bottom" constant="16" id="tdC-0I-Y7C"/>
+                                            <constraint firstItem="G2f-2q-ptV" firstAttribute="leading" secondItem="YbK-AF-ykw" secondAttribute="leading" constant="8" id="uWP-fK-D7S"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="YbK-AF-ykw" secondAttribute="bottom" id="IDs-ET-qMt"/>
+                                    <constraint firstItem="G7v-A0-X7W" firstAttribute="leading" secondItem="0xw-8R-KrJ" secondAttribute="leading" id="Jtz-Nh-UmU"/>
+                                    <constraint firstAttribute="trailing" secondItem="YbK-AF-ykw" secondAttribute="trailing" id="MTY-4e-Day"/>
+                                    <constraint firstItem="G7v-A0-X7W" firstAttribute="top" secondItem="0xw-8R-KrJ" secondAttribute="top" id="Rdh-L5-e3N"/>
+                                    <constraint firstItem="YbK-AF-ykw" firstAttribute="top" secondItem="G7v-A0-X7W" secondAttribute="bottom" id="YV0-F8-HoP"/>
+                                    <constraint firstItem="YbK-AF-ykw" firstAttribute="leading" secondItem="0xw-8R-KrJ" secondAttribute="leading" id="iXW-kd-3EZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="G7v-A0-X7W" secondAttribute="trailing" id="xvH-qV-Phj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0xw-8R-KrJ" firstAttribute="leading" secondItem="dsw-qm-xkP" secondAttribute="leading" id="2OF-00-T2U"/>
+                            <constraint firstItem="0xw-8R-KrJ" firstAttribute="trailing" secondItem="8Sm-F7-nys" secondAttribute="trailing" id="64c-j9-EVW"/>
+                            <constraint firstItem="0xw-8R-KrJ" firstAttribute="height" secondItem="dsw-qm-xkP" secondAttribute="height" id="Gfs-x8-Qfi"/>
+                            <constraint firstItem="dsw-qm-xkP" firstAttribute="trailing" secondItem="8Sm-F7-nys" secondAttribute="trailing" id="InN-GY-Fbx"/>
+                            <constraint firstItem="dsw-qm-xkP" firstAttribute="leading" secondItem="8Sm-F7-nys" secondAttribute="leading" id="L6o-fd-M0a"/>
+                            <constraint firstItem="0xw-8R-KrJ" firstAttribute="top" secondItem="dsw-qm-xkP" secondAttribute="bottom" id="i2Q-Ic-wM4"/>
+                            <constraint firstAttribute="bottom" secondItem="0xw-8R-KrJ" secondAttribute="bottom" id="jdI-fO-0eO"/>
+                            <constraint firstItem="dsw-qm-xkP" firstAttribute="top" secondItem="zzn-3E-4nD" secondAttribute="top" id="kTQ-5Y-B7c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="8Sm-F7-nys"/>
+                    </view>
+                    <connections>
+                        <outlet property="applyButton" destination="BFB-ZC-RQ6" id="u5a-kP-4hF"/>
+                        <outlet property="bottomView" destination="YbK-AF-ykw" id="PIa-OM-ar6"/>
+                        <outlet property="clearButton" destination="p0g-c4-C5c" id="RVG-EA-cOS"/>
+                        <outlet property="filterTableView" destination="G7v-A0-X7W" id="CpZ-eG-1aF"/>
+                        <outlet property="gestureView" destination="dsw-qm-xkP" id="H9a-dW-s5l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="98V-CN-0yf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

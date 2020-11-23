@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--DemoU App View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="CCBDemoUAppViewController" id="BYZ-38-t0r" customClass="CCBDemoUAppViewController" customModule="ConversationalChatbotDemoUApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="avf-Xf-vU2" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="20" y="383" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5cc-KL-ALv"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="oYt-zD-oeu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Select Left Chat Icon"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="ccb.demouapp.launchChatbotButton"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeLeftIconImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RkB-cR-iek"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmS-rv-sMb" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="20" y="433" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="QnE-8i-cIB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Launch Chatbot UI"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="ccb.demouapp.launchChatbotButton"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="Launch Chatbot UI"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="launchChatbotUI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OCh-k1-iGo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N9i-Jd-Zbk" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="20" y="493" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="uDy-7L-MX2"/>
+                                </constraints>
+                                <state key="normal" title="Launch Directline API"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="ccb.demouapp.launchDirectlineApiButton"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedTitle" value="Launch Directline API"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="launchDirectlineAPI:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kvR-Mj-hz7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device Connected :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJX-ju-hmH">
+                                <rect key="frame" x="20" y="543" width="297" height="49"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="umB-Oy-Lbg">
+                                <rect key="frame" x="345" y="552" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="kkH-cF-Ci5"/>
+                                    <constraint firstAttribute="width" constant="49" id="kwY-9y-eG2"/>
+                                </constraints>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Present Modally :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIv-DT-oEr">
+                                <rect key="frame" x="20" y="600" width="297" height="49"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="49" id="IBX-Hx-RbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hdM-Jo-BaE">
+                                <rect key="frame" x="345" y="609" width="51" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="NrM-oa-Wex"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="31" id="n4t-2I-RHk"/>
+                                    <constraint firstAttribute="width" constant="49" id="yeY-Un-EMx"/>
+                                </constraints>
+                            </switch>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hdM-Jo-BaE" firstAttribute="top" secondItem="umB-Oy-Lbg" secondAttribute="bottom" constant="26" id="C6D-cy-cHB"/>
+                            <constraint firstItem="N9i-Jd-Zbk" firstAttribute="top" secondItem="DmS-rv-sMb" secondAttribute="bottom" constant="20" id="NlJ-h3-vst"/>
+                            <constraint firstItem="GzF-hQ-I9n" firstAttribute="trailing" secondItem="N9i-Jd-Zbk" secondAttribute="trailing" constant="20" id="OFJ-Vq-emX"/>
+                            <constraint firstItem="DmS-rv-sMb" firstAttribute="top" secondItem="avf-Xf-vU2" secondAttribute="bottom" constant="10" id="Plm-VX-ngy"/>
+                            <constraint firstItem="GzF-hQ-I9n" firstAttribute="trailing" secondItem="umB-Oy-Lbg" secondAttribute="trailing" constant="20" id="RaA-8n-rpX"/>
+                            <constraint firstItem="DmS-rv-sMb" firstAttribute="leading" secondItem="GzF-hQ-I9n" secondAttribute="leading" constant="20" id="Uhq-HH-HG7"/>
+                            <constraint firstItem="umB-Oy-Lbg" firstAttribute="centerY" secondItem="BJX-ju-hmH" secondAttribute="centerY" id="akd-C0-1n7"/>
+                            <constraint firstItem="BJX-ju-hmH" firstAttribute="top" secondItem="N9i-Jd-Zbk" secondAttribute="bottom" constant="10" id="b7P-xy-rP5"/>
+                            <constraint firstItem="RIv-DT-oEr" firstAttribute="top" secondItem="BJX-ju-hmH" secondAttribute="bottom" constant="8" id="d8y-Gj-16T"/>
+                            <constraint firstItem="umB-Oy-Lbg" firstAttribute="leading" secondItem="BJX-ju-hmH" secondAttribute="trailing" constant="28" id="erK-Am-hS9"/>
+                            <constraint firstItem="GzF-hQ-I9n" firstAttribute="trailing" secondItem="hdM-Jo-BaE" secondAttribute="trailing" constant="20" id="ey5-IF-Kup"/>
+                            <constraint firstItem="N9i-Jd-Zbk" firstAttribute="leading" secondItem="GzF-hQ-I9n" secondAttribute="leading" constant="20" id="hpd-OM-zIa"/>
+                            <constraint firstItem="hdM-Jo-BaE" firstAttribute="leading" secondItem="RIv-DT-oEr" secondAttribute="trailing" constant="28" id="kmB-s6-oFu"/>
+                            <constraint firstItem="hdM-Jo-BaE" firstAttribute="centerY" secondItem="RIv-DT-oEr" secondAttribute="centerY" id="kqY-Y4-lO7"/>
+                            <constraint firstItem="RIv-DT-oEr" firstAttribute="leading" secondItem="GzF-hQ-I9n" secondAttribute="leading" constant="20" id="mMf-MH-ZVe"/>
+                            <constraint firstItem="hdM-Jo-BaE" firstAttribute="leading" secondItem="RIv-DT-oEr" secondAttribute="trailing" constant="28" id="oNB-I3-mVe"/>
+                            <constraint firstItem="GzF-hQ-I9n" firstAttribute="trailing" secondItem="avf-Xf-vU2" secondAttribute="trailing" constant="20" id="pWf-wP-LrZ"/>
+                            <constraint firstItem="avf-Xf-vU2" firstAttribute="leading" secondItem="GzF-hQ-I9n" secondAttribute="leading" constant="20" id="phv-H6-p8z"/>
+                            <constraint firstItem="GzF-hQ-I9n" firstAttribute="trailing" secondItem="DmS-rv-sMb" secondAttribute="trailing" constant="20" id="saC-oQ-t5X"/>
+                            <constraint firstItem="umB-Oy-Lbg" firstAttribute="top" secondItem="N9i-Jd-Zbk" secondAttribute="bottom" constant="19" id="u3k-aE-EMX"/>
+                            <constraint firstItem="BJX-ju-hmH" firstAttribute="leading" secondItem="GzF-hQ-I9n" secondAttribute="leading" constant="20" id="vzx-oU-xbj"/>
+                            <constraint firstItem="DmS-rv-sMb" firstAttribute="centerY" secondItem="GzF-hQ-I9n" secondAttribute="centerY" id="zyG-O5-L9H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GzF-hQ-I9n"/>
+                    </view>
+                    <connections>
+                        <outlet property="deviceSwitch" destination="umB-Oy-Lbg" id="Cze-84-o9r"/>
+                        <outlet property="imageButton" destination="avf-Xf-vU2" id="QED-i4-bTo"/>
+                        <outlet property="presentModalChatScreen" destination="hdM-Jo-BaE" id="qEf-ec-vLX"/>
+                        <segue destination="ZGF-G3-Kbf" kind="show" identifier="ShowDirectLineAPISegue" id="DZw-bT-pyQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="76.339285714285708"/>
+        </scene>
+        <!--Demo View Controller-->
+        <scene sceneID="Ga1-Yp-pCg">
+            <objects>
+                <tableViewController id="ZGF-G3-Kbf" customClass="CCBDLAPIDemoViewController" customModule="ConversationalChatbotDemoUApp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TAJ-cm-Pid">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Gug-TT-GOX">
+                                <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Gug-TT-GOX" id="ZkL-k4-Iji">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ZGF-G3-Kbf" id="DP1-Fg-Ggs"/>
+                            <outlet property="delegate" destination="ZGF-G3-Kbf" id="z1T-fc-IBa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="r04-wh-dgL"/>
+                    <connections>
+                        <segue destination="1nu-NW-e7U" kind="show" identifier="ShowResponseSegue" id="JuO-TK-cfJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lg7-5n-qmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="846" y="79"/>
+        </scene>
+        <!--Response View Controller-->
+        <scene sceneID="WEZ-JZ-r81">
+            <objects>
+                <viewController id="1nu-NW-e7U" customClass="CCBResponseViewController" customModule="ConversationalChatbotDemoUApp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pbx-yf-muQ" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0vq-6H-9m2">
+                                <rect key="frame" x="20" y="177" width="374" height="631"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IeF-tJ-7v1">
+                                <rect key="frame" x="20" y="46" width="374" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="YT3-Cj-ZQJ"/>
+                                    <constraint firstAttribute="width" priority="750" constant="374" id="mSr-6d-W8P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Response" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcS-vG-0Af">
+                                <rect key="frame" x="20" y="146" width="374" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6pJ-Ck-Qj8"/>
+                                    <constraint firstAttribute="width" priority="250" constant="314" id="WH3-rg-W1t"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELL-o4-hdy">
+                                <rect key="frame" x="105" y="93" width="205" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="205" id="50B-11-IGx"/>
+                                    <constraint firstAttribute="height" constant="30" id="Doa-kY-7YW"/>
+                                </constraints>
+                                <state key="normal" title="Post"/>
+                                <connections>
+                                    <action selector="postMessage:" destination="1nu-NW-e7U" eventType="touchUpInside" id="mEN-cf-4Xi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ELL-o4-hdy" firstAttribute="top" secondItem="IeF-tJ-7v1" secondAttribute="bottom" constant="13" id="5Fr-Nf-MjC"/>
+                            <constraint firstItem="IeF-tJ-7v1" firstAttribute="leading" secondItem="Us9-hO-Obo" secondAttribute="leading" constant="20" id="7S8-th-Rug"/>
+                            <constraint firstItem="0vq-6H-9m2" firstAttribute="top" secondItem="IeF-tJ-7v1" secondAttribute="bottom" constant="97" id="Adg-hk-hhi"/>
+                            <constraint firstItem="ELL-o4-hdy" firstAttribute="centerX" secondItem="IeF-tJ-7v1" secondAttribute="centerX" constant="0.5" id="CRi-cj-LFe"/>
+                            <constraint firstItem="YcS-vG-0Af" firstAttribute="leading" secondItem="Us9-hO-Obo" secondAttribute="leading" constant="20" id="E1g-4f-BFm"/>
+                            <constraint firstItem="Us9-hO-Obo" firstAttribute="trailing" secondItem="0vq-6H-9m2" secondAttribute="trailing" constant="20" id="FIB-0S-Pgr"/>
+                            <constraint firstItem="Us9-hO-Obo" firstAttribute="trailing" secondItem="IeF-tJ-7v1" secondAttribute="trailing" constant="20" id="Qm0-7q-Y5x"/>
+                            <constraint firstItem="0vq-6H-9m2" firstAttribute="leading" secondItem="Us9-hO-Obo" secondAttribute="leading" constant="20" id="VB0-0f-TIw"/>
+                            <constraint firstItem="0vq-6H-9m2" firstAttribute="top" secondItem="YcS-vG-0Af" secondAttribute="bottom" constant="10" id="bZd-Lo-0rd"/>
+                            <constraint firstItem="IeF-tJ-7v1" firstAttribute="top" secondItem="Us9-hO-Obo" secondAttribute="top" constant="46" id="ef2-6g-ocC"/>
+                            <constraint firstItem="0vq-6H-9m2" firstAttribute="bottom" secondItem="Us9-hO-Obo" secondAttribute="bottom" id="hC7-3Y-Aef"/>
+                            <constraint firstItem="Us9-hO-Obo" firstAttribute="trailing" secondItem="YcS-vG-0Af" secondAttribute="trailing" constant="20" id="mjo-RI-89E"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Us9-hO-Obo"/>
+                        <connections>
+                            <action selector="dismissKeyBoard:" destination="1nu-NW-e7U" eventType="touchUpInside" id="zKN-KH-1kp"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Q5G-Ph-Cxd"/>
+                    <connections>
+                        <outlet property="messageTextField" destination="IeF-tJ-7v1" id="vwl-RO-fED"/>
+                        <outlet property="postButton" destination="ELL-o4-hdy" id="BwN-hU-MYQ"/>
+                        <outlet property="responseTextView" destination="0vq-6H-9m2" id="Xy0-4N-kvT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Myh-dw-Kax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1792.753623188406" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MECNoOrderDetailView" customModule="MobileEcommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Coa-nC-0Cf">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="laD-oh-xvY" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <accessibility key="accessibilityConfiguration" identifier="mec_no_order_detail_label"/>
+                            <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_order_detail_unavailable"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <accessibility key="accessibilityConfiguration" identifier="mec_no_order_view">
+                <bool key="isElement" value="YES"/>
+            </accessibility>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Coa-nC-0Cf" secondAttribute="trailing" id="3Ds-E8-MO9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Coa-nC-0Cf" secondAttribute="bottom" id="8Cg-4P-DPJ"/>
+                <constraint firstItem="Coa-nC-0Cf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Qq6-71-jqF"/>
+                <constraint firstItem="Coa-nC-0Cf" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VS8-ZZ-hWp"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="noOrderDetailLabel" destination="laD-oh-xvY" id="bGW-mZ-aMQ"/>
+            </connections>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>

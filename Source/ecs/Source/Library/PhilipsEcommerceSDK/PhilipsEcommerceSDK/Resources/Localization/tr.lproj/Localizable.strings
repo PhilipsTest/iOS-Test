@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Lütfen app infra object sağlayın";
+"ECSBaseURLNotFound" = "Ana URL bulunamadı";
+"ECSCartEntryError" = "Ürün, Sepete ekli değil";
+"ECSCartError" = "Henüz hiçbir sepet oluşturulmadı";
+"ECSCommerceCartModificationError" = "Adet, sıfırdan az olmamalıdır";
+"ECSCtnNotProvided" = "Lütfen CTN sağlayın";
+"ECSHybrisNotAvailable" = "Philips mağazası, seçilen ülke için mevcut değil. Yalnızca perakende modu mevcut";
+"ECSIllegalArgumentError" = "Lütfen geçerli giriş verileri sağlayın";
+"ECSInsufficientStockError" = "Stokta olmadığı için ürün kargoya verilemez";
+"ECSInvalidPaymentInfoError" = "Lütfen geçerli ödeme ayrıntıları sağlayın";
+"ECSInvalidTokenError" = "Teknik bir sorunla karşılaştık (Geçersiz erişim belirteci). Lütfen Hybris Re-Auth gerçekleştirin";
+"ECSLocaleNotFound" = "Lütfen konumu belirleyin";
+"ECSNoSuchElementError" = "Sunucudan veri alınırken bir hata oluştu";
+"ECSOAuthDetailError" = "Lütfen eksiksiz Oauth ayrıntılarını sağlayın";
+"ECSOAuthNotCalled" = "Bu işlem için kullanıcı yetkisi gerekli";
+"ECSPIL_BAD_REQUEST" = "Teknik bir sorunla karşılaştık. Lütfen bir süre sonra tekrar deneyin";
+"ECSPIL_BAD_REQUEST_cartId" = "Henüz hiçbir sepet oluşturulmadı";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Teknik bir sorunla karşılaştık. Lütfen bir süre sonra tekrar deneyin";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Teknik bir sorunla karşılaştık (Geçersiz erişim belirteci). Lütfen Hybris Re-Auth gerçekleştirin";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Geçersiz e-posta adresi. Lütfen kontrol edin.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Ürün, Sepete ekli değil";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Lütfen konumu belirleyin";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Lütfen geçerli bir CTN sağlayın";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Lütfen geçerli bir adet sağlayın";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philips mağazası, seçilen ülke için mevcut değil. Yalnızca perakende modu mevcut";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Adet, sıfırdan fazla olmalıdır";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Lütfen konumu belirleyin";
+"ECSPIL_MISSING_PARAMETER_language" = "Lütfen konumu belirleyin";
+"ECSPIL_MISSING_PARAMETER_productId" = "Lütfen CTN sağlayın";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philips mağazası, seçilen ülke için mevcut değil. Yalnızca perakende modu mevcut";
+"ECSPIL_NEGATIVE_QUANTITY" = "Adet, sıfırdan az olmamalıdır";
+"ECSPIL_NOT_ACCEPTABLE" = "Teknik bir sorunla karşılaştık. Lütfen bir süre sonra tekrar deneyin";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Teknik bir sorunla karşılaştık. Lütfen bir süre sonra tekrar deneyin";
+"ECSPIL_NOT_FOUND_cartId" = "Lütfen geçerli bir Sepet Numarası sağlayın";
+"ECSPIL_NOT_FOUND_productId" = "Lütfen geçerli bir CTN sağlayın";
+"ECSPIL_STOCK_EXCEPTION" = "Stokta olmadığı için ürün kargoya verilemez";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Teknik bir sorunla karşılaştık. Lütfen bir süre sonra tekrar deneyin";
+"ECSPaymentAuthorizationError" = "Ödeme onayı başarısız oldu";
+"ECSPropositionIdNotFound" = "Lütfen geçerli bir Proposition ID belirleyin";
+"ECSSiteIdNotFound" = "Philips mağazası, seçilen ülke için mevcut değil. Yalnızca perakende modu mevcut";
+"ECSUnknownIdentifierError" = "Talep edilen kaynak mevcut değil";
+"ECSUnsupportedDeliveryModeError" = "Seçilen teslimat modu desteklenmiyor";
+"ECSUnsupportedVoucherError" = "Üzgünüz, bu kupon kullanılamaz";
+"ECSValidationError" = "Veri doğrulama başarısız";
+"ECSVoucherOperationError" = "Üzgünüz, bu kupon kullanılamaz";
+"ECSaddressId" = "Verilen adres mevcut değil veya başka bir kullanıcıya ait";
+"ECScountryCodeNotGiven" = "Lütfen geçerli bir ülke kodu sağlayın";
+"ECScountryisocode" = "Seçilen ülke geçersiz";
+"ECSfirstName" = "Lütfen şu karakterlere izin verilmediğini unutmayın: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Teknik bir sorunla karşılaştık (Kötü istemci kimlik bilgileri). Lütfen yeniden oturum açın";
+"ECSinvalid_grant" = "Teknik bir sorunla karşılaştık (Geçersiz Janrain Belirteci). Lütfen yeniden oturum açın";
+"ECSlastName" = "Lütfen şu karakterlere izin verilmediğini unutmayın: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Lütfen geçerli bir sipariş verin";
+"ECSphone1" = "Seçilen telefon numarası geçersiz";
+"ECSphone2" = "Seçilen telefon numarası geçersiz";
+"ECSpostUrl" = "Sipariş zaten ödenmiş/tamamlanmış durumda";
+"ECSpostalCode" = "Seçilen posta kodu geçersiz";
+"ECSregionisocode" = "Seçilen bölge geçersiz";
+"ECSsessionCart" = "Lütfen sipariş vermeden önce teslimat adresinizi, teslimat modunuzu ve ödeme yönteminizi seçin";
+"ECSsomethingWentWrong" = "Teknik bir sorunla karşılaştık. Lütfen bir süre sonra tekrar deneyin";
+"ECSunsupported_grant_type" = "Teknik bir sorunla karşılaştık (Desteklenmeyen izin türü). Lütfen yeniden oturum açın";

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIComponentVersionInfoProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIComponentVersionInfoProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIComponentVersionInfoProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIComponentVersionInfoProtocol/getComponentId</TokenIdentifier>
+			<Abstract type="html">Description : This method is used to get component&apos;s three letter acronym</Abstract>
+			<DeclaredIn>AIComponentVersionInfoProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getComponentId</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns component&apos;s three letter acronym</Abstract></ReturnValue>
+			<Anchor>//api/name/getComponentId</Anchor>
+            <NodeRef refid="60"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIComponentVersionInfoProtocol/getVersion</TokenIdentifier>
+			<Abstract type="html">Description : This method is used to get component version number</Abstract>
+			<DeclaredIn>AIComponentVersionInfoProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns component version</Abstract></ReturnValue>
+			<Anchor>//api/name/getVersion</Anchor>
+            <NodeRef refid="60"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

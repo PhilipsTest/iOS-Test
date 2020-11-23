@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXRequestManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXRequestManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequestManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="16"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXRequestManager/setDependencies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequestManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXDependencies *dependencies</Declaration>
+			
+			
+			<Anchor>//api/name/dependencies</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXRequestManager/dependencies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequestManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXDependencies *dependencies</Declaration>
+			
+			
+			<Anchor>//api/name/dependencies</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXRequestManager/dependencies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequestManager.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXDependencies *dependencies</Declaration>
+			
+			
+			<Anchor>//api/name/dependencies</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXRequestManager/initWithDependencies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequestManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDependencies:(PRXDependencies *)prxdependency</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDependencies:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXRequestManager/execute:completion:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequestManager.h</DeclaredIn>
+			
+			<Declaration>- (void)execute:(PRXRequest *)request completion:(void ( ^ ) ( PRXResponseData *response ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			
+			
+			<Anchor>//api/name/execute:completion:failure:</Anchor>
+            <NodeRef refid="16"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

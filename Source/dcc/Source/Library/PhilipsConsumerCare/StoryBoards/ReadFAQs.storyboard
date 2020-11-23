@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2d0-Tx-fWU">
+    <device id="ipad12_9" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Question View Controller-->
+        <scene sceneID="fkt-wS-qHN">
+            <objects>
+                <viewController storyboardIdentifier="ReadFAQs" id="2d0-Tx-fWU" customClass="DCFAQQuestionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KWS-zQ-RK6" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uNU-c7-MsA">
+                                <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3DA-uQ-9Pf" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="683" y="512" width="0.0" height="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circularProgressIndicatorSize">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="SfJ-rd-dfd">
+                                <rect key="frame" x="343" y="20" width="680" height="1004"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="680" id="3Bx-wN-CVy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Bx-wN-CVy"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="3Bx-wN-CVy"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="2d0-Tx-fWU" id="7tO-hG-sdy"/>
+                                    <outlet property="delegate" destination="2d0-Tx-fWU" id="CYH-Uf-AzV"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3DA-uQ-9Pf" firstAttribute="centerY" secondItem="KWS-zQ-RK6" secondAttribute="centerY" id="4le-79-kUa"/>
+                            <constraint firstItem="SfJ-rd-dfd" firstAttribute="bottom" secondItem="KWS-zQ-RK6" secondAttribute="bottomMargin" id="CLA-IW-57d"/>
+                            <constraint firstItem="SfJ-rd-dfd" firstAttribute="trailing" secondItem="uNU-c7-MsA" secondAttribute="trailing" priority="999" id="HQo-t1-gTa"/>
+                            <constraint firstItem="SfJ-rd-dfd" firstAttribute="top" secondItem="4EI-RG-r7r" secondAttribute="top" id="OqK-f5-oCq"/>
+                            <constraint firstItem="SfJ-rd-dfd" firstAttribute="leading" secondItem="uNU-c7-MsA" secondAttribute="leading" priority="999" id="T8R-E9-yir"/>
+                            <constraint firstItem="uNU-c7-MsA" firstAttribute="leading" secondItem="4EI-RG-r7r" secondAttribute="leading" id="Wfy-Og-py9"/>
+                            <constraint firstItem="uNU-c7-MsA" firstAttribute="bottom" secondItem="4EI-RG-r7r" secondAttribute="bottom" id="YAR-1h-jom"/>
+                            <constraint firstItem="uNU-c7-MsA" firstAttribute="top" secondItem="KWS-zQ-RK6" secondAttribute="top" id="iMF-qv-075"/>
+                            <constraint firstItem="3DA-uQ-9Pf" firstAttribute="centerX" secondItem="4EI-RG-r7r" secondAttribute="centerX" id="ka1-Ys-VqG"/>
+                            <constraint firstItem="4EI-RG-r7r" firstAttribute="trailing" secondItem="uNU-c7-MsA" secondAttribute="trailing" id="mnJ-ZQ-wrB"/>
+                            <constraint firstItem="SfJ-rd-dfd" firstAttribute="centerX" secondItem="4EI-RG-r7r" secondAttribute="centerX" id="rfF-ib-ume"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4EI-RG-r7r"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="rfF-ib-ume"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="rfF-ib-ume"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundImage" destination="uNU-c7-MsA" id="0jp-mU-XJq"/>
+                        <outlet property="consumerCareUITopConstraint" destination="OqK-f5-oCq" id="Yer-nu-tGg"/>
+                        <outlet property="progressIndicatorView" destination="3DA-uQ-9Pf" id="FUK-Iw-O8m"/>
+                        <outlet property="tblQuestionList" destination="SfJ-rd-dfd" id="uib-C2-Tyv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8IG-rp-noF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-276" y="46"/>
+        </scene>
+    </scenes>
+</document>

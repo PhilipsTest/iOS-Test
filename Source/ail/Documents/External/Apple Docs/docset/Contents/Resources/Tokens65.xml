@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AILanguagePackProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AILanguagePackProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILanguagePackProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="65"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AILanguagePackProtocol/refresh:</TokenIdentifier>
+			<Abstract type="html">refreshes the overview file containing the list of languages available in the server
+and also downloads the language pack based on the user preferred ui locale</Abstract>
+			<DeclaredIn>AILanguagePackProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)refresh:(nullable void ( ^ ) ( AILPRefreshStatus refreshResult , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>:</Name>
+					<Abstract type="html">completion handler with refresh status and error if refresh failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refresh:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AILanguagePackProtocol/activate:</TokenIdentifier>
+			<Abstract type="html">activates the Language Pack downloaded for the preferred ui locale</Abstract>
+			<DeclaredIn>AILanguagePackProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)activate:(nullable void ( ^ ) ( AILPActivateStatus activatedStatus , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>:</Name>
+					<Abstract type="html">completion handler with activate status and error if activate failed</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/activate:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AILanguagePackProtocol/localizedStringForKey:</TokenIdentifier>
+			<Abstract type="html">returns the localized string from cloud bundle
+if it not there in cloud will look in main bundle
+if not found will return the key</Abstract>
+			<DeclaredIn>AILanguagePackProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSString *)localizedStringForKey:(NSString *_Nonnull)key</Declaration>
+			
+			
+			<Anchor>//api/name/localizedStringForKey:</Anchor>
+            <NodeRef refid="65"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

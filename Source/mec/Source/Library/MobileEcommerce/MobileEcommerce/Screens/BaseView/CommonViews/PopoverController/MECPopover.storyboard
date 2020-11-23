@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Popover View Controller-->
+        <scene sceneID="lUx-nn-qX0">
+            <objects>
+                <viewController storyboardIdentifier="MECPopoverViewController" id="ZU2-3u-SeL" customClass="MECPopoverViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iQC-Mc-fVE" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UDb-7y-Pnj">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MECPopoverCell" id="Tsy-rP-gGA" customClass="MECPopoverTableViewCell" customModule="MobileEcommerce" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="16"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tsy-rP-gGA" id="Ah8-7h-CsL">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aIs-bc-5hd" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="h8b-Sh-bwf">
+                                                            <rect key="frame" x="0.0" y="0.0" width="414" height="16"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGr-oz-V7d" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                    <rect key="frame" x="207" y="8" width="0.0" height="0.0"/>
+                                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                            <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="h8b-Sh-bwf" secondAttribute="bottom" id="FWY-eF-Eb3"/>
+                                                        <constraint firstItem="h8b-Sh-bwf" firstAttribute="top" secondItem="aIs-bc-5hd" secondAttribute="top" id="MN6-BM-r57"/>
+                                                        <constraint firstAttribute="trailing" secondItem="h8b-Sh-bwf" secondAttribute="trailing" id="WpB-oF-y7c"/>
+                                                        <constraint firstItem="h8b-Sh-bwf" firstAttribute="leading" secondItem="aIs-bc-5hd" secondAttribute="leading" id="YDC-5c-aMF"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="aIs-bc-5hd" secondAttribute="trailing" id="Cc3-V7-9o9"/>
+                                                <constraint firstItem="aIs-bc-5hd" firstAttribute="leading" secondItem="Ah8-7h-CsL" secondAttribute="leading" id="Pog-pk-hFw"/>
+                                                <constraint firstAttribute="bottom" secondItem="aIs-bc-5hd" secondAttribute="bottom" id="hbY-yg-a0h"/>
+                                                <constraint firstItem="aIs-bc-5hd" firstAttribute="top" secondItem="Ah8-7h-CsL" secondAttribute="top" id="sjN-vz-uIP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="titleText" destination="oGr-oz-V7d" id="CEx-dj-eaP"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="ZU2-3u-SeL" id="Sfh-BE-o0I"/>
+                                    <outlet property="delegate" destination="ZU2-3u-SeL" id="Cu9-9A-cxB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="UvZ-cj-raA" firstAttribute="trailing" secondItem="UDb-7y-Pnj" secondAttribute="trailing" id="KbW-eP-2d6"/>
+                            <constraint firstItem="UDb-7y-Pnj" firstAttribute="top" secondItem="UvZ-cj-raA" secondAttribute="top" id="aUM-Po-oQ0"/>
+                            <constraint firstItem="UvZ-cj-raA" firstAttribute="bottom" secondItem="UDb-7y-Pnj" secondAttribute="bottom" id="gPX-Hc-FQ9"/>
+                            <constraint firstItem="UDb-7y-Pnj" firstAttribute="leading" secondItem="UvZ-cj-raA" secondAttribute="leading" id="zXT-qa-3XA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UvZ-cj-raA"/>
+                    </view>
+                    <connections>
+                        <outlet property="popoverTableView" destination="UDb-7y-Pnj" id="Hfs-gh-aPQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="21r-4O-6DT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="112"/>
+        </scene>
+    </scenes>
+</document>

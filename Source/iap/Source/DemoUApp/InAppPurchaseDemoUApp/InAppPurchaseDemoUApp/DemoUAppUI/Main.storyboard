@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="tnw-zt-zNi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Mcf-47-L5p">
+            <objects>
+                <navigationController storyboardIdentifier="mainNavigationVC" id="tnw-zt-zNi" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DLQ-6W-Z3j">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fse-HQ-TMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1411" y="277"/>
+        </scene>
+        <!--In App Purchase DemoU App View Controller-->
+        <scene sceneID="qNi-LZ-18L">
+            <objects>
+                <viewController storyboardIdentifier="InAppPurchaseDemoUAppViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qEo-0r-MgU" customClass="InAppPurchaseDemoUAppViewController" customModule="InAppPurchaseDemoUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eSJ-Ul-zDh"/>
+                        <viewControllerLayoutGuide type="bottom" id="nzL-D6-7Cm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oFo-G8-8na" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iif-Od-dZz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xhg-4X-gPL" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="712.5"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter CTN" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A8B-QH-d9R" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="20" width="265" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="LP5-0J-MKY"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.20392156862745098" blue="0.47058823529411764" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.enterCTN"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qEo-0r-MgU" id="ysC-MS-8HZ"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HxB-j3-LWm" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="285" y="25" width="80" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="pPy-0s-a3l"/>
+                                                </constraints>
+                                                <state key="normal" title=" Add "/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.addButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="addCTN:" destination="qEo-0r-MgU" eventType="touchUpInside" id="tqN-3o-mDT"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" clipsSubviews="YES" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Auto Apply voucher code" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="mWK-rM-OZ7" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="76" width="355" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Jwb-5W-aBm"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.0" green="0.20392156859999999" blue="0.47058823529999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="iap_demoScreen_ctn_textField"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qEo-0r-MgU" id="gnD-ca-fLk"/>
+                                                </connections>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter preposition id" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytt-VA-MVI" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="132" width="259" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Fek-0H-oyK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qEo-0r-MgU" id="6WF-yP-8os"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vZ0-uc-v2x" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="285" y="137" width="80" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="uKo-Br-YCe"/>
+                                                </constraints>
+                                                <state key="normal" title="Set"/>
+                                                <connections>
+                                                    <action selector="setPrepositionIdButtonTapped:" destination="qEo-0r-MgU" eventType="touchUpInside" id="CGA-QU-8GU"/>
+                                                </connections>
+                                            </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter maximum Cart Count" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KaR-pr-Ft3" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="182" width="355" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="eTt-Gm-NaY"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qEo-0r-MgU" id="xgo-2L-zdn"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVf-8w-4It" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="232" width="355" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="H50-Y9-wCa"/>
+                                                </constraints>
+                                                <state key="normal" title="Shop Now(Categorized)"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.shopNowCategorizedButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="shopNowCategorized:" destination="qEo-0r-MgU" eventType="touchUpInside" id="foA-fk-hz9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bby-SB-In0" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="288" width="355" height="30"/>
+                                                <state key="normal" title="Product Detail"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.productDetailButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="productDetailClicked:" destination="qEo-0r-MgU" eventType="touchUpInside" id="gh9-Ga-RKJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7x-el-SkW" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="334" width="355" height="40"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="1000"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="lGs-Ac-KNE"/>
+                                                </constraints>
+                                                <state key="normal" title="Shop Now"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.shopNowButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="shopNowAction:" destination="qEo-0r-MgU" eventType="touchUpInside" id="Bqg-eZ-Xi2"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccZ-uC-QjX" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="10" y="390" width="355" height="40"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="2000"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="Ysi-hq-bDQ"/>
+                                                </constraints>
+                                                <state key="normal" title="Order History"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.purchaseHistoryButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="purchaseHistoryClicked:" destination="qEo-0r-MgU" eventType="touchUpInside" id="WZc-aW-SiR"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Show Banner Promotion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ebb-mS-lUh" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="20" y="450" width="270" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yr2-fZ-y9A">
+                                                <rect key="frame" x="306" y="445" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Voucher Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SN-DD-gpx" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="20" y="490.5" width="270" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="QYW-bC-b4L">
+                                                <rect key="frame" x="306" y="485.5" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="voucherStatusChanged:" destination="qEo-0r-MgU" eventType="valueChanged" id="Z63-Sh-q9A"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Block Hybris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x3u-xJ-YhR" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="20" y="531" width="270" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4gM-5R-ypD">
+                                                <rect key="frame" x="306" y="526" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="hybrisSwitchClicked:" destination="qEo-0r-MgU" eventType="valueChanged" id="dio-Ew-KmA"/>
+                                                </connections>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable Completion Callback" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l4K-f4-RbP" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="20" y="571.5" width="270" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="cO0-aV-6UI">
+                                                <rect key="frame" x="306" y="566.5" width="51" height="31"/>
+                                            </switch>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data mocking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SYi-O4-DKV" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="20" y="612" width="270" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YPq-k1-sAE">
+                                                <rect key="frame" x="306" y="607" width="51" height="31"/>
+                                                <connections>
+                                                    <action selector="mockingSwitchValueChanged:" destination="qEo-0r-MgU" eventType="valueChanged" id="EEH-jb-rZg"/>
+                                                </connections>
+                                            </switch>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmR-fC-0U6" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="20" y="648.5" width="335" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="yQ1-g1-r8a"/>
+                                                </constraints>
+                                                <state key="normal" title="Register"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="demoPage.registerButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registerButtonAction:" destination="qEo-0r-MgU" eventType="touchUpInside" id="jRY-jj-43f"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="vZ0-uc-v2x" firstAttribute="trailing" secondItem="mWK-rM-OZ7" secondAttribute="trailing" id="0Pw-Ya-qrf"/>
+                                            <constraint firstItem="mWK-rM-OZ7" firstAttribute="top" secondItem="A8B-QH-d9R" secondAttribute="bottom" constant="16" id="1Vz-gC-ypo"/>
+                                            <constraint firstItem="ytt-VA-MVI" firstAttribute="leading" secondItem="mWK-rM-OZ7" secondAttribute="leading" id="1s1-yP-ICq"/>
+                                            <constraint firstItem="KaR-pr-Ft3" firstAttribute="leading" secondItem="ytt-VA-MVI" secondAttribute="leading" id="2zU-7Q-Kj6"/>
+                                            <constraint firstItem="l4K-f4-RbP" firstAttribute="top" secondItem="x3u-xJ-YhR" secondAttribute="bottom" constant="20" id="5ZT-YT-Lbz"/>
+                                            <constraint firstItem="YPq-k1-sAE" firstAttribute="leading" secondItem="SYi-O4-DKV" secondAttribute="trailing" constant="16" id="8qF-nx-LKK"/>
+                                            <constraint firstAttribute="trailing" secondItem="YPq-k1-sAE" secondAttribute="trailing" constant="20" id="9SW-24-Xwn"/>
+                                            <constraint firstItem="Bby-SB-In0" firstAttribute="leading" secondItem="ZVf-8w-4It" secondAttribute="leading" id="AKO-hy-2yN"/>
+                                            <constraint firstItem="vZ0-uc-v2x" firstAttribute="centerY" secondItem="ytt-VA-MVI" secondAttribute="centerY" id="B5l-df-V5Y"/>
+                                            <constraint firstItem="hmR-fC-0U6" firstAttribute="top" secondItem="SYi-O4-DKV" secondAttribute="bottom" constant="16" id="DXb-10-FKa"/>
+                                            <constraint firstItem="QYW-bC-b4L" firstAttribute="trailing" secondItem="4gM-5R-ypD" secondAttribute="trailing" id="EuC-WZ-LNo"/>
+                                            <constraint firstItem="KaR-pr-Ft3" firstAttribute="trailing" secondItem="vZ0-uc-v2x" secondAttribute="trailing" id="GYN-MZ-00E"/>
+                                            <constraint firstItem="f7x-el-SkW" firstAttribute="trailing" secondItem="Bby-SB-In0" secondAttribute="trailing" id="GlY-Ce-KOS"/>
+                                            <constraint firstItem="x3u-xJ-YhR" firstAttribute="top" secondItem="4SN-DD-gpx" secondAttribute="bottom" constant="20" id="HFg-9E-nMH"/>
+                                            <constraint firstItem="SYi-O4-DKV" firstAttribute="top" secondItem="l4K-f4-RbP" secondAttribute="bottom" constant="20" id="ILT-Qf-fAM"/>
+                                            <constraint firstItem="ccZ-uC-QjX" firstAttribute="trailing" secondItem="f7x-el-SkW" secondAttribute="trailing" id="JNO-Zq-8jQ"/>
+                                            <constraint firstItem="mWK-rM-OZ7" firstAttribute="leading" secondItem="A8B-QH-d9R" secondAttribute="leading" id="Klw-QT-gTb"/>
+                                            <constraint firstItem="SYi-O4-DKV" firstAttribute="leading" secondItem="Xhg-4X-gPL" secondAttribute="leading" constant="20" id="Lf5-DW-ivJ"/>
+                                            <constraint firstItem="ccZ-uC-QjX" firstAttribute="top" secondItem="f7x-el-SkW" secondAttribute="bottom" constant="16" id="MMU-5P-XzS"/>
+                                            <constraint firstAttribute="trailing" secondItem="HxB-j3-LWm" secondAttribute="trailing" constant="10" id="N3z-mR-9Gk"/>
+                                            <constraint firstItem="hmR-fC-0U6" firstAttribute="centerX" secondItem="Xhg-4X-gPL" secondAttribute="centerX" id="O2K-sA-JGp"/>
+                                            <constraint firstItem="ytt-VA-MVI" firstAttribute="top" secondItem="mWK-rM-OZ7" secondAttribute="bottom" constant="16" id="QI4-Vw-v8t"/>
+                                            <constraint firstItem="ebb-mS-lUh" firstAttribute="trailing" secondItem="4SN-DD-gpx" secondAttribute="trailing" id="R1E-R7-glp"/>
+                                            <constraint firstItem="vZ0-uc-v2x" firstAttribute="leading" secondItem="ytt-VA-MVI" secondAttribute="trailing" constant="16" id="R3Z-9c-gmO"/>
+                                            <constraint firstItem="yr2-fZ-y9A" firstAttribute="trailing" secondItem="QYW-bC-b4L" secondAttribute="trailing" id="R6B-zG-JJf"/>
+                                            <constraint firstItem="f7x-el-SkW" firstAttribute="leading" secondItem="Bby-SB-In0" secondAttribute="leading" id="Rvg-UQ-bbJ"/>
+                                            <constraint firstItem="l4K-f4-RbP" firstAttribute="trailing" secondItem="SYi-O4-DKV" secondAttribute="trailing" id="TWx-wc-WV1"/>
+                                            <constraint firstItem="ZVf-8w-4It" firstAttribute="top" secondItem="KaR-pr-Ft3" secondAttribute="bottom" constant="10" id="VkC-Rz-yrR"/>
+                                            <constraint firstItem="A8B-QH-d9R" firstAttribute="top" secondItem="Xhg-4X-gPL" secondAttribute="top" constant="20" id="Wzt-eg-duL"/>
+                                            <constraint firstItem="4gM-5R-ypD" firstAttribute="leading" secondItem="cO0-aV-6UI" secondAttribute="leading" id="YIf-nm-uFW"/>
+                                            <constraint firstItem="4SN-DD-gpx" firstAttribute="top" secondItem="ebb-mS-lUh" secondAttribute="bottom" constant="20" id="ZdB-91-gOf"/>
+                                            <constraint firstItem="ebb-mS-lUh" firstAttribute="top" secondItem="ccZ-uC-QjX" secondAttribute="bottom" priority="250" constant="20" id="a1A-Un-kgW"/>
+                                            <constraint firstItem="A8B-QH-d9R" firstAttribute="leading" secondItem="Xhg-4X-gPL" secondAttribute="leading" constant="10" id="aIY-Ir-te5"/>
+                                            <constraint firstItem="cO0-aV-6UI" firstAttribute="trailing" secondItem="YPq-k1-sAE" secondAttribute="trailing" id="bIA-HI-ubh"/>
+                                            <constraint firstItem="x3u-xJ-YhR" firstAttribute="leading" secondItem="l4K-f4-RbP" secondAttribute="leading" id="eJC-y9-Y1K"/>
+                                            <constraint firstItem="l4K-f4-RbP" firstAttribute="centerY" secondItem="cO0-aV-6UI" secondAttribute="centerY" id="ezf-sc-rf4"/>
+                                            <constraint firstItem="x3u-xJ-YhR" firstAttribute="trailing" secondItem="l4K-f4-RbP" secondAttribute="trailing" id="fFl-1t-krT"/>
+                                            <constraint firstItem="YPq-k1-sAE" firstAttribute="centerY" secondItem="SYi-O4-DKV" secondAttribute="centerY" id="fsa-IM-FkV"/>
+                                            <constraint firstItem="Bby-SB-In0" firstAttribute="top" secondItem="ZVf-8w-4It" secondAttribute="bottom" constant="16" id="ggY-fc-ZXu"/>
+                                            <constraint firstItem="4SN-DD-gpx" firstAttribute="leading" secondItem="x3u-xJ-YhR" secondAttribute="leading" id="hpY-KR-3BJ"/>
+                                            <constraint firstItem="cO0-aV-6UI" firstAttribute="leading" secondItem="YPq-k1-sAE" secondAttribute="leading" id="iVb-rh-231"/>
+                                            <constraint firstItem="HxB-j3-LWm" firstAttribute="leading" secondItem="A8B-QH-d9R" secondAttribute="trailing" constant="10" id="jU0-3U-NqV"/>
+                                            <constraint firstItem="mWK-rM-OZ7" firstAttribute="trailing" secondItem="HxB-j3-LWm" secondAttribute="trailing" id="mhf-yq-as7"/>
+                                            <constraint firstItem="4SN-DD-gpx" firstAttribute="trailing" secondItem="x3u-xJ-YhR" secondAttribute="trailing" id="nho-Tj-irh"/>
+                                            <constraint firstItem="x3u-xJ-YhR" firstAttribute="centerY" secondItem="4gM-5R-ypD" secondAttribute="centerY" id="qNY-Mc-VgX"/>
+                                            <constraint firstAttribute="bottom" secondItem="hmR-fC-0U6" secondAttribute="bottom" constant="20" id="qlU-4d-WWq"/>
+                                            <constraint firstAttribute="trailing" secondItem="hmR-fC-0U6" secondAttribute="trailing" constant="20" id="rHG-DB-O0R"/>
+                                            <constraint firstItem="4gM-5R-ypD" firstAttribute="trailing" secondItem="cO0-aV-6UI" secondAttribute="trailing" id="rgW-iQ-Isy"/>
+                                            <constraint firstItem="ebb-mS-lUh" firstAttribute="centerY" secondItem="yr2-fZ-y9A" secondAttribute="centerY" id="rnd-sz-qM2"/>
+                                            <constraint firstItem="ZVf-8w-4It" firstAttribute="leading" secondItem="KaR-pr-Ft3" secondAttribute="leading" id="tQv-eD-AsY"/>
+                                            <constraint firstItem="Bby-SB-In0" firstAttribute="trailing" secondItem="ZVf-8w-4It" secondAttribute="trailing" id="u9d-hu-JUM"/>
+                                            <constraint firstItem="ebb-mS-lUh" firstAttribute="leading" secondItem="4SN-DD-gpx" secondAttribute="leading" id="v7Y-W1-ZES"/>
+                                            <constraint firstItem="HxB-j3-LWm" firstAttribute="centerY" secondItem="A8B-QH-d9R" secondAttribute="centerY" id="vK9-0z-Y9p"/>
+                                            <constraint firstItem="hmR-fC-0U6" firstAttribute="leading" secondItem="Xhg-4X-gPL" secondAttribute="leading" constant="20" id="vb8-h5-PnZ"/>
+                                            <constraint firstItem="f7x-el-SkW" firstAttribute="top" secondItem="Bby-SB-In0" secondAttribute="bottom" constant="16" id="wEq-gD-H9b"/>
+                                            <constraint firstItem="ccZ-uC-QjX" firstAttribute="leading" secondItem="f7x-el-SkW" secondAttribute="leading" id="wFB-4E-na7"/>
+                                            <constraint firstItem="ZVf-8w-4It" firstAttribute="trailing" secondItem="KaR-pr-Ft3" secondAttribute="trailing" id="wpQ-aL-BI0"/>
+                                            <constraint firstItem="l4K-f4-RbP" firstAttribute="leading" secondItem="SYi-O4-DKV" secondAttribute="leading" id="z0m-99-AmA"/>
+                                            <constraint firstItem="KaR-pr-Ft3" firstAttribute="top" secondItem="ytt-VA-MVI" secondAttribute="bottom" constant="10" id="zLi-2F-KMO"/>
+                                            <constraint firstItem="QYW-bC-b4L" firstAttribute="centerY" secondItem="4SN-DD-gpx" secondAttribute="centerY" id="zev-0z-pjr"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Xhg-4X-gPL" secondAttribute="trailing" id="2SQ-vk-Tge"/>
+                                    <constraint firstItem="Xhg-4X-gPL" firstAttribute="top" secondItem="Iif-Od-dZz" secondAttribute="top" id="6fg-c9-4eh"/>
+                                    <constraint firstItem="Xhg-4X-gPL" firstAttribute="leading" secondItem="Iif-Od-dZz" secondAttribute="leading" id="HWo-2j-FqX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xhg-4X-gPL" secondAttribute="bottom" id="LO8-Ke-fFn"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Iif-Od-dZz" firstAttribute="top" secondItem="oFo-G8-8na" secondAttribute="top" id="3wr-It-ytl"/>
+                            <constraint firstAttribute="bottom" secondItem="Iif-Od-dZz" secondAttribute="bottom" id="V6L-lo-diV"/>
+                            <constraint firstAttribute="trailing" secondItem="Iif-Od-dZz" secondAttribute="trailing" id="m8X-Ih-nGW"/>
+                            <constraint firstItem="Iif-Od-dZz" firstAttribute="leading" secondItem="oFo-G8-8na" secondAttribute="leading" id="vKE-gc-G6f"/>
+                            <constraint firstItem="Xhg-4X-gPL" firstAttribute="width" secondItem="oFo-G8-8na" secondAttribute="width" id="xe1-J6-uOL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hnX-Kc-NwK">
+                        <barButtonItem key="backBarButtonItem" title=" " id="cSs-Wm-JQv"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="autoApplyVoucherTextField" destination="mWK-rM-OZ7" id="ATM-3j-9aI"/>
+                        <outlet property="bannerSwitch" destination="yr2-fZ-y9A" id="MAb-5N-dPc"/>
+                        <outlet property="ctnTextField" destination="A8B-QH-d9R" id="Z1Q-hR-THB"/>
+                        <outlet property="flowCompletionSwitch" destination="cO0-aV-6UI" id="moz-Ha-vV6"/>
+                        <outlet property="hybrisSupportSwitch" destination="4gM-5R-ypD" id="QYb-N2-8vI"/>
+                        <outlet property="mockingSwitch" destination="YPq-k1-sAE" id="jra-3b-ftq"/>
+                        <outlet property="prepositionIDTextField" destination="ytt-VA-MVI" id="GHp-zW-2FM"/>
+                        <outlet property="productCountTextField" destination="KaR-pr-Ft3" id="izF-0O-4HP"/>
+                        <outlet property="registerButton" destination="hmR-fC-0U6" id="kJU-KN-O30"/>
+                        <outlet property="voucherStatusControl" destination="QYW-bC-b4L" id="zpW-Gs-VCK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ic0-Fe-JYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-668" y="1145.577211394303"/>
+        </scene>
+    </scenes>
+</document>

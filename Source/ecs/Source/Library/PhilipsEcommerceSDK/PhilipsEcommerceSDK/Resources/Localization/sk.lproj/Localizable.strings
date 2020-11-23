@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Zadajte infra objekt aplikácie";
+"ECSBaseURLNotFound" = "Základná adresa URL sa nenašla";
+"ECSCartEntryError" = "Produkt nebol pridaný do košíka";
+"ECSCartError" = "Zatiaľ nebol vytvorený žiadny košík";
+"ECSCommerceCartModificationError" = "Počet nesmie byť menší ako nula";
+"ECSCtnNotProvided" = "Poskytnite CTN";
+"ECSHybrisNotAvailable" = "Obchod Philips nie je k dispozícii pre vybratú krajinu, je k dispozícii iba režim predajcov";
+"ECSIllegalArgumentError" = "Uveďte platné vstupné údaje";
+"ECSInsufficientStockError" = "Produkt nie je možné expedovať, pretože je na sklade";
+"ECSInvalidPaymentInfoError" = "Uveďte platné platobné údaje";
+"ECSInvalidTokenError" = "Zaznamenali sme technickú závadu (neplatný prístupový token). Vykonajte opätovnú autorizáciu Hybris";
+"ECSLocaleNotFound" = "Nastavte miestne nastavenia";
+"ECSNoSuchElementError" = "Pri načítavaní údajov zo servera sa vyskytla chyba";
+"ECSOAuthDetailError" = "Uveďte úplné podrobnosti OAuth";
+"ECSOAuthNotCalled" = "Na tento úkon sa vyžaduje oprávnenie používateľa";
+"ECSPIL_BAD_REQUEST" = "Zaznamenali sme technickú závadu. Skúste to znova o chvíľu";
+"ECSPIL_BAD_REQUEST_cartId" = "Zatiaľ nebol vytvorený žiadny košík";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Zaznamenali sme technickú závadu. Skúste to znova o chvíľu";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Zaznamenali sme technickú závadu (neplatný prístupový token). Vykonajte opätovnú autorizáciu Hybris";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Neplatná e-mailová adresa. Skontrolujte ju.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Produkt nebol pridaný do košíka";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Nastavte miestne nastavenia";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Zadajte platné CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Zadajte platné množstvo";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Obchod Philips nie je k dispozícii pre vybratú krajinu, je k dispozícii iba režim predajcov";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Počet nesmie byť väčší ako nula";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Nastavte miestne nastavenia";
+"ECSPIL_MISSING_PARAMETER_language" = "Nastavte miestne nastavenia";
+"ECSPIL_MISSING_PARAMETER_productId" = "Poskytnite CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Obchod Philips nie je k dispozícii pre vybratú krajinu, je k dispozícii iba režim predajcov";
+"ECSPIL_NEGATIVE_QUANTITY" = "Počet nesmie byť menší ako nula";
+"ECSPIL_NOT_ACCEPTABLE" = "Zaznamenali sme technickú závadu. Skúste to znova o chvíľu";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Zaznamenali sme technickú závadu. Skúste to znova o chvíľu";
+"ECSPIL_NOT_FOUND_cartId" = "Zadajte platné ID karty";
+"ECSPIL_NOT_FOUND_productId" = "Zadajte platné CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Produkt nie je možné expedovať, pretože je na sklade";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Zaznamenali sme technickú závadu. Skúste to znova o chvíľu";
+"ECSPaymentAuthorizationError" = "Autorizácia platby nebola úspešná";
+"ECSPropositionIdNotFound" = "Nastavte platné ID ponuky";
+"ECSSiteIdNotFound" = "Obchod Philips nie je k dispozícii pre vybratú krajinu, je k dispozícii iba režim predajcov";
+"ECSUnknownIdentifierError" = "Požadovaný zdroj nie je k dispozícii";
+"ECSUnsupportedDeliveryModeError" = "Zvolený režim doručenia nie je podporovaný";
+"ECSUnsupportedVoucherError" = "Ľutujeme, tento kupón nie je možné uplatniť";
+"ECSValidationError" = "Overenie údajov zlyhalo";
+"ECSVoucherOperationError" = "Ľutujeme, tento kupón nie je možné uplatniť";
+"ECSaddressId" = "Zadaná adresa neexistuje alebo patrí inému používateľovi";
+"ECScountryCodeNotGiven" = "Zadajte platný kód krajiny";
+"ECScountryisocode" = "Zvolená krajina je neplatná";
+"ECSfirstName" = "Upozorňujeme, že nasledujúce znaky nie sú povolené: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Zaznamenali sme technickú závadu (nesprávne osobné doklady klienta). Prihláste sa znova";
+"ECSinvalid_grant" = "Zaznamenali sme technickú závadu (neplatný token Janrain). Prihláste sa znova";
+"ECSlastName" = "Upozorňujeme, že nasledujúce znaky nie sú povolené: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Uveďte platnú objednávku";
+"ECSphone1" = "Zvolené telefónne číslo je neplatné";
+"ECSphone2" = "Zvolené telefónne číslo je neplatné";
+"ECSpostUrl" = "Objednávka je už v stave úhrady/ukončenia";
+"ECSpostalCode" = "Zvolené PSČ je neplatné";
+"ECSregionisocode" = "Zvolená oblasť je neplatná";
+"ECSsessionCart" = "Pred odoslaním objednávky vyberte svoju dodaciu adresu, spôsob doručenia a spôsob platby";
+"ECSsomethingWentWrong" = "Zaznamenali sme technickú závadu. Skúste to znova o chvíľu";
+"ECSunsupported_grant_type" = "Zaznamenali sme technickú závadu (nepodporovaný typ grantu). Prihláste sa znova";

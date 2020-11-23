@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+        <array key="CentraleSansMedium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MECDeliveryDetailsStepView" customModule="MobileEcommerce" customModuleProvider="target">
+            <connections>
+                <outlet property="checkoutStepNumberLabel" destination="Z2E-Bt-IQ6" id="q7N-Kr-xnp"/>
+                <outlet property="checkoutStepTitleLabel" destination="LN5-Ws-Mk1" id="zID-eA-hXh"/>
+                <outlet property="checkoutTrackView" destination="Tpv-91-tTZ" id="q6Y-Vk-Dt3"/>
+                <outlet property="deliveryStepNumberLabel" destination="LPj-XI-KxP" id="vat-zO-p9D"/>
+                <outlet property="deliveryStepTitleLabel" destination="jaO-A2-Ax2" id="YEH-Bj-u1J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="UIDView" customModule="PhilipsUIKitDLS">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="PpI-IB-LMe">
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ECu-dP-ZYa">
+                            <rect key="frame" x="78.5" y="0.0" width="257.5" height="852"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="c9e-xF-QH3">
+                                    <rect key="frame" x="0.0" y="368" width="50" height="82"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPj-XI-KxP" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                            <rect key="frame" x="13" y="0.0" width="24" height="24"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="deliveryFirstStepLabel"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="7F3-12-Bll"/>
+                                                <constraint firstAttribute="width" constant="24" id="fe1-cF-hVp"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jaO-A2-Ax2" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                            <rect key="frame" x="0.0" y="32" width="50" height="50"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="deliveryStepLabel"/>
+                                            <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpv-91-tTZ" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                    <rect key="frame" x="60" y="408.5" width="150" height="1"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="deliveryTrackView">
+                                        <bool key="isElement" value="YES"/>
+                                    </accessibility>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="150" id="1eD-Ru-aL6"/>
+                                        <constraint firstAttribute="height" constant="1" id="aCQ-aK-HxP"/>
+                                    </constraints>
+                                </view>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WcF-HT-DhO">
+                                    <rect key="frame" x="220" y="384.5" width="37.5" height="49"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z2E-Bt-IQ6" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                            <rect key="frame" x="6.5" y="0.0" width="24" height="24"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="deliverySecondStepLabel"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="24" id="278-1e-KLE"/>
+                                                <constraint firstAttribute="width" constant="24" id="X5d-90-RVn"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LN5-Ws-Mk1" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                            <rect key="frame" x="0.0" y="32" width="37.5" height="17"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="checkoutStepLabel"/>
+                                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <edgeInsets key="layoutMargins" top="16" left="0.0" bottom="16" right="0.0"/>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PpI-IB-LMe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Qxk-30-MFD"/>
+                <constraint firstItem="PpI-IB-LMe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="jqs-AB-HNX"/>
+                <constraint firstAttribute="trailing" secondItem="PpI-IB-LMe" secondAttribute="trailing" id="kIm-pb-TpI"/>
+                <constraint firstAttribute="bottom" secondItem="PpI-IB-LMe" secondAttribute="bottom" id="oKw-LD-5WZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="133"/>
+        </view>
+    </objects>
+</document>

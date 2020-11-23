@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIContentLoader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIContentLoader</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+            
+			
+			<NodeRef refid="15"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setMaxAgeInHours:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger maxAgeInHours</Declaration>
+			
+			
+			<Anchor>//api/name/maxAgeInHours</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/maxAgeInHours</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger maxAgeInHours</Declaration>
+			
+			
+			<Anchor>//api/name/maxAgeInHours</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/maxAgeInHours</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, readonly) NSInteger maxAgeInHours</Declaration>
+			
+			
+			<Anchor>//api/name/maxAgeInHours</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setServiceId:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *serviceId</Declaration>
+			
+			
+			<Anchor>//api/name/serviceId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/serviceId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *serviceId</Declaration>
+			
+			
+			<Anchor>//api/name/serviceId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/serviceId</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *serviceId</Declaration>
+			
+			
+			<Anchor>//api/name/serviceId</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setContentName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentName</Declaration>
+			
+			
+			<Anchor>//api/name/contentName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/contentName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentName</Declaration>
+			
+			
+			<Anchor>//api/name/contentName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/contentName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) NSString *contentName</Declaration>
+			
+			
+			<Anchor>//api/name/contentName</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setModelClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) Class modelClass</Declaration>
+			
+			
+			<Anchor>//api/name/modelClass</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/modelClass</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) Class modelClass</Declaration>
+			
+			
+			<Anchor>//api/name/modelClass</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/modelClass</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, copy, readonly) Class modelClass</Declaration>
+			
+			
+			<Anchor>//api/name/modelClass</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:</TokenIdentifier>
+			<Abstract type="html">Description: create intance with the following params</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithAppInfra:(AIAppInfra *_Nonnull)appInfra serviceId:(NSString *_Nonnull)serviceId maxAgeInHours:(NSInteger)maxAgeInHours modelClass:(Class _Nonnull)modelClass contentType:(NSString *_Nonnull)contentType downloadLimit:(NSUInteger)downloadLimit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appInfra</Name>
+					<Abstract type="html">AppInfra instance</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">serviceId of the cq5 url</Abstract>
+				</Parameter><Parameter>
+					<Name>maxAgeInHours</Name>
+					<Abstract type="html">expery time for the contents cached</Abstract>
+				</Parameter><Parameter>
+					<Name>modelClass</Name>
+					<Abstract type="html">name of the model class</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract type="html">type of the content</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadLimit</Name>
+					<Abstract type="html">no of pages that should be downloaded in one attempt. This will override the limit set in the app config. Pass &apos;0&apos; for taking the default limit from app config.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">content loader instance</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/dealloc</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/refresh:</TokenIdentifier>
+			<Abstract type="html">Refresh content in cache.
+If database is empty, loads from server.
+If content is outdated, starts download from server.
+If content URL has changed (e.g. locale changed) the cached content is automatically cleared and download is started.</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)refresh:(void ( ^ ) ( AICLRefreshResult refreshResult , NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refreshListener</Name>
+					<Abstract type="html">asynchronous callback reporting result of refresh</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refresh:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/downloadContents:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadContents:(void ( ^ ) ( AICLRefreshResult refreshResult , NSError *error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/downloadContents:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/deleteContentsForURLChange</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)deleteContentsForURLChange</Declaration>
+			
+			
+			<Anchor>//api/name/deleteContentsForURLChange</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getCLBaseURLfromCompleteURL:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getCLBaseURLfromCompleteURL:(NSString *)CLURL</Declaration>
+			
+			
+			<Anchor>//api/name/getCLBaseURLfromCompleteURL:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/createRestClientWithNoCaching</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AIRESTClientProtocol&gt;)createRestClientWithNoCaching</Declaration>
+			
+			
+			<Anchor>//api/name/createRestClientWithNoCaching</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getDownloadLimitFromConfig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (NSUInteger)getDownloadLimitFromConfig</Declaration>
+			
+			
+			<Anchor>//api/name/getDownloadLimitFromConfig</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getContentsArrayFromDict:contentType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getContentsArrayFromDict:(NSDictionary *)contentsDict contentType:(NSString *)contentType</Declaration>
+			
+			
+			<Anchor>//api/name/getContentsArrayFromDict:contentType:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/validateContentClass:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)validateContentClass:(Class)className</Declaration>
+			
+			
+			<Anchor>//api/name/validateContentClass:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getParsedContentArray:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getParsedContentArray:(NSArray *)unparsedArray</Declaration>
+			
+			
+			<Anchor>//api/name/getParsedContentArray:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/saveContentsInDB:updateTime:serviceID:maxAge:baseURL:success:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)saveContentsInDB:(NSArray *)contents updateTime:(NSDate *)updateTime serviceID:(NSString *)serviceID maxAge:(NSUInteger)maxAge baseURL:(NSString *)baseURL success:(void ( ^ ) ( NSError *error ))success</Declaration>
+			
+			
+			<Anchor>//api/name/saveContentsInDB:updateTime:serviceID:maxAge:baseURL:success:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/clearCache</TokenIdentifier>
+			<Abstract type="html">Remove all cached content</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)clearCache</Declaration>
+			
+			
+			<Anchor>//api/name/clearCache</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getStatus</TokenIdentifier>
+			<Abstract type="html">Description: Used to get the current status of the contentloader</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (AICLState)getStatus</Declaration>
+			
+			
+			<Anchor>//api/name/getStatus</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getAllContent:</TokenIdentifier>
+			<Abstract type="html">Description: used to get all the contents</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)getAllContent:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getAllContent:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getContentById:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description: used to get the contents based on ID</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)getContentById:(NSString *_Nonnull)contentId completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentId</Name>
+					<Abstract type="html">id of the content required</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentById:completionHandler:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getContentByIds:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description: used to get the contents based on ID</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)getContentByIds:(NSArray *_Nonnull)contentIds completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentIds</Name>
+					<Abstract type="html">ids of the contents required</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentByIds:completionHandler:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getContentByTag:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description:used to get the contents based on tag</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)getContentByTag:(NSString *_Nonnull)tag completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">tag name</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentByTag:completionHandler:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/getContentByTags:operatorName:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description: used to get the contents based on tag</Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>- (void)getContentByTags:(NSArray *_Nonnull)tags operatorName:(AICLOperator)operatorName completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">tag names</Abstract>
+				</Parameter><Parameter>
+					<Name>operatorName</Name>
+					<Abstract type="html">name of the operator either AICLAND or AICLOR</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentByTags:operatorName:completionHandler:</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/appInfra</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/appInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/appInfra</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/appInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/appInfra</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AICLState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AICLState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/state</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, assign) AICLState state</Declaration>
+			
+			
+			<Anchor>//api/name/state</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setLock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSLock *lock</Declaration>
+			
+			
+			<Anchor>//api/name/lock</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/lock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSLock *lock</Declaration>
+			
+			
+			<Anchor>//api/name/lock</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/lock</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSLock *lock</Declaration>
+			
+			
+			<Anchor>//api/name/lock</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setPageLimit:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger pageLimit</Declaration>
+			
+			
+			<Anchor>//api/name/pageLimit</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/pageLimit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger pageLimit</Declaration>
+			
+			
+			<Anchor>//api/name/pageLimit</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/pageLimit</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger pageLimit</Declaration>
+			
+			
+			<Anchor>//api/name/pageLimit</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setOffset:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/offset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/offset</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSUInteger offset</Declaration>
+			
+			
+			<Anchor>//api/name/offset</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setIsRefreshing:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isRefreshing</Declaration>
+			
+			
+			<Anchor>//api/name/isRefreshing</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/isRefreshing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isRefreshing</Declaration>
+			
+			
+			<Anchor>//api/name/isRefreshing</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/isRefreshing</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) BOOL isRefreshing</Declaration>
+			
+			
+			<Anchor>//api/name/isRefreshing</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setLastUpdatedTime:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUpdatedTime</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdatedTime</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/lastUpdatedTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUpdatedTime</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdatedTime</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/lastUpdatedTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDate *lastUpdatedTime</Declaration>
+			
+			
+			<Anchor>//api/name/lastUpdatedTime</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/setRestClient:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AIRESTClientProtocol&gt; restClient</Declaration>
+			
+			
+			<Anchor>//api/name/restClient</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIContentLoader/restClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AIRESTClientProtocol&gt; restClient</Declaration>
+			
+			
+			<Anchor>//api/name/restClient</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIContentLoader/restClient</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoader.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AIRESTClientProtocol&gt; restClient</Declaration>
+			
+			
+			<Anchor>//api/name/restClient</Anchor>
+            <NodeRef refid="15"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

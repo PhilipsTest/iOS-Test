@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="uWT-I5-Rz7">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Buy Direct View Controller-->
+        <scene sceneID="kxp-Ty-Tz8">
+            <objects>
+                <viewController storyboardIdentifier="IAPBuyDirectViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="uWT-I5-Rz7" customClass="IAPBuyDirectViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="egv-CR-5g5"/>
+                        <viewControllerLayoutGuide type="bottom" id="fas-68-aEC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nGk-p6-c4V">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-eQ-yMW" userLabel="Background Grey View">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="buyDirect.backgroundGreyView"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="54e-kf-rUJ" userLabel="Indicator Container View">
+                                <rect key="frame" x="94" y="167" width="187.5" height="333.5"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="biH-tU-P7r">
+                                        <rect key="frame" x="83.5" y="156.5" width="20" height="20"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="buyDirect.progressIndicatorView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLJ-gF-SHV" userLabel="Stage Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="8" y="181.5" width="171.5" height="45"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="GEk-ng-qF5"/>
+                                            <constraint firstAttribute="height" constant="45" id="iJB-kX-9vt"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="buyDirect.stageLabel"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="GEk-ng-qF5"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="top" secondItem="54e-kf-rUJ" secondAttribute="top" constant="169" id="9v6-Mv-SXa"/>
+                                    <constraint firstAttribute="trailing" secondItem="vLJ-gF-SHV" secondAttribute="trailing" constant="27" id="DiE-nU-dM1"/>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="leading" secondItem="54e-kf-rUJ" secondAttribute="leading" constant="27" id="EEq-r1-9Kt"/>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="width" secondItem="54e-kf-rUJ" secondAttribute="width" constant="-54" id="Ffk-1N-bmb"/>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="centerX" secondItem="54e-kf-rUJ" secondAttribute="centerX" id="XaN-qC-k2q"/>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="leading" secondItem="54e-kf-rUJ" secondAttribute="leading" constant="8" id="a9A-4L-lYQ"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="vLJ-gF-SHV" secondAttribute="bottom" constant="50" id="c2q-B3-HPE"/>
+                                    <constraint firstItem="biH-tU-P7r" firstAttribute="centerX" secondItem="54e-kf-rUJ" secondAttribute="centerX" id="eO2-4j-a20"/>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="top" secondItem="biH-tU-P7r" secondAttribute="bottom" constant="5" id="fUC-R6-Psz"/>
+                                    <constraint firstItem="vLJ-gF-SHV" firstAttribute="centerY" secondItem="54e-kf-rUJ" secondAttribute="centerY" constant="31.5" id="mcm-k0-OJ8"/>
+                                    <constraint firstItem="biH-tU-P7r" firstAttribute="centerY" secondItem="54e-kf-rUJ" secondAttribute="centerY" id="q9N-zT-6gl"/>
+                                    <constraint firstAttribute="bottom" secondItem="vLJ-gF-SHV" secondAttribute="bottom" constant="103" id="sO2-Eu-mcM"/>
+                                    <constraint firstAttribute="trailing" secondItem="vLJ-gF-SHV" secondAttribute="trailing" constant="8" id="tbb-wI-q3n"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="buyDirect.indicatorContainerView"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="9v6-Mv-SXa"/>
+                                        <exclude reference="DiE-nU-dM1"/>
+                                        <exclude reference="EEq-r1-9Kt"/>
+                                        <exclude reference="Ffk-1N-bmb"/>
+                                        <exclude reference="c2q-B3-HPE"/>
+                                        <exclude reference="mcm-k0-OJ8"/>
+                                        <exclude reference="sO2-Eu-mcM"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="buydirect.mainview"/>
+                        <constraints>
+                            <constraint firstItem="54e-kf-rUJ" firstAttribute="centerY" secondItem="5ZG-eQ-yMW" secondAttribute="centerY" id="1mF-Jw-Een"/>
+                            <constraint firstItem="54e-kf-rUJ" firstAttribute="centerX" secondItem="5ZG-eQ-yMW" secondAttribute="centerX" id="Ean-Wm-xBb"/>
+                            <constraint firstItem="5ZG-eQ-yMW" firstAttribute="top" secondItem="nGk-p6-c4V" secondAttribute="top" id="VwR-CC-rhP"/>
+                            <constraint firstItem="5ZG-eQ-yMW" firstAttribute="leading" secondItem="nGk-p6-c4V" secondAttribute="leading" id="cXR-Qz-If3"/>
+                            <constraint firstItem="54e-kf-rUJ" firstAttribute="width" secondItem="5ZG-eQ-yMW" secondAttribute="width" multiplier="0.5" id="ceC-Vs-G2c"/>
+                            <constraint firstItem="fas-68-aEC" firstAttribute="top" secondItem="5ZG-eQ-yMW" secondAttribute="bottom" id="gjK-Zx-Iq9"/>
+                            <constraint firstAttribute="trailing" secondItem="5ZG-eQ-yMW" secondAttribute="trailing" id="hnC-PJ-0Lv"/>
+                            <constraint firstItem="54e-kf-rUJ" firstAttribute="height" secondItem="5ZG-eQ-yMW" secondAttribute="height" multiplier="0.5" id="pd4-LI-BLr"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="buyDirect.parentView"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="buyDirectActivityIndicator" destination="biH-tU-P7r" id="l7N-jT-7wn"/>
+                        <outlet property="buyDirectStageLabel" destination="vLJ-gF-SHV" id="pSf-Gi-iVh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bsp-73-WBz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="319" y="366"/>
+        </scene>
+    </scenes>
+</document>

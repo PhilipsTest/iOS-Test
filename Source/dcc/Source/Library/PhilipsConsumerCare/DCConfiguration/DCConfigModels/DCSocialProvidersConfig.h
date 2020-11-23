@@ -1,0 +1,18 @@
+//
+//  DCSocialProvidersConfig.h
+//  DigitalCareLibrary
+//
+//  Created by KRISHNA KUMAR on 21/05/15.
+// Copyright (c) Koninklijke Philips N.V., 2016
+// All rights are reserved. Reproduction or dissemination
+// in whole or in part is prohibited without the prior written
+// consent of the copyright holder.
+
+#import <Foundation/Foundation.h>
+
+@interface DCSocialProvidersConfig : NSObject
+
+@property (nonatomic, strong) NSArray *socialServiceProvidersArray;
+-(id)initWithArrayData:(NSArray*)array;
+
+@end

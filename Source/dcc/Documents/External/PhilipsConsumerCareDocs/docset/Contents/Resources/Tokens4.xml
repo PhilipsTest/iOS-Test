@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DCInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DCInterface</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>DCInterface.h</DeclaredIn>
+            
+			
+			<NodeRef refid="4"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DCInterface/initWithDependencies:andSettings:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer</Abstract>
+			<DeclaredIn>DCInterface.m</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDependencies:(UAPPDependencies *)dependencies andSettings:(UAPPSettings *)settings</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dependencies</Name>
+					<Abstract type="html">UAPPDependencies object</Abstract>
+				</Parameter><Parameter>
+					<Name>settings</Name>
+					<Abstract type="html">UAPPSettings object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">return instance of DCInterface</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDependencies:andSettings:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/DCInterface/instantiateViewController:withErrorHandler:</TokenIdentifier>
+			<Abstract type="html">Description: method for returning CC ViewController with parameter launchinput</Abstract>
+			<DeclaredIn>DCInterface.m</DeclaredIn>
+			
+			<Declaration>- (UIViewController *)instantiateViewController:(UAPPLaunchInput *)launchInput withErrorHandler:(void ( ^ ) ( NSError *error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">A block object to be executed when the task finishes. This block has no return value and take one arguments error that occurred, if any.</Abstract>
+				</Parameter><Parameter>
+					<Name>&quot;launchInput&quot;</Name>
+					<Abstract type="html">UAPPLaunchInput object</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">&quot;return&quot;  CC ViewController</Abstract></ReturnValue>
+			<Anchor>//api/name/instantiateViewController:withErrorHandler:</Anchor>
+            <NodeRef refid="4"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

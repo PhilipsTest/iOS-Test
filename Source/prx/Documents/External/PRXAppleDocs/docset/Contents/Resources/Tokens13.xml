@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/PRXNetworkWrapper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/PRXNetworkWrapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/setDependencies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXDependencies *dependencies</Declaration>
+			
+			
+			<Anchor>//api/name/dependencies</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/dependencies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXDependencies *dependencies</Declaration>
+			
+			
+			<Anchor>//api/name/dependencies</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXNetworkWrapper/dependencies</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) PRXDependencies *dependencies</Declaration>
+			
+			
+			<Anchor>//api/name/dependencies</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/initWithDependencies:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDependencies:(PRXDependencies *)prxdependency</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDependencies:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/sendRequest:completion:failure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.h</DeclaredIn>
+			
+			<Declaration>- (void)sendRequest:(PRXRequest *)request completion:(void ( ^ ) ( id response ))success failure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			
+			
+			<Anchor>//api/name/sendRequest:completion:failure:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/initLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.m</DeclaredIn>
+			
+			<Declaration>- (void)initLogger</Declaration>
+			
+			
+			<Anchor>//api/name/initLogger</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/createCustomError:error:withFailure:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.m</DeclaredIn>
+			
+			<Declaration>- (void)createCustomError:(NSURLSessionDataTask *)task error:(NSError *)error withFailure:(void ( ^ ) ( NSError *error ))failure</Declaration>
+			
+			
+			<Anchor>//api/name/createCustomError:error:withFailure:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/urlEncode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)urlEncode:(NSString *)unencodedString</Declaration>
+			
+			
+			<Anchor>//api/name/urlEncode:</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/setPrxLogging:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) id&lt;AILoggingProtocol&gt; prxLogging</Declaration>
+			
+			
+			<Anchor>//api/name/prxLogging</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/PRXNetworkWrapper/prxLogging</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) id&lt;AILoggingProtocol&gt; prxLogging</Declaration>
+			
+			
+			<Anchor>//api/name/prxLogging</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/PRXNetworkWrapper/prxLogging</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXNetworkWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (strong, nonatomic) id&lt;AILoggingProtocol&gt; prxLogging</Declaration>
+			
+			
+			<Anchor>//api/name/prxLogging</Anchor>
+            <NodeRef refid="13"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

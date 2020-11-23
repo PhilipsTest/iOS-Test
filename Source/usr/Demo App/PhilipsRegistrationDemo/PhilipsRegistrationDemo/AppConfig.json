@@ -1,0 +1,16 @@
+{
+    "UserRegistration": {
+        "JanRainConfiguration.RegistrationClientID.Development": "8kaxdrpvkwyr7pnp987amu4aqb4wmnte",
+        "PILConfiguration.MicrositeID": "77000",
+        "Flow.EmailVerificationRequired" : true,
+        "Flow.TermsAndConditionsAcceptanceRequired" : true,
+        "Flow.MinimumAgeLimit" : {"default": 16},
+        "SigninProviders.default": ["myphilips","facebook","googleplus"]
+    },
+    "appinfra": {
+        "appidentity.micrositeId" : "77000",
+        "appidentity.sector"  : "b2c",
+        "appidentity.state"  : "Development",
+        "appidentity.serviceDiscoveryEnvironment"  : "Production"
+    }
+}

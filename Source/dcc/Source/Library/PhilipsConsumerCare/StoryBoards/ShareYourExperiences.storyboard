@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DpZ-ox-OSI">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+        <array key="CentraleSansBold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Tell Us View Controller-->
+        <scene sceneID="lje-Za-afP">
+            <objects>
+                <viewController storyboardIdentifier="ShareYourExperiences" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rWF-HS-cFN" customClass="DCTellUsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MD9-3V-0zQ" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Pcd-cL-41W">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VAY-UJ-MON">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ndW-dB-4fC" userLabel="ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="475"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JUF-cI-WO2">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="211"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="JUF-cI-WO2" secondAttribute="height" multiplier="12:5" id="i6L-PA-rhx"/>
+                                                    <constraint firstAttribute="width" secondItem="JUF-cI-WO2" secondAttribute="height" multiplier="16:9" priority="999" id="uwn-VE-A0M"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="i6L-PA-rhx"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="i6L-PA-rhx"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xzb-KT-zhN" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="235" width="343" height="20"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="consumerCareLocalizedText" value="TellUs"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fT6-CZ-Jxx" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="271" width="343" height="44"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="consumerCareLocalizedText" value="tellUs_sub_header"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UKx-Vh-nxb" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="339" width="343" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="VBe-GX-iwK"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="consumerCareLocalizedText" value="write_review"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="writeProductReview:" destination="rWF-HS-cFN" eventType="touchUpInside" id="T8t-0v-wBp"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qv-tT-DGN" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="386" width="343" height="39"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="39" id="nnO-M8-qUx"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="consumerCareLocalizedText" value="rate_this_app"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="writeAppReview:" destination="rWF-HS-cFN" eventType="touchUpInside" id="6cI-7P-6hM"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Xzb-KT-zhN" secondAttribute="trailing" constant="16" id="1fn-t4-lwe"/>
+                                            <constraint firstItem="fT6-CZ-Jxx" firstAttribute="leading" secondItem="ndW-dB-4fC" secondAttribute="leading" constant="16" id="4Tv-g3-ewu"/>
+                                            <constraint firstItem="JUF-cI-WO2" firstAttribute="leading" secondItem="ndW-dB-4fC" secondAttribute="leading" id="AsJ-PO-DpZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="fT6-CZ-Jxx" secondAttribute="trailing" constant="16" id="CZQ-ug-Vdp"/>
+                                            <constraint firstAttribute="trailing" secondItem="6qv-tT-DGN" secondAttribute="trailing" constant="16" id="KMa-4B-Zjo"/>
+                                            <constraint firstItem="6qv-tT-DGN" firstAttribute="top" secondItem="fT6-CZ-Jxx" secondAttribute="bottom" priority="750" constant="24" id="Qhe-96-LNA"/>
+                                            <constraint firstItem="Xzb-KT-zhN" firstAttribute="top" secondItem="JUF-cI-WO2" secondAttribute="bottom" constant="24" id="W3l-bl-eg8"/>
+                                            <constraint firstItem="JUF-cI-WO2" firstAttribute="top" secondItem="ndW-dB-4fC" secondAttribute="top" id="c1c-Q9-g0y"/>
+                                            <constraint firstAttribute="trailing" secondItem="JUF-cI-WO2" secondAttribute="trailing" id="dCj-WH-c68"/>
+                                            <constraint firstAttribute="trailing" secondItem="UKx-Vh-nxb" secondAttribute="trailing" constant="16" id="dEl-W5-XzC"/>
+                                            <constraint firstItem="UKx-Vh-nxb" firstAttribute="leading" secondItem="ndW-dB-4fC" secondAttribute="leading" constant="16" id="euD-12-66b"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="680" id="fo8-uw-N3L"/>
+                                            <constraint firstItem="6qv-tT-DGN" firstAttribute="leading" secondItem="ndW-dB-4fC" secondAttribute="leading" constant="16" id="oB9-NP-2um"/>
+                                            <constraint firstItem="UKx-Vh-nxb" firstAttribute="top" secondItem="fT6-CZ-Jxx" secondAttribute="bottom" constant="24" id="ojv-BS-GNA"/>
+                                            <constraint firstAttribute="bottom" secondItem="6qv-tT-DGN" secondAttribute="bottom" priority="999" constant="50" id="oyV-PH-ErN"/>
+                                            <constraint firstItem="Xzb-KT-zhN" firstAttribute="leading" secondItem="ndW-dB-4fC" secondAttribute="leading" constant="16" id="q6L-M8-Pou"/>
+                                            <constraint firstItem="fT6-CZ-Jxx" firstAttribute="top" secondItem="Xzb-KT-zhN" secondAttribute="bottom" constant="16" id="sZH-Ba-zSj"/>
+                                            <constraint firstItem="6qv-tT-DGN" firstAttribute="top" secondItem="UKx-Vh-nxb" secondAttribute="bottom" constant="8" id="xah-Rr-H0l"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="fo8-uw-N3L"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="fo8-uw-N3L"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="ndW-dB-4fC" firstAttribute="top" secondItem="VAY-UJ-MON" secondAttribute="top" id="5qr-cS-L53"/>
+                                    <constraint firstItem="ndW-dB-4fC" firstAttribute="leading" secondItem="VAY-UJ-MON" secondAttribute="leading" priority="999" id="6VV-Ll-Sdb"/>
+                                    <constraint firstAttribute="bottom" secondItem="ndW-dB-4fC" secondAttribute="bottom" id="AI0-3b-Rbh"/>
+                                    <constraint firstAttribute="trailing" secondItem="ndW-dB-4fC" secondAttribute="trailing" priority="999" id="F0m-2d-Qi3"/>
+                                    <constraint firstAttribute="centerX" secondItem="ndW-dB-4fC" secondAttribute="centerX" id="FGt-u5-cJf"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tJH-Mq-hVj" firstAttribute="trailing" secondItem="Pcd-cL-41W" secondAttribute="trailing" id="9kE-bv-iyi"/>
+                            <constraint firstAttribute="bottom" secondItem="Pcd-cL-41W" secondAttribute="bottom" id="M8i-fS-2ge"/>
+                            <constraint firstItem="Pcd-cL-41W" firstAttribute="top" secondItem="MD9-3V-0zQ" secondAttribute="top" id="aIB-kU-5bB"/>
+                            <constraint firstItem="tJH-Mq-hVj" firstAttribute="trailing" secondItem="VAY-UJ-MON" secondAttribute="trailing" id="dSL-ur-XHy"/>
+                            <constraint firstItem="Pcd-cL-41W" firstAttribute="leading" secondItem="tJH-Mq-hVj" secondAttribute="leading" id="e0I-Wt-pPj"/>
+                            <constraint firstAttribute="bottom" secondItem="VAY-UJ-MON" secondAttribute="bottom" id="hAX-KS-EgL"/>
+                            <constraint firstItem="VAY-UJ-MON" firstAttribute="leading" secondItem="tJH-Mq-hVj" secondAttribute="leading" id="icE-Mf-KsI"/>
+                            <constraint firstItem="VAY-UJ-MON" firstAttribute="top" secondItem="tJH-Mq-hVj" secondAttribute="top" id="nzK-e0-lYC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tJH-Mq-hVj"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="dhY-2x-GVN"/>
+                    <connections>
+                        <outlet property="LeftPadding" destination="F0m-2d-Qi3" id="qyd-yd-gpH"/>
+                        <outlet property="RightPadding" destination="6VV-Ll-Sdb" id="ewh-Wb-Pi8"/>
+                        <outlet property="appReviewButton" destination="6qv-tT-DGN" id="I7j-3b-Fi5"/>
+                        <outlet property="backGroundImage" destination="Pcd-cL-41W" id="ISs-eE-Nff"/>
+                        <outlet property="consumerCareUITopConstraint" destination="nzK-e0-lYC" id="3LG-23-Etb"/>
+                        <outlet property="productReviewButton" destination="UKx-Vh-nxb" id="Mno-Tl-yIb"/>
+                        <outlet property="tellUsTopImage" destination="JUF-cI-WO2" id="CIe-2c-iEZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4m-Xx-YJX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96" y="246"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="943-09-2Ff">
+            <objects>
+                <navigationController storyboardIdentifier="DCNavigation" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DpZ-ox-OSI" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="cFB-lv-4x4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="rWF-HS-cFN" kind="relationship" relationship="rootViewController" id="8Cn-0O-Y6l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nje-J2-Z1a" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-623" y="246"/>
+        </scene>
+    </scenes>
+</document>

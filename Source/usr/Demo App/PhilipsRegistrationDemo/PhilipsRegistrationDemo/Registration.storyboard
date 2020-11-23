@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="EF1-NE-tWB">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="cEF-Ro-Ktl">
+            <objects>
+                <navigationController id="EF1-NE-tWB" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ij4-2C-sYH">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="5eZ-ca-pRI" kind="relationship" relationship="rootViewController" id="CNO-Rd-57w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3vy-Lm-6w2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="510"/>
+        </scene>
+        <!--Test App View Controller-->
+        <scene sceneID="GRw-4D-Wzo">
+            <objects>
+                <viewController id="5eZ-ca-pRI" userLabel="Test App View Controller" customClass="TestAppViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0xb-SP-y3z"/>
+                        <viewControllerLayoutGuide type="bottom" id="O7t-RM-MvA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LIA-A0-rvy">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1QK-GW-Hce" customClass="PUIButton">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="lvr-8t-g6c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="18"/>
+                                <state key="normal" title="Registration">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="initiateRegistration:" destination="5eZ-ca-pRI" eventType="touchUpInside" id="Dph-4Z-3aF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="1QK-GW-Hce" secondAttribute="centerY" id="o03-xf-BrT"/>
+                            <constraint firstAttribute="centerX" secondItem="1QK-GW-Hce" secondAttribute="centerX" id="oBJ-Nk-mwD"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lJS-ES-bTe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mvr-sq-lGE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="510"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

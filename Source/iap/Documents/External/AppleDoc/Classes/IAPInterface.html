@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IAPInterface Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/IAPInterface" class="dashAnchor"></a>
+    <a title="IAPInterface Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InAppPurchase Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InAppPurchase Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IAPInterface Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13InAppPurchase15IAPDependenciesC">IAPDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPFlowInput.html">IAPFlowInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPInterface.html">IAPInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPLaunchInput.html">IAPLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPLaunchInput/IAPFlow.html">– IAPFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13InAppPurchase11IAPSettingsC">IAPSettings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IAPCartIconProtocol.html">IAPCartIconProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IAPInterface</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">IAPInterface</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">UAPPProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>IAPInterface is the public interface for any proposition to consume InAppPurchase micro app. Its the starting intitialization point.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase12IAPInterfaceCXeXecfc"></a>
+                    <a name="//apple_ref/swift/Method/init(dependencies:andSettings:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase12IAPInterfaceCXeXecfc">init(dependencies:andSettings:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPInterface init method</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">required</span> <span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">dependencies</span><span class="p">:</span> <span class="kt">UAPPDependencies</span><span class="p">,</span> <span class="n">andSettings</span> <span class="nv">settings</span><span class="p">:</span> <span class="kt">UAPPSettings</span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of UAPP</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase12IAPInterfaceC25instantiateViewControllerXeXeF"></a>
+                    <a name="//apple_ref/swift/Method/instantiateViewController(_:withErrorHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase12IAPInterfaceC25instantiateViewControllerXeXeF">instantiateViewController(_:withErrorHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPInterface instantiateViewController will initializes the rootviewcontroller of the uApp</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">instantiateViewController</span><span class="p">(</span><span class="n">_</span> <span class="nv">launchInput</span><span class="p">:</span> <span class="kt">UAPPLaunchInput</span><span class="p">,</span> <span class="n">withErrorHandler</span> <span class="nv">completionHandler</span><span class="p">:</span> <span class="p">((</span><span class="kt">Error</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">UIViewController</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of UAPP UIViewController which will be used for launching the uApp</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InAppPurchase@objc(cs)IAPInterface(im)fetchCompleteProductList:failureHandler:"></a>
+                    <a name="//apple_ref/swift/Method/fetchCompleteProductList(_:failureHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InAppPurchase@objc(cs)IAPInterface(im)fetchCompleteProductList:failureHandler:">fetchCompleteProductList(_:failureHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPInterface fetchCompleteProductList will fetch the product ctn list</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">fetchCompleteProductList</span><span class="p">(</span><span class="n">_</span> <span class="nv">completion</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">withProducts</span><span class="p">:</span><span class="kt">Array</span><span class="o">&lt;</span><span class="kt">String</span><span class="o">&gt;</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">(),</span> <span class="nv">failureHandler</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSError</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The list of product CTN&rsquo;s through its completion block</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InAppPurchase@objc(cs)IAPInterface(im)getProductCartCount:failureHandler:"></a>
+                    <a name="//apple_ref/swift/Method/getProductCartCount(_:failureHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InAppPurchase@objc(cs)IAPInterface(im)getProductCartCount:failureHandler:">getProductCartCount(_:failureHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPInterface getProductCartCount will fetch the cart count</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">getProductCartCount</span><span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Int</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">(),</span><span class="nv">failureHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSError</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The cart count through its success block</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@InAppPurchase@objc(cs)IAPInterface(im)isCartVisible:failureHandler:"></a>
+                    <a name="//apple_ref/swift/Method/isCartVisible(_:failureHandler:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@InAppPurchase@objc(cs)IAPInterface(im)isCartVisible:failureHandler:">isCartVisible(_:failureHandler:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>IAPInterface isCartVisible method will inform the uApp for cart visibility. It&rsquo;s an optional method</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    3.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">isCartVisible</span><span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="kt">Bool</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">(),</span> <span class="nv">failureHandler</span><span class="p">:</span><span class="kd">@escaping</span> <span class="p">(</span><span class="kt">NSError</span><span class="p">)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The cart visibility as a boolean value through its success block</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-01-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

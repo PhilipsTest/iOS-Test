@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="AddressCell" rowHeight="187" id="5Mr-qc-fH3" customClass="IAPAddressCell" customModule="InAppPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mr-qc-fH3" id="NCD-2U-BHS">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="187"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-Ex-JHZ" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="64" y="27" width="225" height="39"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L13-3Y-9u8" userLabel="ButtonView">
+                        <rect key="frame" x="0.0" y="74" width="320" height="105"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITV-mF-Buk" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="4" width="288" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="x6B-vf-Pye"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deliverToAddressClicked:" destination="5Mr-qc-fH3" eventType="touchUpInside" id="e3k-YF-HvO"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sm9-dN-iBn" userLabel="Top Bottom Separator" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="0.0" y="60" width="320" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Ruw-Kc-Dsg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xMs-NQ-p6K" userLabel="Edit Button" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="0.0" y="61" width="159.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="tsb-Vz-Eez"/>
+                                </constraints>
+                                <state key="normal" title="Edit"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="editButtonClicked:" destination="5Mr-qc-fH3" eventType="touchUpInside" id="Ltv-FQ-kQh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EC2-9c-O51" userLabel="Edit Delete Separator" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="159.5" y="61" width="1" height="44"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="hcp-yC-Pjo"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLv-ZQ-xEW" userLabel="Delete Button">
+                                <rect key="frame" x="160.5" y="61" width="159.5" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="y4k-OM-Z34"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                <state key="normal" title="Delete">
+                                    <color key="titleColor" red="0.90196078431372551" green="0.20784313725490194" blue="0.20784313725490194" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="deleteButtonClicked:" destination="5Mr-qc-fH3" eventType="touchUpInside" id="nwl-ea-0Nc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Sm9-dN-iBn" secondAttribute="trailing" id="9OD-er-0T3"/>
+                            <constraint firstAttribute="trailing" secondItem="GLv-ZQ-xEW" secondAttribute="trailing" id="Ggh-hi-Am0"/>
+                            <constraint firstItem="ITV-mF-Buk" firstAttribute="leading" secondItem="L13-3Y-9u8" secondAttribute="leading" constant="16" id="IxL-cQ-74D"/>
+                            <constraint firstAttribute="bottom" secondItem="xMs-NQ-p6K" secondAttribute="bottom" id="NkL-0g-xG3"/>
+                            <constraint firstItem="ITV-mF-Buk" firstAttribute="top" secondItem="L13-3Y-9u8" secondAttribute="top" constant="4" id="OTF-4w-8mc"/>
+                            <constraint firstItem="Sm9-dN-iBn" firstAttribute="top" secondItem="ITV-mF-Buk" secondAttribute="bottom" constant="16" id="aIh-w8-lrE"/>
+                            <constraint firstAttribute="height" constant="105" id="cd4-Fh-XKs"/>
+                            <constraint firstItem="GLv-ZQ-xEW" firstAttribute="top" secondItem="Sm9-dN-iBn" secondAttribute="bottom" id="fmO-1L-2h9"/>
+                            <constraint firstItem="EC2-9c-O51" firstAttribute="top" secondItem="Sm9-dN-iBn" secondAttribute="bottom" id="gWX-N7-jyR"/>
+                            <constraint firstAttribute="bottom" secondItem="EC2-9c-O51" secondAttribute="bottom" id="hGX-8v-WZi"/>
+                            <constraint firstItem="xMs-NQ-p6K" firstAttribute="top" secondItem="Sm9-dN-iBn" secondAttribute="bottom" id="ih3-k0-ogv"/>
+                            <constraint firstItem="GLv-ZQ-xEW" firstAttribute="leading" secondItem="EC2-9c-O51" secondAttribute="trailing" priority="999" id="j3L-GF-hEp"/>
+                            <constraint firstItem="EC2-9c-O51" firstAttribute="centerX" secondItem="L13-3Y-9u8" secondAttribute="centerX" id="orM-Bx-WXy"/>
+                            <constraint firstItem="xMs-NQ-p6K" firstAttribute="leading" secondItem="L13-3Y-9u8" secondAttribute="leading" id="uyB-qS-BeG"/>
+                            <constraint firstItem="Sm9-dN-iBn" firstAttribute="leading" secondItem="L13-3Y-9u8" secondAttribute="leading" id="v36-4y-5wi"/>
+                            <constraint firstItem="EC2-9c-O51" firstAttribute="leading" secondItem="xMs-NQ-p6K" secondAttribute="trailing" priority="999" id="vhv-a2-sTz"/>
+                            <constraint firstAttribute="bottom" secondItem="GLv-ZQ-xEW" secondAttribute="bottom" id="xVT-fh-OZz"/>
+                            <constraint firstAttribute="trailing" secondItem="ITV-mF-Buk" secondAttribute="trailing" constant="16" id="xfI-2b-gEC"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZZ-2x-OPo" customClass="UIDRadioButton" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="11" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="oZZ-2x-OPo" secondAttribute="height" multiplier="1:1" id="3L5-Bs-hbk"/>
+                            <constraint firstAttribute="height" constant="48" id="I8c-wD-1eK"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-5"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cny-Ub-tsN" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="179" width="320" height="8"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="Z8W-GC-pwp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="L13-3Y-9u8" secondAttribute="trailing" id="Hem-wR-Pyo"/>
+                    <constraint firstItem="cny-Ub-tsN" firstAttribute="top" secondItem="L13-3Y-9u8" secondAttribute="bottom" id="KbU-CN-csC"/>
+                    <constraint firstItem="LxE-Ex-JHZ" firstAttribute="top" secondItem="NCD-2U-BHS" secondAttribute="topMargin" constant="16" id="Lze-yH-yxW"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LxE-Ex-JHZ" secondAttribute="trailing" constant="16" id="Wxu-3G-qfq"/>
+                    <constraint firstItem="L13-3Y-9u8" firstAttribute="top" secondItem="LxE-Ex-JHZ" secondAttribute="bottom" constant="8" id="ZGj-lo-z9f"/>
+                    <constraint firstAttribute="topMargin" secondItem="oZZ-2x-OPo" secondAttribute="top" id="ZZa-HJ-YmT"/>
+                    <constraint firstItem="LxE-Ex-JHZ" firstAttribute="leading" secondItem="oZZ-2x-OPo" secondAttribute="trailing" id="atH-8b-OMf"/>
+                    <constraint firstItem="L13-3Y-9u8" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leading" id="azw-Um-Tj4"/>
+                    <constraint firstAttribute="bottom" secondItem="cny-Ub-tsN" secondAttribute="bottom" id="iFj-Yh-r5I"/>
+                    <constraint firstAttribute="trailing" secondItem="cny-Ub-tsN" secondAttribute="trailing" id="ljM-pT-rMF"/>
+                    <constraint firstItem="cny-Ub-tsN" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leading" id="uYD-wn-Alg"/>
+                    <constraint firstItem="oZZ-2x-OPo" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leading" constant="16" id="zEA-r6-mdf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressInfoLabel" destination="LxE-Ex-JHZ" id="1Tf-LD-C2C"/>
+                <outlet property="buttonViewBottomConstraint" destination="KbU-CN-csC" id="8OI-zz-K2i"/>
+                <outlet property="buttonViewHeightConstraint" destination="cd4-Fh-XKs" id="kxo-ot-uoj"/>
+                <outlet property="deleteButton" destination="GLv-ZQ-xEW" id="KxB-lx-Dcc"/>
+                <outlet property="editButton" destination="xMs-NQ-p6K" id="p3E-kp-h2k"/>
+                <outlet property="radioButton" destination="oZZ-2x-OPo" id="U8r-np-F5x"/>
+                <outlet property="separatorView" destination="cny-Ub-tsN" id="bnR-zX-LTK"/>
+                <outlet property="topButton" destination="ITV-mF-Buk" id="XSs-xZ-BcR"/>
+            </connections>
+            <point key="canvasLocation" x="-454" y="-116.5"/>
+        </tableViewCell>
+    </objects>
+</document>

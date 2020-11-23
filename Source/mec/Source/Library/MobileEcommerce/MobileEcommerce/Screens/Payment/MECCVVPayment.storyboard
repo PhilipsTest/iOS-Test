@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Payment View Controller-->
+        <scene sceneID="CI0-HN-Og7">
+            <objects>
+                <viewController storyboardIdentifier="MECCVVPaymentViewController" id="3gm-eA-35e" customClass="MECCVVPaymentViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nhw-VZ-jBQ" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pV8-M1-0NK" userLabel="ContainerView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXF-8L-SOH" userLabel="GestureView">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mec_gestureView">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="AVI-so-TcB" appends="YES" id="qJR-DS-4hI"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukY-fY-D6M" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="718" width="414" height="178"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="stE-cT-pyI">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="108"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fb6-5e-AnF" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="16" y="16" width="382" height="0.0"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="mec_cvv_label"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HwK-zQ-cXL" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="16" y="32" width="382" height="0.0"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="mec_cvv_description_label"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="000" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S5j-os-kS0" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="16" y="48" width="382" height="44"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="mec_cvv_textfield"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="sx0-uW-QrW"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                                                    </textField>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hrn-B2-Z2E" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="124" width="382" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="mec_cvv_continue_button"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedButtonNormalTitle" value="mec_continue"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonClicked:" destination="3gm-eA-35e" eventType="touchUpInside" id="5Hq-oM-JfG"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mec_cvv_view">
+                                            <bool key="isElement" value="YES"/>
+                                        </accessibility>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Hrn-B2-Z2E" secondAttribute="trailing" constant="16" id="1kW-Gp-Mem"/>
+                                            <constraint firstAttribute="trailing" secondItem="stE-cT-pyI" secondAttribute="trailing" id="7RB-qp-ezJ"/>
+                                            <constraint firstItem="Hrn-B2-Z2E" firstAttribute="leading" secondItem="ukY-fY-D6M" secondAttribute="leading" constant="16" id="8DE-qa-tdA"/>
+                                            <constraint firstItem="Hrn-B2-Z2E" firstAttribute="top" secondItem="stE-cT-pyI" secondAttribute="bottom" constant="16" id="BFJ-nX-quc"/>
+                                            <constraint firstItem="stE-cT-pyI" firstAttribute="leading" secondItem="ukY-fY-D6M" secondAttribute="leading" id="QgN-jx-hws"/>
+                                            <constraint firstItem="stE-cT-pyI" firstAttribute="top" secondItem="ukY-fY-D6M" secondAttribute="top" id="bJL-oU-Jn1"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hrn-B2-Z2E" secondAttribute="bottom" constant="24" id="dzr-PQ-trW"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="KoC-uB-YCq" appends="YES" id="zZE-l5-fb0"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ukY-fY-D6M" firstAttribute="top" secondItem="IXF-8L-SOH" secondAttribute="bottom" id="1WR-Rr-KmC"/>
+                                    <constraint firstItem="ukY-fY-D6M" firstAttribute="leading" secondItem="pV8-M1-0NK" secondAttribute="leading" id="9wU-Vu-6R0"/>
+                                    <constraint firstItem="IXF-8L-SOH" firstAttribute="top" secondItem="pV8-M1-0NK" secondAttribute="top" id="Xix-sg-yNS"/>
+                                    <constraint firstAttribute="trailing" secondItem="IXF-8L-SOH" secondAttribute="trailing" id="cDF-3T-Fl4"/>
+                                    <constraint firstAttribute="bottom" secondItem="ukY-fY-D6M" secondAttribute="bottom" id="cq2-U7-bau"/>
+                                    <constraint firstAttribute="trailing" secondItem="ukY-fY-D6M" secondAttribute="trailing" id="fWc-4O-6yM"/>
+                                    <constraint firstItem="IXF-8L-SOH" firstAttribute="leading" secondItem="pV8-M1-0NK" secondAttribute="leading" id="o9S-Qy-ClY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pV8-M1-0NK" firstAttribute="leading" secondItem="Xe3-CP-A0D" secondAttribute="leading" id="1Vo-z0-4sw"/>
+                            <constraint firstItem="pV8-M1-0NK" firstAttribute="trailing" secondItem="Xe3-CP-A0D" secondAttribute="trailing" id="ZZJ-dc-4HB"/>
+                            <constraint firstAttribute="bottom" secondItem="pV8-M1-0NK" secondAttribute="bottom" id="hne-jh-JD7"/>
+                            <constraint firstItem="pV8-M1-0NK" firstAttribute="top" secondItem="Nhw-VZ-jBQ" secondAttribute="top" id="vCv-Zw-mYZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xe3-CP-A0D"/>
+                    </view>
+                    <connections>
+                        <outlet property="cvvDescriptionLabel" destination="HwK-zQ-cXL" id="YdT-vh-vBF"/>
+                        <outlet property="cvvTextField" destination="S5j-os-kS0" id="Das-Jv-wL4"/>
+                        <outlet property="enterCVVLabel" destination="Fb6-5e-AnF" id="p5K-nw-Br0"/>
+                        <outlet property="mainCVVView" destination="ukY-fY-D6M" id="xbx-te-94K"/>
+                        <outlet property="mainViewBottomConstraint" destination="hne-jh-JD7" id="oJ9-uP-1M1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aUz-rO-5Bf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="AVI-so-TcB" userLabel="Top Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="topViewTapped:" destination="3gm-eA-35e" id="LS0-a9-fi4"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="KoC-uB-YCq" userLabel="CVV Tap Gesture Recognizer">
+                    <connections>
+                        <action selector="cvvViewTapped:" destination="3gm-eA-35e" id="gp0-DG-Nbb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="139" y="117"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,62 @@
+
+{
+    "success": true,
+    "payload": {
+        "country": "US",
+        "matchByLanguage": {
+            "available": true,
+            "results": [
+                        {
+                        "locale": "en_US",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "appinfra.testing1": "platform1L",
+                                    "appinfra.testing2": "platform2L",
+                                    "appinfra.testing3": "platform3L",
+                                    "appinfra.testing5": "platform5L",
+                                    "appinfra.testing6": "platform6L"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        }
+                        ]
+        },
+        "matchByCountry": {
+            "available": true,
+            "results": [
+                        {
+                        "locale": "en_IN",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77000",
+                                    "urls": {
+                                    "appinfra.testing1": "platform1C",
+                                    "appinfra.testing2": "platform2C",
+                                    "appinfra.testing3": "platform3C",
+                                    "appinfra.testing5": "platform5C",
+                                    "appinfra.testing6": "platform6C"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        }
+                        ]
+        }
+    },
+    "httpStatus": "OK"
+}

@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22E3A05022C62FA000E3FC04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A04F22C62FA000E3FC04 /* AppDelegate.swift */; };
+		22E3A05222C62FA000E3FC04 /* DemoAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A05122C62FA000E3FC04 /* DemoAppViewController.swift */; };
+		22E3A05522C62FA000E3FC04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E3A05322C62FA000E3FC04 /* Main.storyboard */; };
+		22E3A05722C62FA400E3FC04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22E3A05622C62FA400E3FC04 /* Assets.xcassets */; };
+		22E3A05A22C62FA400E3FC04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22E3A05822C62FA400E3FC04 /* LaunchScreen.storyboard */; };
+		22E3A06522C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A06422C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.swift */; };
+		22E3A07022C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E3A06F22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.swift */; };
+		22E3A0E622C7446100E3FC04 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 22E3A0E522C7446100E3FC04 /* AppConfig.json */; };
+		49A019E965F2BAEA15452934 /* Pods_PhilipsEcommerceSDKDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E8057B1104D76444E498547 /* Pods_PhilipsEcommerceSDKDemoApp.framework */; };
+		5DB0DD8C24889F9300CCC738 /* SupportedCountryList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DB0DD8B24889F9300CCC738 /* SupportedCountryList.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22E3A06122C62FA400E3FC04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E3A04422C62FA000E3FC04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E3A04B22C62FA000E3FC04;
+			remoteInfo = PhilipsEcommerceSDKDemoApp;
+		};
+		22E3A06C22C62FA400E3FC04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22E3A04422C62FA000E3FC04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22E3A04B22C62FA000E3FC04;
+			remoteInfo = PhilipsEcommerceSDKDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		22E3A04C22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhilipsEcommerceSDKDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E3A04F22C62FA000E3FC04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		22E3A05122C62FA000E3FC04 /* DemoAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAppViewController.swift; sourceTree = "<group>"; };
+		22E3A05422C62FA000E3FC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22E3A05622C62FA400E3FC04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22E3A05922C62FA400E3FC04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22E3A05B22C62FA400E3FC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E3A06022C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilipsEcommerceSDKDemoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E3A06422C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilipsEcommerceSDKDemoAppTests.swift; sourceTree = "<group>"; };
+		22E3A06622C62FA400E3FC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E3A06B22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilipsEcommerceSDKDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E3A06F22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhilipsEcommerceSDKDemoAppUITests.swift; sourceTree = "<group>"; };
+		22E3A07122C62FA400E3FC04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22E3A0E522C7446100E3FC04 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
+		5DB0DD8B24889F9300CCC738 /* SupportedCountryList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = SupportedCountryList.plist; sourceTree = "<group>"; };
+		5E8057B1104D76444E498547 /* Pods_PhilipsEcommerceSDKDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsEcommerceSDKDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E73D0D78ACFFF514D01A2B5 /* Pods-PhilipsEcommerceSDKDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsEcommerceSDKDemoApp.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsEcommerceSDKDemoApp/Pods-PhilipsEcommerceSDKDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		F511B9049F0EF3888C18A9D8 /* Pods-PhilipsEcommerceSDKDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsEcommerceSDKDemoApp.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsEcommerceSDKDemoApp/Pods-PhilipsEcommerceSDKDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22E3A04922C62FA000E3FC04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49A019E965F2BAEA15452934 /* Pods_PhilipsEcommerceSDKDemoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3A05D22C62FA400E3FC04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3A06822C62FA400E3FC04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22E3A04322C62FA000E3FC04 = {
+			isa = PBXGroup;
+			children = (
+				5DB0DD8A24889F9300CCC738 /* Resource */,
+				22E3A04E22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp */,
+				22E3A06322C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests */,
+				22E3A06E22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests */,
+				22E3A04D22C62FA000E3FC04 /* Products */,
+				8A9454DB1921EFA8D99E4B21 /* Pods */,
+				D2869BBEDF69B498BB015FAA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22E3A04D22C62FA000E3FC04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A04C22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp.app */,
+				22E3A06022C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.xctest */,
+				22E3A06B22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22E3A04E22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A0E522C7446100E3FC04 /* AppConfig.json */,
+				22E3A04F22C62FA000E3FC04 /* AppDelegate.swift */,
+				22E3A05122C62FA000E3FC04 /* DemoAppViewController.swift */,
+				22E3A05322C62FA000E3FC04 /* Main.storyboard */,
+				22E3A05622C62FA400E3FC04 /* Assets.xcassets */,
+				22E3A05822C62FA400E3FC04 /* LaunchScreen.storyboard */,
+				22E3A05B22C62FA400E3FC04 /* Info.plist */,
+			);
+			path = PhilipsEcommerceSDKDemoApp;
+			sourceTree = "<group>";
+		};
+		22E3A06322C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A06422C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.swift */,
+				22E3A06622C62FA400E3FC04 /* Info.plist */,
+			);
+			path = PhilipsEcommerceSDKDemoAppTests;
+			sourceTree = "<group>";
+		};
+		22E3A06E22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22E3A06F22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.swift */,
+				22E3A07122C62FA400E3FC04 /* Info.plist */,
+			);
+			path = PhilipsEcommerceSDKDemoAppUITests;
+			sourceTree = "<group>";
+		};
+		5DB0DD8A24889F9300CCC738 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5DB0DD8B24889F9300CCC738 /* SupportedCountryList.plist */,
+			);
+			name = Resource;
+			path = ../../../../pim/Source/DemoApp/PIMDemoApp/Resource;
+			sourceTree = "<group>";
+		};
+		8A9454DB1921EFA8D99E4B21 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F511B9049F0EF3888C18A9D8 /* Pods-PhilipsEcommerceSDKDemoApp.debug.xcconfig */,
+				6E73D0D78ACFFF514D01A2B5 /* Pods-PhilipsEcommerceSDKDemoApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D2869BBEDF69B498BB015FAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5E8057B1104D76444E498547 /* Pods_PhilipsEcommerceSDKDemoApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22E3A04B22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E3A07422C62FA400E3FC04 /* Build configuration list for PBXNativeTarget "PhilipsEcommerceSDKDemoApp" */;
+			buildPhases = (
+				69F5AB84B4647255FB100008 /* [CP] Check Pods Manifest.lock */,
+				22E3A04822C62FA000E3FC04 /* Sources */,
+				22E3A04922C62FA000E3FC04 /* Frameworks */,
+				22E3A04A22C62FA000E3FC04 /* Resources */,
+				384C49CB690B290E85C90C37 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsEcommerceSDKDemoApp;
+			productName = PhilipsEcommerceSDKDemoApp;
+			productReference = 22E3A04C22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22E3A05F22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E3A07722C62FA400E3FC04 /* Build configuration list for PBXNativeTarget "PhilipsEcommerceSDKDemoAppTests" */;
+			buildPhases = (
+				22E3A05C22C62FA400E3FC04 /* Sources */,
+				22E3A05D22C62FA400E3FC04 /* Frameworks */,
+				22E3A05E22C62FA400E3FC04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E3A06222C62FA400E3FC04 /* PBXTargetDependency */,
+			);
+			name = PhilipsEcommerceSDKDemoAppTests;
+			productName = PhilipsEcommerceSDKDemoAppTests;
+			productReference = 22E3A06022C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22E3A06A22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E3A07A22C62FA400E3FC04 /* Build configuration list for PBXNativeTarget "PhilipsEcommerceSDKDemoAppUITests" */;
+			buildPhases = (
+				22E3A06722C62FA400E3FC04 /* Sources */,
+				22E3A06822C62FA400E3FC04 /* Frameworks */,
+				22E3A06922C62FA400E3FC04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22E3A06D22C62FA400E3FC04 /* PBXTargetDependency */,
+			);
+			name = PhilipsEcommerceSDKDemoAppUITests;
+			productName = PhilipsEcommerceSDKDemoAppUITests;
+			productReference = 22E3A06B22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22E3A04422C62FA000E3FC04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					22E3A04B22C62FA000E3FC04 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					22E3A05F22C62FA400E3FC04 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 22E3A04B22C62FA000E3FC04;
+					};
+					22E3A06A22C62FA400E3FC04 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 22E3A04B22C62FA000E3FC04;
+					};
+				};
+			};
+			buildConfigurationList = 22E3A04722C62FA000E3FC04 /* Build configuration list for PBXProject "PhilipsEcommerceSDKDemoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22E3A04322C62FA000E3FC04;
+			productRefGroup = 22E3A04D22C62FA000E3FC04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22E3A04B22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp */,
+				22E3A05F22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests */,
+				22E3A06A22C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22E3A04A22C62FA000E3FC04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3A05A22C62FA400E3FC04 /* LaunchScreen.storyboard in Resources */,
+				22E3A0E622C7446100E3FC04 /* AppConfig.json in Resources */,
+				5DB0DD8C24889F9300CCC738 /* SupportedCountryList.plist in Resources */,
+				22E3A05722C62FA400E3FC04 /* Assets.xcassets in Resources */,
+				22E3A05522C62FA000E3FC04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3A05E22C62FA400E3FC04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3A06922C62FA400E3FC04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		384C49CB690B290E85C90C37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhilipsEcommerceSDKDemoApp/Pods-PhilipsEcommerceSDKDemoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhilipsEcommerceSDKDemoApp/Pods-PhilipsEcommerceSDKDemoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhilipsEcommerceSDKDemoApp/Pods-PhilipsEcommerceSDKDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69F5AB84B4647255FB100008 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsEcommerceSDKDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22E3A04822C62FA000E3FC04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3A05222C62FA000E3FC04 /* DemoAppViewController.swift in Sources */,
+				22E3A05022C62FA000E3FC04 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3A05C22C62FA400E3FC04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3A06522C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22E3A06722C62FA400E3FC04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E3A07022C62FA400E3FC04 /* PhilipsEcommerceSDKDemoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22E3A06222C62FA400E3FC04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E3A04B22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp */;
+			targetProxy = 22E3A06122C62FA400E3FC04 /* PBXContainerItemProxy */;
+		};
+		22E3A06D22C62FA400E3FC04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22E3A04B22C62FA000E3FC04 /* PhilipsEcommerceSDKDemoApp */;
+			targetProxy = 22E3A06C22C62FA400E3FC04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22E3A05322C62FA000E3FC04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E3A05422C62FA000E3FC04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22E3A05822C62FA400E3FC04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E3A05922C62FA400E3FC04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22E3A07222C62FA400E3FC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		22E3A07322C62FA400E3FC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22E3A07522C62FA400E3FC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F511B9049F0EF3888C18A9D8 /* Pods-PhilipsEcommerceSDKDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = PhilipsEcommerceSDKDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.PhilipsEcommerceSDKDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		22E3A07622C62FA400E3FC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E73D0D78ACFFF514D01A2B5 /* Pods-PhilipsEcommerceSDKDemoApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = PhilipsEcommerceSDKDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.PhilipsEcommerceSDKDemoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		22E3A07822C62FA400E3FC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = PhilipsEcommerceSDKDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.PhilipsEcommerceSDKDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhilipsEcommerceSDKDemoApp.app/PhilipsEcommerceSDKDemoApp";
+			};
+			name = Debug;
+		};
+		22E3A07922C62FA400E3FC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = PhilipsEcommerceSDKDemoAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.PhilipsEcommerceSDKDemoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhilipsEcommerceSDKDemoApp.app/PhilipsEcommerceSDKDemoApp";
+			};
+			name = Release;
+		};
+		22E3A07B22C62FA400E3FC04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = PhilipsEcommerceSDKDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.PhilipsEcommerceSDKDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhilipsEcommerceSDKDemoApp;
+			};
+			name = Debug;
+		};
+		22E3A07C22C62FA400E3FC04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7YY4NV42A9;
+				INFOPLIST_FILE = PhilipsEcommerceSDKDemoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Philips.PhilipsEcommerceSDKDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PhilipsEcommerceSDKDemoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22E3A04722C62FA000E3FC04 /* Build configuration list for PBXProject "PhilipsEcommerceSDKDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3A07222C62FA400E3FC04 /* Debug */,
+				22E3A07322C62FA400E3FC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E3A07422C62FA400E3FC04 /* Build configuration list for PBXNativeTarget "PhilipsEcommerceSDKDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3A07522C62FA400E3FC04 /* Debug */,
+				22E3A07622C62FA400E3FC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E3A07722C62FA400E3FC04 /* Build configuration list for PBXNativeTarget "PhilipsEcommerceSDKDemoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3A07822C62FA400E3FC04 /* Debug */,
+				22E3A07922C62FA400E3FC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22E3A07A22C62FA400E3FC04 /* Build configuration list for PBXNativeTarget "PhilipsEcommerceSDKDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E3A07B22C62FA400E3FC04 /* Debug */,
+				22E3A07C22C62FA400E3FC04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22E3A04422C62FA000E3FC04 /* Project object */;
+}

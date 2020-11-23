@@ -1,0 +1,84 @@
+{
+    "appflow": {
+        "firstState": "splash",
+        "states": [
+                   {
+                   "state": "splash",
+                   "events": [
+                              {
+                              "eventId": "onAppStartEvent"
+                              "nextStates": [
+                                             {
+                                             "condition": ["isLoggedIn"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": ["isDonePressed"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "welcome"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "welcome",
+                   "events": [
+                              {
+                              "eventId": "welcome_Button_Skip",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "welcome_Button_Done",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "hamburgerMenu",
+                   "events": [
+                              {
+                              "eventId": "Home",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Settings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "settings"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "About",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              }
+                              ]
+                   }
+                   ]
+    }
+}

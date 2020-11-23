@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Specificeer app infra-object";
+"ECSBaseURLNotFound" = "Basis-URL niet gevonden";
+"ECSCartEntryError" = "Het product is niet toegevoegd aan winkelwagen";
+"ECSCartError" = "Er is nog geen winkelwagen aangemaakt";
+"ECSCommerceCartModificationError" = "Aantal mag niet minder zijn dan nul";
+"ECSCtnNotProvided" = "Specificeer het CTN";
+"ECSHybrisNotAvailable" = "Philips shop is niet beschikbaar voor het geselecteerde land, alleen winkelmodus is beschikbaar";
+"ECSIllegalArgumentError" = "Vul geldige gegevens in";
+"ECSInsufficientStockError" = "Product kan niet worden verzonden omdat het niet op voorraad is";
+"ECSInvalidPaymentInfoError" = "Vul geldige betalingsgegevens in";
+"ECSInvalidTokenError" = "We hebben een technisch probleem (ongeldige toegangstoken). Voer Hybris Re-Auth uit";
+"ECSLocaleNotFound" = "Stel de landinstelling in";
+"ECSNoSuchElementError" = "Er is een fout opgetreden tijdens het ophalen van de gegevens van de server";
+"ECSOAuthDetailError" = "Specificeer volledige OAuth-gegevens";
+"ECSOAuthNotCalled" = "Gebruikersautorisatie is vereist voor deze actie";
+"ECSPIL_BAD_REQUEST" = "We hebben een technisch probleem. Probeer het later opnieuw";
+"ECSPIL_BAD_REQUEST_cartId" = "Er is nog geen winkelwagen aangemaakt";
+"ECSPIL_INTEGRATION_TIMEOUT" = "We hebben een technisch probleem. Probeer het later opnieuw";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "We hebben een technisch probleem (ongeldige toegangstoken). Voer Hybris Re-Auth uit";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Ongeldig e-mailadres. Controleer het alstublieft.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Het product is niet toegevoegd aan winkelwagen";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Stel de landinstelling in";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Voer een geldige CTN in";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Voer een geldig aantal in";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philips shop is niet beschikbaar voor het geselecteerde land, alleen winkelmodus is beschikbaar";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Aantal moet groter zijn dan nul";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Stel de landinstelling in";
+"ECSPIL_MISSING_PARAMETER_language" = "Stel de landinstelling in";
+"ECSPIL_MISSING_PARAMETER_productId" = "Specificeer het CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philips shop is niet beschikbaar voor het geselecteerde land, alleen winkelmodus is beschikbaar";
+"ECSPIL_NEGATIVE_QUANTITY" = "Aantal mag niet minder zijn dan nul";
+"ECSPIL_NOT_ACCEPTABLE" = "We hebben een technisch probleem. Probeer het later opnieuw";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "We hebben een technisch probleem. Probeer het later opnieuw";
+"ECSPIL_NOT_FOUND_cartId" = "Voer een geldige Cart ID in";
+"ECSPIL_NOT_FOUND_productId" = "Voer een geldige CTN in";
+"ECSPIL_STOCK_EXCEPTION" = "Product kan niet worden verzonden omdat het niet op voorraad is";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "We hebben een technisch probleem. Probeer het later opnieuw";
+"ECSPaymentAuthorizationError" = "Betalingsautorisatie mislukt";
+"ECSPropositionIdNotFound" = "Specificeer een geldige propositie-ID";
+"ECSSiteIdNotFound" = "Philips shop is niet beschikbaar voor het geselecteerde land, alleen winkelmodus is beschikbaar";
+"ECSUnknownIdentifierError" = "Gevraagde bron is niet beschikbaar";
+"ECSUnsupportedDeliveryModeError" = "Geselecteerde bezorgmodus wordt niet ondersteund";
+"ECSUnsupportedVoucherError" = "Sorry, deze voucher kan niet worden verzilverd";
+"ECSValidationError" = "Gegevensvalidatie is mislukt";
+"ECSVoucherOperationError" = "Sorry, deze voucher kan niet worden verzilverd";
+"ECSaddressId" = "Het gespecificeerde adres bestaat niet of behoort een andere gebruiker toe";
+"ECScountryCodeNotGiven" = "Specificeer een geldige landcode";
+"ECScountryisocode" = "Geselecteerde land is ongeldig";
+"ECSfirstName" = "De volgende schrijftekens zijn niet toegestaan: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "We hebben een technisch probleem (onjuiste client-gegevens). Log opnieuw in";
+"ECSinvalid_grant" = "We hebben een technisch probleem (ongeldig Janrain-token). Log opnieuw in";
+"ECSlastName" = "De volgende schrijftekens zijn niet toegestaan: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Plaats een geldige bestelling";
+"ECSphone1" = "Geselecteerd telefoonnummer is ongeldig";
+"ECSphone2" = "Geselecteerd telefoonnummer is ongeldig";
+"ECSpostUrl" = "Bestelling is al betaald/voltooid";
+"ECSpostalCode" = "Geselecteerde postcode is ongeldig";
+"ECSregionisocode" = "Geselecteerde regio is ongeldig";
+"ECSsessionCart" = "Selecteer het afleveradres, de bezorgmodus en de betaalmethode voordat je een bestelling plaatst";
+"ECSsomethingWentWrong" = "We hebben een technisch probleem. Probeer het later opnieuw";
+"ECSunsupported_grant_type" = "We hebben een technisch probleem (niet-ondersteund type toekenning). Log opnieuw in";

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AIAppUpdateProtocol Protocol Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/getDeprecateMessage">- getDeprecateMessage</option>
+		
+		<option value="//api/name/getMinimumOsVersion">- getMinimumOsVersion</option>
+		
+		<option value="//api/name/getMinimumVersion">- getMinimumVersion</option>
+		
+		<option value="//api/name/getToBeDeprecatedDate">- getToBeDeprecatedDate</option>
+		
+		<option value="//api/name/getToBeDeprecatedMessage">- getToBeDeprecatedMessage</option>
+		
+		<option value="//api/name/getUpdateMessage">- getUpdateMessage</option>
+		
+		<option value="//api/name/isDeprecated">- isDeprecated</option>
+		
+		<option value="//api/name/isToBeDeprecated">- isToBeDeprecated</option>
+		
+		<option value="//api/name/isUpdateAvailable">- isUpdateAvailable</option>
+		
+		<option value="//api/name/refresh:">- refresh:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AIAppUpdateProtocol Protocol Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Conforms to</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIAppUpdateProtocol.h</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/refresh:" title="refresh:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/refresh:">&ndash;&nbsp;refresh:</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Refreshes the appupdate info available in the server.
+Refresh will fail if appUpdate.serviceId is missing in appconfig
+or service discovery is not configured for appupdate
+or the content of the appupdate file is not in the specified format</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)refresh:(nullable void ( ^ ) ( AIAppUpdateRefreshStatus refreshResult , NSError *_Nullable error ))<em>completionHandler</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>completionHandler:</code></th>
+						<td><p>completionHandler with refresh status and error if refresh failed</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIAppUpdateProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isDeprecated" title="isDeprecated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isDeprecated">&ndash;&nbsp;isDeprecated</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isDeprecated</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isToBeDeprecated" title="isToBeDeprecated"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isToBeDeprecated">&ndash;&nbsp;isToBeDeprecated</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isToBeDeprecated</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/isUpdateAvailable" title="isUpdateAvailable"></a>
+	<h3 class="method-title"><code><a href="#//api/name/isUpdateAvailable">&ndash;&nbsp;isUpdateAvailable</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)isUpdateAvailable</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeprecateMessage" title="getDeprecateMessage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeprecateMessage">&ndash;&nbsp;getDeprecateMessage</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getDeprecateMessage</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getToBeDeprecatedMessage" title="getToBeDeprecatedMessage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getToBeDeprecatedMessage">&ndash;&nbsp;getToBeDeprecatedMessage</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getToBeDeprecatedMessage</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getToBeDeprecatedDate" title="getToBeDeprecatedDate"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getToBeDeprecatedDate">&ndash;&nbsp;getToBeDeprecatedDate</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSDate *)getToBeDeprecatedDate</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getUpdateMessage" title="getUpdateMessage"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getUpdateMessage">&ndash;&nbsp;getUpdateMessage</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getUpdateMessage</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMinimumVersion" title="getMinimumVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMinimumVersion">&ndash;&nbsp;getMinimumVersion</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getMinimumVersion</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getMinimumOsVersion" title="getMinimumOsVersion"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getMinimumOsVersion">&ndash;&nbsp;getMinimumOsVersion</a></code>
+<span class="task-item-suffix">required method</span></h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (nullable NSString *)getMinimumOsVersion</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

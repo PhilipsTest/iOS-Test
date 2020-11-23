@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AppInfra Reference</title>
+
+	<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="hierarchy.html">Hierarchy</a></li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview-contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AppInfra Reference</h1>
+
+					
+					<div class="section section-overview index-overview">
+						
+						
+						<h2>Platform Version 1804</h2>
+
+<ul>
+<li>Removed api configureAnalyticsWithFilePath in <a href="Protocols/AIAppTaggingProtocol.html">AIAppTaggingProtocol</a></li>
+<li>Modified the ABTest Protocol Completely.</li>
+<li>A/B testing now uses FireBase. (<a href="https://confluence.atlas.philips.com/pages/viewpage.action?pageId=29821684">How to integrate?</a>)</li>
+</ul>
+
+
+<h2>Platform Version 1803</h2>
+
+<ul>
+<li>Deprecated api configureAnalyticsWithFilePath in <a href="Protocols/AIAppTaggingProtocol.html">AIAppTaggingProtocol</a></li>
+</ul>
+
+
+<h2>Platform Version 1802</h2>
+
+<ul>
+<li>New feature is added for enabling and disabling Cloud logging</li>
+<li>Added new 2 new api&rsquo;s and 1 property setter in the logging protocol for the cloud logging.</li>
+</ul>
+
+
+<h2>Platform Version 2018.1.0</h2>
+
+<ul>
+<li>Consent manager is added for registering/deregistering consent handlers as a part of GDPR</li>
+</ul>
+
+
+<h2>Platform Version 3.0.0</h2>
+
+<ul>
+<li>New feature mobile app key manager</li>
+<li>logging config added to app configuratin</li>
+<li>proposition specific ab test configurations</li>
+<li>PSRA defect fixes</li>
+<li>bug fixes</li>
+</ul>
+
+
+<h2>Platform Version 2.2.0</h2>
+
+<ul>
+<li>new feature appupdate</li>
+<li>logs component name is now TLA</li>
+<li>appinfra code snippets added to repo</li>
+<li>locale special handling for zh-Hans(zh_CN) &amp; zh-Hant(zh_TW)</li>
+<li>new api in logging for dictionary</li>
+<li>Demo with microapp template</li>
+<li>Timesync issues fixed</li>
+<li>Tagging pagename validations</li>
+<li>Deletion of language pack if locale change</li>
+<li>AppConfig reset api added</li>
+<li>one log to show device name and os</li>
+</ul>
+
+
+<h2>Platform Version 2.1.0</h2>
+
+<ul>
+<li>new feature language pack . activate, refresh and generic api to get localized string</li>
+<li>limiting service discovery environment</li>
+<li>psr defects fixed</li>
+<li>component version added</li>
+<li>mutiple url configs merge in service discovery</li>
+<li>Logging configurations added to appconfig file</li>
+<li>new how to pages in confluence</li>
+<li>isSyncronised api in Time module, also few bugs were fixed</li>
+<li>fixed REST client cache encryption bug</li>
+<li>callback api for tagging</li>
+<li>option to disable proposition microsite id</li>
+<li>new api in tagging to get tracking identifier</li>
+<li>api to detect device is jailbroken</li>
+<li>sd improvements - caching home country</li>
+<li>repos are migrated to tfs</li>
+</ul>
+
+
+<h2>Platform Version 1.1.0</h2>
+
+<p><p></p>
+
+<ul>
+<li>US11828 - Service Discovery inject parameters in the URL</li>
+<li>US13345 - Service Discovery refresh when home country is changed</li>
+<li>App config keys are now case insensitive</li>
+<li>App config cloud support</li>
+<li>Service discovery data persistant across app launches</li>
+<li>Service Discovery server call will be locked for 10 seconds</li>
+<li>PRX dependancy removed from AppInfra</li>
+<li>Service Discovery alternate implementation using CSV available as seperate repo</li>
+<li>Service discovery match by country result filtered based on user preferred languages in case of multiple locales for a country</li>
+<li>Inject parameters to service url in service discovery</li>
+<li>Multiple microsite id support one for proposition one for platform</li>
+<li>Content loader data will be flushed for language change</li>
+<li>content loader limit per instance</li>
+<li>Network reachability is implemented in AppInfra as part of REST client</li>
+<li>Internationalization now returnes the locale that app UI was rendered. Country part may not be there</li>
+</ul>
+
+
+<h2>Description</h2>
+
+<p>App Infra provides a range of modules that are the basis for any mobile application. App Infra is integrated as one single library in the application. App Infra in itself is not an operational entity but only exists in the context of an application. App Infra ensures that all modules provided by App Infra are linked to each other where needed. All modules together are exposed to the application through a single set of well-defined interfaces. App Infra is not only used by the application but also by all common components that are integrated in the application.
+As such App Infra can be seen as a basic layer of functionality in the SW stack that is positioned somewhere between the app and the device’s OS. App Infra is not designed to abstract the operating system; App Infra provides additional functionality on top of the operating system making use of the operating system.
+Some of the App Infra depend on cloud servers to provide the required functionality. In those cases, App Infra abstracts the cloud server such that the users of App Infra are not directly exposed to the typical problems of remote services.</p>
+
+<h2>Modules</h2>
+
+<ul>
+<li><p>Secure storage module - Secure Storage is used to store secret value in device storage with encrypted way using AES Encryption. It uses key value pair concept to store data inside the apps.</p></li>
+<li><p>Service discovery module - Service Discovery reduces the hard dependency between app and cloud services. The main idea is that the list of URLs that are to be used by an application is maintained server side, at the service discovery server. The app only has to download this list from one single global location, this list tells the app where all other cloud services can be found.</p></li>
+<li><p>App tagging module - App tagging is used to track pages and button actions of the propositions or common components with page/action name and several other default values such as timestamps,device info,OS info etc.</p></li>
+<li><p>Logging module - Logging is used to maintain the logs which user access of the propositions or common components with page/action name and several other default values such as UTC timestamps, Log type, Component ID, Event and Message.</p></li>
+<li><p>Time module - feature provides an APIs to retrieve the UTC server time accurately.
+It also perform synchronization for every 24hrs and whenever there is a Data and time change.</p></li>
+<li><p>Internationalization module - provided APIs to fetch Locale from Android settings.</p></li>
+<li><p>App identity module - The App identity feature shall provide an API to get the app release status: development, test, acceptance, production.
+The App identity feature shall obtain the technical app name, app version and app release status automatically from the build application build process.</p></li>
+<li><p>App config module - The app configuration module maintains configuration settings of the app and it’s included common components, in the form of key value pair.</p></li>
+<li><p>REST client module - The REST client module simplifies communication with cloud services that use a REST based interface. Which is built upon AFNetworking Library</p></li>
+<li><p>A/B test module -
+The A/B test client module assists in performing A/B tests in the application. The client communicates with server which distributes users over the test experiences. A test is identified by its test name. when offline, the cached data is used if available instead of the default value to ensure a consistent user experience irrespective of network availability.</p></li>
+<li><p>Content loader module - This feature has a dedicated purpose of caching the articles from the CQ5 server for the application. The articles could be in the form of text, images, document etc. This library will download all the articles available at the application specified URL and store it internally</p></li>
+<li><p>API signing module - Some HSDP services use API signing (and not an oAuth token) to prove the caller is a known app. App Infra is providing an API which can create a signature for a given data blob. The signature is created using an algorithm provided by Philips Security Technologies plus a key. As multiple services may require different signatures, the key may differ per signature created.</p></li>
+<li>Language Pack - All apps contain text which is visualized to the user in some way, mainly this text is shown directly in the UI. A part of this text is more or less static and fundamental to the operation of the app. For that reason, this text is embedded according to the App UI internationalization guidelines. The text is shown in the locale as selected by the user on his device. This module enable to change these texts dynamically from cloud</li>
+</ul>
+
+
+<h2>Installation</h2>
+
+<ul>
+<li>Using cocoapods - add philips cocoapod repo and add   <code> pod 'AppInfra'</code> to pod file</li>
+<li>Using Frameworks - AppInfra library binary code is available in AppInfra repository under Binary folder. All the dependency frameworks needs to be installed separately. AppInfra depends on the following libraries.
+
+<ul>
+<li>AdobeMobileSDK</li>
+<li>CocoaLumberJack</li>
+<li>AFNetworking</li>
+<li>TrueTime</li>
+<li>PlatformInterfaces</li>
+</ul>
+</li>
+</ul>
+
+
+<h2>Code Example - Quick integration</h2>
+
+<p>Refer integration document. Integration document is part of appinfra repo (Documents/External/Integration Document_Appinfra).
+ - Intergration Doc <a href="http://devportal.spssvr1.htce.nl.philips.com/releases">Dev portal,</a> <a href="http://tfsemea1.ta.philips.com:8080/tfs/TPC_Region24/CDP2/TEAM%20Huma/_git/plf-ios?path=%2FSource%2Fail%2FDocuments%2FExternal&amp;version=GBdevelop&amp;_a=contents">TFS</a>, <a href="https://confluence.atlas.philips.com/display/MOB/AIL+IOS+integration+document">Confluence</a></p>
+
+<h2>Documentation -</h2>
+
+<p><a href="https://confluence.atlas.philips.com/display/MOB/How-to+articles+-+AIL">How to articles</a></p>
+
+<ul>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/AppInfra+Getting+Started?src=contextnavpagetreemode">AppInfra Getting Started</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/AppInfra+Logging?src=contextnavpagetreemode">AppInfra Logging</a></li>
+<li><a href="https://confluence.atlas.philips.com/pages/viewpage.action?pageId=29821684&amp;src=contextnavpagetreemode">How to configure A/B testing</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/How+to+setup+App+Configuration+for+an+app?src=contextnavpagetreemode">How to setup App Configuration for an app</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/How+to+set+up+Cloud+configuration?src=contextnavpagetreemode">How to set up Cloud configuration</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/How+to+Use+App+update+information?src=contextnavpagetreemode">How to Use App update information</a></li>
+<li><a href="https://confluence.atlas.philips.com/pages/viewpage.action?pageId=45894064&amp;src=contextnavpagetreemode">How to use Cloud Logging?</a></li>
+<li><a href="https://confluence.atlas.philips.com/pages/viewpage.action?pageId=19012137&amp;src=contextnavpagetreemode">How-To-Use-InApp Text updates (Language Pack)</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/How+to+Use+KeyBag?src=contextnavpagetreemode">How to Use KeyBag</a></li>
+<li><a href="https://confluence.atlas.philips.com/pages/viewpage.action?pageId=24216834&amp;src=contextnavpagetreemode">How to use Secure Data Base (Android )</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/How+to+Use+Tagging?src=contextnavpagetreemode">How to Use Tagging</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/How+to+use+UTC+Timesync+module?src=contextnavpagetreemode">How to use UTC Timesync module</a></li>
+<li><a href="https://confluence.atlas.philips.com/display/MOB/SSL+pinning?src=contextnavpagetreemode">SSL pinning</a></li>
+</ul>
+
+
+<h2><a name="team-members"></a>Contact details</h2>
+
+<ul>
+<li>Team Huma - <a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#x6f;&#x3a;&#x44;&#x4c;&#x5f;&#x48;&#x75;&#x6d;&#x61;&#x40;&#112;&#104;&#x69;&#108;&#105;&#112;&#x73;&#x2e;&#99;&#x6f;&#109;">&#x44;&#76;&#95;&#x48;&#x75;&#109;&#97;&#x40;&#112;&#x68;&#105;&#x6c;&#105;&#x70;&#115;&#46;&#99;&#x6f;&#x6d;</a></li>
+</ul>
+
+
+<h2>License</h2>
+
+<ul>
+<li>Copyright &copy; Koninklijke Philips N.V., 2018 All rights are reserved. Reproduction or dissemination in whole or in part is prohibited without the prior written consent of the copyright holder.*</li>
+</ul>
+
+						
+						
+					</div>
+					
+
+					<div class="index-container">
+						
+
+						
+						<div class="index-column">
+							<h2 class="index-title">Class References</h2>
+							<ul>
+								
+								<li><a href="Classes/AIAppInfra.html">AIAppInfra</a></li>
+								
+								<li><a href="Classes/AIAppInfraBuilder.html">AIAppInfraBuilder</a></li>
+								<li><a href="Classes/AIConsentManager.html">AIConsentManager</a></li>
+								
+							</ul>
+						</div>
+						
+
+						
+						<div class="index-column">
+							
+							<h2 class="index-title">Protocol References</h2>
+							<ul>
+								
+								<li><a href="Protocols/AIABTestProtocol.html">AIABTestProtocol</a></li>
+								
+								<li><a href="Protocols/AIAPISigningProtocol.html">AIAPISigningProtocol</a></li>
+								
+								<li><a href="Protocols/AIAppConfigurationProtocol.html">AIAppConfigurationProtocol</a></li>
+								
+								<li><a href="Protocols/AIAppIdentityProtocol.html">AIAppIdentityProtocol</a></li>
+								
+								<li><a href="Protocols/AIAppInfraProtocol.html">AIAppInfraProtocol</a></li>
+								
+								<li><a href="Protocols/AIAppTaggingProtocol.html">AIAppTaggingProtocol</a></li>
+								
+								<li><a href="Protocols/AIAppUpdateProtocol.html">AIAppUpdateProtocol</a></li>
+								
+								<li><a href="Protocols/AIComponentVersionInfoProtocol.html">AIComponentVersionInfoProtocol</a></li>
+								
+								<li><a href="Protocols/AIContentLoaderProtocol.html">AIContentLoaderProtocol</a></li>
+								
+								<li><a href="Protocols/AIContentProtocol.html">AIContentProtocol</a></li>
+								
+								<li><a href="Protocols/AIInternationalizationProtocol.html">AIInternationalizationProtocol</a></li>
+								
+								<li><a href="Protocols/AIKMProtocol.html">AIKMProtocol</a></li>
+								
+								<li><a href="Protocols/AILanguagePackProtocol.html">AILanguagePackProtocol</a></li>
+								
+								<li><a href="Protocols/AILoggingProtocol.html">AILoggingProtocol</a></li>
+								
+								<li><a href="Protocols/AIRESTClientDelegate.html">AIRESTClientDelegate</a></li>
+								
+								<li><a href="Protocols/AIRESTClientProtocol.html">AIRESTClientProtocol</a></li>
+								
+								<li><a href="Protocols/AIServiceDiscoveryProtocol.html">AIServiceDiscoveryProtocol</a></li>
+								
+								<li><a href="Protocols/AIStorageProviderProtocol.html">AIStorageProviderProtocol</a></li>
+								
+								<li><a href="Protocols/AITimeProtocol.html">AITimeProtocol</a></li>
+
+								<li><a href="Protocols/AIConsentManagerProtocol.html">AIConsentManagerProtocol</a></li>
+
+								<li><a href="Protocols/AIConsentStatusChangeProtocol.html">AIConsentStatusChangeProtocol</a></li>
+								
+							</ul>
+							
+
+							
+							<h2 class="index-title">Constant References</h2>
+							<ul>
+								
+									<li><a href="Constants/AIATPrivacyStatus.html">AIATPrivacyStatus</a></li>
+								
+									<li><a href="Constants/AIATSocialMedia.html">AIATSocialMedia</a></li>
+								
+									<li><a href="Constants/AIKMBagErrors.html">AIKMBagErrors</a></li>
+								
+									<li><a href="Constants/AIKMServiceDiscoveryPreference.html">AIKMServiceDiscoveryPreference</a></li>
+								
+									<li><a href="Constants/AILogLevel.html">AILogLevel</a></li>
+								
+									<li><a href="Constants/AIRESTClientReachabilityStatus.html">AIRESTClientReachabilityStatus</a></li>
+								
+									<li><a href="Constants/AIRESTClientTokenType.html">AIRESTClientTokenType</a></li>
+								
+									<li><a href="Constants/AISDError.html">AISDError</a></li>
+								
+							</ul>
+							
+
+							
+						</div>
+						
+					</div>
+
+					<footer>
+						<div class="footer-copyright">
+							
+							<p class="copyright">Copyright &copy; 2018 Philips. All rights reserved. Updated: 2018-10-09</p>
+							
+							
+							<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+							
+						</div>
+					</footer>
+				</main>
+			</div>
+		</div>
+	</article>
+
+	<script src="js/script.js"></script>
+</body>
+</html>

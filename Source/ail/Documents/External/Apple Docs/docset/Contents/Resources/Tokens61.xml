@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIContentLoaderProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIContentLoaderProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:</TokenIdentifier>
+			<Abstract type="html">Description: create intance with the following params</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable instancetype)initWithAppInfra:(AIAppInfra *_Nonnull)appInfra serviceId:(NSString *_Nonnull)serviceId maxAgeInHours:(NSInteger)maxAgeInHours modelClass:(Class _Nonnull)modelClass contentType:(NSString *_Nonnull)contentType downloadLimit:(NSUInteger)downloadLimit</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>appInfra</Name>
+					<Abstract type="html">AppInfra instance</Abstract>
+				</Parameter><Parameter>
+					<Name>serviceId</Name>
+					<Abstract type="html">serviceId of the cq5 url</Abstract>
+				</Parameter><Parameter>
+					<Name>maxAgeInHours</Name>
+					<Abstract type="html">expery time for the contents cached</Abstract>
+				</Parameter><Parameter>
+					<Name>modelClass</Name>
+					<Abstract type="html">name of the model class</Abstract>
+				</Parameter><Parameter>
+					<Name>contentType</Name>
+					<Abstract type="html">type of the content</Abstract>
+				</Parameter><Parameter>
+					<Name>downloadLimit</Name>
+					<Abstract type="html">no of pages that should be downloaded in one attempt. This will override the limit set in the app config. Pass &apos;0&apos; for taking the default limit from app config.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">content loader instance</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithAppInfra:serviceId:maxAgeInHours:modelClass:contentType:downloadLimit:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/refresh:</TokenIdentifier>
+			<Abstract type="html">Refresh content in cache.
+If database is empty, loads from server.
+If content is outdated, starts download from server.
+If content URL has changed (e.g. locale changed) the cached content is automatically cleared and download is started.</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)refresh:(nullable void ( ^ ) ( AICLRefreshResult refreshResult , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>refreshListener</Name>
+					<Abstract type="html">asynchronous callback reporting result of refresh</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/refresh:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/clearCache</TokenIdentifier>
+			<Abstract type="html">Remove all cached content</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)clearCache</Declaration>
+			
+			
+			<Anchor>//api/name/clearCache</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/getStatus</TokenIdentifier>
+			<Abstract type="html">Description: Used to get the current status of the contentloader</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (AICLState)getStatus</Declaration>
+			
+			
+			<Anchor>//api/name/getStatus</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/getAllContent:</TokenIdentifier>
+			<Abstract type="html">Description: used to get all the contents</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getAllContent:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getAllContent:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/getContentById:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description: used to get the contents based on ID</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentById:(NSString *_Nonnull)contentId completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentId</Name>
+					<Abstract type="html">id of the content required</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentById:completionHandler:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/getContentByIds:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description: used to get the contents based on ID</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentByIds:(NSArray *_Nonnull)contentIds completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>contentIds</Name>
+					<Abstract type="html">ids of the contents required</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentByIds:completionHandler:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/getContentByTag:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description:used to get the contents based on tag</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentByTag:(NSString *_Nonnull)tag completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tag</Name>
+					<Abstract type="html">tag name</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentByTag:completionHandler:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentLoaderProtocol/getContentByTags:operatorName:completionHandler:</TokenIdentifier>
+			<Abstract type="html">Description: used to get the contents based on tag</Abstract>
+			<DeclaredIn>AIContentLoaderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getContentByTags:(NSArray *_Nonnull)tags operatorName:(AICLOperator)operatorName completionHandler:(nullable void ( ^ ) ( NSArray *_Nonnull contents , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>tags</Name>
+					<Abstract type="html">tag names</Abstract>
+				</Parameter><Parameter>
+					<Name>operatorName</Name>
+					<Abstract type="html">name of the operator either AICLAND or AICLOR</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">returns array of contents along with the error object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getContentByTags:operatorName:completionHandler:</Anchor>
+            <NodeRef refid="61"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

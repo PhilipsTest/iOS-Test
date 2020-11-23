@@ -1,0 +1,16 @@
+//
+//  PRXRequestManager.h
+//  PRXClient
+//
+//  Created by sameer sulaiman on 10/22/15.
+//  Copyright (c) 2015 philips. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import "PRXResponseData.h"
+
+@class PRXDataBuilder;
+@interface PRXRequestManager : NSObject
+
+- (void)executeRequest:(PRXDataBuilder *)requestData completion:(void (^)(PRXResponseData *response))success failure:(void(^)(NSError *error))failure;
+@end

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16C67" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Content" representedClassName=".AICLDBContent" syncable="YES">
+        <attribute name="contentID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lastUpdatedTime" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="rawData" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tagIDs" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="versionNumber" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="contentLoader" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ContentLoaderStates" inverseName="contents" inverseEntity="ContentLoaderStates" syncable="YES"/>
+    </entity>
+    <entity name="ContentLoaderStates" representedClassName=".AICLDBContentLoaderStates" syncable="YES">
+        <attribute name="baseURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="expiryDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="serviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="contents" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Content" inverseName="contentLoader" inverseEntity="Content" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Content" positionX="153" positionY="-18" width="128" height="135"/>
+        <element name="ContentLoaderStates" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>

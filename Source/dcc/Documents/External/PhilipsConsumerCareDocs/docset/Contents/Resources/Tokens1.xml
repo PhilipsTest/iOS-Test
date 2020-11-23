@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/DCConsentProvider.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/DCConsentProvider</TokenIdentifier>
+			<Abstract type="html">DCConsentProvider is a class which provides default Consent Definitions of Consumer Care</Abstract>
+			<DeclaredIn>DCConsentProvider.h</DeclaredIn>
+            <Availability type="html"></Availability>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/DCConsentProvider/fetchLocationConsentDefinitionForLocale:</TokenIdentifier>
+			<Abstract type="html">This method is used to fetch default Location Consent Definition</Abstract>
+			<DeclaredIn>DCConsentProvider.h</DeclaredIn>
+			
+			<Declaration>+ (ConsentDefinition *_Nonnull)fetchLocationConsentDefinitionForLocale:(NSString *_Nonnull)locale</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>locale</Name>
+					<Abstract type="html">- Current Locale</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">ConsentDefinition value,containing default definitions for Location Consent</Abstract></ReturnValue>
+			<Anchor>//api/name/fetchLocationConsentDefinitionForLocale:</Anchor>
+            <NodeRef refid="1"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

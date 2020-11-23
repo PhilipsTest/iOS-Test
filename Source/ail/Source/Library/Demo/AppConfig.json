@@ -1,0 +1,63 @@
+{
+    "UserRegistration": {
+        
+        "JanRainConfiguration.RegistrationClientID.Development": "8kaxdrpvkwyr7pnp987amu4aqb4wmnte",
+        "JanRainConfiguration.RegistrationClientID.Testing": "g52bfma28yjbd24hyjcswudwedcmqy7c",
+        "JanRainConfiguration.RegistrationClientID.Evaluation": "durhrkq6ezqcvmqf6mq77ev48fuubdbj",
+        "JanRainConfiguration.RegistrationClientID.Staging": "durhrkq6ezqcvmqf6mq77ev48fuubdbj",
+        "JanRainConfiguration.RegistrationClientID.Production": "tygvkmbxkaact4rjtnh7ugkyqq9tf8z6",
+        "JanRainConfiguration.EngageAppID.Staging": {"CN":"uyfpympodtnesxejzuic","default":"kjfbdljaacbfkpddabjc"},
+        "JanRainConfiguration.EngageAppID.Production": {"CN":"cfwaqwuwcwzlcozyyjpa","default":"fggegljadcmlcnlkgleh"},
+        "PILConfiguration.CampaignID": "CL20150501_PC_TB_COPPA",
+        "Flow.EmailVerificationRequired" : true,
+        "Flow.TermsAndConditionsAcceptanceRequired" : true,
+        "Flow.MinimumAgeLimit" : { "NL":12 ,"GB":14,"default": 16},
+        "SigninProviders.default": ["myphilips","facebook","googleplus"],
+        "SigninProviders.CN": ["myphilips","sinaweibo"],
+        "GooglePlusClientId":"346000571262-r3n50oucoenomggrfjvhdpfvm95kdl5q.apps.googleusercontent.com",
+        "GooglePlusRedirectUri":"com.googleusercontent.apps.346000571262-r3n50oucoenomggrfjvhdpfvm95kdl5q:/oauthredirect"
+    },
+    "IAP": {
+        "hostport" : "acc.occ.shop.philips.com",
+        "propositionId": "Tuscany2016",
+        "loadDataFromHybris" : "true",
+        "productListForEnUS" : "ProductList_en_US",
+        "productListForEnGB" : "ProductList_en_GB"
+    },
+    "appinfra": {
+        "appidentity.micrositeId": 77000,
+        "appidentity.sector": "b2c",
+        "appidentity.appState": "Staging",
+        "appidentity.serviceDiscoveryEnvironment": "Production",
+        "servicediscovery.platformMicrositeId":70000,
+        "servicediscovery.platformEnvironment":"Production",
+        "logging.releaseConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Off",
+            "fileLogEnabled":false,
+            "consoleLogEnabled":false,
+            "componentLevelLogEnabled":true,
+            "componentIds": [
+                             "ail",
+                             "DSC"
+                             ]
+        },
+        "logging.debugConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"All",
+            "fileLogEnabled":false,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": [
+                             "ail",
+                             "DSC"
+                             ]
+        }
+    },
+ 
+}
+

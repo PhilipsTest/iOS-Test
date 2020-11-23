@@ -1,0 +1,16 @@
+# required
+app_name: "PhilipsRegistration"
+
+# optional
+# slack_url: see https://api.slack.com/incoming-webhooks
+# xcode_location: /Applications/Xcode.app
+
+# Overridable
+oclint_select_regex: /^((?!Pods)[\s\S])*$/
+swiftlint_exclusions:
+  - Pods
+xcov_target_exclusions: "AppInfra.framework,CocoaAsyncSocket.framework,UAPPFramework.framework,libPhoneNumber_iOS.framework,ObjectMapper.framework,AppAuth.framework,CocoaLumberjack.framework,NHNetworkTime.framework,FXPageControl.framework,PhilipsUIKit.framework,AILAFNetworking.framework,PhilipsIconFont.framework,PhilipsRegistration.app"
+xcov_exclusions:
+  - Registration/Janrain
+  - Pods
+jazzy_config_path: jazzy.yml

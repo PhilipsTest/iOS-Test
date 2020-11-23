@@ -1,0 +1,1474 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		42793A191D9B913D00489A68 /* PhilipsPRXClientUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 42793A1A1D9B913D00489A68 /* Build configuration list for PBXAggregateTarget "PhilipsPRXClientUniversal" */;
+			buildPhases = (
+				42793A1E1D9B920900489A68 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PhilipsPRXClientUniversal;
+			productName = PhilipsPRXClientUniversal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		222C4B6124BC4821001C0DF5 /* PRXSpecificationsItemValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EE18F2397D053006F4F4F /* PRXSpecificationsItemValue.m */; };
+		222C4B6224BC4825001C0DF5 /* PRXSpecificationsItemValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 783EE18E2397D053006F4F4F /* PRXSpecificationsItemValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222C4B6324BC4866001C0DF5 /* PRXSpecificationsRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 783EE1832397C1D8006F4F4F /* PRXSpecificationsRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222C4B6424BC486E001C0DF5 /* PRXSpecificationsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EE1842397C1D8006F4F4F /* PRXSpecificationsRequest.m */; };
+		222C4B6524BC487E001C0DF5 /* PRXSpecificationsChapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 783EE1A12397EF04006F4F4F /* PRXSpecificationsChapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222C4B6724BC48A7001C0DF5 /* PRXSpecificationsResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 783EE1892397CDBC006F4F4F /* PRXSpecificationsResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		222C4B6824BC48AE001C0DF5 /* PRXSpecificationsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EE18A2397CDBC006F4F4F /* PRXSpecificationsResponse.m */; };
+		222C4B6C24BD8928001C0DF5 /* PRXSpecificationsChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EE1A22397EF04006F4F4F /* PRXSpecificationsChapter.m */; };
+		22D9FF8F244DC63700FA0548 /* PRXCDLSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E750AE244769CF00D676EF /* PRXCDLSRequest.m */; };
+		22D9FF90244DC63700FA0548 /* PRXCDLSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E750B12447706700D676EF /* PRXCDLSResponse.m */; };
+		22D9FF91244DC63700FA0548 /* PRXCDLSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E750B42447748100D676EF /* PRXCDLSData.m */; };
+		22D9FF92244DC63700FA0548 /* PRXCDLSDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E750B724477A3800D676EF /* PRXCDLSDetails.m */; };
+		22E750BF2447872200D676EF /* PRXCDLSResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E750B02447706700D676EF /* PRXCDLSResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22E750C02447872C00D676EF /* PRXCDLSData.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E750B32447748000D676EF /* PRXCDLSData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22E750C12447873300D676EF /* PRXCDLSDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E750B624477A3800D676EF /* PRXCDLSDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22E750C42447876800D676EF /* PRXCDLSRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 22E750AD244769CF00D676EF /* PRXCDLSRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		263DCC711C16DF9C000A6377 /* testAbstractMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 263DCC701C16DF9C000A6377 /* testAbstractMethods.m */; };
+		26439B381C05B250006FD8B8 /* testPRXRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26439B371C05B250006FD8B8 /* testPRXRequestManager.m */; };
+		2670623C1BE9B49300711E5A /* testAssertModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670623B1BE9B49300711E5A /* testAssertModel.m */; };
+		267062401BE9B4A300711E5A /* asset.json in Resources */ = {isa = PBXBuildFile; fileRef = 2670623D1BE9B4A300711E5A /* asset.json */; };
+		267062411BE9B4A300711E5A /* faq.json in Resources */ = {isa = PBXBuildFile; fileRef = 2670623E1BE9B4A300711E5A /* faq.json */; };
+		267062421BE9B4A300711E5A /* summary.json in Resources */ = {isa = PBXBuildFile; fileRef = 2670623F1BE9B4A300711E5A /* summary.json */; };
+		267062451BE9BE7400711E5A /* testSummaryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 267062441BE9BE7400711E5A /* testSummaryModel.m */; };
+		267062471BE9BED100711E5A /* testFAQModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 267062461BE9BED100711E5A /* testFAQModel.m */; };
+		267062621BECBF4800711E5A /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 267062611BECBF4800711E5A /* error.json */; };
+		427939E41D9B8F5900489A68 /* PhilipsPRXClientDev.h in Headers */ = {isa = PBXBuildFile; fileRef = 427939E31D9B8F5900489A68 /* PhilipsPRXClientDev.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427939EB1D9B8F7E00489A68 /* PRXRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95DB9CF41C89889600DC95FA /* PRXRequest.m */; };
+		427939EC1D9B8F8400489A68 /* PRXRequestEnums.m in Sources */ = {isa = PBXBuildFile; fileRef = 953420521CA9107E00370682 /* PRXRequestEnums.m */; };
+		427939ED1D9B8F8700489A68 /* PRXRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 428647CF1BD8F32700C00A74 /* PRXRequestManager.m */; };
+		427939EE1D9B8F8A00489A68 /* PRXNetworkWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A8927F1BE0AA4800F5E77C /* PRXNetworkWrapper.m */; };
+		427939EF1D9B8F8D00489A68 /* PRXSupportRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 95D7C2C11C968DAE00774692 /* PRXSupportRequest.m */; };
+		427939F01D9B8F9100489A68 /* PRXAssetRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9523D4561C928E70000DD28E /* PRXAssetRequest.m */; };
+		427939F11D9B8F9300489A68 /* PRXSummaryRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 9523D45B1C9298CC000DD28E /* PRXSummaryRequest.m */; };
+		427939F21D9B8F9600489A68 /* PRXResponseData.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061C71BE1FCA900711E5A /* PRXResponseData.m */; };
+		427939F31D9B8F9D00489A68 /* PRXAssetResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 2670621F1BE77CF400711E5A /* PRXAssetResponse.m */; };
+		427939F41D9B8FA000489A68 /* PRXAssetData.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061D21BE1FD2C00711E5A /* PRXAssetData.m */; };
+		427939F51D9B8FA200489A68 /* PRXAssetAssets.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061D01BE1FD2C00711E5A /* PRXAssetAssets.m */; };
+		427939F61D9B8FA500489A68 /* PRXAssetAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061CE1BE1FD2C00711E5A /* PRXAssetAsset.m */; };
+		427939F71D9B8FAC00489A68 /* PRXSummaryResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 267062221BE77E0100711E5A /* PRXSummaryResponse.m */; };
+		427939F81D9B8FAF00489A68 /* PRXSummaryData.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061DC1BE1FDEA00711E5A /* PRXSummaryData.m */; };
+		427939F91D9B8FB200489A68 /* PRXSummaryBrand.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061DA1BE1FDEA00711E5A /* PRXSummaryBrand.m */; };
+		427939FA1D9B8FB700489A68 /* PRXSummaryPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061DE1BE1FDEB00711E5A /* PRXSummaryPrice.m */; };
+		427939FB1D9B8FBA00489A68 /* PRXSupportResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 267062251BE77E9B00711E5A /* PRXSupportResponse.m */; };
+		427939FC1D9B8FBD00489A68 /* PRXFaqData.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061E81BE1FE4400711E5A /* PRXFaqData.m */; };
+		427939FD1D9B8FC000489A68 /* PRXFaqRichTexts.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061F01BE1FE4400711E5A /* PRXFaqRichTexts.m */; };
+		427939FE1D9B8FC400489A68 /* PRXFaqRichText.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061EE1BE1FE4400711E5A /* PRXFaqRichText.m */; };
+		427939FF1D9B8FC600489A68 /* PRXFaqChapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061E61BE1FE4400711E5A /* PRXFaqChapter.m */; };
+		42793A001D9B8FCB00489A68 /* PRXFaqItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 267061EA1BE1FE4400711E5A /* PRXFaqItem.m */; };
+		42793A021D9B907200489A68 /* PRXRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 95DB9CF31C89889600DC95FA /* PRXRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A031D9B907200489A68 /* PRXRequestEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 953420511CA9107D00370682 /* PRXRequestEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A041D9B907200489A68 /* PRXRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 428647CE1BD8F32700C00A74 /* PRXRequestManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A051D9B907200489A68 /* PRXSupportRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D7C2C01C968DAE00774692 /* PRXSupportRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A061D9B907200489A68 /* PRXAssetRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9523D4551C928E70000DD28E /* PRXAssetRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A071D9B907200489A68 /* PRXSummaryRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 9523D45A1C9298CC000DD28E /* PRXSummaryRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A081D9B907200489A68 /* PRXResponseData.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061C61BE1FCA900711E5A /* PRXResponseData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A091D9B907200489A68 /* PRXAssetResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 2670621E1BE77CF400711E5A /* PRXAssetResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A0A1D9B907200489A68 /* PRXAssetData.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061D11BE1FD2C00711E5A /* PRXAssetData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A0B1D9B907200489A68 /* PRXAssetAssets.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061CF1BE1FD2C00711E5A /* PRXAssetAssets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A0C1D9B907200489A68 /* PRXAssetAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061CD1BE1FD2C00711E5A /* PRXAssetAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A0D1D9B907200489A68 /* PRXSummaryResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 267062211BE77E0100711E5A /* PRXSummaryResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A0E1D9B907200489A68 /* PRXSummaryData.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061DB1BE1FDEA00711E5A /* PRXSummaryData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A0F1D9B907200489A68 /* PRXSummaryBrand.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061D91BE1FDEA00711E5A /* PRXSummaryBrand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A101D9B907200489A68 /* PRXSummaryPrice.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061DD1BE1FDEA00711E5A /* PRXSummaryPrice.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A111D9B907200489A68 /* PRXSupportResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 267062241BE77E9B00711E5A /* PRXSupportResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A121D9B907200489A68 /* PRXFaqData.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061E71BE1FE4400711E5A /* PRXFaqData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A131D9B907200489A68 /* PRXFaqRichTexts.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061EF1BE1FE4400711E5A /* PRXFaqRichTexts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A141D9B907200489A68 /* PRXFaqRichText.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061ED1BE1FE4400711E5A /* PRXFaqRichText.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A151D9B907200489A68 /* PRXFaqChapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061E51BE1FE4400711E5A /* PRXFaqChapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A161D9B907200489A68 /* PRXFaqItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 267061E91BE1FE4400711E5A /* PRXFaqItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A171D9B907200489A68 /* PRXConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A8927D1BE0AA3D00F5E77C /* PRXConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42793A181D9B908E00489A68 /* PRXNetworkWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 42A8927E1BE0AA4800F5E77C /* PRXNetworkWrapper.h */; };
+		541550371E236CA100BF84EB /* testNetworkWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 541550361E236CA100BF84EB /* testNetworkWrapper.m */; };
+		54849892213D45AF001BD5A4 /* AISDMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 54849891213D45AF001BD5A4 /* AISDMock.m */; };
+		54C77C281E027AB400154FF4 /* PRXDependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = 54C77C241E02676C00154FF4 /* PRXDependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		54C77C291E027AC000154FF4 /* PRXDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C77C251E02676C00154FF4 /* PRXDependencies.m */; };
+		54C77C3B1E02A14700154FF4 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C77C2B1E02A14700154FF4 /* ADBMobileConfig.json */; };
+		54C77C3D1E02A14700154FF4 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 54C77C2D1E02A14700154FF4 /* AppConfig.json */; };
+		54C77C471E02A14700154FF4 /* NSBundle+Bundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 54C77C3A1E02A14700154FF4 /* NSBundle+Bundle.m */; };
+		6A36AE90221E479700E8376D /* PRXSummaryListResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A36AE8E221E479700E8376D /* PRXSummaryListResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A36AE92221E479700E8376D /* PRXSummaryListResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A36AE8F221E479700E8376D /* PRXSummaryListResponse.m */; };
+		6AE56BE1221EF2B800231753 /* PRXSummaryListRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 6AE56BDF221EF2B800231753 /* PRXSummaryListRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AE56BE2221EF2B800231753 /* PRXSummaryListRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AE56BE0221EF2B800231753 /* PRXSummaryListRequest.m */; };
+		707811BC363BAC8A4994DF97 /* Pods_PhilipsPRXClientDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE96626641B0B357A4AE39D /* Pods_PhilipsPRXClientDev.framework */; };
+		78231B6123A39155008B9B03 /* PRXFeaturesRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B5F23A39155008B9B03 /* PRXFeaturesRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B6223A39155008B9B03 /* PRXFeaturesRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B6023A39155008B9B03 /* PRXFeaturesRequest.m */; };
+		78231B6623A3930B008B9B03 /* PRXFeaturesResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B6423A3930B008B9B03 /* PRXFeaturesResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B6723A3930B008B9B03 /* PRXFeaturesResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B6523A3930B008B9B03 /* PRXFeaturesResponse.m */; };
+		78231B6A23A39406008B9B03 /* PRXFeaturesData.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B6823A39406008B9B03 /* PRXFeaturesData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B6B23A39406008B9B03 /* PRXFeaturesData.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B6923A39406008B9B03 /* PRXFeaturesData.m */; };
+		78231B7223A3963C008B9B03 /* PRXFeaturesHighlight.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B7023A3963C008B9B03 /* PRXFeaturesHighlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B7323A3963C008B9B03 /* PRXFeaturesHighlight.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B7123A3963C008B9B03 /* PRXFeaturesHighlight.m */; };
+		78231B7623A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B7423A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B7723A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B7523A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.m */; };
+		78231B8023A3A0E5008B9B03 /* PRXFeaturesDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B7C23A3A0E4008B9B03 /* PRXFeaturesDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B8123A3A0E5008B9B03 /* PRXFeaturesAssetDetails.h in Headers */ = {isa = PBXBuildFile; fileRef = 78231B7D23A3A0E4008B9B03 /* PRXFeaturesAssetDetails.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78231B8223A3A0E5008B9B03 /* PRXFeaturesDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B7E23A3A0E5008B9B03 /* PRXFeaturesDetails.m */; };
+		78231B8323A3A0E5008B9B03 /* PRXFeaturesAssetDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 78231B7F23A3A0E5008B9B03 /* PRXFeaturesAssetDetails.m */; };
+		783EE1952397D094006F4F4F /* PRXSpecificationsItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 783EE1932397D094006F4F4F /* PRXSpecificationsItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783EE1972397D094006F4F4F /* PRXSpecificationsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EE1942397D094006F4F4F /* PRXSpecificationsItem.m */; };
+		783EE19A2397D0AD006F4F4F /* PRXSpecificationsChapterItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 783EE1982397D0AD006F4F4F /* PRXSpecificationsChapterItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		783EE19C2397D0AD006F4F4F /* PRXSpecificationsChapterItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 783EE1992397D0AD006F4F4F /* PRXSpecificationsChapterItem.m */; };
+		78731E1A239FB05800F71E94 /* PRXSpecificationsItemMeasure.h in Headers */ = {isa = PBXBuildFile; fileRef = 78731E18239FB05800F71E94 /* PRXSpecificationsItemMeasure.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78731E1B239FB05800F71E94 /* PRXSpecificationsItemMeasure.m in Sources */ = {isa = PBXBuildFile; fileRef = 78731E19239FB05800F71E94 /* PRXSpecificationsItemMeasure.m */; };
+		BF2988482154F3A800350ECA /* disclaimer.json in Resources */ = {isa = PBXBuildFile; fileRef = BF2988462154F3A800350ECA /* disclaimer.json */; };
+		BF29884C2154F46200350ECA /* MockPRXRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BF29884B2154F46200350ECA /* MockPRXRequestManager.m */; };
+		BF29884E2154F6D600350ECA /* DisclaimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF29884D2154F6D600350ECA /* DisclaimerTests.m */; };
+		BF2988512154F7C500350ECA /* MockPRXAppInfra.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2988502154F7C500350ECA /* MockPRXAppInfra.m */; };
+		BF2988552155102E00350ECA /* PRXDisclaimerResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2988532155102E00350ECA /* PRXDisclaimerResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2988572155102E00350ECA /* PRXDisclaimerResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2988542155102E00350ECA /* PRXDisclaimerResponse.m */; };
+		BF29885F2155107100350ECA /* PRXDisclaimer.m in Sources */ = {isa = PBXBuildFile; fileRef = BF2988582155106D00350ECA /* PRXDisclaimer.m */; };
+		BF2988602155107100350ECA /* PRXDisclaimerData.h in Headers */ = {isa = PBXBuildFile; fileRef = BF2988592155106E00350ECA /* PRXDisclaimerData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2988612155107100350ECA /* PRXDisclaimers.h in Headers */ = {isa = PBXBuildFile; fileRef = BF29885A2155106F00350ECA /* PRXDisclaimers.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2988622155107100350ECA /* PRXDisclaimer.h in Headers */ = {isa = PBXBuildFile; fileRef = BF29885B2155106F00350ECA /* PRXDisclaimer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF2988642155107100350ECA /* PRXDisclaimerData.m in Sources */ = {isa = PBXBuildFile; fileRef = BF29885C2155107000350ECA /* PRXDisclaimerData.m */; };
+		BF2988662155107100350ECA /* PRXDisclaimers.m in Sources */ = {isa = PBXBuildFile; fileRef = BF29885D2155107100350ECA /* PRXDisclaimers.m */; };
+		BF29886A215510AA00350ECA /* PRXDisclaimerRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = BF298867215510AA00350ECA /* PRXDisclaimerRequest.m */; };
+		BF29886B215510AA00350ECA /* PRXDisclaimerRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = BF298868215510AA00350ECA /* PRXDisclaimerRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F786800F702CB65EA969B7E4 /* Pods_PRXClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EDD2F889EEA20A019DABBFC /* Pods_PRXClientTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50616501205FC20700499D2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 428647631BD8D66F00C00A74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427939E01D9B8F5900489A68;
+			remoteInfo = PhilipsPRXClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9523D45D1C92A43B000DD28E /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		09D06707344194A2447AC611 /* Pods-PhilipsPRXClientDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsPRXClientDev.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsPRXClientDev/Pods-PhilipsPRXClientDev.release.xcconfig"; sourceTree = "<group>"; };
+		1EDD2F889EEA20A019DABBFC /* Pods_PRXClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRXClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E750AD244769CF00D676EF /* PRXCDLSRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXCDLSRequest.h; sourceTree = "<group>"; };
+		22E750AE244769CF00D676EF /* PRXCDLSRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXCDLSRequest.m; sourceTree = "<group>"; };
+		22E750B02447706700D676EF /* PRXCDLSResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXCDLSResponse.h; sourceTree = "<group>"; };
+		22E750B12447706700D676EF /* PRXCDLSResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXCDLSResponse.m; sourceTree = "<group>"; };
+		22E750B32447748000D676EF /* PRXCDLSData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXCDLSData.h; sourceTree = "<group>"; };
+		22E750B42447748100D676EF /* PRXCDLSData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXCDLSData.m; sourceTree = "<group>"; };
+		22E750B624477A3800D676EF /* PRXCDLSDetails.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXCDLSDetails.h; sourceTree = "<group>"; };
+		22E750B724477A3800D676EF /* PRXCDLSDetails.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXCDLSDetails.m; sourceTree = "<group>"; };
+		263DCC701C16DF9C000A6377 /* testAbstractMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testAbstractMethods.m; sourceTree = "<group>"; };
+		26439B371C05B250006FD8B8 /* testPRXRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testPRXRequestManager.m; sourceTree = "<group>"; };
+		267061C61BE1FCA900711E5A /* PRXResponseData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXResponseData.h; path = Models/PRXResponseData.h; sourceTree = "<group>"; };
+		267061C71BE1FCA900711E5A /* PRXResponseData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXResponseData.m; path = Models/PRXResponseData.m; sourceTree = "<group>"; };
+		267061CD1BE1FD2C00711E5A /* PRXAssetAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXAssetAsset.h; path = Models/Assets/PRXAssetAsset.h; sourceTree = "<group>"; };
+		267061CE1BE1FD2C00711E5A /* PRXAssetAsset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXAssetAsset.m; path = Models/Assets/PRXAssetAsset.m; sourceTree = "<group>"; };
+		267061CF1BE1FD2C00711E5A /* PRXAssetAssets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXAssetAssets.h; path = Models/Assets/PRXAssetAssets.h; sourceTree = "<group>"; };
+		267061D01BE1FD2C00711E5A /* PRXAssetAssets.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXAssetAssets.m; path = Models/Assets/PRXAssetAssets.m; sourceTree = "<group>"; };
+		267061D11BE1FD2C00711E5A /* PRXAssetData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXAssetData.h; path = Models/Assets/PRXAssetData.h; sourceTree = "<group>"; };
+		267061D21BE1FD2C00711E5A /* PRXAssetData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXAssetData.m; path = Models/Assets/PRXAssetData.m; sourceTree = "<group>"; };
+		267061D91BE1FDEA00711E5A /* PRXSummaryBrand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSummaryBrand.h; path = Models/Summary/PRXSummaryBrand.h; sourceTree = "<group>"; };
+		267061DA1BE1FDEA00711E5A /* PRXSummaryBrand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSummaryBrand.m; path = Models/Summary/PRXSummaryBrand.m; sourceTree = "<group>"; };
+		267061DB1BE1FDEA00711E5A /* PRXSummaryData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSummaryData.h; path = Models/Summary/PRXSummaryData.h; sourceTree = "<group>"; };
+		267061DC1BE1FDEA00711E5A /* PRXSummaryData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSummaryData.m; path = Models/Summary/PRXSummaryData.m; sourceTree = "<group>"; };
+		267061DD1BE1FDEA00711E5A /* PRXSummaryPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSummaryPrice.h; path = Models/Summary/PRXSummaryPrice.h; sourceTree = "<group>"; };
+		267061DE1BE1FDEB00711E5A /* PRXSummaryPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSummaryPrice.m; path = Models/Summary/PRXSummaryPrice.m; sourceTree = "<group>"; };
+		267061E51BE1FE4400711E5A /* PRXFaqChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXFaqChapter.h; path = Models/FAQ/PRXFaqChapter.h; sourceTree = "<group>"; };
+		267061E61BE1FE4400711E5A /* PRXFaqChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXFaqChapter.m; path = Models/FAQ/PRXFaqChapter.m; sourceTree = "<group>"; };
+		267061E71BE1FE4400711E5A /* PRXFaqData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXFaqData.h; path = Models/FAQ/PRXFaqData.h; sourceTree = "<group>"; };
+		267061E81BE1FE4400711E5A /* PRXFaqData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXFaqData.m; path = Models/FAQ/PRXFaqData.m; sourceTree = "<group>"; };
+		267061E91BE1FE4400711E5A /* PRXFaqItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXFaqItem.h; path = Models/FAQ/PRXFaqItem.h; sourceTree = "<group>"; };
+		267061EA1BE1FE4400711E5A /* PRXFaqItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXFaqItem.m; path = Models/FAQ/PRXFaqItem.m; sourceTree = "<group>"; };
+		267061ED1BE1FE4400711E5A /* PRXFaqRichText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXFaqRichText.h; path = Models/FAQ/PRXFaqRichText.h; sourceTree = "<group>"; };
+		267061EE1BE1FE4400711E5A /* PRXFaqRichText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXFaqRichText.m; path = Models/FAQ/PRXFaqRichText.m; sourceTree = "<group>"; };
+		267061EF1BE1FE4400711E5A /* PRXFaqRichTexts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXFaqRichTexts.h; path = Models/FAQ/PRXFaqRichTexts.h; sourceTree = "<group>"; };
+		267061F01BE1FE4400711E5A /* PRXFaqRichTexts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXFaqRichTexts.m; path = Models/FAQ/PRXFaqRichTexts.m; sourceTree = "<group>"; };
+		2670621E1BE77CF400711E5A /* PRXAssetResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXAssetResponse.h; path = Models/Assets/PRXAssetResponse.h; sourceTree = "<group>"; };
+		2670621F1BE77CF400711E5A /* PRXAssetResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXAssetResponse.m; path = Models/Assets/PRXAssetResponse.m; sourceTree = "<group>"; };
+		267062211BE77E0100711E5A /* PRXSummaryResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSummaryResponse.h; path = Models/Summary/PRXSummaryResponse.h; sourceTree = "<group>"; };
+		267062221BE77E0100711E5A /* PRXSummaryResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSummaryResponse.m; path = Models/Summary/PRXSummaryResponse.m; sourceTree = "<group>"; };
+		267062241BE77E9B00711E5A /* PRXSupportResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSupportResponse.h; path = Models/FAQ/PRXSupportResponse.h; sourceTree = "<group>"; };
+		267062251BE77E9B00711E5A /* PRXSupportResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSupportResponse.m; path = Models/FAQ/PRXSupportResponse.m; sourceTree = "<group>"; };
+		2670623B1BE9B49300711E5A /* testAssertModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testAssertModel.m; sourceTree = "<group>"; };
+		2670623D1BE9B4A300711E5A /* asset.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = asset.json; sourceTree = "<group>"; };
+		2670623E1BE9B4A300711E5A /* faq.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = faq.json; sourceTree = "<group>"; };
+		2670623F1BE9B4A300711E5A /* summary.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = summary.json; sourceTree = "<group>"; };
+		267062441BE9BE7400711E5A /* testSummaryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testSummaryModel.m; sourceTree = "<group>"; };
+		267062461BE9BED100711E5A /* testFAQModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testFAQModel.m; sourceTree = "<group>"; };
+		267062611BECBF4800711E5A /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		3EE96626641B0B357A4AE39D /* Pods_PhilipsPRXClientDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsPRXClientDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427939E11D9B8F5900489A68 /* PhilipsPRXClientDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhilipsPRXClientDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427939E31D9B8F5900489A68 /* PhilipsPRXClientDev.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhilipsPRXClientDev.h; sourceTree = "<group>"; };
+		427939E51D9B8F5900489A68 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428647761BD8D66F00C00A74 /* PRXClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRXClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4286477C1BD8D66F00C00A74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		428647CE1BD8F32700C00A74 /* PRXRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXRequestManager.h; sourceTree = "<group>"; };
+		428647CF1BD8F32700C00A74 /* PRXRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXRequestManager.m; sourceTree = "<group>"; };
+		42A8927D1BE0AA3D00F5E77C /* PRXConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXConstants.h; path = PRXUtilities/PRXConstants.h; sourceTree = "<group>"; };
+		42A8927E1BE0AA4800F5E77C /* PRXNetworkWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXNetworkWrapper.h; sourceTree = "<group>"; };
+		42A8927F1BE0AA4800F5E77C /* PRXNetworkWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXNetworkWrapper.m; sourceTree = "<group>"; };
+		4765CB8F131681321A8CEF47 /* Pods-PhilipsPRXClientDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsPRXClientDev.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsPRXClientDev/Pods-PhilipsPRXClientDev.debug.xcconfig"; sourceTree = "<group>"; };
+		541550361E236CA100BF84EB /* testNetworkWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testNetworkWrapper.m; sourceTree = "<group>"; };
+		54849890213D45AF001BD5A4 /* AISDMock.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AISDMock.h; sourceTree = "<group>"; };
+		54849891213D45AF001BD5A4 /* AISDMock.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AISDMock.m; sourceTree = "<group>"; };
+		54C77C241E02676C00154FF4 /* PRXDependencies.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXDependencies.h; sourceTree = "<group>"; };
+		54C77C251E02676C00154FF4 /* PRXDependencies.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXDependencies.m; sourceTree = "<group>"; };
+		54C77C2B1E02A14700154FF4 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		54C77C2D1E02A14700154FF4 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
+		54C77C391E02A14700154FF4 /* NSBundle+Bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Bundle.h"; sourceTree = "<group>"; };
+		54C77C3A1E02A14700154FF4 /* NSBundle+Bundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Bundle.m"; sourceTree = "<group>"; };
+		6A36AE8E221E479700E8376D /* PRXSummaryListResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PRXSummaryListResponse.h; path = Models/Summary/PRXSummaryListResponse.h; sourceTree = "<group>"; };
+		6A36AE8F221E479700E8376D /* PRXSummaryListResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = PRXSummaryListResponse.m; path = Models/Summary/PRXSummaryListResponse.m; sourceTree = "<group>"; };
+		6AE56BDF221EF2B800231753 /* PRXSummaryListRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXSummaryListRequest.h; sourceTree = "<group>"; };
+		6AE56BE0221EF2B800231753 /* PRXSummaryListRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXSummaryListRequest.m; sourceTree = "<group>"; };
+		78231B5F23A39155008B9B03 /* PRXFeaturesRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesRequest.h; sourceTree = "<group>"; };
+		78231B6023A39155008B9B03 /* PRXFeaturesRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesRequest.m; sourceTree = "<group>"; };
+		78231B6423A3930B008B9B03 /* PRXFeaturesResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesResponse.h; sourceTree = "<group>"; };
+		78231B6523A3930B008B9B03 /* PRXFeaturesResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesResponse.m; sourceTree = "<group>"; };
+		78231B6823A39406008B9B03 /* PRXFeaturesData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesData.h; sourceTree = "<group>"; };
+		78231B6923A39406008B9B03 /* PRXFeaturesData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesData.m; sourceTree = "<group>"; };
+		78231B7023A3963C008B9B03 /* PRXFeaturesHighlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesHighlight.h; sourceTree = "<group>"; };
+		78231B7123A3963C008B9B03 /* PRXFeaturesHighlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesHighlight.m; sourceTree = "<group>"; };
+		78231B7423A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesKeyBenefitArea.h; sourceTree = "<group>"; };
+		78231B7523A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesKeyBenefitArea.m; sourceTree = "<group>"; };
+		78231B7C23A3A0E4008B9B03 /* PRXFeaturesDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesDetails.h; sourceTree = "<group>"; };
+		78231B7D23A3A0E4008B9B03 /* PRXFeaturesAssetDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXFeaturesAssetDetails.h; sourceTree = "<group>"; };
+		78231B7E23A3A0E5008B9B03 /* PRXFeaturesDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesDetails.m; sourceTree = "<group>"; };
+		78231B7F23A3A0E5008B9B03 /* PRXFeaturesAssetDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXFeaturesAssetDetails.m; sourceTree = "<group>"; };
+		783EE1832397C1D8006F4F4F /* PRXSpecificationsRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsRequest.h; sourceTree = "<group>"; };
+		783EE1842397C1D8006F4F4F /* PRXSpecificationsRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsRequest.m; sourceTree = "<group>"; };
+		783EE1892397CDBC006F4F4F /* PRXSpecificationsResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsResponse.h; sourceTree = "<group>"; };
+		783EE18A2397CDBC006F4F4F /* PRXSpecificationsResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsResponse.m; sourceTree = "<group>"; };
+		783EE18E2397D053006F4F4F /* PRXSpecificationsItemValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsItemValue.h; sourceTree = "<group>"; };
+		783EE18F2397D053006F4F4F /* PRXSpecificationsItemValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsItemValue.m; sourceTree = "<group>"; };
+		783EE1932397D094006F4F4F /* PRXSpecificationsItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsItem.h; sourceTree = "<group>"; };
+		783EE1942397D094006F4F4F /* PRXSpecificationsItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsItem.m; sourceTree = "<group>"; };
+		783EE1982397D0AD006F4F4F /* PRXSpecificationsChapterItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsChapterItem.h; sourceTree = "<group>"; };
+		783EE1992397D0AD006F4F4F /* PRXSpecificationsChapterItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsChapterItem.m; sourceTree = "<group>"; };
+		783EE1A12397EF04006F4F4F /* PRXSpecificationsChapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsChapter.h; sourceTree = "<group>"; };
+		783EE1A22397EF04006F4F4F /* PRXSpecificationsChapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsChapter.m; sourceTree = "<group>"; };
+		78731E18239FB05800F71E94 /* PRXSpecificationsItemMeasure.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PRXSpecificationsItemMeasure.h; sourceTree = "<group>"; };
+		78731E19239FB05800F71E94 /* PRXSpecificationsItemMeasure.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRXSpecificationsItemMeasure.m; sourceTree = "<group>"; };
+		7D4D0DAEB24BD329091A3870 /* Pods-PhilipsPRXClientDev.gcov-build.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsPRXClientDev.gcov-build.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PhilipsPRXClientDev/Pods-PhilipsPRXClientDev.gcov-build.xcconfig"; sourceTree = "<group>"; };
+		9523D4551C928E70000DD28E /* PRXAssetRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXAssetRequest.h; path = PRXDataBuilder/Assets/PRXAssetRequest.h; sourceTree = "<group>"; };
+		9523D4561C928E70000DD28E /* PRXAssetRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXAssetRequest.m; path = PRXDataBuilder/Assets/PRXAssetRequest.m; sourceTree = "<group>"; };
+		9523D45A1C9298CC000DD28E /* PRXSummaryRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSummaryRequest.h; path = PRXDataBuilder/Summary/PRXSummaryRequest.h; sourceTree = "<group>"; };
+		9523D45B1C9298CC000DD28E /* PRXSummaryRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSummaryRequest.m; path = PRXDataBuilder/Summary/PRXSummaryRequest.m; sourceTree = "<group>"; };
+		953420511CA9107D00370682 /* PRXRequestEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXRequestEnums.h; sourceTree = "<group>"; };
+		953420521CA9107E00370682 /* PRXRequestEnums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXRequestEnums.m; sourceTree = "<group>"; };
+		95D7C2C01C968DAE00774692 /* PRXSupportRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PRXSupportRequest.h; path = PRXDataBuilder/Support/PRXSupportRequest.h; sourceTree = "<group>"; };
+		95D7C2C11C968DAE00774692 /* PRXSupportRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PRXSupportRequest.m; path = PRXDataBuilder/Support/PRXSupportRequest.m; sourceTree = "<group>"; };
+		95DB9CF31C89889600DC95FA /* PRXRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXRequest.h; sourceTree = "<group>"; };
+		95DB9CF41C89889600DC95FA /* PRXRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXRequest.m; sourceTree = "<group>"; };
+		A2039FB641B4ACDD48B9F0B1 /* Pods-PRXClientTests.gcov-build.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRXClientTests.gcov-build.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PRXClientTests/Pods-PRXClientTests.gcov-build.xcconfig"; sourceTree = "<group>"; };
+		BF2988462154F3A800350ECA /* disclaimer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = disclaimer.json; sourceTree = "<group>"; };
+		BF29884A2154F46200350ECA /* MockPRXRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockPRXRequestManager.h; sourceTree = "<group>"; };
+		BF29884B2154F46200350ECA /* MockPRXRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockPRXRequestManager.m; sourceTree = "<group>"; };
+		BF29884D2154F6D600350ECA /* DisclaimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DisclaimerTests.m; sourceTree = "<group>"; };
+		BF29884F2154F7C500350ECA /* MockPRXAppInfra.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MockPRXAppInfra.h; sourceTree = "<group>"; };
+		BF2988502154F7C500350ECA /* MockPRXAppInfra.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MockPRXAppInfra.m; sourceTree = "<group>"; };
+		BF2988532155102E00350ECA /* PRXDisclaimerResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXDisclaimerResponse.h; sourceTree = "<group>"; };
+		BF2988542155102E00350ECA /* PRXDisclaimerResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXDisclaimerResponse.m; sourceTree = "<group>"; };
+		BF2988582155106D00350ECA /* PRXDisclaimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXDisclaimer.m; sourceTree = "<group>"; };
+		BF2988592155106E00350ECA /* PRXDisclaimerData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXDisclaimerData.h; sourceTree = "<group>"; };
+		BF29885A2155106F00350ECA /* PRXDisclaimers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXDisclaimers.h; sourceTree = "<group>"; };
+		BF29885B2155106F00350ECA /* PRXDisclaimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXDisclaimer.h; sourceTree = "<group>"; };
+		BF29885C2155107000350ECA /* PRXDisclaimerData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXDisclaimerData.m; sourceTree = "<group>"; };
+		BF29885D2155107100350ECA /* PRXDisclaimers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXDisclaimers.m; sourceTree = "<group>"; };
+		BF298867215510AA00350ECA /* PRXDisclaimerRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PRXDisclaimerRequest.m; sourceTree = "<group>"; };
+		BF298868215510AA00350ECA /* PRXDisclaimerRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PRXDisclaimerRequest.h; sourceTree = "<group>"; };
+		D7E28C258A9188B62D51A710 /* Pods-PRXClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRXClientTests.debug.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PRXClientTests/Pods-PRXClientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E16E871B362F11F08274753C /* Pods_PRXClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PRXClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEC370EC7F0F52EC9B72CC52 /* Pods-PRXClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PRXClientTests.release.xcconfig"; path = "../../../../Pods/Target Support Files/Pods-PRXClientTests/Pods-PRXClientTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		427939DD1D9B8F5900489A68 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				707811BC363BAC8A4994DF97 /* Pods_PhilipsPRXClientDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428647731BD8D66F00C00A74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F786800F702CB65EA969B7E4 /* Pods_PRXClientTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22E750AB2447635F00D676EF /* CDLS */ = {
+			isa = PBXGroup;
+			children = (
+				22E750B02447706700D676EF /* PRXCDLSResponse.h */,
+				22E750B12447706700D676EF /* PRXCDLSResponse.m */,
+				22E750B32447748000D676EF /* PRXCDLSData.h */,
+				22E750B42447748100D676EF /* PRXCDLSData.m */,
+				22E750B624477A3800D676EF /* PRXCDLSDetails.h */,
+				22E750B724477A3800D676EF /* PRXCDLSDetails.m */,
+			);
+			name = CDLS;
+			path = Models/CDLS;
+			sourceTree = "<group>";
+		};
+		22E750AC2447697200D676EF /* CDLSBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				22E750AD244769CF00D676EF /* PRXCDLSRequest.h */,
+				22E750AE244769CF00D676EF /* PRXCDLSRequest.m */,
+			);
+			name = CDLSBuilder;
+			path = PRXDataBuilder/CDLSBuilder;
+			sourceTree = "<group>";
+		};
+		22E750C6244787D200D676EF /* CDLSTests */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CDLSTests;
+			sourceTree = "<group>";
+		};
+		267061C51BE1FC8600711E5A /* PRXResponseData */ = {
+			isa = PBXGroup;
+			children = (
+				22E750AB2447635F00D676EF /* CDLS */,
+				78231B6323A392E4008B9B03 /* Features */,
+				783EE1882397CD6A006F4F4F /* Specifications */,
+				BFC882F2214789F900C0F5A1 /* Disclaimer */,
+				267061C61BE1FCA900711E5A /* PRXResponseData.h */,
+				267061C71BE1FCA900711E5A /* PRXResponseData.m */,
+				267061CA1BE1FCF500711E5A /* Assets */,
+				267061CC1BE1FD0300711E5A /* Summary */,
+				267061CB1BE1FCFD00711E5A /* FAQ */,
+			);
+			name = PRXResponseData;
+			sourceTree = "<group>";
+		};
+		267061CA1BE1FCF500711E5A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				2670621E1BE77CF400711E5A /* PRXAssetResponse.h */,
+				2670621F1BE77CF400711E5A /* PRXAssetResponse.m */,
+				267061D11BE1FD2C00711E5A /* PRXAssetData.h */,
+				267061D21BE1FD2C00711E5A /* PRXAssetData.m */,
+				267061CF1BE1FD2C00711E5A /* PRXAssetAssets.h */,
+				267061D01BE1FD2C00711E5A /* PRXAssetAssets.m */,
+				267061CD1BE1FD2C00711E5A /* PRXAssetAsset.h */,
+				267061CE1BE1FD2C00711E5A /* PRXAssetAsset.m */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		267061CB1BE1FCFD00711E5A /* FAQ */ = {
+			isa = PBXGroup;
+			children = (
+				267062241BE77E9B00711E5A /* PRXSupportResponse.h */,
+				267062251BE77E9B00711E5A /* PRXSupportResponse.m */,
+				267061E71BE1FE4400711E5A /* PRXFaqData.h */,
+				267061E81BE1FE4400711E5A /* PRXFaqData.m */,
+				267061EF1BE1FE4400711E5A /* PRXFaqRichTexts.h */,
+				267061F01BE1FE4400711E5A /* PRXFaqRichTexts.m */,
+				267061ED1BE1FE4400711E5A /* PRXFaqRichText.h */,
+				267061EE1BE1FE4400711E5A /* PRXFaqRichText.m */,
+				267061E51BE1FE4400711E5A /* PRXFaqChapter.h */,
+				267061E61BE1FE4400711E5A /* PRXFaqChapter.m */,
+				267061E91BE1FE4400711E5A /* PRXFaqItem.h */,
+				267061EA1BE1FE4400711E5A /* PRXFaqItem.m */,
+			);
+			name = FAQ;
+			sourceTree = "<group>";
+		};
+		267061CC1BE1FD0300711E5A /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+				267062211BE77E0100711E5A /* PRXSummaryResponse.h */,
+				267062221BE77E0100711E5A /* PRXSummaryResponse.m */,
+				267061DB1BE1FDEA00711E5A /* PRXSummaryData.h */,
+				267061DC1BE1FDEA00711E5A /* PRXSummaryData.m */,
+				267061D91BE1FDEA00711E5A /* PRXSummaryBrand.h */,
+				267061DA1BE1FDEA00711E5A /* PRXSummaryBrand.m */,
+				267061DD1BE1FDEA00711E5A /* PRXSummaryPrice.h */,
+				267061DE1BE1FDEB00711E5A /* PRXSummaryPrice.m */,
+				6A36AE8E221E479700E8376D /* PRXSummaryListResponse.h */,
+				6A36AE8F221E479700E8376D /* PRXSummaryListResponse.m */,
+			);
+			name = Summary;
+			sourceTree = "<group>";
+		};
+		267062051BE37F3800711E5A /* SummaryBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				9523D45A1C9298CC000DD28E /* PRXSummaryRequest.h */,
+				9523D45B1C9298CC000DD28E /* PRXSummaryRequest.m */,
+			);
+			name = SummaryBuilder;
+			sourceTree = "<group>";
+		};
+		267062061BE37F4100711E5A /* AssetBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				9523D4551C928E70000DD28E /* PRXAssetRequest.h */,
+				9523D4561C928E70000DD28E /* PRXAssetRequest.m */,
+			);
+			name = AssetBuilder;
+			sourceTree = "<group>";
+		};
+		267062071BE37F4900711E5A /* SupportBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				95D7C2C01C968DAE00774692 /* PRXSupportRequest.h */,
+				95D7C2C11C968DAE00774692 /* PRXSupportRequest.m */,
+			);
+			name = SupportBuilder;
+			sourceTree = "<group>";
+		};
+		427939E21D9B8F5900489A68 /* PhilipsPRXClient */ = {
+			isa = PBXGroup;
+			children = (
+				427939E31D9B8F5900489A68 /* PhilipsPRXClientDev.h */,
+				427939E51D9B8F5900489A68 /* Info.plist */,
+			);
+			path = PhilipsPRXClient;
+			sourceTree = "<group>";
+		};
+		428647621BD8D66F00C00A74 = {
+			isa = PBXGroup;
+			children = (
+				4286476D1BD8D66F00C00A74 /* PRXClient */,
+				4286477A1BD8D66F00C00A74 /* PRXClientTests */,
+				427939E21D9B8F5900489A68 /* PhilipsPRXClient */,
+				4286476C1BD8D66F00C00A74 /* Products */,
+				FED53C6C682D7830F594AD1A /* Pods */,
+				F9B3D82DA2A57EEDBDD2F673 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4286476C1BD8D66F00C00A74 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				428647761BD8D66F00C00A74 /* PRXClientTests.xctest */,
+				427939E11D9B8F5900489A68 /* PhilipsPRXClientDev.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4286476D1BD8D66F00C00A74 /* PRXClient */ = {
+			isa = PBXGroup;
+			children = (
+				95DB9CF21C89887500DC95FA /* Requester */,
+				428647CE1BD8F32700C00A74 /* PRXRequestManager.h */,
+				428647CF1BD8F32700C00A74 /* PRXRequestManager.m */,
+				42A8927E1BE0AA4800F5E77C /* PRXNetworkWrapper.h */,
+				42A8927F1BE0AA4800F5E77C /* PRXNetworkWrapper.m */,
+				42A892791BE0AA1600F5E77C /* PRXDataBuilder */,
+				267061C51BE1FC8600711E5A /* PRXResponseData */,
+				42A892781BE0AA0800F5E77C /* PRXUtilities */,
+			);
+			path = PRXClient;
+			sourceTree = "<group>";
+		};
+		4286477A1BD8D66F00C00A74 /* PRXClientTests */ = {
+			isa = PBXGroup;
+			children = (
+				22E750C6244787D200D676EF /* CDLSTests */,
+				BF29883E2154F1ED00350ECA /* DisclaimerTests */,
+				5484988F213D4587001BD5A4 /* Mocks */,
+				54C77C2A1E02A14700154FF4 /* Resources */,
+				54C77C361E02A14700154FF4 /* Swizzle */,
+				4286477B1BD8D66F00C00A74 /* Supporting Files */,
+				2670623B1BE9B49300711E5A /* testAssertModel.m */,
+				26439B371C05B250006FD8B8 /* testPRXRequestManager.m */,
+				267062441BE9BE7400711E5A /* testSummaryModel.m */,
+				267062461BE9BED100711E5A /* testFAQModel.m */,
+				263DCC701C16DF9C000A6377 /* testAbstractMethods.m */,
+				541550361E236CA100BF84EB /* testNetworkWrapper.m */,
+			);
+			path = PRXClientTests;
+			sourceTree = "<group>";
+		};
+		4286477B1BD8D66F00C00A74 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				267062611BECBF4800711E5A /* error.json */,
+				2670623D1BE9B4A300711E5A /* asset.json */,
+				2670623E1BE9B4A300711E5A /* faq.json */,
+				2670623F1BE9B4A300711E5A /* summary.json */,
+				4286477C1BD8D66F00C00A74 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42A892781BE0AA0800F5E77C /* PRXUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				42A8927D1BE0AA3D00F5E77C /* PRXConstants.h */,
+			);
+			name = PRXUtilities;
+			sourceTree = "<group>";
+		};
+		42A892791BE0AA1600F5E77C /* PRXDataBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				22E750AC2447697200D676EF /* CDLSBuilder */,
+				78231B5E23A3912B008B9B03 /* Features */,
+				783EE1822397C176006F4F4F /* SpecificationsBuilder */,
+				6AE56BDE221EF2B800231753 /* SupportListBuilder */,
+				BFC882EE214788E900C0F5A1 /* DisclaimerBuilder */,
+				267062071BE37F4900711E5A /* SupportBuilder */,
+				267062061BE37F4100711E5A /* AssetBuilder */,
+				267062051BE37F3800711E5A /* SummaryBuilder */,
+			);
+			name = PRXDataBuilder;
+			sourceTree = "<group>";
+		};
+		5484988F213D4587001BD5A4 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				54849890213D45AF001BD5A4 /* AISDMock.h */,
+				54849891213D45AF001BD5A4 /* AISDMock.m */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		54C77C2A1E02A14700154FF4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				54C77C2B1E02A14700154FF4 /* ADBMobileConfig.json */,
+				54C77C2D1E02A14700154FF4 /* AppConfig.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		54C77C361E02A14700154FF4 /* Swizzle */ = {
+			isa = PBXGroup;
+			children = (
+				54C77C391E02A14700154FF4 /* NSBundle+Bundle.h */,
+				54C77C3A1E02A14700154FF4 /* NSBundle+Bundle.m */,
+			);
+			path = Swizzle;
+			sourceTree = "<group>";
+		};
+		6AE56BDE221EF2B800231753 /* SupportListBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				6AE56BDF221EF2B800231753 /* PRXSummaryListRequest.h */,
+				6AE56BE0221EF2B800231753 /* PRXSummaryListRequest.m */,
+			);
+			name = SupportListBuilder;
+			path = PRXDataBuilder/SupportListBuilder;
+			sourceTree = "<group>";
+		};
+		78231B5E23A3912B008B9B03 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				78231B5F23A39155008B9B03 /* PRXFeaturesRequest.h */,
+				78231B6023A39155008B9B03 /* PRXFeaturesRequest.m */,
+			);
+			name = Features;
+			path = PRXDataBuilder/Features;
+			sourceTree = "<group>";
+		};
+		78231B6323A392E4008B9B03 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				78231B7D23A3A0E4008B9B03 /* PRXFeaturesAssetDetails.h */,
+				78231B7F23A3A0E5008B9B03 /* PRXFeaturesAssetDetails.m */,
+				78231B7C23A3A0E4008B9B03 /* PRXFeaturesDetails.h */,
+				78231B7E23A3A0E5008B9B03 /* PRXFeaturesDetails.m */,
+				78231B6423A3930B008B9B03 /* PRXFeaturesResponse.h */,
+				78231B6523A3930B008B9B03 /* PRXFeaturesResponse.m */,
+				78231B6823A39406008B9B03 /* PRXFeaturesData.h */,
+				78231B6923A39406008B9B03 /* PRXFeaturesData.m */,
+				78231B7023A3963C008B9B03 /* PRXFeaturesHighlight.h */,
+				78231B7123A3963C008B9B03 /* PRXFeaturesHighlight.m */,
+				78231B7423A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.h */,
+				78231B7523A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.m */,
+			);
+			name = Features;
+			path = Models/Features;
+			sourceTree = "<group>";
+		};
+		783EE1822397C176006F4F4F /* SpecificationsBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				783EE1832397C1D8006F4F4F /* PRXSpecificationsRequest.h */,
+				783EE1842397C1D8006F4F4F /* PRXSpecificationsRequest.m */,
+			);
+			name = SpecificationsBuilder;
+			path = PRXDataBuilder/SpecificationsBuilder;
+			sourceTree = "<group>";
+		};
+		783EE1882397CD6A006F4F4F /* Specifications */ = {
+			isa = PBXGroup;
+			children = (
+				783EE1A12397EF04006F4F4F /* PRXSpecificationsChapter.h */,
+				783EE1A22397EF04006F4F4F /* PRXSpecificationsChapter.m */,
+				783EE1892397CDBC006F4F4F /* PRXSpecificationsResponse.h */,
+				783EE18A2397CDBC006F4F4F /* PRXSpecificationsResponse.m */,
+				783EE18E2397D053006F4F4F /* PRXSpecificationsItemValue.h */,
+				783EE18F2397D053006F4F4F /* PRXSpecificationsItemValue.m */,
+				783EE1932397D094006F4F4F /* PRXSpecificationsItem.h */,
+				783EE1942397D094006F4F4F /* PRXSpecificationsItem.m */,
+				783EE1982397D0AD006F4F4F /* PRXSpecificationsChapterItem.h */,
+				783EE1992397D0AD006F4F4F /* PRXSpecificationsChapterItem.m */,
+				78731E18239FB05800F71E94 /* PRXSpecificationsItemMeasure.h */,
+				78731E19239FB05800F71E94 /* PRXSpecificationsItemMeasure.m */,
+			);
+			name = Specifications;
+			path = Models/Specifications;
+			sourceTree = "<group>";
+		};
+		95DB9CF21C89887500DC95FA /* Requester */ = {
+			isa = PBXGroup;
+			children = (
+				54C77C241E02676C00154FF4 /* PRXDependencies.h */,
+				54C77C251E02676C00154FF4 /* PRXDependencies.m */,
+				95DB9CF31C89889600DC95FA /* PRXRequest.h */,
+				95DB9CF41C89889600DC95FA /* PRXRequest.m */,
+				953420511CA9107D00370682 /* PRXRequestEnums.h */,
+				953420521CA9107E00370682 /* PRXRequestEnums.m */,
+			);
+			path = Requester;
+			sourceTree = "<group>";
+		};
+		BF29883E2154F1ED00350ECA /* DisclaimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF2988442154F3A800350ECA /* Mock */,
+				BF29884D2154F6D600350ECA /* DisclaimerTests.m */,
+			);
+			path = DisclaimerTests;
+			sourceTree = "<group>";
+		};
+		BF2988442154F3A800350ECA /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				BF29884A2154F46200350ECA /* MockPRXRequestManager.h */,
+				BF29884B2154F46200350ECA /* MockPRXRequestManager.m */,
+				BF29884F2154F7C500350ECA /* MockPRXAppInfra.h */,
+				BF2988502154F7C500350ECA /* MockPRXAppInfra.m */,
+				BF2988462154F3A800350ECA /* disclaimer.json */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		BFC882EE214788E900C0F5A1 /* DisclaimerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				BF298868215510AA00350ECA /* PRXDisclaimerRequest.h */,
+				BF298867215510AA00350ECA /* PRXDisclaimerRequest.m */,
+			);
+			name = DisclaimerBuilder;
+			path = PRXDataBuilder/DisclaimerBuilder;
+			sourceTree = "<group>";
+		};
+		BFC882F2214789F900C0F5A1 /* Disclaimer */ = {
+			isa = PBXGroup;
+			children = (
+				BF29885B2155106F00350ECA /* PRXDisclaimer.h */,
+				BF2988582155106D00350ECA /* PRXDisclaimer.m */,
+				BF2988592155106E00350ECA /* PRXDisclaimerData.h */,
+				BF29885C2155107000350ECA /* PRXDisclaimerData.m */,
+				BF29885A2155106F00350ECA /* PRXDisclaimers.h */,
+				BF29885D2155107100350ECA /* PRXDisclaimers.m */,
+				BF2988532155102E00350ECA /* PRXDisclaimerResponse.h */,
+				BF2988542155102E00350ECA /* PRXDisclaimerResponse.m */,
+			);
+			name = Disclaimer;
+			path = Models/Disclaimer;
+			sourceTree = "<group>";
+		};
+		F9B3D82DA2A57EEDBDD2F673 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E16E871B362F11F08274753C /* Pods_PRXClient.framework */,
+				1EDD2F889EEA20A019DABBFC /* Pods_PRXClientTests.framework */,
+				3EE96626641B0B357A4AE39D /* Pods_PhilipsPRXClientDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FED53C6C682D7830F594AD1A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7E28C258A9188B62D51A710 /* Pods-PRXClientTests.debug.xcconfig */,
+				A2039FB641B4ACDD48B9F0B1 /* Pods-PRXClientTests.gcov-build.xcconfig */,
+				EEC370EC7F0F52EC9B72CC52 /* Pods-PRXClientTests.release.xcconfig */,
+				4765CB8F131681321A8CEF47 /* Pods-PhilipsPRXClientDev.debug.xcconfig */,
+				7D4D0DAEB24BD329091A3870 /* Pods-PhilipsPRXClientDev.gcov-build.xcconfig */,
+				09D06707344194A2447AC611 /* Pods-PhilipsPRXClientDev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		427939DE1D9B8F5900489A68 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427939E41D9B8F5900489A68 /* PhilipsPRXClientDev.h in Headers */,
+				222C4B6324BC4866001C0DF5 /* PRXSpecificationsRequest.h in Headers */,
+				6A36AE90221E479700E8376D /* PRXSummaryListResponse.h in Headers */,
+				54C77C281E027AB400154FF4 /* PRXDependencies.h in Headers */,
+				42793A021D9B907200489A68 /* PRXRequest.h in Headers */,
+				42793A031D9B907200489A68 /* PRXRequestEnums.h in Headers */,
+				BF2988622155107100350ECA /* PRXDisclaimer.h in Headers */,
+				78231B6623A3930B008B9B03 /* PRXFeaturesResponse.h in Headers */,
+				783EE1952397D094006F4F4F /* PRXSpecificationsItem.h in Headers */,
+				78231B6A23A39406008B9B03 /* PRXFeaturesData.h in Headers */,
+				78231B8123A3A0E5008B9B03 /* PRXFeaturesAssetDetails.h in Headers */,
+				42793A041D9B907200489A68 /* PRXRequestManager.h in Headers */,
+				42793A051D9B907200489A68 /* PRXSupportRequest.h in Headers */,
+				22E750C02447872C00D676EF /* PRXCDLSData.h in Headers */,
+				222C4B6724BC48A7001C0DF5 /* PRXSpecificationsResponse.h in Headers */,
+				BF2988602155107100350ECA /* PRXDisclaimerData.h in Headers */,
+				22E750C12447873300D676EF /* PRXCDLSDetails.h in Headers */,
+				42793A061D9B907200489A68 /* PRXAssetRequest.h in Headers */,
+				78231B6123A39155008B9B03 /* PRXFeaturesRequest.h in Headers */,
+				42793A071D9B907200489A68 /* PRXSummaryRequest.h in Headers */,
+				78231B7223A3963C008B9B03 /* PRXFeaturesHighlight.h in Headers */,
+				42793A081D9B907200489A68 /* PRXResponseData.h in Headers */,
+				783EE19A2397D0AD006F4F4F /* PRXSpecificationsChapterItem.h in Headers */,
+				78731E1A239FB05800F71E94 /* PRXSpecificationsItemMeasure.h in Headers */,
+				42793A091D9B907200489A68 /* PRXAssetResponse.h in Headers */,
+				42793A0A1D9B907200489A68 /* PRXAssetData.h in Headers */,
+				22E750C42447876800D676EF /* PRXCDLSRequest.h in Headers */,
+				222C4B6224BC4825001C0DF5 /* PRXSpecificationsItemValue.h in Headers */,
+				78231B8023A3A0E5008B9B03 /* PRXFeaturesDetails.h in Headers */,
+				BF2988612155107100350ECA /* PRXDisclaimers.h in Headers */,
+				22E750BF2447872200D676EF /* PRXCDLSResponse.h in Headers */,
+				42793A0B1D9B907200489A68 /* PRXAssetAssets.h in Headers */,
+				42793A0C1D9B907200489A68 /* PRXAssetAsset.h in Headers */,
+				42793A0D1D9B907200489A68 /* PRXSummaryResponse.h in Headers */,
+				42793A0E1D9B907200489A68 /* PRXSummaryData.h in Headers */,
+				42793A0F1D9B907200489A68 /* PRXSummaryBrand.h in Headers */,
+				42793A101D9B907200489A68 /* PRXSummaryPrice.h in Headers */,
+				222C4B6524BC487E001C0DF5 /* PRXSpecificationsChapter.h in Headers */,
+				BF29886B215510AA00350ECA /* PRXDisclaimerRequest.h in Headers */,
+				42793A111D9B907200489A68 /* PRXSupportResponse.h in Headers */,
+				42793A121D9B907200489A68 /* PRXFaqData.h in Headers */,
+				42793A131D9B907200489A68 /* PRXFaqRichTexts.h in Headers */,
+				BF2988552155102E00350ECA /* PRXDisclaimerResponse.h in Headers */,
+				78231B7623A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.h in Headers */,
+				6AE56BE1221EF2B800231753 /* PRXSummaryListRequest.h in Headers */,
+				42793A141D9B907200489A68 /* PRXFaqRichText.h in Headers */,
+				42793A151D9B907200489A68 /* PRXFaqChapter.h in Headers */,
+				42793A161D9B907200489A68 /* PRXFaqItem.h in Headers */,
+				42793A171D9B907200489A68 /* PRXConstants.h in Headers */,
+				42793A181D9B908E00489A68 /* PRXNetworkWrapper.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		427939E01D9B8F5900489A68 /* PhilipsPRXClientDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427939E91D9B8F5900489A68 /* Build configuration list for PBXNativeTarget "PhilipsPRXClientDev" */;
+			buildPhases = (
+				E787FB3812D244A141520DDB /* [CP] Check Pods Manifest.lock */,
+				C98A02C12084D6C5000C4833 /* ShellScript */,
+				427939DC1D9B8F5900489A68 /* Sources */,
+				427939DD1D9B8F5900489A68 /* Frameworks */,
+				427939DE1D9B8F5900489A68 /* Headers */,
+				427939DF1D9B8F5900489A68 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsPRXClientDev;
+			productName = PhilipsPRXClient;
+			productReference = 427939E11D9B8F5900489A68 /* PhilipsPRXClientDev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		428647751BD8D66F00C00A74 /* PRXClientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 428647821BD8D66F00C00A74 /* Build configuration list for PBXNativeTarget "PRXClientTests" */;
+			buildPhases = (
+				46DCFF9858E3E0D01A534115 /* [CP] Check Pods Manifest.lock */,
+				C98A02C32084D6DD000C4833 /* ShellScript */,
+				428647721BD8D66F00C00A74 /* Sources */,
+				428647731BD8D66F00C00A74 /* Frameworks */,
+				428647741BD8D66F00C00A74 /* Resources */,
+				9523D45D1C92A43B000DD28E /* Copy Frameworks */,
+				0A80B37C2C0728255F5C39D7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50616502205FC20700499D2C /* PBXTargetDependency */,
+			);
+			name = PRXClientTests;
+			productName = PRXClientTests;
+			productReference = 428647761BD8D66F00C00A74 /* PRXClientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		428647631BD8D66F00C00A74 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Koninklijke Philips N.V.";
+				TargetAttributes = {
+					427939E01D9B8F5900489A68 = {
+						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0930;
+					};
+					42793A191D9B913D00489A68 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					428647751BD8D66F00C00A74 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 428647661BD8D66F00C00A74 /* Build configuration list for PBXProject "PhilipsPRXClientDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+			);
+			mainGroup = 428647621BD8D66F00C00A74;
+			productRefGroup = 4286476C1BD8D66F00C00A74 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				428647751BD8D66F00C00A74 /* PRXClientTests */,
+				427939E01D9B8F5900489A68 /* PhilipsPRXClientDev */,
+				42793A191D9B913D00489A68 /* PhilipsPRXClientUniversal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		427939DF1D9B8F5900489A68 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428647741BD8D66F00C00A74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267062621BECBF4800711E5A /* error.json in Resources */,
+				BF2988482154F3A800350ECA /* disclaimer.json in Resources */,
+				267062411BE9B4A300711E5A /* faq.json in Resources */,
+				267062401BE9B4A300711E5A /* asset.json in Resources */,
+				267062421BE9B4A300711E5A /* summary.json in Resources */,
+				54C77C3D1E02A14700154FF4 /* AppConfig.json in Resources */,
+				54C77C3B1E02A14700154FF4 /* ADBMobileConfig.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A80B37C2C0728255F5C39D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PRXClientTests/Pods-PRXClientTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AdobeMobileSDK/AdobeMobileSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/PlatformInterfaces/PlatformInterfaces.framework",
+				"${BUILT_PRODUCTS_DIR}/TrueTime/TrueTime.framework",
+				"${BUILT_PRODUCTS_DIR}/AppInfra/AppInfra.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMobileSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlatformInterfaces.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrueTime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppInfra.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PRXClientTests/Pods-PRXClientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42793A1E1D9B920900489A68 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\nFRAMEWORK_NAME=\"PhilipsPRXClient\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -workspace \"${PROJECT_NAME}.xcworkspace\" -scheme \"${FRAMEWORK_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -workspace \"${PROJECT_NAME}.xcworkspace\" -scheme \"${FRAMEWORK_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build || exit 1\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/Modules/$Philips{PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# Step 5. Convenience step to open the project's directory in Finder\nopen \"${BUILD_DIR}\"\n";
+		};
+		46DCFF9858E3E0D01A534115 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PRXClientTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A02C12084D6C5000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		C98A02C32084D6DD000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "${SRCROOT}/../../../../../ci-build-support/check_xcode.sh\n${SRCROOT}/../../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		E787FB3812D244A141520DDB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsPRXClientDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		427939DC1D9B8F5900489A68 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D9FF8F244DC63700FA0548 /* PRXCDLSRequest.m in Sources */,
+				22D9FF90244DC63700FA0548 /* PRXCDLSResponse.m in Sources */,
+				22D9FF91244DC63700FA0548 /* PRXCDLSData.m in Sources */,
+				222C4B6824BC48AE001C0DF5 /* PRXSpecificationsResponse.m in Sources */,
+				22D9FF92244DC63700FA0548 /* PRXCDLSDetails.m in Sources */,
+				427939FA1D9B8FB700489A68 /* PRXSummaryPrice.m in Sources */,
+				78231B7723A3991E008B9B03 /* PRXFeaturesKeyBenefitArea.m in Sources */,
+				427939F01D9B8F9100489A68 /* PRXAssetRequest.m in Sources */,
+				427939F21D9B8F9600489A68 /* PRXResponseData.m in Sources */,
+				427939FF1D9B8FC600489A68 /* PRXFaqChapter.m in Sources */,
+				BF29885F2155107100350ECA /* PRXDisclaimer.m in Sources */,
+				427939ED1D9B8F8700489A68 /* PRXRequestManager.m in Sources */,
+				54C77C291E027AC000154FF4 /* PRXDependencies.m in Sources */,
+				78231B6723A3930B008B9B03 /* PRXFeaturesResponse.m in Sources */,
+				427939FD1D9B8FC000489A68 /* PRXFaqRichTexts.m in Sources */,
+				427939FE1D9B8FC400489A68 /* PRXFaqRichText.m in Sources */,
+				BF2988642155107100350ECA /* PRXDisclaimerData.m in Sources */,
+				78231B8323A3A0E5008B9B03 /* PRXFeaturesAssetDetails.m in Sources */,
+				BF2988572155102E00350ECA /* PRXDisclaimerResponse.m in Sources */,
+				78231B6B23A39406008B9B03 /* PRXFeaturesData.m in Sources */,
+				427939EB1D9B8F7E00489A68 /* PRXRequest.m in Sources */,
+				427939F81D9B8FAF00489A68 /* PRXSummaryData.m in Sources */,
+				BF29886A215510AA00350ECA /* PRXDisclaimerRequest.m in Sources */,
+				427939EF1D9B8F8D00489A68 /* PRXSupportRequest.m in Sources */,
+				BF2988662155107100350ECA /* PRXDisclaimers.m in Sources */,
+				427939F61D9B8FA500489A68 /* PRXAssetAsset.m in Sources */,
+				427939FC1D9B8FBD00489A68 /* PRXFaqData.m in Sources */,
+				78231B6223A39155008B9B03 /* PRXFeaturesRequest.m in Sources */,
+				222C4B6424BC486E001C0DF5 /* PRXSpecificationsRequest.m in Sources */,
+				42793A001D9B8FCB00489A68 /* PRXFaqItem.m in Sources */,
+				427939EE1D9B8F8A00489A68 /* PRXNetworkWrapper.m in Sources */,
+				6A36AE92221E479700E8376D /* PRXSummaryListResponse.m in Sources */,
+				222C4B6124BC4821001C0DF5 /* PRXSpecificationsItemValue.m in Sources */,
+				427939F41D9B8FA000489A68 /* PRXAssetData.m in Sources */,
+				427939F71D9B8FAC00489A68 /* PRXSummaryResponse.m in Sources */,
+				427939F31D9B8F9D00489A68 /* PRXAssetResponse.m in Sources */,
+				427939F91D9B8FB200489A68 /* PRXSummaryBrand.m in Sources */,
+				78231B8223A3A0E5008B9B03 /* PRXFeaturesDetails.m in Sources */,
+				6AE56BE2221EF2B800231753 /* PRXSummaryListRequest.m in Sources */,
+				78231B7323A3963C008B9B03 /* PRXFeaturesHighlight.m in Sources */,
+				427939F51D9B8FA200489A68 /* PRXAssetAssets.m in Sources */,
+				427939EC1D9B8F8400489A68 /* PRXRequestEnums.m in Sources */,
+				222C4B6C24BD8928001C0DF5 /* PRXSpecificationsChapter.m in Sources */,
+				427939F11D9B8F9300489A68 /* PRXSummaryRequest.m in Sources */,
+				783EE19C2397D0AD006F4F4F /* PRXSpecificationsChapterItem.m in Sources */,
+				78731E1B239FB05800F71E94 /* PRXSpecificationsItemMeasure.m in Sources */,
+				427939FB1D9B8FBA00489A68 /* PRXSupportResponse.m in Sources */,
+				783EE1972397D094006F4F4F /* PRXSpecificationsItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		428647721BD8D66F00C00A74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54849892213D45AF001BD5A4 /* AISDMock.m in Sources */,
+				263DCC711C16DF9C000A6377 /* testAbstractMethods.m in Sources */,
+				BF29884C2154F46200350ECA /* MockPRXRequestManager.m in Sources */,
+				26439B381C05B250006FD8B8 /* testPRXRequestManager.m in Sources */,
+				54C77C471E02A14700154FF4 /* NSBundle+Bundle.m in Sources */,
+				BF2988512154F7C500350ECA /* MockPRXAppInfra.m in Sources */,
+				267062451BE9BE7400711E5A /* testSummaryModel.m in Sources */,
+				2670623C1BE9B49300711E5A /* testAssertModel.m in Sources */,
+				541550371E236CA100BF84EB /* testNetworkWrapper.m in Sources */,
+				267062471BE9BED100711E5A /* testFAQModel.m in Sources */,
+				BF29884E2154F6D600350ECA /* DisclaimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50616502205FC20700499D2C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427939E01D9B8F5900489A68 /* PhilipsPRXClientDev */;
+			targetProxy = 50616501205FC20700499D2C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		26439B331C048FE3006FD8B8 /* Gcov-build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = "Gcov-build";
+		};
+		26439B351C048FE3006FD8B8 /* Gcov-build */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2039FB641B4ACDD48B9F0B1 /* Pods-PRXClientTests.gcov-build.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PRXClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "philips.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Gcov-build";
+		};
+		427939E61D9B8F5900489A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4765CB8F131681321A8CEF47 /* Pods-PhilipsPRXClientDev.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PhilipsPRXClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsPRXClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		427939E71D9B8F5900489A68 /* Gcov-build */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D4D0DAEB24BD329091A3870 /* Pods-PhilipsPRXClientDev.gcov-build.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PhilipsPRXClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsPRXClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = "Gcov-build";
+		};
+		427939E81D9B8F5900489A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09D06707344194A2447AC611 /* Pods-PhilipsPRXClientDev.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PhilipsPRXClient/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsPRXClient;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		42793A1B1D9B913D00489A68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		42793A1C1D9B913D00489A68 /* Gcov-build */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = "Gcov-build";
+		};
+		42793A1D1D9B913D00489A68 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_BITCODE = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4286477D1BD8D66F00C00A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Debug;
+		};
+		4286477E1BD8D66F00C00A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		428647831BD8D66F00C00A74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E28C258A9188B62D51A710 /* Pods-PRXClientTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PRXClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "philips.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		428647841BD8D66F00C00A74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EEC370EC7F0F52EC9B72CC52 /* Pods-PRXClientTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PRXClientTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = "philips.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		427939E91D9B8F5900489A68 /* Build configuration list for PBXNativeTarget "PhilipsPRXClientDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427939E61D9B8F5900489A68 /* Debug */,
+				427939E71D9B8F5900489A68 /* Gcov-build */,
+				427939E81D9B8F5900489A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42793A1A1D9B913D00489A68 /* Build configuration list for PBXAggregateTarget "PhilipsPRXClientUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42793A1B1D9B913D00489A68 /* Debug */,
+				42793A1C1D9B913D00489A68 /* Gcov-build */,
+				42793A1D1D9B913D00489A68 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428647661BD8D66F00C00A74 /* Build configuration list for PBXProject "PhilipsPRXClientDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4286477D1BD8D66F00C00A74 /* Debug */,
+				26439B331C048FE3006FD8B8 /* Gcov-build */,
+				4286477E1BD8D66F00C00A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		428647821BD8D66F00C00A74 /* Build configuration list for PBXNativeTarget "PRXClientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				428647831BD8D66F00C00A74 /* Debug */,
+				26439B351C048FE3006FD8B8 /* Gcov-build */,
+				428647841BD8D66F00C00A74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 428647631BD8D66F00C00A74 /* Project object */;
+}

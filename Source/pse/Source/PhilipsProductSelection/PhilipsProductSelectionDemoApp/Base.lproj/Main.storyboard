@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="K0p-R6-cPl">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ds0-S9-kCd" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="30" y="458" width="540" height="30"/>
+                                <state key="normal" title="Launch Product Selection"/>
+                                <connections>
+                                    <action selector="launchProductSelection:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cH3-Zc-uB8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JJp-JK-nma" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="30" y="402" width="540" height="30"/>
+                                <state key="normal" title="Change Theme"/>
+                                <connections>
+                                    <action selector="ChangeTheme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D6G-Zj-gIf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ds0-S9-kCd" firstAttribute="top" secondItem="JJp-JK-nma" secondAttribute="bottom" constant="26" id="OqR-T4-tST"/>
+                            <constraint firstItem="ds0-S9-kCd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PUY-q9-cQr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ds0-S9-kCd" secondAttribute="bottom" constant="112" id="R7h-Va-HSG"/>
+                            <constraint firstItem="ds0-S9-kCd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="ids-RC-kAK"/>
+                            <constraint firstItem="JJp-JK-nma" firstAttribute="trailing" secondItem="ds0-S9-kCd" secondAttribute="trailing" id="qMk-Fz-Yga"/>
+                            <constraint firstItem="JJp-JK-nma" firstAttribute="leading" secondItem="ds0-S9-kCd" secondAttribute="leading" id="vhY-q3-IBL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="HSm-FZ-xS6"/>
+                    <connections>
+                        <outlet property="btnChangeTheme" destination="JJp-JK-nma" id="Aj4-EF-4cq"/>
+                        <outlet property="btnLaunchProductSelection" destination="ds0-S9-kCd" id="nK3-Ht-AAM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="70C-3C-QSW">
+            <objects>
+                <navigationController id="K0p-R6-cPl" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="H2f-cC-4fK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Gfn-U6-xTd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cSs-ZX-PhT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'http://tfsemea1.ta.philips.com:8080/tfs/TPC_Region24/CDP2/_git/cocoapod-specs-stage'
+
+platform :ios,'8.4'
+
+use_frameworks!
+
+pod 'UAPPFramework', '2017.5.0-SNAPSHOT'
+
+target '___PACKAGENAME___' do
+
+end

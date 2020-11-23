@@ -1,0 +1,48 @@
+{
+    "UserRegistration": {
+        
+        "JanRainConfiguration.RegistrationClientID.Development": "8kaxdrpvkwyr7pnp987amu4aqb4wmnte",
+        "JanRainConfiguration.RegistrationClientID.Testing": "g52bfma28yjbd24hyjcswudwedcmqy7c",
+        "JanRainConfiguration.RegistrationClientID.Evaluation": "f2stykcygm7enbwfw2u9fbg6h6syb8yd",
+        "JanRainConfiguration.RegistrationClientID.Staging": "f2stykcygm7enbwfw2u9fbg6h6syb8yd",
+        "JanRainConfiguration.RegistrationClientID.Production": "9z23k3q8bhqyfwx78aru6bz8zksga54u",
+        "PILConfiguration.CampaignID": "CL20150501_PC_TB_COPPA",
+        "Flow.EmailVerificationRequired" : true,
+        "Flow.TermsAndConditionsAcceptanceRequired" : true,
+        "Flow.MinimumAgeLimit" : { "NL":12 ,"GB":14,"default": 16},
+        "SigninProviders.default": ["myphilips","facebook","googleplus"],
+        "SigninProviders.CN": ["myphilips","sinaweibo"]
+    },
+  "appinfra": {
+    "appidentity.micrositeId": 77000,
+    "appidentity.sector": "b2c",
+    "appidentity.appState": "Staging",
+    "appidentity.serviceDiscoveryEnvironment": "Staging",
+    "servicediscovery.platformMicrositeId": "70000",
+    "servicediscovery.platformEnvironment": "Staging",
+    "logging.releaseConfig": {
+      "fileName": "AppInfraLog",
+      "numberOfFiles": 5,
+      "fileSizeInBytes": 50000,
+      "logLevel": "Off",
+      "fileLogEnabled": false,
+      "consoleLogEnabled": false,
+      "componentLevelLogEnabled": false,
+      "componentIds": [
+      ]
+    },
+    "logging.debugConfig": {
+      "fileName": "AppInfraLog",
+      "numberOfFiles": 5,
+      "fileSizeInBytes": 50000,
+      "logLevel": "All",
+      "fileLogEnabled": true,
+      "consoleLogEnabled": true,
+      "componentLevelLogEnabled": false,
+      "componentIds": [
+        "Registration",
+        "DemoProductRegistrationClient"
+      ]
+    }
+  }
+}

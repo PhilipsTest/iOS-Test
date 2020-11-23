@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIHSDPPHSApiSigning.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIHSDPPHSApiSigning</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.h</DeclaredIn>
+            
+			
+			<NodeRef refid="18"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/initApiSigner:andhexKey:</TokenIdentifier>
+			<Abstract type="html">Create an API signer instance according to HSDP specification</Abstract>
+			<DeclaredIn>AIClonableClient.h</DeclaredIn>
+			
+			<Declaration>- (id)initApiSigner:(NSString *)sharedKey andhexKey:(NSString *)hexKey</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>sharedKey</Name>
+					<Abstract type="html">Api signing shared key</Abstract>
+				</Parameter><Parameter>
+					<Name>hexSecretKey</Name>
+					<Abstract type="html">Api signing secret key in hex string format.</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Class instance AIHSDPPHSApiSigning</Abstract></ReturnValue>
+			<Anchor>//api/name/initApiSigner:andhexKey:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/createSignature:dhpUrl:queryString:headers:requestBody:</TokenIdentifier>
+			<Abstract type="html">Create an API signer instance according to HSDP specification</Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)createSignature:(NSString *)requestMethod dhpUrl:(NSString *)url queryString:(NSString *)requestUrlQuery headers:(NSDictionary *)allHttpHeaderFields requestBody:(NSData *)httpBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>requestMethod</Name>
+					<Abstract type="html">Type of method(POST, GET)</Abstract>
+				</Parameter><Parameter>
+					<Name>queryString</Name>
+					<Abstract type="html">Request URL query. applicationName=uGrow</Abstract>
+				</Parameter><Parameter>
+					<Name>dhpUrl</Name>
+					<Abstract type="html">Request URL</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">Request http header fields. Current date is passed as http header value.</Abstract>
+				</Parameter><Parameter>
+					<Name>requestBody</Name>
+					<Abstract type="html">Request body</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createSignature:dhpUrl:queryString:headers:requestBody:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/buildAuthorizationHeaderValue:signatureKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)buildAuthorizationHeaderValue:(NSDictionary *)allHttpHeaderFields signatureKey:(NSString *)encodedKey</Declaration>
+			
+			
+			<Anchor>//api/name/buildAuthorizationHeaderValue:signatureKey:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/hashRequest:queryString:headers:requestBody:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)hashRequest:(NSString *)requestMethod queryString:(NSString *)requestUrlQuery headers:(NSDictionary *)allHttpHeaderFields requestBody:(NSData *)httpBody</Declaration>
+			
+			
+			<Anchor>//api/name/hashRequest:queryString:headers:requestBody:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/hashedValueOfData:WithKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)hashedValueOfData:(NSString *)dataIn WithKey:(NSData *)key</Declaration>
+			
+			
+			<Anchor>//api/name/hashedValueOfData:WithKey:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/hashedValueOfData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (NSData *)hashedValueOfData:(NSString *)method</Declaration>
+			
+			
+			<Anchor>//api/name/hashedValueOfData:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/convertToString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)convertToString:(NSDictionary *)allKeys</Declaration>
+			
+			
+			<Anchor>//api/name/convertToString:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/convertToHexValueFromString:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>- (unsigned char *)convertToHexValueFromString:(NSString *)hexString</Declaration>
+			
+			
+			<Anchor>//api/name/convertToHexValueFromString:</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/setSharedKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *sharedKey</Declaration>
+			
+			
+			<Anchor>//api/name/sharedKey</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/sharedKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *sharedKey</Declaration>
+			
+			
+			<Anchor>//api/name/sharedKey</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIHSDPPHSApiSigning/sharedKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) NSString *sharedKey</Declaration>
+			
+			
+			<Anchor>//api/name/sharedKey</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/setHsdpKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) unsigned char *hsdpKey</Declaration>
+			
+			
+			<Anchor>//api/name/hsdpKey</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIHSDPPHSApiSigning/hsdpKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) unsigned char *hsdpKey</Declaration>
+			
+			
+			<Anchor>//api/name/hsdpKey</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIHSDPPHSApiSigning/hsdpKey</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIClonableClient.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic) unsigned char *hsdpKey</Declaration>
+			
+			
+			<Anchor>//api/name/hsdpKey</Anchor>
+            <NodeRef refid="18"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

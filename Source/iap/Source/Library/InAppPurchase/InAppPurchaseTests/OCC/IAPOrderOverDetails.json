@@ -1,0 +1,188 @@
+{
+    "type": "orderWsDTO",
+    "calculated": true,
+    "code": "14000015144",
+    "deliveryAddress": {
+        "country": {
+            "isocode": "US"
+        },
+        "firstName": "Rayan",
+        "id": "8801468907543",
+        "lastName": "Godwin",
+        "line1": "325 S Duff Ave",
+        "phone1": "(515)233-3648",
+        "phone2": "(515)233-3648",
+        "postalCode": "50010",
+        "region": {
+            "isocode": "US-IA"
+        },
+        "town": "Ames"
+    },
+    "deliveryCost": {
+        "currencyIso": "USD",
+        "formattedValue": "$7.99",
+        "priceType": "BUY",
+        "value": 7.99
+    },
+    "deliveryItemsQuantity": 1,
+    "deliveryMode": {
+        "code": "standard-net",
+        "deliveryCost": {
+            "currencyIso": "USD",
+            "formattedValue": "$7.99",
+            "priceType": "BUY",
+            "value": 7.99
+        },
+        "description": "3-5 business days",
+        "name": "Standard Delivery Mode"
+    },
+    "deliveryOrderGroups": [
+                            {
+                            "entries": [
+                                        {
+                                        "entryNumber": 0,
+                                        "product": {
+                                        "availableForPickup": false,
+                                        "code": "HX8331/11",
+                                        "purchasable": true,
+                                        "stock": {
+                                        "stockLevel": 196
+                                        },
+                                        "url": "/c//p/HX8331_11"
+                                        },
+                                        "quantity": 1,
+                                        "totalPrice": {
+                                        "currencyIso": "USD",
+                                        "value": 15
+                                        }
+                                        }
+                                        ],
+                            "totalPriceWithTax": {
+                            "currencyIso": "USD",
+                            "formattedValue": "$16.38",
+                            "priceType": "BUY",
+                            "value": 16.38
+                            }
+                            }
+                            ],
+    "entries": [
+                {
+                "entryNumber": 0,
+                "product": {
+                "availableForPickup": false,
+                "code": "HX8331/11",
+                "purchasable": true,
+                "stock": {
+                "stockLevel": 196
+                },
+                "url": "/c//p/HX8331_11"
+                },
+                "quantity": 1,
+                "totalPrice": {
+                "currencyIso": "USD",
+                "value": 15
+                }
+                }
+                ],
+    "guid": "094c5f33-f46b-4e58-9832-742a89b86e35",
+    "net": true,
+    "orderDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "paymentInfo": {
+        "billingAddress": {
+            "country": {
+                "isocode": "US"
+            },
+            "firstName": "Darshan",
+            "id": "8801469038615",
+            "lastName": "Ns",
+            "line1": "Lane 2",
+            "phone1": "(402)646-4666",
+            "phone2": "(515)233-3648",
+            "postalCode": "10001",
+            "region": {
+                "isocode": "US-CA"
+            },
+            "town": "Sunnyvele"
+        },
+        "cardNumber": "4111********1111",
+        "cardType": {
+            "code": "VISA"
+        },
+        "defaultPayment": false,
+        "saved": false
+    },
+    "pickupItemsQuantity": 0,
+    "productDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "site": "US_Tuscany",
+    "store": "US_Pub",
+    "subTotal": {
+        "currencyIso": "USD",
+        "formattedValue": "$15.00",
+        "priceType": "BUY",
+        "value": 15
+    },
+    "totalDiscounts": {
+        "currencyIso": "USD",
+        "formattedValue": "$0.00",
+        "priceType": "BUY",
+        "value": 0
+    },
+    "totalItems": 1,
+    "totalPrice": {
+        "currencyIso": "USD",
+        "formattedValue": "$22.99",
+        "priceType": "BUY",
+        "value": 22.99
+    },
+    "totalPriceWithTax": {
+        "currencyIso": "USD",
+        "formattedValue": "$24.37",
+        "priceType": "BUY",
+        "value": 24.37
+    },
+    "totalTax": {
+        "currencyIso": "USD",
+        "formattedValue": "$1.38",
+        "priceType": "BUY",
+        "value": 1.38
+    },
+    "user": {
+        "name": "chittaranjan",
+        "uid": "chittaranjan.sahu@philips.com"
+    },
+    "created": "2016-06-07T09:47:01+0000",
+    "deliveryStatus": "SHIPPED",
+    "ordertrackUrl": "http://www.fedex.com/Tracking?action=track&cntry_code=en_US&tracknumber_list=1Z9V788X6871220000",
+    "guestCustomer": false,
+    "status": "PAYMENT_PROGRESS",
+    "statusDisplay": "processing",
+    "unconsignedEntries": [
+                           {
+                           "entryNumber": 0,
+                           "product": {
+                           "availableForPickup": false,
+                           "code": "HX8331/11",
+                           "purchasable": true,
+                           "stock": {
+                           "stockLevel": 196
+                           },
+                           "url": "/c//p/HX8331_11"
+                           },
+                           "quantity": 1,
+                           "totalPrice": {
+                           "currencyIso": "USD",
+                           "value": 15
+                           }
+                           }
+                           ]
+}

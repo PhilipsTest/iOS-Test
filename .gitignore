@@ -1,0 +1,96 @@
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+## Various settings
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+*.xcuserstate
+*.xcuserdatad
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+
+## Obj-C/Swift specific
+*.dSYM
+*.dSYM.zip
+*.hmap
+*.gcda
+*.gcno
+*.ipa
+
+## Playgrounds
+playground.xcworkspace
+timeline.xctimeline
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+# Packages/
+# Package.pins
+.build/
+
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+Pods/
+Podfile.lock
+
+podspecs/node_modules/
+podspecs/classes/
+
+# JetBrains project files (contains local paths)
+# https://github.com/github/gitignore/blob/master/Global/JetBrains.gitignore
+.idea
+
+# Automatically generated screenshots of failing localization tests
+FailureScreenshots/
+
+# Temp files
+*.bak
+~$*
+*Localization.json
+Source/PLF-IOS-WORKSPACE.xcworkspace
+
+# MacOS specific
+.AppleDouble
+.DS_Store
+.DS_Store?
+.LSOverride
+Icon
+._*
+
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+
+# Directories potentially created on remote AFP share
+.apdisk
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+
+# Windows specific
+Desktop.ini
+Thumbs.db
+
+API_DOCS
+
+# Keep rules
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3

@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Pateikite programos infraobjektą";
+"ECSBaseURLNotFound" = "Pagrindinis URL nerastas";
+"ECSCartEntryError" = "Gaminys neįdėtas į krepšelį";
+"ECSCartError" = "Kol kas krepšelis nesukurtas";
+"ECSCommerceCartModificationError" = "Kiekis negali būti mažesnis nei nulis";
+"ECSCtnNotProvided" = "Pateikite CTN";
+"ECSHybrisNotAvailable" = "„Philips“ parduotuvė neveikia pasirinktoje šalyje, veikia tik mažmeninė prekyba";
+"ECSIllegalArgumentError" = "Pateikite galiojančius įvesties duomenis";
+"ECSInsufficientStockError" = "Gaminio negalima pristatyti, nes jos nėra sandėlyje";
+"ECSInvalidPaymentInfoError" = "Pateikite galiojančius apmokėjimo duomenis";
+"ECSInvalidTokenError" = "Susidūrėme su technine problema (neteisingas prieigos raktas). Atlikite „Hybris“ pakartotinį atpažinimą";
+"ECSLocaleNotFound" = "Nustatykite vietą";
+"ECSNoSuchElementError" = "Gaunant duomenis iš serverio įvyko klaida";
+"ECSOAuthDetailError" = "Pateikite išsamius „OAuth“ duomenis";
+"ECSOAuthNotCalled" = "Šiam veiksmui atlikti reikalinga naudotojo leidimas";
+"ECSPIL_BAD_REQUEST" = "Susidūrėme su technine problema. Po kurio laiko bandykite iš naujo";
+"ECSPIL_BAD_REQUEST_cartId" = "Kol kas krepšelis nesukurtas";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Susidūrėme su technine problema. Po kurio laiko bandykite iš naujo";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Susidūrėme su technine problema (neteisingas prieigos raktas). Atlikite „Hybris“ pakartotinį atpažinimą";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Neteisingas el. pašto adresas. Patikrinkite.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Gaminys neįdėtas į krepšelį";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Nustatykite vietą";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Pateikite galiojantį CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Pateikite galiojantį kiekį";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "„Philips“ parduotuvė neveikia pasirinktoje šalyje, veikia tik mažmeninė prekyba";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Kiekis turi būti didesnis nei nulis";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Nustatykite vietą";
+"ECSPIL_MISSING_PARAMETER_language" = "Nustatykite vietą";
+"ECSPIL_MISSING_PARAMETER_productId" = "Pateikite CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "„Philips“ parduotuvė neveikia pasirinktoje šalyje, veikia tik mažmeninė prekyba";
+"ECSPIL_NEGATIVE_QUANTITY" = "Kiekis negali būti mažesnis nei nulis";
+"ECSPIL_NOT_ACCEPTABLE" = "Susidūrėme su technine problema. Po kurio laiko bandykite iš naujo";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Susidūrėme su technine problema. Po kurio laiko bandykite iš naujo";
+"ECSPIL_NOT_FOUND_cartId" = "Pateikite galiojantį krepšelio ID";
+"ECSPIL_NOT_FOUND_productId" = "Pateikite galiojantį CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Gaminio negalima pristatyti, nes jos nėra sandėlyje";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Susidūrėme su technine problema. Po kurio laiko bandykite iš naujo";
+"ECSPaymentAuthorizationError" = "Nesėkmingas apmokėjimo autorizavimas";
+"ECSPropositionIdNotFound" = "Nustatykite galiojantį pasiūlymo ID";
+"ECSSiteIdNotFound" = "„Philips“ parduotuvė neveikia pasirinktoje šalyje, veikia tik mažmeninė prekyba";
+"ECSUnknownIdentifierError" = "Prašomas šaltinis nepasiekiamas";
+"ECSUnsupportedDeliveryModeError" = "Pasirinktas pristatymo būdas neveikia";
+"ECSUnsupportedVoucherError" = "Deja, šio kupono negalima išpirkti";
+"ECSValidationError" = "Nepavyko patvirtinti duomenų";
+"ECSVoucherOperationError" = "Deja, šio kupono negalima išpirkti";
+"ECSaddressId" = "Pateiktas adresas neegzistuoja arba priklauso kitam naudotojui";
+"ECScountryCodeNotGiven" = "Pateikite teisingą šalies kodą";
+"ECScountryisocode" = "Pasirinkta netinkama šalis";
+"ECSfirstName" = "Atminkite, kad šie simboliai yra neleistini: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Susidūrėme su technine problema (neteisingi kliento kredencialai). Prisijunkite iš naujo";
+"ECSinvalid_grant" = "Susidūrėme su technine problema (neteisingas „Janrain“ raktas). Prisijunkite iš naujo";
+"ECSlastName" = "Atminkite, kad šie simboliai yra neleistini: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Pateikite galiojantį užsakymą";
+"ECSphone1" = "Pasirinktas netinkamas telefono numeris";
+"ECSphone2" = "Pasirinktas netinkamas telefono numeris";
+"ECSpostUrl" = "Užsakymas jau yra apmokėtas / baigtas";
+"ECSpostalCode" = "Pasirinktas netinkamas ZIP kodas";
+"ECSregionisocode" = "Pasirinktas netinkamas regionas";
+"ECSsessionCart" = "Pasirinkite pristatymo adresą, pristatymo būdą ir apmokėjimo būdą prieš pateikdami užsakymą";
+"ECSsomethingWentWrong" = "Susidūrėme su technine problema. Po kurio laiko bandykite iš naujo";
+"ECSunsupported_grant_type" = "Susidūrėme su technine problema (nepalaikomas leidimo tipas). Prisijunkite iš naujo";

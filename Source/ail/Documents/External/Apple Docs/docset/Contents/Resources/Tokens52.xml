@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSData+Encryption.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSData(Encryption)</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+AISSStatementParser.h</DeclaredIn>
+            
+			
+			<NodeRef refid="52"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/AES256EncryptWithKey:andInitialisationVector:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+AISSStatementParser.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)AES256EncryptWithKey:(NSData *)key andInitialisationVector:(NSData *)initialisationVector error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/AES256EncryptWithKey:andInitialisationVector:error:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/AES256DecryptWithKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+AISSStatementParser.h</DeclaredIn>
+			
+			<Declaration>- (NSData *)AES256DecryptWithKey:(NSData *)key error:(NSError **)error</Declaration>
+			
+			
+			<Anchor>//api/name/AES256DecryptWithKey:error:</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/NSData/MD5ForData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>NSData+AISSStatementParser.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)MD5ForData</Declaration>
+			
+			
+			<Anchor>//api/name/MD5ForData</Anchor>
+            <NodeRef refid="52"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

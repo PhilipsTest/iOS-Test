@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="IAPPaymentSelectionCell" rowHeight="176" id="5Mr-qc-fH3" userLabel="Payment Selection Cell" customClass="IAPPaymentSelectionCell" customModule="InAppPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="176"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Mr-qc-fH3" id="NCD-2U-BHS">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="176"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LxE-Ex-JHZ" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="68" y="27" width="272" height="58"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ITV-mF-Buk" userLabel="Use This Payment Button" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="30" y="97" width="316" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="x6B-vf-Pye"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="useThisPaymentClicked:" destination="5Mr-qc-fH3" eventType="touchUpInside" id="hIO-00-muj"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oZZ-2x-OPo" customClass="UIDRadioButton" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="8" width="48" height="48"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="I8c-wD-1eK"/>
+                            <constraint firstAttribute="width" constant="48" id="uu1-cg-r2W"/>
+                        </constraints>
+                        <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-5"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cny-Ub-tsN" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="168" width="376" height="8"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="Z8W-GC-pwp"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ITV-mF-Buk" firstAttribute="top" secondItem="LxE-Ex-JHZ" secondAttribute="bottom" constant="12" id="Fib-0F-Yhl"/>
+                    <constraint firstItem="LxE-Ex-JHZ" firstAttribute="top" secondItem="NCD-2U-BHS" secondAttribute="topMargin" constant="16" id="GCj-Ua-So6"/>
+                    <constraint firstItem="ITV-mF-Buk" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leadingMargin" constant="10" id="QlI-xb-xVh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ITV-mF-Buk" secondAttribute="bottom" constant="28" id="ZWz-Xy-XcS"/>
+                    <constraint firstItem="oZZ-2x-OPo" firstAttribute="top" secondItem="NCD-2U-BHS" secondAttribute="top" constant="8" id="aSR-4u-hzG"/>
+                    <constraint firstItem="LxE-Ex-JHZ" firstAttribute="leading" secondItem="oZZ-2x-OPo" secondAttribute="trailing" constant="4" id="atH-8b-OMf"/>
+                    <constraint firstAttribute="bottom" secondItem="cny-Ub-tsN" secondAttribute="bottom" id="iFj-Yh-r5I"/>
+                    <constraint firstAttribute="trailing" secondItem="cny-Ub-tsN" secondAttribute="trailing" id="ljM-pT-rMF"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ITV-mF-Buk" secondAttribute="trailing" constant="10" id="r8K-Fb-kn5"/>
+                    <constraint firstItem="cny-Ub-tsN" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leading" id="uYD-wn-Alg"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LxE-Ex-JHZ" secondAttribute="trailing" constant="16" id="uy3-aN-dHe"/>
+                    <constraint firstItem="oZZ-2x-OPo" firstAttribute="leading" secondItem="NCD-2U-BHS" secondAttribute="leading" constant="16" id="zEA-r6-mdf"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="paymentInfoLabel" destination="LxE-Ex-JHZ" id="iEG-Xf-Kf3"/>
+                <outlet property="radioButton" destination="oZZ-2x-OPo" id="mtl-AA-xNb"/>
+                <outlet property="useThisBtnBottomConstraint" destination="ZWz-Xy-XcS" id="GyR-2M-j9a"/>
+                <outlet property="useThisBtnHeightConstraint" destination="x6B-vf-Pye" id="bis-73-yq1"/>
+                <outlet property="useThisPaymentButton" destination="ITV-mF-Buk" id="MZI-wP-Deu"/>
+            </connections>
+            <point key="canvasLocation" x="-330" y="-349"/>
+        </tableViewCell>
+    </objects>
+</document>

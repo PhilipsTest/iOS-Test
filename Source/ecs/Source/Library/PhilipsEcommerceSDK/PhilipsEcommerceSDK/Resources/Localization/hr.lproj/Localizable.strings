@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Unesite app infra object";
+"ECSBaseURLNotFound" = "Nije pronađen osnovni URL";
+"ECSCartEntryError" = "Proizvod nije ubačen u košaricu";
+"ECSCartError" = "Još niste kreirali košaricu";
+"ECSCommerceCartModificationError" = "Količina ne smije biti manja od nule";
+"ECSCtnNotProvided" = "Unesite CTN";
+"ECSHybrisNotAvailable" = "Philips trgovina nije dostupna za odabranu državu, dostupna je samo maloprodaja";
+"ECSIllegalArgumentError" = "Unesite valjane ulazne podatke";
+"ECSInsufficientStockError" = "Proizvod se ne može otpremiti jer ga nema na zalihama";
+"ECSInvalidPaymentInfoError" = "Unesite valjane podatke o plaćanju";
+"ECSInvalidTokenError" = "Došlo je do tehničke smetnje (nevažeći pristupni token). Provedite Hybris Re-Auth";
+"ECSLocaleNotFound" = "Postavite lokalitet";
+"ECSNoSuchElementError" = "Došlo je do greške pri prijenosu podataka s poslužitelja";
+"ECSOAuthDetailError" = "Unesite potpune podatke OAuth";
+"ECSOAuthNotCalled" = "Za ovu je radnju potrebna autorizacija korisnika";
+"ECSPIL_BAD_REQUEST" = "Došlo je do tehničke smetnje. Pokušajte ponovno poslije";
+"ECSPIL_BAD_REQUEST_cartId" = "Još niste kreirali košaricu";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Došlo je do tehničke smetnje. Pokušajte ponovno poslije";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Došlo je do tehničke smetnje (nevažeći pristupni token). Provedite Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Adresa e-pošte nije valjana. Provjerite je.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Proizvod nije ubačen u košaricu";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Postavite lokalitet";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Unesite valjani CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Unesite valjanu količinu";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philips trgovina nije dostupna za odabranu državu, dostupna je samo maloprodaja";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Količina mora biti veća od nule";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Postavite lokalitet";
+"ECSPIL_MISSING_PARAMETER_language" = "Postavite lokalitet";
+"ECSPIL_MISSING_PARAMETER_productId" = "Unesite CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philips trgovina nije dostupna za odabranu državu, dostupna je samo maloprodaja";
+"ECSPIL_NEGATIVE_QUANTITY" = "Količina ne smije biti manja od nule";
+"ECSPIL_NOT_ACCEPTABLE" = "Došlo je do tehničke smetnje. Pokušajte ponovno poslije";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Došlo je do tehničke smetnje. Pokušajte ponovno poslije";
+"ECSPIL_NOT_FOUND_cartId" = "Unesite valjanu ID kartice";
+"ECSPIL_NOT_FOUND_productId" = "Unesite valjani CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Proizvod se ne može otpremiti jer ga nema na zalihama";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Došlo je do tehničke smetnje. Pokušajte ponovno poslije";
+"ECSPaymentAuthorizationError" = "Nije uspjela autorizacija plaćanja";
+"ECSPropositionIdNotFound" = "Postavite valjani Proposition ID";
+"ECSSiteIdNotFound" = "Philips trgovina nije dostupna za odabranu državu, dostupna je samo maloprodaja";
+"ECSUnknownIdentifierError" = "Nije dostupan traženi resurs";
+"ECSUnsupportedDeliveryModeError" = "Nije podržan odabrani način dostave";
+"ECSUnsupportedVoucherError" = "Žao nam je, ali ne možete iskoristiti ovaj vaučer";
+"ECSValidationError" = "Nije uspjela provjera podataka";
+"ECSVoucherOperationError" = "Žao nam je, ali ne možete iskoristiti ovaj vaučer";
+"ECSaddressId" = "Navedena adresa ne postoji ili pripada nekom drugom korisniku";
+"ECScountryCodeNotGiven" = "Unesite valjani predbroj";
+"ECScountryisocode" = "Odabrana je država nevažeća";
+"ECSfirstName" = "Imajte na umu da nisu dopušteni sljedeći znakovi: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Došlo je do tehničke smetnje (neispravne vjerodajnice klijenta). Ponovno se prijavite";
+"ECSinvalid_grant" = "Došlo je do tehničke smetnje (nevažeći Janrain token). Ponovno se prijavite";
+"ECSlastName" = "Imajte na umu da nisu dopušteni sljedeći znakovi: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Unesite valjanu narudžbenicu";
+"ECSphone1" = "Odabrani telefonski broj je nevažeći";
+"ECSphone2" = "Odabrani telefonski broj je nevažeći";
+"ECSpostUrl" = "Narudžbenica je već plaćena/izvršena";
+"ECSpostalCode" = "Odabrani je poštanski broj nevažeći";
+"ECSregionisocode" = "Odabrana je regija nevažeća";
+"ECSsessionCart" = "Prije slanja narudžbenice odaberite adresu za dostavu, način dostave i način plaćanja";
+"ECSsomethingWentWrong" = "Došlo je do tehničke smetnje. Pokušajte ponovno poslije";
+"ECSunsupported_grant_type" = "Došlo je do tehničke smetnje (nepodržana vrsta odobrenja). Ponovno se prijavite";

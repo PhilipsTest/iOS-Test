@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Bold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Product Catalogue View Controller-->
+        <scene sceneID="1B1-oo-Ls7">
+            <objects>
+                <viewController storyboardIdentifier="MECProductCatalogueViewController" id="2Pb-mO-g1L" customClass="MECProductCatalogueViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dZv-e9-Gsw" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X51-A4-97y" customClass="MECTopBarView" customModule="MobileEcommerce" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zvi-sq-87o" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xNB-xK-fBx">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="94"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4go-1s-Mz0">
+                                                <rect key="frame" x="0.0" y="0.0" width="144" height="94"/>
+                                                <subviews>
+                                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GKu-sA-6xD" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="8" y="52" width="40" height="34"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="list_view_button"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="Wab-Jr-1vw"/>
+                                                        </constraints>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customTitleColor" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="viewTypeButtonTappedWithSender:" destination="X51-A4-97y" eventType="touchUpInside" id="kvq-rQ-bMN"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bwu-0Z-Vlg" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="56" y="52" width="40" height="34"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="grid_view_button"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="58T-7K-U7Y"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <action selector="viewTypeButtonTappedWithSender:" destination="X51-A4-97y" eventType="touchUpInside" id="Duu-l0-6LR"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NBY-39-mMD" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="104" y="52" width="40" height="34"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="product_filter_button"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="40" id="V2H-SB-Kjt"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="filterButtonClickedWithSender:" destination="X51-A4-97y" eventType="touchUpInside" id="Ljq-l4-ekw"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="0.0"/>
+                                            </stackView>
+                                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="uta-6X-GSc" customClass="UIDSearchBar" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="152" y="0.0" width="262" height="94"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="2Pb-mO-g1L" id="Vs2-xd-I2u"/>
+                                                </connections>
+                                            </searchBar>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="xNB-xK-fBx" firstAttribute="top" secondItem="X51-A4-97y" secondAttribute="top" id="2zd-kR-gr0"/>
+                                    <constraint firstAttribute="bottom" secondItem="xNB-xK-fBx" secondAttribute="bottom" id="5ic-WD-LvA"/>
+                                    <constraint firstItem="xNB-xK-fBx" firstAttribute="leading" secondItem="X51-A4-97y" secondAttribute="leading" id="7BS-4H-qAA"/>
+                                    <constraint firstAttribute="height" constant="56" id="CjM-90-kQM"/>
+                                    <constraint firstItem="Zvi-sq-87o" firstAttribute="leading" secondItem="X51-A4-97y" secondAttribute="leading" id="O1T-tK-hzC"/>
+                                    <constraint firstAttribute="trailing" secondItem="xNB-xK-fBx" secondAttribute="trailing" id="Xx5-RU-Fjs"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zvi-sq-87o" secondAttribute="bottom" id="XyF-Jd-Cuq"/>
+                                    <constraint firstItem="Zvi-sq-87o" firstAttribute="top" secondItem="X51-A4-97y" secondAttribute="top" id="nst-5Z-e3S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Zvi-sq-87o" secondAttribute="trailing" id="sw9-6c-wh8"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="containerView" destination="Zvi-sq-87o" id="hWy-z8-qjC"/>
+                                    <outlet property="filterButton" destination="NBY-39-mMD" id="KLQ-Sh-cdI"/>
+                                    <outlet property="gridViewButton" destination="Bwu-0Z-Vlg" id="PPM-ik-Utv"/>
+                                    <outlet property="listViewButton" destination="GKu-sA-6xD" id="c2G-u7-agY"/>
+                                </connections>
+                            </view>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwc-Eb-B7Z" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="440" width="382" height="16"/>
+                                <accessibility key="accessibilityConfiguration" identifier="no_product_label"/>
+                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6b-iY-1At" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="8" y="439.5" width="406" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zNs-rS-hUL" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="406" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mec_zero_filterResultText"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_empty_filter_message"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cph-Oi-F0e" customClass="UIDHyperLinkLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="9" width="406" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="mec_clear_filterLabel"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mec_zero_filterResultView"/>
+                                <constraints>
+                                    <constraint firstItem="zNs-rS-hUL" firstAttribute="leading" secondItem="h6b-iY-1At" secondAttribute="leading" id="169-Sm-zGj"/>
+                                    <constraint firstAttribute="bottom" secondItem="cph-Oi-F0e" secondAttribute="bottom" constant="8" id="P47-3c-rIa"/>
+                                    <constraint firstItem="zNs-rS-hUL" firstAttribute="top" secondItem="h6b-iY-1At" secondAttribute="top" id="SvR-X9-hrn"/>
+                                    <constraint firstAttribute="trailing" secondItem="zNs-rS-hUL" secondAttribute="trailing" id="d7x-G6-5iU"/>
+                                    <constraint firstItem="cph-Oi-F0e" firstAttribute="leading" secondItem="h6b-iY-1At" secondAttribute="leading" id="rcQ-2W-3Ej"/>
+                                    <constraint firstItem="cph-Oi-F0e" firstAttribute="top" secondItem="zNs-rS-hUL" secondAttribute="bottom" constant="9" id="yDb-AE-zjf"/>
+                                    <constraint firstAttribute="trailing" secondItem="cph-Oi-F0e" secondAttribute="trailing" id="yYa-Wh-tIC"/>
+                                </constraints>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XKH-Iy-Ptz" customClass="MECZeroSearchResultView" customModule="MobileEcommerce" customModuleProvider="target">
+                                <rect key="frame" x="16" y="88" width="382" height="102"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dFb-MT-BKv" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="16" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="2MO-Xu-QSZ"/>
+                                            <constraint firstAttribute="height" constant="40" id="vvM-ny-Tb2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idZ-9S-rOY" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="72" y="28" width="294" height="16"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="zero_result_title"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdX-Jp-A6c" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="72" width="350" height="14"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="zero_result_description"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <accessibility key="accessibilityConfiguration" identifier="mec_zero_search_result_view">
+                                    <bool key="isElement" value="YES"/>
+                                </accessibility>
+                                <constraints>
+                                    <constraint firstItem="dFb-MT-BKv" firstAttribute="leading" secondItem="XKH-Iy-Ptz" secondAttribute="leading" constant="16" id="5ge-a6-R6n"/>
+                                    <constraint firstAttribute="trailing" secondItem="wdX-Jp-A6c" secondAttribute="trailing" constant="16" id="ISQ-Ch-kjD"/>
+                                    <constraint firstItem="wdX-Jp-A6c" firstAttribute="top" relation="greaterThanOrEqual" secondItem="idZ-9S-rOY" secondAttribute="bottom" constant="8" id="Lvp-mi-TPx"/>
+                                    <constraint firstItem="idZ-9S-rOY" firstAttribute="centerY" secondItem="dFb-MT-BKv" secondAttribute="centerY" id="Mjg-FN-knC"/>
+                                    <constraint firstItem="idZ-9S-rOY" firstAttribute="leading" secondItem="dFb-MT-BKv" secondAttribute="trailing" constant="16" id="Sa5-Xw-7nk"/>
+                                    <constraint firstItem="dFb-MT-BKv" firstAttribute="top" secondItem="XKH-Iy-Ptz" secondAttribute="top" constant="16" id="WjB-rY-mvU"/>
+                                    <constraint firstAttribute="bottom" secondItem="wdX-Jp-A6c" secondAttribute="bottom" constant="16" id="Xpe-Db-jiA"/>
+                                    <constraint firstAttribute="trailing" secondItem="idZ-9S-rOY" secondAttribute="trailing" constant="16" id="hLL-PV-miH"/>
+                                    <constraint firstItem="wdX-Jp-A6c" firstAttribute="leading" secondItem="XKH-Iy-Ptz" secondAttribute="leading" constant="16" id="kwy-Vi-FCN"/>
+                                    <constraint firstItem="wdX-Jp-A6c" firstAttribute="top" secondItem="dFb-MT-BKv" secondAttribute="bottom" priority="750" constant="16" id="zvd-Vl-fyH"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="infoLabel" destination="dFb-MT-BKv" id="2Kd-kz-5Tx"/>
+                                    <outlet property="zeroResultDescription" destination="wdX-Jp-A6c" id="ink-hM-rRe"/>
+                                    <outlet property="zeroResultTitle" destination="idZ-9S-rOY" id="WjK-5E-ekI"/>
+                                </connections>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wb1-1O-G08">
+                                <rect key="frame" x="0.0" y="56" width="414" height="756"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="anX-xg-byc">
+                                    <size key="itemSize" width="414" height="163"/>
+                                    <size key="estimatedItemSize" width="414" height="163"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="MECProductListCell" id="MNJ-B9-DT4" customClass="MECProductListCell" customModule="MobileEcommerce" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="3wx-EZ-mSo">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2JV-Ow-0VH" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="163"/>
+                                                </view>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ox-zm-eGW">
+                                                    <rect key="frame" x="16" y="16" width="92" height="100"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="product_list_imageView"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="92" id="4z6-9A-qVX"/>
+                                                        <constraint firstAttribute="width" constant="92" id="pFm-pl-yWn"/>
+                                                        <constraint firstAttribute="height" constant="100" id="txu-62-yM6"/>
+                                                    </constraints>
+                                                    <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Daily Collection Miniblender Miniblender" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYR-Fg-7DL" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="116" y="16" width="282" height="32"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="product_title"/>
+                                                    <edgeInsets key="layoutMargins" top="16" left="8" bottom="8" right="8"/>
+                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="HR7781/02" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sv6-Kn-TCX" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="116" y="56" width="282" height="12"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="product_CTN_label"/>
+                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YPl-NJ-1yW">
+                                                    <rect key="frame" x="116" y="76" width="282" height="12"/>
+                                                    <subviews>
+                                                        <view contentMode="scaleToFill" horizontalHuggingPriority="1000" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RLp-eT-sZo" customClass="UIDRatingBar" customModule="PhilipsUIKitDLS">
+                                                            <rect key="frame" x="8" y="0.0" width="28" height="12"/>
+                                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="rating_bar"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="number" keyPath="ratingBarType">
+                                                                    <integer key="value" value="2"/>
+                                                                </userDefinedRuntimeAttribute>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="(3 Reviews)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f8O-sb-4EZ" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                            <rect key="frame" x="104" y="7.5" width="65" height="14.5"/>
+                                                            <accessibility key="accessibilityConfiguration" identifier="review_count_label"/>
+                                                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="RLp-eT-sZo" firstAttribute="top" secondItem="YPl-NJ-1yW" secondAttribute="top" id="GMO-49-EeG"/>
+                                                        <constraint firstItem="RLp-eT-sZo" firstAttribute="leading" secondItem="YPl-NJ-1yW" secondAttribute="leading" constant="8" id="cGw-5D-NMQ"/>
+                                                        <constraint firstAttribute="bottom" secondItem="f8O-sb-4EZ" secondAttribute="bottom" id="iib-c3-mYc"/>
+                                                        <constraint firstItem="f8O-sb-4EZ" firstAttribute="top" secondItem="YPl-NJ-1yW" secondAttribute="top" id="ldb-D9-AWf"/>
+                                                        <constraint firstAttribute="bottom" secondItem="RLp-eT-sZo" secondAttribute="bottom" id="m5J-NQ-uZW"/>
+                                                        <constraint firstItem="f8O-sb-4EZ" firstAttribute="leading" secondItem="RLp-eT-sZo" secondAttribute="trailing" constant="8" id="qg1-b2-Oy6"/>
+                                                    </constraints>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery: 3-6 business days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AwB-kA-1AW" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="116" y="87.5" width="274" height="12"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="product_delivey_time"/>
+                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G0u-ZZ-jcL">
+                                                    <rect key="frame" x="116" y="126" width="282" height="28"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="khc-BT-Ua8" userLabel="Price Stack View">
+                                                            <rect key="frame" x="0.0" y="0.0" width="282" height="16"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZD-1k-ktY" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="256.5" height="16"/>
+                                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="10" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IiY-Ej-GRZ" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                    <rect key="frame" x="264.5" y="0.0" width="17.5" height="16"/>
+                                                                    <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="16"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yi2-7b-TxT" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                            <rect key="frame" x="0.0" y="16" width="282" height="12"/>
+                                                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_suggested_retailer_price"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0vb-5H-vL7" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="0.0" y="162" width="414" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <accessibility key="accessibilityConfiguration" identifier="seperator"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="lsY-5Q-R2W"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="G0u-ZZ-jcL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="YPl-NJ-1yW" secondAttribute="bottom" constant="8" id="3DK-6E-b63"/>
+                                                <constraint firstItem="YPl-NJ-1yW" firstAttribute="top" secondItem="sv6-Kn-TCX" secondAttribute="bottom" constant="8" id="4ZD-Qa-22h"/>
+                                                <constraint firstItem="2Ox-zm-eGW" firstAttribute="leading" secondItem="3wx-EZ-mSo" secondAttribute="leading" constant="16" id="6Wo-rb-EAK"/>
+                                                <constraint firstItem="0vb-5H-vL7" firstAttribute="top" secondItem="G0u-ZZ-jcL" secondAttribute="bottom" constant="8" id="7ee-6e-IBi"/>
+                                                <constraint firstItem="0vb-5H-vL7" firstAttribute="top" relation="greaterThanOrEqual" secondItem="2Ox-zm-eGW" secondAttribute="bottom" constant="16" id="E5c-ty-WYf"/>
+                                                <constraint firstItem="sv6-Kn-TCX" firstAttribute="top" secondItem="eYR-Fg-7DL" secondAttribute="bottom" constant="8" id="LQj-3q-rbt"/>
+                                                <constraint firstItem="eYR-Fg-7DL" firstAttribute="leading" secondItem="2Ox-zm-eGW" secondAttribute="trailing" constant="8" id="Oib-gK-ftC"/>
+                                                <constraint firstAttribute="trailing" secondItem="2JV-Ow-0VH" secondAttribute="trailing" id="Pka-vO-Qba"/>
+                                                <constraint firstAttribute="trailing" secondItem="G0u-ZZ-jcL" secondAttribute="trailing" constant="16" id="UEc-zg-7ng"/>
+                                                <constraint firstAttribute="trailing" secondItem="sv6-Kn-TCX" secondAttribute="trailing" constant="16" id="VIj-FX-wys"/>
+                                                <constraint firstItem="sv6-Kn-TCX" firstAttribute="leading" secondItem="2Ox-zm-eGW" secondAttribute="trailing" constant="8" id="ajJ-Jc-Ni7"/>
+                                                <constraint firstAttribute="trailing" secondItem="0vb-5H-vL7" secondAttribute="trailing" id="dwQ-nN-hbg"/>
+                                                <constraint firstItem="G0u-ZZ-jcL" firstAttribute="leading" secondItem="2Ox-zm-eGW" secondAttribute="trailing" constant="8" id="htQ-3Y-xlr"/>
+                                                <constraint firstItem="eYR-Fg-7DL" firstAttribute="top" secondItem="3wx-EZ-mSo" secondAttribute="top" constant="16" id="jE2-kK-yUq"/>
+                                                <constraint firstItem="2JV-Ow-0VH" firstAttribute="leading" secondItem="3wx-EZ-mSo" secondAttribute="leading" id="kyu-yy-lEl"/>
+                                                <constraint firstAttribute="trailing" secondItem="eYR-Fg-7DL" secondAttribute="trailing" constant="16" id="lFY-NQ-1CH"/>
+                                                <constraint firstItem="YPl-NJ-1yW" firstAttribute="leading" secondItem="2Ox-zm-eGW" secondAttribute="trailing" constant="8" id="mrV-OA-Umx"/>
+                                                <constraint firstAttribute="bottom" secondItem="0vb-5H-vL7" secondAttribute="bottom" id="pVY-Zb-ntJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="2JV-Ow-0VH" secondAttribute="bottom" id="pzR-s2-Pbq"/>
+                                                <constraint firstAttribute="trailing" secondItem="YPl-NJ-1yW" secondAttribute="trailing" constant="16" id="rSv-A3-xNE"/>
+                                                <constraint firstItem="0vb-5H-vL7" firstAttribute="top" secondItem="G0u-ZZ-jcL" secondAttribute="bottom" constant="8" id="rnP-ug-ihN"/>
+                                                <constraint firstItem="2JV-Ow-0VH" firstAttribute="top" secondItem="3wx-EZ-mSo" secondAttribute="top" id="sxW-ne-1hc"/>
+                                                <constraint firstItem="0vb-5H-vL7" firstAttribute="leading" secondItem="3wx-EZ-mSo" secondAttribute="leading" id="tbb-9C-Qfj"/>
+                                                <constraint firstItem="2Ox-zm-eGW" firstAttribute="top" secondItem="3wx-EZ-mSo" secondAttribute="top" constant="16" id="y2V-wF-Cgd"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="subviews">
+                                                    <exclude reference="AwB-kA-1AW"/>
+                                                </mask>
+                                            </variation>
+                                        </collectionViewCellContentView>
+                                        <size key="customSize" width="414" height="163"/>
+                                        <connections>
+                                            <outlet property="productActualPrice" destination="MZD-1k-ktY" id="Zqs-8F-x9t"/>
+                                            <outlet property="productCTN" destination="sv6-Kn-TCX" id="lqo-7T-Ako"/>
+                                            <outlet property="productDeliveryTime" destination="AwB-kA-1AW" id="nrR-c0-2WH"/>
+                                            <outlet property="productDiscountedPrice" destination="IiY-Ej-GRZ" id="Zrw-IP-ZDQ"/>
+                                            <outlet property="productImageView" destination="2Ox-zm-eGW" id="LJL-O0-VO6"/>
+                                            <outlet property="productTitle" destination="eYR-Fg-7DL" id="F4e-lm-ZYm"/>
+                                            <outlet property="ratingBar" destination="RLp-eT-sZo" id="KED-JM-r60"/>
+                                            <outlet property="reviewCount" destination="f8O-sb-4EZ" id="iG3-or-cOg"/>
+                                            <outlet property="suggestedRetailPriceLabel" destination="yi2-7b-TxT" id="lCS-Ab-2De"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="2Pb-mO-g1L" id="Wb5-K3-51b"/>
+                                    <outlet property="delegate" destination="2Pb-mO-g1L" id="Sjh-Kb-TRT"/>
+                                </connections>
+                            </collectionView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2zI-x3-wg0" userLabel="LoadingView" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eTl-0A-ngy" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="195" y="13" width="24" height="24"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="loading_progress_indicator"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="loading_view"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="hZn-PP-7gk"/>
+                                    <constraint firstItem="eTl-0A-ngy" firstAttribute="centerY" secondItem="2zI-x3-wg0" secondAttribute="centerY" id="nCY-VC-NWB"/>
+                                    <constraint firstItem="eTl-0A-ngy" firstAttribute="centerX" secondItem="2zI-x3-wg0" secondAttribute="centerX" id="vyT-mu-V9W"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vwc-Ml-qJJ" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="0.0" y="862" width="414" height="0.0"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="phh-tH-0MA" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="b0j-4Q-140"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bED-Yq-CLV" customClass="UIDHyperLinkLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="8" width="382" height="20.5"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="privacy_label"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <accessibility key="accessibilityConfiguration" identifier="privacy_view"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="bED-Yq-CLV" secondAttribute="bottom" priority="750" constant="8" id="HCK-WV-GaE"/>
+                                    <constraint firstItem="bED-Yq-CLV" firstAttribute="leading" secondItem="Vwc-Ml-qJJ" secondAttribute="leading" constant="16" id="I3x-dp-8rp"/>
+                                    <constraint firstItem="phh-tH-0MA" firstAttribute="leading" secondItem="Vwc-Ml-qJJ" secondAttribute="leading" id="JZq-4V-awl"/>
+                                    <constraint firstItem="phh-tH-0MA" firstAttribute="top" secondItem="Vwc-Ml-qJJ" secondAttribute="top" id="TA3-KL-seh"/>
+                                    <constraint firstAttribute="trailing" secondItem="bED-Yq-CLV" secondAttribute="trailing" constant="16" id="Zh1-iQ-2Qm"/>
+                                    <constraint firstAttribute="trailing" secondItem="phh-tH-0MA" secondAttribute="trailing" id="nWr-Lk-cwA"/>
+                                    <constraint firstItem="bED-Yq-CLV" firstAttribute="top" secondItem="Vwc-Ml-qJJ" secondAttribute="top" priority="750" constant="8" id="zLC-rl-JV7"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ep8-xP-ihK"/>
+                        <constraints>
+                            <constraint firstItem="X51-A4-97y" firstAttribute="top" secondItem="dZv-e9-Gsw" secondAttribute="top" id="2Ym-bg-t0r"/>
+                            <constraint firstItem="Vwc-Ml-qJJ" firstAttribute="leading" secondItem="dZv-e9-Gsw" secondAttribute="leading" id="4ev-43-zmE"/>
+                            <constraint firstItem="wb1-1O-G08" firstAttribute="top" secondItem="X51-A4-97y" secondAttribute="bottom" id="CVh-6p-pJO"/>
+                            <constraint firstItem="h6b-iY-1At" firstAttribute="centerY" secondItem="dZv-e9-Gsw" secondAttribute="centerY" id="ETu-U7-QOk"/>
+                            <constraint firstItem="XKH-Iy-Ptz" firstAttribute="top" secondItem="X51-A4-97y" secondAttribute="bottom" constant="32" id="Ega-7G-KRf"/>
+                            <constraint firstItem="Ep8-xP-ihK" firstAttribute="trailing" secondItem="hwc-Eb-B7Z" secondAttribute="trailing" priority="750" constant="16" id="J2S-ID-iib"/>
+                            <constraint firstItem="2zI-x3-wg0" firstAttribute="leading" secondItem="Ep8-xP-ihK" secondAttribute="leading" id="Khh-SC-gFN"/>
+                            <constraint firstItem="Ep8-xP-ihK" firstAttribute="bottom" secondItem="2zI-x3-wg0" secondAttribute="bottom" id="O8O-kh-1br"/>
+                            <constraint firstItem="Vwc-Ml-qJJ" firstAttribute="top" secondItem="2zI-x3-wg0" secondAttribute="bottom" id="PpG-V7-rAG"/>
+                            <constraint firstItem="Ep8-xP-ihK" firstAttribute="trailing" secondItem="XKH-Iy-Ptz" secondAttribute="trailing" constant="16" id="Sg4-Eo-8fU"/>
+                            <constraint firstItem="h6b-iY-1At" firstAttribute="leading" secondItem="Ep8-xP-ihK" secondAttribute="leading" constant="8" id="Wfl-vi-ceZ"/>
+                            <constraint firstItem="X51-A4-97y" firstAttribute="leading" secondItem="Ep8-xP-ihK" secondAttribute="leading" id="ZQw-6T-l4I"/>
+                            <constraint firstItem="XKH-Iy-Ptz" firstAttribute="centerX" secondItem="dZv-e9-Gsw" secondAttribute="centerX" id="dqK-Bk-abD"/>
+                            <constraint firstItem="hwc-Eb-B7Z" firstAttribute="centerX" secondItem="dZv-e9-Gsw" secondAttribute="centerX" id="eNW-ZO-HkP"/>
+                            <constraint firstItem="XKH-Iy-Ptz" firstAttribute="leading" secondItem="Ep8-xP-ihK" secondAttribute="leading" constant="16" id="gkN-ER-8TX"/>
+                            <constraint firstItem="hwc-Eb-B7Z" firstAttribute="leading" secondItem="Ep8-xP-ihK" secondAttribute="leading" priority="750" constant="16" id="gvK-Lc-mv9"/>
+                            <constraint firstItem="2zI-x3-wg0" firstAttribute="trailing" secondItem="Ep8-xP-ihK" secondAttribute="trailing" id="ibd-YL-Nij"/>
+                            <constraint firstItem="Ep8-xP-ihK" firstAttribute="trailing" secondItem="h6b-iY-1At" secondAttribute="trailing" id="m3P-br-H7G"/>
+                            <constraint firstItem="wb1-1O-G08" firstAttribute="trailing" secondItem="Ep8-xP-ihK" secondAttribute="trailing" id="mMR-S6-H8u"/>
+                            <constraint firstItem="hwc-Eb-B7Z" firstAttribute="centerY" secondItem="dZv-e9-Gsw" secondAttribute="centerY" id="nUu-5H-j1A"/>
+                            <constraint firstItem="Ep8-xP-ihK" firstAttribute="trailing" secondItem="X51-A4-97y" secondAttribute="trailing" id="obN-25-5bg"/>
+                            <constraint firstItem="2zI-x3-wg0" firstAttribute="top" secondItem="wb1-1O-G08" secondAttribute="bottom" id="pD5-Fb-orj"/>
+                            <constraint firstAttribute="trailing" secondItem="Vwc-Ml-qJJ" secondAttribute="trailing" id="vBf-K1-jNb"/>
+                            <constraint firstItem="Ep8-xP-ihK" firstAttribute="bottom" secondItem="Vwc-Ml-qJJ" secondAttribute="bottom" id="xkc-1w-b6p"/>
+                            <constraint firstItem="wb1-1O-G08" firstAttribute="leading" secondItem="Ep8-xP-ihK" secondAttribute="leading" id="zJx-rH-uRv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clearFilterLabel" destination="cph-Oi-F0e" id="fcu-6z-DPd"/>
+                        <outlet property="loadingProgressIndicator" destination="eTl-0A-ngy" id="TUc-3R-cZT"/>
+                        <outlet property="loadingView" destination="2zI-x3-wg0" id="QCi-Rx-Sdz"/>
+                        <outlet property="loadingViewBottomPrivacyConstraint" destination="PpG-V7-rAG" id="98V-5A-kcE"/>
+                        <outlet property="loadingViewBottomSafeAreaConstraint" destination="O8O-kh-1br" id="LXQ-Zs-ruS"/>
+                        <outlet property="loadingViewHeightConstraint" destination="hZn-PP-7gk" id="ZF8-g5-eL3"/>
+                        <outlet property="noProductLabel" destination="hwc-Eb-B7Z" id="fD6-yu-hVA"/>
+                        <outlet property="privacyLabel" destination="bED-Yq-CLV" id="Zfp-qM-DvE"/>
+                        <outlet property="privacyView" destination="Vwc-Ml-qJJ" id="V6q-EX-cH0"/>
+                        <outlet property="productCollectionView" destination="wb1-1O-G08" id="lsp-vs-fK4"/>
+                        <outlet property="searchBar" destination="uta-6X-GSc" id="Wzg-PP-WHO"/>
+                        <outlet property="topbarView" destination="X51-A4-97y" id="p3E-8V-fTb"/>
+                        <outlet property="zeroFilterResultView" destination="h6b-iY-1At" id="CJ2-6n-oFi"/>
+                        <outlet property="zeroSearchResultView" destination="XKH-Iy-Ptz" id="hhh-jd-kI4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTc-8U-AoQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-81.159420289855078" y="136.60714285714286"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="Bwu-0Z-Vlg">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="GKu-sA-6xD">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="IiY-Ej-GRZ">
+            <size key="intrinsicContentSize" width="17.5" height="16"/>
+        </designable>
+        <designable name="MZD-1k-ktY">
+            <size key="intrinsicContentSize" width="13" height="12"/>
+        </designable>
+        <designable name="NBY-39-mMD">
+            <size key="intrinsicContentSize" width="54" height="34"/>
+        </designable>
+        <designable name="bED-Yq-CLV"/>
+        <designable name="cph-Oi-F0e"/>
+        <designable name="dFb-MT-BKv">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="eYR-Fg-7DL">
+            <size key="intrinsicContentSize" width="310" height="16"/>
+        </designable>
+        <designable name="f8O-sb-4EZ">
+            <size key="intrinsicContentSize" width="65" height="12"/>
+        </designable>
+        <designable name="hwc-Eb-B7Z">
+            <size key="intrinsicContentSize" width="43.5" height="16"/>
+        </designable>
+        <designable name="idZ-9S-rOY">
+            <size key="intrinsicContentSize" width="43.5" height="16"/>
+        </designable>
+        <designable name="sv6-Kn-TCX">
+            <size key="intrinsicContentSize" width="62.5" height="12"/>
+        </designable>
+        <designable name="uta-6X-GSc">
+            <size key="intrinsicContentSize" width="-1" height="56"/>
+        </designable>
+        <designable name="wdX-Jp-A6c">
+            <size key="intrinsicContentSize" width="37.5" height="14"/>
+        </designable>
+        <designable name="yi2-7b-TxT">
+            <size key="intrinsicContentSize" width="32" height="12"/>
+        </designable>
+        <designable name="zNs-rS-hUL"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

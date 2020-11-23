@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Bold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--WelcomeView DLS-->
+        <scene sceneID="ClF-Ov-OBi">
+            <objects>
+                <viewController storyboardIdentifier="WelcomeViewController" id="aEL-v0-klX" userLabel="WelcomeView DLS" customClass="PPRWelcomeViewController" customModule="PhilipsProductRegistration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V7X-V8-gvT" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XsE-4E-6eJ">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IkE-NJ-aBm" userLabel="ContentView">
+                                        <rect key="frame" x="44" y="0.0" width="680" height="499.5"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="peB-yB-m4f">
+                                                <rect key="frame" x="0.0" y="0.0" width="680" height="283.5"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=" prg_welcomeScreen_product_image"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="peB-yB-m4f" secondAttribute="height" multiplier="12:5" id="jng-XD-laS"/>
+                                                    <constraint firstAttribute="width" secondItem="peB-yB-m4f" secondAttribute="height" multiplier="16:9" priority="999" id="qZo-6t-rt1"/>
+                                                    <constraint firstAttribute="height" priority="250" id="xYC-wa-zvf"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="jng-XD-laS"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="jng-XD-laS"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register Your Product To:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CrQ-G7-4lM" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="307.5" width="648" height="20"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=" prg_welcomeScreen_header_label"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="themeColorType" value="contentItemDefaultTitleText"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_RegYourProduct_Lbltxt"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMI-9I-myC" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="343.5" width="648" height="32"/>
+                                                <accessibility key="accessibilityConfiguration" identifier=" prg_welcomeScreen_benefit_label"/>
+                                                <string key="text">• Get updates about your product
+• Extend your warranty by xx months</string>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="la7-qR-z5A" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="399.5" width="648" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_welcomeScreen_yes_button"/>
+                                                <state key="normal" title="Yes, extend my warranty"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Yes_Btntxt"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <segue destination="qgl-U2-Njz" kind="show" identifier="ProductRegistrationViewController" id="0KU-N9-hX8"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hb5-Fy-iRV" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="441.5" width="648" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_welcomeScreen_no_button"/>
+                                                <state key="normal" title="No thanks, register later"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_RegLater_Btntxt"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="noAction:" destination="aEL-v0-klX" eventType="touchUpInside" id="Ubz-xa-SwF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="CrQ-G7-4lM" secondAttribute="trailing" constant="16" id="68m-4r-ufU"/>
+                                            <constraint firstItem="Hb5-Fy-iRV" firstAttribute="top" secondItem="la7-qR-z5A" secondAttribute="bottom" constant="8" id="AV2-2U-3xS"/>
+                                            <constraint firstAttribute="trailing" secondItem="peB-yB-m4f" secondAttribute="trailing" id="GGX-3Z-VUx"/>
+                                            <constraint firstItem="peB-yB-m4f" firstAttribute="leading" secondItem="IkE-NJ-aBm" secondAttribute="leading" id="Gip-eM-UVf"/>
+                                            <constraint firstItem="CrQ-G7-4lM" firstAttribute="top" secondItem="IkE-NJ-aBm" secondAttribute="top" priority="750" constant="24" id="H16-GF-J7N"/>
+                                            <constraint firstItem="CrQ-G7-4lM" firstAttribute="top" secondItem="peB-yB-m4f" secondAttribute="bottom" constant="24" id="HVB-kb-vuG"/>
+                                            <constraint firstItem="KMI-9I-myC" firstAttribute="top" secondItem="CrQ-G7-4lM" secondAttribute="bottom" constant="16" id="JfU-ZD-AF2"/>
+                                            <constraint firstItem="KMI-9I-myC" firstAttribute="leading" secondItem="IkE-NJ-aBm" secondAttribute="leading" constant="16" id="MVf-Vc-03T"/>
+                                            <constraint firstItem="la7-qR-z5A" firstAttribute="leading" secondItem="IkE-NJ-aBm" secondAttribute="leading" constant="16" id="Vu0-an-Rbc"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="375" id="WpT-6h-SmD">
+                                                <variation key="widthClass=regular" constant="680"/>
+                                            </constraint>
+                                            <constraint firstItem="CrQ-G7-4lM" firstAttribute="leading" secondItem="IkE-NJ-aBm" secondAttribute="leading" constant="16" id="cf8-RJ-P7z"/>
+                                            <constraint firstAttribute="trailing" secondItem="Hb5-Fy-iRV" secondAttribute="trailing" constant="16" id="clY-62-DiZ"/>
+                                            <constraint firstItem="peB-yB-m4f" firstAttribute="top" secondItem="IkE-NJ-aBm" secondAttribute="top" id="e9F-gd-ncg"/>
+                                            <constraint firstAttribute="bottom" secondItem="Hb5-Fy-iRV" secondAttribute="bottom" constant="24" id="f7W-xo-H1o"/>
+                                            <constraint firstAttribute="trailing" secondItem="KMI-9I-myC" secondAttribute="trailing" constant="16" id="fTY-dt-gzZ"/>
+                                            <constraint firstItem="Hb5-Fy-iRV" firstAttribute="leading" secondItem="IkE-NJ-aBm" secondAttribute="leading" constant="16" id="h3r-rm-aOP"/>
+                                            <constraint firstItem="la7-qR-z5A" firstAttribute="top" secondItem="KMI-9I-myC" secondAttribute="bottom" constant="24" id="rIH-IR-GZs"/>
+                                            <constraint firstAttribute="trailing" secondItem="la7-qR-z5A" secondAttribute="trailing" constant="16" id="vqY-5X-4Ru"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="WpT-6h-SmD"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="WpT-6h-SmD"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="IkE-NJ-aBm" secondAttribute="bottom" id="3FE-46-VMq"/>
+                                    <constraint firstItem="IkE-NJ-aBm" firstAttribute="leading" secondItem="XsE-4E-6eJ" secondAttribute="leading" priority="999" id="LBR-lF-yse"/>
+                                    <constraint firstItem="IkE-NJ-aBm" firstAttribute="centerX" secondItem="XsE-4E-6eJ" secondAttribute="centerX" id="TTd-9c-SDn"/>
+                                    <constraint firstItem="IkE-NJ-aBm" firstAttribute="top" secondItem="XsE-4E-6eJ" secondAttribute="top" id="haO-bb-zIG"/>
+                                    <constraint firstAttribute="trailing" secondItem="IkE-NJ-aBm" secondAttribute="trailing" priority="999" id="vlO-01-dvQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="prg_welcomeScreen"/>
+                        <constraints>
+                            <constraint firstItem="XsE-4E-6eJ" firstAttribute="top" secondItem="1Mf-dZ-9Bs" secondAttribute="top" id="Iql-Ln-9j4"/>
+                            <constraint firstItem="1Mf-dZ-9Bs" firstAttribute="trailing" secondItem="XsE-4E-6eJ" secondAttribute="trailing" id="P91-7Q-9XA"/>
+                            <constraint firstItem="1Mf-dZ-9Bs" firstAttribute="bottom" secondItem="XsE-4E-6eJ" secondAttribute="bottom" id="Ug9-dd-XJc"/>
+                            <constraint firstItem="XsE-4E-6eJ" firstAttribute="leading" secondItem="1Mf-dZ-9Bs" secondAttribute="leading" id="o0w-0m-10m"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Mf-dZ-9Bs"/>
+                    </view>
+                    <connections>
+                        <outlet property="benifitLabel" destination="KMI-9I-myC" id="4fM-AN-7uo"/>
+                        <outlet property="headerLabel" destination="CrQ-G7-4lM" id="LMK-X9-j5R"/>
+                        <outlet property="productImageView" destination="peB-yB-m4f" id="hQH-jn-CMH"/>
+                        <outlet property="productRegisterButton" destination="la7-qR-z5A" id="3ap-14-aSY"/>
+                        <outlet property="registerLaterButton" destination="Hb5-Fy-iRV" id="96V-46-2eb"/>
+                        <outlet property="scrollView" destination="XsE-4E-6eJ" id="HYf-Cg-1t2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbf-ji-gj3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="jMw-Yy-xZ0" userLabel="Content View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="373.5"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wcr-Ow-e6W" userLabel="Register Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="-16.5" y="69" width="408" height="0.0"/>
+                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="21"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_RegYourProduct_Lbltxt"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qAZ-Zy-OXs" userLabel="Update Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="-16.5" y="95" width="408" height="0.0"/>
+                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_ReceiveUpdates_Lbltxt"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="11L-l8-0mM" userLabel="Config Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="-16.5" y="106" width="408" height="0.0"/>
+                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIV-SM-qxs" userLabel="Yes Button" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="-16.5" y="238.5" width="408" height="40"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Yes_Btntxt"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ba-Pv-WRi" userLabel="No Button" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="-16.5" y="304.5" width="408" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="bme-5A-0rw"/>
+                                <constraint firstAttribute="width" constant="262" id="opy-ni-sLf">
+                                    <variation key="heightClass=regular-widthClass=regular" constant="408"/>
+                                </constraint>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                    <integer key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_RegLater_Btntxt"/>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="3ba-Pv-WRi" secondAttribute="bottom" constant="29" id="17n-Wb-F5I"/>
+                        <constraint firstItem="DIV-SM-qxs" firstAttribute="top" secondItem="11L-l8-0mM" secondAttribute="bottom" priority="249" constant="100" id="9cg-0G-VtQ">
+                            <variation key="heightClass=regular-widthClass=regular" constant="43"/>
+                        </constraint>
+                        <constraint firstItem="3ba-Pv-WRi" firstAttribute="width" secondItem="DIV-SM-qxs" secondAttribute="width" id="AOI-hG-ttV"/>
+                        <constraint firstItem="wcr-Ow-e6W" firstAttribute="top" secondItem="jMw-Yy-xZ0" secondAttribute="top" constant="429" id="F2S-aw-muj">
+                            <variation key="heightClass=regular-widthClass=regular" constant="69"/>
+                        </constraint>
+                        <constraint firstItem="DIV-SM-qxs" firstAttribute="top" relation="greaterThanOrEqual" secondItem="11L-l8-0mM" secondAttribute="bottom" constant="30" id="M4V-oa-GMd"/>
+                        <constraint firstItem="3ba-Pv-WRi" firstAttribute="top" secondItem="DIV-SM-qxs" secondAttribute="bottom" constant="11" id="O0r-cB-ww9">
+                            <variation key="heightClass=regular-widthClass=regular" constant="26"/>
+                        </constraint>
+                        <constraint firstItem="DIV-SM-qxs" firstAttribute="leading" secondItem="3ba-Pv-WRi" secondAttribute="leading" id="Xko-Ey-7SR"/>
+                        <constraint firstItem="qAZ-Zy-OXs" firstAttribute="top" secondItem="wcr-Ow-e6W" secondAttribute="bottom" constant="29" id="Ywa-Ij-5Yh">
+                            <variation key="heightClass=regular-widthClass=regular" constant="26"/>
+                        </constraint>
+                        <constraint firstItem="qAZ-Zy-OXs" firstAttribute="trailing" secondItem="11L-l8-0mM" secondAttribute="trailing" id="eIv-aW-mc9"/>
+                        <constraint firstItem="11L-l8-0mM" firstAttribute="top" secondItem="qAZ-Zy-OXs" secondAttribute="bottom" constant="11" id="faq-iT-dnx"/>
+                        <constraint firstItem="11L-l8-0mM" firstAttribute="trailing" secondItem="DIV-SM-qxs" secondAttribute="trailing" id="izu-XN-O2j"/>
+                        <constraint firstItem="wcr-Ow-e6W" firstAttribute="leading" secondItem="qAZ-Zy-OXs" secondAttribute="leading" id="jKC-vL-8kD"/>
+                        <constraint firstItem="qAZ-Zy-OXs" firstAttribute="leading" secondItem="11L-l8-0mM" secondAttribute="leading" id="o1l-xn-uq0"/>
+                        <constraint firstItem="3ba-Pv-WRi" firstAttribute="centerX" secondItem="jMw-Yy-xZ0" secondAttribute="centerX" id="p0e-9E-QRr"/>
+                        <constraint firstItem="DIV-SM-qxs" firstAttribute="trailing" secondItem="3ba-Pv-WRi" secondAttribute="trailing" id="pFB-FU-qSl"/>
+                        <constraint firstItem="3ba-Pv-WRi" firstAttribute="height" secondItem="DIV-SM-qxs" secondAttribute="height" id="ra5-Ez-nLl"/>
+                        <constraint firstItem="11L-l8-0mM" firstAttribute="leading" secondItem="DIV-SM-qxs" secondAttribute="leading" id="sVe-JQ-YgL"/>
+                        <constraint firstItem="wcr-Ow-e6W" firstAttribute="trailing" secondItem="qAZ-Zy-OXs" secondAttribute="trailing" id="wbE-A2-GEm"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Gy4-zy-wM7"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="545" y="-1820"/>
+        </scene>
+        <!--Register Products DLS-->
+        <scene sceneID="Exr-jc-43e">
+            <objects>
+                <viewController storyboardIdentifier="ProductRegistrationViewController" id="qgl-U2-Njz" userLabel="Register Products DLS" customClass="PPRRegisterProductsViewController" customModule="PhilipsProductRegistration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iK2-LO-zFy" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xgJ-Kj-HEN">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NFQ-BF-c1m" userLabel="ContentView">
+                                        <rect key="frame" x="44" y="0.0" width="680" height="920"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="T1h-bY-Gpz">
+                                                <rect key="frame" x="16" y="20" width="648" height="54"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SGk-rc-U1T" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="648" height="0.0"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_productTitle_label"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                                <integer key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIF-Sq-Qsf" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="4" width="648" height="50"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_ctn_label"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="a4c-yd-BNN">
+                                                <rect key="frame" x="16" y="98" width="648" height="324"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_product_image"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="a4c-yd-BNN" secondAttribute="height" multiplier="1:1" priority="750" id="4c0-Qi-gev"/>
+                                                    <constraint firstAttribute="width" secondItem="a4c-yd-BNN" secondAttribute="height" multiplier="2:1" id="CPL-qU-hT7"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="4c0-Qi-gev"/>
+                                                        <exclude reference="CPL-qU-hT7"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=compact">
+                                                    <mask key="constraints">
+                                                        <include reference="4c0-Qi-gev"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="CPL-qU-hT7"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="aFi-Av-5fM">
+                                                <rect key="frame" x="16" y="434" width="648" height="420"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="xjG-th-MPG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="648" height="121"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aU-jg-LdW" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="648" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_serialNumber_label"/>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_SerialNum_Lbltxt"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3A-On-BpU">
+                                                                <rect key="frame" x="0.0" y="54" width="648" height="17"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your serial number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1lX-Mm-5Xf" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="648" height="17"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_serialNumber_validationEditText"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationPlaceholderLocalizedText" value="PRG_Please_Enter_SerialNum_Txtfldtxt"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="textFieldEditing:" destination="qgl-U2-Njz" eventType="editingChanged" id="hUv-B1-TBH"/>
+                                                                            <outlet property="bottomConstraint" destination="ctF-kQ-lAm" id="rN2-Km-VNj"/>
+                                                                            <outlet property="delegate" destination="qgl-U2-Njz" id="5CF-ss-QmC"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="1lX-Mm-5Xf" firstAttribute="leading" secondItem="K3A-On-BpU" secondAttribute="leading" id="UB1-bC-mrg"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="1lX-Mm-5Xf" secondAttribute="bottom" id="ctF-kQ-lAm"/>
+                                                                    <constraint firstItem="1lX-Mm-5Xf" firstAttribute="top" secondItem="K3A-On-BpU" secondAttribute="top" id="hk2-qI-mQ6"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="1lX-Mm-5Xf" secondAttribute="trailing" id="v3h-6r-0gK"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EBv-v4-fr0" userLabel="FindSerialView">
+                                                                <rect key="frame" x="0.0" y="75" width="648" height="46"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rb5-dn-gvZ" customClass="UIDHyperLinkLabel" customModule="PhilipsUIKitDLS">
+                                                                        <rect key="frame" x="25" y="12.5" width="623" height="21"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_findSerialNumber_Label"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="X6d-xi-DJ0"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Find_Serial_Number"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </label>
+                                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="questionmark" translatesAutoresizingMaskIntoConstraints="NO" id="vMm-uC-Hyk">
+                                                                        <rect key="frame" x="0.0" y="9" width="20" height="20"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" secondItem="vMm-uC-Hyk" secondAttribute="height" multiplier="1:1" id="YWR-cu-kA2"/>
+                                                                            <constraint firstAttribute="height" constant="20" id="lAc-qo-Rmn"/>
+                                                                        </constraints>
+                                                                    </imageView>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <gestureRecognizers/>
+                                                                <constraints>
+                                                                    <constraint firstItem="vMm-uC-Hyk" firstAttribute="centerY" secondItem="Rb5-dn-gvZ" secondAttribute="centerY" constant="-4" id="5p7-vi-Ia3"/>
+                                                                    <constraint firstItem="Rb5-dn-gvZ" firstAttribute="centerY" secondItem="EBv-v4-fr0" secondAttribute="centerY" id="OnW-e4-bX8"/>
+                                                                    <constraint firstItem="Rb5-dn-gvZ" firstAttribute="leading" secondItem="vMm-uC-Hyk" secondAttribute="trailing" constant="5" id="PHI-ey-hjW"/>
+                                                                    <constraint firstItem="vMm-uC-Hyk" firstAttribute="leading" secondItem="EBv-v4-fr0" secondAttribute="leading" id="SoK-q8-TrX"/>
+                                                                    <constraint firstAttribute="height" constant="46" id="xVN-W6-j2U"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Rb5-dn-gvZ" secondAttribute="trailing" id="zhU-KK-XkL"/>
+                                                                </constraints>
+                                                                <connections>
+                                                                    <outletCollection property="gestureRecognizers" destination="Pgm-Wm-xSU" appends="YES" id="4DK-rH-pew"/>
+                                                                </connections>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="GRA-q9-vgA">
+                                                        <rect key="frame" x="0.0" y="129" width="648" height="291"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MyQ-9T-9qr" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="648" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_dateOfPurchase_label"/>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Date_Of_Purchase_Lbltxt"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bGT-HV-f0g">
+                                                                <rect key="frame" x="0.0" y="54" width="648" height="17"/>
+                                                                <subviews>
+                                                                    <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Please select..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5t5-YX-PJN" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="648" height="17"/>
+                                                                        <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_dateOfPurchase_validationEditText"/>
+                                                                        <nil key="textColor"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                        <textInputTraits key="textInputTraits"/>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationPlaceholderLocalizedText" value="PRG_Please_Select"/>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <outlet property="bottomConstraint" destination="SMA-dd-K0u" id="h2X-iX-Bzq"/>
+                                                                            <outlet property="delegate" destination="qgl-U2-Njz" id="G5p-f3-NYf"/>
+                                                                        </connections>
+                                                                    </textField>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="5t5-YX-PJN" firstAttribute="leading" secondItem="bGT-HV-f0g" secondAttribute="leading" id="74n-Yl-eu8"/>
+                                                                    <constraint firstItem="5t5-YX-PJN" firstAttribute="top" secondItem="bGT-HV-f0g" secondAttribute="top" id="Eh3-Kg-8Op"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="5t5-YX-PJN" secondAttribute="trailing" id="GTJ-EF-8R7"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="5t5-YX-PJN" secondAttribute="bottom" id="SMA-dd-K0u"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Xlu-wQ-InJ" customClass="UIDDatePicker" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="75" width="648" height="216"/>
+                                                                <date key="date" timeIntervalSinceReferenceDate="523968053.91553998">
+                                                                    <!--2017-08-09 10:40:53 +0000-->
+                                                                </date>
+                                                                <connections>
+                                                                    <action selector="dateChanged:" destination="qgl-U2-Njz" eventType="valueChanged" id="ZJF-IG-BFI"/>
+                                                                </connections>
+                                                            </datePicker>
+                                                        </subviews>
+                                                        <gestureRecognizers/>
+                                                        <connections>
+                                                            <outletCollection property="gestureRecognizers" destination="CCl-Bu-EpF" appends="YES" id="SPE-ll-Az0"/>
+                                                        </connections>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DfU-Gx-Nvy" customClass="UIDProgressButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="878" width="648" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen_register_button"/>
+                                                <state key="normal" title="Register"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Register_Btntxt"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="registerAction:" destination="qgl-U2-Njz" eventType="touchUpInside" id="u9G-gm-njf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="DfU-Gx-Nvy" firstAttribute="leading" secondItem="NFQ-BF-c1m" secondAttribute="leading" constant="16" id="2mM-Mv-bCF"/>
+                                            <constraint firstItem="DfU-Gx-Nvy" firstAttribute="top" secondItem="aFi-Av-5fM" secondAttribute="bottom" constant="24" id="48y-P5-tPN"/>
+                                            <constraint firstItem="aFi-Av-5fM" firstAttribute="leading" secondItem="T1h-bY-Gpz" secondAttribute="leading" id="A0g-yB-0xL"/>
+                                            <constraint firstItem="a4c-yd-BNN" firstAttribute="leading" secondItem="T1h-bY-Gpz" secondAttribute="leading" id="DZA-kS-7sr"/>
+                                            <constraint firstItem="a4c-yd-BNN" firstAttribute="trailing" secondItem="T1h-bY-Gpz" secondAttribute="trailing" id="F66-2p-jV3"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="680" id="Mxr-VV-zff"/>
+                                            <constraint firstAttribute="trailing" secondItem="DfU-Gx-Nvy" secondAttribute="trailing" constant="16" id="RFS-Hg-cGg"/>
+                                            <constraint firstItem="aFi-Av-5fM" firstAttribute="trailing" secondItem="T1h-bY-Gpz" secondAttribute="trailing" id="XKV-8u-mv5"/>
+                                            <constraint firstItem="aFi-Av-5fM" firstAttribute="top" secondItem="a4c-yd-BNN" secondAttribute="bottom" constant="12" id="Xv1-vW-Pjg"/>
+                                            <constraint firstAttribute="bottom" secondItem="DfU-Gx-Nvy" secondAttribute="bottom" constant="12" id="jq4-wa-3dT"/>
+                                            <constraint firstItem="T1h-bY-Gpz" firstAttribute="top" secondItem="NFQ-BF-c1m" secondAttribute="top" constant="20" id="lcz-N1-qVJ"/>
+                                            <constraint firstItem="T1h-bY-Gpz" firstAttribute="leading" secondItem="NFQ-BF-c1m" secondAttribute="leading" constant="16" id="pID-8b-PCc"/>
+                                            <constraint firstAttribute="trailing" secondItem="T1h-bY-Gpz" secondAttribute="trailing" constant="16" id="qBg-bL-89M"/>
+                                            <constraint firstItem="a4c-yd-BNN" firstAttribute="top" secondItem="T1h-bY-Gpz" secondAttribute="bottom" constant="24" id="ukQ-Kf-fJP"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Mxr-VV-zff"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="Mxr-VV-zff"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="NFQ-BF-c1m" secondAttribute="bottom" id="HbP-Q2-awc"/>
+                                    <constraint firstAttribute="trailing" secondItem="NFQ-BF-c1m" secondAttribute="trailing" priority="999" id="Xdf-EX-Hf0"/>
+                                    <constraint firstItem="NFQ-BF-c1m" firstAttribute="leading" secondItem="xgJ-Kj-HEN" secondAttribute="leading" priority="999" id="hGG-mf-hnX"/>
+                                    <constraint firstItem="NFQ-BF-c1m" firstAttribute="centerX" secondItem="xgJ-Kj-HEN" secondAttribute="centerX" id="uOt-qZ-CGQ"/>
+                                    <constraint firstItem="NFQ-BF-c1m" firstAttribute="top" secondItem="xgJ-Kj-HEN" secondAttribute="top" id="uSR-LN-ABt"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="prg_registerScreen"/>
+                        <constraints>
+                            <constraint firstItem="5li-7K-hIu" firstAttribute="bottom" secondItem="xgJ-Kj-HEN" secondAttribute="bottom" id="7wc-Vt-XEj"/>
+                            <constraint firstItem="xgJ-Kj-HEN" firstAttribute="top" secondItem="5li-7K-hIu" secondAttribute="top" id="Qmw-a2-m1s"/>
+                            <constraint firstItem="5li-7K-hIu" firstAttribute="trailing" secondItem="xgJ-Kj-HEN" secondAttribute="trailing" id="d4L-NM-d8S"/>
+                            <constraint firstItem="xgJ-Kj-HEN" firstAttribute="leading" secondItem="5li-7K-hIu" secondAttribute="leading" id="s4J-SC-efA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5li-7K-hIu"/>
+                    </view>
+                    <connections>
+                        <outlet property="ctnLabel" destination="MIF-Sq-Qsf" id="pzC-Vi-rFg"/>
+                        <outlet property="dateNoContainerView" destination="GRA-q9-vgA" id="f9Z-Hp-hkd"/>
+                        <outlet property="datePicker" destination="Xlu-wQ-InJ" id="ddR-a0-g1a"/>
+                        <outlet property="datetextFeild" destination="5t5-YX-PJN" id="BCK-HX-bdS"/>
+                        <outlet property="imageView" destination="a4c-yd-BNN" id="n3G-of-JOr"/>
+                        <outlet property="modelLabel" destination="SGk-rc-U1T" id="vJ8-3Q-Osd"/>
+                        <outlet property="registerButton" destination="DfU-Gx-Nvy" id="fIM-Eo-mOq"/>
+                        <outlet property="scrollView" destination="xgJ-Kj-HEN" id="KD3-Ad-hSj"/>
+                        <outlet property="serailNumberField" destination="1lX-Mm-5Xf" id="Bzo-8e-wn6"/>
+                        <outlet property="serailNumberLink" destination="Rb5-dn-gvZ" id="vF3-Jw-vMg"/>
+                        <outlet property="serialNoContainerView" destination="xjG-th-MPG" id="zrR-ap-vXx"/>
+                        <segue destination="qSe-2s-tI8" kind="show" identifier="SuccessViewController" id="Jzg-wX-vPr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UKt-YY-2zG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="9a2-tZ-O7C">
+                    <connections>
+                        <action selector="tapAction:" destination="qgl-U2-Njz" id="fre-re-W5m"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CCl-Bu-EpF" userLabel="DatePickerTap">
+                    <connections>
+                        <action selector="dateTapAction:" destination="qgl-U2-Njz" id="Mm0-s2-NPf"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="Pgm-Wm-xSU" userLabel="FindSerialTap">
+                    <connections>
+                        <segue destination="H2g-D0-eHN" kind="show" identifier="FindSerialNumberViewController" id="crE-lL-kQM"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="1382.608695652174" y="-1835.054347826087"/>
+        </scene>
+        <!--FindSerialNumberVC DLS-->
+        <scene sceneID="PjO-Uv-LXM">
+            <objects>
+                <viewController storyboardIdentifier="FindSerialNumberViewController" title="Register your product" useStoryboardIdentifierAsRestorationIdentifier="YES" id="H2g-D0-eHN" userLabel="FindSerialNumberVC DLS" customClass="PPRFindSerialNumberViewController" customModule="PhilipsProductRegistration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jPA-zF-1Wn" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgC-DO-T4r">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cy5-Yh-MFD" userLabel="contentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="493.5"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="76h-JG-etu">
+                                                <rect key="frame" x="16" y="24" width="736" height="306.5"/>
+                                                <accessibility key="accessibilityConfiguration" label="prg_findSerialNo_image"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="76h-JG-etu" secondAttribute="height" multiplier="16:9" priority="750" id="8to-kL-A6N"/>
+                                                    <constraint firstAttribute="width" secondItem="76h-JG-etu" secondAttribute="height" multiplier="12:5" id="y0i-Ym-c6l"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="y0i-Ym-c6l"/>
+                                                    </mask>
+                                                </variation>
+                                                <variation key="widthClass=regular">
+                                                    <mask key="constraints">
+                                                        <include reference="y0i-Ym-c6l"/>
+                                                    </mask>
+                                                </variation>
+                                            </imageView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVe-fk-J67" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="369" y="162.5" width="30" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="30" id="Fs1-0o-PiA"/>
+                                                    <constraint firstAttribute="height" constant="30" id="hjQ-Mt-VW7"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DAC-Ma-qEJ" userLabel="Find Serial Number Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="354.5" width="736" height="24"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_findSerialNo_title_label"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="BgF-nf-Tqr"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                <color key="textColor" red="0.0085405521089999999" green="0.1419457495" blue="0.39428105949999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Find_Serial_Number"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aXc-EV-96k" userLabel="Done Button" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="447.5" width="736" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" label="prg_findSerialNo_done_button"/>
+                                                <state key="disabled" title="Ok, I found it"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_ok_i_found_it"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="doneButtonTapped:" destination="H2g-D0-eHN" eventType="touchUpInside" id="RlQ-Z2-eCB"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dBB-cY-8Yh" userLabel="Find Serial Number Desc Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="402.5" width="736" height="21"/>
+                                                <accessibility key="accessibilityConfiguration" label="prg_findSerialNo_desc_label"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="PBb-qW-qeu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                <color key="textColor" red="0.0078431372550000003" green="0.14117647059999999" blue="0.39607843139999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="dBB-cY-8Yh" firstAttribute="top" secondItem="DAC-Ma-qEJ" secondAttribute="bottom" constant="24" id="31t-LX-ZgZ"/>
+                                            <constraint firstItem="DAC-Ma-qEJ" firstAttribute="leading" secondItem="cy5-Yh-MFD" secondAttribute="leading" constant="16" id="8MQ-8b-PPy"/>
+                                            <constraint firstItem="dBB-cY-8Yh" firstAttribute="leading" secondItem="cy5-Yh-MFD" secondAttribute="leading" constant="16" id="B7D-Uu-dKa"/>
+                                            <constraint firstItem="aXc-EV-96k" firstAttribute="leading" secondItem="cy5-Yh-MFD" secondAttribute="leading" constant="16" id="CX2-fI-I1x"/>
+                                            <constraint firstItem="76h-JG-etu" firstAttribute="top" secondItem="cy5-Yh-MFD" secondAttribute="top" constant="24" id="IOe-a2-FFf"/>
+                                            <constraint firstItem="eVe-fk-J67" firstAttribute="centerX" secondItem="76h-JG-etu" secondAttribute="centerX" id="Ira-h2-tC0"/>
+                                            <constraint firstAttribute="trailing" secondItem="dBB-cY-8Yh" secondAttribute="trailing" constant="16" id="L0s-Et-uxE"/>
+                                            <constraint firstAttribute="trailing" secondItem="DAC-Ma-qEJ" secondAttribute="trailing" constant="16" id="Mf0-SR-lnq"/>
+                                            <constraint firstItem="aXc-EV-96k" firstAttribute="top" secondItem="dBB-cY-8Yh" secondAttribute="bottom" constant="24" id="O37-Ym-Wx3"/>
+                                            <constraint firstAttribute="trailing" secondItem="aXc-EV-96k" secondAttribute="trailing" constant="16" id="P1O-NY-QyI"/>
+                                            <constraint firstAttribute="bottom" secondItem="aXc-EV-96k" secondAttribute="bottom" constant="12" id="PRJ-Ap-NKP"/>
+                                            <constraint firstItem="76h-JG-etu" firstAttribute="leading" secondItem="cy5-Yh-MFD" secondAttribute="leading" constant="16" id="XOP-nf-wR4"/>
+                                            <constraint firstAttribute="trailing" secondItem="76h-JG-etu" secondAttribute="trailing" constant="16" id="YIw-81-0DS"/>
+                                            <constraint firstItem="DAC-Ma-qEJ" firstAttribute="top" secondItem="76h-JG-etu" secondAttribute="bottom" constant="24" id="d2B-gR-Tl8"/>
+                                            <constraint firstItem="eVe-fk-J67" firstAttribute="centerY" secondItem="76h-JG-etu" secondAttribute="centerY" id="rA5-Bl-6Eq"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cy5-Yh-MFD" firstAttribute="top" secondItem="dgC-DO-T4r" secondAttribute="top" id="0W8-k0-Kr7"/>
+                                    <constraint firstItem="cy5-Yh-MFD" firstAttribute="width" secondItem="dgC-DO-T4r" secondAttribute="width" id="Qmb-S9-515"/>
+                                    <constraint firstAttribute="bottom" secondItem="cy5-Yh-MFD" secondAttribute="bottom" id="aBe-el-d6B"/>
+                                    <constraint firstItem="cy5-Yh-MFD" firstAttribute="centerX" secondItem="dgC-DO-T4r" secondAttribute="centerX" id="i4a-Lz-Myk"/>
+                                    <constraint firstAttribute="trailing" secondItem="cy5-Yh-MFD" secondAttribute="trailing" priority="999" id="l63-gi-7AF"/>
+                                    <constraint firstItem="cy5-Yh-MFD" firstAttribute="leading" secondItem="dgC-DO-T4r" secondAttribute="leading" priority="999" id="zq0-BH-jEw"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="i4a-Lz-Myk"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="i4a-Lz-Myk"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <accessibility key="accessibilityConfiguration" identifier="prg_findSerialNo"/>
+                        <constraints>
+                            <constraint firstItem="22Q-tz-kcr" firstAttribute="bottom" secondItem="dgC-DO-T4r" secondAttribute="bottom" id="cSK-lw-jnE"/>
+                            <constraint firstItem="dgC-DO-T4r" firstAttribute="top" secondItem="22Q-tz-kcr" secondAttribute="top" id="e2f-nb-r78"/>
+                            <constraint firstItem="22Q-tz-kcr" firstAttribute="trailing" secondItem="dgC-DO-T4r" secondAttribute="trailing" id="etn-T8-ZTB"/>
+                            <constraint firstItem="dgC-DO-T4r" firstAttribute="leading" secondItem="22Q-tz-kcr" secondAttribute="leading" id="vyo-yZ-JlO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="22Q-tz-kcr"/>
+                    </view>
+                    <connections>
+                        <outlet property="doneButton" destination="aXc-EV-96k" id="dsn-XS-QjJ"/>
+                        <outlet property="findSerialNumberDescriptionLabel" destination="dBB-cY-8Yh" id="Gkq-Xl-kye"/>
+                        <outlet property="findSerialNumberTitleLabel" destination="DAC-Ma-qEJ" id="RzB-yc-Ian"/>
+                        <outlet property="productImageView" destination="76h-JG-etu" id="SbO-xd-a6A"/>
+                        <outlet property="progressIndicator" destination="eVe-fk-J67" id="CBZ-pR-qS8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LhG-gT-5Qj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2107.8125" y="-2516.015625"/>
+        </scene>
+        <!--PPRSuccessViewController DLS-->
+        <scene sceneID="hS6-Rj-tbJ">
+            <objects>
+                <viewController storyboardIdentifier="PPRSuccessViewController" id="qSe-2s-tI8" userLabel="PPRSuccessViewController DLS" customClass="PPRSuccessViewController" customModule="PhilipsProductRegistration" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CH3-c4-p1F" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bz3-F7-oQy">
+                                <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CeO-Cw-Atf" userLabel="Content View">
+                                        <rect key="frame" x="44" y="0.0" width="680" height="290"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lt2-EH-Sg2" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="24" width="648" height="30"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_header_label"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="M1y-y4-Luy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_RegSuccess_Lbltxt"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLS-yD-SoT" userLabel="Border" customClass="UIViewSeperator" customModule="PhilipsProductRegistration" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="70" width="680" height="1"/>
+                                                <color key="backgroundColor" red="0.88698186528497414" green="0.88698186528497414" blue="0.88698186528497414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="cP8-oF-ws0"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VnU-jf-hT6" userLabel="Product Details View">
+                                                <rect key="frame" x="0.0" y="71" width="680" height="120"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="product_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="iqd-Cd-wwk">
+                                                        <rect key="frame" x="16" y="16" width="88" height="88"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_product_image" label="prg_successScreen_product_image"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="88" id="wuJ-tW-vqq"/>
+                                                            <constraint firstAttribute="height" constant="88" id="xrD-4W-Emy"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lAM-yX-VkG" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="116" y="16" width="548" height="21"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_model_label" label="prg_successScreen_model_label"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="cW5-9s-ALg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TAZ-OP-yYr" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="116" y="41" width="548" height="18"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_ctn_label" label="prg_successScreen_ctn_label"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="18" id="Vgz-Ep-6XJ"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nrz-TZ-jLU">
+                                                        <rect key="frame" x="116" y="63" width="24" height="24"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_success_image"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="24" id="Fuh-in-iCP"/>
+                                                            <constraint firstAttribute="height" constant="24" id="Tdj-ia-qQo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79J-B2-3S8" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="148" y="64.5" width="516" height="21"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_registered_label"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="DJR-2p-YnX"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_registered"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_details_view"/>
+                                                <constraints>
+                                                    <constraint firstItem="iqd-Cd-wwk" firstAttribute="leading" secondItem="VnU-jf-hT6" secondAttribute="leading" constant="16" id="3Tl-rt-q7J"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lAM-yX-VkG" secondAttribute="trailing" constant="16" id="4sI-oe-mYD"/>
+                                                    <constraint firstItem="79J-B2-3S8" firstAttribute="leading" secondItem="Nrz-TZ-jLU" secondAttribute="trailing" constant="8" id="5wK-Jg-saV"/>
+                                                    <constraint firstItem="lAM-yX-VkG" firstAttribute="leading" secondItem="iqd-Cd-wwk" secondAttribute="trailing" constant="12" id="CQu-Kd-WTa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="79J-B2-3S8" secondAttribute="trailing" constant="16" id="PPZ-cn-eTB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="TAZ-OP-yYr" secondAttribute="trailing" constant="16" id="QH3-hk-oKL"/>
+                                                    <constraint firstItem="Nrz-TZ-jLU" firstAttribute="top" secondItem="TAZ-OP-yYr" secondAttribute="bottom" constant="4" id="QQ0-hM-BwA"/>
+                                                    <constraint firstItem="Nrz-TZ-jLU" firstAttribute="leading" secondItem="iqd-Cd-wwk" secondAttribute="trailing" constant="12" id="YGo-Mj-hmh"/>
+                                                    <constraint firstAttribute="bottom" secondItem="iqd-Cd-wwk" secondAttribute="bottom" priority="500" constant="16" id="ZbY-Wc-owT"/>
+                                                    <constraint firstItem="79J-B2-3S8" firstAttribute="centerY" secondItem="Nrz-TZ-jLU" secondAttribute="centerY" id="dxM-zJ-MM3"/>
+                                                    <constraint firstItem="TAZ-OP-yYr" firstAttribute="leading" secondItem="iqd-Cd-wwk" secondAttribute="trailing" constant="12" id="gi9-ah-Nd8"/>
+                                                    <constraint firstItem="iqd-Cd-wwk" firstAttribute="top" secondItem="VnU-jf-hT6" secondAttribute="top" constant="16" id="nHV-ff-mba"/>
+                                                    <constraint firstItem="lAM-yX-VkG" firstAttribute="top" secondItem="VnU-jf-hT6" secondAttribute="top" constant="16" id="qwA-Wz-Spg"/>
+                                                    <constraint firstItem="TAZ-OP-yYr" firstAttribute="top" secondItem="lAM-yX-VkG" secondAttribute="bottom" constant="4" id="ssE-8e-DgP"/>
+                                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="79J-B2-3S8" secondAttribute="bottom" constant="16" id="yez-Yi-B88"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yU-Ra-vOa" userLabel="Border" customClass="UIViewSeperator" customModule="PhilipsProductRegistration" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="191" width="680" height="1"/>
+                                                <color key="backgroundColor" red="0.88698186528497414" green="0.88698186528497414" blue="0.88698186528497414" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="1" id="Wm5-l5-wKF"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="q9e-jQ-Rh0">
+                                                <rect key="frame" x="16" y="208" width="648" height="8"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-NZ-6Fy" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="648" height="0.0"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_warranty_label"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbm-3M-s92" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="0.0" y="8" width="648" height="0.0"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_email_label"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGd-DM-TXh" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="232" width="648" height="34"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="prg_successScreen_continue_button"/>
+                                                <state key="normal" title="Continue"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="productRegistrationLocalizedText" value="PRG_Continue"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="lt2-EH-Sg2" secondAttribute="trailing" constant="16" id="3DT-ib-ha6"/>
+                                            <constraint firstItem="lt2-EH-Sg2" firstAttribute="top" secondItem="CeO-Cw-Atf" secondAttribute="top" constant="24" id="4sY-ie-ghe"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="680" id="6OV-aC-c8A"/>
+                                            <constraint firstItem="VnU-jf-hT6" firstAttribute="top" secondItem="uLS-yD-SoT" secondAttribute="bottom" id="7Tr-3J-wl2"/>
+                                            <constraint firstAttribute="bottom" secondItem="EGd-DM-TXh" secondAttribute="bottom" constant="24" id="Fge-OL-JJ1"/>
+                                            <constraint firstItem="EGd-DM-TXh" firstAttribute="top" secondItem="q9e-jQ-Rh0" secondAttribute="bottom" constant="16" id="H2L-OW-5oO"/>
+                                            <constraint firstItem="1yU-Ra-vOa" firstAttribute="leading" secondItem="CeO-Cw-Atf" secondAttribute="leading" id="Jmd-Q2-dmA"/>
+                                            <constraint firstItem="uLS-yD-SoT" firstAttribute="leading" secondItem="CeO-Cw-Atf" secondAttribute="leading" id="NdU-8Y-vDQ"/>
+                                            <constraint firstItem="EGd-DM-TXh" firstAttribute="leading" secondItem="CeO-Cw-Atf" secondAttribute="leading" constant="16" id="OUC-Ej-UYx"/>
+                                            <constraint firstAttribute="trailing" secondItem="uLS-yD-SoT" secondAttribute="trailing" id="R3S-bm-Dhf"/>
+                                            <constraint firstItem="VnU-jf-hT6" firstAttribute="leading" secondItem="CeO-Cw-Atf" secondAttribute="leading" id="XfU-nz-3MP"/>
+                                            <constraint firstItem="lt2-EH-Sg2" firstAttribute="leading" secondItem="CeO-Cw-Atf" secondAttribute="leading" constant="16" id="a6u-PP-Cah"/>
+                                            <constraint firstItem="q9e-jQ-Rh0" firstAttribute="leading" secondItem="CeO-Cw-Atf" secondAttribute="leading" constant="16" id="bcc-yZ-uDa"/>
+                                            <constraint firstItem="1yU-Ra-vOa" firstAttribute="top" secondItem="VnU-jf-hT6" secondAttribute="bottom" id="bdv-M6-xts"/>
+                                            <constraint firstAttribute="trailing" secondItem="VnU-jf-hT6" secondAttribute="trailing" id="eFk-KI-OaS"/>
+                                            <constraint firstItem="EGd-DM-TXh" firstAttribute="top" secondItem="1yU-Ra-vOa" secondAttribute="bottom" priority="250" constant="16" id="f7m-j1-X2C"/>
+                                            <constraint firstItem="lAM-yX-VkG" firstAttribute="leading" secondItem="iqd-Cd-wwk" secondAttribute="trailing" constant="12" id="hAt-aT-Wyi"/>
+                                            <constraint firstItem="q9e-jQ-Rh0" firstAttribute="top" secondItem="1yU-Ra-vOa" secondAttribute="bottom" constant="16" id="ifn-hf-ZTe"/>
+                                            <constraint firstItem="iqd-Cd-wwk" firstAttribute="top" secondItem="CeO-Cw-Atf" secondAttribute="top" constant="87" id="lTP-fs-dyz"/>
+                                            <constraint firstAttribute="trailing" secondItem="q9e-jQ-Rh0" secondAttribute="trailing" constant="16" id="mQo-9V-iJe"/>
+                                            <constraint firstItem="TAZ-OP-yYr" firstAttribute="leading" secondItem="iqd-Cd-wwk" secondAttribute="trailing" constant="12" id="nbS-8D-Lff"/>
+                                            <constraint firstItem="uLS-yD-SoT" firstAttribute="top" secondItem="lt2-EH-Sg2" secondAttribute="bottom" constant="16" id="r5f-YV-LkU"/>
+                                            <constraint firstAttribute="trailing" secondItem="EGd-DM-TXh" secondAttribute="trailing" constant="16" id="s9q-9x-vEB"/>
+                                            <constraint firstAttribute="trailing" secondItem="1yU-Ra-vOa" secondAttribute="trailing" id="w60-6C-nrK"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="6OV-aC-c8A"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=regular">
+                                            <mask key="constraints">
+                                                <include reference="6OV-aC-c8A"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="CeO-Cw-Atf" firstAttribute="centerX" secondItem="Bz3-F7-oQy" secondAttribute="centerX" id="22g-vA-gU5"/>
+                                    <constraint firstAttribute="bottom" secondItem="CeO-Cw-Atf" secondAttribute="bottom" id="Abr-rn-gru"/>
+                                    <constraint firstItem="CeO-Cw-Atf" firstAttribute="leading" secondItem="Bz3-F7-oQy" secondAttribute="leading" priority="999" id="Aqg-hS-HUd"/>
+                                    <constraint firstItem="CeO-Cw-Atf" firstAttribute="top" secondItem="Bz3-F7-oQy" secondAttribute="top" id="leg-bX-VDI"/>
+                                    <constraint firstAttribute="trailing" secondItem="CeO-Cw-Atf" secondAttribute="trailing" priority="999" id="m71-qd-4pM"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="22g-vA-gU5"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="22g-vA-gU5"/>
+                                    </mask>
+                                </variation>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="prg_successScreen"/>
+                        <constraints>
+                            <constraint firstItem="Bz3-F7-oQy" firstAttribute="top" secondItem="qs7-Ji-jC8" secondAttribute="top" id="3DD-hd-15A"/>
+                            <constraint firstItem="qs7-Ji-jC8" firstAttribute="bottom" secondItem="Bz3-F7-oQy" secondAttribute="bottom" id="92x-pP-HUi"/>
+                            <constraint firstItem="qs7-Ji-jC8" firstAttribute="trailing" secondItem="Bz3-F7-oQy" secondAttribute="trailing" id="EyL-8a-kU7"/>
+                            <constraint firstItem="Bz3-F7-oQy" firstAttribute="leading" secondItem="qs7-Ji-jC8" secondAttribute="leading" id="Jb4-o3-6ks"/>
+                            <constraint firstItem="CeO-Cw-Atf" firstAttribute="width" secondItem="CH3-c4-p1F" secondAttribute="width" priority="999" id="zke-YQ-f44"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qs7-Ji-jC8"/>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="EGd-DM-TXh" id="kUA-TL-xsg"/>
+                        <outlet property="ctnLabel" destination="TAZ-OP-yYr" id="7Sc-dF-zMB"/>
+                        <outlet property="emailLabel" destination="Sbm-3M-s92" id="jt8-mO-LeN"/>
+                        <outlet property="headerLabel" destination="lt2-EH-Sg2" id="lAX-jS-rAc"/>
+                        <outlet property="imageView" destination="iqd-Cd-wwk" id="xN3-dK-fyf"/>
+                        <outlet property="modelLabel" destination="lAM-yX-VkG" id="ZUP-xu-bph"/>
+                        <outlet property="stackView" destination="q9e-jQ-Rh0" id="4Y4-14-vka"/>
+                        <outlet property="successIconImageView" destination="Nrz-TZ-jLU" id="Vn7-6J-oH4"/>
+                        <outlet property="warrantyLabel" destination="jgU-NZ-6Fy" id="yMT-j5-a4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NDK-pN-SQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2120.8000000000002" y="-1836.4317841079462"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="product_placeholder" width="262" height="262"/>
+        <image name="questionmark" width="30" height="30"/>
+    </resources>
+</document>

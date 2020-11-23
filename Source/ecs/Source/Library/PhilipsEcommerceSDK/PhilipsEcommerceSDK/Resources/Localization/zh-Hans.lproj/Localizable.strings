@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "请提供 app infra object";
+"ECSBaseURLNotFound" = "未找到基本 URL";
+"ECSCartEntryError" = "产品未添加至购物车";
+"ECSCartError" = "尚未创建购物车";
+"ECSCommerceCartModificationError" = "数量不得小于零";
+"ECSCtnNotProvided" = "请提供 CTN";
+"ECSHybrisNotAvailable" = "所选国家/地区的飞利浦商城不可用，只有零售商模式可用";
+"ECSIllegalArgumentError" = "请提供有效输入数据";
+"ECSInsufficientStockError" = "产品缺货，无法发货";
+"ECSInvalidPaymentInfoError" = "请提供有效付款详情";
+"ECSInvalidTokenError" = "我们遇到了技术故障（无效访问令牌）。请执行 Hybris Re-Auth";
+"ECSLocaleNotFound" = "请设置区域";
+"ECSNoSuchElementError" = "从服务器获取数据时出错";
+"ECSOAuthDetailError" = "请提供完整的 OAuth 详情";
+"ECSOAuthNotCalled" = "该操作需要用户授权";
+"ECSPIL_BAD_REQUEST" = "我们遇到了技术故障。请过一会儿重试";
+"ECSPIL_BAD_REQUEST_cartId" = "尚未创建购物车";
+"ECSPIL_INTEGRATION_TIMEOUT" = "我们遇到了技术故障。请过一会儿重试";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "我们遇到了技术故障（无效访问令牌）。请执行 Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "电子邮件地址无效。请检查。";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "产品未添加至购物车";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "请设置区域";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "请提供有效 CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "请提供有效数量";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "所选国家/地区的飞利浦商城不可用，只有零售商模式可用";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "数量必须大于零";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "请设置区域";
+"ECSPIL_MISSING_PARAMETER_language" = "请设置区域";
+"ECSPIL_MISSING_PARAMETER_productId" = "请提供 CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "所选国家/地区的飞利浦商城不可用，只有零售商模式可用";
+"ECSPIL_NEGATIVE_QUANTITY" = "数量不得小于零";
+"ECSPIL_NOT_ACCEPTABLE" = "我们遇到了技术故障。请过一会儿重试";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "我们遇到了技术故障。请过一会儿重试";
+"ECSPIL_NOT_FOUND_cartId" = "请提供有效的购物车 ID";
+"ECSPIL_NOT_FOUND_productId" = "请提供有效 CTN";
+"ECSPIL_STOCK_EXCEPTION" = "产品缺货，无法发货";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "我们遇到了技术故障。请过一会儿重试";
+"ECSPaymentAuthorizationError" = "付款授权未成功";
+"ECSPropositionIdNotFound" = "请设置有效的 Proposition ID";
+"ECSSiteIdNotFound" = "所选国家/地区的飞利浦商城不可用，只有零售商模式可用";
+"ECSUnknownIdentifierError" = "请求的资源不可用";
+"ECSUnsupportedDeliveryModeError" = "不支持所选的送货方式";
+"ECSUnsupportedVoucherError" = "很抱歉，该优惠券无法兑换";
+"ECSValidationError" = "数据验证失败";
+"ECSVoucherOperationError" = "很抱歉，该优惠券无法兑换";
+"ECSaddressId" = "给定地址不存在或属于其他用户";
+"ECScountryCodeNotGiven" = "请提供有效的国家/地区代码";
+"ECScountryisocode" = "所选的国家/地区无效";
+"ECSfirstName" = "请注意，不允许使用以下字符：\\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "我们遇到了技术故障（无效客户凭证）。请重新登录";
+"ECSinvalid_grant" = "我们遇到了技术故障（无效 Janrain 令牌）。请重新登录";
+"ECSlastName" = "请注意，不允许使用以下字符：\\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "请提供有效订单";
+"ECSphone1" = "所选的电话号码无效";
+"ECSphone2" = "所选的电话号码无效";
+"ECSpostUrl" = "订单已处于已付款/已完成状态";
+"ECSpostalCode" = "所选的邮政编码无效";
+"ECSregionisocode" = "所选的区域无效";
+"ECSsessionCart" = "请在提交订单之前选择您的送货地址、送货方式和付款方式";
+"ECSsomethingWentWrong" = "我们遇到了技术故障。请过一会儿重试";
+"ECSunsupported_grant_type" = "我们遇到了技术故障（不支持的授权类型）。请重新登录";

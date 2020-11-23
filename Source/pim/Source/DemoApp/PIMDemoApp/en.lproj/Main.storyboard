@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nv0-hQ-FYt">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Demo View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UDIDemoViewController" customModule="UDIDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2XD-EX-zbo" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="20" y="260.5" width="335" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="pim_demoappscreen_launch_button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="W2D-iL-LrB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Launch Registration"/>
+                                <connections>
+                                    <action selector="launchDemoUAppClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ogf-z8-xJh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E5e-PY-EoB" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="20" y="330.5" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="m6D-UB-QUW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Choose Country"/>
+                                <connections>
+                                    <action selector="countryActionClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H4S-fF-pYC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q4t-8F-fB8" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="20" y="400.5" width="335" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Vc3-K6-TRe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="UDI Launch Flow - noPrompt"/>
+                                <connections>
+                                    <action selector="launchFlowClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="b4p-cE-Umd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Q4t-8F-fB8" firstAttribute="top" secondItem="E5e-PY-EoB" secondAttribute="bottom" constant="20" id="4BR-4D-8Pn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E5e-PY-EoB" secondAttribute="trailing" constant="20" id="9Ul-EF-O4F"/>
+                            <constraint firstItem="E5e-PY-EoB" firstAttribute="top" secondItem="2XD-EX-zbo" secondAttribute="bottom" constant="20" id="Uqi-h7-eae"/>
+                            <constraint firstItem="E5e-PY-EoB" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="d9T-sR-l6O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Q4t-8F-fB8" secondAttribute="trailing" constant="20" id="eoc-Wg-oWY"/>
+                            <constraint firstItem="Q4t-8F-fB8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fjq-OU-W4W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2XD-EX-zbo" secondAttribute="trailing" constant="20" id="hDU-0b-URP"/>
+                            <constraint firstItem="E5e-PY-EoB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="j3E-59-R3l"/>
+                            <constraint firstItem="2XD-EX-zbo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lgF-aG-y5a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0xx-t0-Qde"/>
+                    <connections>
+                        <outlet property="countrySelectionButton" destination="E5e-PY-EoB" id="gOZ-Fi-Kag"/>
+                        <outlet property="launchOptionButton" destination="Q4t-8F-fB8" id="BT5-5a-SQk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="104.7976011994003"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Fe5-Kd-TvM">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="nv0-hQ-FYt" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Uom-ep-e2D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="FdM-ot-qEQ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TdN-E9-V1Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="112.8" y="-592.35382308845578"/>
+        </scene>
+    </scenes>
+</document>

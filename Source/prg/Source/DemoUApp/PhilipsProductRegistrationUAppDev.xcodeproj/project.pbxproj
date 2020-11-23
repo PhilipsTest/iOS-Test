@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3383D9B9E72647061C49DF78 /* Pods_PhilipsProductRegistrationUAppDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6883AD5E8EE86721C5B1CF0 /* Pods_PhilipsProductRegistrationUAppDev.framework */; };
+		46BDB0151E812A0900BF1D5A /* PPRDemoFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB0141E812A0900BF1D5A /* PPRDemoFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		46BDB0181E812A0900BF1D5A /* PPRDemoFrameworkDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB0171E812A0900BF1D5A /* PPRDemoFrameworkDependencies.swift */; };
+		46BDB01A1E812A0900BF1D5A /* PPRDemoFrameworkInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB0191E812A0900BF1D5A /* PPRDemoFrameworkInterface.swift */; };
+		46BDB01C1E812A0900BF1D5A /* PPRDemoFrameworkLaunchInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB01B1E812A0900BF1D5A /* PPRDemoFrameworkLaunchInput.swift */; };
+		46BDB01E1E812A0900BF1D5A /* PPRDemoFrameworkSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB01D1E812A0900BF1D5A /* PPRDemoFrameworkSettings.swift */; };
+		46BDB0241E812A0900BF1D5A /* PPRDemoFrameworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB0231E812A0900BF1D5A /* PPRDemoFrameworkViewController.swift */; };
+		46BDB02D1E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46BDB0111E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev.framework */; };
+		46BDB06E1E81544A00BF1D5A /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB0691E81544A00BF1D5A /* ListTableViewCell.swift */; };
+		46BDB06F1E81544A00BF1D5A /* RegisteredProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB06A1E81544A00BF1D5A /* RegisteredProductListViewController.swift */; };
+		46BDB0701E81544A00BF1D5A /* RegisterProductTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB06B1E81544A00BF1D5A /* RegisterProductTableViewController.swift */; };
+		46BDB0711E81544A00BF1D5A /* RegisterProductWithUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB06C1E81544A00BF1D5A /* RegisterProductWithUIController.swift */; };
+		46BDB0721E81544A00BF1D5A /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB06D1E81544A00BF1D5A /* RegistrationViewController.swift */; };
+		46BDB07D1E8245CE00BF1D5A /* ListTableViewCell.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB0691E81544A00BF1D5A /* ListTableViewCell.swift */; };
+		46BDB07E1E8245CE00BF1D5A /* RegisteredProductListViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB06A1E81544A00BF1D5A /* RegisteredProductListViewController.swift */; };
+		46BDB07F1E8245CE00BF1D5A /* RegisterProductTableViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB06B1E81544A00BF1D5A /* RegisterProductTableViewController.swift */; };
+		46BDB0801E8245CE00BF1D5A /* RegisterProductWithUIController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB06C1E81544A00BF1D5A /* RegisterProductWithUIController.swift */; };
+		46BDB0811E8245CE00BF1D5A /* RegistrationViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB06D1E81544A00BF1D5A /* RegistrationViewController.swift */; };
+		46BDB0821E8245CE00BF1D5A /* PPRDemoFrameworkDependencies.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB0171E812A0900BF1D5A /* PPRDemoFrameworkDependencies.swift */; };
+		46BDB0831E8245CE00BF1D5A /* PPRDemoFrameworkInterface.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB0191E812A0900BF1D5A /* PPRDemoFrameworkInterface.swift */; };
+		46BDB0841E8245CE00BF1D5A /* PPRDemoFrameworkLaunchInput.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB01B1E812A0900BF1D5A /* PPRDemoFrameworkLaunchInput.swift */; };
+		46BDB0851E8245CE00BF1D5A /* PPRDemoFrameworkSettings.swift in Headers */ = {isa = PBXBuildFile; fileRef = 46BDB01D1E812A0900BF1D5A /* PPRDemoFrameworkSettings.swift */; };
+		46BDB0A41E827A2D00BF1D5A /* PPRDemoFrameworkInterfaceWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46BDB0A31E827A2D00BF1D5A /* PPRDemoFrameworkInterfaceWrapper.swift */; };
+		46BDB0AC1E8280C000BF1D5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BDB0AA1E8280C000BF1D5A /* LaunchScreen.storyboard */; };
+		46BDB0AD1E8280C000BF1D5A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 46BDB0AB1E8280C000BF1D5A /* Main.storyboard */; };
+		549622FA1F2B3FFB0095254A /* ColorRangeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549622F71F2B3FFB0095254A /* ColorRangeCollectionViewCell.swift */; };
+		549622FB1F2B3FFB0095254A /* ThemeSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549622F81F2B3FFB0095254A /* ThemeSettingViewController.swift */; };
+		549622FC1F2B3FFB0095254A /* ThemePreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549622F91F2B3FFB0095254A /* ThemePreviewViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		46BDB02E1E812A0900BF1D5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46BDB0081E812A0900BF1D5A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46BDB0101E812A0900BF1D5A;
+			remoteInfo = PPRDemoFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B9198C6774C2D7550EA32E2 /* Pods-PhilipsProductRegistrationUApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationUApp.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationUApp/Pods-PhilipsProductRegistrationUApp.debug.xcconfig"; sourceTree = "<group>"; };
+		305FD230CB4FC06638A8FDE9 /* Pods-PhilipsProductRegistrationUAppDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationUAppDev.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationUAppDev/Pods-PhilipsProductRegistrationUAppDev.release.xcconfig"; sourceTree = "<group>"; };
+		3BC7E25988CEFD14712DFED3 /* Pods-PhilipsProductRegistrationUApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationUApp.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationUApp/Pods-PhilipsProductRegistrationUApp.release.xcconfig"; sourceTree = "<group>"; };
+		46BDB0111E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhilipsProductRegistrationUAppDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BDB0141E812A0900BF1D5A /* PPRDemoFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PPRDemoFramework.h; sourceTree = "<group>"; };
+		46BDB0171E812A0900BF1D5A /* PPRDemoFrameworkDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPRDemoFrameworkDependencies.swift; path = PPRDemoFramework/UAPPClasses/PPRDemoFrameworkDependencies.swift; sourceTree = "<group>"; };
+		46BDB0191E812A0900BF1D5A /* PPRDemoFrameworkInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPRDemoFrameworkInterface.swift; path = PPRDemoFramework/UAPPClasses/PPRDemoFrameworkInterface.swift; sourceTree = "<group>"; };
+		46BDB01B1E812A0900BF1D5A /* PPRDemoFrameworkLaunchInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPRDemoFrameworkLaunchInput.swift; path = PPRDemoFramework/UAPPClasses/PPRDemoFrameworkLaunchInput.swift; sourceTree = "<group>"; };
+		46BDB01D1E812A0900BF1D5A /* PPRDemoFrameworkSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PPRDemoFrameworkSettings.swift; path = PPRDemoFramework/UAPPClasses/PPRDemoFrameworkSettings.swift; sourceTree = "<group>"; };
+		46BDB0231E812A0900BF1D5A /* PPRDemoFrameworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PPRDemoFrameworkViewController.swift; sourceTree = SOURCE_ROOT; };
+		46BDB0271E812A0900BF1D5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		46BDB02C1E812A0900BF1D5A /* PhilipsProductRegistrationUAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilipsProductRegistrationUAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		46BDB0691E81544A00BF1D5A /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		46BDB06A1E81544A00BF1D5A /* RegisteredProductListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisteredProductListViewController.swift; sourceTree = "<group>"; };
+		46BDB06B1E81544A00BF1D5A /* RegisterProductTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterProductTableViewController.swift; sourceTree = "<group>"; };
+		46BDB06C1E81544A00BF1D5A /* RegisterProductWithUIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterProductWithUIController.swift; sourceTree = "<group>"; };
+		46BDB06D1E81544A00BF1D5A /* RegistrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
+		46BDB0A31E827A2D00BF1D5A /* PPRDemoFrameworkInterfaceWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PPRDemoFrameworkInterfaceWrapper.swift; path = ../PPRDemoFrameworkInterfaceWrapper.swift; sourceTree = "<group>"; };
+		46BDB0AA1E8280C000BF1D5A /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		46BDB0AB1E8280C000BF1D5A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		549622F71F2B3FFB0095254A /* ColorRangeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRangeCollectionViewCell.swift; sourceTree = "<group>"; };
+		549622F81F2B3FFB0095254A /* ThemeSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemeSettingViewController.swift; sourceTree = "<group>"; };
+		549622F91F2B3FFB0095254A /* ThemePreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThemePreviewViewController.swift; sourceTree = "<group>"; };
+		6AF6681588F4EC7D100F6F10 /* Pods-PhilipsProductRegistrationUAppDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductRegistrationUAppDev.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductRegistrationUAppDev/Pods-PhilipsProductRegistrationUAppDev.debug.xcconfig"; sourceTree = "<group>"; };
+		A6883AD5E8EE86721C5B1CF0 /* Pods_PhilipsProductRegistrationUAppDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsProductRegistrationUAppDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		46BDB00D1E812A0900BF1D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3383D9B9E72647061C49DF78 /* Pods_PhilipsProductRegistrationUAppDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BDB0291E812A0900BF1D5A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BDB02D1E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		46BDB0071E812A0900BF1D5A = {
+			isa = PBXGroup;
+			children = (
+				46BDB0131E812A0900BF1D5A /* PhilipsProductRegistrationUApp */,
+				46BDB0121E812A0900BF1D5A /* Products */,
+				9D9EBCDDD47964FEAE18AD5B /* Pods */,
+				542595F5927C50A107F24DBF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		46BDB0121E812A0900BF1D5A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46BDB0111E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev.framework */,
+				46BDB02C1E812A0900BF1D5A /* PhilipsProductRegistrationUAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		46BDB0131E812A0900BF1D5A /* PhilipsProductRegistrationUApp */ = {
+			isa = PBXGroup;
+			children = (
+				46BDB0681E81544A00BF1D5A /* PPRDemoAppClasses */,
+				46BDB0141E812A0900BF1D5A /* PPRDemoFramework.h */,
+				46BDB0231E812A0900BF1D5A /* PPRDemoFrameworkViewController.swift */,
+				46BDB0271E812A0900BF1D5A /* Info.plist */,
+				46BDB0161E812A0900BF1D5A /* UAPPClasses */,
+			);
+			name = PhilipsProductRegistrationUApp;
+			path = PPRDemoFramework;
+			sourceTree = "<group>";
+		};
+		46BDB0161E812A0900BF1D5A /* UAPPClasses */ = {
+			isa = PBXGroup;
+			children = (
+				46BDB0171E812A0900BF1D5A /* PPRDemoFrameworkDependencies.swift */,
+				46BDB0191E812A0900BF1D5A /* PPRDemoFrameworkInterface.swift */,
+				46BDB01B1E812A0900BF1D5A /* PPRDemoFrameworkLaunchInput.swift */,
+				46BDB01D1E812A0900BF1D5A /* PPRDemoFrameworkSettings.swift */,
+			);
+			name = UAPPClasses;
+			sourceTree = "<group>";
+		};
+		46BDB0681E81544A00BF1D5A /* PPRDemoAppClasses */ = {
+			isa = PBXGroup;
+			children = (
+				46BDB0A51E82809E00BF1D5A /* Resources */,
+				46BDB0691E81544A00BF1D5A /* ListTableViewCell.swift */,
+				46BDB06A1E81544A00BF1D5A /* RegisteredProductListViewController.swift */,
+				46BDB06B1E81544A00BF1D5A /* RegisterProductTableViewController.swift */,
+				46BDB06C1E81544A00BF1D5A /* RegisterProductWithUIController.swift */,
+				46BDB06D1E81544A00BF1D5A /* RegistrationViewController.swift */,
+				46BDB0A31E827A2D00BF1D5A /* PPRDemoFrameworkInterfaceWrapper.swift */,
+				549622F71F2B3FFB0095254A /* ColorRangeCollectionViewCell.swift */,
+				549622F81F2B3FFB0095254A /* ThemeSettingViewController.swift */,
+				549622F91F2B3FFB0095254A /* ThemePreviewViewController.swift */,
+			);
+			path = PPRDemoAppClasses;
+			sourceTree = "<group>";
+		};
+		46BDB0A51E82809E00BF1D5A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				46BDB0AA1E8280C000BF1D5A /* LaunchScreen.storyboard */,
+				46BDB0AB1E8280C000BF1D5A /* Main.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		542595F5927C50A107F24DBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A6883AD5E8EE86721C5B1CF0 /* Pods_PhilipsProductRegistrationUAppDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D9EBCDDD47964FEAE18AD5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B9198C6774C2D7550EA32E2 /* Pods-PhilipsProductRegistrationUApp.debug.xcconfig */,
+				3BC7E25988CEFD14712DFED3 /* Pods-PhilipsProductRegistrationUApp.release.xcconfig */,
+				6AF6681588F4EC7D100F6F10 /* Pods-PhilipsProductRegistrationUAppDev.debug.xcconfig */,
+				305FD230CB4FC06638A8FDE9 /* Pods-PhilipsProductRegistrationUAppDev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		46BDB00E1E812A0900BF1D5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BDB0151E812A0900BF1D5A /* PPRDemoFramework.h in Headers */,
+				46BDB07D1E8245CE00BF1D5A /* ListTableViewCell.swift in Headers */,
+				46BDB07E1E8245CE00BF1D5A /* RegisteredProductListViewController.swift in Headers */,
+				46BDB07F1E8245CE00BF1D5A /* RegisterProductTableViewController.swift in Headers */,
+				46BDB0801E8245CE00BF1D5A /* RegisterProductWithUIController.swift in Headers */,
+				46BDB0811E8245CE00BF1D5A /* RegistrationViewController.swift in Headers */,
+				46BDB0821E8245CE00BF1D5A /* PPRDemoFrameworkDependencies.swift in Headers */,
+				46BDB0831E8245CE00BF1D5A /* PPRDemoFrameworkInterface.swift in Headers */,
+				46BDB0841E8245CE00BF1D5A /* PPRDemoFrameworkLaunchInput.swift in Headers */,
+				46BDB0851E8245CE00BF1D5A /* PPRDemoFrameworkSettings.swift in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		46BDB0101E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46BDB0361E812A0900BF1D5A /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationUAppDev" */;
+			buildPhases = (
+				6B24E9BEE0F819A214FA3E0F /* [CP] Check Pods Manifest.lock */,
+				C98A02BD2084D691000C4833 /* ShellScript */,
+				46BDB00C1E812A0900BF1D5A /* Sources */,
+				46BDB00D1E812A0900BF1D5A /* Frameworks */,
+				46BDB00E1E812A0900BF1D5A /* Headers */,
+				46BDB00F1E812A0900BF1D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsProductRegistrationUAppDev;
+			productName = PPRDemoFramework;
+			productReference = 46BDB0111E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		46BDB02B1E812A0900BF1D5A /* PhilipsProductRegistrationUAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46BDB0391E812A0900BF1D5A /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationUAppTests" */;
+			buildPhases = (
+				C98A02BE2084D699000C4833 /* ShellScript */,
+				46BDB0281E812A0900BF1D5A /* Sources */,
+				46BDB0291E812A0900BF1D5A /* Frameworks */,
+				46BDB02A1E812A0900BF1D5A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46BDB02F1E812A0900BF1D5A /* PBXTargetDependency */,
+			);
+			name = PhilipsProductRegistrationUAppTests;
+			productName = PPRDemoFrameworkTests;
+			productReference = 46BDB02C1E812A0900BF1D5A /* PhilipsProductRegistrationUAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46BDB0081E812A0900BF1D5A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Abhishek;
+				TargetAttributes = {
+					46BDB0101E812A0900BF1D5A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Manual;
+					};
+					46BDB02B1E812A0900BF1D5A = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 46BDB00B1E812A0900BF1D5A /* Build configuration list for PBXProject "PhilipsProductRegistrationUAppDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 46BDB0071E812A0900BF1D5A;
+			productRefGroup = 46BDB0121E812A0900BF1D5A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				46BDB0101E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev */,
+				46BDB02B1E812A0900BF1D5A /* PhilipsProductRegistrationUAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		46BDB00F1E812A0900BF1D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				46BDB0AD1E8280C000BF1D5A /* Main.storyboard in Resources */,
+				46BDB0AC1E8280C000BF1D5A /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BDB02A1E812A0900BF1D5A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B24E9BEE0F819A214FA3E0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsProductRegistrationUAppDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A02BD2084D691000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		C98A02BE2084D699000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		46BDB00C1E812A0900BF1D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				549622FA1F2B3FFB0095254A /* ColorRangeCollectionViewCell.swift in Sources */,
+				46BDB0701E81544A00BF1D5A /* RegisterProductTableViewController.swift in Sources */,
+				46BDB0711E81544A00BF1D5A /* RegisterProductWithUIController.swift in Sources */,
+				46BDB01A1E812A0900BF1D5A /* PPRDemoFrameworkInterface.swift in Sources */,
+				549622FC1F2B3FFB0095254A /* ThemePreviewViewController.swift in Sources */,
+				549622FB1F2B3FFB0095254A /* ThemeSettingViewController.swift in Sources */,
+				46BDB0241E812A0900BF1D5A /* PPRDemoFrameworkViewController.swift in Sources */,
+				46BDB0721E81544A00BF1D5A /* RegistrationViewController.swift in Sources */,
+				46BDB0181E812A0900BF1D5A /* PPRDemoFrameworkDependencies.swift in Sources */,
+				46BDB06F1E81544A00BF1D5A /* RegisteredProductListViewController.swift in Sources */,
+				46BDB01C1E812A0900BF1D5A /* PPRDemoFrameworkLaunchInput.swift in Sources */,
+				46BDB01E1E812A0900BF1D5A /* PPRDemoFrameworkSettings.swift in Sources */,
+				46BDB06E1E81544A00BF1D5A /* ListTableViewCell.swift in Sources */,
+				46BDB0A41E827A2D00BF1D5A /* PPRDemoFrameworkInterfaceWrapper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		46BDB0281E812A0900BF1D5A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		46BDB02F1E812A0900BF1D5A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46BDB0101E812A0900BF1D5A /* PhilipsProductRegistrationUAppDev */;
+			targetProxy = 46BDB02E1E812A0900BF1D5A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		46BDB0341E812A0900BF1D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		46BDB0351E812A0900BF1D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		46BDB0371E812A0900BF1D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF6681588F4EC7D100F6F10 /* Pods-PhilipsProductRegistrationUAppDev.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PPRDemoFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdp.ppr.philips.PPRDemoFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46BDB0381E812A0900BF1D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 305FD230CB4FC06638A8FDE9 /* Pods-PhilipsProductRegistrationUAppDev.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = PPRDemoFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdp.ppr.philips.PPRDemoFramework;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		46BDB03A1E812A0900BF1D5A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PPRDemoFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdp.ppr.philips.PPRDemoFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		46BDB03B1E812A0900BF1D5A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = PPRDemoFrameworkTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cdp.ppr.philips.PPRDemoFrameworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		46BDB00B1E812A0900BF1D5A /* Build configuration list for PBXProject "PhilipsProductRegistrationUAppDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BDB0341E812A0900BF1D5A /* Debug */,
+				46BDB0351E812A0900BF1D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46BDB0361E812A0900BF1D5A /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationUAppDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BDB0371E812A0900BF1D5A /* Debug */,
+				46BDB0381E812A0900BF1D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		46BDB0391E812A0900BF1D5A /* Build configuration list for PBXNativeTarget "PhilipsProductRegistrationUAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				46BDB03A1E812A0900BF1D5A /* Debug */,
+				46BDB03B1E812A0900BF1D5A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46BDB0081E812A0900BF1D5A /* Project object */;
+}

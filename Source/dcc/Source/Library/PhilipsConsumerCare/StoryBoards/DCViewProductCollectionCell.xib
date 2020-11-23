@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="VideoCollectionCell" preservesSuperviewLayoutMargins="YES" id="GoL-r9-6V7" customClass="DCViewProductCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="310" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="310" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QBU-mJ-WV3">
+                        <rect key="frame" x="0.0" y="0.0" width="310" height="164"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EY-0o-kIt" userLabel="PlayButton" customClass="UIDProgressButton" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="125" y="57" width="60" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="SnJ-nS-JF4"/>
+                            <constraint firstAttribute="height" constant="50" id="yxG-WT-NIp"/>
+                        </constraints>
+                        <state key="normal">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                <integer key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0EY-0o-kIt" firstAttribute="centerY" secondItem="GoL-r9-6V7" secondAttribute="centerY" id="8TA-2J-vhy"/>
+                <constraint firstAttribute="bottom" secondItem="QBU-mJ-WV3" secondAttribute="bottom" id="BNR-Bc-ZIN"/>
+                <constraint firstItem="0EY-0o-kIt" firstAttribute="centerX" secondItem="GoL-r9-6V7" secondAttribute="centerX" id="Euz-iQ-IKc"/>
+                <constraint firstItem="QBU-mJ-WV3" firstAttribute="leading" secondItem="GoL-r9-6V7" secondAttribute="leading" id="MxZ-RL-v7Q"/>
+                <constraint firstAttribute="trailing" secondItem="QBU-mJ-WV3" secondAttribute="trailing" id="hIc-DS-hf7"/>
+                <constraint firstItem="QBU-mJ-WV3" firstAttribute="top" secondItem="GoL-r9-6V7" secondAttribute="top" id="oLc-wK-gKS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="2Va-Z9-liu"/>
+            <size key="customSize" width="376" height="203"/>
+            <connections>
+                <outlet property="videoImageView" destination="QBU-mJ-WV3" id="64C-V4-0DU"/>
+                <outlet property="videoPlayButton" destination="0EY-0o-kIt" id="akk-W2-wot"/>
+            </connections>
+            <point key="canvasLocation" x="228" y="188.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

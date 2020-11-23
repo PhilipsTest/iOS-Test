@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AILogging.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AILogging</TokenIdentifier>
+			<Abstract type="html">This class encapsulates implementation and business logic of logging.</Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+            
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILogging/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/setLogConfig:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AILoggingConfig *logConfig</Declaration>
+			
+			
+			<Anchor>//api/name/logConfig</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/logConfig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AILoggingConfig *logConfig</Declaration>
+			
+			
+			<Anchor>//api/name/logConfig</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILogging/logConfig</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AILoggingConfig *logConfig</Declaration>
+			
+			
+			<Anchor>//api/name/logConfig</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/log:level:flag:context:file:function:line:tag:eventId:otherDetails:format:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>- (void)log:(BOOL)asynchronous level:(DDLogLevel)level flag:(DDLogFlag)flag context:(NSInteger)context file:(const char *)file function:(const char *)function line:(NSUInteger)line tag:(id)tag eventId:(NSString *)eventId otherDetails:(NSString *)details format:(NSString *)format, ...</Declaration>
+			
+			
+			<Anchor>//api/name/log:level:flag:context:file:function:line:tag:eventId:otherDetails:format:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/setLevel:eventId:message:component:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>- (void)setLevel:(AILogLevel)level eventId:(NSString *)eventId message:(NSString *)message component:(NSString *)component</Declaration>
+			
+			
+			<Anchor>//api/name/setLevel:eventId:message:component:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAppInfra:(AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/initializeLogging</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>- (void)initializeLogging</Declaration>
+			
+			
+			<Anchor>//api/name/initializeLogging</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/defaultSetUp</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>- (void)defaultSetUp</Declaration>
+			
+			
+			<Anchor>//api/name/defaultSetUp</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/createInstanceForComponent:componentVersion:</TokenIdentifier>
+			<Abstract type="html">This method creates and returns a logging wrapper object which can be used for logging events and messages.</Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>- (id&lt;AILoggingProtocol&gt;)createInstanceForComponent:(NSString *)componentId componentVersion:(NSString *)componentVersion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>componentId</Name>
+					<Abstract type="html">Identifier of the requesting component</Abstract>
+				</Parameter><Parameter>
+					<Name>componentVersion</Name>
+					<Abstract type="html">Version of the requesting component</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an object that conforms to &apos;AILoggingProtocol&apos; protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/createInstanceForComponent:componentVersion:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/log:eventId:message:</TokenIdentifier>
+			<Abstract type="html">Logs given message to configured output sink</Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>- (void)log:(AILogLevel)level eventId:(NSString *)eventId message:(NSString *)message</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>level</Name>
+					<Abstract type="html">level of log</Abstract>
+				</Parameter><Parameter>
+					<Name>eventId</Name>
+					<Abstract type="html">identifier of the event being logged</Abstract>
+				</Parameter><Parameter>
+					<Name>message</Name>
+					<Abstract type="html">message describing the event</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/log:eventId:message:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/log:eventId:message:dictionary:</TokenIdentifier>
+			<Abstract type="html">Logs given message to configured output sink</Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>- (void)log:(AILogLevel)level eventId:(NSString *)eventId message:(NSString *)message dictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>level</Name>
+					<Abstract type="html">level of log</Abstract>
+				</Parameter><Parameter>
+					<Name>eventId</Name>
+					<Abstract type="html">identifier of the event being logged</Abstract>
+				</Parameter><Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">containing the key values for logging</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/log:eventId:message:dictionary:</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/getConfiguration</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>- (AILoggingConfig *)getConfiguration</Declaration>
+			
+			
+			<Anchor>//api/name/getConfiguration</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/setLoggingComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *loggingComponent</Declaration>
+			
+			
+			<Anchor>//api/name/loggingComponent</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILogging/loggingComponent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *loggingComponent</Declaration>
+			
+			
+			<Anchor>//api/name/loggingComponent</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILogging/loggingComponent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILogging.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *loggingComponent</Declaration>
+			
+			
+			<Anchor>//api/name/loggingComponent</Anchor>
+            <NodeRef refid="21"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

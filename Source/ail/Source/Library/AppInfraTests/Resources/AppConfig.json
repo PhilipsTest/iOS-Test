@@ -1,0 +1,63 @@
+{
+    "UR": {
+        
+        "Development": "ad7nn99y2mv5berw5jxewzagazafbyhu",
+        "Testing": "xru56jcnu3rpf8q7cgnkr7xtf9sh8pp7",
+        "Evaluation": "4r36zdbeycca933nufcknn2hnpsz6gxu",
+        "Staging": "durhrkq6ezqcvmqf6mq77ev48fuubdbj",
+        "Production": "mz6tg5rqrg4hjj3wfxfd92kjapsrdhy3",
+        "Dictionary": {"key1":"value1"}
+        
+    },
+    "AI": {
+        "MicrositeID": 77000,
+        "RegistrationEnvironment": "Staging",
+        "NL": ["googleplus", "facebook"  ],
+        "US": ["facebook","googleplus" ]
+    },
+    "appinfra":{
+        "appidentity.micrositeId": 77000,
+        "appidentity.sector": "b2c",
+        "appidentity.appState": "development",
+        "appidentity.serviceDiscoveryEnvironment": "production",
+        "restclient.cacheSizeInKB": 51200,
+        "tagging.sensitiveData" : [],
+		"abtest.precache":["test1","philipsmobileappabtest1content","geoColors"],
+        "servicediscovery.platformMicrositeId":77000,
+        "servicediscovery.platformEnvironment":"production",
+        "languagePack.serviceId":"appinfra.languagepack",
+        "servicediscovery.propositionEnabled":true,
+        "appUpdate.serviceId": "appinfra.appupdate",
+        "servicediscovery.countryMapping":{"LU":"BE","MO":"HK","BY":"RU"},
+        "appUpdate.autoRefresh": false,
+        "logging.releaseConfig": {
+            "fileName": "AppInfraLog",
+            "numberOfFiles": 5,
+            "fileSizeInBytes": 50000,
+            "logLevel": "Off",
+            "fileLogEnabled": false,
+            "consoleLogEnabled": false,
+            "componentLevelLogEnabled": false,
+            "componentIds": ["ail", "component1"]
+        },
+        "logging.debugConfig": {
+            "fileName": "AppInfraLog",
+            "numberOfFiles": 5,
+            "fileSizeInBytes": 50000,
+            "logLevel": "all",
+            "fileLogEnabled": true,
+            "consoleLogEnabled": true,
+            "componentLevelLogEnabled": false,
+            "componentIds": ["ail", "component1"]
+        },
+        "abtest.mapping":{
+            "ai.componentTestname":"actualTestName"
+        },
+        "enableAdobeLogs":true
+    },
+    "hsdp":{
+        "appInfra.cloudLoggingSecretKey":"96a5cd559d9299e4632faae2320777347d0e35acd77e3c1e9edcf244a30443ad3fcefdbb62806f15bb758c5903a0d7be635e0240cc671261f14cb37cc2ef1153",
+        "appInfra.cloudLoggingSharedKey": "YMV5QLdKOW9vlQ1fgG0txw8Tdglfe2ePIFwkub68eN8=",
+        "appInfra.cloudLoggingProductKey":"a074cf36-ab05-4ad7-9fb8-cb315087c727"
+    }
+}

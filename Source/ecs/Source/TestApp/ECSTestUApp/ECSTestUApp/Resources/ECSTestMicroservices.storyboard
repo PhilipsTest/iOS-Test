@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--MicroService Groups-->
+        <scene sceneID="kVZ-lj-40q">
+            <objects>
+                <viewController storyboardIdentifier="ECSTestMicroservicesGroupViewController" title="MicroService Groups" id="cfi-qV-KJY" customClass="ECSTestMicroservicesGroupViewController" customModule="ECSTestUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K8G-un-nOc" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Kg9-dZ-a8A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JGg-vk-Sfm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Proposition ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rqi-x7-yqi" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="16" width="233" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <outlet property="delegate" destination="cfi-qV-KJY" id="MLR-wG-JRs"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TRH-GG-ZRU" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="259" y="16" width="100" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="flK-cL-cjq"/>
+                                                </constraints>
+                                                <state key="normal" title="Set"/>
+                                                <connections>
+                                                    <action selector="setPropositionID:" destination="cfi-qV-KJY" eventType="touchUpInside" id="87k-as-EAX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="0.0" right="16"/>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="GEn-i9-kb3">
+                                        <rect key="frame" x="0.0" y="70" width="375" height="501"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-kg-FUZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="riz-AR-R1N"/>
+                                                </constraints>
+                                            </view>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aGK-8c-PPd">
+                                                <rect key="frame" x="0.0" y="2" width="375" height="499"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <prototypes>
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECSTestGroupCell" textLabel="gpG-OW-PCO" style="IBUITableViewCellStyleDefault" id="zxy-3x-l14">
+                                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zxy-3x-l14" id="DCb-Rx-b2a">
+                                                            <rect key="frame" x="0.0" y="0.0" width="348.5" height="43.5"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="gpG-OW-PCO" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                    <rect key="frame" x="15" y="0.0" width="325.5" height="43.5"/>
+                                                                    <autoresizingMask key="autoresizingMask"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </tableViewCellContentView>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </tableViewCell>
+                                                </prototypes>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="cfi-qV-KJY" id="SeI-3I-7lG"/>
+                                                    <outlet property="delegate" destination="cfi-qV-KJY" id="sSU-dU-KMc"/>
+                                                </connections>
+                                            </tableView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2vW-ZX-xwv">
+                                        <rect key="frame" x="0.0" y="591" width="375" height="76"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="clX-1E-Sfk" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="16" width="343" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="BKt-ow-ToD"/>
+                                                </constraints>
+                                                <state key="normal" title="Login"/>
+                                                <connections>
+                                                    <action selector="loginButtonClicked:" destination="cfi-qV-KJY" eventType="touchUpInside" id="fMD-pT-DGL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Kg9-dZ-a8A" secondAttribute="bottom" id="DdQ-hx-WAa"/>
+                            <constraint firstItem="Kg9-dZ-a8A" firstAttribute="top" secondItem="7Hm-PL-v97" secondAttribute="top" id="RWD-pC-Va6"/>
+                            <constraint firstItem="Kg9-dZ-a8A" firstAttribute="leading" secondItem="7Hm-PL-v97" secondAttribute="leading" id="oec-5A-FOT"/>
+                            <constraint firstAttribute="trailing" secondItem="Kg9-dZ-a8A" secondAttribute="trailing" id="smh-QZ-Y7U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7Hm-PL-v97"/>
+                    </view>
+                    <connections>
+                        <outlet property="groupMicroserviceTableView" destination="aGK-8c-PPd" id="3Rz-s6-QWZ"/>
+                        <outlet property="loginButton" destination="clX-1E-Sfk" id="G4j-QK-Eol"/>
+                        <outlet property="propositionIDTextField" destination="Rqi-x7-yqi" id="o4I-uw-cnY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qrO-9f-3KB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="-627"/>
+        </scene>
+        <!--MicroService Results-->
+        <scene sceneID="lDT-Ai-MUZ">
+            <objects>
+                <viewController storyboardIdentifier="ECSTestMicroservicesResultViewController" title="MicroService Results" id="vsl-hA-MN4" customClass="ECSTestMicroservicesResultViewController" customModule="ECSTestUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V9q-1d-0Mk" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="F0t-Vm-6ID">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECSTestResultCell" id="hl0-uP-cwX" customClass="ECSTestResultTableViewCell" customModule="ECSTestUApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="332"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hl0-uP-cwX" id="len-3c-xOf">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="332"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Text" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8xh-vL-p59" customClass="UIDTextView" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="16" y="16" width="343" height="300"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="SCH-m3-hau"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                    <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </textView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="8xh-vL-p59" secondAttribute="bottom" constant="16" id="Beg-y4-z9d"/>
+                                                <constraint firstAttribute="trailing" secondItem="8xh-vL-p59" secondAttribute="trailing" constant="16" id="FqI-ux-2lO"/>
+                                                <constraint firstItem="8xh-vL-p59" firstAttribute="top" secondItem="len-3c-xOf" secondAttribute="top" constant="16" id="JRD-Jr-SIg"/>
+                                                <constraint firstItem="8xh-vL-p59" firstAttribute="leading" secondItem="len-3c-xOf" secondAttribute="leading" constant="16" id="gFo-X2-VzQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="microserviceResultTextView" destination="8xh-vL-p59" id="eU0-rt-cay"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vsl-hA-MN4" id="GVa-qf-cpX"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nVC-Fv-b67" firstAttribute="bottom" secondItem="F0t-Vm-6ID" secondAttribute="bottom" id="4Ln-pV-SJt"/>
+                            <constraint firstItem="F0t-Vm-6ID" firstAttribute="leading" secondItem="nVC-Fv-b67" secondAttribute="leading" id="4dG-XU-bGD"/>
+                            <constraint firstItem="F0t-Vm-6ID" firstAttribute="top" secondItem="nVC-Fv-b67" secondAttribute="top" id="HEw-pO-5da"/>
+                            <constraint firstItem="nVC-Fv-b67" firstAttribute="trailing" secondItem="F0t-Vm-6ID" secondAttribute="trailing" id="cXh-vq-5jY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nVC-Fv-b67"/>
+                    </view>
+                    <connections>
+                        <outlet property="microserviceResultTableView" destination="F0t-Vm-6ID" id="vW7-xz-wxW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rb1-Xd-dG6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="1484"/>
+        </scene>
+        <!--MicroService Inputs-->
+        <scene sceneID="uE4-uu-sDr">
+            <objects>
+                <viewController storyboardIdentifier="ECSTestMicroserviceInputsViewController" title="MicroService Inputs" id="6t8-7A-kJM" customClass="ECSTestMicroserviceInputsViewController" customModule="ECSTestUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B2U-LK-Zaf" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sHg-lj-Cdw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="529"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <edgeInsets key="layoutMargins" top="8" left="16" bottom="8" right="16"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECSTestInputCell" id="jDg-Zb-Tg1" customClass="ECSTestInputTableViewCell" customModule="ECSTestUApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="69"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jDg-Zb-Tg1" id="beV-26-bQX">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3qR-CM-hLC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NeQ-WM-gRd" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                            <rect key="frame" x="16" y="0.0" width="343" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="30" id="gJk-t7-KMT"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NTt-N3-Wmc" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                                            <rect key="frame" x="16" y="35" width="343" height="34"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits"/>
+                                                            <userDefinedRuntimeAttributes>
+                                                                <userDefinedRuntimeAttribute type="boolean" keyPath="isBordered" value="YES"/>
+                                                            </userDefinedRuntimeAttributes>
+                                                        </textField>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <edgeInsets key="layoutMargins" top="0.0" left="16" bottom="0.0" right="16"/>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="3qR-CM-hLC" secondAttribute="trailing" id="63K-Wj-Pra"/>
+                                                <constraint firstItem="3qR-CM-hLC" firstAttribute="leading" secondItem="beV-26-bQX" secondAttribute="leading" id="6aa-ZY-EaW"/>
+                                                <constraint firstAttribute="bottom" secondItem="3qR-CM-hLC" secondAttribute="bottom" id="JlE-r1-ihL"/>
+                                                <constraint firstItem="3qR-CM-hLC" firstAttribute="top" secondItem="beV-26-bQX" secondAttribute="top" id="QYq-Vn-4ZG"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="inputLabel" destination="NeQ-WM-gRd" id="kni-y0-m9C"/>
+                                            <outlet property="inputTextField" destination="NTt-N3-Wmc" id="qXd-nx-xl0"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="6t8-7A-kJM" id="k9I-2f-Nn7"/>
+                                </connections>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bu9-ju-Qs0">
+                                <rect key="frame" x="16" y="549" width="343" height="98"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8W-s4-M29" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="gup-AK-jx4"/>
+                                        </constraints>
+                                        <state key="normal" title="Clear Data"/>
+                                        <connections>
+                                            <action selector="clearDataButtonClicked:" destination="6t8-7A-kJM" eventType="touchUpInside" id="Dfk-Op-AW3"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dro-ap-5Iy" customClass="UIDProgressButton" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="54" width="343" height="44"/>
+                                        <state key="normal" title="Execute"/>
+                                        <connections>
+                                            <action selector="executeButtonClicked:" destination="6t8-7A-kJM" eventType="touchUpInside" id="KHw-XS-Rw9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Dro-ap-5Iy" firstAttribute="height" secondItem="l8W-s4-M29" secondAttribute="height" id="4m4-a3-NTK"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="sHg-lj-Cdw" firstAttribute="leading" secondItem="IXk-cf-o2e" secondAttribute="leading" id="4rZ-5G-rcr"/>
+                            <constraint firstItem="sHg-lj-Cdw" firstAttribute="trailing" secondItem="IXk-cf-o2e" secondAttribute="trailing" id="6OL-W7-r3y"/>
+                            <constraint firstItem="bu9-ju-Qs0" firstAttribute="leading" secondItem="IXk-cf-o2e" secondAttribute="leading" constant="16" id="7NN-26-Vv8"/>
+                            <constraint firstItem="sHg-lj-Cdw" firstAttribute="top" secondItem="IXk-cf-o2e" secondAttribute="top" id="Fqk-Cv-JJE"/>
+                            <constraint firstItem="bu9-ju-Qs0" firstAttribute="top" secondItem="sHg-lj-Cdw" secondAttribute="bottom" constant="20" id="dSr-YS-2hq"/>
+                            <constraint firstAttribute="trailing" secondItem="bu9-ju-Qs0" secondAttribute="trailing" constant="16" id="leQ-zf-eon"/>
+                            <constraint firstAttribute="bottom" secondItem="bu9-ju-Qs0" secondAttribute="bottom" constant="20" id="mDA-G5-MdZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="IXk-cf-o2e"/>
+                    </view>
+                    <connections>
+                        <outlet property="clearDataButton" destination="l8W-s4-M29" id="a7h-d6-Wob"/>
+                        <outlet property="executeRequestButton" destination="Dro-ap-5Iy" id="v4z-gi-cF3"/>
+                        <outlet property="microserviceInputTableView" destination="sHg-lj-Cdw" id="wzU-dZ-SvK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qja-h8-fN0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="726"/>
+        </scene>
+        <!--MicroServices-->
+        <scene sceneID="3tt-jn-xMc">
+            <objects>
+                <viewController storyboardIdentifier="ECSTestMicroservicesViewController" title="MicroServices" id="Vzy-Y5-hx3" customClass="ECSTestMicroservicesViewController" customModule="ECSTestUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qtK-bl-WtG" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zaT-9l-f9B">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ECSTestMicroserviceCell" textLabel="2Du-xn-EHH" style="IBUITableViewCellStyleDefault" id="MSa-w7-0oE">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MSa-w7-0oE" id="x3l-Il-ynm">
+                                            <rect key="frame" x="0.0" y="0.0" width="348.5" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2Du-xn-EHH" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="15" y="0.0" width="325.5" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="Vzy-Y5-hx3" id="Z2C-WZ-zEu"/>
+                                    <outlet property="delegate" destination="Vzy-Y5-hx3" id="a7r-JS-zCm"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zaT-9l-f9B" firstAttribute="top" secondItem="14M-Wd-yT0" secondAttribute="top" id="3VU-XN-jHw"/>
+                            <constraint firstItem="zaT-9l-f9B" firstAttribute="leading" secondItem="14M-Wd-yT0" secondAttribute="leading" id="NnT-6o-rRA"/>
+                            <constraint firstItem="14M-Wd-yT0" firstAttribute="trailing" secondItem="zaT-9l-f9B" secondAttribute="trailing" id="ur5-Fq-pPA"/>
+                            <constraint firstItem="14M-Wd-yT0" firstAttribute="bottom" secondItem="zaT-9l-f9B" secondAttribute="bottom" id="vdp-1W-Q44"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="14M-Wd-yT0"/>
+                    </view>
+                    <connections>
+                        <outlet property="microserviceTableView" destination="zaT-9l-f9B" id="FiS-YT-cBc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fXS-wr-xjP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="278" y="42"/>
+        </scene>
+    </scenes>
+</document>

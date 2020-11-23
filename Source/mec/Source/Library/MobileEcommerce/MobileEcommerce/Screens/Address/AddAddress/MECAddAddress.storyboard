@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Address View Controller-->
+        <scene sceneID="pzO-mG-deA">
+            <objects>
+                <viewController storyboardIdentifier="MECAddAddressViewController" id="k0q-nT-I6a" customClass="MECAddAddressViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5YZ-ar-6S7" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCA-my-e5u">
+                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zfi-eX-lPL" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1230"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="91o-pm-tdi">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1230"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="BTx-cq-EV5" userLabel="Shipping Address Stack View">
+                                                        <rect key="frame" x="16" y="16" width="382" height="848"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Hk-70-aoz" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_shipping_address"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FKb-pR-E3O" customClass="MECAddressFieldView" customModule="MobileEcommerce" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="62" width="382" height="786"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="shipping_address">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qzA-hU-o3g" customClass="UIDCheckBox" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="16" y="880" width="382" height="128"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="billing_address_toggle_switch">
+                                                            <bool key="isElement" value="YES"/>
+                                                        </accessibility>
+                                                        <connections>
+                                                            <action selector="billingAddressCheckBoxToggled:" destination="k0q-nT-I6a" eventType="valueChanged" id="WjT-TB-1DR"/>
+                                                        </connections>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="x1z-ph-L2W" userLabel="Billing Address Stack View">
+                                                        <rect key="frame" x="16" y="1024" width="382" height="190"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDs-2t-1Qo" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="0.0" width="382" height="50"/>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                    <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_billing_address"/>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                                        <integer key="value" value="1"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cm1-vZ-Bmq" customClass="MECAddressFieldView" customModule="MobileEcommerce" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="62" width="382" height="128"/>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="billing_address">
+                                                                    <bool key="isElement" value="YES"/>
+                                                                </accessibility>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <edgeInsets key="layoutMargins" top="16" left="16" bottom="16" right="16"/>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="91o-pm-tdi" secondAttribute="bottom" id="M5f-EW-arM"/>
+                                            <constraint firstItem="91o-pm-tdi" firstAttribute="top" secondItem="Zfi-eX-lPL" secondAttribute="top" id="X9G-0i-SJS"/>
+                                            <constraint firstItem="91o-pm-tdi" firstAttribute="leading" secondItem="Zfi-eX-lPL" secondAttribute="leading" id="gNo-fp-w4i"/>
+                                            <constraint firstAttribute="trailing" secondItem="91o-pm-tdi" secondAttribute="trailing" id="uNx-Nc-67T"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Zfi-eX-lPL" secondAttribute="trailing" id="OMY-wS-Q4Q"/>
+                                    <constraint firstItem="Zfi-eX-lPL" firstAttribute="top" secondItem="eCA-my-e5u" secondAttribute="top" id="TAz-Wk-dHC"/>
+                                    <constraint firstItem="Zfi-eX-lPL" firstAttribute="leading" secondItem="eCA-my-e5u" secondAttribute="leading" id="YIh-Zh-5oL"/>
+                                    <constraint firstAttribute="bottom" secondItem="Zfi-eX-lPL" secondAttribute="bottom" id="cYt-mQ-B2B"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZQt-Sd-igT" appends="YES" id="kpT-yX-UWg"/>
+                                </connections>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C0W-Pr-UXo" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="0.0" y="822" width="414" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXB-as-cZN" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="16" width="382" height="34"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedButtonNormalTitle" value="mec_save_and_continue"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="saveAddressButtonClicked:" destination="k0q-nT-I6a" eventType="touchUpInside" id="OhB-OG-cY8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="NXB-as-cZN" secondAttribute="trailing" constant="16" id="6pL-pi-H5F"/>
+                                    <constraint firstItem="NXB-as-cZN" firstAttribute="top" secondItem="C0W-Pr-UXo" secondAttribute="top" constant="16" id="IZK-ZA-vft"/>
+                                    <constraint firstItem="NXB-as-cZN" firstAttribute="leading" secondItem="C0W-Pr-UXo" secondAttribute="leading" constant="16" id="Y7y-nV-Mbh"/>
+                                    <constraint firstAttribute="bottom" secondItem="NXB-as-cZN" secondAttribute="bottom" constant="24" id="aUa-Pc-OaT"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eCA-my-e5u" firstAttribute="leading" secondItem="kw9-U1-1Hj" secondAttribute="leading" id="KeZ-OI-iek"/>
+                            <constraint firstItem="Zfi-eX-lPL" firstAttribute="width" secondItem="kw9-U1-1Hj" secondAttribute="width" id="N04-2I-i5a"/>
+                            <constraint firstAttribute="bottom" secondItem="C0W-Pr-UXo" secondAttribute="bottom" id="N2W-JI-8I7"/>
+                            <constraint firstItem="Zfi-eX-lPL" firstAttribute="height" secondItem="kw9-U1-1Hj" secondAttribute="height" priority="250" id="NhS-ab-bwh"/>
+                            <constraint firstItem="C0W-Pr-UXo" firstAttribute="leading" secondItem="5YZ-ar-6S7" secondAttribute="leading" id="Nkd-Ma-76x"/>
+                            <constraint firstAttribute="trailing" secondItem="C0W-Pr-UXo" secondAttribute="trailing" id="e98-hd-xR8"/>
+                            <constraint firstItem="kw9-U1-1Hj" firstAttribute="trailing" secondItem="eCA-my-e5u" secondAttribute="trailing" id="hOE-wX-S2R"/>
+                            <constraint firstItem="C0W-Pr-UXo" firstAttribute="top" secondItem="eCA-my-e5u" secondAttribute="bottom" id="jU6-Ef-dIH"/>
+                            <constraint firstItem="eCA-my-e5u" firstAttribute="top" secondItem="kw9-U1-1Hj" secondAttribute="top" id="y0w-nM-dLb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kw9-U1-1Hj"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressBottomView" destination="C0W-Pr-UXo" id="Xpg-dd-6Lc"/>
+                        <outlet property="addressMainStackView" destination="91o-pm-tdi" id="8cS-Zd-qtn"/>
+                        <outlet property="addressScrollView" destination="eCA-my-e5u" id="mbp-lK-V0y"/>
+                        <outlet property="addressToggleCheckBox" destination="qzA-hU-o3g" id="6wc-bO-LMb"/>
+                        <outlet property="billingAddressFields" destination="cm1-vZ-Bmq" id="8f8-U5-xFO"/>
+                        <outlet property="billingAddressSection" destination="x1z-ph-L2W" id="1VT-xC-hbm"/>
+                        <outlet property="shippingAddressFields" destination="FKb-pR-E3O" id="MXK-Yf-q7h"/>
+                        <outlet property="shippingAddressSection" destination="BTx-cq-EV5" id="uaE-le-kWJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fUZ-ff-s3k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="ZQt-Sd-igT">
+                    <connections>
+                        <action selector="addressScreenTapped:" destination="k0q-nT-I6a" id="2Wb-cv-dBB"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="132" y="120"/>
+        </scene>
+    </scenes>
+</document>

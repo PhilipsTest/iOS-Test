@@ -1,0 +1,62 @@
+
+{
+    "success": true,
+    "payload": {
+        "country": "US",
+        "matchByLanguage": {
+            "available": true,
+            "results": [
+                        {
+                        "locale": "en_US",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77001",
+                                    "urls": {
+                                    "appinfra.testing": "htts://philips.com",
+                                    "appinfra.testing.kindex": "htts://philips.com/0",
+                                    "appinfra.testing1": "htts://philips.com",
+                                    "appinfra.testing1.kindex": "htts://philips.com/1",
+                                    "appinfra.testing2": "htts://philips.com"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        }
+                        ]
+        },
+        "matchByCountry": {
+            "available": true,
+            "results": [
+                        {
+                        "locale": "en_US",
+                        "configs": [
+                                    {
+                                    "micrositeId": "77001",
+                                    "urls": {
+                                    "appinfra.testing": "htts://philips.com",
+                                    "appinfra.testing.kindex": "htts://philips.com/0",
+                                    "appinfra.testing1": "htts://philips.com",
+                                    "appinfra.testing1.kindex": "htts://philips.com/1",
+                                    "appinfra.testing2": "htts://philips.com"
+                                    },
+                                    "tags": [
+                                             {
+                                             "id": "apps:env/dev",
+                                             "name": "dev",
+                                             "key": "apps++env+dev"
+                                             }
+                                             ]
+                                    }
+                                    ]
+                        }
+                        ]
+        }
+    },
+    "httpStatus": "OK"
+}

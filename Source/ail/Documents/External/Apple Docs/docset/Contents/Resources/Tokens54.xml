@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIAPISigningProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIAPISigningProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAPISigningProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAPISigningProtocol/createSignature:dhpUrl:queryString:headers:requestBody:</TokenIdentifier>
+			<Abstract type="html">Create an API signer instance according to HSDP specification</Abstract>
+			<DeclaredIn>AIAPISigningProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)createSignature:(NSString *)requestMethod dhpUrl:(NSString *)url queryString:(NSString *)requestUrlQuery headers:(NSDictionary *)allHttpHeaderFields requestBody:(NSData *)httpBody</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>requestMethod</Name>
+					<Abstract type="html">Type of method(POST, GET)</Abstract>
+				</Parameter><Parameter>
+					<Name>queryString</Name>
+					<Abstract type="html">Request URL query. applicationName=uGrow</Abstract>
+				</Parameter><Parameter>
+					<Name>dhpUrl</Name>
+					<Abstract type="html">Request URL</Abstract>
+				</Parameter><Parameter>
+					<Name>headers</Name>
+					<Abstract type="html">Request http header fields. Current date is passed as http header value.</Abstract>
+				</Parameter><Parameter>
+					<Name>requestBody</Name>
+					<Abstract type="html">Request body</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/createSignature:dhpUrl:queryString:headers:requestBody:</Anchor>
+            <NodeRef refid="54"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

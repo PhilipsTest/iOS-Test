@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BaseFlowManager Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BaseFlowManager" class="dashAnchor"></a>
+    <a title="BaseFlowManager Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">UAPPFramework Docs</a> (92% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">UAPPFramework Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BaseFlowManager Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseCondition.html">BaseCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseFlowManager.html">BaseFlowManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseState.html">BaseState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FlowManagerErrors.html">FlowManagerErrors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:13UAPPFramework2eeoiySbAA13BaseConditionC_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/StateCommunicationListener.html">StateCommunicationListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework12AppFlowModelV">AppFlowModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework14ConditionModelV">ConditionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework10EventModelV">EventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework10StateModelV">StateModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13UAPPFramework16ConditionMapTypea">ConditionMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13UAPPFramework12StateMapTypea">StateMapType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BaseFlowManager</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">BaseFlowManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Flow Manager class which handles reading application flow from configuration json and manage different state transitions</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC03appC5ModelAA03AppcF0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/appFlowModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC03appC5ModelAA03AppcF0VSgvp">appFlowModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>State flow model as defined in the json</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">fileprivate</span><span class="p">(</span><span class="k">set</span><span class="p">)</span> <span class="k">var</span> <span class="nv">appFlowModel</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:13UAPPFramework12AppFlowModelV">AppFlowModel</a></span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseFlowManager(cpy)appFlowJsonPath"></a>
+                    <a name="//apple_ref/swift/Variable/appFlowJsonPath" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseFlowManager(cpy)appFlowJsonPath">appFlowJsonPath</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <h3 id='deprecated' class='heading'>DEPRECATED</h3>
+
+<ul>
+<li>Variable to save the json path</li>
+<li>- Since 1.1.0</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated)</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">appFlowJsonPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseFlowManager(im)init"></a>
+                    <a name="//apple_ref/swift/Method/init()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseFlowManager(im)init">init()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Default Initializer</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="k">override</span> <span class="nf">init</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseFlowManager(im)initWithAppFlowJsonPath:"></a>
+                    <a name="//apple_ref/swift/Method/init(withAppFlowJsonPath:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseFlowManager(im)initWithAppFlowJsonPath:">init(withAppFlowJsonPath:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To initialize the Flow Manager with App Flow configuration like Json and Maps</p>
+<h3 id='deprecated' class='heading'>DEPRECATED</h3>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "use initialize: instead")</span>
+<span class="kd">@objc</span>
+<span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="n">withAppFlowJsonPath</span> <span class="nv">jsonPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>jsonPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Path of the Flow Json</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC10initialize07withAppC8JsonPath12successBlock07failureK0ySS_yycyAA0cD6ErrorsOctF"></a>
+                    <a name="//apple_ref/swift/Method/initialize(withAppFlowJsonPath:successBlock:failureBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC10initialize07withAppC8JsonPath12successBlock07failureK0ySS_yycyAA0cD6ErrorsOctF">initialize(withAppFlowJsonPath:successBlock:failureBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To initialise the Flow Manager with App Flow configuration like Json and Maps</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">withAppFlowJsonPath</span> <span class="nv">jsonPath</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">successBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="p">()</span> <span class="o">-&gt;</span> <span class="p">(),</span> <span class="nv">failureBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="kt"><a href="../Enums/FlowManagerErrors.html">FlowManagerErrors</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">()</span> <span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC10initialize07withAppC5ModelyAA0gcH0VSg_tKF"></a>
+                    <a name="//apple_ref/swift/Method/initialize(withAppFlowModel:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC10initialize07withAppC5ModelyAA0gcH0VSg_tKF">initialize(withAppFlowModel:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To initialise the Flow Manager with App Flow mode</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">initialize</span><span class="p">(</span><span class="n">withAppFlowModel</span> <span class="nv">flowModel</span><span class="p">:</span> <span class="kt"><a href="../Structs.html#/s:13UAPPFramework12AppFlowModelV">AppFlowModel</a></span><span class="p">?)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC12getBackStateyAA0bG0CSgAFKF"></a>
+                    <a name="//apple_ref/swift/Method/getBackState(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC12getBackStateyAA0bG0CSgAFKF">getBackState(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To get the State when custom navigation back button has been pressed.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error of type FlowManagerErrors which tells the error faced by Flow Manager to get the state to go to for custom back
+
+</div>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getBackState</span><span class="p">(</span><span class="n">_</span> <span class="nv">forState</span><span class="p">:</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current state of the app</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of BaseState which is the next state to navigate</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC12getBackStateAA0bG0CSgyKF"></a>
+                    <a name="//apple_ref/swift/Method/getBackState()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC12getBackStateAA0bG0CSgyKF">getBackState()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To get the State when custom navigation back button has been pressed. This by default takes the current State of the app</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error of type FlowManagerErrors which tells the error faced by Flow Manager to get the state to go to for custom back
+
+</div>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getBackState</span><span class="p">()</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>An instance of BaseState which is the next state to navigate</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseFlowManager(im)getCurrentState"></a>
+                    <a name="//apple_ref/swift/Method/getCurrentState()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseFlowManager(im)getCurrentState">getCurrentState()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>To get the current state of the app</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCurrentState</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The current State of the App</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC16populateStateMapyySDySSAA0bF0CGzF"></a>
+                    <a name="//apple_ref/swift/Method/populateStateMap(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC16populateStateMapyySDySSAA0bF0CGzF">populateStateMap(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to be implemented by the child classes for mapping the app states with corresponding state classes, inherited from baseState class</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">populateStateMap</span><span class="p">(</span><span class="n">_</span> <span class="nv">stateMap</span><span class="p">:</span> <span class="k">inout</span> <span class="kt"><a href="../Typealiases.html#/s:13UAPPFramework12StateMapTypea">StateMapType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>stateMap</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Variable that hold the base state</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC20populateConditionMapyySDySSAA0bF0CGzF"></a>
+                    <a name="//apple_ref/swift/Method/populateConditionMap(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC20populateConditionMapyySDySSAA0bF0CGzF">populateConditionMap(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method to be implemented by the child classes for mapping the app conditions with corresponding condition classes, inhereted from baseCondition class</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">populateConditionMap</span><span class="p">(</span><span class="n">_</span> <span class="nv">conditionMap</span><span class="p">:</span> <span class="k">inout</span> <span class="kt"><a href="../Typealiases.html#/s:13UAPPFramework16ConditionMapTypea">ConditionMapType</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>conditionMap</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Variable that hold the base condition</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC8getStateyAA0bF0CSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/getState(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC8getStateyAA0bF0CSgSSF">getState(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this method to get the state, which is mapped with the corresponding stateId</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getState</span><span class="p">(</span><span class="n">_</span> <span class="nv">stateId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>stateId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>State Id, defines the which state is the app in</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>state of type BaseState</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC12getConditionyAA0bF0CSgSSF"></a>
+                    <a name="//apple_ref/swift/Method/getCondition(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC12getConditionyAA0bF0CSgSSF">getCondition(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Call this method to get the condition, which is mapped with the corresponding conditionId</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getCondition</span><span class="p">(</span><span class="n">_</span> <span class="nv">conditionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseCondition.html">BaseCondition</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>conditionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>condition Id defines, at which condition the app is in</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>state of type BaseCondition</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC12getNextStateyAA0bG0CSgSSSgKF"></a>
+                    <a name="//apple_ref/swift/Method/getNextState(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC12getNextStateyAA0bG0CSgSSSgKF">getNextState(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns next state for the specified state. This takes the current State by default</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error of type FlowManagerErrors which tells the error faced by Flow Manager to get the state to go to on the Event
+
+</div>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNextState</span><span class="p">(</span><span class="n">_</span> <span class="nv">forEventId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forEventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event Id of the click</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The next state to load</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13UAPPFramework15BaseFlowManagerC12getNextState_10forEventIdAA0bG0CSgAH_SSSgtKF"></a>
+                    <a name="//apple_ref/swift/Method/getNextState(_:forEventId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13UAPPFramework15BaseFlowManagerC12getNextState_10forEventIdAA0bG0CSgAH_SSSgtKF">getNextState(_:forEventId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns next state for the specified state.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    Error of type FlowManagerErrors which tells the error faced by Flow Manager to get the state to go to on the Event
+
+</div>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">getNextState</span><span class="p">(</span><span class="n">_</span> <span class="nv">currentState</span><span class="p">:</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?,</span> <span class="nv">forEventId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Classes/BaseState.html">BaseState</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>currentState</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The current state</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forEventId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The event Id of the click</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>The next state to load</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIAppInfra.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIAppInfra</TokenIdentifier>
+			<Abstract type="html">AIAppInfra is component manager class which encapsulates Logging, Tagging features</Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+            
+			
+			<NodeRef refid="6"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/setAppInfraLogger:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AILoggingProtocol&gt; appInfraLogger</Declaration>
+			
+			
+			<Anchor>//api/name/appInfraLogger</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/appInfraLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AILoggingProtocol&gt; appInfraLogger</Declaration>
+			
+			
+			<Anchor>//api/name/appInfraLogger</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppInfra/appInfraLogger</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) id&lt;AILoggingProtocol&gt; appInfraLogger</Declaration>
+			
+			
+			<Anchor>//api/name/appInfraLogger</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/setAppVersion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appVersion</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/appVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appVersion</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppInfra/appVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/appVersion</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/setAppName:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appName</Declaration>
+			
+			
+			<Anchor>//api/name/appName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/appName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appName</Declaration>
+			
+			
+			<Anchor>//api/name/appName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAppInfra/appName</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) NSString *appName</Declaration>
+			
+			
+			<Anchor>//api/name/appName</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AIAppInfra/buildAppInfraWithBlock:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>+ (instancetype)buildAppInfraWithBlock:(void ( ^ ) ( AIAppInfraBuilder *builder ))buildBlock</Declaration>
+			
+			
+			<Anchor>//api/name/buildAppInfraWithBlock:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/initWithBuilder:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithBuilder:(AIAppInfraBuilder *)builder</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBuilder:</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/getVersion</TokenIdentifier>
+			<Abstract type="html">Description : This method is used to get component version number</Abstract>
+			<DeclaredIn>AIAppInfra.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns component version</Abstract></ReturnValue>
+			<Anchor>//api/name/getVersion</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/getComponentId</TokenIdentifier>
+			<Abstract type="html">Description : This method is used to get component&apos;s three letter acronym</Abstract>
+			<DeclaredIn>AIAppInfra.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getComponentId</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns component&apos;s three letter acronym</Abstract></ReturnValue>
+			<Anchor>//api/name/getComponentId</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAppInfra/logDeviceNameAndVersion</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppInfra.m</DeclaredIn>
+			
+			<Declaration>- (void)logDeviceNameAndVersion</Declaration>
+			
+			
+			<Anchor>//api/name/logDeviceNameAndVersion</Anchor>
+            <NodeRef refid="6"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

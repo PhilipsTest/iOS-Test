@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Navedite infrastrukturni predmet aplikacije";
+"ECSBaseURLNotFound" = "Osnovnega URL-ja ni bilo mogoče najti";
+"ECSCartEntryError" = "Izdelek ni bil dodan v košarico";
+"ECSCartError" = "Košarica še ni bila ustvarjena";
+"ECSCommerceCartModificationError" = "Količina ne sme biti manjša od nič";
+"ECSCtnNotProvided" = "Navedite CTN";
+"ECSHybrisNotAvailable" = "Philipsova trgovina ni na voljo za izbrano državo. Na voljo je samo način prodajalca.";
+"ECSIllegalArgumentError" = "Navedite veljavne vhodne podatke";
+"ECSInsufficientStockError" = "Izdelka ni mogoče poslati, ker ga ni na zalogi";
+"ECSInvalidPaymentInfoError" = "Navedite veljavne podatke o plačilu";
+"ECSInvalidTokenError" = "Prišlo je do tehnične napake (neveljaven žeton za dostop). Izvedite Hybrisovo ponovno preverjanje pristnosti.";
+"ECSLocaleNotFound" = "Določite območne nastavitve";
+"ECSNoSuchElementError" = "Prišlo je do napake pri pridobivanju podatkov iz strežnika";
+"ECSOAuthDetailError" = "Navedite popolne podatke za OAuth";
+"ECSOAuthNotCalled" = "Za to dejanje je treba preveriti pristnost uporabnika";
+"ECSPIL_BAD_REQUEST" = "Prišlo je do tehnične napake. Poskusite znova čez nekaj časa.";
+"ECSPIL_BAD_REQUEST_cartId" = "Košarica še ni bila ustvarjena";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Prišlo je do tehnične napake. Poskusite znova čez nekaj časa.";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Prišlo je do tehnične napake (neveljaven žeton za dostop). Izvedite Hybrisovo ponovno preverjanje pristnosti.";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Neveljaven e-poštni naslov. Preverite.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Izdelek ni bil dodan v košarico";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Določite območne nastavitve";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Navedite veljaven CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Navedite veljavno količino";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philipsova trgovina ni na voljo za izbrano državo. Na voljo je samo način prodajalca.";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Količina mora biti večja od nič";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Določite območne nastavitve";
+"ECSPIL_MISSING_PARAMETER_language" = "Določite območne nastavitve";
+"ECSPIL_MISSING_PARAMETER_productId" = "Navedite CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philipsova trgovina ni na voljo za izbrano državo. Na voljo je samo način prodajalca.";
+"ECSPIL_NEGATIVE_QUANTITY" = "Količina ne sme biti manjša od nič";
+"ECSPIL_NOT_ACCEPTABLE" = "Prišlo je do tehnične napake. Poskusite znova čez nekaj časa.";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Prišlo je do tehnične napake. Poskusite znova čez nekaj časa.";
+"ECSPIL_NOT_FOUND_cartId" = "Navedite veljaven ID košarice";
+"ECSPIL_NOT_FOUND_productId" = "Navedite veljaven CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Izdelka ni mogoče poslati, ker ga ni na zalogi";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Prišlo je do tehnične napake. Poskusite znova čez nekaj časa.";
+"ECSPaymentAuthorizationError" = "Plačilo ni bilo odobreno";
+"ECSPropositionIdNotFound" = "Nastavite veljaven ID predloga";
+"ECSSiteIdNotFound" = "Philipsova trgovina ni na voljo za izbrano državo. Na voljo je samo način prodajalca.";
+"ECSUnknownIdentifierError" = "Zahtevano sredstvo ni na voljo";
+"ECSUnsupportedDeliveryModeError" = "Izbrani način dostave ni podprt";
+"ECSUnsupportedVoucherError" = "Žal tega kupona ni mogoče unovčiti";
+"ECSValidationError" = "Preverjanje veljavnosti podatkov ni uspelo";
+"ECSVoucherOperationError" = "Žal tega kupona ni mogoče unovčiti";
+"ECSaddressId" = "Dani naslov ne obstaja ali pa pripada drugemu uporabniku";
+"ECScountryCodeNotGiven" = "Navedite veljavno kodo države";
+"ECScountryisocode" = "Izbrana država ni veljavna";
+"ECSfirstName" = "Naslednji znaki niso dovoljeni: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Prišlo je do tehnične napake (napačne poverilnice odjemalca). Znova se prijavite.";
+"ECSinvalid_grant" = "Prišlo je do tehnične napake (neveljaven Janrainov žeton). Znova se prijavite.";
+"ECSlastName" = "Naslednji znaki niso dovoljeni: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Navedite veljavno naročilo";
+"ECSphone1" = "Izbrana telefonska številka ni veljavna";
+"ECSphone2" = "Izbrana telefonska številka ni veljavna";
+"ECSpostUrl" = "Naročilo je že plačano/zaključeno";
+"ECSpostalCode" = "Izbrana poštna številka ni veljavna";
+"ECSregionisocode" = "Izbrana regija ni veljavna";
+"ECSsessionCart" = "Preden oddate naročilo, izberite naslov za dostavo, način dostave in način plačila";
+"ECSsomethingWentWrong" = "Prišlo je do tehnične napake. Poskusite znova čez nekaj časa.";
+"ECSunsupported_grant_type" = "Prišlo je do tehnične napake (nepodprta vrsta odobritve). Znova se prijavite.";

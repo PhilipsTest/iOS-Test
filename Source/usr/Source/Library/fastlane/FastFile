@@ -1,0 +1,4 @@
+# Import the fast file from the build scripts here.
+# Fastlane runs based on a fastlane directory in the same directory as the project file or workspace. In order to run your project, the generic FastFile is imported here.
+@buildscripts_directory = "../../iosbuildscriptsfastlane"
+import File.join(@buildscripts_directory, "scripts/BuildScripts.rb")

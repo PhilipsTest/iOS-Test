@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="ea9-ir-FhM">
+            <objects>
+                <viewController storyboardIdentifier="DCWebView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yRf-UH-DX1" customClass="DCWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tyW-5k-pkm" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HMB-t2-iWi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dqO-RR-6bI" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="187" y="333" width="0.0" height="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circularProgressIndicatorSize">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dqO-RR-6bI" firstAttribute="centerX" secondItem="2it-nr-TeF" secondAttribute="centerX" id="CSx-9d-JoO"/>
+                            <constraint firstAttribute="bottom" secondItem="HMB-t2-iWi" secondAttribute="bottom" id="Jpr-ex-mj4"/>
+                            <constraint firstItem="2it-nr-TeF" firstAttribute="trailing" secondItem="HMB-t2-iWi" secondAttribute="trailing" id="TVQ-Tk-jRH"/>
+                            <constraint firstItem="HMB-t2-iWi" firstAttribute="top" secondItem="tyW-5k-pkm" secondAttribute="top" id="cMV-iK-yJX"/>
+                            <constraint firstItem="dqO-RR-6bI" firstAttribute="centerY" secondItem="tyW-5k-pkm" secondAttribute="centerY" id="ckH-vz-lyf"/>
+                            <constraint firstItem="HMB-t2-iWi" firstAttribute="leading" secondItem="2it-nr-TeF" secondAttribute="leading" id="qY6-Ge-gsG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2it-nr-TeF"/>
+                    </view>
+                    <connections>
+                        <outlet property="backGroundImage" destination="HMB-t2-iWi" id="ZtN-vg-a8Y"/>
+                        <outlet property="progressIndicatorView" destination="dqO-RR-6bI" id="w1j-20-ROA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GTf-Ux-CrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1756" y="183"/>
+        </scene>
+    </scenes>
+</document>

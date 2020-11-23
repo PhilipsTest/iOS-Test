@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIStorageProviderProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIStorageProviderProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="72"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/storeValueForKey:value:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)storeValueForKey:(nonnull NSString *)key value:(nonnull id&lt;NSCoding&gt;)object error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/storeValueForKey:value:error:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/fetchValueForKey:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable id)fetchValueForKey:(nonnull NSString *)key error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/fetchValueForKey:error:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/removeValueForKey:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)removeValueForKey:(nonnull NSString *)key</Declaration>
+			
+			
+			<Anchor>//api/name/removeValueForKey:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/loadData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable NSData *)loadData:(nonnull id&lt;NSCoding&gt;)data error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/loadData:error:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/parseData:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable id)parseData:(nonnull NSData *)data error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/parseData:error:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/parseData:forType:error:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nullable id)parseData:(nonnull NSData *)data forType:(nonnull NSString *)name error:(NSError *_Nullable *_Nullable)error</Declaration>
+			
+			
+			<Anchor>//api/name/parseData:forType:error:</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/deviceHasPasscode</TokenIdentifier>
+			<Abstract type="html">Method to check whether passcode lock is enabled in devie</Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)deviceHasPasscode</Declaration>
+			
+			<ReturnValue><Abstract type="html">Bool value indicating whether passcode is enabled or not</Abstract></ReturnValue>
+			<Anchor>//api/name/deviceHasPasscode</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIStorageProviderProtocol/getDeviceCapability</TokenIdentifier>
+			<Abstract type="html">Method to check whether devices is rooted or not</Abstract>
+			<DeclaredIn>AIStorageProviderProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nonnull NSString *)getDeviceCapability</Declaration>
+			
+			<ReturnValue><Abstract type="html">&quot;true&quot; if device is jailbroken else returns &quot;false&quot;</Abstract></ReturnValue>
+			<Anchor>//api/name/getDeviceCapability</Anchor>
+            <NodeRef refid="72"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

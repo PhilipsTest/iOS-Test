@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIInternationalizationInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIInternationalizationInterface</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIInternationalizationInterface.h</DeclaredIn>
+            
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIInternationalizationInterface/getUILocale</TokenIdentifier>
+			<Abstract type="html">Description: Get the OS locale</Abstract>
+			<DeclaredIn>AIInternationalizationInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSLocale *)getUILocale</Declaration>
+			
+			<ReturnValue><Abstract type="html">OS locale object</Abstract></ReturnValue>
+			<Anchor>//api/name/getUILocale</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIInternationalizationInterface/getUILocaleString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIInternationalizationInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getUILocaleString</Declaration>
+			
+			
+			<Anchor>//api/name/getUILocaleString</Anchor>
+            <NodeRef refid="19"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

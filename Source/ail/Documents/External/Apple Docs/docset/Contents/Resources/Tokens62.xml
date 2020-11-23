@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIContentProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIContentProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="62"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentProtocol/getId</TokenIdentifier>
+			<Abstract type="html">The unique id of this content ID</Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getId</Declaration>
+			
+			<ReturnValue><Abstract type="html">unique content ID</Abstract></ReturnValue>
+			<Anchor>//api/name/getId</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentProtocol/getVersion</TokenIdentifier>
+			<Abstract type="html">version number of this article</Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+			
+			<Declaration>- (long)getVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">version number of this article</Abstract></ReturnValue>
+			<Anchor>//api/name/getVersion</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentProtocol/getTags</TokenIdentifier>
+			<Abstract type="html">array of Tag ID set for this article</Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+			
+			<Declaration>- (NSArray *)getTags</Declaration>
+			
+			<ReturnValue><Abstract type="html">array of Tag ID set for this article</Abstract></ReturnValue>
+			<Anchor>//api/name/getTags</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentProtocol/initWithDictionary:</TokenIdentifier>
+			<Abstract type="html">initializes the content instance data model members from dictionary</Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithDictionary:(NSDictionary *)dictionary</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>dictionary</Name>
+					<Abstract type="html">that is to be parsed to this objects data properties</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">instance type</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithDictionary:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentProtocol/hasTag:</TokenIdentifier>
+			<Abstract type="html">Check whether this article has the given tag set</Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)hasTag:(NSString *)tagID</Declaration>
+			
+			<ReturnValue><Abstract type="html">true if the given tag identified by its ID is set for this article</Abstract></ReturnValue>
+			<Anchor>//api/name/hasTag:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIContentProtocol/isNewer:</TokenIdentifier>
+			<Abstract type="html">true if the version of this article is more recent than the given version number</Abstract>
+			<DeclaredIn>AIContentProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)isNewer:(long)version</Declaration>
+			
+			<ReturnValue><Abstract type="html">true if the version of this article is more recent than the given version number</Abstract></ReturnValue>
+			<Anchor>//api/name/isNewer:</Anchor>
+            <NodeRef refid="62"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

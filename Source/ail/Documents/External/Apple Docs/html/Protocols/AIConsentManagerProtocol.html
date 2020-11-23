@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AIConsentManagerProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/AIConsentManagerProtocol" class="dashAnchor"></a>
+    <a title="AIConsentManagerProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">AppInfra Docs</a> (51% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">AppInfra Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        AIConsentManagerProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AIConsentManager.html">AIConsentManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:@M@AppInfra@objc(cs)DeviceStoredConsentHandler">DeviceStoredConsentHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/AIConsentManagerProtocol.html">AIConsentManagerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/AIConsentStatusChangeProtocol.html">AIConsentStatusChangeProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>AIConsentManagerProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AIConsentManagerProtocol</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>AIConsentManagerProtocol
+Protocol implemented by the AIConsentManager class which serves as a contact point for registering/deregistering handlers with a particular consent type, storing and fetching consents using the handlers that are registered</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/registerHandler(handler:forConsentTypes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">registerHandler(handler:forConsentTypes:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to register a consent handler of type ConsentHandlerProtocol with list of consent types.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    AIConsentManagerErrorCodes.duplicateConsentCode if the consent type has already been registered with the registry
+
+</div>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">registerHandler</span><span class="p">(</span><span class="nv">handler</span><span class="p">:</span> <span class="kt">ConsentHandlerProtocol</span><span class="p">,</span> <span class="nv">forConsentTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="o">&lt;&lt;</span><span class="n">error</span> <span class="n">type</span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>handler</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Object that implements ConsentHandlerProtocol, which si the object that will be registered for the types passed in the first parameter</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forConsentTypes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of Strings denoting the consent types to be registering.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)registerConsentDefinitionsWithConsentDefinitions:completion:"></a>
+                    <a name="//apple_ref/swift/Method/registerConsentDefinitions(consentDefinitions:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)registerConsentDefinitionsWithConsentDefinitions:completion:">registerConsentDefinitions(consentDefinitions:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to register a consent definitions which are passed as input parameter.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">registerConsentDefinitions</span><span class="p">(</span><span class="nv">consentDefinitions</span><span class="p">:</span> <span class="p">[</span><span class="kt">ConsentDefinition</span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>consentDefinitions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>List of consent definitions to register.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Completion handler that will be invoked once all the consent definitions are registered</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>NSError if there was an error that was encountered while registering consentDefinitions\</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)deregisterHandlerForConsentTypes:"></a>
+                    <a name="//apple_ref/swift/Method/deregisterHandler(forConsentTypes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)deregisterHandlerForConsentTypes:">deregisterHandler(forConsentTypes:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to de-register a consent handler of type ConsentHandlerProtocol with list of consent types.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">deregisterHandler</span><span class="p">(</span><span class="nv">forConsentTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forConsentTypes</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of Strings denoting the consent types to be deregistered.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/storeConsentState(consent:withStatus:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">storeConsentState(consent:withStatus:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to store the status of all the consent types combined in the consent definition that is paased as the first parameter.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">storeConsentState</span><span class="p">(</span><span class="n">consent</span> <span class="nv">consentDefinition</span><span class="p">:</span> <span class="kt">ConsentDefinition</span><span class="p">,</span> <span class="n">withStatus</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">result</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>consentDefinition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Consent Definition containing array of consent types whose status has to be stored in the backend.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>status</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Bool indicating status of the consent definition that is to be stored</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Block that will be executed once the store has been completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>error: NSError if there was an error that was encountered while storing the ConsentDefinintion or
+       result: Bool denoting if the consent definition was executed successfully</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/getConsentDefinition(forConsentType:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">getConsentDefinition(forConsentType:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to store the status of all the consent types combined in the consent definition that is paased as the first parameter.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getConsentDefinition</span><span class="p">(</span><span class="nv">forConsentType</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">ConsentDefinition</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forConsentType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String denoting the consent type.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><ul>
+<li>consentDefinition: Consent Definition containing array of consent types whose status has to be stored in the backend.</li>
+</ul></p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/fetchConsentStates(forConsentDefinitions:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">fetchConsentStates(forConsentDefinitions:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to fetch to status of consent definitions passed as input parameter.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchConsentStates</span><span class="p">(</span><span class="n">forConsentDefinitions</span> <span class="nv">consentDefinitions</span><span class="p">:</span> <span class="p">[</span><span class="kt">ConsentDefinition</span><span class="p">],</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">list</span><span class="p">:[</span><span class="kt">ConsentDefinitionStatus</span><span class="p">]?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>consentDefinitions</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Array of Consent Definitions each containing array of consent types whose status has to be fetched from the backend.</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Block that will be invoked once the fetching operation has been completed.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>list: Array of ConsentDefinitionStatus containing the status of each consent definition
+       error: NSError if there was an error that was encountered while fetching statuses of ConsentDefinintions</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/"></a>
+                    <a name="//apple_ref/swift/Method/fetchConsentState(forConsentDefinition:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/">fetchConsentState(forConsentDefinition:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to fetch status of Consent types contained in the consent definition that is passed as the parameter.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">fetchConsentState</span><span class="p">(</span><span class="n">forConsentDefinition</span> <span class="nv">consentDefinition</span><span class="p">:</span> <span class="kt">ConsentDefinition</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">ConsentDefinitionStatus</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>consentDefinition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Consent Definition containing array of consent types whose status has to be fetched from the backend</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Block that will be invoked once the fetching operation has been completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>status: ConsentDefinitionStatus containing the status of the consent definition passed in the first parameter
+         error: NSError if there was an error that was encountered while fetching status of ConsentDefinintion</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)fetchConsentTypeStateForConsentType:completion:"></a>
+                    <a name="//apple_ref/swift/Method/fetchConsentTypeState(forConsentType:completion:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)fetchConsentTypeStateForConsentType:completion:">fetchConsentTypeState(forConsentType:completion:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to fetch status of Consent types contained in the consent definition that is passed as the parameter.</p>
+<div class="aside aside-throws">
+    <p class="aside-title">Throws</p>
+    status: ConsentDefinitionStatus containing the status of the consent definition passed in the first parameter
+        error: NSError if there was an error that was encountered while fetching status of ConsentDefinintion
+       Throws: AIConsentManagerErrorCodes.ConsentServiceErrorCode.consentDefinitionNotRegisteredErrorCode if the consent definition has not been registered with the registry
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    2018.1.0
+
+</div>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">fetchConsentTypeState</span><span class="p">(</span><span class="nv">forConsentType</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">status</span><span class="p">:</span> <span class="kt">ConsentDefinitionStatus</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">NSError</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="k">throws</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>forConsentType</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String containing the consent type that needs to be fetched</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completion</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Block that will be invoked once the fetching operation has been completed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)addConsentStatusChangedWithDelegate:for:"></a>
+                    <a name="//apple_ref/swift/Method/addConsentStatusChanged(delegate:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)addConsentStatusChangedWithDelegate:for:">addConsentStatusChanged(delegate:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to add a delegate for listening to Consent Status Change for Consent Definition</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">addConsentStatusChanged</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AIConsentStatusChangeProtocol.html">AIConsentStatusChangeProtocol</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">consentDefiniton</span><span class="p">:</span> <span class="kt">ConsentDefinition</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">&lt;&lt;</span><span class="n">error</span> <span class="n">type</span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate of type AIConsentStatusChangeProtocol which will receive the callback when Consent Status has changed</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>consentDefiniton</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Consent Definition whose status change will trigger the callback</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)removeConsentStatusChangedWithDelegate:for:"></a>
+                    <a name="//apple_ref/swift/Method/removeConsentStatusChanged(delegate:for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@AppInfra@objc(pl)AIConsentManagerProtocol(im)removeConsentStatusChangedWithDelegate:for:">removeConsentStatusChanged(delegate:for:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Method used to remove a delegate for listening to Consent Status Change for Consent Definition</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span>
+<span class="kd">optional</span> <span class="kd">func</span> <span class="nf">removeConsentStatusChanged</span><span class="p">(</span><span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AIConsentStatusChangeProtocol.html">AIConsentStatusChangeProtocol</a></span><span class="p">,</span> <span class="k">for</span> <span class="nv">consentDefinition</span><span class="p">:</span> <span class="kt">ConsentDefinition</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="o">&lt;&lt;</span><span class="n">error</span> <span class="n">type</span><span class="o">&gt;&gt;</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>delegate</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The delegate of type AIConsentStatusChangeProtocol which will be removed as the callback of Consent Status change</p>
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>consentDefinition</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The Consent Definition whose status change callback will be removed</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

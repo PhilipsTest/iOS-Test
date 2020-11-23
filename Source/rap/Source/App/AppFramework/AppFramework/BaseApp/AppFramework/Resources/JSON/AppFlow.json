@@ -1,0 +1,393 @@
+{
+    "appflow": {
+        "firstState": "splash",
+        "states": [
+                   {
+                   "state": "splash",
+                   "events": [
+                              {
+                              "eventId": "onAppStartEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "welcome"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "welcome",
+                   "events": [
+                              {
+                              "eventId": "welcome_Button_Skip",
+                              "nextStates": [
+                                             {
+                                             "condition": ["shouldLaunchCookieConsent"],
+                                             "nextState": "cookieConsent"
+                                             },
+                                             {
+                                             "condition": ["isUserVerified"],
+                                             "nextState": "registrationWelcome"
+                                             },
+                                             {
+                                             "condition": ["isLoggedIn"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "registrationWelcome"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "welcome_Button_Done",
+                              "nextStates": [
+                                             {
+                                             "condition": ["shouldLaunchCookieConsent"],
+                                             "nextState": "cookieConsent"
+                                             },
+                                             {
+                                             "condition": ["isUserVerified"],
+                                             "nextState": "registrationWelcome"
+                                             },
+                                             {
+                                             "condition": ["isLoggedIn"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "registrationWelcome"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "UserRegEnvironmentSettings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "userRegistrationEnvironmentSettings"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "themeChanged",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "cookieConsent",
+                   "events": [
+                              {
+                              "eventId": "cookie_allow",
+                              "nextStates": [
+                                             {
+                                             "condition": ["isLoggedIn"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "registrationWelcome"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "cookie_disallow",
+                              "nextStates": [
+                                             {
+                                             "condition": ["isLoggedIn"],
+                                             "nextState": "hamburgerMenu"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "registrationWelcome"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "UserRegEnvironmentSettings",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "userRegistrationEnvironmentSettings"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "registrationWelcome",
+                   "events": [
+                              {
+                              "eventId": "registrationWelcome_continue",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "termsAndPrivacy",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "termsAndPrivacy"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "hamburgerMenu",
+                   "events": [
+                              {
+                              "eventId": "Home",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "home"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Help",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "consumerCare"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "Shopping",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "InAppPurchaseCatalogueView"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "About",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "about"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "testDemoApps",
+                              "nextStates": [
+                                             {
+                                             "condition": [],
+                                             "nextState": "testDemoApps"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "MyAccount",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                                           "isLoggedIn"
+                                                           ],
+                                             "nextState": "MyAccount"
+                                             },
+                                             {
+                                             "condition": [],
+                                             "nextState": "registrationWelcome"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state" : "MyAccount",
+                   "events" : [
+                               {
+                               "eventId" : "MyDetails",
+                               "nextStates": [
+                                              {
+                                              "condition": [
+                                                            "isLoggedIn"
+                                                            ],
+                                              "nextState": "MyDetails"
+                                              }
+                                              ]
+                               },
+                               {
+                               "eventId" : "PrivacySettings",
+                               "nextStates": [
+                                              {
+                                              "condition": [
+                                                            "isLoggedIn"
+                                                            ],
+                                              "nextState": "PrivacySettings"
+                                              }
+                                              ]
+                               },
+                               {
+                               "eventId" : "UserOptin",
+                               "nextStates": [
+                                              {
+                                              "condition": [
+                                                            "isLoggedIn"
+                                                            ],
+                                              "nextState": "UserOptin"
+                                              }
+                                              ]
+                               }
+                               ]
+                   },
+                   {
+                   "state": "testDemoApps",
+                   "events": [
+                              {
+                              "eventId": "TestInAppPurhcaseEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "demoInAppState"
+                                             }
+                                             ]
+                              },
+                              {
+                                  "eventId": "TestPhilipsEcommerceTestSDKEvent",
+                                  "nextStates": [
+                                      {
+                                          "condition": [
+                                          ],
+                                          "nextState": "testEcommerceState"
+                                      }
+                                  ]
+                              },
+                              {
+                                  "eventId": "TestMobileEcommerceSDKEvent",
+                                  "nextStates": [
+                                      {
+                                          "condition": [
+                                          ],
+                                          "nextState": "demoMobileEcommerceState"
+                                      }
+                                  ]
+                              },
+                              {
+                              "eventId": "TestAppInfraEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "demoAppInfra"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "TestConsumerCareEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "demoConsumerCare"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "TestProductRegistrationEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "demoProductRegistration"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "TestUserRegistrationEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "demoUserRegistration"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "TestChatbotEvent",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "demoChatbot"
+                                             }
+                                             ]
+                              },
+                              {
+                              "eventId": "ComponentVersions",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "ComponentVersions"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "registrationSettings",
+                   "events": [
+                              {
+                              "eventId": "registrationSettings_continue",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "hamburgerMenu"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "consumerCare",
+                   "events": [
+                              {
+                              "eventId": "Register Your Product",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "productRegistration"
+                                             }
+                                             ]
+                              }
+                              ]
+                   },
+                   {
+                   "state": "about",
+                   "events": [
+                              {
+                              "eventId": "termsAndPrivacy",
+                              "nextStates": [
+                                             {
+                                             "condition": [
+                                             ],
+                                             "nextState": "termsAndPrivacy"
+                                             }
+                                             ]
+                              }
+                              ]
+                   }
+                   ]
+    }
+}
+

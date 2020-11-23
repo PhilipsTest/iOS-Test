@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AITimeInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AITimeInterface</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.h</DeclaredIn>
+            
+			
+			<NodeRef refid="47"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAppInfra:(AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/getUTCTime</TokenIdentifier>
+			<Abstract type="html">Description: method to get server UTC time</Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSDate *)getUTCTime</Declaration>
+			
+			<ReturnValue><Abstract type="html">returns the local time</Abstract></ReturnValue>
+			<Anchor>//api/name/getUTCTime</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/refreshTime</TokenIdentifier>
+			<Abstract type="html">Description: method to refresh UTC time could call</Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)refreshTime</Declaration>
+			
+			
+			<Anchor>//api/name/refreshTime</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/timeSyncCompleted</TokenIdentifier>
+			<Abstract type="html">Description: call back notification method, which is fiered once sync is completed</Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)timeSyncCompleted</Declaration>
+			
+			
+			<Anchor>//api/name/timeSyncCompleted</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/autoSyncTheTimeForEvery24Hours</TokenIdentifier>
+			<Abstract type="html">Description: method which Initiates the time sync when the cached data is older than 24 hours</Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)autoSyncTheTimeForEvery24Hours</Declaration>
+			
+			
+			<Anchor>//api/name/autoSyncTheTimeForEvery24Hours</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/reachabilityChanged:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)reachabilityChanged:(NSNotification *)notification</Declaration>
+			
+			
+			<Anchor>//api/name/reachabilityChanged:</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/dealloc</TokenIdentifier>
+			<Abstract type="html">Description: remove the observer when dealoc called</Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)dealloc</Declaration>
+			
+			
+			<Anchor>//api/name/dealloc</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/forceUpdateTheLastSyncDateTime</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)forceUpdateTheLastSyncDateTime</Declaration>
+			
+			
+			<Anchor>//api/name/forceUpdateTheLastSyncDateTime</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/isSynchronized</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isSynchronized</Declaration>
+			
+			
+			<Anchor>//api/name/isSynchronized</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AITimeInterface/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AITimeInterface/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AITimeInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, retain) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="47"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

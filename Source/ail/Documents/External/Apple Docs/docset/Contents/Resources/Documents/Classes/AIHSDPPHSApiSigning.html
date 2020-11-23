@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AIHSDPPHSApiSigning Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+	<optgroup label="Properties">
+		
+		<option value="//api/name/hsdpKey">hsdpKey</option>
+		
+		<option value="//api/name/sharedKey">sharedKey</option>
+		
+	</optgroup>
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/buildAuthorizationHeaderValue:signatureKey:">- buildAuthorizationHeaderValue:signatureKey:</option>
+		
+		<option value="//api/name/convertToHexValueFromString:">- convertToHexValueFromString:</option>
+		
+		<option value="//api/name/convertToString:">- convertToString:</option>
+		
+		<option value="//api/name/createSignature:dhpUrl:queryString:headers:requestBody:">- createSignature:dhpUrl:queryString:headers:requestBody:</option>
+		
+		<option value="//api/name/hashRequest:queryString:headers:requestBody:">- hashRequest:queryString:headers:requestBody:</option>
+		
+		<option value="//api/name/hashedValueOfData:">- hashedValueOfData:</option>
+		
+		<option value="//api/name/hashedValueOfData:WithKey:">- hashedValueOfData:WithKey:</option>
+		
+		<option value="//api/name/initApiSigner:andhexKey:">- initApiSigner:andhexKey:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AIHSDPPHSApiSigning Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/AIAPISigningProtocol.html">AIAPISigningProtocol</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIClonableClient.h<br />AIClonableClient.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/initApiSigner:andhexKey:" title="initApiSigner:andhexKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/initApiSigner:andhexKey:">&ndash;&nbsp;initApiSigner:andhexKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create an API signer instance according to HSDP specification</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (id)initApiSigner:(NSString *)<em>sharedKey</em> andhexKey:(NSString *)<em>hexKey</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>sharedKey</code></th>
+						<td><p>Api signing shared key</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>hexSecretKey</code></th>
+						<td><p>Api signing secret key in hex string format.</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Class instance AIHSDPPHSApiSigning</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIClonableClient.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						
+						<h2 class="task-title">Other Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/createSignature:dhpUrl:queryString:headers:requestBody:" title="createSignature:dhpUrl:queryString:headers:requestBody:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/createSignature:dhpUrl:queryString:headers:requestBody:">&ndash;&nbsp;createSignature:dhpUrl:queryString:headers:requestBody:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Create an API signer instance according to HSDP specification</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)createSignature:(NSString *)<em>requestMethod</em> dhpUrl:(NSString *)<em>url</em> queryString:(NSString *)<em>requestUrlQuery</em> headers:(NSDictionary *)<em>allHttpHeaderFields</em> requestBody:(NSData *)<em>httpBody</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestMethod</code></th>
+						<td><p>Type of method(POST, GET)</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>queryString</code></th>
+						<td><p>Request URL query. applicationName=uGrow</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>dhpUrl</code></th>
+						<td><p>Request URL</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>headers</code></th>
+						<td><p>Request http header fields. Current date is passed as http header value.</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>requestBody</code></th>
+						<td><p>Request body</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIClonableClient.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/buildAuthorizationHeaderValue:signatureKey:" title="buildAuthorizationHeaderValue:signatureKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/buildAuthorizationHeaderValue:signatureKey:">&ndash;&nbsp;buildAuthorizationHeaderValue:signatureKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)buildAuthorizationHeaderValue:(NSDictionary *)<em>allHttpHeaderFields</em> signatureKey:(NSString *)<em>encodedKey</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hashRequest:queryString:headers:requestBody:" title="hashRequest:queryString:headers:requestBody:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hashRequest:queryString:headers:requestBody:">&ndash;&nbsp;hashRequest:queryString:headers:requestBody:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)hashRequest:(NSString *)<em>requestMethod</em> queryString:(NSString *)<em>requestUrlQuery</em> headers:(NSDictionary *)<em>allHttpHeaderFields</em> requestBody:(NSData *)<em>httpBody</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hashedValueOfData:WithKey:" title="hashedValueOfData:WithKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hashedValueOfData:WithKey:">&ndash;&nbsp;hashedValueOfData:WithKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)hashedValueOfData:(NSString *)<em>dataIn</em> WithKey:(NSData *)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hashedValueOfData:" title="hashedValueOfData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hashedValueOfData:">&ndash;&nbsp;hashedValueOfData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)hashedValueOfData:(NSString *)<em>method</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/convertToString:" title="convertToString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/convertToString:">&ndash;&nbsp;convertToString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)convertToString:(NSDictionary *)<em>allKeys</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/convertToHexValueFromString:" title="convertToHexValueFromString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/convertToHexValueFromString:">&ndash;&nbsp;convertToHexValueFromString:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (unsigned char *)convertToHexValueFromString:(NSString *)<em>hexString</em></code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+
+						<a title="Extension Methods" name="task_Extension Methods"></a>
+						<h2 class="task-title">Extension Methods</h2>
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/sharedKey" title="sharedKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/sharedKey">&nbsp;&nbsp;sharedKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) NSString *sharedKey</code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/hsdpKey" title="hsdpKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/hsdpKey">&nbsp;&nbsp;hsdpKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic) unsigned char *hsdpKey</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

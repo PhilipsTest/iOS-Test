@@ -1,0 +1,33 @@
+{
+    "appinfra":{
+        "appidentity.micrositeId": 77000,
+        "appidentity.sector": "b2c",
+        "appidentity.appState": "production",
+        "appidentity.serviceDiscoveryEnvironment": "production",
+        "servicediscovery.platformMicrositeId":70000,
+        "servicediscovery.platformEnvironment":"production",
+        "restclient.cacheSizeInKB": 51200,
+        "tagging.sensitiveData" : [],
+		"abtest.precache":["test1","philipsmobileappabtest1content","geoColors"],
+        "logging.releaseConfig": {
+            "fileName": "AppInfraLog",
+            "numberOfFiles": 5,
+            "fileSizeInBytes": 50000,
+            "logLevel": "Off",
+            "fileLogEnabled": false,
+            "consoleLogEnabled": false,
+            "componentLevelLogEnabled": false,
+            "componentIds": ["PRXDemoApplication", "DemoApp", "Unit test", "prx/PRXDEMO"]
+        },
+        "logging.debugConfig": {
+            "fileName": "PRXLog",
+            "numberOfFiles": 5,
+            "fileSizeInBytes": 50000,
+            "logLevel": "All",
+            "fileLogEnabled": true,
+            "consoleLogEnabled": true,
+            "componentLevelLogEnabled": false,
+            "componentIds": ["PRXDemoApplication", "DemoApp", "Unit test", "prx/PRXDEMO"]
+        },
+    }
+}

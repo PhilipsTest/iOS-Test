@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Oppgi app infra object";
+"ECSBaseURLNotFound" = "Fant ikke base-URL";
+"ECSCartEntryError" = "Produktet er ikke lagt til i handlevognen";
+"ECSCartError" = "Det er ikke opprettet noen handlevogn ennå";
+"ECSCommerceCartModificationError" = "Antallet må ikke være mindre enn null";
+"ECSCtnNotProvided" = "Oppgi CTN";
+"ECSHybrisNotAvailable" = "Philips-butikken er ikke tilgjengelig for det valgte landet. Kun forhandlermodus er tilgjengelig.";
+"ECSIllegalArgumentError" = "Oppgi gyldige inndata";
+"ECSInsufficientStockError" = "Produktet kan ikke sendes, fordi det ikke finnes på lager";
+"ECSInvalidPaymentInfoError" = "Oppgi gyldige betalingsopplysninger";
+"ECSInvalidTokenError" = "Vi har støtt på et teknisk problem (ugyldig berettigelsestegn for tilgang). Foreta Hybris Re-Auth";
+"ECSLocaleNotFound" = "Still inn lokaliteten";
+"ECSNoSuchElementError" = "Det oppsto en feil under henting av data fra serveren";
+"ECSOAuthDetailError" = "Fyll ut fullstendige OAuth-opplysninger";
+"ECSOAuthNotCalled" = "Denne handlingen krever brukertillatelse";
+"ECSPIL_BAD_REQUEST" = "Vi har støtt på et teknisk problem. Prøv igjen om en stund";
+"ECSPIL_BAD_REQUEST_cartId" = "Det er ikke opprettet noen handlevogn ennå";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Vi har støtt på et teknisk problem. Prøv igjen om en stund";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Vi har støtt på et teknisk problem (ugyldig berettigelsestegn for tilgang). Foreta Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Ugyldig e-postadresse. Kontroller adressen.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Produktet er ikke lagt til i handlevognen";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Still inn lokaliteten";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Angi en gyldig CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Angi et gyldig antall";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philips-butikken er ikke tilgjengelig for det valgte landet. Kun forhandlermodus er tilgjengelig.";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Antall må være større enn null";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Still inn lokaliteten";
+"ECSPIL_MISSING_PARAMETER_language" = "Still inn lokaliteten";
+"ECSPIL_MISSING_PARAMETER_productId" = "Oppgi CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philips-butikken er ikke tilgjengelig for det valgte landet. Kun forhandlermodus er tilgjengelig.";
+"ECSPIL_NEGATIVE_QUANTITY" = "Antallet må ikke være mindre enn null";
+"ECSPIL_NOT_ACCEPTABLE" = "Vi har støtt på et teknisk problem. Prøv igjen om en stund";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Vi har støtt på et teknisk problem. Prøv igjen om en stund";
+"ECSPIL_NOT_FOUND_cartId" = "Angi gyldig handelskurv-ID";
+"ECSPIL_NOT_FOUND_productId" = "Angi en gyldig CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Produktet kan ikke sendes, fordi det ikke finnes på lager";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Vi har støtt på et teknisk problem. Prøv igjen om en stund";
+"ECSPaymentAuthorizationError" = "Betalingsbekreftelsen lyktes ikke";
+"ECSPropositionIdNotFound" = "Still inn gyldig forslags-ID";
+"ECSSiteIdNotFound" = "Philips-butikken er ikke tilgjengelig for det valgte landet. Kun forhandlermodus er tilgjengelig.";
+"ECSUnknownIdentifierError" = "Den etterspurte ressursen er ikke tilgjengelig";
+"ECSUnsupportedDeliveryModeError" = "Den valgte leveringsmåten støttes ikke";
+"ECSUnsupportedVoucherError" = "Beklager, denne kupongen kan ikke løses inn";
+"ECSValidationError" = "Datavalideringen mislyktes";
+"ECSVoucherOperationError" = "Beklager, denne kupongen kan ikke løses inn";
+"ECSaddressId" = "Den oppgitte adressen finnes ikke, eller den tilhører en annen bruker";
+"ECScountryCodeNotGiven" = "Oppgi gyldig landkode";
+"ECScountryisocode" = "Det valgte landet er ugyldig";
+"ECSfirstName" = "Merk at følgende tegn ikke er tillatt: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Vi har støtt på et teknisk problem (dårlig klientberettigelsesbevis). Logg inn på nytt";
+"ECSinvalid_grant" = "Vi har støtt på et teknisk problem (ugyldig Janrain-berettigelsestegn). Logg inn på nytt";
+"ECSlastName" = "Merk at følgende tegn ikke er tillatt: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Oppgi gyldig bestilling";
+"ECSphone1" = "Det valgte telefonnummeret er ugyldig";
+"ECSphone2" = "Det valgte telefonnummeret er ugyldig";
+"ECSpostUrl" = "Bestillingen har allerede status betalt/fullført";
+"ECSpostalCode" = "Den valgte postkoden er ugyldig";
+"ECSregionisocode" = "Den valgte regionen er ugyldig";
+"ECSsessionCart" = "Velg leveringsadresse, leveringsmåte og betalingsmåte før du legger inn bestilling";
+"ECSsomethingWentWrong" = "Vi har støtt på et teknisk problem. Prøv igjen om en stund";
+"ECSunsupported_grant_type" = "Vi har støtt på et teknisk problem (ustøttet tildelingstype). Logg inn på nytt";

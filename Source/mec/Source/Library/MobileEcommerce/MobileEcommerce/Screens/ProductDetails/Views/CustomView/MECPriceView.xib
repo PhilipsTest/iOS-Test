@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+        <array key="CentraleSansBold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MECPriceView" customModule="MobileEcommerce" customModuleProvider="target">
+            <connections>
+                <outlet property="accessoryLabel" destination="Izt-wf-4HK" id="qvN-ZV-x6T"/>
+                <outlet property="circularView" destination="TY4-8I-6zy" id="yYg-8D-naD"/>
+                <outlet property="detailsView" destination="WjR-Kr-1qn" id="Gkl-oM-J1M"/>
+                <outlet property="priceMainStackView" destination="j2B-Jk-PPt" id="pgV-bZ-eQF"/>
+                <outlet property="primaryLabel" destination="h6W-4o-QHQ" id="odr-Pk-9EL"/>
+                <outlet property="secondaryLabel" destination="j0G-rB-OOn" id="t0V-KO-kLO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="-25" translatesAutoresizingMaskIntoConstraints="NO" id="j2B-Jk-PPt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TY4-8I-6zy" userLabel="CurrencyView" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="0.0" y="415" width="32" height="32"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Izt-wf-4HK" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                    <rect key="frame" x="0.0" y="0.0" width="32" height="32"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="currencyLabel"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="32" id="H6V-Dc-DuJ"/>
+                                        <constraint firstAttribute="width" constant="32" id="QDY-40-4FS"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstItem="Izt-wf-4HK" firstAttribute="leading" secondItem="TY4-8I-6zy" secondAttribute="leading" id="EuQ-Vi-3n3"/>
+                                <constraint firstItem="Izt-wf-4HK" firstAttribute="top" secondItem="TY4-8I-6zy" secondAttribute="top" id="OsS-9I-RcD"/>
+                                <constraint firstAttribute="bottom" secondItem="Izt-wf-4HK" secondAttribute="bottom" id="fte-b2-GaD"/>
+                                <constraint firstAttribute="trailing" secondItem="Izt-wf-4HK" secondAttribute="trailing" id="nnE-6m-sO0"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WjR-Kr-1qn" userLabel="PriceView" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                            <rect key="frame" x="7" y="415" width="407" height="32"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tbk-37-t7G">
+                                    <rect key="frame" x="0.0" y="0.0" width="407" height="32"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j0G-rB-OOn" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                            <rect key="frame" x="30" y="0.0" width="50" height="32"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="actualPriceLabel"/>
+                                            <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h6W-4o-QHQ" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                            <rect key="frame" x="85" y="0.0" width="312" height="32"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="discountPriceLabel"/>
+                                            <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <directionalEdgeInsets key="directionalLayoutMargins" top="0.0" leading="30" bottom="0.0" trailing="10"/>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="Tbk-37-t7G" secondAttribute="trailing" id="3LU-B1-onK"/>
+                                <constraint firstItem="Tbk-37-t7G" firstAttribute="top" secondItem="WjR-Kr-1qn" secondAttribute="top" id="SAu-IE-ui4"/>
+                                <constraint firstItem="Tbk-37-t7G" firstAttribute="leading" secondItem="WjR-Kr-1qn" secondAttribute="leading" id="gyA-Tv-b3h"/>
+                                <constraint firstAttribute="bottom" secondItem="Tbk-37-t7G" secondAttribute="bottom" id="wOR-jj-Dre"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WjR-Kr-1qn" firstAttribute="height" secondItem="TY4-8I-6zy" secondAttribute="height" id="GCu-iL-ABE"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="j2B-Jk-PPt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="2vN-Uu-l52"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="j2B-Jk-PPt" secondAttribute="bottom" id="9TN-3C-qRm"/>
+                <constraint firstItem="j2B-Jk-PPt" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P31-0C-Q3f"/>
+                <constraint firstAttribute="trailing" secondItem="j2B-Jk-PPt" secondAttribute="trailing" id="pjZ-bM-bSV"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="132" y="131"/>
+        </view>
+    </objects>
+</document>

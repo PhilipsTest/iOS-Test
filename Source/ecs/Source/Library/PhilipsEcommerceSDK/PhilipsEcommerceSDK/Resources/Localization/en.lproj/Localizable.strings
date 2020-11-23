@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Please provide app infra object";
+"ECSBaseURLNotFound" = "Base URL not found";
+"ECSCartEntryError" = "The Product is not added in Cart";
+"ECSCartError" = "No cart created yet";
+"ECSCommerceCartModificationError" = "Quantity must not be less than zero";
+"ECSCtnNotProvided" = "Please provide the CTN";
+"ECSHybrisNotAvailable" = "Philips shop is not available for the selected country, only retailer mode is available";
+"ECSIllegalArgumentError" = "Please provide valid input data";
+"ECSInsufficientStockError" = "Product cannot be shipped as it is out of stock";
+"ECSInvalidPaymentInfoError" = "Please provide valid payment details";
+"ECSInvalidTokenError" = "We have encountered technical glitch (Invalid access token). Please do Hybris Re-Auth";
+"ECSLocaleNotFound" = "Please set the locale";
+"ECSNoSuchElementError" = "An error occurred while fetching the data from the server";
+"ECSOAuthDetailError" = "Please provide complete OAuth detials";
+"ECSOAuthNotCalled" = "User authorization is required for this action";
+"ECSPIL_BAD_REQUEST" = "We have encountered technical glitch. Please try after some time";
+"ECSPIL_BAD_REQUEST_cartId" = "No cart created yet";
+"ECSPIL_INTEGRATION_TIMEOUT" = "We have encountered technical glitch. Please try after some time";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "We have encountered technical glitch (Invalid access token). Please do Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Invalid email address. Please check.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "The Product is not added in Cart";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Please set the locale";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Please provide valid CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Please provide a valid quantity";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philips shop is not available for the selected country, only retailer mode is available";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Quantity must be greater than zero";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Please set the locale";
+"ECSPIL_MISSING_PARAMETER_language" = "Please set the locale";
+"ECSPIL_MISSING_PARAMETER_productId" = "Please provide the CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philips shop is not available for the selected country, only retailer mode is available";
+"ECSPIL_NEGATIVE_QUANTITY" = "Quantity must not be less than zero";
+"ECSPIL_NOT_ACCEPTABLE" = "We have encountered technical glitch. Please try after some time";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "We have encountered technical glitch. Please try after some time";
+"ECSPIL_NOT_FOUND_cartId" = "Please provide a valid Cart Id";
+"ECSPIL_NOT_FOUND_productId" = "Please provide valid CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Product cannot be shipped as it is out of stock";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "We have encountered technical glitch. Please try after some time";
+"ECSPaymentAuthorizationError" = "Payment authorization was not successful";
+"ECSPropositionIdNotFound" = "Please set a valid Proposition ID";
+"ECSSiteIdNotFound" = "Philips shop is not available for the selected country, only retailer mode is available";
+"ECSUnknownIdentifierError" = "Requested resource is not available";
+"ECSUnsupportedDeliveryModeError" = "Selected delivery mode is not supported";
+"ECSUnsupportedVoucherError" = "Sorry, this voucher can't be redeemed";
+"ECSValidationError" = "Data validation failed";
+"ECSVoucherOperationError" = "Sorry, this voucher can't be redeemed";
+"ECSaddressId" = "Given address doesn't exist or belong to another user";
+"ECScountryCodeNotGiven" = "Please provide valid country code";
+"ECScountryisocode" = "Country selected is invalid";
+"ECSfirstName" = "Please notice that the following characters are not allowed: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "We have encountered technical glitch (Bad client credentials). Please re-login";
+"ECSinvalid_grant" = "We have encountered technical glitch (Invalid Janrain Token). Please re-login";
+"ECSlastName" = "Please notice that the following characters are not allowed: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Please provide valid order";
+"ECSphone1" = "Phone number selected is invalid";
+"ECSphone2" = "Phone number selected is invalid";
+"ECSpostUrl" = "Order is already in a paid/completed state";
+"ECSpostalCode" = "ZIP code selected is invalid";
+"ECSregionisocode" = "Region selected is invalid";
+"ECSsessionCart" = "Please select your delivery address, delivery mode and payment method before submitting an order";
+"ECSsomethingWentWrong" = "We have encountered technical glitch. Please try after some time";
+"ECSunsupported_grant_type" = "We have encountered technical glitch (Unsupported grant type). Please re-login";

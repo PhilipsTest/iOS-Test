@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AISDManager.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AISDManager</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+            
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAppInfra:(AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getServiceDiscoveryDataWithcompletionHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (void)getServiceDiscoveryDataWithcompletionHandler:(void ( ^ ) ( AISDURLs *SDURLs , NSError *error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/getServiceDiscoveryDataWithcompletionHandler:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/homeCountryCodeWithCompletion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (void)homeCountryCodeWithCompletion:(void ( ^ ) ( NSString *countryCode , NSString *sourceType , NSError *error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountryCodeWithCompletion:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/saveCountryCode:sourceType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (void)saveCountryCode:(NSString *)countryCode sourceType:(NSString *)sourceType</Declaration>
+			
+			
+			<Anchor>//api/name/saveCountryCode:sourceType:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getCachedData</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (AISDURLs *)getCachedData</Declaration>
+			
+			
+			<Anchor>//api/name/getCachedData</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/clearDownloadedURLs</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (void)clearDownloadedURLs</Declaration>
+			
+			
+			<Anchor>//api/name/clearDownloadedURLs</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/cachedURLsExpired</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)cachedURLsExpired</Declaration>
+			
+			
+			<Anchor>//api/name/cachedURLsExpired</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/savedCountryCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)savedCountryCode</Declaration>
+			
+			
+			<Anchor>//api/name/savedCountryCode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/downloadPlatformData:SDURLs:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadPlatformData:(void ( ^ ) ( AISDURLs *, NSError *))completionHandler SDURLs:(AISDURLs *)SDURLs</Declaration>
+			
+			
+			<Anchor>//api/name/downloadPlatformData:SDURLs:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/downloadPlatformAndPropositionData:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadPlatformAndPropositionData:(void ( ^ ) ( AISDURLs *, NSError *))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/downloadPlatformAndPropositionData:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/downloadData:SDURLs:URL:shouldContinueForPlatform:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (void)downloadData:(void ( ^ ) ( AISDURLs *, NSError *))completionHandler SDURLs:(AISDURLs *)SDURLs URL:(NSString *)url shouldContinueForPlatform:(BOOL)shouldContinue</Declaration>
+			
+			
+			<Anchor>//api/name/downloadData:SDURLs:URL:shouldContinueForPlatform:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/validatePlatformMicroSiteID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (void)validatePlatformMicroSiteID</Declaration>
+			
+			
+			<Anchor>//api/name/validatePlatformMicroSiteID</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getCountryCodeFromSIM</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getCountryCodeFromSIM</Declaration>
+			
+			
+			<Anchor>//api/name/getCountryCodeFromSIM</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getSDBaseURLForEnvironment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSDBaseURLForEnvironment:(NSString *)environment</Declaration>
+			
+			
+			<Anchor>//api/name/getSDBaseURLForEnvironment:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getAppStateStringFromState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getAppStateStringFromState:(AIAIAppState)state</Declaration>
+			
+			
+			<Anchor>//api/name/getAppStateStringFromState:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getPlatformMicrositeID</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getPlatformMicrositeID</Declaration>
+			
+			
+			<Anchor>//api/name/getPlatformMicrositeID</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getPlatformEnvironment</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getPlatformEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/getPlatformEnvironment</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getSDURLForType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSDURLForType:(AISDURLType)URLType</Declaration>
+			
+			
+			<Anchor>//api/name/getSDURLForType:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getCachedURLsPathForURLType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getCachedURLsPathForURLType:(AISDURLType)URLType</Declaration>
+			
+			
+			<Anchor>//api/name/getCachedURLsPathForURLType:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/savedURLsOlderthan24Hours</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)savedURLsOlderthan24Hours</Declaration>
+			
+			
+			<Anchor>//api/name/savedURLsOlderthan24Hours</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/isPropostionEnabled</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isPropostionEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/isPropostionEnabled</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getModelFromFile:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (AISDModel *)getModelFromFile:(NSString *)filePath</Declaration>
+			
+			
+			<Anchor>//api/name/getModelFromFile:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/storeURLString:URLType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (void)storeURLString:(NSString *)URLString URLType:(AISDURLType)URLType</Declaration>
+			
+			
+			<Anchor>//api/name/storeURLString:URLType:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/cacheDownloadedURLs:URLString:URLType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (void)cacheDownloadedURLs:(NSDictionary *)downloadedJson URLString:(NSString *)URLString URLType:(AISDURLType)URLType</Declaration>
+			
+			
+			<Anchor>//api/name/cacheDownloadedURLs:URLString:URLType:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/savedCountryCodeSourceType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)savedCountryCodeSourceType</Declaration>
+			
+			
+			<Anchor>//api/name/savedCountryCodeSourceType</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/getCountryMapping:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getCountryMapping:(NSString *)country</Declaration>
+			
+			
+			<Anchor>//api/name/getCountryMapping:</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AISDManager/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, weak) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/setNetworkWrapper:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AISDNetworkWrapper *networkWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/networkWrapper</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/networkWrapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AISDNetworkWrapper *networkWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/networkWrapper</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AISDManager/networkWrapper</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AISDNetworkWrapper *networkWrapper</Declaration>
+			
+			
+			<Anchor>//api/name/networkWrapper</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/setHomeCountryCode:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *homeCountryCode</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountryCode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/homeCountryCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *homeCountryCode</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountryCode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AISDManager/homeCountryCode</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *homeCountryCode</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountryCode</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/setHomeCountrySourceType:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *homeCountrySourceType</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountrySourceType</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AISDManager/homeCountrySourceType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *homeCountrySourceType</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountrySourceType</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AISDManager/homeCountrySourceType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDManager.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSString *homeCountrySourceType</Declaration>
+			
+			
+			<Anchor>//api/name/homeCountrySourceType</Anchor>
+            <NodeRef refid="33"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

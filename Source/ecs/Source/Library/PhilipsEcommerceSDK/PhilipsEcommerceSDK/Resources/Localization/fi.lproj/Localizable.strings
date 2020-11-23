@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Anna sovelluksen infraobjekti";
+"ECSBaseURLNotFound" = "URL-perusosoitetta ei löydy";
+"ECSCartEntryError" = "Tuotetta ei ole lisätty ostoskoriin";
+"ECSCartError" = "Ostoskoria ei ole vielä luotu";
+"ECSCommerceCartModificationError" = "Määrä ei voi olla nollaa pienempi";
+"ECSCtnNotProvided" = "Anna CTN";
+"ECSHybrisNotAvailable" = "Philips-kauppa ei ole käytettävissä valitussa maassa, käytettävissä on ainoastaan vähittäismyyjätila";
+"ECSIllegalArgumentError" = "Anna oikeelliset syöttötiedot";
+"ECSInsufficientStockError" = "Tuotetta ei voida toimittaa, koska se on loppunut varastosta";
+"ECSInvalidPaymentInfoError" = "Anna voimassa olevat maksutiedot";
+"ECSInvalidTokenError" = "Olemme havainneet teknisen häiriön (Virheellinen käyttöoikeustietue). Tee Hybris-todennus uudelleen";
+"ECSLocaleNotFound" = "Aseta aluekohtaiset asetukset";
+"ECSNoSuchElementError" = "Virhe noudettaessa tietoja palvelimelta";
+"ECSOAuthDetailError" = "Anna täydelliset OAuth-tiedot";
+"ECSOAuthNotCalled" = "Tätä toimintoa varten tarvitaan käyttäjän valtuutus";
+"ECSPIL_BAD_REQUEST" = "Olemme havainneet teknisen häiriön. Yritä myöhemmin uudelleen";
+"ECSPIL_BAD_REQUEST_cartId" = "Ostoskoria ei ole vielä luotu";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Olemme havainneet teknisen häiriön. Yritä myöhemmin uudelleen";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Olemme havainneet teknisen häiriön (Virheellinen käyttöoikeustietue). Tee Hybris-todennus uudelleen";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Virheellinen sähköpostiosoite. Tarkista osoite.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "Tuotetta ei ole lisätty ostoskoriin";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Aseta aluekohtaiset asetukset";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Anna kelvollinen CTN";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Anna kelvollinen määrä";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "Philips-kauppa ei ole käytettävissä valitussa maassa, käytettävissä on ainoastaan vähittäismyyjätila";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "Määrän on oltava enemmän kuin nolla";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Aseta aluekohtaiset asetukset";
+"ECSPIL_MISSING_PARAMETER_language" = "Aseta aluekohtaiset asetukset";
+"ECSPIL_MISSING_PARAMETER_productId" = "Anna CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "Philips-kauppa ei ole käytettävissä valitussa maassa, käytettävissä on ainoastaan vähittäismyyjätila";
+"ECSPIL_NEGATIVE_QUANTITY" = "Määrä ei voi olla nollaa pienempi";
+"ECSPIL_NOT_ACCEPTABLE" = "Olemme havainneet teknisen häiriön. Yritä myöhemmin uudelleen";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Olemme havainneet teknisen häiriön. Yritä myöhemmin uudelleen";
+"ECSPIL_NOT_FOUND_cartId" = "Anna kelvollinen ostoskorin tunnus";
+"ECSPIL_NOT_FOUND_productId" = "Anna kelvollinen CTN";
+"ECSPIL_STOCK_EXCEPTION" = "Tuotetta ei voida toimittaa, koska se on loppunut varastosta";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Olemme havainneet teknisen häiriön. Yritä myöhemmin uudelleen";
+"ECSPaymentAuthorizationError" = "Maksuvaltuutus ei onnistunut";
+"ECSPropositionIdNotFound" = "Aseta voimassa oleva ehdotettu yksilöivä tunnus";
+"ECSSiteIdNotFound" = "Philips-kauppa ei ole käytettävissä valitussa maassa, käytettävissä on ainoastaan vähittäismyyjätila";
+"ECSUnknownIdentifierError" = "Pyydetty resurssi ei ole saatavilla";
+"ECSUnsupportedDeliveryModeError" = "Valittua toimitustapaa ei tueta";
+"ECSUnsupportedVoucherError" = "Tätä tositetta ei voi lunastaa";
+"ECSValidationError" = "Datan validointi epäonnistui";
+"ECSVoucherOperationError" = "Tätä tositetta ei voi lunastaa";
+"ECSaddressId" = "Annettua osoitetta ei ole olemassa tai se kuuluu toiselle käyttäjälle";
+"ECScountryCodeNotGiven" = "Anna voimassa oleva maakoodi";
+"ECScountryisocode" = "Valittu maa on virheellinen";
+"ECSfirstName" = "Huomaa, että seuraavat merkit eivät ole sallittuja: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Olemme havainneet teknisen häiriön (Virheelliset asiakastunnistetiedot). Kirjaudu sisään uudelleen";
+"ECSinvalid_grant" = "Olemme havainneet teknisen häiriön (Virheellinen Janrain-tunnus). Kirjaudu sisään uudelleen";
+"ECSlastName" = "Huomaa, että seuraavat merkit eivät ole sallittuja: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Anna voimassa oleva tilaus";
+"ECSphone1" = "Valittu puhelinnumero on virheellinen";
+"ECSphone2" = "Valittu puhelinnumero on virheellinen";
+"ECSpostUrl" = "Tilaus on jo maksettu/valmis -tilassa";
+"ECSpostalCode" = "Valittu postinumero on virheellinen";
+"ECSregionisocode" = "Valittu alue on virheellinen";
+"ECSsessionCart" = "Valitse toimitusosoite, toimitustapa ja maksutapa ennen tilauksen vahvistamista";
+"ECSsomethingWentWrong" = "Olemme havainneet teknisen häiriön. Yritä myöhemmin uudelleen";
+"ECSunsupported_grant_type" = "Olemme havainneet teknisen häiriön (Tukematon käyttöoikeusvaltuus). Kirjaudu sisään uudelleen";

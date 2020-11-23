@@ -1,0 +1,723 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qx5-Bm-Bhz">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+        <array key="CentraleSansBold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Track Shipment View Controller-->
+        <scene sceneID="SyQ-gy-CY3">
+            <objects>
+                <viewController storyboardIdentifier="IAPTrackShipmentViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZzA-OY-Ely" customClass="IAPTrackShipmentViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdx-Rr-dAe">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="eCy-bH-ZIC"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.trackShipmentContainerView"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jGY-Qq-hKJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-403" y="1044"/>
+        </scene>
+        <!--Purchase History View Controller-->
+        <scene sceneID="2ed-Gh-6tp">
+            <objects>
+                <viewController storyboardIdentifier="IAPPurchaseHistoryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Qx5-Bm-Bhz" customClass="IAPPurchaseHistoryViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lie-mY-MkB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o7l-8u-hXo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5h-jR-lpc">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="48"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vC-We-3FS" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="14.666666666666666" width="382" height="18.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="9vC-We-3FS" secondAttribute="trailing" constant="16" id="Hxh-uz-XuT"/>
+                                            <constraint firstItem="9vC-We-3FS" firstAttribute="leading" secondItem="G5h-jR-lpc" secondAttribute="leading" constant="16" id="PXP-Ni-Ofz"/>
+                                            <constraint firstAttribute="height" constant="48" id="QaY-eW-njT"/>
+                                            <constraint firstItem="9vC-We-3FS" firstAttribute="centerY" secondItem="G5h-jR-lpc" secondAttribute="centerY" id="ckm-uZ-Aeb"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeJ-5U-EbX" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="45.333333333333329" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="AYQ-aC-5re"/>
+                                            <constraint firstAttribute="height" constant="24" id="fBc-SD-1tJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJs-ST-rnS" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="48" y="64" width="350" height="20"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="17"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.noItemsLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P2l-cr-zYg" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="104" width="382" height="18.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.noItemsEmailLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V84-XZ-sZb" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="142.66666666666666" width="382" height="17.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="noItemsOtherSalesLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s9F-nK-FT0">
+                                        <rect key="frame" x="0.0" y="175.33333333333331" width="414" height="560.66666666666674"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixt-HZ-V0D" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="16" width="382" height="34"/>
+                                                <color key="backgroundColor" red="0.83648989900000004" green="0.83648989900000004" blue="0.83648989900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Continue Shopping Here">
+                                                    <color key="titleColor" red="0.73111190020000005" green="0.73111190020000005" blue="0.73111190020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.continueShoppingButton"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueShoppingClicked:" destination="Qx5-Bm-Bhz" eventType="touchUpInside" id="M7m-eU-x1j"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cpS-r6-rNa" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="16" y="66" width="382" height="34"/>
+                                                <color key="backgroundColor" red="0.83648989900000004" green="0.83648989900000004" blue="0.83648989900000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Contact Customer Care">
+                                                    <color key="titleColor" red="0.73111190020000005" green="0.73111190020000005" blue="0.73111190020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                        <integer key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.continueShoppingButton"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="localizedText" value="iap_contact_customer_care"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="contactConsumerCareClicked:" destination="Qx5-Bm-Bhz" eventType="touchUpInside" id="N4S-t5-cnL"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="tintColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ixt-HZ-V0D" secondAttribute="trailing" constant="16" id="09N-w6-AUq"/>
+                                            <constraint firstItem="cpS-r6-rNa" firstAttribute="trailing" secondItem="Ixt-HZ-V0D" secondAttribute="trailing" id="7JE-PA-OQ4"/>
+                                            <constraint firstItem="cpS-r6-rNa" firstAttribute="top" secondItem="Ixt-HZ-V0D" secondAttribute="bottom" constant="16" id="DP5-9W-xvx"/>
+                                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cpS-r6-rNa" secondAttribute="bottom" priority="999" constant="16" id="P0z-P9-2NZ"/>
+                                            <constraint firstItem="Ixt-HZ-V0D" firstAttribute="top" secondItem="s9F-nK-FT0" secondAttribute="top" constant="16" id="cfU-4r-RkO"/>
+                                            <constraint firstItem="Ixt-HZ-V0D" firstAttribute="leading" secondItem="s9F-nK-FT0" secondAttribute="leading" constant="16" id="lIu-l4-FYC"/>
+                                            <constraint firstItem="cpS-r6-rNa" firstAttribute="leading" secondItem="Ixt-HZ-V0D" secondAttribute="leading" id="n9x-vl-9xZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.contactContainerView"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="G5h-jR-lpc" secondAttribute="trailing" id="53L-Mp-XM1"/>
+                                    <constraint firstItem="BJs-ST-rnS" firstAttribute="top" secondItem="G5h-jR-lpc" secondAttribute="bottom" constant="16" id="FsH-ki-IUz"/>
+                                    <constraint firstItem="BJs-ST-rnS" firstAttribute="leading" secondItem="o7l-8u-hXo" secondAttribute="leadingMargin" constant="18" id="OWw-Uq-jot"/>
+                                    <constraint firstAttribute="trailing" secondItem="V84-XZ-sZb" secondAttribute="trailing" constant="16" id="QAb-gm-axi"/>
+                                    <constraint firstItem="BJs-ST-rnS" firstAttribute="top" secondItem="o7l-8u-hXo" secondAttribute="top" constant="40" id="QJ0-QZ-yrh"/>
+                                    <constraint firstItem="V84-XZ-sZb" firstAttribute="top" secondItem="P2l-cr-zYg" secondAttribute="bottom" constant="20" id="Rb2-hr-rnD"/>
+                                    <constraint firstItem="P2l-cr-zYg" firstAttribute="leading" secondItem="o7l-8u-hXo" secondAttribute="leading" constant="16" id="Vph-TG-4Ln"/>
+                                    <constraint firstItem="BJs-ST-rnS" firstAttribute="top" secondItem="o7l-8u-hXo" secondAttribute="topMargin" constant="40" id="Zj5-m0-dTj"/>
+                                    <constraint firstItem="G5h-jR-lpc" firstAttribute="leading" secondItem="o7l-8u-hXo" secondAttribute="leading" id="bgz-Jf-gBO"/>
+                                    <constraint firstItem="MeJ-5U-EbX" firstAttribute="centerY" secondItem="BJs-ST-rnS" secondAttribute="centerY" id="d3V-CT-OiG"/>
+                                    <constraint firstItem="s9F-nK-FT0" firstAttribute="leading" secondItem="o7l-8u-hXo" secondAttribute="leading" id="dP8-7b-5kE"/>
+                                    <constraint firstItem="s9F-nK-FT0" firstAttribute="top" secondItem="V84-XZ-sZb" secondAttribute="bottom" constant="15" id="hlK-cs-LlF"/>
+                                    <constraint firstAttribute="trailing" secondItem="P2l-cr-zYg" secondAttribute="trailing" constant="16" id="i1O-sj-1VY"/>
+                                    <constraint firstItem="V84-XZ-sZb" firstAttribute="leading" secondItem="o7l-8u-hXo" secondAttribute="leading" constant="16" id="iKA-gf-ebT"/>
+                                    <constraint firstItem="MeJ-5U-EbX" firstAttribute="leading" secondItem="o7l-8u-hXo" secondAttribute="leading" constant="16" id="jVI-vV-pOe"/>
+                                    <constraint firstAttribute="bottom" secondItem="s9F-nK-FT0" secondAttribute="bottom" id="o1I-IN-CPz"/>
+                                    <constraint firstItem="BJs-ST-rnS" firstAttribute="leading" secondItem="MeJ-5U-EbX" secondAttribute="trailing" constant="8" id="rzq-bQ-3V9"/>
+                                    <constraint firstAttribute="width" constant="680" id="u7F-FY-NKS"/>
+                                    <constraint firstItem="P2l-cr-zYg" firstAttribute="trailing" secondItem="BJs-ST-rnS" secondAttribute="trailing" id="vAS-pN-BFV"/>
+                                    <constraint firstItem="P2l-cr-zYg" firstAttribute="top" secondItem="BJs-ST-rnS" secondAttribute="bottom" constant="20" id="wfN-th-iER"/>
+                                    <constraint firstAttribute="trailing" secondItem="s9F-nK-FT0" secondAttribute="trailing" id="wra-Sl-43p"/>
+                                    <constraint firstItem="G5h-jR-lpc" firstAttribute="top" secondItem="o7l-8u-hXo" secondAttribute="top" id="xac-k3-wHU"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.noHistoryContainerView"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="u7F-FY-NKS"/>
+                                        <exclude reference="OWw-Uq-jot"/>
+                                        <exclude reference="QJ0-QZ-yrh"/>
+                                        <exclude reference="Zj5-m0-dTj"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="u7F-FY-NKS"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FpF-vR-Aps">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="680" id="PlB-4V-wRV"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderCell" rowHeight="228" id="e6w-6c-aUh" customClass="IAPPurchaseHistoryOrderCell" customModule="InAppPurchase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="228"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e6w-6c-aUh" id="kpk-sJ-bZi">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="228"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxs-aQ-Jg2" customClass="UIDLabel">
+                                                    <rect key="frame" x="16" y="16" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="7Ma-92-cgh"/>
+                                                        <constraint firstAttribute="height" constant="24" id="YKd-Rd-E2R"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M4-jx-1is" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="46" y="18" width="300" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="lsI-WR-sJE"/>
+                                                        <constraint firstAttribute="width" constant="300" id="qmO-MX-OuC"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.20392156859999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellOrderStatusLabel"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0mv-LY-i6O" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="18" y="50" width="380" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="5zr-Oh-0KX"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                    <color key="textColor" red="0.0" green="0.20392156859999999" blue="0.45882352939999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellOrderTextLabel"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                            <integer key="value" value="0"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tyc-L3-x8q" userLabel="RightArrowIconGray">
+                                                    <rect key="frame" x="386" y="119" width="12" height="12"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="tyc-L3-x8q" secondAttribute="height" multiplier="1:1" id="SLy-1S-oMh"/>
+                                                        <constraint firstAttribute="width" constant="12" id="iIN-39-8pC"/>
+                                                    </constraints>
+                                                </button>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VPl-Sx-Wsh" userLabel="Product Top Separator View">
+                                                    <rect key="frame" x="0.0" y="86" width="414" height="1"/>
+                                                    <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="aif-RR-ddv"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellProductTopSeparatorView"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GsN-Dj-1Nu" userLabel="Product Holder View">
+                                                    <rect key="frame" x="0.0" y="87" width="414" height="76"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="83" id="Kof-dw-DPr"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellProductHolderView"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlW-Ze-0uY" userLabel="Product Bottom Separator View">
+                                                    <rect key="frame" x="0.0" y="163" width="414" height="1"/>
+                                                    <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="G6a-SR-p3x"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellProductBottomSeparatorView"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cuj-ct-IlS" userLabel="Cell Separator View">
+                                                    <rect key="frame" x="0.0" y="227" width="414" height="1"/>
+                                                    <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="p8S-Cb-2wY"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellSeparatorView"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7sd-dL-Xib" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="16" y="182" width="150" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="DWd-65-Sva"/>
+                                                        <constraint firstAttribute="width" constant="150" id="I9J-AR-w9F"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellTotalLabel"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hh7-Y4-YKN" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                    <rect key="frame" x="248" y="182" width="150" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="YWN-cH-ENO"/>
+                                                        <constraint firstAttribute="width" constant="150" id="fLM-Og-UeD"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="20"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellTotalPriceLabel"/>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                            <integer key="value" value="1"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tyc-L3-x8q" firstAttribute="centerY" secondItem="GsN-Dj-1Nu" secondAttribute="centerY" id="1en-e4-CLE"/>
+                                                <constraint firstAttribute="trailing" secondItem="Cuj-ct-IlS" secondAttribute="trailing" id="366-hA-GG9"/>
+                                                <constraint firstItem="rxs-aQ-Jg2" firstAttribute="centerY" secondItem="7M4-jx-1is" secondAttribute="centerY" id="54C-hl-z45"/>
+                                                <constraint firstItem="7sd-dL-Xib" firstAttribute="top" secondItem="FlW-Ze-0uY" secondAttribute="bottom" constant="18" id="74g-VF-gfh"/>
+                                                <constraint firstAttribute="bottom" secondItem="Cuj-ct-IlS" secondAttribute="bottom" id="77e-Wu-NXc"/>
+                                                <constraint firstAttribute="trailing" secondItem="hh7-Y4-YKN" secondAttribute="trailing" constant="16" id="87F-uB-RGE"/>
+                                                <constraint firstItem="7M4-jx-1is" firstAttribute="leading" secondItem="rxs-aQ-Jg2" secondAttribute="trailing" constant="6" id="9lF-Nk-4GO"/>
+                                                <constraint firstAttribute="trailing" secondItem="tyc-L3-x8q" secondAttribute="trailing" constant="16" id="Dq3-7P-c7A"/>
+                                                <constraint firstItem="0mv-LY-i6O" firstAttribute="top" secondItem="7M4-jx-1is" secondAttribute="bottom" constant="12" id="Lt3-vq-9PX"/>
+                                                <constraint firstItem="VPl-Sx-Wsh" firstAttribute="top" secondItem="0mv-LY-i6O" secondAttribute="bottom" constant="15" id="NO7-fT-W3R"/>
+                                                <constraint firstItem="FlW-Ze-0uY" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" id="U33-nL-gjC"/>
+                                                <constraint firstItem="Cuj-ct-IlS" firstAttribute="top" secondItem="7sd-dL-Xib" secondAttribute="bottom" constant="15" id="W0H-tg-LdG"/>
+                                                <constraint firstItem="7sd-dL-Xib" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" constant="16" id="WlG-T1-FJU"/>
+                                                <constraint firstItem="GsN-Dj-1Nu" firstAttribute="top" secondItem="VPl-Sx-Wsh" secondAttribute="bottom" id="X9g-Ao-VMz"/>
+                                                <constraint firstAttribute="trailing" secondItem="GsN-Dj-1Nu" secondAttribute="trailing" id="c8N-tc-7sa"/>
+                                                <constraint firstItem="FlW-Ze-0uY" firstAttribute="top" secondItem="GsN-Dj-1Nu" secondAttribute="bottom" id="cQj-k5-JEB"/>
+                                                <constraint firstAttribute="trailing" secondItem="0mv-LY-i6O" secondAttribute="trailing" constant="16" id="f7L-X6-vKp"/>
+                                                <constraint firstItem="rxs-aQ-Jg2" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" constant="16" id="g5T-2G-qel"/>
+                                                <constraint firstItem="0mv-LY-i6O" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" constant="18" id="hpq-4R-imy"/>
+                                                <constraint firstItem="GsN-Dj-1Nu" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" id="i6n-sp-1o9"/>
+                                                <constraint firstItem="7M4-jx-1is" firstAttribute="top" secondItem="kpk-sJ-bZi" secondAttribute="top" constant="18" id="kFn-Nu-m7n"/>
+                                                <constraint firstItem="Cuj-ct-IlS" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" id="kGs-PV-QQa"/>
+                                                <constraint firstItem="VPl-Sx-Wsh" firstAttribute="leading" secondItem="kpk-sJ-bZi" secondAttribute="leading" id="kT9-fg-xUB"/>
+                                                <constraint firstAttribute="trailing" secondItem="VPl-Sx-Wsh" secondAttribute="trailing" id="nKt-rL-lvg"/>
+                                                <constraint firstAttribute="leadingMargin" secondItem="7sd-dL-Xib" secondAttribute="leading" id="oer-Xh-zpz"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="7sd-dL-Xib" secondAttribute="bottom" constant="18" id="t7v-mu-Qxe"/>
+                                                <constraint firstAttribute="trailing" secondItem="FlW-Ze-0uY" secondAttribute="trailing" id="xic-c8-Hhn"/>
+                                                <constraint firstItem="hh7-Y4-YKN" firstAttribute="top" secondItem="FlW-Ze-0uY" secondAttribute="bottom" constant="18" id="zxT-WY-SWH"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellContentView"/>
+                                            </userDefinedRuntimeAttributes>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="oer-Xh-zpz"/>
+                                                    <exclude reference="t7v-mu-Qxe"/>
+                                                </mask>
+                                            </variation>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCell"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="orderStatusLabel" destination="7M4-jx-1is" id="cmF-wl-Mgm"/>
+                                            <outlet property="orderTextLabel" destination="0mv-LY-i6O" id="1Mf-B8-rZt"/>
+                                            <outlet property="productHolderHeightConstraint" destination="Kof-dw-DPr" id="RJi-7i-Mam"/>
+                                            <outlet property="productHolderView" destination="GsN-Dj-1Nu" id="Xfe-8v-wjG"/>
+                                            <outlet property="rightArrowIcongray" destination="tyc-L3-x8q" id="ebg-m4-HfP"/>
+                                            <outlet property="statusIconImage" destination="rxs-aQ-Jg2" id="QPO-Ti-JyC"/>
+                                            <outlet property="totalLabel" destination="7sd-dL-Xib" id="WT7-HL-lin"/>
+                                            <outlet property="totalPriceLabel" destination="hh7-Y4-YKN" id="BDd-ia-SIg"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="loadingCell" rowHeight="79" id="h73-gc-JgQ" customClass="IAPLoadingCell" customModule="InAppPurchase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="256" width="414" height="79"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="h73-gc-JgQ" id="DJN-9U-Tat">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="l1I-tL-pAK">
+                                                    <rect key="frame" x="197" y="29.666666666666671" width="20" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="20" id="53U-1i-vux"/>
+                                                        <constraint firstAttribute="height" constant="20" id="bZ1-8t-8Cb"/>
+                                                    </constraints>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.loadingCellActivityIndicator"/>
+                                                    </userDefinedRuntimeAttributes>
+                                                </activityIndicatorView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="l1I-tL-pAK" firstAttribute="centerX" secondItem="DJN-9U-Tat" secondAttribute="centerX" id="2pt-Of-yIb"/>
+                                                <constraint firstItem="l1I-tL-pAK" firstAttribute="centerY" secondItem="DJN-9U-Tat" secondAttribute="centerY" id="lfJ-Sj-0Tf"/>
+                                            </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.orderCellContentView"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.loadingCell"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outlet property="loadingActivityIndicator" destination="l1I-tL-pAK" id="4Fu-Wh-gY1"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHisotry.orderTableView"/>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="PlB-4V-wRV"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="PlB-4V-wRV"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Qx5-Bm-Bhz" id="LiT-0i-3Jv"/>
+                                    <outlet property="delegate" destination="Qx5-Bm-Bhz" id="ktH-7a-bqT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FpF-vR-Aps" firstAttribute="top" secondItem="lie-mY-MkB" secondAttribute="top" id="8Gv-DV-j10"/>
+                            <constraint firstItem="B0d-vi-Tct" firstAttribute="trailing" secondItem="FpF-vR-Aps" secondAttribute="trailing" priority="999" id="DAb-PK-77p"/>
+                            <constraint firstItem="o7l-8u-hXo" firstAttribute="leading" secondItem="B0d-vi-Tct" secondAttribute="leading" priority="999" id="LsY-L5-ypj"/>
+                            <constraint firstItem="o7l-8u-hXo" firstAttribute="centerX" secondItem="B0d-vi-Tct" secondAttribute="centerX" id="MaX-we-A8j"/>
+                            <constraint firstItem="FpF-vR-Aps" firstAttribute="top" secondItem="B0d-vi-Tct" secondAttribute="top" id="SAZ-QS-yLf"/>
+                            <constraint firstItem="o7l-8u-hXo" firstAttribute="top" secondItem="lie-mY-MkB" secondAttribute="top" id="SSO-2l-kzp"/>
+                            <constraint firstItem="B0d-vi-Tct" firstAttribute="bottom" secondItem="o7l-8u-hXo" secondAttribute="bottom" id="UQV-VF-4ia"/>
+                            <constraint firstItem="o7l-8u-hXo" firstAttribute="top" secondItem="B0d-vi-Tct" secondAttribute="top" id="ZPD-lz-IQ2"/>
+                            <constraint firstItem="FpF-vR-Aps" firstAttribute="centerX" secondItem="B0d-vi-Tct" secondAttribute="centerX" id="cWI-BG-Z2f"/>
+                            <constraint firstItem="B0d-vi-Tct" firstAttribute="trailing" secondItem="o7l-8u-hXo" secondAttribute="trailing" priority="999" id="j34-QY-7m9"/>
+                            <constraint firstItem="FpF-vR-Aps" firstAttribute="leading" secondItem="B0d-vi-Tct" secondAttribute="leading" priority="999" id="rsF-6N-Ood"/>
+                            <constraint firstItem="B0d-vi-Tct" firstAttribute="bottom" secondItem="FpF-vR-Aps" secondAttribute="bottom" id="toQ-tU-drw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="B0d-vi-Tct"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.listingContainerView"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8Gv-DV-j10"/>
+                                <exclude reference="ZPD-lz-IQ2"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="buttonView" destination="s9F-nK-FT0" id="RNa-tg-n4c"/>
+                        <outlet property="callCustomerCareButton" destination="cpS-r6-rNa" id="LDD-uD-ePK"/>
+                        <outlet property="continueShoppingButton" destination="Ixt-HZ-V0D" id="1R2-VB-jl1"/>
+                        <outlet property="headerTitleLabel" destination="9vC-We-3FS" id="n4R-eb-NBv"/>
+                        <outlet property="headerView" destination="G5h-jR-lpc" id="ndd-6S-Y40"/>
+                        <outlet property="infoImage" destination="MeJ-5U-EbX" id="KiG-gg-XkC"/>
+                        <outlet property="noHistoryView" destination="o7l-8u-hXo" id="h5J-R5-KGP"/>
+                        <outlet property="noItemsEmailLabel" destination="P2l-cr-zYg" id="Qc3-Ps-w0H"/>
+                        <outlet property="noItemsLabel" destination="BJs-ST-rnS" id="hnA-0K-ani"/>
+                        <outlet property="noItemsOtherSalesLabel" destination="V84-XZ-sZb" id="eH9-5I-LkY"/>
+                        <outlet property="orderTableView" destination="FpF-vR-Aps" id="czv-6s-Jmo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Eyl-3P-ebB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="729.61956521739137" y="308.69565217391306"/>
+        </scene>
+        <!--Purchase History New Detail View Controller-->
+        <scene sceneID="Hzy-2G-NbT">
+            <objects>
+                <viewController storyboardIdentifier="IAPPurchaseHistoryNewDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Zze-dk-3HQ" customClass="IAPPurchaseHistoryNewDetailViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2wQ-wB-OQb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7gU-VB-eVB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="680" id="N81-gH-jvg"/>
+                                </constraints>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="trackOrderCell" id="XeX-iS-OZQ" customClass="IAPTrackOrderCell" customModule="InAppPurchase">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XeX-iS-OZQ" id="ZmC-ym-el5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="N81-gH-jvg"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="N81-gH-jvg"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outlet property="dataSource" destination="Zze-dk-3HQ" id="vD8-Cm-ses"/>
+                                    <outlet property="delegate" destination="Zze-dk-3HQ" id="SKv-vs-hYw"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7gU-VB-eVB" firstAttribute="centerX" secondItem="Vim-8z-q6W" secondAttribute="centerX" id="4Zb-2e-0SY"/>
+                            <constraint firstItem="Vim-8z-q6W" firstAttribute="trailing" secondItem="7gU-VB-eVB" secondAttribute="trailing" priority="999" id="7ZI-hk-aFQ"/>
+                            <constraint firstItem="Vim-8z-q6W" firstAttribute="bottom" secondItem="7gU-VB-eVB" secondAttribute="bottom" id="H9t-gK-wpU"/>
+                            <constraint firstItem="7gU-VB-eVB" firstAttribute="top" secondItem="Vim-8z-q6W" secondAttribute="top" id="NLH-Bn-S8o"/>
+                            <constraint firstItem="7gU-VB-eVB" firstAttribute="leading" secondItem="Vim-8z-q6W" secondAttribute="leading" priority="999" id="ofY-x9-k5X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Vim-8z-q6W"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="736"/>
+                    <connections>
+                        <outlet property="orderDetailTableView" destination="7gU-VB-eVB" id="zik-2T-YMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBb-3x-J0v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="554" y="1268"/>
+        </scene>
+        <!--Cancel Order View Controller-->
+        <scene sceneID="AOs-oW-i9R">
+            <objects>
+                <viewController storyboardIdentifier="IAPCancelOrderViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iAA-ea-e1j" customClass="IAPCancelOrderViewController" customModule="InAppPurchase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f17-c4-TG9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iK3-An-SLq" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcV-oQ-s7U" userLabel="Heading Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="24" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                        <color key="textColor" red="0.18431372549019609" green="0.29803921568627451" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderHeadingLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTb-8h-XJY" userLabel="Desc Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="48" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                        <color key="textColor" red="0.18431372549019609" green="0.29803921568627451" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderDescriptionLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wDQ-3R-S7J" userLabel="Sub Desc Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="72" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                        <color key="textColor" red="0.18431372549019609" green="0.29803921568627451" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderSubDescriptionLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WiS-qW-4p5" userLabel="Timing Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="96" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                        <color key="textColor" red="0.18431372549019609" green="0.29803921568627451" blue="0.50980392156862742" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderTimingLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qIu-Cb-XNv" userLabel="Timing Label" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="108" width="382" height="0.0"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                        <color key="textColor" red="0.1843137255" green="0.29803921570000003" blue="0.50980392159999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderTimingLabel"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="01c-Uk-ifn" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="16" y="132" width="382" height="35"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="19"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                <integer key="value" value="0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderCallButton"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="callButtonClicked:" destination="iAA-ea-e1j" eventType="touchUpInside" id="I99-OV-TgQ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oTb-8h-XJY" firstAttribute="top" secondItem="XcV-oQ-s7U" secondAttribute="bottom" constant="24" id="3Ch-ag-4Q2"/>
+                                    <constraint firstItem="oTb-8h-XJY" firstAttribute="leading" secondItem="XcV-oQ-s7U" secondAttribute="leading" id="5uo-eD-i6j"/>
+                                    <constraint firstItem="XcV-oQ-s7U" firstAttribute="top" secondItem="iK3-An-SLq" secondAttribute="top" constant="24" id="HDs-JP-NJq"/>
+                                    <constraint firstItem="WiS-qW-4p5" firstAttribute="top" secondItem="wDQ-3R-S7J" secondAttribute="bottom" constant="24" id="MOC-fk-lRZ"/>
+                                    <constraint firstItem="01c-Uk-ifn" firstAttribute="leading" secondItem="qIu-Cb-XNv" secondAttribute="leading" id="Mkj-bT-oNk"/>
+                                    <constraint firstItem="01c-Uk-ifn" firstAttribute="trailing" secondItem="qIu-Cb-XNv" secondAttribute="trailing" id="R4Z-Pm-uCg"/>
+                                    <constraint firstItem="XcV-oQ-s7U" firstAttribute="leading" secondItem="iK3-An-SLq" secondAttribute="leading" constant="16" id="Z32-7h-EBo"/>
+                                    <constraint firstItem="wDQ-3R-S7J" firstAttribute="trailing" secondItem="oTb-8h-XJY" secondAttribute="trailing" id="ZTs-Yi-DYK"/>
+                                    <constraint firstItem="qIu-Cb-XNv" firstAttribute="top" secondItem="WiS-qW-4p5" secondAttribute="bottom" constant="12" id="a0V-B6-d2R"/>
+                                    <constraint firstItem="01c-Uk-ifn" firstAttribute="top" secondItem="qIu-Cb-XNv" secondAttribute="bottom" constant="24" id="dqI-lN-Chb"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="01c-Uk-ifn" secondAttribute="bottom" priority="250" constant="150" id="kan-VQ-rGn"/>
+                                    <constraint firstItem="WiS-qW-4p5" firstAttribute="trailing" secondItem="wDQ-3R-S7J" secondAttribute="trailing" id="lTI-ht-mvK"/>
+                                    <constraint firstItem="qIu-Cb-XNv" firstAttribute="trailing" secondItem="wDQ-3R-S7J" secondAttribute="trailing" id="mhP-UJ-EgK"/>
+                                    <constraint firstItem="wDQ-3R-S7J" firstAttribute="leading" secondItem="oTb-8h-XJY" secondAttribute="leading" id="nar-4V-Gxf"/>
+                                    <constraint firstItem="WiS-qW-4p5" firstAttribute="leading" secondItem="wDQ-3R-S7J" secondAttribute="leading" id="pRR-KV-XAz"/>
+                                    <constraint firstAttribute="trailing" secondItem="XcV-oQ-s7U" secondAttribute="trailing" constant="16" id="s1a-pF-oN1"/>
+                                    <constraint firstAttribute="width" constant="680" id="udl-g2-YLF"/>
+                                    <constraint firstItem="oTb-8h-XJY" firstAttribute="trailing" secondItem="XcV-oQ-s7U" secondAttribute="trailing" id="wE8-CN-oJW"/>
+                                    <constraint firstItem="qIu-Cb-XNv" firstAttribute="leading" secondItem="wDQ-3R-S7J" secondAttribute="leading" id="wdf-6F-GOk"/>
+                                    <constraint firstItem="wDQ-3R-S7J" firstAttribute="top" secondItem="oTb-8h-XJY" secondAttribute="bottom" constant="24" id="zgX-bu-vwy"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="udl-g2-YLF"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="udl-g2-YLF"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="iK3-An-SLq" firstAttribute="leading" secondItem="czI-fg-voE" secondAttribute="leading" priority="999" id="8J3-G8-wBG"/>
+                            <constraint firstItem="czI-fg-voE" firstAttribute="trailing" secondItem="iK3-An-SLq" secondAttribute="trailing" priority="999" id="EjS-48-zkA"/>
+                            <constraint firstItem="iK3-An-SLq" firstAttribute="centerX" secondItem="czI-fg-voE" secondAttribute="centerX" id="i8m-xg-qJH"/>
+                            <constraint firstAttribute="bottom" secondItem="iK3-An-SLq" secondAttribute="bottom" id="qwl-bT-ZDY"/>
+                            <constraint firstItem="iK3-An-SLq" firstAttribute="top" secondItem="f17-c4-TG9" secondAttribute="top" id="tiU-lq-m2l"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="czI-fg-voE"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="purchaseHistory.cancelOrderContainerView"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="callButton" destination="01c-Uk-ifn" id="Bvj-m5-G1y"/>
+                        <outlet property="callCenterMonSatTimingsLabel" destination="WiS-qW-4p5" id="wl4-af-qGE"/>
+                        <outlet property="callCenterSunTimingsLabel" destination="qIu-Cb-XNv" id="gU3-ak-UhD"/>
+                        <outlet property="descriptionLabel" destination="oTb-8h-XJY" id="5UE-U7-Fbx"/>
+                        <outlet property="headingLabel" destination="XcV-oQ-s7U" id="pLA-PO-tUv"/>
+                        <outlet property="subDescriptionLabel" destination="wDQ-3R-S7J" id="aIF-jt-phq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dz3-Oc-Cg0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2473.913043478261" y="389.67391304347831"/>
+        </scene>
+    </scenes>
+</document>

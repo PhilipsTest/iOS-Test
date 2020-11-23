@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIKMProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIKMProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIKMProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="64"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIKMProtocol/getValueForServiceIds:preference:replacement:withCompletionHandler:</TokenIdentifier>
+			<Abstract type="html">Description : This Method is used to get the services,along with the keys associated with it</Abstract>
+			<DeclaredIn>AIKMProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)getValueForServiceIds:(NSArray&lt;NSString*&gt; *_Nonnull)serviceIds preference:(AIKMServiceDiscoveryPreference)preference replacement:(NSDictionary&lt;NSString*,NSString*&gt; *_Nullable)replacement withCompletionHandler:(void ( ^ _Nonnull ) ( NSDictionary&lt;NSString*,AIKMService*&gt; *_Nullable services , NSError *_Nullable error ))completionHandler</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>serviceIds</Name>
+					<Abstract type="html">one or more service ids in an array</Abstract>
+				</Parameter><Parameter>
+					<Name>preference</Name>
+					<Abstract type="html">Country or language preference</Abstract>
+				</Parameter><Parameter>
+					<Name>replacement</Name>
+					<Abstract type="html">replacement dictionary with map values for the URL query params</Abstract>
+				</Parameter><Parameter>
+					<Name>completionHandler</Name>
+					<Abstract type="html">completionHandler returns a map with service Id mapped to service object</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/getValueForServiceIds:preference:replacement:withCompletionHandler:</Anchor>
+            <NodeRef refid="64"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

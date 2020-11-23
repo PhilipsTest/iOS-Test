@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>AISSSecureStorage Class Reference</title>
+
+	<link rel="stylesheet" href="../css/style.css">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
+	<meta name="generator" content="appledoc 2.2.1 (build 1334)">
+</head>
+<body class="appledoc">
+	<header>
+		<div class="container" class="hide-in-xcode">
+			
+			<h1 id="library-title">
+				<a href="../index.html">AppInfra </a>
+			</h1>
+
+			<p id="developer-home">
+				<a href="../index.html">Philips</a>
+			</p>
+			
+		</div>
+	</header>
+
+	<aside>
+		<div class="container">
+			<nav>
+				<ul id="header-buttons" role="toolbar">
+					<li><a href="../index.html">Index</a></li>
+<li><a href="../hierarchy.html">Hierarchy</a></li>
+
+					<li id="on-this-page" role="navigation">
+						<label>
+							On This Page
+
+							<div class="chevron">
+								<div class="chevy chevron-left"></div>
+								<div class="chevy chevron-right"></div>
+							</div>
+
+							<select id="jump-to">
+	<option value="top">Jump To&#133;</option>
+	
+
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+
+	
+	
+
+	
+
+	
+	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/archiveData:">- archiveData:</option>
+		
+		<option value="//api/name/decryptData:error:">- decryptData:error:</option>
+		
+		<option value="//api/name/deviceHasPasscode">- deviceHasPasscode</option>
+		
+		<option value="//api/name/encryptData:error:">- encryptData:error:</option>
+		
+		<option value="//api/name/fetchSecureAccessKey">- fetchSecureAccessKey</option>
+		
+		<option value="//api/name/fetchValueForKey:error:">- fetchValueForKey:error:</option>
+		
+		<option value="//api/name/getDeviceCapability">- getDeviceCapability</option>
+		
+		<option value="//api/name/parseData:forType:error:">- parseData:forType:error:</option>
+		
+		<option value="//api/name/removeValueForKey:">- removeValueForKey:</option>
+		
+		<option value="//api/name/storeSecureAccessKey:">- storeSecureAccessKey:</option>
+		
+		<option value="//api/name/storeValueForKey:value:error:">- storeValueForKey:value:error:</option>
+		
+		<option value="//api/name/unArchiveData:">- unArchiveData:</option>
+		
+	</optgroup>
+	
+	
+</select>
+						</label>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</aside>
+
+	<article>
+		<div id="overview_contents" class="container">
+			<div id="content">
+				<main role="main">
+					<h1 class="title">AISSSecureStorage Class Reference</h1>
+
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<th>Inherits from</th>
+	<td>NSObject</td>
+</tr><tr>
+	<th>Conforms to</th>
+	<td><a href="../Protocols/AIStorageProviderProtocol.html">AIStorageProviderProtocol</a></td>
+</tr><tr>
+	<th>Declared in</th>
+	<td>AIStorageProvider.h<br />AIStorageProvider.m</td>
+</tr>
+						</tbody></table></div>
+					
+
+                    
+
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						
+
+						
+						
+
+						<div class="task-list">
+							<div class="section-method">
+	<a name="//api/name/storeValueForKey:value:error:" title="storeValueForKey:value:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/storeValueForKey:value:error:">&ndash;&nbsp;storeValueForKey:value:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)storeValueForKey:(nonnull NSString *)<em>key</em> value:(nonnull id&lt;NSCoding&gt;)<em>object</em> error:(NSError *_Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchValueForKey:error:" title="fetchValueForKey:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchValueForKey:error:">&ndash;&nbsp;fetchValueForKey:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Description: Method to fetch the object stored against the key provided</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (nullable id)fetchValueForKey:(nonnull NSString *)<em>key</em> error:(NSError *_Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>key</code></th>
+						<td><p>&ldquo;key&rdquo; a string to identify the data on user defaults</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>&quot;error&quot;</code></th>
+						<td><p>retruns an NSError object if error occurs</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIStorageProvider.m</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/unArchiveData:" title="unArchiveData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/unArchiveData:">&ndash;&nbsp;unArchiveData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)unArchiveData:(NSData *)<em>data</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/archiveData:" title="archiveData:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/archiveData:">&ndash;&nbsp;archiveData:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)archiveData:(id&lt;NSCoding&gt;)<em>data</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/removeValueForKey:" title="removeValueForKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/removeValueForKey:">&ndash;&nbsp;removeValueForKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)removeValueForKey:(nonnull NSString *)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/encryptData:error:" title="encryptData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/encryptData:error:">&ndash;&nbsp;encryptData:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)encryptData:(nonnull id&lt;NSCoding&gt;)<em>object</em> error:(NSError *_Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/decryptData:error:" title="decryptData:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/decryptData:error:">&ndash;&nbsp;decryptData:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)decryptData:(nonnull NSData *)<em>data</em> error:(NSError *_Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/parseData:forType:error:" title="parseData:forType:error:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/parseData:forType:error:">&ndash;&nbsp;parseData:forType:error:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (id)parseData:(nonnull NSData *)<em>data</em> forType:(nonnull NSString *)<em>name</em> error:(NSError *_Nullable *_Nullable)<em>error</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/deviceHasPasscode" title="deviceHasPasscode"></a>
+	<h3 class="method-title"><code><a href="#//api/name/deviceHasPasscode">&ndash;&nbsp;deviceHasPasscode</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to check whether passcode lock is enabled in devie</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (BOOL)deviceHasPasscode</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>Bool value indicating whether passcode is enabled or not</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIStorageProviderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/getDeviceCapability" title="getDeviceCapability"></a>
+	<h3 class="method-title"><code><a href="#//api/name/getDeviceCapability">&ndash;&nbsp;getDeviceCapability</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>Method to check whether devices is rooted or not</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (NSString *)getDeviceCapability</code></div>
+
+		    
+			
+
+			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>&ldquo;true&rdquo; if device is jailbroken else returns &ldquo;false&rdquo;</p>
+			</div>
+			
+
+			
+
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">AIStorageProviderProtocol.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/storeSecureAccessKey:" title="storeSecureAccessKey:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/storeSecureAccessKey:">&ndash;&nbsp;storeSecureAccessKey:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (void)storeSecureAccessKey:(NSData *)<em>key</em></code></div>
+
+		    
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/fetchSecureAccessKey" title="fetchSecureAccessKey"></a>
+	<h3 class="method-title"><code><a href="#//api/name/fetchSecureAccessKey">&ndash;&nbsp;fetchSecureAccessKey</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+
+			<div class="method-subsection method-declaration"><code>- (NSData *)fetchSecureAccessKey</code></div>
+
+		    
+		</div>
+	</div>
+</div>
+						</div>
+						
+					</div>
+					
+					
+
+                    
+                    
+          
+				</main>
+
+				<footer>
+					<div class="footer-copyright">
+						
+						<p class="copyright">Copyright &copy; 2017 Philips. All rights reserved. Updated: 2017-09-07</p>
+						
+						
+						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1334)</a>.</p>
+						
+					</div>
+				</footer>
+			</div>
+		</div>
+	</article>
+
+	<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AIAppTaggingProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AIAppTaggingProtocol</TokenIdentifier>
+			<Abstract type="html">A protocol declaring methods to tag application events like action and navigation</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+            
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/createInstanceForComponent:componentVersion:</TokenIdentifier>
+			<Abstract type="html">This method creates and returns a tagging wrapper object which can be used for tracking actions and navigation.</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nonnull id&lt;AIAppTaggingProtocol&gt;)createInstanceForComponent:(nonnull NSString *)componentId componentVersion:(nonnull NSString *)componentVersion</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>componentId</Name>
+					<Abstract type="html">Identifier of the requesting component</Abstract>
+				</Parameter><Parameter>
+					<Name>componentVersion</Name>
+					<Abstract type="html">Version of the requesting component</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns an object that conforms to &apos;AITaggingProtocol&apos; protocol.</Abstract></ReturnValue>
+			<Anchor>//api/name/createInstanceForComponent:componentVersion:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/configureAnalyticsWithFilePath:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)configureAnalyticsWithFilePath:(nonnull NSString *)confingFilePath</Declaration>
+			
+			
+			<Anchor>//api/name/configureAnalyticsWithFilePath:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/setPrivacyConsent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setPrivacyConsent:(AIATPrivacyStatus)privacyStatus</Declaration>
+			
+			
+			<Anchor>//api/name/setPrivacyConsent:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/getPrivacyConsent</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (AIATPrivacyStatus)getPrivacyConsent</Declaration>
+			
+			
+			<Anchor>//api/name/getPrivacyConsent</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackPageWithInfo:paramKey:andParamValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackPageWithInfo:(nonnull NSString *)pageName paramKey:(nullable NSString *)key andParamValue:(nullable id)value</Declaration>
+			
+			
+			<Anchor>//api/name/trackPageWithInfo:paramKey:andParamValue:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackPageWithInfo:params:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackPageWithInfo:(nonnull NSString *)pageName params:(nullable NSDictionary *)paramDict</Declaration>
+			
+			
+			<Anchor>//api/name/trackPageWithInfo:params:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackActionWithInfo:paramKey:andParamValue:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackActionWithInfo:(nonnull NSString *)actionName paramKey:(nullable NSString *)key andParamValue:(nullable id)value</Declaration>
+			
+			
+			<Anchor>//api/name/trackActionWithInfo:paramKey:andParamValue:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackActionWithInfo:params:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackActionWithInfo:(nonnull NSString *)actionName params:(nullable NSDictionary *)paramDict</Declaration>
+			
+			
+			<Anchor>//api/name/trackActionWithInfo:params:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackVideoStart:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackVideoStart:(nonnull NSString *)videoName</Declaration>
+			
+			
+			<Anchor>//api/name/trackVideoStart:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackVideoEnd:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackVideoEnd:(NSString *_Nonnull)videoName</Declaration>
+			
+			
+			<Anchor>//api/name/trackVideoEnd:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackSocialSharing:withItem:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackSocialSharing:(AIATSocialMedia)socialMedia withItem:(nonnull NSString *)sharedItem</Declaration>
+			
+			
+			<Anchor>//api/name/trackSocialSharing:withItem:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/setPreviousPage:</TokenIdentifier>
+			<Abstract type="html">Description: setPreviousPage</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setPreviousPage:(NSString *_Nonnull)pageName</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>pageName</Name>
+					<Abstract type="html">name of the previous page which has to be set</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPreviousPage:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackTimedActionStart:data:</TokenIdentifier>
+			<Abstract type="html">Tracks the start of a timed event</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackTimedActionStart:(nullable NSString *)action data:(nullable NSDictionary *)data</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">a required NSString value that denotes the action name to track.</Abstract>
+				</Parameter><Parameter>
+					<Name>data</Name>
+					<Abstract type="html">optional dictionary pointer containing context data to track with this timed action.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackTimedActionStart:data:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackTimedActionEnd:logic:</TokenIdentifier>
+			<Abstract type="html">Tracks the end of a timed event</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackTimedActionEnd:(nullable NSString *)action logic:(nullable BOOL ( ^ ) ( NSTimeInterval inAppDuration , NSTimeInterval totalDuration , NSMutableDictionary *__nullable data ))block</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>action</Name>
+					<Abstract type="html">a required NSString pointer that denotes the action name to finish tracking.</Abstract>
+				</Parameter><Parameter>
+					<Name>block</Name>
+					<Abstract type="html">optional block to perform logic and update parameters when this timed event ends, this block can cancel the sending of the hit by returning NO.</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/trackTimedActionEnd:logic:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackLinkExternal:</TokenIdentifier>
+			<Abstract type="html">Track external link open
+@param: url: external url link</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackLinkExternal:(nullable NSString *)url</Declaration>
+			
+			
+			<Anchor>//api/name/trackLinkExternal:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/trackFileDownload:</TokenIdentifier>
+			<Abstract type="html">@briefTrack filedownload
+@param: filename: downloading file name</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)trackFileDownload:(nullable NSString *)filename</Declaration>
+			
+			
+			<Anchor>//api/name/trackFileDownload:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/setPrivacyConsentForSensitiveData:</TokenIdentifier>
+			<Abstract type="html">Description: setPrivacyConsentForSensitiveData</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (void)setPrivacyConsentForSensitiveData:(BOOL)consent</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>consent</Name>
+					<Abstract type="html">privacy consent is a boolean param</Abstract>
+				</Parameter>
+			</Parameters>
+			
+			<Anchor>//api/name/setPrivacyConsentForSensitiveData:</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/getPrivacyConsentForSensitiveData</TokenIdentifier>
+			<Abstract type="html">Description: getPrivacyConsentForSensitiveData</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (BOOL)getPrivacyConsentForSensitiveData</Declaration>
+			
+			
+			<Anchor>//api/name/getPrivacyConsentForSensitiveData</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AIAppTaggingProtocol/getTrackingIdentifier</TokenIdentifier>
+			<Abstract type="html">Retrieves the analytics tracking identifier</Abstract>
+			<DeclaredIn>AIAppTaggingProtocol.h</DeclaredIn>
+			
+			<Declaration>- (nonnull NSString *)getTrackingIdentifier</Declaration>
+			
+			<ReturnValue><Abstract type="html">an NSString value containing the tracking identifier</Abstract></ReturnValue>
+			<Anchor>//api/name/getTrackingIdentifier</Anchor>
+            <NodeRef refid="58"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

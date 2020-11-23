@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AIAIAppIdentityInterface.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AIAIAppIdentityInterface</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.h</DeclaredIn>
+            
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getAppStateString</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getAppStateString</Declaration>
+			
+			
+			<Anchor>//api/name/getAppStateString</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/initWithAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithAppInfra:(AIAppInfra *)appInfra</Declaration>
+			
+			
+			<Anchor>//api/name/initWithAppInfra:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getMicrositeId</TokenIdentifier>
+			<Abstract type="html">Description: Method to get microsite ID</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getMicrositeId</Declaration>
+			
+			<ReturnValue><Abstract type="html">microsite ID</Abstract></ReturnValue>
+			<Anchor>//api/name/getMicrositeId</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getAppState</TokenIdentifier>
+			<Abstract type="html">Description: Method to get AppState</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (AIAIAppState)getAppState</Declaration>
+			
+			<ReturnValue><Abstract type="html">AppState</Abstract></ReturnValue>
+			<Anchor>//api/name/getAppState</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getSector</TokenIdentifier>
+			<Abstract type="html">Description: Method to get Sector</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getSector</Declaration>
+			
+			<ReturnValue><Abstract type="html">Sector</Abstract></ReturnValue>
+			<Anchor>//api/name/getSector</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getAppName</TokenIdentifier>
+			<Abstract type="html">Description: Method to get AppName</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getAppName</Declaration>
+			
+			<ReturnValue><Abstract type="html">AppName</Abstract></ReturnValue>
+			<Anchor>//api/name/getAppName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getLocalizedAppName</TokenIdentifier>
+			<Abstract type="html">Description: Method to get LocalizedAppName</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getLocalizedAppName</Declaration>
+			
+			<ReturnValue><Abstract type="html">LocalizedAppName</Abstract></ReturnValue>
+			<Anchor>//api/name/getLocalizedAppName</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getAppVersion</TokenIdentifier>
+			<Abstract type="html">Description: Method to get AppVersion</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getAppVersion</Declaration>
+			
+			<ReturnValue><Abstract type="html">AppVersion</Abstract></ReturnValue>
+			<Anchor>//api/name/getAppVersion</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getAppIdentityConfigDictionary</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getAppIdentityConfigDictionary</Declaration>
+			
+			
+			<Anchor>//api/name/getAppIdentityConfigDictionary</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/getServiceDiscoveryEnvironment</TokenIdentifier>
+			<Abstract type="html">Description: Method to getServiceDiscoveryEnvironment</Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (NSString *)getServiceDiscoveryEnvironment</Declaration>
+			
+			<ReturnValue><Abstract type="html">getServiceDiscoveryEnvironment</Abstract></ReturnValue>
+			<Anchor>//api/name/getServiceDiscoveryEnvironment</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/validateAppIdentity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)validateAppIdentity:(NSDictionary *)appIdentity</Declaration>
+			
+			
+			<Anchor>//api/name/validateAppIdentity:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/validateAppState:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)validateAppState:(NSString *)appState</Declaration>
+			
+			
+			<Anchor>//api/name/validateAppState:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/validateserviceDiscoveryEnvironment:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (void)validateserviceDiscoveryEnvironment:(NSString *)SDEnvironment</Declaration>
+			
+			
+			<Anchor>//api/name/validateserviceDiscoveryEnvironment:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/isValidAppVersion:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>- (BOOL)isValidAppVersion:(NSString *)appVersion</Declaration>
+			
+			
+			<Anchor>//api/name/isValidAppVersion:</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/setDictAppIdentity:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *dictAppIdentity</Declaration>
+			
+			
+			<Anchor>//api/name/dictAppIdentity</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/dictAppIdentity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *dictAppIdentity</Declaration>
+			
+			
+			<Anchor>//api/name/dictAppIdentity</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAIAppIdentityInterface/dictAppIdentity</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) NSDictionary *dictAppIdentity</Declaration>
+			
+			
+			<Anchor>//api/name/dictAppIdentity</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/setAiAppInfra:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AIAIAppIdentityInterface/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AIAIAppIdentityInterface/aiAppInfra</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AIAIAppIdentityInterface.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIAppInfra *aiAppInfra</Declaration>
+			
+			
+			<Anchor>//api/name/aiAppInfra</Anchor>
+            <NodeRef refid="3"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

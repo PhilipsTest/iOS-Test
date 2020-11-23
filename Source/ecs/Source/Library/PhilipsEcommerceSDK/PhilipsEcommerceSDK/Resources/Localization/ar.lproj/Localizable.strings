@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "يُرجى توفير غرض هيكل التطبيق الأساسي";
+"ECSBaseURLNotFound" = "لم يتم العثور على عنوان URL الأساسي";
+"ECSCartEntryError" = "لم تتم إضافة المنتج إلى عربة التسوق";
+"ECSCartError" = "لم يتم تكوين عربة تسوق بعد";
+"ECSCommerceCartModificationError" = "يجب ألا تقل الكمية عن صفر";
+"ECSCtnNotProvided" = "يُرجى توفير شبكة الهاتف الجوّال CTN";
+"ECSHybrisNotAvailable" = "إن متجر Philips غير متاح في البلد المحدد، غير مُتاح سوى وضع البائع فقط";
+"ECSIllegalArgumentError" = "يُرجى توفير بيانات إدخال صالحة";
+"ECSInsufficientStockError" = "لا يمكن شحن المنتج لأنه قد نفد من المخزون";
+"ECSInvalidPaymentInfoError" = "يُرجى تقديم معلومات دفع صالحة";
+"ECSInvalidTokenError" = "لقد واجهَنا خلل فني (رمز الوصول غير صالح). يُرجى القيام بإعادة التحقق من Hybris";
+"ECSLocaleNotFound" = "يُرجى ضبط الموقع";
+"ECSNoSuchElementError" = "حدث خطأ أثناء إحضار المعلومات من الخادم";
+"ECSOAuthDetailError" = "يُرجى توفير تفاصيل OAuth كاملة";
+"ECSOAuthNotCalled" = "إذن المستخدم مطلوب لهذا الإجراء";
+"ECSPIL_BAD_REQUEST" = "لقد واجهَنا خلل فني. يُرجى إعادة المحاولة فيما بعد";
+"ECSPIL_BAD_REQUEST_cartId" = "لم يتم تكوين عربة تسوق بعد";
+"ECSPIL_INTEGRATION_TIMEOUT" = "لقد واجهَنا خلل فني. يُرجى إعادة المحاولة فيما بعد";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "لقد واجهَنا خلل فني (رمز الوصول غير صالح). يُرجى القيام بإعادة التحقق من Hybris";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "عنوان البريد الإلكتروني غير صالح. يرجى التحقق.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "لم تتم إضافة المنتج إلى عربة التسوق";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "يُرجى ضبط الموقع";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "يرجى توفير قيمة CTN صالحة";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "يرجى توفير كمية صالحة";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "إن متجر Philips غير متاح في البلد المحدد، غير مُتاح سوى وضع البائع فقط";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "يجب أن تكون القيمة أعلى من صفر";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "يُرجى ضبط الموقع";
+"ECSPIL_MISSING_PARAMETER_language" = "يُرجى ضبط الموقع";
+"ECSPIL_MISSING_PARAMETER_productId" = "يُرجى توفير شبكة الهاتف الجوّال CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "إن متجر Philips غير متاح في البلد المحدد، غير مُتاح سوى وضع البائع فقط";
+"ECSPIL_NEGATIVE_QUANTITY" = "يجب ألا تقل الكمية عن صفر";
+"ECSPIL_NOT_ACCEPTABLE" = "لقد واجهَنا خلل فني. يُرجى إعادة المحاولة فيما بعد";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "لقد واجهَنا خلل فني. يُرجى إعادة المحاولة فيما بعد";
+"ECSPIL_NOT_FOUND_cartId" = "يرجى توفير معرّف عربة صالح";
+"ECSPIL_NOT_FOUND_productId" = "يرجى توفير قيمة CTN صالحة";
+"ECSPIL_STOCK_EXCEPTION" = "لا يمكن شحن المنتج لأنه قد نفد من المخزون";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "لقد واجهَنا خلل فني. يُرجى إعادة المحاولة فيما بعد";
+"ECSPaymentAuthorizationError" = "لم ينجح إذن الدفع";
+"ECSPropositionIdNotFound" = "يُرجى ضبط معرّف اقتراح صالح";
+"ECSSiteIdNotFound" = "إن متجر Philips غير متاح في البلد المحدد، غير مُتاح سوى وضع البائع فقط";
+"ECSUnknownIdentifierError" = "المورد المطلوب غير متاح";
+"ECSUnsupportedDeliveryModeError" = "وضع التوصيل المحدد غير مدعوم";
+"ECSUnsupportedVoucherError" = "معذرةً، لا يمكن استبدال البطاقة";
+"ECSValidationError" = "فشل التحقق من صحة البيانات";
+"ECSVoucherOperationError" = "معذرةً، لا يمكن استبدال البطاقة";
+"ECSaddressId" = "العنوان المذكور غير موجود، أو يخص مستخدمًا آخر";
+"ECScountryCodeNotGiven" = "يُرجى توفير كود بلد صالح";
+"ECScountryisocode" = "البلد المحدد غير صالح";
+"ECSfirstName" = "يُرجى ملاحظة أن الحروف التالية غير مسموح بها: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "لقد واجهَنا خلل فني (بيانات اعتماد Janrain غير صالحة). يُرجى إعادة تسجيل الدخول";
+"ECSinvalid_grant" = "لقد واجهَنا خلل فني (رمز Janrain غير صالح). يُرجى إعادة تسجيل الدخول";
+"ECSlastName" = "يُرجى ملاحظة أن الحروف التالية غير مسموح بها: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "يُرجى توفير طلب صالح";
+"ECSphone1" = "رقم الهاتف المحدد غير صالح";
+"ECSphone2" = "رقم الهاتف المحدد غير صالح";
+"ECSpostUrl" = "الطلب في حالة مدفوع/ مكتمل بالفعل";
+"ECSpostalCode" = "الرمز البريدي المحدد غير صالح";
+"ECSregionisocode" = "المنطقة المحددة غير صالحة";
+"ECSsessionCart" = "يُرجى تحديد عنوان التوصيل، ووضع التوصيل، وطريقة الدفع قبل إرسال الطلب";
+"ECSsomethingWentWrong" = "لقد واجهَنا خلل فني. يُرجى إعادة المحاولة فيما بعد";
+"ECSunsupported_grant_type" = "لقد واجهَنا خلل فني (نوع المنحة غير مدعوم). يُرجى إعادة تسجيل الدخول";

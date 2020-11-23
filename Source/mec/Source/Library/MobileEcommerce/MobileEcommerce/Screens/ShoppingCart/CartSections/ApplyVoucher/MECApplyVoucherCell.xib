@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MECApplyVoucherCell" rowHeight="80" id="KGk-i7-Jjw" customClass="MECApplyVoucherCell" customModule="MobileEcommerce" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="378" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="378" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GeI-Aq-3f2" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="378" height="80"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qhz-Zv-N9Q" customClass="UIDTextField" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="16" width="266" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="applyvoucher_textField"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5IW-6a-ay1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="bottomConstraint" destination="wfu-0v-v9E" id="qoO-tR-fTx"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acI-xm-vo0" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="298" y="16" width="64" height="40"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Apply_button"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="am5-fQ-xos"/>
+                                    <constraint firstAttribute="width" priority="750" constant="64" id="tIo-nD-TPw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="addButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="hIM-vp-oNk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <accessibility key="accessibilityConfiguration" identifier="mec_applyVoucherBackgroundView"/>
+                        <constraints>
+                            <constraint firstItem="acI-xm-vo0" firstAttribute="centerY" secondItem="Qhz-Zv-N9Q" secondAttribute="centerY" id="Fhx-OV-9oX"/>
+                            <constraint firstItem="acI-xm-vo0" firstAttribute="leading" secondItem="Qhz-Zv-N9Q" secondAttribute="trailing" constant="16" id="Qt5-mY-2OO"/>
+                            <constraint firstAttribute="trailing" secondItem="acI-xm-vo0" secondAttribute="trailing" constant="16" id="RwZ-VF-ccW"/>
+                            <constraint firstItem="Qhz-Zv-N9Q" firstAttribute="leading" secondItem="GeI-Aq-3f2" secondAttribute="leading" constant="16" id="hhf-Uv-umq"/>
+                            <constraint firstItem="Qhz-Zv-N9Q" firstAttribute="top" secondItem="GeI-Aq-3f2" secondAttribute="top" constant="16" id="wZ6-Bd-95r"/>
+                            <constraint firstAttribute="bottom" secondItem="Qhz-Zv-N9Q" secondAttribute="bottom" priority="750" constant="16" id="wfu-0v-v9E"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="GeI-Aq-3f2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0QB-HW-zPG"/>
+                    <constraint firstItem="GeI-Aq-3f2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="9RW-ez-MRk"/>
+                    <constraint firstAttribute="trailing" secondItem="GeI-Aq-3f2" secondAttribute="trailing" id="kpL-O4-bkz"/>
+                    <constraint firstAttribute="bottom" secondItem="GeI-Aq-3f2" secondAttribute="bottom" id="wkn-pa-Npd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addButton" destination="acI-xm-vo0" id="kAZ-P8-am1"/>
+                <outlet property="voucherTextField" destination="Qhz-Zv-N9Q" id="4tN-ku-A86"/>
+            </connections>
+            <point key="canvasLocation" x="179.71014492753625" y="100.44642857142857"/>
+        </tableViewCell>
+    </objects>
+</document>

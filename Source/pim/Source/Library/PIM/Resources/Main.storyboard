@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="PIMLoginScene" id="BYZ-38-t0r" customClass="PIMViewController" customModule="PIM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lPB-5U-BHI" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="183" y="424" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="QVV-Ap-Svt"/>
+                                    <constraint firstAttribute="height" constant="48" id="ZyF-0O-znx"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circularProgressIndicatorSize">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="lPB-5U-BHI" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BIF-rc-VJK"/>
+                            <constraint firstItem="lPB-5U-BHI" firstAttribute="centerX" secondItem="Gjx-IA-tk5" secondAttribute="centerX" id="vhR-wj-S5d"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Gjx-IA-tk5"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressIndicator" destination="lPB-5U-BHI" id="cEM-j3-OcT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="133"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="DK5-fJ-ush">
+            <objects>
+                <viewController storyboardIdentifier="PIMProfileScene" id="vaX-je-XW9" customClass="PIMProfileViewController" customModule="PIM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LcD-45-e1d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZPW-Wm-2fz" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="183" y="424" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="1hD-G6-pMD"/>
+                                    <constraint firstAttribute="width" constant="48" id="6fF-n9-ZxR"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circularProgressIndicatorSize">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZPW-Wm-2fz" firstAttribute="centerY" secondItem="LcD-45-e1d" secondAttribute="centerY" id="QtZ-5M-sNc"/>
+                            <constraint firstItem="ZPW-Wm-2fz" firstAttribute="centerX" secondItem="TXx-bg-aQr" secondAttribute="centerX" id="txG-GO-HTz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TXx-bg-aQr"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressIndicator" destination="ZPW-Wm-2fz" id="toJ-Kz-H8x"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OKV-ES-Erm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="819" y="133"/>
+        </scene>
+        <!--Guest User View Controller-->
+        <scene sceneID="lmR-Sa-6hn">
+            <objects>
+                <viewController storyboardIdentifier="PIMGuestUserScene" id="kcx-Yr-A7P" customClass="PIMGuestUserViewController" customModule="PIM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4xP-Ab-ORl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LhF-Vi-u5b" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="183" y="429" width="48" height="48"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="UPR-kK-tWK"/>
+                                    <constraint firstAttribute="width" constant="48" id="ucN-ki-gDB"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="circularProgressIndicatorSize">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressIndicatorStyle">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="hidesWhenStopped" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="LhF-Vi-u5b" firstAttribute="centerX" secondItem="tZV-b0-FUU" secondAttribute="centerX" id="OsN-lC-Rad"/>
+                            <constraint firstItem="LhF-Vi-u5b" firstAttribute="centerY" secondItem="tZV-b0-FUU" secondAttribute="centerY" id="f2M-76-Soc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tZV-b0-FUU"/>
+                    </view>
+                    <connections>
+                        <outlet property="guestUserProgressIndicator" destination="LhF-Vi-u5b" id="Rkg-Ai-HYz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qdc-Tp-ZeH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="125"/>
+        </scene>
+    </scenes>
+</document>

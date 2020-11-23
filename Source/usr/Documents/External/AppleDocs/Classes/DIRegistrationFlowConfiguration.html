@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>DIRegistrationFlowConfiguration Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/objc/Class/DIRegistrationFlowConfiguration" class="dashAnchor"></a>
+    <a title="DIRegistrationFlowConfiguration Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">PhilipsRegistration Docs</a> (87% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">PhilipsRegistration Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        DIRegistrationFlowConfiguration Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/DICOPPAExtension.html">DICOPPAExtension</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIConsumerInterest.html">DIConsumerInterest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationContentConfiguration.html">DIRegistrationContentConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationFlowConfiguration.html">DIRegistrationFlowConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIRegistrationVersion.html">DIRegistrationVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/DIUser.html">DIUser</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URConsentProvider.html">URConsentProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URDependencies">URDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URInterface.html">URInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/URLaunchInput.html">URLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/c:objc(cs)URMarketingConsentHandler">URMarketingConsentHandler</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/DICOPPASTATUS.html">DICOPPASTATUS</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RegistrationCompletionErrorCode.html">RegistrationCompletionErrorCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URLoggedInScreen.html">URLoggedInScreen</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URPriorityFunction.html">URPriorityFunction</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/UserGender.html">UserGender</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/DIRegistrationConfigurationDelegate.html">DIRegistrationConfigurationDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/JanrainFlowDownloadDelegate.html">JanrainFlowDownloadDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/SessionRefreshDelegate.html">SessionRefreshDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserDetailsDelegate.html">UserDetailsDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/UserRegistrationDelegate.html">UserRegistrationDelegate</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>DIRegistrationFlowConfiguration</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight objective_c"><code><span class="k">@interface</span> <span class="nc">DIRegistrationFlowConfiguration</span> <span class="p">:</span> <span class="nc">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>A class that lets application inform <code>PhilipsRegistration</code> which flow to launch.</p>
+
+<p>@since 1.0.0</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)priorityFunction"></a>
+                    <a name="//apple_ref/objc/Property/priorityFunction" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)priorityFunction">priorityFunction</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set this variable if the app need Create button on top or bottom in Registration Welcome page. Default is Create on top.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/URPriorityFunction.html">URPriorityFunction</a></span> <span class="n">priorityFunction</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">priorityFunction</span><span class="p">:</span> <span class="kt"><a href="../Enums/URPriorityFunction.html">URPriorityFunction</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)receiveMarketingFlow"></a>
+                    <a name="//apple_ref/objc/Property/receiveMarketingFlow" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)receiveMarketingFlow">receiveMarketingFlow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the property will override the A/B Testing flow.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n"><a href="../Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a></span> <span class="n">receiveMarketingFlow</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">receiveMarketingFlow</span><span class="p">:</span> <span class="kt"><a href="../Enums/URReceiveMarketingFlow.html">URReceiveMarketingFlow</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)loggedInScreen"></a>
+                    <a name="//apple_ref/objc/Property/loggedInScreen" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)loggedInScreen">loggedInScreen</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>LoggedInScreen will tell whether the Marketing Optin or My Details screen is to be displayed.</p>
+
+<p>@since 2018.1.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n"><a href="../Enums/URLoggedInScreen.html">URLoggedInScreen</a></span> <span class="n">loggedInScreen</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">loggedInScreen</span><span class="p">:</span> <span class="kt"><a href="../Enums/URLoggedInScreen.html">URLoggedInScreen</a></span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)animateExit"></a>
+                    <a name="//apple_ref/objc/Property/animateExit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)animateExit">animateExit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows applications to set if UR should do pop animation when exiting from UR. Default value is true.</p>
+
+<p>@since 2018.2.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">animateExit</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">animateExit</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)isTermsAndConditionsAcceptanceRequired"></a>
+                    <a name="//apple_ref/objc/Property/isTermsAndConditionsAcceptanceRequired" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)isTermsAndConditionsAcceptanceRequired">isTermsAndConditionsAcceptanceRequired</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get if terms and conditions are required to be accepted. Default value is false.(Optional)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span>
+    <span class="n">BOOL</span> <span class="n">isTermsAndConditionsAcceptanceRequired</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isTermsAndConditionsAcceptanceRequired</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)minimumAgeLimit"></a>
+                    <a name="//apple_ref/objc/Property/minimumAgeLimit" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)minimumAgeLimit">minimumAgeLimit</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get minimum age limit to be allowed for the user to register.(Optional)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">assign</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="kt">int</span> <span class="n">minimumAgeLimit</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">minimumAgeLimit</span><span class="p">:</span> <span class="kt">Int32</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)signInProviders"></a>
+                    <a name="//apple_ref/objc/Property/signInProviders" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)signInProviders">signInProviders</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the list of sign-in providers to be displayed for the current locale.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSArray</span> <span class="o">*</span><span class="n">signInProviders</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">signInProviders</span><span class="p">:</span> <span class="p">[</span><span class="kt">Any</span><span class="p">]</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)hideCountrySelection"></a>
+                    <a name="//apple_ref/objc/Property/hideCountrySelection" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)hideCountrySelection">hideCountrySelection</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Get this variable if the app need to use Country Selection with in app. Default value is NO.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">hideCountrySelection</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">hideCountrySelection</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)loginPageURL"></a>
+                    <a name="//apple_ref/objc/Property/loginPageURL" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)loginPageURL">loginPageURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URL to be used for email verification landing page. Will be downloaded from ServiceDiscovery.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">loginPageURL</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">loginPageURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)resetPasswordURL"></a>
+                    <a name="//apple_ref/objc/Property/resetPasswordURL" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)resetPasswordURL">resetPasswordURL</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>URL to be used for reset password landing page. Will be downloaded from ServiceDiscovery.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">readonly</span><span class="p">,</span> <span class="n">strong</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">NSString</span> <span class="o">*</span><span class="n">resetPasswordURL</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">resetPasswordURL</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)enableSkipRegistration"></a>
+                    <a name="//apple_ref/objc/Property/enableSkipRegistration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)enableSkipRegistration">enableSkipRegistration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the value to enable users to be able to skip registration. Default is False. To be displayed at screen UR-1.(Please refer to the flow document for more info)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableSkipRegistration</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableSkipRegistration</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(py)enableLastName"></a>
+                    <a name="//apple_ref/objc/Property/enableLastName" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(py)enableLastName">enableLastName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Set the value to enable users to add their last name. Default is False. To be displayed at Create account screen.(Please refer to the flow document for more info)</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">@property</span> <span class="p">(</span><span class="n">assign</span><span class="p">,</span> <span class="n">readwrite</span><span class="p">,</span> <span class="n">nonatomic</span><span class="p">)</span> <span class="n">BOOL</span> <span class="n">enableLastName</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">enableLastName</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:objc(cs)DIRegistrationFlowConfiguration(im)loadCountrySpecificConfigurationsForCountryCode:serviceURLs:"></a>
+                    <a name="//apple_ref/objc/Method/-loadCountrySpecificConfigurationsForCountryCode:serviceURLs:" class="dashAnchor"></a>
+                    <a class="token" href="#/c:objc(cs)DIRegistrationFlowConfiguration(im)loadCountrySpecificConfigurationsForCountryCode:serviceURLs:">-loadCountrySpecificConfigurationsForCountryCode:serviceURLs:</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Loads contry specific configurations upon country change.</p>
+
+<p>@since 1.0.0</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Objective-C</p>
+                          <pre class="highlight objective_c"><code><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">loadCountrySpecificConfigurationsForCountryCode</span><span class="p">:(</span><span class="n">NSString</span> <span class="o">*</span><span class="p">)</span><span class="nv">countryCode</span>
+                                            <span class="nf">serviceURLs</span><span class="p">:</span>
+                                                <span class="p">(</span><span class="n">NSDictionary</span> <span class="o">*</span><span class="p">)</span><span class="nv">serviceURLs</span><span class="p">;</span></code></pre>
+
+                        </div>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">loadCountrySpecificConfigurations</span><span class="p">(</span><span class="n">forCountryCode</span> <span class="nv">countryCode</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span><span class="p">,</span> <span class="nv">serviceURLs</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span><span class="o">!</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>countryCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The country for which the configuration is to be loaded.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-08)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/AISDModelProtocol.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/AISDModelProtocol</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDModel.h</DeclaredIn>
+            
+			
+			<NodeRef refid="70"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AISDModelProtocol/getServiceURLWithServiceID:Preference:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDModel.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getServiceURLWithServiceID:(NSString *)serviceID Preference:(AISDPreference)preference</Declaration>
+			
+			
+			<Anchor>//api/name/getServiceURLWithServiceID:Preference:</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AISDModelProtocol/getServicesWithServiceID:Preference:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDModel.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getServicesWithServiceID:(NSArray *)serviceIDs Preference:(AISDPreference)preference</Declaration>
+			
+			
+			<Anchor>//api/name/getServicesWithServiceID:Preference:</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/AISDModelProtocol/getLocaleWithPreference:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AISDModel.h</DeclaredIn>
+			
+			<Declaration>- (NSString *)getLocaleWithPreference:(AISDPreference)preference</Declaration>
+			
+			
+			<Anchor>//api/name/getLocaleWithPreference:</Anchor>
+            <NodeRef refid="70"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

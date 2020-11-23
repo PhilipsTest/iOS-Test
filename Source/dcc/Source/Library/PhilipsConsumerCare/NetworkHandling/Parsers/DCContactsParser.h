@@ -1,0 +1,19 @@
+//
+//  DCContactsParser.h
+//  DigitalCare
+//
+//  Created by sameer sulaiman on 18/02/15.
+// Copyright (c) Koninklijke Philips N.V., 2016
+// All rights are reserved. Reproduction or dissemination
+// in whole or in part is prohibited without the prior written
+// consent of the copyright holder.
+//
+
+#import <Foundation/Foundation.h>
+#import "DCParser.h"
+#import "DCContactsModel.h"
+
+
+@interface DCContactsParser : DCParser
+
+@end

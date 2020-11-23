@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="addressCell" rowHeight="146" id="e5f-CK-ere" customClass="IAPSummaryAddressCell" customModule="InAppPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="146"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e5f-CK-ere" id="hht-GB-TcX">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="146"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UTq-4L-ud5" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="24" width="160" height="16"/>
+                        <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AxJ-JJ-miW" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="48" width="127" height="14.5"/>
+                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueN-Ey-vH4" userLabel="Separator view" customClass="UIDSeparator" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="145" width="446" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="pJ7-fS-c3J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="AxJ-JJ-miW" firstAttribute="top" secondItem="UTq-4L-ud5" secondAttribute="bottom" constant="8" id="5fd-3F-Sjo"/>
+                    <constraint firstItem="UTq-4L-ud5" firstAttribute="leading" secondItem="hht-GB-TcX" secondAttribute="leading" constant="16" id="Gwn-wh-Hap"/>
+                    <constraint firstItem="AxJ-JJ-miW" firstAttribute="leading" secondItem="UTq-4L-ud5" secondAttribute="leading" id="MVh-uD-c13"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="UTq-4L-ud5" secondAttribute="trailing" constant="270" id="NHH-n8-Jl2"/>
+                    <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="AxJ-JJ-miW" secondAttribute="trailing" constant="303" id="TUC-E3-DFE"/>
+                    <constraint firstItem="UTq-4L-ud5" firstAttribute="top" secondItem="hht-GB-TcX" secondAttribute="top" constant="24" id="Tep-Wa-dwF"/>
+                    <constraint firstAttribute="bottom" secondItem="ueN-Ey-vH4" secondAttribute="bottom" id="UYw-gZ-k8O"/>
+                    <constraint firstAttribute="trailing" secondItem="ueN-Ey-vH4" secondAttribute="trailing" id="aMl-ue-MYf"/>
+                    <constraint firstItem="ueN-Ey-vH4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="AxJ-JJ-miW" secondAttribute="bottom" constant="16" id="rUY-yd-Sqi"/>
+                    <constraint firstItem="ueN-Ey-vH4" firstAttribute="leading" secondItem="hht-GB-TcX" secondAttribute="leading" id="tj8-Nf-BQO"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="AxJ-JJ-miW" id="iye-lU-b99"/>
+                <outlet property="addressSeparatorView" destination="ueN-Ey-vH4" id="NcP-DV-3Uu"/>
+                <outlet property="headerLabel" destination="UTq-4L-ud5" id="U6q-HU-sgy"/>
+                <outlet property="topConstarint" destination="Tep-Wa-dwF" id="tWy-Pl-GJa"/>
+            </connections>
+            <point key="canvasLocation" x="-193" y="-13"/>
+        </tableViewCell>
+    </objects>
+</document>

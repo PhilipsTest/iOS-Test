@@ -1,0 +1,79 @@
+/*
+ * Localizable.strings 
+ */
+
+/*
+ * Copyright (c) Koninklijke Philips N.V., 2020
+ * All rights are reserved. Reproduction or dissemination
+ * in whole or in part is prohibited without the prior written
+ * consent of the copyright holder.
+ */
+
+"ECSAppInfraNotFound" = "Forneça o app infra object";
+"ECSBaseURLNotFound" = "URL base não encontrado";
+"ECSCartEntryError" = "O produto não foi adicionado ao carrinho";
+"ECSCartError" = "Nenhum carrinho criado ainda";
+"ECSCommerceCartModificationError" = "A quantidade não pode ser inferior a zero";
+"ECSCtnNotProvided" = "Forneça o CTN";
+"ECSHybrisNotAvailable" = "A loja Philips não está disponível para o país selecionado, apenas está disponível o modo de revendedor";
+"ECSIllegalArgumentError" = "Forneça dados de entrada válidos";
+"ECSInsufficientStockError" = "O produto não pode ser enviado porque está esgotado";
+"ECSInvalidPaymentInfoError" = "Forneça detalhes de pagamento válidos";
+"ECSInvalidTokenError" = "Encontrámos um problema técnico (token de acesso inválido). Efetue Hybris Re-Auth";
+"ECSLocaleNotFound" = "Defina o local";
+"ECSNoSuchElementError" = "Ocorreu um erro ao obter os dados do servidor";
+"ECSOAuthDetailError" = "Forneça detalhes OAuth completos";
+"ECSOAuthNotCalled" = "É necessária autorização do utilizador para esta ação";
+"ECSPIL_BAD_REQUEST" = "Encontrámos um problema técnico. Tente novamente após algum tempo";
+"ECSPIL_BAD_REQUEST_cartId" = "Nenhum carrinho criado ainda";
+"ECSPIL_INTEGRATION_TIMEOUT" = "Encontrámos um problema técnico. Tente novamente após algum tempo";
+"ECSPIL_INVALID_API_KEY" = "Invalid API key";
+"ECSPIL_INVALID_API_VERSION" = "Invalid API version";
+"ECSPIL_INVALID_AUTHORIZATION_accessToken" = "Encontrámos um problema técnico (token de acesso inválido). Efetue Hybris Re-Auth";
+"ECSPIL_INVALID_PARAMETER_VALUE_Email" = "Endereço de correio electrónico inválido. Verifique.";
+"ECSPIL_INVALID_PARAMETER_VALUE_itemId" = "O produto não foi adicionado ao carrinho";
+"ECSPIL_INVALID_PARAMETER_VALUE_limit" = "Please provide valid limit";
+"ECSPIL_INVALID_PARAMETER_VALUE_locale" = "Defina o local";
+"ECSPIL_INVALID_PARAMETER_VALUE_offset" = "Please provide valid offset";
+"ECSPIL_INVALID_PARAMETER_VALUE_productId" = "Forneça um CTN válido";
+"ECSPIL_INVALID_PARAMETER_VALUE_quantity" = "Forneça uma quantidade válida";
+"ECSPIL_INVALID_PARAMETER_VALUE_siteId" = "A loja Philips não está disponível para o país selecionado, apenas está disponível o modo de revendedor";
+"ECSPIL_INVALID_PRODUCT_SEARCH_LIMIT" = "Product search limit cannot be more than 50";
+"ECSPIL_INVALID_QUANTITY" = "A quantidade tem de ser superior a zero";
+"ECSPIL_MISSING_API_KEY" = "The required API key header is missing";
+"ECSPIL_MISSING_API_VERSION" = "The required API version header is missing";
+"ECSPIL_MISSING_PARAMETER_country" = "Defina o local";
+"ECSPIL_MISSING_PARAMETER_language" = "Defina o local";
+"ECSPIL_MISSING_PARAMETER_productId" = "Forneça o CTN";
+"ECSPIL_MISSING_PARAMETER_siteId" = "A loja Philips não está disponível para o país selecionado, apenas está disponível o modo de revendedor";
+"ECSPIL_NEGATIVE_QUANTITY" = "A quantidade não pode ser inferior a zero";
+"ECSPIL_NOT_ACCEPTABLE" = "Encontrámos um problema técnico. Tente novamente após algum tempo";
+"ECSPIL_NOT_ACCEPTABLE_contentType" = "Encontrámos um problema técnico. Tente novamente após algum tempo";
+"ECSPIL_NOT_FOUND_cartId" = "Forneça um ID de carrinho válido";
+"ECSPIL_NOT_FOUND_productId" = "Forneça um CTN válido";
+"ECSPIL_STOCK_EXCEPTION" = "O produto não pode ser enviado porque está esgotado";
+"ECSPIL_UNSUPPORTED_MEDIA_TYPE" = "Encontrámos um problema técnico. Tente novamente após algum tempo";
+"ECSPaymentAuthorizationError" = "A autorização de pagamento não foi bem-sucedida";
+"ECSPropositionIdNotFound" = "Defina uma Proposition ID válida";
+"ECSSiteIdNotFound" = "A loja Philips não está disponível para o país selecionado, apenas está disponível o modo de revendedor";
+"ECSUnknownIdentifierError" = "O recurso solicitado não está disponível";
+"ECSUnsupportedDeliveryModeError" = "O modo de entrega selecionado não é suportado";
+"ECSUnsupportedVoucherError" = "Lamentamos, mas este cupão não pode ser utilizado";
+"ECSValidationError" = "Falha na validação dos dados";
+"ECSVoucherOperationError" = "Lamentamos, mas este cupão não pode ser utilizado";
+"ECSaddressId" = "O endereço indicado não existe ou pertence a outro utilizador";
+"ECScountryCodeNotGiven" = "Forneça um indicativo de país válido";
+"ECScountryisocode" = "O país selecionado é inválido";
+"ECSfirstName" = "Tenha em atenção que os seguintes carateres não são permitidos: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSinvalid_client" = "Encontrámos um problema técnico (credenciais de cliente incorretas). Inicie sessão novamente";
+"ECSinvalid_grant" = "Encontrámos um problema técnico (token Janrain inválido). Inicie sessão novamente";
+"ECSlastName" = "Tenha em atenção que os seguintes carateres não são permitidos: \\\" < > ) ( * ^ % $ # @ ! & + , . ? /  : ; { } [ ] ` ~ =";
+"ECSorderIdNil" = "Forneça uma encomenda válida";
+"ECSphone1" = "O número de telefone selecionado é inválido";
+"ECSphone2" = "O número de telefone selecionado é inválido";
+"ECSpostUrl" = "A encomenda já se encontra num estado pago/concluído";
+"ECSpostalCode" = "O código postal selecionado é inválido";
+"ECSregionisocode" = "A região selecionada é inválida";
+"ECSsessionCart" = "Selecione o endereço de entrega, o modo de entrega e o método de pagamento antes de concluir uma encomenda";
+"ECSsomethingWentWrong" = "Encontrámos um problema técnico. Tente novamente após algum tempo";
+"ECSunsupported_grant_type" = "Encontrámos um problema técnico (tipo de concessão não suportado). Inicie sessão novamente";

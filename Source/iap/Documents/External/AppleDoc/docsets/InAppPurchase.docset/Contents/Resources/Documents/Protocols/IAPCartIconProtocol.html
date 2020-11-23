@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>IAPCartIconProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Protocol/IAPCartIconProtocol" class="dashAnchor"></a>
+    <a title="IAPCartIconProtocol Protocol Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">InAppPurchase Docs</a> (100% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">InAppPurchase Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        IAPCartIconProtocol Protocol Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13InAppPurchase15IAPDependenciesC">IAPDependencies</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPFlowInput.html">IAPFlowInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPInterface.html">IAPInterface</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPLaunchInput.html">IAPLaunchInput</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/IAPLaunchInput/IAPFlow.html">– IAPFlow</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes.html#/s:13InAppPurchase11IAPSettingsC">IAPSettings</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/IAPCartIconProtocol.html">IAPCartIconProtocol</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>IAPCartIconProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">IAPCartIconProtocol</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
+
+                </div>
+              </div>
+            <p>Vertical needs to adopt IAPCartIconProtocol to handle visibility of cart icon and updating cart count. This protocol has two methods.</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase19IAPCartIconProtocolP18didUpdateCartCountyyF"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateCartCount()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase19IAPCartIconProtocolP18didUpdateCartCountyyF">didUpdateCartCount()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method of IAPCartIconProtocol notifies the implementation class to update the cart count</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">didUpdateCartCount</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:13InAppPurchase19IAPCartIconProtocolP010updateCartE10VisibilityySbF"></a>
+                    <a name="//apple_ref/swift/Method/updateCartIconVisibility(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:13InAppPurchase19IAPCartIconProtocolP010updateCartE10VisibilityySbF">updateCartIconVisibility(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>This method of IAPCartIconProtocol notifies the implementation class to make the cart icon visible or not</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    1.0.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">updateCartIconVisibility</span><span class="p">(</span><span class="n">_</span> <span class="nv">shouldShow</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-01-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

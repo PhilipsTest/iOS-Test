@@ -1,0 +1,1705 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		427E4A601DA64B1E00A53539 /* PhilipsProductSelectionUniversal */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 427E4A611DA64B1E00A53539 /* Build configuration list for PBXAggregateTarget "PhilipsProductSelectionUniversal" */;
+			buildPhases = (
+				427E4A881DA64C3600A53539 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = PhilipsProductSelectionUniversal;
+			productName = PhilipsProductSelectionUniversal;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		220826B72229648300ECF793 /* imageAsset.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220826B62229648300ECF793 /* imageAsset.xcassets */; };
+		221D0F1B222809CF003A35C7 /* ProductSelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4224938C1D082AB700B1F486 /* ProductSelection.storyboard */; };
+		221D0F1C222809DC003A35C7 /* PSProductUnavailableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3A30E931F0656F400646188 /* PSProductUnavailableCell.xib */; };
+		221D0F1D222809E2003A35C7 /* PSProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4224938D1D082AB700B1F486 /* PSProductCell.xib */; };
+		221D0F1E222809E9003A35C7 /* Images in Resources */ = {isa = PBXBuildFile; fileRef = 4224940C1D08488500B1F486 /* Images */; };
+		261F94511C7DC8F900D0AB3F /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 261F94501C7DC8F900D0AB3F /* libsqlite3.tbd */; };
+		2633B5B01D0589FB00F2BC33 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2633B5AF1D0589FB00F2BC33 /* Default-568h@2x.png */; };
+		2668D7981C45E55A008A4ED4 /* ProductSelectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2668D7971C45E55A008A4ED4 /* ProductSelectionTests.m */; };
+		26CEA7001D2E7C3100E38021 /* ADBMobileConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 26CEA6FF1D2E7C3100E38021 /* ADBMobileConfig.json */; };
+		3FEEF7DECE78688B8A1B8B11 /* Pods_PhilipsProductSelectionDev_PhilipsProductSelectionDemoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2821F7877C080A56EF5DE9C8 /* Pods_PhilipsProductSelectionDev_PhilipsProductSelectionDemoApp.framework */; };
+		422493511D0824EB00B1F486 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4224934D1D0824EB00B1F486 /* AppDelegate.m */; };
+		422493521D0824EB00B1F486 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4224934E1D0824EB00B1F486 /* Assets.xcassets */; };
+		422493531D0824EB00B1F486 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493501D0824EB00B1F486 /* ViewController.m */; };
+		4224935A1D0828A600B1F486 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422493561D0828A600B1F486 /* LaunchScreen.storyboard */; };
+		4224935B1D0828A600B1F486 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 422493581D0828A600B1F486 /* Main.storyboard */; };
+		4224935D1D0828BE00B1F486 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4224935C1D0828BE00B1F486 /* main.m */; };
+		422AB3151C76294500502537 /* PSDataHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 422AB3141C76294500502537 /* PSDataHandlerTests.m */; };
+		427E4A571DA64B0E00A53539 /* PhilipsProductSelectionDev.h in Headers */ = {isa = PBXBuildFile; fileRef = 427E4A561DA64B0E00A53539 /* PhilipsProductSelectionDev.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4A5B1DA64B0E00A53539 /* PhilipsProductSelectionDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 427E4A541DA64B0E00A53539 /* PhilipsProductSelectionDev.framework */; };
+		427E4A5C1DA64B0E00A53539 /* PhilipsProductSelectionDev.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 427E4A541DA64B0E00A53539 /* PhilipsProductSelectionDev.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		427E4A661DA64BA600A53539 /* PSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4224935F1D08293900B1F486 /* PSBaseViewController.m */; };
+		427E4A681DA64BA600A53539 /* PSHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493631D08293900B1F486 /* PSHandler.m */; };
+		427E4A691DA64BA600A53539 /* PSHardcodedProductList.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493651D08293900B1F486 /* PSHardcodedProductList.m */; };
+		427E4A6A1DA64BA600A53539 /* PSNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493671D08293900B1F486 /* PSNavigationViewController.m */; };
+		427E4A6B1DA64BA600A53539 /* PSProductModelSelectionType.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493691D08293900B1F486 /* PSProductModelSelectionType.m */; };
+		427E4A6C1DA64BA600A53539 /* PSAppInfraWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 261982491D097AA2009AB182 /* PSAppInfraWrapper.m */; };
+		427E4A6D1DA64BA600A53539 /* PSDataHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493711D08296400B1F486 /* PSDataHandler.m */; };
+		427E4A6E1DA64BA600A53539 /* PSProductCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493741D08298200B1F486 /* PSProductCell.m */; };
+		427E4A6F1DA64BA600A53539 /* PSProductDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493761D08298200B1F486 /* PSProductDetailsViewController.m */; };
+		427E4A701DA64BA600A53539 /* PSProductListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493781D08298200B1F486 /* PSProductListViewController.m */; };
+		427E4A711DA64BA600A53539 /* PSSelectedProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4224937A1D08298200B1F486 /* PSSelectedProductViewController.m */; };
+		427E4A721DA64BA600A53539 /* PSSelectYourProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4224937C1D08298200B1F486 /* PSSelectYourProductViewController.m */; };
+		427E4A741DA64BA600A53539 /* PSUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 422493861D08299800B1F486 /* PSUtility.m */; };
+		427E4A751DA64BA600A53539 /* UIViewController+PSChildViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4224938A1D0829AB00B1F486 /* UIViewController+PSChildViewController.m */; };
+		427E4A771DA64BDE00A53539 /* PSHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493621D08293900B1F486 /* PSHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4A781DA64BDE00A53539 /* PSHardcodedProductList.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493641D08293900B1F486 /* PSHardcodedProductList.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4A791DA64BDE00A53539 /* PSProductModelSelectionType.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493681D08293900B1F486 /* PSProductModelSelectionType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		427E4A7A1DA64C0400A53539 /* PSBaseViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4224935E1D08293900B1F486 /* PSBaseViewController.h */; };
+		427E4A7B1DA64C0400A53539 /* PSNavigationViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493661D08293900B1F486 /* PSNavigationViewController.h */; };
+		427E4A7C1DA64C0400A53539 /* PSAppInfraWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 261982481D097AA2009AB182 /* PSAppInfraWrapper.h */; };
+		427E4A7D1DA64C0400A53539 /* PSDataHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493701D08296400B1F486 /* PSDataHandler.h */; };
+		427E4A7E1DA64C0400A53539 /* PSProductCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493731D08298200B1F486 /* PSProductCell.h */; };
+		427E4A7F1DA64C0400A53539 /* PSProductDetailsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493751D08298200B1F486 /* PSProductDetailsViewController.h */; };
+		427E4A801DA64C0400A53539 /* PSProductListViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493771D08298200B1F486 /* PSProductListViewController.h */; };
+		427E4A811DA64C0400A53539 /* PSSelectedProductViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493791D08298200B1F486 /* PSSelectedProductViewController.h */; };
+		427E4A821DA64C0400A53539 /* PSSelectYourProductViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 4224937B1D08298200B1F486 /* PSSelectYourProductViewController.h */; };
+		427E4A831DA64C0400A53539 /* PSConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493821D08299800B1F486 /* PSConstants.h */; };
+		427E4A851DA64C0400A53539 /* PSUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493851D08299800B1F486 /* PSUtility.h */; };
+		427E4A861DA64C0400A53539 /* UIViewController+PSChildViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 422493891D0829AB00B1F486 /* UIViewController+PSChildViewController.h */; };
+		42B87BCB1D65FA410042D343 /* AppConfig.json in Resources */ = {isa = PBXBuildFile; fileRef = 42B87BCA1D65FA410042D343 /* AppConfig.json */; };
+		42B87C021D6DD8130042D343 /* appIdentityConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 42B87C011D6DD8130042D343 /* appIdentityConfig.plist */; };
+		42EF4EDA1C8468BE0019ED54 /* CentraleSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EB61C8468BD0019ED54 /* CentraleSans-Bold.ttf */; };
+		42EF4EDB1C8468BE0019ED54 /* CentraleSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EB71C8468BD0019ED54 /* CentraleSans-BoldItalic.ttf */; };
+		42EF4EDC1C8468BE0019ED54 /* CentraleSans-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EB81C8468BD0019ED54 /* CentraleSans-Book.ttf */; };
+		42EF4EDD1C8468BE0019ED54 /* CentraleSans-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EB91C8468BD0019ED54 /* CentraleSans-BookItalic.ttf */; };
+		42EF4EDE1C8468BE0019ED54 /* CentraleSans-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EBA1C8468BD0019ED54 /* CentraleSans-Hairline.ttf */; };
+		42EF4EDF1C8468BE0019ED54 /* CentraleSans-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EBB1C8468BD0019ED54 /* CentraleSans-HairlineItalic.ttf */; };
+		42EF4EE01C8468BE0019ED54 /* CentraleSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EBC1C8468BD0019ED54 /* CentraleSans-Light.ttf */; };
+		42EF4EE11C8468BE0019ED54 /* CentraleSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EBD1C8468BD0019ED54 /* CentraleSans-LightItalic.ttf */; };
+		42EF4EE21C8468BE0019ED54 /* CentraleSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EBE1C8468BE0019ED54 /* CentraleSans-Medium.ttf */; };
+		42EF4EE31C8468BE0019ED54 /* CentraleSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EBF1C8468BE0019ED54 /* CentraleSans-MediumItalic.ttf */; };
+		42EF4EE41C8468BE0019ED54 /* CentraleSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC01C8468BE0019ED54 /* CentraleSans-Thin.ttf */; };
+		42EF4EE51C8468BE0019ED54 /* CentraleSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC11C8468BE0019ED54 /* CentraleSans-ThinItalic.ttf */; };
+		42EF4EE61C8468BE0019ED54 /* CentraleSans-XBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC21C8468BE0019ED54 /* CentraleSans-XBold.ttf */; };
+		42EF4EE71C8468BE0019ED54 /* CentraleSans-XBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC31C8468BE0019ED54 /* CentraleSans-XBoldItalic.ttf */; };
+		42EF4EE81C8468BE0019ED54 /* CentraleSans-XLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC41C8468BE0019ED54 /* CentraleSans-XLight.ttf */; };
+		42EF4EE91C8468BE0019ED54 /* CentraleSans-XLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC51C8468BE0019ED54 /* CentraleSans-XLightItalic.ttf */; };
+		42EF4EEA1C8468BE0019ED54 /* CentraleSans-XThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC61C8468BE0019ED54 /* CentraleSans-XThin.ttf */; };
+		42EF4EEB1C8468BE0019ED54 /* CentraleSans-XThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC71C8468BE0019ED54 /* CentraleSans-XThinItalic.ttf */; };
+		42EF4EEC1C8468BE0019ED54 /* CentraleSansCnd-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC81C8468BE0019ED54 /* CentraleSansCnd-Bold.ttf */; };
+		42EF4EED1C8468BE0019ED54 /* CentraleSansCnd-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4EC91C8468BE0019ED54 /* CentraleSansCnd-BoldItalic.ttf */; };
+		42EF4EEE1C8468BE0019ED54 /* CentraleSansCnd-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ECA1C8468BE0019ED54 /* CentraleSansCnd-Book.ttf */; };
+		42EF4EEF1C8468BE0019ED54 /* CentraleSansCnd-BookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ECB1C8468BE0019ED54 /* CentraleSansCnd-BookItalic.ttf */; };
+		42EF4EF01C8468BE0019ED54 /* CentraleSansCnd-Hairline.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ECC1C8468BE0019ED54 /* CentraleSansCnd-Hairline.ttf */; };
+		42EF4EF11C8468BE0019ED54 /* CentraleSansCnd-HairlineItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ECD1C8468BE0019ED54 /* CentraleSansCnd-HairlineItalic.ttf */; };
+		42EF4EF21C8468BE0019ED54 /* CentraleSansCnd-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ECE1C8468BE0019ED54 /* CentraleSansCnd-Light.ttf */; };
+		42EF4EF31C8468BE0019ED54 /* CentraleSansCnd-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ECF1C8468BE0019ED54 /* CentraleSansCnd-LightItalic.ttf */; };
+		42EF4EF41C8468BE0019ED54 /* CentraleSansCnd-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED01C8468BE0019ED54 /* CentraleSansCnd-Medium.ttf */; };
+		42EF4EF51C8468BE0019ED54 /* CentraleSansCnd-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED11C8468BE0019ED54 /* CentraleSansCnd-MediumItalic.ttf */; };
+		42EF4EF61C8468BE0019ED54 /* CentraleSansCnd-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED21C8468BE0019ED54 /* CentraleSansCnd-Thin.ttf */; };
+		42EF4EF71C8468BE0019ED54 /* CentraleSansCnd-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED31C8468BE0019ED54 /* CentraleSansCnd-ThinItalic.ttf */; };
+		42EF4EF81C8468BE0019ED54 /* CentraleSansCnd-XBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED41C8468BE0019ED54 /* CentraleSansCnd-XBold.ttf */; };
+		42EF4EF91C8468BE0019ED54 /* CentraleSansCnd-XBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED51C8468BE0019ED54 /* CentraleSansCnd-XBoldItalic.ttf */; };
+		42EF4EFA1C8468BE0019ED54 /* CentraleSansCnd-XLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED61C8468BE0019ED54 /* CentraleSansCnd-XLight.ttf */; };
+		42EF4EFB1C8468BE0019ED54 /* CentraleSansCnd-XLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED71C8468BE0019ED54 /* CentraleSansCnd-XLightItalic.ttf */; };
+		42EF4EFC1C8468BE0019ED54 /* CentraleSansCnd-XThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED81C8468BE0019ED54 /* CentraleSansCnd-XThin.ttf */; };
+		42EF4EFD1C8468BE0019ED54 /* CentraleSansCnd-XThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 42EF4ED91C8468BE0019ED54 /* CentraleSansCnd-XThinItalic.ttf */; };
+		54034B86CA8AA3ECA11CAF6D /* Pods_PhilipsProductSelectionDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF1F37FAB2D85957A04FF763 /* Pods_PhilipsProductSelectionDev.framework */; };
+		F334B8051EE138210030F5F4 /* PSSelectedProductViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F334B8041EE138210030F5F4 /* PSSelectedProductViewControllerTest.m */; };
+		F34539921ED449C2004C81F7 /* PSSelectYourProductViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F34539911ED449C2004C81F7 /* PSSelectYourProductViewControllerTest.m */; };
+		F353EFA01EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.h in Headers */ = {isa = PBXBuildFile; fileRef = F353EF9E1EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.h */; };
+		F353EFA11EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = F353EF9F1EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.m */; };
+		F3A449A41EE03AF900897850 /* PSProductDetailsViewControllerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = F3A449A31EE03AF900897850 /* PSProductDetailsViewControllerTest.m */; };
+		F3BDC7561F05449900B313D6 /* PSProductUnavailableCell.h in Headers */ = {isa = PBXBuildFile; fileRef = F3BDC7531F05449900B313D6 /* PSProductUnavailableCell.h */; };
+		F3BDC7571F05449900B313D6 /* PSProductUnavailableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3BDC7541F05449900B313D6 /* PSProductUnavailableCell.m */; };
+		FFD77324A9419A505EFD7580 /* Pods_PhilipsProductSelectionDev_ProductSelectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE7F43C83BE7AD4175AEA20F /* Pods_PhilipsProductSelectionDev_ProductSelectionTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2668D7941C45E55A008A4ED4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2668D7721C45E55A008A4ED4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2668D7791C45E55A008A4ED4;
+			remoteInfo = ProductSelection;
+		};
+		427E4A591DA64B0E00A53539 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2668D7721C45E55A008A4ED4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 427E4A531DA64B0E00A53539;
+			remoteInfo = PhilipsProductSelection;
+		};
+		F3528B2D1ED752D80082051B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2668D7721C45E55A008A4ED4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2668D7791C45E55A008A4ED4;
+			remoteInfo = PhilipsProductSelectionDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2668D7C81C4E3F4C008A4ED4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				427E4A5C1DA64B0E00A53539 /* PhilipsProductSelectionDev.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00A62D32CC780890E76C0C84 /* Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.release.xcconfig"; sourceTree = "<group>"; };
+		220826B62229648300ECF793 /* imageAsset.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = imageAsset.xcassets; path = PhilipsProductSelection/imageAsset.xcassets; sourceTree = "<group>"; };
+		226123DA222D21EF00422FF0 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123DC222D21EF00422FF0 /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123DE222D21EF00422FF0 /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		226123E0222D21EF00422FF0 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123E2222D21EF00422FF0 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123E4222D21EF00422FF0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		226123E6222D21EF00422FF0 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123E8222D21EF00422FF0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123EA222D21EF00422FF0 /* zh-Hant-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-HK"; path = "zh-Hant-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		226123EC222D21EF00422FF0 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123EE222D21EF00422FF0 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123F0222D21EF00422FF0 /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		226123F2222D21EF00422FF0 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123F4222D21EF00422FF0 /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123F6222D21EF00422FF0 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123F8222D21EF00422FF0 /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123FA222D21EF00422FF0 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123FC222D21EF00422FF0 /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
+		226123FE222D21EF00422FF0 /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612400222D21EF00422FF0 /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		22612402222D21EF00422FF0 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612404222D21EF00422FF0 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612406222D21EF00422FF0 /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		22612408222D21EF00422FF0 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261240A222D21EF00422FF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261240C222D21EF00422FF0 /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261240E222D21EF00422FF0 /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612410222D21EF00422FF0 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612412222D21EF00422FF0 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		22612414222D21EF00422FF0 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612416222D21EF00422FF0 /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612418222D21EF00422FF0 /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2261241A222D21EF00422FF0 /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261241C222D21EF00422FF0 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261241E222D21EF00422FF0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612420222D21EF00422FF0 /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612422222D21EF00422FF0 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612424222D21EF00422FF0 /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612426222D21EF00422FF0 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		22612428222D21F000422FF0 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261242A222D21F000422FF0 /* bs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bs; path = bs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261242C222D21F000422FF0 /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		2261242E222D21F000422FF0 /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261982481D097AA2009AB182 /* PSAppInfraWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSAppInfraWrapper.h; path = PhilipsProductSelection/Common/PSAppInfraWrapper.h; sourceTree = SOURCE_ROOT; };
+		261982491D097AA2009AB182 /* PSAppInfraWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSAppInfraWrapper.m; path = PhilipsProductSelection/Common/PSAppInfraWrapper.m; sourceTree = SOURCE_ROOT; };
+		261F92FB1C7B369000D0AB3F /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93011C7B373C00D0AB3F /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93031C7B379F00D0AB3F /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93051C7B37AF00D0AB3F /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		261F93091C7B37DA00D0AB3F /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F930B1C7B37E700D0AB3F /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F930D1C7B37F500D0AB3F /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F930F1C7B381E00D0AB3F /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93111C7B382B00D0AB3F /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93131C7B383200D0AB3F /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93151C7B384100D0AB3F /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93171C7B384800D0AB3F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93191C7B385400D0AB3F /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F931B1C7B386200D0AB3F /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F931D1C7B38BC00D0AB3F /* en-GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "en-GB"; path = "en-GB.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		261F931F1C7B38E000D0AB3F /* fr-CA */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "fr-CA"; path = "fr-CA.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		261F93211C7B390900D0AB3F /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93231C7B391700D0AB3F /* es-MX */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-MX"; path = "es-MX.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		261F93251C7B392200D0AB3F /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93271C7B393A00D0AB3F /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F932B1C7B398C00D0AB3F /* bs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bs; path = bs.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F932D1C7B39AE00D0AB3F /* bg */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = bg; path = bg.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F932F1C7B39C000D0AB3F /* hr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hr; path = hr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93311C7B39E200D0AB3F /* et */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = et; path = et.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93351C7B3A0B00D0AB3F /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93371C7B3A1A00D0AB3F /* he */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = he; path = he.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93391C7B3A2D00D0AB3F /* hi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hi; path = hi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F933B1C7B3A3B00D0AB3F /* hu */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = hu; path = hu.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93411C7B3A7000D0AB3F /* lv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lv; path = lv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93431C7B3A8E00D0AB3F /* lt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = lt; path = lt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93491C7B3B8800D0AB3F /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		261F934D1C7B3BD300D0AB3F /* sk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sk; path = sk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F934F1C7B3BF100D0AB3F /* sl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sl; path = sl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93511C7B3C1300D0AB3F /* es-AR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "es-AR"; path = "es-AR.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		261F93531C7B3C2300D0AB3F /* th */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = th; path = th.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93551C7B3C2F00D0AB3F /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93571C7B3C3800D0AB3F /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93591C7B3C4400D0AB3F /* fi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fi; path = fi.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F935B1C7B3C4F00D0AB3F /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F935F1C7B3C8A00D0AB3F /* tr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = tr; path = tr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F93681C7B48E000D0AB3F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		261F94501C7DC8F900D0AB3F /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		261F94641C7FAD2700D0AB3F /* zh-Hant-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-HK"; path = "zh-Hant-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		2633B5AF1D0589FB00F2BC33 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2668D77A1C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhilipsProductSelectionDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2668D7931C45E55A008A4ED4 /* ProductSelectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductSelectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2668D7971C45E55A008A4ED4 /* ProductSelectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductSelectionTests.m; sourceTree = "<group>"; };
+		2668D7991C45E55A008A4ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2668D7B51C46567C008A4ED4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26CEA6FF1D2E7C3100E38021 /* ADBMobileConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ADBMobileConfig.json; sourceTree = "<group>"; };
+		2821F7877C080A56EF5DE9C8 /* Pods_PhilipsProductSelectionDev_PhilipsProductSelectionDemoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsProductSelectionDev_PhilipsProductSelectionDemoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4224934C1D0824EB00B1F486 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = PhilipsProductSelectionDemoApp/AppDelegate.h; sourceTree = SOURCE_ROOT; };
+		4224934D1D0824EB00B1F486 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = PhilipsProductSelectionDemoApp/AppDelegate.m; sourceTree = SOURCE_ROOT; };
+		4224934E1D0824EB00B1F486 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = PhilipsProductSelectionDemoApp/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		4224934F1D0824EB00B1F486 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = PhilipsProductSelectionDemoApp/ViewController.h; sourceTree = SOURCE_ROOT; };
+		422493501D0824EB00B1F486 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = PhilipsProductSelectionDemoApp/ViewController.m; sourceTree = SOURCE_ROOT; };
+		422493541D08251300B1F486 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = PhilipsProductSelectionDemoApp/Info.plist; sourceTree = SOURCE_ROOT; };
+		422493571D0828A600B1F486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PhilipsProductSelectionDemoApp/Base.lproj/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		422493591D0828A600B1F486 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = PhilipsProductSelectionDemoApp/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		4224935C1D0828BE00B1F486 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = PhilipsProductSelectionDemoApp/main.m; sourceTree = SOURCE_ROOT; };
+		4224935E1D08293900B1F486 /* PSBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSBaseViewController.h; path = PhilipsProductSelection/Common/PSBaseViewController.h; sourceTree = SOURCE_ROOT; };
+		4224935F1D08293900B1F486 /* PSBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSBaseViewController.m; path = PhilipsProductSelection/Common/PSBaseViewController.m; sourceTree = SOURCE_ROOT; };
+		422493621D08293900B1F486 /* PSHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSHandler.h; path = PhilipsProductSelection/Common/PSHandler.h; sourceTree = SOURCE_ROOT; };
+		422493631D08293900B1F486 /* PSHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSHandler.m; path = PhilipsProductSelection/Common/PSHandler.m; sourceTree = SOURCE_ROOT; };
+		422493641D08293900B1F486 /* PSHardcodedProductList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSHardcodedProductList.h; path = PhilipsProductSelection/Common/PSHardcodedProductList.h; sourceTree = SOURCE_ROOT; };
+		422493651D08293900B1F486 /* PSHardcodedProductList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSHardcodedProductList.m; path = PhilipsProductSelection/Common/PSHardcodedProductList.m; sourceTree = SOURCE_ROOT; };
+		422493661D08293900B1F486 /* PSNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSNavigationViewController.h; path = PhilipsProductSelection/Common/PSNavigationViewController.h; sourceTree = SOURCE_ROOT; };
+		422493671D08293900B1F486 /* PSNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSNavigationViewController.m; path = PhilipsProductSelection/Common/PSNavigationViewController.m; sourceTree = SOURCE_ROOT; };
+		422493681D08293900B1F486 /* PSProductModelSelectionType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSProductModelSelectionType.h; path = PhilipsProductSelection/Common/PSProductModelSelectionType.h; sourceTree = SOURCE_ROOT; };
+		422493691D08293900B1F486 /* PSProductModelSelectionType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSProductModelSelectionType.m; path = PhilipsProductSelection/Common/PSProductModelSelectionType.m; sourceTree = SOURCE_ROOT; };
+		422493701D08296400B1F486 /* PSDataHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSDataHandler.h; path = PhilipsProductSelection/PSDataHandler/PSDataHandler.h; sourceTree = SOURCE_ROOT; };
+		422493711D08296400B1F486 /* PSDataHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSDataHandler.m; path = PhilipsProductSelection/PSDataHandler/PSDataHandler.m; sourceTree = SOURCE_ROOT; };
+		422493731D08298200B1F486 /* PSProductCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSProductCell.h; path = PhilipsProductSelection/UI/PSProductCell.h; sourceTree = SOURCE_ROOT; };
+		422493741D08298200B1F486 /* PSProductCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSProductCell.m; path = PhilipsProductSelection/UI/PSProductCell.m; sourceTree = SOURCE_ROOT; };
+		422493751D08298200B1F486 /* PSProductDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSProductDetailsViewController.h; path = PhilipsProductSelection/UI/PSProductDetailsViewController.h; sourceTree = SOURCE_ROOT; };
+		422493761D08298200B1F486 /* PSProductDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSProductDetailsViewController.m; path = PhilipsProductSelection/UI/PSProductDetailsViewController.m; sourceTree = SOURCE_ROOT; };
+		422493771D08298200B1F486 /* PSProductListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSProductListViewController.h; path = PhilipsProductSelection/UI/PSProductListViewController.h; sourceTree = SOURCE_ROOT; };
+		422493781D08298200B1F486 /* PSProductListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSProductListViewController.m; path = PhilipsProductSelection/UI/PSProductListViewController.m; sourceTree = SOURCE_ROOT; };
+		422493791D08298200B1F486 /* PSSelectedProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSSelectedProductViewController.h; path = PhilipsProductSelection/UI/PSSelectedProductViewController.h; sourceTree = SOURCE_ROOT; };
+		4224937A1D08298200B1F486 /* PSSelectedProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSSelectedProductViewController.m; path = PhilipsProductSelection/UI/PSSelectedProductViewController.m; sourceTree = SOURCE_ROOT; };
+		4224937B1D08298200B1F486 /* PSSelectYourProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSSelectYourProductViewController.h; path = PhilipsProductSelection/UI/PSSelectYourProductViewController.h; sourceTree = SOURCE_ROOT; };
+		4224937C1D08298200B1F486 /* PSSelectYourProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSSelectYourProductViewController.m; path = PhilipsProductSelection/UI/PSSelectYourProductViewController.m; sourceTree = SOURCE_ROOT; };
+		422493821D08299800B1F486 /* PSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSConstants.h; path = PhilipsProductSelection/Utility/PSConstants.h; sourceTree = SOURCE_ROOT; };
+		422493851D08299800B1F486 /* PSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSUtility.h; path = PhilipsProductSelection/Utility/PSUtility.h; sourceTree = SOURCE_ROOT; };
+		422493861D08299800B1F486 /* PSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSUtility.m; path = PhilipsProductSelection/Utility/PSUtility.m; sourceTree = SOURCE_ROOT; };
+		422493891D0829AB00B1F486 /* UIViewController+PSChildViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+PSChildViewController.h"; path = "PhilipsProductSelection/PSCategories/UIViewController+PSChildViewController.h"; sourceTree = SOURCE_ROOT; };
+		4224938A1D0829AB00B1F486 /* UIViewController+PSChildViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+PSChildViewController.m"; path = "PhilipsProductSelection/PSCategories/UIViewController+PSChildViewController.m"; sourceTree = SOURCE_ROOT; };
+		4224938C1D082AB700B1F486 /* ProductSelection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = ProductSelection.storyboard; path = PhilipsProductSelection/Storyboards/ProductSelection.storyboard; sourceTree = SOURCE_ROOT; };
+		4224938D1D082AB700B1F486 /* PSProductCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSProductCell.xib; path = PhilipsProductSelection/Storyboards/PSProductCell.xib; sourceTree = SOURCE_ROOT; };
+		4224940C1D08488500B1F486 /* Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Images; path = PhilipsProductSelection/Images; sourceTree = SOURCE_ROOT; };
+		422AB3141C76294500502537 /* PSDataHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDataHandlerTests.m; sourceTree = "<group>"; };
+		427E4A541DA64B0E00A53539 /* PhilipsProductSelectionDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PhilipsProductSelectionDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		427E4A561DA64B0E00A53539 /* PhilipsProductSelectionDev.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhilipsProductSelectionDev.h; sourceTree = "<group>"; };
+		427E4A581DA64B0E00A53539 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42B87BCA1D65FA410042D343 /* AppConfig.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AppConfig.json; sourceTree = "<group>"; };
+		42B87C011D6DD8130042D343 /* appIdentityConfig.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = appIdentityConfig.plist; sourceTree = "<group>"; };
+		42EF4EB61C8468BD0019ED54 /* CentraleSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-Bold.ttf"; path = "CustomFonts/CentraleSans-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EB71C8468BD0019ED54 /* CentraleSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-BoldItalic.ttf"; path = "CustomFonts/CentraleSans-BoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EB81C8468BD0019ED54 /* CentraleSans-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-Book.ttf"; path = "CustomFonts/CentraleSans-Book.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EB91C8468BD0019ED54 /* CentraleSans-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-BookItalic.ttf"; path = "CustomFonts/CentraleSans-BookItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EBA1C8468BD0019ED54 /* CentraleSans-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-Hairline.ttf"; path = "CustomFonts/CentraleSans-Hairline.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EBB1C8468BD0019ED54 /* CentraleSans-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-HairlineItalic.ttf"; path = "CustomFonts/CentraleSans-HairlineItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EBC1C8468BD0019ED54 /* CentraleSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-Light.ttf"; path = "CustomFonts/CentraleSans-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EBD1C8468BD0019ED54 /* CentraleSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-LightItalic.ttf"; path = "CustomFonts/CentraleSans-LightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EBE1C8468BE0019ED54 /* CentraleSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-Medium.ttf"; path = "CustomFonts/CentraleSans-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EBF1C8468BE0019ED54 /* CentraleSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-MediumItalic.ttf"; path = "CustomFonts/CentraleSans-MediumItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC01C8468BE0019ED54 /* CentraleSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-Thin.ttf"; path = "CustomFonts/CentraleSans-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC11C8468BE0019ED54 /* CentraleSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-ThinItalic.ttf"; path = "CustomFonts/CentraleSans-ThinItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC21C8468BE0019ED54 /* CentraleSans-XBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-XBold.ttf"; path = "CustomFonts/CentraleSans-XBold.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC31C8468BE0019ED54 /* CentraleSans-XBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-XBoldItalic.ttf"; path = "CustomFonts/CentraleSans-XBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC41C8468BE0019ED54 /* CentraleSans-XLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-XLight.ttf"; path = "CustomFonts/CentraleSans-XLight.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC51C8468BE0019ED54 /* CentraleSans-XLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-XLightItalic.ttf"; path = "CustomFonts/CentraleSans-XLightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC61C8468BE0019ED54 /* CentraleSans-XThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-XThin.ttf"; path = "CustomFonts/CentraleSans-XThin.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC71C8468BE0019ED54 /* CentraleSans-XThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSans-XThinItalic.ttf"; path = "CustomFonts/CentraleSans-XThinItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC81C8468BE0019ED54 /* CentraleSansCnd-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-Bold.ttf"; path = "CustomFonts/CentraleSansCnd-Bold.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4EC91C8468BE0019ED54 /* CentraleSansCnd-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-BoldItalic.ttf"; path = "CustomFonts/CentraleSansCnd-BoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ECA1C8468BE0019ED54 /* CentraleSansCnd-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-Book.ttf"; path = "CustomFonts/CentraleSansCnd-Book.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ECB1C8468BE0019ED54 /* CentraleSansCnd-BookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-BookItalic.ttf"; path = "CustomFonts/CentraleSansCnd-BookItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ECC1C8468BE0019ED54 /* CentraleSansCnd-Hairline.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-Hairline.ttf"; path = "CustomFonts/CentraleSansCnd-Hairline.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ECD1C8468BE0019ED54 /* CentraleSansCnd-HairlineItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-HairlineItalic.ttf"; path = "CustomFonts/CentraleSansCnd-HairlineItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ECE1C8468BE0019ED54 /* CentraleSansCnd-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-Light.ttf"; path = "CustomFonts/CentraleSansCnd-Light.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ECF1C8468BE0019ED54 /* CentraleSansCnd-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-LightItalic.ttf"; path = "CustomFonts/CentraleSansCnd-LightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED01C8468BE0019ED54 /* CentraleSansCnd-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-Medium.ttf"; path = "CustomFonts/CentraleSansCnd-Medium.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED11C8468BE0019ED54 /* CentraleSansCnd-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-MediumItalic.ttf"; path = "CustomFonts/CentraleSansCnd-MediumItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED21C8468BE0019ED54 /* CentraleSansCnd-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-Thin.ttf"; path = "CustomFonts/CentraleSansCnd-Thin.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED31C8468BE0019ED54 /* CentraleSansCnd-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-ThinItalic.ttf"; path = "CustomFonts/CentraleSansCnd-ThinItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED41C8468BE0019ED54 /* CentraleSansCnd-XBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-XBold.ttf"; path = "CustomFonts/CentraleSansCnd-XBold.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED51C8468BE0019ED54 /* CentraleSansCnd-XBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-XBoldItalic.ttf"; path = "CustomFonts/CentraleSansCnd-XBoldItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED61C8468BE0019ED54 /* CentraleSansCnd-XLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-XLight.ttf"; path = "CustomFonts/CentraleSansCnd-XLight.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED71C8468BE0019ED54 /* CentraleSansCnd-XLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-XLightItalic.ttf"; path = "CustomFonts/CentraleSansCnd-XLightItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED81C8468BE0019ED54 /* CentraleSansCnd-XThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-XThin.ttf"; path = "CustomFonts/CentraleSansCnd-XThin.ttf"; sourceTree = SOURCE_ROOT; };
+		42EF4ED91C8468BE0019ED54 /* CentraleSansCnd-XThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "CentraleSansCnd-XThinItalic.ttf"; path = "CustomFonts/CentraleSansCnd-XThinItalic.ttf"; sourceTree = SOURCE_ROOT; };
+		4F334AECE574DA59503DC8AA /* Pods-PhilipsProductSelectionDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductSelectionDev.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductSelectionDev/Pods-PhilipsProductSelectionDev.debug.xcconfig"; sourceTree = "<group>"; };
+		5D98E63984E5D19F95D78C1A /* Pods-PhilipsProductSelectionDev-ProductSelectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductSelectionDev-ProductSelectionTests.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductSelectionDev-ProductSelectionTests/Pods-PhilipsProductSelectionDev-ProductSelectionTests.release.xcconfig"; sourceTree = "<group>"; };
+		A716A9C707539A4102681C8B /* Pods-PhilipsProductSelectionDev-ProductSelectionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductSelectionDev-ProductSelectionTests.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductSelectionDev-ProductSelectionTests/Pods-PhilipsProductSelectionDev-ProductSelectionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9A505C39CCDB32329533E6F /* Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		AFF38044BD9ACA710DAF6976 /* Pods-PhilipsProductSelectionDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhilipsProductSelectionDev.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-PhilipsProductSelectionDev/Pods-PhilipsProductSelectionDev.release.xcconfig"; sourceTree = "<group>"; };
+		DF1F37FAB2D85957A04FF763 /* Pods_PhilipsProductSelectionDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsProductSelectionDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE7F43C83BE7AD4175AEA20F /* Pods_PhilipsProductSelectionDev_ProductSelectionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhilipsProductSelectionDev_ProductSelectionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F334B8041EE138210030F5F4 /* PSSelectedProductViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSelectedProductViewControllerTest.m; sourceTree = "<group>"; };
+		F34539911ED449C2004C81F7 /* PSSelectYourProductViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSelectYourProductViewControllerTest.m; sourceTree = "<group>"; };
+		F3528B281ED752D80082051B /* PhilipsProductSelectionDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhilipsProductSelectionDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3528B2C1ED752D80082051B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F353EF9E1EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIControl+ProductSelectionLocalization.h"; path = "PhilipsProductSelection/PSCategories/UIControl+ProductSelectionLocalization.h"; sourceTree = SOURCE_ROOT; };
+		F353EF9F1EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIControl+ProductSelectionLocalization.m"; path = "PhilipsProductSelection/PSCategories/UIControl+ProductSelectionLocalization.m"; sourceTree = SOURCE_ROOT; };
+		F3A30E931F0656F400646188 /* PSProductUnavailableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PSProductUnavailableCell.xib; path = PhilipsProductSelection/Storyboards/PSProductUnavailableCell.xib; sourceTree = SOURCE_ROOT; };
+		F3A449A31EE03AF900897850 /* PSProductDetailsViewControllerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSProductDetailsViewControllerTest.m; sourceTree = "<group>"; };
+		F3BDC7531F05449900B313D6 /* PSProductUnavailableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PSProductUnavailableCell.h; path = PhilipsProductSelection/UI/PSProductUnavailableCell.h; sourceTree = SOURCE_ROOT; };
+		F3BDC7541F05449900B313D6 /* PSProductUnavailableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PSProductUnavailableCell.m; path = PhilipsProductSelection/UI/PSProductUnavailableCell.m; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2668D7771C45E55A008A4ED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427E4A5B1DA64B0E00A53539 /* PhilipsProductSelectionDev.framework in Frameworks */,
+				261F94511C7DC8F900D0AB3F /* libsqlite3.tbd in Frameworks */,
+				3FEEF7DECE78688B8A1B8B11 /* Pods_PhilipsProductSelectionDev_PhilipsProductSelectionDemoApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2668D7901C45E55A008A4ED4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFD77324A9419A505EFD7580 /* Pods_PhilipsProductSelectionDev_ProductSelectionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E4A501DA64B0E00A53539 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54034B86CA8AA3ECA11CAF6D /* Pods_PhilipsProductSelectionDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3528B251ED752D80082051B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		226123D6222D21EF00422FF0 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				226123D9222D21EF00422FF0 /* Localizable.strings */,
+			);
+			name = Resource;
+			path = PhilipsProductSelection/Resource;
+			sourceTree = "<group>";
+		};
+		260167681C60B2F4008A5F04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				261F94501C7DC8F900D0AB3F /* libsqlite3.tbd */,
+				DF1F37FAB2D85957A04FF763 /* Pods_PhilipsProductSelectionDev.framework */,
+				2821F7877C080A56EF5DE9C8 /* Pods_PhilipsProductSelectionDev_PhilipsProductSelectionDemoApp.framework */,
+				EE7F43C83BE7AD4175AEA20F /* Pods_PhilipsProductSelectionDev_ProductSelectionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2668D7711C45E55A008A4ED4 = {
+			isa = PBXGroup;
+			children = (
+				226123D6222D21EF00422FF0 /* Resource */,
+				26CEA6FF1D2E7C3100E38021 /* ADBMobileConfig.json */,
+				42B87BCA1D65FA410042D343 /* AppConfig.json */,
+				42B87C011D6DD8130042D343 /* appIdentityConfig.plist */,
+				2633B5AF1D0589FB00F2BC33 /* Default-568h@2x.png */,
+				427E4A551DA64B0E00A53539 /* PhilipsProductSelection */,
+				F3528B291ED752D80082051B /* PhilipsProductSelectionDemoAppUITests */,
+				260167681C60B2F4008A5F04 /* Frameworks */,
+				4224940F1D084B5200B1F486 /* PhilipsProductSelectionDemoApp */,
+				2668D7961C45E55A008A4ED4 /* ProductSelectionTests */,
+				422494111D084F0800B1F486 /* PhilipsProductSelection */,
+				2668D7B41C46567C008A4ED4 /* ProductSelectionDemoResources */,
+				2668D77B1C45E55A008A4ED4 /* Products */,
+				BA477322B4D8FC9A8C01B0A8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		2668D77B1C45E55A008A4ED4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2668D77A1C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp.app */,
+				2668D7931C45E55A008A4ED4 /* ProductSelectionTests.xctest */,
+				427E4A541DA64B0E00A53539 /* PhilipsProductSelectionDev.framework */,
+				F3528B281ED752D80082051B /* PhilipsProductSelectionDemoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2668D77D1C45E55A008A4ED4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4224935C1D0828BE00B1F486 /* main.m */,
+			);
+			name = "Supporting Files";
+			path = ProductSelection;
+			sourceTree = "<group>";
+		};
+		2668D7961C45E55A008A4ED4 /* ProductSelectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				422AB3141C76294500502537 /* PSDataHandlerTests.m */,
+				2668D7971C45E55A008A4ED4 /* ProductSelectionTests.m */,
+				2668D7991C45E55A008A4ED4 /* Info.plist */,
+				F34539911ED449C2004C81F7 /* PSSelectYourProductViewControllerTest.m */,
+				F3A449A31EE03AF900897850 /* PSProductDetailsViewControllerTest.m */,
+				F334B8041EE138210030F5F4 /* PSSelectedProductViewControllerTest.m */,
+			);
+			path = ProductSelectionTests;
+			sourceTree = "<group>";
+		};
+		2668D7B41C46567C008A4ED4 /* ProductSelectionDemoResources */ = {
+			isa = PBXGroup;
+			children = (
+				42EF4EB51C8468A90019ED54 /* CustomFonts */,
+				2668D7B51C46567C008A4ED4 /* Info.plist */,
+				261F92FC1C7B369000D0AB3F /* Localizable.strings */,
+			);
+			name = ProductSelectionDemoResources;
+			path = ProductSelectionResources;
+			sourceTree = "<group>";
+		};
+		4224940F1D084B5200B1F486 /* PhilipsProductSelectionDemoApp */ = {
+			isa = PBXGroup;
+			children = (
+				4224934C1D0824EB00B1F486 /* AppDelegate.h */,
+				4224934D1D0824EB00B1F486 /* AppDelegate.m */,
+				4224934F1D0824EB00B1F486 /* ViewController.h */,
+				422493501D0824EB00B1F486 /* ViewController.m */,
+				4224934E1D0824EB00B1F486 /* Assets.xcassets */,
+				2668D77D1C45E55A008A4ED4 /* Supporting Files */,
+				422493541D08251300B1F486 /* Info.plist */,
+				422493561D0828A600B1F486 /* LaunchScreen.storyboard */,
+				422493581D0828A600B1F486 /* Main.storyboard */,
+			);
+			name = PhilipsProductSelectionDemoApp;
+			sourceTree = "<group>";
+		};
+		422494111D084F0800B1F486 /* PhilipsProductSelection */ = {
+			isa = PBXGroup;
+			children = (
+				42B867031C69B6570096EB42 /* Common */,
+				42B8671E1C6CA1B20096EB42 /* PSDataHandler */,
+				4288D20E1C4D047D004BEF05 /* UI */,
+				4288D2151C4D14E5004BEF05 /* Utility */,
+				42B867121C69D8750096EB42 /* PSCategories */,
+				4224940C1D08488500B1F486 /* Images */,
+				4288D2061C4CF619004BEF05 /* StoryBoards */,
+				220826B62229648300ECF793 /* imageAsset.xcassets */,
+			);
+			name = PhilipsProductSelection;
+			sourceTree = "<group>";
+		};
+		427E4A551DA64B0E00A53539 /* PhilipsProductSelection */ = {
+			isa = PBXGroup;
+			children = (
+				427E4A561DA64B0E00A53539 /* PhilipsProductSelectionDev.h */,
+				427E4A581DA64B0E00A53539 /* Info.plist */,
+			);
+			path = PhilipsProductSelection;
+			sourceTree = "<group>";
+		};
+		4288D2061C4CF619004BEF05 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				4224938C1D082AB700B1F486 /* ProductSelection.storyboard */,
+				F3A30E931F0656F400646188 /* PSProductUnavailableCell.xib */,
+				4224938D1D082AB700B1F486 /* PSProductCell.xib */,
+			);
+			name = StoryBoards;
+			path = ProductSelectionLibrary;
+			sourceTree = "<group>";
+		};
+		4288D20E1C4D047D004BEF05 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				422493731D08298200B1F486 /* PSProductCell.h */,
+				422493741D08298200B1F486 /* PSProductCell.m */,
+				F3BDC7531F05449900B313D6 /* PSProductUnavailableCell.h */,
+				F3BDC7541F05449900B313D6 /* PSProductUnavailableCell.m */,
+				422493751D08298200B1F486 /* PSProductDetailsViewController.h */,
+				422493761D08298200B1F486 /* PSProductDetailsViewController.m */,
+				422493771D08298200B1F486 /* PSProductListViewController.h */,
+				422493781D08298200B1F486 /* PSProductListViewController.m */,
+				422493791D08298200B1F486 /* PSSelectedProductViewController.h */,
+				4224937A1D08298200B1F486 /* PSSelectedProductViewController.m */,
+				4224937B1D08298200B1F486 /* PSSelectYourProductViewController.h */,
+				4224937C1D08298200B1F486 /* PSSelectYourProductViewController.m */,
+			);
+			name = UI;
+			path = ProductSelectionLibrary;
+			sourceTree = "<group>";
+		};
+		4288D2151C4D14E5004BEF05 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				422493821D08299800B1F486 /* PSConstants.h */,
+				422493851D08299800B1F486 /* PSUtility.h */,
+				422493861D08299800B1F486 /* PSUtility.m */,
+			);
+			name = Utility;
+			path = ProductSelectionLibrary;
+			sourceTree = "<group>";
+		};
+		42B867031C69B6570096EB42 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				4224935E1D08293900B1F486 /* PSBaseViewController.h */,
+				4224935F1D08293900B1F486 /* PSBaseViewController.m */,
+				422493621D08293900B1F486 /* PSHandler.h */,
+				422493631D08293900B1F486 /* PSHandler.m */,
+				422493641D08293900B1F486 /* PSHardcodedProductList.h */,
+				422493651D08293900B1F486 /* PSHardcodedProductList.m */,
+				422493661D08293900B1F486 /* PSNavigationViewController.h */,
+				422493671D08293900B1F486 /* PSNavigationViewController.m */,
+				422493681D08293900B1F486 /* PSProductModelSelectionType.h */,
+				422493691D08293900B1F486 /* PSProductModelSelectionType.m */,
+				261982481D097AA2009AB182 /* PSAppInfraWrapper.h */,
+				261982491D097AA2009AB182 /* PSAppInfraWrapper.m */,
+			);
+			name = Common;
+			path = ProductSelectionLibrary;
+			sourceTree = "<group>";
+		};
+		42B867121C69D8750096EB42 /* PSCategories */ = {
+			isa = PBXGroup;
+			children = (
+				422493891D0829AB00B1F486 /* UIViewController+PSChildViewController.h */,
+				4224938A1D0829AB00B1F486 /* UIViewController+PSChildViewController.m */,
+				F353EF9E1EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.h */,
+				F353EF9F1EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.m */,
+			);
+			name = PSCategories;
+			path = ProductSelectionLibrary;
+			sourceTree = "<group>";
+		};
+		42B8671E1C6CA1B20096EB42 /* PSDataHandler */ = {
+			isa = PBXGroup;
+			children = (
+				422493701D08296400B1F486 /* PSDataHandler.h */,
+				422493711D08296400B1F486 /* PSDataHandler.m */,
+			);
+			name = PSDataHandler;
+			path = ProductSelectionLibrary;
+			sourceTree = "<group>";
+		};
+		42EF4EB51C8468A90019ED54 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				42EF4EB61C8468BD0019ED54 /* CentraleSans-Bold.ttf */,
+				42EF4EB71C8468BD0019ED54 /* CentraleSans-BoldItalic.ttf */,
+				42EF4EB81C8468BD0019ED54 /* CentraleSans-Book.ttf */,
+				42EF4EB91C8468BD0019ED54 /* CentraleSans-BookItalic.ttf */,
+				42EF4EBA1C8468BD0019ED54 /* CentraleSans-Hairline.ttf */,
+				42EF4EBB1C8468BD0019ED54 /* CentraleSans-HairlineItalic.ttf */,
+				42EF4EBC1C8468BD0019ED54 /* CentraleSans-Light.ttf */,
+				42EF4EBD1C8468BD0019ED54 /* CentraleSans-LightItalic.ttf */,
+				42EF4EBE1C8468BE0019ED54 /* CentraleSans-Medium.ttf */,
+				42EF4EBF1C8468BE0019ED54 /* CentraleSans-MediumItalic.ttf */,
+				42EF4EC01C8468BE0019ED54 /* CentraleSans-Thin.ttf */,
+				42EF4EC11C8468BE0019ED54 /* CentraleSans-ThinItalic.ttf */,
+				42EF4EC21C8468BE0019ED54 /* CentraleSans-XBold.ttf */,
+				42EF4EC31C8468BE0019ED54 /* CentraleSans-XBoldItalic.ttf */,
+				42EF4EC41C8468BE0019ED54 /* CentraleSans-XLight.ttf */,
+				42EF4EC51C8468BE0019ED54 /* CentraleSans-XLightItalic.ttf */,
+				42EF4EC61C8468BE0019ED54 /* CentraleSans-XThin.ttf */,
+				42EF4EC71C8468BE0019ED54 /* CentraleSans-XThinItalic.ttf */,
+				42EF4EC81C8468BE0019ED54 /* CentraleSansCnd-Bold.ttf */,
+				42EF4EC91C8468BE0019ED54 /* CentraleSansCnd-BoldItalic.ttf */,
+				42EF4ECA1C8468BE0019ED54 /* CentraleSansCnd-Book.ttf */,
+				42EF4ECB1C8468BE0019ED54 /* CentraleSansCnd-BookItalic.ttf */,
+				42EF4ECC1C8468BE0019ED54 /* CentraleSansCnd-Hairline.ttf */,
+				42EF4ECD1C8468BE0019ED54 /* CentraleSansCnd-HairlineItalic.ttf */,
+				42EF4ECE1C8468BE0019ED54 /* CentraleSansCnd-Light.ttf */,
+				42EF4ECF1C8468BE0019ED54 /* CentraleSansCnd-LightItalic.ttf */,
+				42EF4ED01C8468BE0019ED54 /* CentraleSansCnd-Medium.ttf */,
+				42EF4ED11C8468BE0019ED54 /* CentraleSansCnd-MediumItalic.ttf */,
+				42EF4ED21C8468BE0019ED54 /* CentraleSansCnd-Thin.ttf */,
+				42EF4ED31C8468BE0019ED54 /* CentraleSansCnd-ThinItalic.ttf */,
+				42EF4ED41C8468BE0019ED54 /* CentraleSansCnd-XBold.ttf */,
+				42EF4ED51C8468BE0019ED54 /* CentraleSansCnd-XBoldItalic.ttf */,
+				42EF4ED61C8468BE0019ED54 /* CentraleSansCnd-XLight.ttf */,
+				42EF4ED71C8468BE0019ED54 /* CentraleSansCnd-XLightItalic.ttf */,
+				42EF4ED81C8468BE0019ED54 /* CentraleSansCnd-XThin.ttf */,
+				42EF4ED91C8468BE0019ED54 /* CentraleSansCnd-XThinItalic.ttf */,
+			);
+			name = CustomFonts;
+			sourceTree = "<group>";
+		};
+		BA477322B4D8FC9A8C01B0A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4F334AECE574DA59503DC8AA /* Pods-PhilipsProductSelectionDev.debug.xcconfig */,
+				AFF38044BD9ACA710DAF6976 /* Pods-PhilipsProductSelectionDev.release.xcconfig */,
+				A9A505C39CCDB32329533E6F /* Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.debug.xcconfig */,
+				00A62D32CC780890E76C0C84 /* Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.release.xcconfig */,
+				A716A9C707539A4102681C8B /* Pods-PhilipsProductSelectionDev-ProductSelectionTests.debug.xcconfig */,
+				5D98E63984E5D19F95D78C1A /* Pods-PhilipsProductSelectionDev-ProductSelectionTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F3528B291ED752D80082051B /* PhilipsProductSelectionDemoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3528B2C1ED752D80082051B /* Info.plist */,
+			);
+			path = PhilipsProductSelectionDemoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		427E4A511DA64B0E00A53539 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427E4A571DA64B0E00A53539 /* PhilipsProductSelectionDev.h in Headers */,
+				427E4A771DA64BDE00A53539 /* PSHandler.h in Headers */,
+				427E4A781DA64BDE00A53539 /* PSHardcodedProductList.h in Headers */,
+				427E4A791DA64BDE00A53539 /* PSProductModelSelectionType.h in Headers */,
+				427E4A7A1DA64C0400A53539 /* PSBaseViewController.h in Headers */,
+				427E4A7B1DA64C0400A53539 /* PSNavigationViewController.h in Headers */,
+				427E4A7C1DA64C0400A53539 /* PSAppInfraWrapper.h in Headers */,
+				427E4A7D1DA64C0400A53539 /* PSDataHandler.h in Headers */,
+				427E4A7E1DA64C0400A53539 /* PSProductCell.h in Headers */,
+				F353EFA01EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.h in Headers */,
+				427E4A7F1DA64C0400A53539 /* PSProductDetailsViewController.h in Headers */,
+				427E4A801DA64C0400A53539 /* PSProductListViewController.h in Headers */,
+				427E4A811DA64C0400A53539 /* PSSelectedProductViewController.h in Headers */,
+				427E4A821DA64C0400A53539 /* PSSelectYourProductViewController.h in Headers */,
+				427E4A831DA64C0400A53539 /* PSConstants.h in Headers */,
+				427E4A851DA64C0400A53539 /* PSUtility.h in Headers */,
+				F3BDC7561F05449900B313D6 /* PSProductUnavailableCell.h in Headers */,
+				427E4A861DA64C0400A53539 /* UIViewController+PSChildViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2668D7791C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2668D79C1C45E55A008A4ED4 /* Build configuration list for PBXNativeTarget "PhilipsProductSelectionDemoApp" */;
+			buildPhases = (
+				51D2FC87747BC2FCC6CC4417 /* [CP] Check Pods Manifest.lock */,
+				C98A02C42084D6F3000C4833 /* ShellScript */,
+				2668D7761C45E55A008A4ED4 /* Sources */,
+				2668D7771C45E55A008A4ED4 /* Frameworks */,
+				2668D7781C45E55A008A4ED4 /* Resources */,
+				2668D7C81C4E3F4C008A4ED4 /* Embed Frameworks */,
+				B71CE322271A4AAD188F987C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				427E4A5A1DA64B0E00A53539 /* PBXTargetDependency */,
+			);
+			name = PhilipsProductSelectionDemoApp;
+			productName = ProductSelection;
+			productReference = 2668D77A1C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2668D7921C45E55A008A4ED4 /* ProductSelectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2668D79F1C45E55A008A4ED4 /* Build configuration list for PBXNativeTarget "ProductSelectionTests" */;
+			buildPhases = (
+				6F17370194A72E9643142252 /* [CP] Check Pods Manifest.lock */,
+				C98A02C62084D709000C4833 /* ShellScript */,
+				2668D78F1C45E55A008A4ED4 /* Sources */,
+				2668D7901C45E55A008A4ED4 /* Frameworks */,
+				2668D7911C45E55A008A4ED4 /* Resources */,
+				4A1F4F50A07E9BB6666DE4E9 /* [CP] Embed Pods Frameworks */,
+				C98A02C52084D706000C4833 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2668D7951C45E55A008A4ED4 /* PBXTargetDependency */,
+			);
+			name = ProductSelectionTests;
+			productName = ProductSelectionTests;
+			productReference = 2668D7931C45E55A008A4ED4 /* ProductSelectionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		427E4A531DA64B0E00A53539 /* PhilipsProductSelectionDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 427E4A5D1DA64B0E00A53539 /* Build configuration list for PBXNativeTarget "PhilipsProductSelectionDev" */;
+			buildPhases = (
+				A3FFB4C4B8123FABA58E11A1 /* [CP] Check Pods Manifest.lock */,
+				C98A02C72084D712000C4833 /* ShellScript */,
+				427E4A4F1DA64B0E00A53539 /* Sources */,
+				427E4A501DA64B0E00A53539 /* Frameworks */,
+				427E4A511DA64B0E00A53539 /* Headers */,
+				427E4A521DA64B0E00A53539 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhilipsProductSelectionDev;
+			productName = PhilipsProductSelection;
+			productReference = 427E4A541DA64B0E00A53539 /* PhilipsProductSelectionDev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F3528B271ED752D80082051B /* PhilipsProductSelectionDemoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3528B311ED752D80082051B /* Build configuration list for PBXNativeTarget "PhilipsProductSelectionDemoAppUITests" */;
+			buildPhases = (
+				F3528B241ED752D80082051B /* Sources */,
+				F3528B251ED752D80082051B /* Frameworks */,
+				F3528B261ED752D80082051B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3528B2E1ED752D80082051B /* PBXTargetDependency */,
+			);
+			name = PhilipsProductSelectionDemoAppUITests;
+			productName = PhilipsProductSelectionDemoAppUITests;
+			productReference = F3528B281ED752D80082051B /* PhilipsProductSelectionDemoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2668D7721C45E55A008A4ED4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					2668D7791C45E55A008A4ED4 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = C9C645VSQP;
+						ProvisioningStyle = Manual;
+					};
+					2668D7921C45E55A008A4ED4 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 2668D7791C45E55A008A4ED4;
+					};
+					427E4A531DA64B0E00A53539 = {
+						CreatedOnToolsVersion = 7.3;
+						ProvisioningStyle = Manual;
+					};
+					427E4A601DA64B1E00A53539 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					F3528B271ED752D80082051B = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = C9C645VSQP;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2668D7791C45E55A008A4ED4;
+					};
+				};
+			};
+			buildConfigurationList = 2668D7751C45E55A008A4ED4 /* Build configuration list for PBXProject "PhilipsProductSelectionDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+				fr,
+				de,
+				"zh-Hans",
+				pt,
+				ru,
+				ar,
+				ja,
+				nl,
+				it,
+				pl,
+				es,
+				ko,
+				cs,
+				"en-GB",
+				"fr-CA",
+				ro,
+				"es-MX",
+				uk,
+				nb,
+				bs,
+				bg,
+				hr,
+				et,
+				el,
+				he,
+				hi,
+				hu,
+				lv,
+				lt,
+				"pt-BR",
+				sk,
+				sl,
+				"es-AR",
+				th,
+				vi,
+				da,
+				fi,
+				sv,
+				tr,
+				"zh-Hant-HK",
+				"zh-Hant-TW",
+			);
+			mainGroup = 2668D7711C45E55A008A4ED4;
+			productRefGroup = 2668D77B1C45E55A008A4ED4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2668D7791C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp */,
+				2668D7921C45E55A008A4ED4 /* ProductSelectionTests */,
+				427E4A531DA64B0E00A53539 /* PhilipsProductSelectionDev */,
+				427E4A601DA64B1E00A53539 /* PhilipsProductSelectionUniversal */,
+				F3528B271ED752D80082051B /* PhilipsProductSelectionDemoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2668D7781C45E55A008A4ED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42EF4EEC1C8468BE0019ED54 /* CentraleSansCnd-Bold.ttf in Resources */,
+				42EF4EEB1C8468BE0019ED54 /* CentraleSans-XThinItalic.ttf in Resources */,
+				422493521D0824EB00B1F486 /* Assets.xcassets in Resources */,
+				42B87BCB1D65FA410042D343 /* AppConfig.json in Resources */,
+				42EF4EFB1C8468BE0019ED54 /* CentraleSansCnd-XLightItalic.ttf in Resources */,
+				42EF4EF61C8468BE0019ED54 /* CentraleSansCnd-Thin.ttf in Resources */,
+				4224935B1D0828A600B1F486 /* Main.storyboard in Resources */,
+				42EF4EDF1C8468BE0019ED54 /* CentraleSans-HairlineItalic.ttf in Resources */,
+				42EF4EE61C8468BE0019ED54 /* CentraleSans-XBold.ttf in Resources */,
+				42EF4EDA1C8468BE0019ED54 /* CentraleSans-Bold.ttf in Resources */,
+				4224935A1D0828A600B1F486 /* LaunchScreen.storyboard in Resources */,
+				42EF4EEA1C8468BE0019ED54 /* CentraleSans-XThin.ttf in Resources */,
+				42EF4EEE1C8468BE0019ED54 /* CentraleSansCnd-Book.ttf in Resources */,
+				42EF4EE21C8468BE0019ED54 /* CentraleSans-Medium.ttf in Resources */,
+				42EF4EEF1C8468BE0019ED54 /* CentraleSansCnd-BookItalic.ttf in Resources */,
+				42EF4EE91C8468BE0019ED54 /* CentraleSans-XLightItalic.ttf in Resources */,
+				42EF4EE01C8468BE0019ED54 /* CentraleSans-Light.ttf in Resources */,
+				42EF4EDD1C8468BE0019ED54 /* CentraleSans-BookItalic.ttf in Resources */,
+				42EF4EE41C8468BE0019ED54 /* CentraleSans-Thin.ttf in Resources */,
+				42EF4EDE1C8468BE0019ED54 /* CentraleSans-Hairline.ttf in Resources */,
+				42EF4EDC1C8468BE0019ED54 /* CentraleSans-Book.ttf in Resources */,
+				26CEA7001D2E7C3100E38021 /* ADBMobileConfig.json in Resources */,
+				42EF4EFA1C8468BE0019ED54 /* CentraleSansCnd-XLight.ttf in Resources */,
+				42EF4EF41C8468BE0019ED54 /* CentraleSansCnd-Medium.ttf in Resources */,
+				42EF4EF21C8468BE0019ED54 /* CentraleSansCnd-Light.ttf in Resources */,
+				42EF4EFC1C8468BE0019ED54 /* CentraleSansCnd-XThin.ttf in Resources */,
+				42EF4EF11C8468BE0019ED54 /* CentraleSansCnd-HairlineItalic.ttf in Resources */,
+				42EF4EF71C8468BE0019ED54 /* CentraleSansCnd-ThinItalic.ttf in Resources */,
+				42EF4EF31C8468BE0019ED54 /* CentraleSansCnd-LightItalic.ttf in Resources */,
+				42EF4EE11C8468BE0019ED54 /* CentraleSans-LightItalic.ttf in Resources */,
+				42EF4EF51C8468BE0019ED54 /* CentraleSansCnd-MediumItalic.ttf in Resources */,
+				42EF4EDB1C8468BE0019ED54 /* CentraleSans-BoldItalic.ttf in Resources */,
+				42EF4EED1C8468BE0019ED54 /* CentraleSansCnd-BoldItalic.ttf in Resources */,
+				42B87C021D6DD8130042D343 /* appIdentityConfig.plist in Resources */,
+				42EF4EE71C8468BE0019ED54 /* CentraleSans-XBoldItalic.ttf in Resources */,
+				42EF4EF01C8468BE0019ED54 /* CentraleSansCnd-Hairline.ttf in Resources */,
+				42EF4EF81C8468BE0019ED54 /* CentraleSansCnd-XBold.ttf in Resources */,
+				42EF4EFD1C8468BE0019ED54 /* CentraleSansCnd-XThinItalic.ttf in Resources */,
+				2633B5B01D0589FB00F2BC33 /* Default-568h@2x.png in Resources */,
+				42EF4EF91C8468BE0019ED54 /* CentraleSansCnd-XBoldItalic.ttf in Resources */,
+				42EF4EE81C8468BE0019ED54 /* CentraleSans-XLight.ttf in Resources */,
+				42EF4EE51C8468BE0019ED54 /* CentraleSans-ThinItalic.ttf in Resources */,
+				42EF4EE31C8468BE0019ED54 /* CentraleSans-MediumItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2668D7911C45E55A008A4ED4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E4A521DA64B0E00A53539 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				221D0F1E222809E9003A35C7 /* Images in Resources */,
+				221D0F1B222809CF003A35C7 /* ProductSelection.storyboard in Resources */,
+				221D0F1D222809E2003A35C7 /* PSProductCell.xib in Resources */,
+				220826B72229648300ECF793 /* imageAsset.xcassets in Resources */,
+				221D0F1C222809DC003A35C7 /* PSProductUnavailableCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3528B261ED752D80082051B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		427E4A881DA64C3600A53539 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\nFRAMEWORK_NAME=\"PhilipsProductSelection\"\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -workspace \"${PROJECT_NAME}.xcworkspace\" -scheme \"${FRAMEWORK_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build\nxcodebuild -workspace \"${PROJECT_NAME}.xcworkspace\" -scheme \"${FRAMEWORK_NAME}\" ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=latest' BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" clean build || exit 1\n\n# Step 2. Copy the framework structure (from iphoneos build) to the universal folder\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n\n# Step 3. Copy Swift modules from iphonesimulator build (if it exists) to the copied framework directory\nSIMULATOR_SWIFT_MODULES_DIR=\"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/.\"\nif [ -d \"${SIMULATOR_SWIFT_MODULES_DIR}\" ]; then\ncp -R \"${SIMULATOR_SWIFT_MODULES_DIR}\" \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/Modules/$Philips{PROJECT_NAME}.swiftmodule\"\nfi\n\n# Step 4. Create universal binary file using lipo and place the combined executable in the copied framework directory\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# Step 5. Convenience step to open the project's directory in Finder\nopen \"${BUILD_DIR}\"\n";
+		};
+		4A1F4F50A07E9BB6666DE4E9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhilipsProductSelectionDev-ProductSelectionTests/Pods-PhilipsProductSelectionDev-ProductSelectionTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AdobeMobileSDK/AdobeMobileSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/PlatformInterfaces/PlatformInterfaces.framework",
+				"${BUILT_PRODUCTS_DIR}/TrueTime/TrueTime.framework",
+				"${BUILT_PRODUCTS_DIR}/AppInfra/AppInfra.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsIconFontDLS/PhilipsIconFontDLS.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsUIKitDLS/PhilipsUIKitDLS.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsPRXClient/PhilipsPRXClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMobileSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlatformInterfaces.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrueTime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppInfra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsIconFontDLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsUIKitDLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsPRXClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhilipsProductSelectionDev-ProductSelectionTests/Pods-PhilipsProductSelectionDev-ProductSelectionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51D2FC87747BC2FCC6CC4417 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F17370194A72E9643142252 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsProductSelectionDev-ProductSelectionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3FFB4C4B8123FABA58E11A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhilipsProductSelectionDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B71CE322271A4AAD188F987C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/AdobeMobileSDK/AdobeMobileSDK.framework",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/PlatformInterfaces/PlatformInterfaces.framework",
+				"${BUILT_PRODUCTS_DIR}/TrueTime/TrueTime.framework",
+				"${BUILT_PRODUCTS_DIR}/AppInfra/AppInfra.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsIconFontDLS/PhilipsIconFontDLS.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsUIKitDLS/PhilipsUIKitDLS.framework",
+				"${BUILT_PRODUCTS_DIR}/PhilipsPRXClient/PhilipsPRXClient.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AdobeMobileSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PlatformInterfaces.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrueTime.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppInfra.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsIconFontDLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsUIKitDLS.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PhilipsPRXClient.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp/Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C98A02C42084D6F3000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		C98A02C52084D706000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		C98A02C62084D709000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		C98A02C72084D712000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2668D7761C45E55A008A4ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				422493531D0824EB00B1F486 /* ViewController.m in Sources */,
+				4224935D1D0828BE00B1F486 /* main.m in Sources */,
+				422493511D0824EB00B1F486 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2668D78F1C45E55A008A4ED4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3A449A41EE03AF900897850 /* PSProductDetailsViewControllerTest.m in Sources */,
+				F334B8051EE138210030F5F4 /* PSSelectedProductViewControllerTest.m in Sources */,
+				F34539921ED449C2004C81F7 /* PSSelectYourProductViewControllerTest.m in Sources */,
+				2668D7981C45E55A008A4ED4 /* ProductSelectionTests.m in Sources */,
+				422AB3151C76294500502537 /* PSDataHandlerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		427E4A4F1DA64B0E00A53539 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				427E4A661DA64BA600A53539 /* PSBaseViewController.m in Sources */,
+				427E4A681DA64BA600A53539 /* PSHandler.m in Sources */,
+				427E4A691DA64BA600A53539 /* PSHardcodedProductList.m in Sources */,
+				427E4A6A1DA64BA600A53539 /* PSNavigationViewController.m in Sources */,
+				427E4A6B1DA64BA600A53539 /* PSProductModelSelectionType.m in Sources */,
+				427E4A6C1DA64BA600A53539 /* PSAppInfraWrapper.m in Sources */,
+				427E4A6D1DA64BA600A53539 /* PSDataHandler.m in Sources */,
+				F353EFA11EEA99EE0066B120 /* UIControl+ProductSelectionLocalization.m in Sources */,
+				427E4A6E1DA64BA600A53539 /* PSProductCell.m in Sources */,
+				F3BDC7571F05449900B313D6 /* PSProductUnavailableCell.m in Sources */,
+				427E4A6F1DA64BA600A53539 /* PSProductDetailsViewController.m in Sources */,
+				427E4A701DA64BA600A53539 /* PSProductListViewController.m in Sources */,
+				427E4A711DA64BA600A53539 /* PSSelectedProductViewController.m in Sources */,
+				427E4A721DA64BA600A53539 /* PSSelectYourProductViewController.m in Sources */,
+				427E4A741DA64BA600A53539 /* PSUtility.m in Sources */,
+				427E4A751DA64BA600A53539 /* UIViewController+PSChildViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3528B241ED752D80082051B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2668D7951C45E55A008A4ED4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2668D7791C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp */;
+			targetProxy = 2668D7941C45E55A008A4ED4 /* PBXContainerItemProxy */;
+		};
+		427E4A5A1DA64B0E00A53539 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 427E4A531DA64B0E00A53539 /* PhilipsProductSelectionDev */;
+			targetProxy = 427E4A591DA64B0E00A53539 /* PBXContainerItemProxy */;
+		};
+		F3528B2E1ED752D80082051B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2668D7791C45E55A008A4ED4 /* PhilipsProductSelectionDemoApp */;
+			targetProxy = F3528B2D1ED752D80082051B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		226123D9222D21EF00422FF0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				226123DA222D21EF00422FF0 /* de */,
+				226123DC222D21EF00422FF0 /* he */,
+				226123DE222D21EF00422FF0 /* zh-Hant-TW */,
+				226123E0222D21EF00422FF0 /* ar */,
+				226123E2222D21EF00422FF0 /* el */,
+				226123E4222D21EF00422FF0 /* zh-Hans */,
+				226123E6222D21EF00422FF0 /* ja */,
+				226123E8222D21EF00422FF0 /* en */,
+				226123EA222D21EF00422FF0 /* zh-Hant-HK */,
+				226123EC222D21EF00422FF0 /* uk */,
+				226123EE222D21EF00422FF0 /* nb */,
+				226123F0222D21EF00422FF0 /* en-GB */,
+				226123F2222D21EF00422FF0 /* es */,
+				226123F4222D21EF00422FF0 /* sl */,
+				226123F6222D21EF00422FF0 /* da */,
+				226123F8222D21EF00422FF0 /* et */,
+				226123FA222D21EF00422FF0 /* it */,
+				226123FC222D21EF00422FF0 /* bg */,
+				226123FE222D21EF00422FF0 /* sk */,
+				22612400222D21EF00422FF0 /* fr-CA */,
+				22612402222D21EF00422FF0 /* sv */,
+				22612404222D21EF00422FF0 /* cs */,
+				22612406222D21EF00422FF0 /* es-AR */,
+				22612408222D21EF00422FF0 /* ko */,
+				2261240A222D21EF00422FF0 /* Base */,
+				2261240C222D21EF00422FF0 /* hu */,
+				2261240E222D21EF00422FF0 /* tr */,
+				22612410222D21EF00422FF0 /* pl */,
+				22612412222D21EF00422FF0 /* pt-BR */,
+				22612414222D21EF00422FF0 /* vi */,
+				22612416222D21EF00422FF0 /* lv */,
+				22612418222D21EF00422FF0 /* es-MX */,
+				2261241A222D21EF00422FF0 /* lt */,
+				2261241C222D21EF00422FF0 /* ru */,
+				2261241E222D21EF00422FF0 /* fr */,
+				22612420222D21EF00422FF0 /* fi */,
+				22612422222D21EF00422FF0 /* nl */,
+				22612424222D21EF00422FF0 /* th */,
+				22612426222D21EF00422FF0 /* pt */,
+				22612428222D21F000422FF0 /* ro */,
+				2261242A222D21F000422FF0 /* bs */,
+				2261242C222D21F000422FF0 /* hr */,
+				2261242E222D21F000422FF0 /* hi */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		261F92FC1C7B369000D0AB3F /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				261F92FB1C7B369000D0AB3F /* Base */,
+				261F93011C7B373C00D0AB3F /* fr */,
+				261F93031C7B379F00D0AB3F /* de */,
+				261F93051C7B37AF00D0AB3F /* zh-Hans */,
+				261F93091C7B37DA00D0AB3F /* pt */,
+				261F930B1C7B37E700D0AB3F /* ru */,
+				261F930D1C7B37F500D0AB3F /* ar */,
+				261F930F1C7B381E00D0AB3F /* ja */,
+				261F93111C7B382B00D0AB3F /* nl */,
+				261F93131C7B383200D0AB3F /* it */,
+				261F93151C7B384100D0AB3F /* pl */,
+				261F93171C7B384800D0AB3F /* es */,
+				261F93191C7B385400D0AB3F /* ko */,
+				261F931B1C7B386200D0AB3F /* cs */,
+				261F931D1C7B38BC00D0AB3F /* en-GB */,
+				261F931F1C7B38E000D0AB3F /* fr-CA */,
+				261F93211C7B390900D0AB3F /* ro */,
+				261F93231C7B391700D0AB3F /* es-MX */,
+				261F93251C7B392200D0AB3F /* uk */,
+				261F93271C7B393A00D0AB3F /* nb */,
+				261F932B1C7B398C00D0AB3F /* bs */,
+				261F932D1C7B39AE00D0AB3F /* bg */,
+				261F932F1C7B39C000D0AB3F /* hr */,
+				261F93311C7B39E200D0AB3F /* et */,
+				261F93351C7B3A0B00D0AB3F /* el */,
+				261F93371C7B3A1A00D0AB3F /* he */,
+				261F93391C7B3A2D00D0AB3F /* hi */,
+				261F933B1C7B3A3B00D0AB3F /* hu */,
+				261F93411C7B3A7000D0AB3F /* lv */,
+				261F93431C7B3A8E00D0AB3F /* lt */,
+				261F93491C7B3B8800D0AB3F /* pt-BR */,
+				261F934D1C7B3BD300D0AB3F /* sk */,
+				261F934F1C7B3BF100D0AB3F /* sl */,
+				261F93511C7B3C1300D0AB3F /* es-AR */,
+				261F93531C7B3C2300D0AB3F /* th */,
+				261F93551C7B3C2F00D0AB3F /* vi */,
+				261F93571C7B3C3800D0AB3F /* da */,
+				261F93591C7B3C4400D0AB3F /* fi */,
+				261F935B1C7B3C4F00D0AB3F /* sv */,
+				261F935F1C7B3C8A00D0AB3F /* tr */,
+				261F93681C7B48E000D0AB3F /* en */,
+				261F94641C7FAD2700D0AB3F /* zh-Hant-HK */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		422493561D0828A600B1F486 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				422493571D0828A600B1F486 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ProductSelection;
+			sourceTree = "<group>";
+		};
+		422493581D0828A600B1F486 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				422493591D0828A600B1F486 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ProductSelection;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2668D79A1C45E55A008A4ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2668D79B1C45E55A008A4ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2668D79D1C45E55A008A4ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9A505C39CCDB32329533E6F /* Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductSelectionDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.dev.digitalcare.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71d47ed7-971b-4602-ab82-d3426da09801";
+				PROVISIONING_PROFILE_SPECIFIER = "DI Digital Care in-house";
+			};
+			name = Debug;
+		};
+		2668D79E1C45E55A008A4ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00A62D32CC780890E76C0C84 /* Pods-PhilipsProductSelectionDev-PhilipsProductSelectionDemoApp.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = PhilipsProductSelectionDemoApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.cl.di.dev.digitalcare.beta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71d47ed7-971b-4602-ab82-d3426da09801";
+				PROVISIONING_PROFILE_SPECIFIER = "DI Digital Care in-house";
+			};
+			name = Release;
+		};
+		2668D7A01C45E55A008A4ED4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A716A9C707539A4102681C8B /* Pods-PhilipsProductSelectionDev-ProductSelectionTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProductSelectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.ProductSelectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhilipsProductSelectionDemoApp.app/PhilipsProductSelectionDemoApp";
+			};
+			name = Debug;
+		};
+		2668D7A11C45E55A008A4ED4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D98E63984E5D19F95D78C1A /* Pods-PhilipsProductSelectionDev-ProductSelectionTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = "";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				HEADER_SEARCH_PATHS = (
+					"$(SDKROOT)/usr/include/libxml2",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ProductSelectionTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.ProductSelectionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhilipsProductSelectionDemoApp.app/PhilipsProductSelectionDemoApp";
+			};
+			name = Release;
+		};
+		427E4A5E1DA64B0E00A53539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F334AECE574DA59503DC8AA /* Pods-PhilipsProductSelectionDev.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhilipsProductSelection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsProductSelection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		427E4A5F1DA64B0E00A53539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AFF38044BD9ACA710DAF6976 /* Pods-PhilipsProductSelectionDev.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = PhilipsProductSelection/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsProductSelection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		427E4A621DA64B1E00A53539 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		427E4A631DA64B1E00A53539 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F3528B2F1ED752D80082051B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				INFOPLIST_FILE = PhilipsProductSelectionDemoAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsProductSelectionDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71d47ed7-971b-4602-ab82-d3426da09801";
+				TEST_TARGET_NAME = PhilipsProductSelectionDemoApp;
+			};
+			name = Debug;
+		};
+		F3528B301ED752D80082051B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				INFOPLIST_FILE = PhilipsProductSelectionDemoAppUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = philips.PhilipsProductSelectionDemoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "71d47ed7-971b-4602-ab82-d3426da09801";
+				TEST_TARGET_NAME = PhilipsProductSelectionDemoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2668D7751C45E55A008A4ED4 /* Build configuration list for PBXProject "PhilipsProductSelectionDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2668D79A1C45E55A008A4ED4 /* Debug */,
+				2668D79B1C45E55A008A4ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2668D79C1C45E55A008A4ED4 /* Build configuration list for PBXNativeTarget "PhilipsProductSelectionDemoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2668D79D1C45E55A008A4ED4 /* Debug */,
+				2668D79E1C45E55A008A4ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2668D79F1C45E55A008A4ED4 /* Build configuration list for PBXNativeTarget "ProductSelectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2668D7A01C45E55A008A4ED4 /* Debug */,
+				2668D7A11C45E55A008A4ED4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427E4A5D1DA64B0E00A53539 /* Build configuration list for PBXNativeTarget "PhilipsProductSelectionDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427E4A5E1DA64B0E00A53539 /* Debug */,
+				427E4A5F1DA64B0E00A53539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		427E4A611DA64B1E00A53539 /* Build configuration list for PBXAggregateTarget "PhilipsProductSelectionUniversal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				427E4A621DA64B1E00A53539 /* Debug */,
+				427E4A631DA64B1E00A53539 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3528B311ED752D80082051B /* Build configuration list for PBXNativeTarget "PhilipsProductSelectionDemoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3528B2F1ED752D80082051B /* Debug */,
+				F3528B301ED752D80082051B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2668D7721C45E55A008A4ED4 /* Project object */;
+}

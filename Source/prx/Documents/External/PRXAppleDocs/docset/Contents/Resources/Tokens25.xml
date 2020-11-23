@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/PRXRequestDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/PRXRequestDelegate</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+            
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getRequestType</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (REQUESTTYPE)getRequestType</Declaration>
+			
+			
+			<Anchor>//api/name/getRequestType</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getHeaderParam</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getHeaderParam</Declaration>
+			
+			
+			<Anchor>//api/name/getHeaderParam</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getBodyParameters</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (NSDictionary *)getBodyParameters</Declaration>
+			
+			
+			<Anchor>//api/name/getBodyParameters</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getCatalog</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (Catalog)getCatalog</Declaration>
+			
+			
+			<Anchor>//api/name/getCatalog</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getSector</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (Sector)getSector</Declaration>
+			
+			
+			<Anchor>//api/name/getSector</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getTimeoutInterval</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (NSTimeInterval)getTimeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/getTimeoutInterval</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/setTimeoutInterval:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (void)setTimeoutInterval:(NSTimeInterval)timeoutInterval</Declaration>
+			
+			
+			<Anchor>//api/name/setTimeoutInterval:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getResponse:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (PRXResponseData *)getResponse:(id)data</Declaration>
+			
+			
+			<Anchor>//api/name/getResponse:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/PRXRequestDelegate/getRequestUrlFromAppInfra:completionHandler:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>PRXRequest.h</DeclaredIn>
+			
+			<Declaration>- (void)getRequestUrlFromAppInfra:(AIAppInfra *)appInfra completionHandler:(void ( ^ ) ( NSString *serviceURL , NSError *error ))completionHandler</Declaration>
+			
+			
+			<Anchor>//api/name/getRequestUrlFromAppInfra:completionHandler:</Anchor>
+            <NodeRef refid="25"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

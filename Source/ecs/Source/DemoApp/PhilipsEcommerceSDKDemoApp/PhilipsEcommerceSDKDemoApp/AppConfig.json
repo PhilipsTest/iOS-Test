@@ -1,0 +1,54 @@
+{
+    "UserRegistration": {
+        "JanRainConfiguration.RegistrationClientID.Development": {"CN":"qhq9jvkx35q8duef2fh6wwzceujjs9gs","default":"8kaxdrpvkwyr7pnp987amu4aqb4wmnte"},
+        "JanRainConfiguration.RegistrationClientID.Testing": {"CN":"g8r8rbk4n5688xpsxqewmnwuqjb5ugag","default":"g52bfma28yjbd24hyjcswudwedcmqy7c"},
+        "JanRainConfiguration.RegistrationClientID.Evaluation": {"CN":"4rdpm7afu7bny6xnacw32etmt7htfraa","default":"durhrkq6ezqcvmqf6mq77ev48fuubdbj"},
+        "JanRainConfiguration.RegistrationClientID.Staging": {"CN":"4rdpm7afu7bny6xnacw32etmt7htfraa","default":"durhrkq6ezqcvmqf6mq77ev48fuubdbj"},
+        "JanRainConfiguration.RegistrationClientID.Production": {"CN":"brhyp23jh8jrutmghjtht68yv4mvqvhu","default":"tygvkmbxkaact4rjtnh7ugkyqq9tf8z6"},
+        "JanRainConfiguration.EngageAppID.Staging": {"CN":"uyfpympodtnesxejzuic","default":"kjfbdljaacbfkpddabjc"},
+        "JanRainConfiguration.EngageAppID.Production": {"CN":"cfwaqwuwcwzlcozyyjpa","default":"fggegljadcmlcnlkgleh"},
+        "Flow.TermsAndConditionsAcceptanceRequired" : true,
+        "Flow.EmailVerificationRequired" : true,
+        "SigninProviders": {"CN":["myphilips"],"default":["myphilips","facebook"]}
+    },
+    "IAP": {
+        "propositionId": "IAP_MOB_DKA",
+        "voucherCode.enable": true
+    },
+    "MEC": {
+        "propositionId": "IAP_MOB_DKA",
+        "PIL_ECommerce_API_KEY": "yaTmSAVqDR4GNwijaJie3aEa3ivy7Czu22BxZwKP"
+    },
+    "appinfra": {
+        "appidentity.micrositeId": "77000",
+        "appidentity.sector": "b2c",
+        "appidentity.appState": "Staging",
+        "appidentity.serviceDiscoveryEnvironment": "Production",
+        "languagepack.serviceId" : "app.languagepack",
+        "tagging.sensitiveData":["bundleId, language"],
+        "abtest.precache":["philipsmobileappabtest1content","philipsmobileappabtest1success","ReceiveMarketingOptIn"],
+        "servicediscovery.platformMicrositeId": "70000",
+        "servicediscovery.platformEnvironment":"Production",
+        "timesync.ntp.hosts":["0.pool.ntp.org","1.pool.ntp.org","2.pool.ntp.org","3.pool.ntp.org","0.cn.pool.ntp.org"],
+        "logging.releaseConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Verbose",
+            "fileLogEnabled":true,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": ["ecs"]
+        },
+        "logging.debugConfig":{
+            "fileName":"AppInfraLog",
+            "numberOfFiles":5,
+            "fileSizeInBytes":50000,
+            "logLevel":"Verbose",
+            "fileLogEnabled":true,
+            "consoleLogEnabled":true,
+            "componentLevelLogEnabled":true,
+            "componentIds": ["ecs"]
+        }
+    }
+}

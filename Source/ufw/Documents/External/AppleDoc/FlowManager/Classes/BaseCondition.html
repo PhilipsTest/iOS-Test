@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BaseCondition Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/BaseCondition" class="dashAnchor"></a>
+    <a title="BaseCondition Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html">UAPPFramework Docs</a> (92% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html">UAPPFramework Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        BaseCondition Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/BaseCondition.html">BaseCondition</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseFlowManager.html">BaseFlowManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/BaseState.html">BaseState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/FlowManagerErrors.html">FlowManagerErrors</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Functions.html">Functions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Functions.html#/s:13UAPPFramework2eeoiySbAA13BaseConditionC_ADtF">==(_:_:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/StateCommunicationListener.html">StateCommunicationListener</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework12AppFlowModelV">AppFlowModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework14ConditionModelV">ConditionModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework10EventModelV">EventModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs.html#/s:13UAPPFramework10StateModelV">StateModel</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13UAPPFramework16ConditionMapTypea">ConditionMapType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:13UAPPFramework12StateMapTypea">StateMapType</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>BaseCondition</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight swift"><code><span class="kd">@objcMembers</span>
+<span class="kd">open</span> <span class="kd">class</span> <span class="kt">BaseCondition</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                </div>
+              </div>
+            <p>Base class for condition checks</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseCondition(py)conditionId"></a>
+                    <a name="//apple_ref/swift/Property/conditionId" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseCondition(py)conditionId">conditionId</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Variable to hold the condition Id of the Condition</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">conditionId</span><span class="p">:</span> <span class="kt">String</span><span class="o">!</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseCondition(im)initWithConditionId:"></a>
+                    <a name="//apple_ref/swift/Method/init(conditionId:)" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseCondition(im)initWithConditionId:">init(conditionId:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Initialization method to initialise a Condition</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">conditionId</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>conditionId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The condition Id of the new condition</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@UAPPFramework@objc(cs)BaseCondition(im)isSatisfied"></a>
+                    <a name="//apple_ref/swift/Method/isSatisfied()" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@UAPPFramework@objc(cs)BaseCondition(im)isSatisfied">isSatisfied()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>isSatisfied is a method to be implemented in classes that inherits BaseCondition class to check the condition the app is at</p>
+<div class="aside aside-since">
+    <p class="aside-title">Since</p>
+    Since 1.1.0
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">isSatisfied</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Bool variable, true/false based on the condition is satisfied or not</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2018 <a class="link" href="https://www.philips.com" target="_blank" rel="external">Philips</a>. All rights reserved. (Last updated: 2018-10-09)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AILoggingWrapper.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AILoggingWrapper</TokenIdentifier>
+			<Abstract type="html">*  This is wrapper for &apos;AILogging&apos; class. It has component scope,
+that is component requesting for logging owns an instance of wrapper.
+*  It encapsulates component details and forwards all logs calls/messages to &apos;AILogging&apos; instance.</Abstract>
+			<DeclaredIn>AILoggingWrapper.h</DeclaredIn>
+            
+			
+			<NodeRef refid="24"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILoggingWrapper/initWithComponent:</TokenIdentifier>
+			<Abstract type="html">Convenience initializer</Abstract>
+			<DeclaredIn>AILoggingWrapper.h</DeclaredIn>
+			
+			<Declaration>- (instancetype)initWithComponent:(AIClientComponent *)component</Declaration>
+			<Parameters>
+				<Parameter>
+					<Name>component</Name>
+					<Abstract type="html">component requesting for logging wrapper</Abstract>
+				</Parameter>
+			</Parameters>
+			<ReturnValue><Abstract type="html">Returns a logging wrapper object for given component</Abstract></ReturnValue>
+			<Anchor>//api/name/initWithComponent:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILoggingWrapper/log:eventId:message:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILoggingWrapper.m</DeclaredIn>
+			
+			<Declaration>- (void)log:(AILogLevel)level eventId:(NSString *)eventId message:(NSString *)message</Declaration>
+			
+			
+			<Anchor>//api/name/log:eventId:message:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILoggingWrapper/log:eventId:message:dictionary:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILoggingWrapper.m</DeclaredIn>
+			
+			<Declaration>- (void)log:(AILogLevel)level eventId:(NSString *)eventId message:(NSString *)message dictionary:(NSDictionary *)dictionary</Declaration>
+			
+			
+			<Anchor>//api/name/log:eventId:message:dictionary:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILoggingWrapper/log:eventId:message:component:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILoggingWrapper.m</DeclaredIn>
+			
+			<Declaration>- (void)log:(AILogLevel)level eventId:(NSString *)eventId message:(NSString *)message component:(AIClientComponent *)component</Declaration>
+			
+			
+			<Anchor>//api/name/log:eventId:message:component:</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILoggingWrapper/setComponent:</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILoggingWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *component</Declaration>
+			
+			
+			<Anchor>//api/name/component</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/AILoggingWrapper/component</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILoggingWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *component</Declaration>
+			
+			
+			<Anchor>//api/name/component</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AILoggingWrapper/component</TokenIdentifier>
+			<Abstract type="html"></Abstract>
+			<DeclaredIn>AILoggingWrapper.m</DeclaredIn>
+			
+			<Declaration>@property (nonatomic, strong) AIClientComponent *component</Declaration>
+			
+			
+			<Anchor>//api/name/component</Anchor>
+            <NodeRef refid="24"/>
+		</Token>
+		
+        
+        
+	</File>
+</Tokens>

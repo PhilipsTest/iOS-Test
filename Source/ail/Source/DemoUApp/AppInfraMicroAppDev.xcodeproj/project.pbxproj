@@ -1,0 +1,861 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C4A535A1E82ACAD005D970D /* LeftMenuList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1C4A53591E82ACAD005D970D /* LeftMenuList.plist */; };
+		1CE1F9CB1E7FB71C00C4B764 /* AilShareduAppDependency.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CE1F9C91E7FB71C00C4B764 /* AilShareduAppDependency.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CE1F9CC1E7FB71C00C4B764 /* AilShareduAppDependency.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE1F9CA1E7FB71C00C4B764 /* AilShareduAppDependency.m */; };
+		1CFDD3E91E79133800FBD555 /* AppInfraMicroApp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD3E81E79133800FBD555 /* AppInfraMicroApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFDD3EC1E79133800FBD555 /* AppInfraMicroAppDependencies.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD3EB1E79133800FBD555 /* AppInfraMicroAppDependencies.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFDD3EE1E79133800FBD555 /* AppInfraMicroAppDependencies.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD3ED1E79133800FBD555 /* AppInfraMicroAppDependencies.m */; };
+		1CFDD3F01E79133800FBD555 /* AppInfraMicroAppInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD3EF1E79133800FBD555 /* AppInfraMicroAppInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFDD3F21E79133800FBD555 /* AppInfraMicroAppInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD3F11E79133800FBD555 /* AppInfraMicroAppInterface.m */; };
+		1CFDD3F41E79133800FBD555 /* AppInfraMicroAppLaunchInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD3F31E79133800FBD555 /* AppInfraMicroAppLaunchInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFDD3F61E79133800FBD555 /* AppInfraMicroAppLaunchInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD3F51E79133800FBD555 /* AppInfraMicroAppLaunchInput.m */; };
+		1CFDD3F81E79133800FBD555 /* AppInfraMicroAppSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD3F71E79133800FBD555 /* AppInfraMicroAppSettings.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1CFDD3FA1E79133800FBD555 /* AppInfraMicroAppSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD3F91E79133800FBD555 /* AppInfraMicroAppSettings.m */; };
+		1CFDD4051E79133800FBD555 /* AppInfraMicroApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CFDD3E51E79133800FBD555 /* AppInfraMicroApp.framework */; };
+		1CFDD4CE1E793FA300FBD555 /* AppConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4171E793FA300FBD555 /* AppConstants.h */; };
+		1CFDD4DC1E793FA300FBD555 /* DemoHomeViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD42D1E793FA300FBD555 /* DemoHomeViewController.h */; };
+		1CFDD4DD1E793FA300FBD555 /* DemoHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD42E1E793FA300FBD555 /* DemoHomeViewController.m */; };
+		1CFDD5391E793FA400FBD555 /* AIAPISigningViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD48E1E793FA300FBD555 /* AIAPISigningViewController.h */; };
+		1CFDD53A1E793FA400FBD555 /* AIAPISigningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD48F1E793FA300FBD555 /* AIAPISigningViewController.m */; };
+		1CFDD5451E793FA400FBD555 /* DemoABTestViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD49B1E793FA300FBD555 /* DemoABTestViewController.h */; };
+		1CFDD5461E793FA400FBD555 /* DemoABTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD49C1E793FA300FBD555 /* DemoABTestViewController.m */; };
+		1CFDD5471E793FA400FBD555 /* DemoAppIdentityController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD49D1E793FA300FBD555 /* DemoAppIdentityController.h */; };
+		1CFDD5481E793FA400FBD555 /* DemoAppIdentityController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD49E1E793FA300FBD555 /* DemoAppIdentityController.m */; };
+		1CFDD5491E793FA400FBD555 /* DemoInternationalization.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD49F1E793FA300FBD555 /* DemoInternationalization.h */; };
+		1CFDD54A1E793FA400FBD555 /* DemoInternationalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4A01E793FA300FBD555 /* DemoInternationalization.m */; };
+		1CFDD54B1E793FA400FBD555 /* DemoLocaleMatchViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4A11E793FA300FBD555 /* DemoLocaleMatchViewController.h */; };
+		1CFDD54C1E793FA400FBD555 /* DemoLocaleMatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4A21E793FA300FBD555 /* DemoLocaleMatchViewController.m */; };
+		1CFDD54F1E793FA400FBD555 /* DemoMicroAppConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4A51E793FA300FBD555 /* DemoMicroAppConfiguration.h */; };
+		1CFDD5501E793FA400FBD555 /* DemoMicroAppConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4A61E793FA300FBD555 /* DemoMicroAppConfiguration.m */; };
+		1CFDD5511E793FA400FBD555 /* DemoPRXViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4A71E793FA300FBD555 /* DemoPRXViewController.h */; };
+		1CFDD5521E793FA400FBD555 /* DemoPRXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4A81E793FA300FBD555 /* DemoPRXViewController.m */; };
+		1CFDD5531E793FA400FBD555 /* DemoRestClientViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4A91E793FA300FBD555 /* DemoRestClientViewController.h */; };
+		1CFDD5541E793FA400FBD555 /* DemoRestClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4AA1E793FA300FBD555 /* DemoRestClientViewController.m */; };
+		1CFDD5551E793FA400FBD555 /* DemoSecurityViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4AB1E793FA300FBD555 /* DemoSecurityViewController.h */; };
+		1CFDD5561E793FA400FBD555 /* DemoSecurityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4AC1E793FA300FBD555 /* DemoSecurityViewController.m */; };
+		1CFDD5571E793FA400FBD555 /* DemoServiceDiscoveryViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4AD1E793FA300FBD555 /* DemoServiceDiscoveryViewController.h */; };
+		1CFDD5581E793FA400FBD555 /* DemoServiceDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4AE1E793FA300FBD555 /* DemoServiceDiscoveryViewController.m */; };
+		1CFDD5591E793FA400FBD555 /* DemoTaggingMediaViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4AF1E793FA300FBD555 /* DemoTaggingMediaViewController.h */; };
+		1CFDD55A1E793FA400FBD555 /* DemoTaggingMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4B01E793FA300FBD555 /* DemoTaggingMediaViewController.m */; };
+		1CFDD55C1E793FA400FBD555 /* DemoTaggingSocialSharingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4B21E793FA300FBD555 /* DemoTaggingSocialSharingViewController.h */; };
+		1CFDD55D1E793FA400FBD555 /* DemoTaggingSocialSharingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4B31E793FA300FBD555 /* DemoTaggingSocialSharingViewController.m */; };
+		1CFDD55E1E793FA400FBD555 /* DemoTaggingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4B41E793FA300FBD555 /* DemoTaggingViewController.h */; };
+		1CFDD55F1E793FA400FBD555 /* DemoTaggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4B51E793FA300FBD555 /* DemoTaggingViewController.m */; };
+		1CFDD5601E793FA400FBD555 /* DemoTimeController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4B61E793FA300FBD555 /* DemoTimeController.h */; };
+		1CFDD5611E793FA400FBD555 /* DemoTimeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4B71E793FA300FBD555 /* DemoTimeController.m */; };
+		1CFDD5621E793FA400FBD555 /* RestClientAuthViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4B81E793FA300FBD555 /* RestClientAuthViewController.h */; };
+		1CFDD5631E793FA400FBD555 /* RestClientAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4B91E793FA300FBD555 /* RestClientAuthViewController.m */; };
+		1CFDD5641E793FA400FBD555 /* RestClientParamsViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CFDD4BA1E793FA300FBD555 /* RestClientParamsViewController.h */; };
+		1CFDD5651E793FA400FBD555 /* RestClientParamsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CFDD4BB1E793FA300FBD555 /* RestClientParamsViewController.m */; };
+		22996EFF24E06539008F66D1 /* DemoErrorTaggingViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 22996EFD24E06539008F66D1 /* DemoErrorTaggingViewController.h */; };
+		22996F0024E06539008F66D1 /* DemoErrorTaggingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22996EFE24E06539008F66D1 /* DemoErrorTaggingViewController.m */; };
+		50308F1F1FD515E700EB5887 /* CustomTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50308F1E1FD515E700EB5887 /* CustomTableViewController.swift */; };
+		508FA99620B0795900999FFB /* ObjectiveCTestViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 508FA99420B0795900999FFB /* ObjectiveCTestViewController.h */; };
+		508FA99720B0795900999FFB /* ObjectiveCTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 508FA99520B0795900999FFB /* ObjectiveCTestViewController.m */; };
+		C41582131FC17941816616A2 /* Pods_AppInfraMicroAppDev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D04844C44D7D22255E4F23D3 /* Pods_AppInfraMicroAppDev.framework */; };
+		CE1671F21EF1334B005A5D7E /* AppUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1671F11EF1334B005A5D7E /* AppUpdateViewController.swift */; };
+		CE40A3E51EF2A7FE006CB931 /* ExitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE40A3E41EF2A7FE006CB931 /* ExitViewController.swift */; };
+		CE872D3B1EF8D9CE00DB005E /* LoggerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE872D3A1EF8D9CE00DB005E /* LoggerListViewController.swift */; };
+		CE872D3D1EF8DE3100DB005E /* LoggerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE872D3C1EF8DE3100DB005E /* LoggerTableViewCell.swift */; };
+		CE872D3F1EF8E64000DB005E /* CreateLoggerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE872D3E1EF8E64000DB005E /* CreateLoggerViewController.swift */; };
+		CED8FA401ED2EE4700957856 /* SwiftExecutionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CED8FA3F1ED2EE4700957856 /* SwiftExecutionViewController.swift */; };
+		CEE4EA2E1EF9047500855483 /* LoggerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE4EA2D1EF9047500855483 /* LoggerDetailViewController.swift */; };
+		CEEEE04C1ED4319C0088D350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEEEE04B1ED4319C0088D350 /* Main.storyboard */; };
+		CEFB8FD11ED3F6BB00603785 /* DemoLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB8FD01ED3F6BB00603785 /* DemoLanguageViewController.swift */; };
+		CEFB8FD31ED3F8BB00603785 /* ServiceDiscoveryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFB8FD21ED3F8BB00603785 /* ServiceDiscoveryViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1CFDD4061E79133800FBD555 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1CFDD3DC1E79133800FBD555 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1CFDD3E41E79133800FBD555;
+			remoteInfo = AppInfraMicroApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C4A53591E82ACAD005D970D /* LeftMenuList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LeftMenuList.plist; path = Resources/LeftMenuList.plist; sourceTree = "<group>"; };
+		1CE1F9C91E7FB71C00C4B764 /* AilShareduAppDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AilShareduAppDependency.h; sourceTree = "<group>"; };
+		1CE1F9CA1E7FB71C00C4B764 /* AilShareduAppDependency.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AilShareduAppDependency.m; sourceTree = "<group>"; };
+		1CFDD3E51E79133800FBD555 /* AppInfraMicroApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppInfraMicroApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFDD3E81E79133800FBD555 /* AppInfraMicroApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfraMicroApp.h; sourceTree = "<group>"; };
+		1CFDD3EB1E79133800FBD555 /* AppInfraMicroAppDependencies.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppInfraMicroAppDependencies.h; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppDependencies.h; sourceTree = "<group>"; };
+		1CFDD3ED1E79133800FBD555 /* AppInfraMicroAppDependencies.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppInfraMicroAppDependencies.m; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppDependencies.m; sourceTree = "<group>"; };
+		1CFDD3EF1E79133800FBD555 /* AppInfraMicroAppInterface.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppInfraMicroAppInterface.h; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppInterface.h; sourceTree = "<group>"; };
+		1CFDD3F11E79133800FBD555 /* AppInfraMicroAppInterface.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppInfraMicroAppInterface.m; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppInterface.m; sourceTree = "<group>"; };
+		1CFDD3F31E79133800FBD555 /* AppInfraMicroAppLaunchInput.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppInfraMicroAppLaunchInput.h; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppLaunchInput.h; sourceTree = "<group>"; };
+		1CFDD3F51E79133800FBD555 /* AppInfraMicroAppLaunchInput.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppInfraMicroAppLaunchInput.m; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppLaunchInput.m; sourceTree = "<group>"; };
+		1CFDD3F71E79133800FBD555 /* AppInfraMicroAppSettings.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppInfraMicroAppSettings.h; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppSettings.h; sourceTree = "<group>"; };
+		1CFDD3F91E79133800FBD555 /* AppInfraMicroAppSettings.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppInfraMicroAppSettings.m; path = AppInfraMicroApp/UAPPClasses/AppInfraMicroAppSettings.m; sourceTree = "<group>"; };
+		1CFDD3FF1E79133800FBD555 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1CFDD4041E79133800FBD555 /* AppInfraMicroAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppInfraMicroAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CFDD4171E793FA300FBD555 /* AppConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConstants.h; sourceTree = "<group>"; };
+		1CFDD42D1E793FA300FBD555 /* DemoHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoHomeViewController.h; sourceTree = "<group>"; };
+		1CFDD42E1E793FA300FBD555 /* DemoHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoHomeViewController.m; sourceTree = "<group>"; };
+		1CFDD48E1E793FA300FBD555 /* AIAPISigningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIAPISigningViewController.h; sourceTree = "<group>"; };
+		1CFDD48F1E793FA300FBD555 /* AIAPISigningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIAPISigningViewController.m; sourceTree = "<group>"; };
+		1CFDD49B1E793FA300FBD555 /* DemoABTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoABTestViewController.h; sourceTree = "<group>"; };
+		1CFDD49C1E793FA300FBD555 /* DemoABTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoABTestViewController.m; sourceTree = "<group>"; };
+		1CFDD49D1E793FA300FBD555 /* DemoAppIdentityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoAppIdentityController.h; sourceTree = "<group>"; };
+		1CFDD49E1E793FA300FBD555 /* DemoAppIdentityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoAppIdentityController.m; sourceTree = "<group>"; };
+		1CFDD49F1E793FA300FBD555 /* DemoInternationalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoInternationalization.h; sourceTree = "<group>"; };
+		1CFDD4A01E793FA300FBD555 /* DemoInternationalization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoInternationalization.m; sourceTree = "<group>"; };
+		1CFDD4A11E793FA300FBD555 /* DemoLocaleMatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoLocaleMatchViewController.h; sourceTree = "<group>"; };
+		1CFDD4A21E793FA300FBD555 /* DemoLocaleMatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoLocaleMatchViewController.m; sourceTree = "<group>"; };
+		1CFDD4A51E793FA300FBD555 /* DemoMicroAppConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMicroAppConfiguration.h; sourceTree = "<group>"; };
+		1CFDD4A61E793FA300FBD555 /* DemoMicroAppConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMicroAppConfiguration.m; sourceTree = "<group>"; };
+		1CFDD4A71E793FA300FBD555 /* DemoPRXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoPRXViewController.h; sourceTree = "<group>"; };
+		1CFDD4A81E793FA300FBD555 /* DemoPRXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoPRXViewController.m; sourceTree = "<group>"; };
+		1CFDD4A91E793FA300FBD555 /* DemoRestClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoRestClientViewController.h; sourceTree = "<group>"; };
+		1CFDD4AA1E793FA300FBD555 /* DemoRestClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoRestClientViewController.m; sourceTree = "<group>"; };
+		1CFDD4AB1E793FA300FBD555 /* DemoSecurityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoSecurityViewController.h; sourceTree = "<group>"; };
+		1CFDD4AC1E793FA300FBD555 /* DemoSecurityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoSecurityViewController.m; sourceTree = "<group>"; };
+		1CFDD4AD1E793FA300FBD555 /* DemoServiceDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoServiceDiscoveryViewController.h; sourceTree = "<group>"; };
+		1CFDD4AE1E793FA300FBD555 /* DemoServiceDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoServiceDiscoveryViewController.m; sourceTree = "<group>"; };
+		1CFDD4AF1E793FA300FBD555 /* DemoTaggingMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTaggingMediaViewController.h; sourceTree = "<group>"; };
+		1CFDD4B01E793FA300FBD555 /* DemoTaggingMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTaggingMediaViewController.m; sourceTree = "<group>"; };
+		1CFDD4B21E793FA300FBD555 /* DemoTaggingSocialSharingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTaggingSocialSharingViewController.h; sourceTree = "<group>"; };
+		1CFDD4B31E793FA300FBD555 /* DemoTaggingSocialSharingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTaggingSocialSharingViewController.m; sourceTree = "<group>"; };
+		1CFDD4B41E793FA300FBD555 /* DemoTaggingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTaggingViewController.h; sourceTree = "<group>"; };
+		1CFDD4B51E793FA300FBD555 /* DemoTaggingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTaggingViewController.m; sourceTree = "<group>"; };
+		1CFDD4B61E793FA300FBD555 /* DemoTimeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTimeController.h; sourceTree = "<group>"; };
+		1CFDD4B71E793FA300FBD555 /* DemoTimeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTimeController.m; sourceTree = "<group>"; };
+		1CFDD4B81E793FA300FBD555 /* RestClientAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestClientAuthViewController.h; sourceTree = "<group>"; };
+		1CFDD4B91E793FA300FBD555 /* RestClientAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClientAuthViewController.m; sourceTree = "<group>"; };
+		1CFDD4BA1E793FA300FBD555 /* RestClientParamsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestClientParamsViewController.h; sourceTree = "<group>"; };
+		1CFDD4BB1E793FA300FBD555 /* RestClientParamsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestClientParamsViewController.m; sourceTree = "<group>"; };
+
+		22996EFD24E06539008F66D1 /* DemoErrorTaggingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DemoErrorTaggingViewController.h; sourceTree = "<group>"; };
+		22996EFE24E06539008F66D1 /* DemoErrorTaggingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DemoErrorTaggingViewController.m; sourceTree = "<group>"; };
+
+		2E37D8B0A50AE72416C4092E /* Pods-AppInfraMicroAppDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInfraMicroAppDev.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-AppInfraMicroAppDev/Pods-AppInfraMicroAppDev.release.xcconfig"; sourceTree = "<group>"; };
+		45BF3A23AB1F36C2D7ED5C6D /* Pods-AppInfraMicroApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInfraMicroApp.release.xcconfig"; path = "../../../Pods/Target Support Files/Pods-AppInfraMicroApp/Pods-AppInfraMicroApp.release.xcconfig"; sourceTree = "<group>"; };
+		50308F1E1FD515E700EB5887 /* CustomTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewController.swift; sourceTree = "<group>"; };
+		508FA99420B0795900999FFB /* ObjectiveCTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveCTestViewController.h; sourceTree = "<group>"; };
+		508FA99520B0795900999FFB /* ObjectiveCTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveCTestViewController.m; sourceTree = "<group>"; };
+		8635DED442275700D97CDF7E /* Pods-AppInfraMicroAppDev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInfraMicroAppDev.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-AppInfraMicroAppDev/Pods-AppInfraMicroAppDev.debug.xcconfig"; sourceTree = "<group>"; };
+		B8D1077DC4D308ABC1CB6AA5 /* Pods-AppInfraMicroApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AppInfraMicroApp.debug.xcconfig"; path = "../../../Pods/Target Support Files/Pods-AppInfraMicroApp/Pods-AppInfraMicroApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE1671F11EF1334B005A5D7E /* AppUpdateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUpdateViewController.swift; sourceTree = "<group>"; };
+		CE40A3E41EF2A7FE006CB931 /* ExitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExitViewController.swift; sourceTree = "<group>"; };
+		CE872D3A1EF8D9CE00DB005E /* LoggerListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerListViewController.swift; sourceTree = "<group>"; };
+		CE872D3C1EF8DE3100DB005E /* LoggerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerTableViewCell.swift; sourceTree = "<group>"; };
+		CE872D3E1EF8E64000DB005E /* CreateLoggerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLoggerViewController.swift; sourceTree = "<group>"; };
+		CED8FA3F1ED2EE4700957856 /* SwiftExecutionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftExecutionViewController.swift; sourceTree = "<group>"; };
+		CEE4EA2D1EF9047500855483 /* LoggerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerDetailViewController.swift; sourceTree = "<group>"; };
+		CEEEE04B1ED4319C0088D350 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = AppInfraMicroApp/Resources/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		CEFB8FD01ED3F6BB00603785 /* DemoLanguageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoLanguageViewController.swift; sourceTree = "<group>"; };
+		CEFB8FD21ED3F8BB00603785 /* ServiceDiscoveryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceDiscoveryViewController.swift; sourceTree = "<group>"; };
+		D04844C44D7D22255E4F23D3 /* Pods_AppInfraMicroAppDev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AppInfraMicroAppDev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CFDD3E11E79133800FBD555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C41582131FC17941816616A2 /* Pods_AppInfraMicroAppDev.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFDD4011E79133800FBD555 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFDD4051E79133800FBD555 /* AppInfraMicroApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C0681161F4BF59B006128E5 /* keyBagManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = keyBagManager;
+			sourceTree = "<group>";
+		};
+		1CFDD3DB1E79133800FBD555 = {
+			isa = PBXGroup;
+			children = (
+				1CFDD3E71E79133800FBD555 /* AppInfraMicroApp */,
+				1CFDD3E61E79133800FBD555 /* Products */,
+				C75B5D8936E44A7DB2C3179A /* Pods */,
+				97D41DD06235525F1793833D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1CFDD3E61E79133800FBD555 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CFDD3E51E79133800FBD555 /* AppInfraMicroApp.framework */,
+				1CFDD4041E79133800FBD555 /* AppInfraMicroAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CFDD3E71E79133800FBD555 /* AppInfraMicroApp */ = {
+			isa = PBXGroup;
+			children = (
+				1CE1F9C91E7FB71C00C4B764 /* AilShareduAppDependency.h */,
+				1CE1F9CA1E7FB71C00C4B764 /* AilShareduAppDependency.m */,
+				1CFDD4161E793F8E00FBD555 /* DemoSource */,
+				1CFDD4141E793F7800FBD555 /* Resources */,
+				1CFDD3E81E79133800FBD555 /* AppInfraMicroApp.h */,
+				1CFDD3FF1E79133800FBD555 /* Info.plist */,
+				1CFDD3EA1E79133800FBD555 /* UAPPClasses */,
+			);
+			path = AppInfraMicroApp;
+			sourceTree = "<group>";
+		};
+		1CFDD3EA1E79133800FBD555 /* UAPPClasses */ = {
+			isa = PBXGroup;
+			children = (
+				1CFDD3EB1E79133800FBD555 /* AppInfraMicroAppDependencies.h */,
+				1CFDD3ED1E79133800FBD555 /* AppInfraMicroAppDependencies.m */,
+				1CFDD3EF1E79133800FBD555 /* AppInfraMicroAppInterface.h */,
+				1CFDD3F11E79133800FBD555 /* AppInfraMicroAppInterface.m */,
+				1CFDD3F31E79133800FBD555 /* AppInfraMicroAppLaunchInput.h */,
+				1CFDD3F51E79133800FBD555 /* AppInfraMicroAppLaunchInput.m */,
+				1CFDD3F71E79133800FBD555 /* AppInfraMicroAppSettings.h */,
+				1CFDD3F91E79133800FBD555 /* AppInfraMicroAppSettings.m */,
+			);
+			name = UAPPClasses;
+			sourceTree = "<group>";
+		};
+		1CFDD4141E793F7800FBD555 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1CFDD4161E793F8E00FBD555 /* DemoSource */ = {
+			isa = PBXGroup;
+			children = (
+				1C4A53591E82ACAD005D970D /* LeftMenuList.plist */,
+				1CFDD4171E793FA300FBD555 /* AppConstants.h */,
+				1CFDD4191E793FA300FBD555 /* Model */,
+				1CFDD41F1E793FA300FBD555 /* Utils */,
+				1CFDD4221E793FA300FBD555 /* View */,
+				1CFDD4271E793FA300FBD555 /* ViewController */,
+			);
+			name = DemoSource;
+			sourceTree = "<group>";
+		};
+		1CFDD4191E793FA300FBD555 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1CFDD41F1E793FA300FBD555 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1CFDD4221E793FA300FBD555 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CEEEE04B1ED4319C0088D350 /* Main.storyboard */,
+				CE872D3C1EF8DE3100DB005E /* LoggerTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1CFDD4271E793FA300FBD555 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1CFDD42C1E793FA300FBD555 /* Home */,
+				1CFDD48D1E793FA300FBD555 /* Testing */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		1CFDD42C1E793FA300FBD555 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1CFDD42D1E793FA300FBD555 /* DemoHomeViewController.h */,
+				1CFDD42E1E793FA300FBD555 /* DemoHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1CFDD48D1E793FA300FBD555 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				50308F1E1FD515E700EB5887 /* CustomTableViewController.swift */,
+				1C0681161F4BF59B006128E5 /* keyBagManager */,
+				CE1671F01EF1334B005A5D7E /* AppUpdate */,
+				1CFDD4BC1E793FA300FBD555 /* ServiceDiscovery */,
+				CEFB8FCF1ED3F6BB00603785 /* LanguagePack */,
+				CE872D351EF8D98500DB005E /* Logging */,
+				1CFDD48E1E793FA300FBD555 /* AIAPISigningViewController.h */,
+				1CFDD48F1E793FA300FBD555 /* AIAPISigningViewController.m */,
+				1CFDD49B1E793FA300FBD555 /* DemoABTestViewController.h */,
+				1CFDD49C1E793FA300FBD555 /* DemoABTestViewController.m */,
+				1CFDD49D1E793FA300FBD555 /* DemoAppIdentityController.h */,
+				1CFDD49E1E793FA300FBD555 /* DemoAppIdentityController.m */,
+				1CFDD49F1E793FA300FBD555 /* DemoInternationalization.h */,
+				1CFDD4A01E793FA300FBD555 /* DemoInternationalization.m */,
+				1CFDD4A11E793FA300FBD555 /* DemoLocaleMatchViewController.h */,
+				1CFDD4A21E793FA300FBD555 /* DemoLocaleMatchViewController.m */,
+				1CFDD4A51E793FA300FBD555 /* DemoMicroAppConfiguration.h */,
+				1CFDD4A61E793FA300FBD555 /* DemoMicroAppConfiguration.m */,
+				1CFDD4A71E793FA300FBD555 /* DemoPRXViewController.h */,
+				1CFDD4A81E793FA300FBD555 /* DemoPRXViewController.m */,
+				1CFDD4A91E793FA300FBD555 /* DemoRestClientViewController.h */,
+				1CFDD4AA1E793FA300FBD555 /* DemoRestClientViewController.m */,
+				1CFDD4AB1E793FA300FBD555 /* DemoSecurityViewController.h */,
+				1CFDD4AC1E793FA300FBD555 /* DemoSecurityViewController.m */,
+				1CFDD4AD1E793FA300FBD555 /* DemoServiceDiscoveryViewController.h */,
+				1CFDD4AE1E793FA300FBD555 /* DemoServiceDiscoveryViewController.m */,
+				1CFDD4AF1E793FA300FBD555 /* DemoTaggingMediaViewController.h */,
+				1CFDD4B01E793FA300FBD555 /* DemoTaggingMediaViewController.m */,
+				1CFDD4B21E793FA300FBD555 /* DemoTaggingSocialSharingViewController.h */,
+				1CFDD4B31E793FA300FBD555 /* DemoTaggingSocialSharingViewController.m */,
+				1CFDD4B41E793FA300FBD555 /* DemoTaggingViewController.h */,
+				1CFDD4B51E793FA300FBD555 /* DemoTaggingViewController.m */,
+				22996EFD24E06539008F66D1 /* DemoErrorTaggingViewController.h */,
+				22996EFE24E06539008F66D1 /* DemoErrorTaggingViewController.m */,
+				1CFDD4B61E793FA300FBD555 /* DemoTimeController.h */,
+				1CFDD4B71E793FA300FBD555 /* DemoTimeController.m */,
+				1CFDD4B81E793FA300FBD555 /* RestClientAuthViewController.h */,
+				1CFDD4B91E793FA300FBD555 /* RestClientAuthViewController.m */,
+				1CFDD4BA1E793FA300FBD555 /* RestClientParamsViewController.h */,
+				1CFDD4BB1E793FA300FBD555 /* RestClientParamsViewController.m */,
+				CED8FA3F1ED2EE4700957856 /* SwiftExecutionViewController.swift */,
+				CE40A3E41EF2A7FE006CB931 /* ExitViewController.swift */,
+				508FA99420B0795900999FFB /* ObjectiveCTestViewController.h */,
+				508FA99520B0795900999FFB /* ObjectiveCTestViewController.m */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		1CFDD4BC1E793FA300FBD555 /* ServiceDiscovery */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB8FD21ED3F8BB00603785 /* ServiceDiscoveryViewController.swift */,
+			);
+			path = ServiceDiscovery;
+			sourceTree = "<group>";
+		};
+		97D41DD06235525F1793833D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D04844C44D7D22255E4F23D3 /* Pods_AppInfraMicroAppDev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C75B5D8936E44A7DB2C3179A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B8D1077DC4D308ABC1CB6AA5 /* Pods-AppInfraMicroApp.debug.xcconfig */,
+				45BF3A23AB1F36C2D7ED5C6D /* Pods-AppInfraMicroApp.release.xcconfig */,
+				8635DED442275700D97CDF7E /* Pods-AppInfraMicroAppDev.debug.xcconfig */,
+				2E37D8B0A50AE72416C4092E /* Pods-AppInfraMicroAppDev.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CE1671F01EF1334B005A5D7E /* AppUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				CE1671F11EF1334B005A5D7E /* AppUpdateViewController.swift */,
+			);
+			path = AppUpdate;
+			sourceTree = "<group>";
+		};
+		CE872D351EF8D98500DB005E /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				CE872D3A1EF8D9CE00DB005E /* LoggerListViewController.swift */,
+				CE872D3E1EF8E64000DB005E /* CreateLoggerViewController.swift */,
+				CEE4EA2D1EF9047500855483 /* LoggerDetailViewController.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		CEFB8FCF1ED3F6BB00603785 /* LanguagePack */ = {
+			isa = PBXGroup;
+			children = (
+				CEFB8FD01ED3F6BB00603785 /* DemoLanguageViewController.swift */,
+			);
+			path = LanguagePack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1CFDD3E21E79133800FBD555 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFDD5531E793FA400FBD555 /* DemoRestClientViewController.h in Headers */,
+				1CFDD5621E793FA400FBD555 /* RestClientAuthViewController.h in Headers */,
+				1CFDD5471E793FA400FBD555 /* DemoAppIdentityController.h in Headers */,
+				1CFDD55E1E793FA400FBD555 /* DemoTaggingViewController.h in Headers */,
+				1CFDD54B1E793FA400FBD555 /* DemoLocaleMatchViewController.h in Headers */,
+				1CFDD5391E793FA400FBD555 /* AIAPISigningViewController.h in Headers */,
+				22996EFF24E06539008F66D1 /* DemoErrorTaggingViewController.h in Headers */,
+				1CFDD55C1E793FA400FBD555 /* DemoTaggingSocialSharingViewController.h in Headers */,
+				1CE1F9CB1E7FB71C00C4B764 /* AilShareduAppDependency.h in Headers */,
+				1CFDD5641E793FA400FBD555 /* RestClientParamsViewController.h in Headers */,
+				1CFDD5601E793FA400FBD555 /* DemoTimeController.h in Headers */,
+				1CFDD3F81E79133800FBD555 /* AppInfraMicroAppSettings.h in Headers */,
+				1CFDD3F01E79133800FBD555 /* AppInfraMicroAppInterface.h in Headers */,
+				1CFDD4CE1E793FA300FBD555 /* AppConstants.h in Headers */,
+				1CFDD5591E793FA400FBD555 /* DemoTaggingMediaViewController.h in Headers */,
+				1CFDD3E91E79133800FBD555 /* AppInfraMicroApp.h in Headers */,
+				1CFDD5551E793FA400FBD555 /* DemoSecurityViewController.h in Headers */,
+				1CFDD4DC1E793FA300FBD555 /* DemoHomeViewController.h in Headers */,
+				508FA99620B0795900999FFB /* ObjectiveCTestViewController.h in Headers */,
+				1CFDD5451E793FA400FBD555 /* DemoABTestViewController.h in Headers */,
+				1CFDD3F41E79133800FBD555 /* AppInfraMicroAppLaunchInput.h in Headers */,
+				1CFDD5511E793FA400FBD555 /* DemoPRXViewController.h in Headers */,
+				1CFDD5491E793FA400FBD555 /* DemoInternationalization.h in Headers */,
+				1CFDD54F1E793FA400FBD555 /* DemoMicroAppConfiguration.h in Headers */,
+				1CFDD5571E793FA400FBD555 /* DemoServiceDiscoveryViewController.h in Headers */,
+				1CFDD3EC1E79133800FBD555 /* AppInfraMicroAppDependencies.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1CFDD3E41E79133800FBD555 /* AppInfraMicroAppDev */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFDD40E1E79133800FBD555 /* Build configuration list for PBXNativeTarget "AppInfraMicroAppDev" */;
+			buildPhases = (
+				CFEBF696816B0B7CD739EF4F /* [CP] Check Pods Manifest.lock */,
+				C98A02902084CB72000C4833 /* ShellScript */,
+				1CFDD3E01E79133800FBD555 /* Sources */,
+				1CFDD3E11E79133800FBD555 /* Frameworks */,
+				1CFDD3E21E79133800FBD555 /* Headers */,
+				1CFDD3E31E79133800FBD555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppInfraMicroAppDev;
+			productName = AppInfraMicroApp;
+			productReference = 1CFDD3E51E79133800FBD555 /* AppInfraMicroApp.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1CFDD4031E79133800FBD555 /* AppInfraMicroAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CFDD4111E79133800FBD555 /* Build configuration list for PBXNativeTarget "AppInfraMicroAppTests" */;
+			buildPhases = (
+				1CFDD4001E79133800FBD555 /* Sources */,
+				1CFDD4011E79133800FBD555 /* Frameworks */,
+				1CFDD4021E79133800FBD555 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1CFDD4071E79133800FBD555 /* PBXTargetDependency */,
+			);
+			name = AppInfraMicroAppTests;
+			productName = AppInfraMicroAppTests;
+			productReference = 1CFDD4041E79133800FBD555 /* AppInfraMicroAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CFDD3DC1E79133800FBD555 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = Philips;
+				TargetAttributes = {
+					1CFDD3E41E79133800FBD555 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C9C645VSQP;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+					};
+					1CFDD4031E79133800FBD555 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = C9C645VSQP;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1CFDD3DF1E79133800FBD555 /* Build configuration list for PBXProject "AppInfraMicroAppDev" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 1CFDD3DB1E79133800FBD555;
+			productRefGroup = 1CFDD3E61E79133800FBD555 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CFDD3E41E79133800FBD555 /* AppInfraMicroAppDev */,
+				1CFDD4031E79133800FBD555 /* AppInfraMicroAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CFDD3E31E79133800FBD555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C4A535A1E82ACAD005D970D /* LeftMenuList.plist in Resources */,
+				CEEEE04C1ED4319C0088D350 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFDD4021E79133800FBD555 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C98A02902084CB72000C4833 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#${SRCROOT}/../../../../ci-build-support/check_xcode.sh\n#${SRCROOT}/../../../../ci-build-support/check_cocoapods.sh\n";
+		};
+		CFEBF696816B0B7CD739EF4F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AppInfraMicroAppDev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CFDD3E01E79133800FBD555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CFDD53A1E793FA400FBD555 /* AIAPISigningViewController.m in Sources */,
+				1CFDD5481E793FA400FBD555 /* DemoAppIdentityController.m in Sources */,
+				CE872D3B1EF8D9CE00DB005E /* LoggerListViewController.swift in Sources */,
+				CED8FA401ED2EE4700957856 /* SwiftExecutionViewController.swift in Sources */,
+				1CE1F9CC1E7FB71C00C4B764 /* AilShareduAppDependency.m in Sources */,
+				1CFDD55D1E793FA400FBD555 /* DemoTaggingSocialSharingViewController.m in Sources */,
+				1CFDD5541E793FA400FBD555 /* DemoRestClientViewController.m in Sources */,
+				1CFDD5611E793FA400FBD555 /* DemoTimeController.m in Sources */,
+				1CFDD5461E793FA400FBD555 /* DemoABTestViewController.m in Sources */,
+				1CFDD3EE1E79133800FBD555 /* AppInfraMicroAppDependencies.m in Sources */,
+				1CFDD54C1E793FA400FBD555 /* DemoLocaleMatchViewController.m in Sources */,
+				CE40A3E51EF2A7FE006CB931 /* ExitViewController.swift in Sources */,
+				CEFB8FD31ED3F8BB00603785 /* ServiceDiscoveryViewController.swift in Sources */,
+				1CFDD55A1E793FA400FBD555 /* DemoTaggingMediaViewController.m in Sources */,
+				CE872D3F1EF8E64000DB005E /* CreateLoggerViewController.swift in Sources */,
+				508FA99720B0795900999FFB /* ObjectiveCTestViewController.m in Sources */,
+				1CFDD5631E793FA400FBD555 /* RestClientAuthViewController.m in Sources */,
+				CE1671F21EF1334B005A5D7E /* AppUpdateViewController.swift in Sources */,
+				CEFB8FD11ED3F6BB00603785 /* DemoLanguageViewController.swift in Sources */,
+				1CFDD5581E793FA400FBD555 /* DemoServiceDiscoveryViewController.m in Sources */,
+				1CFDD5501E793FA400FBD555 /* DemoMicroAppConfiguration.m in Sources */,
+				CEE4EA2E1EF9047500855483 /* LoggerDetailViewController.swift in Sources */,
+				22996F0024E06539008F66D1 /* DemoErrorTaggingViewController.m in Sources */,
+				1CFDD4DD1E793FA300FBD555 /* DemoHomeViewController.m in Sources */,
+				CE872D3D1EF8DE3100DB005E /* LoggerTableViewCell.swift in Sources */,
+				1CFDD5521E793FA400FBD555 /* DemoPRXViewController.m in Sources */,
+				50308F1F1FD515E700EB5887 /* CustomTableViewController.swift in Sources */,
+				1CFDD54A1E793FA400FBD555 /* DemoInternationalization.m in Sources */,
+				1CFDD5561E793FA400FBD555 /* DemoSecurityViewController.m in Sources */,
+				1CFDD3F61E79133800FBD555 /* AppInfraMicroAppLaunchInput.m in Sources */,
+				1CFDD5651E793FA400FBD555 /* RestClientParamsViewController.m in Sources */,
+				1CFDD55F1E793FA400FBD555 /* DemoTaggingViewController.m in Sources */,
+				1CFDD3FA1E79133800FBD555 /* AppInfraMicroAppSettings.m in Sources */,
+				1CFDD3F21E79133800FBD555 /* AppInfraMicroAppInterface.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1CFDD4001E79133800FBD555 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1CFDD4071E79133800FBD555 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1CFDD3E41E79133800FBD555 /* AppInfraMicroAppDev */;
+			targetProxy = 1CFDD4061E79133800FBD555 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1CFDD40C1E79133800FBD555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1CFDD40D1E79133800FBD555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				ENABLE_BITCODE = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CFDD40F1E79133800FBD555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8635DED442275700D97CDF7E /* Pods-AppInfraMicroAppDev.debug.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppInfraMicroApp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.framework.AppInfraMicroApp;
+				PRODUCT_NAME = AppInfraMicroApp;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		1CFDD4101E79133800FBD555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E37D8B0A50AE72416C4092E /* Pods-AppInfraMicroAppDev.release.xcconfig */;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = AppInfraMicroApp/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.framework.AppInfraMicroApp;
+				PRODUCT_NAME = AppInfraMicroApp;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1CFDD4121E79133800FBD555 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				INFOPLIST_FILE = AppInfraMicroAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.framework.AppInfraMicroAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1CFDD4131E79133800FBD555 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = C9C645VSQP;
+				INFOPLIST_FILE = AppInfraMicroAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.philips.framework.AppInfraMicroAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CFDD3DF1E79133800FBD555 /* Build configuration list for PBXProject "AppInfraMicroAppDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFDD40C1E79133800FBD555 /* Debug */,
+				1CFDD40D1E79133800FBD555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFDD40E1E79133800FBD555 /* Build configuration list for PBXNativeTarget "AppInfraMicroAppDev" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFDD40F1E79133800FBD555 /* Debug */,
+				1CFDD4101E79133800FBD555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CFDD4111E79133800FBD555 /* Build configuration list for PBXNativeTarget "AppInfraMicroAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CFDD4121E79133800FBD555 /* Debug */,
+				1CFDD4131E79133800FBD555 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CFDD3DC1E79133800FBD555 /* Project object */;
+}

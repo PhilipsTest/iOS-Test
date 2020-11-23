@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="summaryPaidCell" rowHeight="102" id="kdi-GE-oKb" customClass="IAPSummaryPaidCell" customModule="InAppPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kdi-GE-oKb" id="DVG-xd-rPI">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="102"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nc1-NE-6q0" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="51.5" width="223" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="223" id="n8u-Sq-QkY"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                <integer key="value" value="0"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oRd-Z8-Vbc" userLabel="Separator View">
+                        <rect key="frame" x="0.0" y="101" width="375" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="nm7-sC-RFj"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-DT-SHb" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="16" y="24" width="210" height="19"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="210" id="16i-0s-54D"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                <integer key="value" value="1"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="oRd-Z8-Vbc" secondAttribute="bottom" id="CYW-Mb-ULs"/>
+                    <constraint firstItem="oRd-Z8-Vbc" firstAttribute="leading" secondItem="DVG-xd-rPI" secondAttribute="leading" id="Lna-j2-lWg"/>
+                    <constraint firstItem="nc1-NE-6q0" firstAttribute="top" secondItem="Jlt-DT-SHb" secondAttribute="bottom" constant="8" id="MGC-2D-YdG"/>
+                    <constraint firstItem="Jlt-DT-SHb" firstAttribute="top" secondItem="DVG-xd-rPI" secondAttribute="top" constant="24" id="NWN-tA-wPD"/>
+                    <constraint firstItem="Jlt-DT-SHb" firstAttribute="leading" secondItem="DVG-xd-rPI" secondAttribute="leading" constant="16" id="Qcf-7U-XMx"/>
+                    <constraint firstAttribute="trailing" secondItem="oRd-Z8-Vbc" secondAttribute="trailing" id="fUd-gb-9P0"/>
+                    <constraint firstItem="nc1-NE-6q0" firstAttribute="leading" secondItem="Jlt-DT-SHb" secondAttribute="leading" id="m1Q-hv-syc"/>
+                    <constraint firstItem="oRd-Z8-Vbc" firstAttribute="top" secondItem="nc1-NE-6q0" secondAttribute="bottom" constant="16" id="xSw-hG-hKg"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressSeparatorView" destination="oRd-Z8-Vbc" id="7hS-6Z-4km"/>
+                <outlet property="paidByLabel" destination="nc1-NE-6q0" id="mbL-yw-44K"/>
+                <outlet property="paymentLabel" destination="Jlt-DT-SHb" id="xDr-HC-g0U"/>
+            </connections>
+            <point key="canvasLocation" x="-159.5" y="27"/>
+        </tableViewCell>
+    </objects>
+</document>

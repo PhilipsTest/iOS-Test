@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Launch My account-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="test" title="Launch My account" id="BYZ-38-t0r" customClass="MYADemoFrameworkHomeVC" customModule="DemoUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LGP-Iv-2qa" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="67.5" y="288" width="240" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="GSd-l6-xtM"/>
+                                    <constraint firstAttribute="height" constant="91" id="ibh-la-Nbc"/>
+                                </constraints>
+                                <state key="normal" title="LAUNCH !!! (push)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Lbf-M3-adJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="788-C2-LDb" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="67.5" y="176" width="240" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="91" id="U0u-q0-uyk"/>
+                                    <constraint firstAttribute="width" constant="240" id="ucu-6a-nIp"/>
+                                </constraints>
+                                <state key="normal" title="LAUNCH !!! (model)">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="launchPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NTr-ud-tsd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="663-Ka-mqb" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="607" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="R5j-h2-Vgi"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="userRegistrationAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mfX-dG-7MO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="788-C2-LDb" firstAttribute="width" secondItem="LGP-Iv-2qa" secondAttribute="width" id="3o6-EE-7fR"/>
+                            <constraint firstItem="788-C2-LDb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FNR-er-6gq"/>
+                            <constraint firstItem="LGP-Iv-2qa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MpK-Rc-yva"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="663-Ka-mqb" secondAttribute="bottom" constant="20" id="afk-RW-lrb"/>
+                            <constraint firstItem="663-Ka-mqb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="16" id="akF-0P-JuO"/>
+                            <constraint firstItem="LGP-Iv-2qa" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="dp1-47-6ry"/>
+                            <constraint firstItem="LGP-Iv-2qa" firstAttribute="top" secondItem="788-C2-LDb" secondAttribute="bottom" constant="21" id="gLt-A9-fn6"/>
+                            <constraint firstAttribute="trailing" secondItem="663-Ka-mqb" secondAttribute="trailing" constant="16" id="rrd-Ng-U0v"/>
+                            <constraint firstItem="788-C2-LDb" firstAttribute="height" secondItem="LGP-Iv-2qa" secondAttribute="height" id="xZr-DJ-Hsk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iqo-OA-wh4"/>
+                    <connections>
+                        <outlet property="logoutButton" destination="663-Ka-mqb" id="FkK-qC-5NJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="657" y="-26327"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="Qt7-ku-rPo">
+            <objects>
+                <viewController storyboardIdentifier="Settings" title="Settings" id="cR5-Ye-UrO" customClass="MYADemoFrameworkSettingsVC" customModule="DemoUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="VDX-tg-maD"/>
+                        <viewControllerLayoutGuide type="bottom" id="1i9-vR-77K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3ck-YA-PmA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pkX-7y-M61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1428" y="-26325.78710644678"/>
+        </scene>
+        <!--About-->
+        <scene sceneID="06X-az-r8P">
+            <objects>
+                <viewController storyboardIdentifier="About" id="ahU-ZJ-Xpq" customClass="AboutViewController" customModule="DemoUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gbc-KK-22S"/>
+                        <viewControllerLayoutGuide type="bottom" id="IAk-yC-ZB3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oot-Jb-fN9" customClass="UIDAboutView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="applicationName" value="Philips My account demo app"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="copyright" value="Copyright © 2017 Philips"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="disclosureStatement">
+                                <mutableString key="value">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </mutableString>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="string" keyPath="termsAndConditionsLinkText" value="Terms &amp; conditions"/>
+                            <userDefinedRuntimeAttribute type="string" keyPath="privacyPolicyLinkText" value="Privacy policy"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="xgm-H4-zES"/>
+                    <connections>
+                        <outlet property="aboutView" destination="oot-Jb-fN9" id="FHL-Ld-CfF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Mm-pb-iGZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2252" y="-26328"/>
+        </scene>
+        <!--Consents Privacy Notice Web View Controller-->
+        <scene sceneID="BsM-tw-E1T">
+            <objects>
+                <viewController storyboardIdentifier="PrivacyNoticeVC" id="f1N-E0-Ens" customClass="ConsentsPrivacyNoticeWebViewController" customModule="DemoUApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rSJ-HG-x7R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPT-2g-Z2C" customClass="UIDProgressIndicator" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="175" y="331.5" width="24" height="24"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZPT-2g-Z2C" firstAttribute="centerX" secondItem="UhP-6C-pTe" secondAttribute="centerX" id="Dbw-VT-MSE"/>
+                            <constraint firstItem="ZPT-2g-Z2C" firstAttribute="centerY" secondItem="UhP-6C-pTe" secondAttribute="centerY" id="gMV-Vq-SAE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UhP-6C-pTe"/>
+                    </view>
+                    <connections>
+                        <outlet property="loadingIndicator" destination="ZPT-2g-Z2C" id="Vf2-dd-0tK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LB7-hL-zE3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="326" y="92"/>
+        </scene>
+    </scenes>
+</document>

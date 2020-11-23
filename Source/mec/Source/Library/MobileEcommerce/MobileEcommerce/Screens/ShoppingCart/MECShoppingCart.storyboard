@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Bold.ttf">
+            <string>CentraleSansBold</string>
+        </array>
+        <array key="CentraleSans-Book.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Shopping Cart View Controller-->
+        <scene sceneID="OIZ-rA-XWq">
+            <objects>
+                <viewController storyboardIdentifier="MECShoppingCartViewController" id="u2W-tS-nvA" customClass="MECShoppingCartViewController" customModule="MobileEcommerce" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zpg-Ne-vF4" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6j3-zs-tKU">
+                                <rect key="frame" x="0.0" y="44" width="414" height="587"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="u2W-tS-nvA" id="V33-Yh-33r"/>
+                                    <outlet property="delegate" destination="u2W-tS-nvA" id="1Av-Mk-ii8"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L0s-Is-BWD" customClass="MECNoCartView" customModule="MobileEcommerce" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="587"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P8K-nX-Vx0" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="587"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5zn-Ii-hpP" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cart Summary" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VG3-I9-Bpp" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="8" y="0.0" width="398" height="40"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="mec_topbar_label"/>
+                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="string" keyPath="MECLocalizedText" value="mec_cart_summary"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="top_bar"/>
+                                        <constraints>
+                                            <constraint firstItem="VG3-I9-Bpp" firstAttribute="leading" secondItem="5zn-Ii-hpP" secondAttribute="leading" constant="8" id="7Vt-jF-Mf0"/>
+                                            <constraint firstAttribute="bottom" secondItem="VG3-I9-Bpp" secondAttribute="bottom" id="Jqb-0C-L5O"/>
+                                            <constraint firstItem="VG3-I9-Bpp" firstAttribute="top" secondItem="5zn-Ii-hpP" secondAttribute="top" id="YXd-qY-poZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="VG3-I9-Bpp" secondAttribute="trailing" constant="8" id="igE-18-scc"/>
+                                            <constraint firstAttribute="height" constant="40" id="imh-ma-JuY"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tph-AM-u8s" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="199" y="56" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="info_icon"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikm-Oq-bbL" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="207" y="56" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emptyCart_title"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0hI-sv-eB4" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="207" y="61" width="0.0" height="0.0"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emptyCart_discription"/>
+                                        <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dza-G2-o8h" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="157" y="109" width="100" height="100"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="emptyCart_image"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="100" id="0Lr-nG-4AR"/>
+                                            <constraint firstAttribute="width" constant="100" id="5kt-ZF-bbj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <accessibility key="accessibilityConfiguration" identifier="empty_cart_view"/>
+                                <constraints>
+                                    <constraint firstItem="Ikm-Oq-bbL" firstAttribute="centerX" secondItem="L0s-Is-BWD" secondAttribute="centerX" id="ArR-wa-ePx"/>
+                                    <constraint firstAttribute="bottom" secondItem="P8K-nX-Vx0" secondAttribute="bottom" id="Dhu-Lm-3KK"/>
+                                    <constraint firstItem="0hI-sv-eB4" firstAttribute="top" secondItem="tph-AM-u8s" secondAttribute="bottom" constant="5" id="GJk-Sp-MTb"/>
+                                    <constraint firstItem="P8K-nX-Vx0" firstAttribute="top" secondItem="L0s-Is-BWD" secondAttribute="top" id="HdW-zT-FG4"/>
+                                    <constraint firstItem="Ikm-Oq-bbL" firstAttribute="top" secondItem="5zn-Ii-hpP" secondAttribute="bottom" constant="16" id="O0z-ay-Qw2"/>
+                                    <constraint firstItem="5zn-Ii-hpP" firstAttribute="leading" secondItem="L0s-Is-BWD" secondAttribute="leading" id="QDe-c9-e5I"/>
+                                    <constraint firstItem="dza-G2-o8h" firstAttribute="top" secondItem="0hI-sv-eB4" secondAttribute="bottom" constant="48" id="ZFT-TS-YMH"/>
+                                    <constraint firstAttribute="trailing" secondItem="5zn-Ii-hpP" secondAttribute="trailing" id="cNt-3l-Zo2"/>
+                                    <constraint firstItem="tph-AM-u8s" firstAttribute="centerY" secondItem="Ikm-Oq-bbL" secondAttribute="centerY" id="d6t-td-XhA"/>
+                                    <constraint firstItem="dza-G2-o8h" firstAttribute="centerX" secondItem="L0s-Is-BWD" secondAttribute="centerX" id="hEB-QF-8BL"/>
+                                    <constraint firstItem="Ikm-Oq-bbL" firstAttribute="leading" secondItem="tph-AM-u8s" secondAttribute="trailing" constant="8" id="nZn-zf-JWu"/>
+                                    <constraint firstItem="P8K-nX-Vx0" firstAttribute="leading" secondItem="L0s-Is-BWD" secondAttribute="leading" id="pUh-yc-kgR"/>
+                                    <constraint firstItem="0hI-sv-eB4" firstAttribute="centerX" secondItem="L0s-Is-BWD" secondAttribute="centerX" id="r6C-CH-uC5"/>
+                                    <constraint firstAttribute="trailing" secondItem="P8K-nX-Vx0" secondAttribute="trailing" id="wMt-rS-pci"/>
+                                    <constraint firstItem="5zn-Ii-hpP" firstAttribute="top" secondItem="L0s-Is-BWD" secondAttribute="top" id="xAf-jh-HBB"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="0hI-sv-eB4" id="qbA-g1-60d"/>
+                                    <outlet property="infoLabel" destination="tph-AM-u8s" id="xE3-n9-wD9"/>
+                                    <outlet property="middleImageLabel" destination="dza-G2-o8h" id="B4m-zw-8H9"/>
+                                    <outlet property="titleLabel" destination="Ikm-Oq-bbL" id="o7S-vF-OZY"/>
+                                    <outlet property="topbarLabel" destination="VG3-I9-Bpp" id="dI3-wZ-ItH"/>
+                                    <outlet property="topbarView" destination="5zn-Ii-hpP" id="SCz-eQ-ykU"/>
+                                </connections>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eog-38-uFt" userLabel="BottomView" customClass="MECShoppingCartBottomView" customModule="MobileEcommerce" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="631" width="414" height="265"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viU-V0-Ckg" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="265"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="GIn-wU-yZE">
+                                        <rect key="frame" x="16" y="8" width="382" height="249"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d2T-O6-z9y">
+                                                <rect key="frame" x="8" y="0.0" width="366" height="119"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="pCM-lv-GHP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="280" height="119"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y8f-hj-1B9" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="8" width="272" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="product_count_label"/>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="16"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4CP-pG-XSJ" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                                <rect key="frame" x="0.0" y="61" width="272" height="50"/>
+                                                                <accessibility key="accessibilityConfiguration" identifier="tax_label"/>
+                                                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="8"/>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xaH-z4-dYz" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                                        <rect key="frame" x="280" y="0.0" width="86" height="119"/>
+                                                        <accessibility key="accessibilityConfiguration" identifier="cart_total_price"/>
+                                                        <fontDescription key="fontDescription" name="CentraleSansBold" family="CentraleSans" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L6i-oN-nGP" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="8" y="127" width="366" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Continue_checkout_button"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="tEr-Ci-Am5"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="checkoutButtonClicked:" destination="u2W-tS-nvA" eventType="touchUpInside" id="DFV-hx-XVb"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmS-xz-gVc" customClass="UIDButton" customModule="PhilipsUIKitDLS">
+                                                <rect key="frame" x="8" y="179" width="366" height="44"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="Continue_shopping_button"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Uy5-BD-xqE"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="philipsType">
+                                                        <integer key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="continueButtonClicked:" destination="u2W-tS-nvA" eventType="touchUpInside" id="rbb-y4-Zcx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <edgeInsets key="layoutMargins" top="0.0" left="8" bottom="0.0" right="8"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GIn-wU-yZE" firstAttribute="top" secondItem="eog-38-uFt" secondAttribute="top" constant="8" id="E2D-C6-9eQ"/>
+                                    <constraint firstItem="viU-V0-Ckg" firstAttribute="top" secondItem="eog-38-uFt" secondAttribute="top" id="Ihk-ej-lL7"/>
+                                    <constraint firstAttribute="trailing" secondItem="viU-V0-Ckg" secondAttribute="trailing" id="PaZ-8g-ZaD"/>
+                                    <constraint firstItem="viU-V0-Ckg" firstAttribute="leading" secondItem="eog-38-uFt" secondAttribute="leading" id="RWS-XC-p74"/>
+                                    <constraint firstAttribute="bottom" secondItem="viU-V0-Ckg" secondAttribute="bottom" id="VWf-cW-1La"/>
+                                    <constraint firstAttribute="trailing" secondItem="GIn-wU-yZE" secondAttribute="trailing" constant="16" id="Wca-dR-VpE"/>
+                                    <constraint firstItem="GIn-wU-yZE" firstAttribute="leading" secondItem="eog-38-uFt" secondAttribute="leading" constant="16" id="YvD-HA-78V"/>
+                                    <constraint firstAttribute="bottom" secondItem="GIn-wU-yZE" secondAttribute="bottom" constant="8" id="ZPa-a7-c75"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="cartPriceView" destination="d2T-O6-z9y" id="Klr-eE-VY2"/>
+                                    <outlet property="containerView" destination="viU-V0-Ckg" id="yeZ-nU-RUf"/>
+                                    <outlet property="continueCheckoutButton" destination="L6i-oN-nGP" id="qmo-mC-jnZ"/>
+                                    <outlet property="continueShoppingButton" destination="BmS-xz-gVc" id="CZr-4K-ss2"/>
+                                    <outlet property="taxLable" destination="4CP-pG-XSJ" id="651-9s-kIA"/>
+                                    <outlet property="totalPriceLabel" destination="xaH-z4-dYz" id="rLb-Cx-OF9"/>
+                                    <outlet property="totalProductCountLable" destination="Y8f-hj-1B9" id="72w-EX-Pl5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XQh-4m-i8D"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XQh-4m-i8D" firstAttribute="trailing" secondItem="eog-38-uFt" secondAttribute="trailing" id="DTE-3k-WgI"/>
+                            <constraint firstItem="eog-38-uFt" firstAttribute="top" secondItem="L0s-Is-BWD" secondAttribute="bottom" id="HNe-Sk-QnJ"/>
+                            <constraint firstItem="XQh-4m-i8D" firstAttribute="trailing" secondItem="6j3-zs-tKU" secondAttribute="trailing" id="NqE-wW-lsx"/>
+                            <constraint firstItem="L0s-Is-BWD" firstAttribute="top" secondItem="XQh-4m-i8D" secondAttribute="top" id="ULr-NR-C9K"/>
+                            <constraint firstItem="eog-38-uFt" firstAttribute="top" secondItem="6j3-zs-tKU" secondAttribute="bottom" id="VAn-gq-cGJ"/>
+                            <constraint firstItem="XQh-4m-i8D" firstAttribute="trailing" secondItem="L0s-Is-BWD" secondAttribute="trailing" id="WUr-OM-2Zm"/>
+                            <constraint firstItem="6j3-zs-tKU" firstAttribute="top" secondItem="XQh-4m-i8D" secondAttribute="top" id="cmY-u4-ABU"/>
+                            <constraint firstItem="eog-38-uFt" firstAttribute="leading" secondItem="XQh-4m-i8D" secondAttribute="leading" id="khO-VG-5Ks"/>
+                            <constraint firstItem="6j3-zs-tKU" firstAttribute="leading" secondItem="XQh-4m-i8D" secondAttribute="leading" id="mmc-hF-Uyv"/>
+                            <constraint firstItem="L0s-Is-BWD" firstAttribute="leading" secondItem="XQh-4m-i8D" secondAttribute="leading" id="nzN-mO-uha"/>
+                            <constraint firstAttribute="bottom" secondItem="eog-38-uFt" secondAttribute="bottom" id="rMU-2b-zZ9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomView" destination="eog-38-uFt" id="ITw-Pw-YVk"/>
+                        <outlet property="noCartView" destination="L0s-Is-BWD" id="HFO-W9-X15"/>
+                        <outlet property="shoppingCartTableView" destination="6j3-zs-tKU" id="6I1-S7-jK5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pWS-HS-CJO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="111.59420289855073" y="168.75"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0hI-sv-eB4"/>
+        <designable name="4CP-pG-XSJ"/>
+        <designable name="BmS-xz-gVc">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="Ikm-Oq-bbL"/>
+        <designable name="L6i-oN-nGP">
+            <size key="intrinsicContentSize" width="30" height="34"/>
+        </designable>
+        <designable name="VG3-I9-Bpp">
+            <size key="intrinsicContentSize" width="108.5" height="16"/>
+        </designable>
+        <designable name="Y8f-hj-1B9"/>
+        <designable name="dza-G2-o8h"/>
+        <designable name="tph-AM-u8s"/>
+        <designable name="xaH-z4-dYz"/>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

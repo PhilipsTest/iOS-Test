@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="CentraleSans-Medium.ttf">
+            <string>CentraleSansMedium</string>
+        </array>
+        <array key="CentraleSansBook.ttf">
+            <string>CentraleSansBook</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SummaryCustomCell" rowHeight="38" id="g6x-sF-U2H" customClass="IPAPurchaseHistoryOrderSummaryCustomCell" customModule="InAppPurchase" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="467" height="38"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g6x-sF-U2H" id="iwT-h1-Cb4">
+                <rect key="frame" x="0.0" y="0.0" width="467" height="38"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cuX-L2-hUM" customClass="UIDView" customModule="PhilipsUIKitDLS">
+                        <rect key="frame" x="0.0" y="0.0" width="467" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7q-9O-Kwj" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="16" y="16" width="319" height="22"/>
+                                <fontDescription key="fontDescription" name="CentraleSansBook" family="CentraleSans" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ogk-vX-huT" customClass="UIDLabel" customModule="PhilipsUIKitDLS">
+                                <rect key="frame" x="351" y="16" width="100" height="22"/>
+                                <accessibility key="accessibilityConfiguration" identifier="Productprice"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="Ogh-RH-qrT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="CentraleSansMedium" family="CentraleSans" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="labelType">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="customFont" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ogk-vX-huT" firstAttribute="bottom" secondItem="m7q-9O-Kwj" secondAttribute="bottom" id="HgB-RH-grH"/>
+                            <constraint firstAttribute="trailing" secondItem="ogk-vX-huT" secondAttribute="trailing" constant="16" id="I6O-xV-Gwh"/>
+                            <constraint firstItem="ogk-vX-huT" firstAttribute="leading" secondItem="m7q-9O-Kwj" secondAttribute="trailing" constant="16" id="QJf-Nl-2iT"/>
+                            <constraint firstItem="m7q-9O-Kwj" firstAttribute="leading" secondItem="cuX-L2-hUM" secondAttribute="leading" constant="16" id="YGO-9t-9ik"/>
+                            <constraint firstAttribute="bottom" secondItem="m7q-9O-Kwj" secondAttribute="bottom" id="eiR-1B-YVP"/>
+                            <constraint firstItem="ogk-vX-huT" firstAttribute="top" secondItem="m7q-9O-Kwj" secondAttribute="top" id="q1v-1W-Ein"/>
+                            <constraint firstItem="m7q-9O-Kwj" firstAttribute="top" secondItem="cuX-L2-hUM" secondAttribute="top" constant="16" id="ruG-hA-5uH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cuX-L2-hUM" secondAttribute="trailing" id="30R-Xz-vu2"/>
+                    <constraint firstItem="cuX-L2-hUM" firstAttribute="leading" secondItem="iwT-h1-Cb4" secondAttribute="leading" id="3q1-6Q-YUr"/>
+                    <constraint firstAttribute="bottom" secondItem="cuX-L2-hUM" secondAttribute="bottom" id="VjE-8f-lZM"/>
+                    <constraint firstItem="cuX-L2-hUM" firstAttribute="top" secondItem="iwT-h1-Cb4" secondAttribute="top" id="Zj7-gW-bal"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="topConstraint" destination="ruG-hA-5uH" id="yhw-7U-jNy"/>
+                <outlet property="totalItemsAndItemNameLabel" destination="m7q-9O-Kwj" id="MWn-AG-xal"/>
+                <outlet property="totalPriceLabel" destination="ogk-vX-huT" id="R2q-rs-rLK"/>
+            </connections>
+            <point key="canvasLocation" x="7.5" y="-42"/>
+        </tableViewCell>
+    </objects>
+</document>
