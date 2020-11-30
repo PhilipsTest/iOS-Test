@@ -1,0 +1,190 @@
+name: iOS starter workflow
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - '**'
+  pull_request:
+    branches: [ feature/GitHub_Actions ]
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
+        with: 
+          fetch-depth: 0
+          clean: true
+          submodules: true
+          lfs: false
+      
+      - name: Initialize
+        env:
+          podfilePath: ${{ 'Source' }}
+        shell: bash
+        run: |
+             pwd
+             rm -rf Source/results/*
+             rm -rf Source/build/*.ipa
+             rm -rf ~/Library/Developer/Xcode/DerivedData
+             rm -rf Source/DerivedData
+             ./ci-build-support/update_version.sh
+             rm -rf ./Source/Library/Podfile.lock
+             echo "Running pod install for ${podfilePath}"
+             cd ./Source/Library && pod cache clean --all && pod repo update && pod install
+      
+      - name: Zip Components
+        #if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        shell: bash
+        run: |
+             chmod -R 755 .
+             ./ci-build-support/zip_components.sh 
+      
+      #- name: Run Unit Tests
+       # env:
+        #  testSchemeName: ${{ 'ConsentWidgetsDev' }}
+         # frameworkName: ${{ 'CSW Test Report' }}
+          #resultBundlePath: ${{ 'results/$testSchemeName' }}
+        #run: |
+         #    export PATH=/.rbenv/shims:/usr/local/bin/xcpretty/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+          #   killall Simulator || true
+           #  xcrun simctl erase all || true
+            # cd Source/Library
+             
+             #export LC_CTYPE=en_US.UTF-8
+             #xcodebuild clean test \
+              #       -workspace "ConsentWidgets.xcworkspace" \
+               #      -scheme ${testSchemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO'\
+                #     -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest'\
+                 #    -UseModernBuildSystem='NO'\
+                  #   -resultBundlePath ${resultBundlePath} \
+                   #  | xcpretty --report junit --report html
+     
+      - name: Build Ref App
+        env:
+          schemeName: ${{ 'AppFramework' }}
+          exportPath: ${{ 'rap/Source/App/AppFramework' }}
+        shell: bash
+        run: |
+             #!/bin/bash -l
+             killall Simulator || true
+             export LC_CTYPE=en_US.UTF-8
+
+             cd ${"Source"}
+
+              xcodebuild clean archive -workspace ${"PLF-IOS-WORKSPACE.xcworkspace"} -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
+              xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
+             
+              if [ \$? != 0 ]
+                 then
+                     exit 1
+              fi
+              
+      - name: Build Demo Apps
+        env:
+          schemeName: ${{ 'USRDemoApp' }}
+          exportPath: ${{ 'usr/Source/DemoApp' }}
+        shell: bash
+        run: |
+             #!/bin/bash -l
+             killall Simulator || true
+             export LC_CTYPE=en_US.UTF-8
+
+             cd ${"Source"}
+             
+             xcodebuild clean archive -workspace ${"PLF-IOS-WORKSPACE.xcworkspace"} -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
+             xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
+             
+             if [ \$? != 0 ]
+                 then
+                     exit 1
+             fi
+              
+      - name: Build PIM Demo App
+        #"PIMDemoApp","pim/Source/DemoApp"
+        env:
+          schemeName: ${{ 'PIMDemoApp' }}
+          exportPath: ${{ 'pim/Source/DemoApp' }}
+        shell: bash
+        run: |
+             #!/bin/bash -l
+             killall Simulator || true
+             export LC_CTYPE=en_US.UTF-8
+
+             cd ${"Source"}
+
+             xcodebuild clean archive -workspace ${"PLF-IOS-WORKSPACE.xcworkspace"} -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
+             xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
+             
+              if [ \$? != 0 ]
+                 then
+                     exit 1
+              fi
+      
+      - name: Build PSRA App
+        #runBuildWithIPA(true,"PSRARelease","rap/Source/App/AppFramework")
+        env:
+          schemeName: ${{ 'PSRARelease' }}
+          exportPath: ${{ 'rap/Source/App/AppFramework' }}
+        shell: bash
+        run: |
+             #!/bin/bash -l
+             killall Simulator || true
+             export LC_CTYPE=en_US.UTF-8
+
+             cd ${"Source"}
+
+             xcodebuild clean archive -workspace ${"PLF-IOS-WORKSPACE.xcworkspace"} -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
+             xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
+
+              if [ \$? != 0 ]
+                 then
+                     exit 1
+              fi
+      
+      - name: Publish Zips
+        #if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        shell: bash
+        run: |
+             chmod -R 755 .
+             ./ci-build-support/publish_zips.sh   
+             
+      #- name: Publish Podspecs
+       # if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+       # #publish("./ConsentWidgets.podspec", "./Source/Library/Podfile.lock")
+        ##def publish(String podspecPath, String podfileLockPath)  
+        #env:
+         # podspecPath: ${{ './ConsentWidgets.podspec' }}
+          #podfileLockPath: ${{ './Source/Library/Podfile.lock' }}
+        #run: |
+         #    echo "${{ github.ref }}"
+          #   echo "${GITHUB_REF#refs/heads/}"
+           #  chmod 755 ./ci-build-support/substitute_version.groovy
+            # ci-build-support/substitute_version.groovy ${podspecPath}
+             #ci-build-support/podspec_push.sh ${podspecPath} ${GITHUB_REF#refs/heads/}
+      
+      #- name: Publish API Docs
+       # if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')  
+        #shell: bash
+        #run: |
+         #    chmod -R 755 .
+          #   artifactoryBasePath=$(./ci-build-support/getArtifactoryBasePath.sh)
+           #  versionNumber=$(ci-build-support/getCDP2PlatformVersionNumber.sh)
+             
+            # echo $artifactoryBasePath
+             #echo $versionNumber
+             
+             #set -e
+             #if [ -z "$artifactoryBasePath" ]
+             #then
+              #   echo "Not published as build is not on a develop or release branch" . ${GITHUB_REF#refs/heads/}
+               #  exit 0
+             #fi
+             
+             #API_DOC_ZIP="API_DOCS_${versionNumber}.zip"
+             #zip -r $API_DOC_ZIP . -i Test
+             #curl -L -u 320049003:AP4ZB7JSmiC4pZmeKfKTGLsFvV9 -X PUT "$artifactoryBasePath"/API_DOCS/ -T $API_DOC_ZIP
