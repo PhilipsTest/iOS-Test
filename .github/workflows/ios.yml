@@ -38,7 +38,7 @@ jobs:
              cd ./Source && pod cache clean --all && pod repo update && pod install
       
       - name: Zip Components
-        #if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
         shell: bash
         run: |
              chmod -R 755 .
@@ -65,6 +65,8 @@ jobs:
                    #  | xcpretty --report junit --report html
      
       - name: Build Ref App
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        #runBuildWithIPA(true,"AppFramework","rap/Source/App/AppFramework")
         env:
           schemeName: ${{ 'AppFramework' }}
           exportPath: ${{ 'rap/Source/App/AppFramework' }}
@@ -80,6 +82,7 @@ jobs:
               xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
               
       - name: Build Demo Apps
+        #runBuildWithIPA(true,"USRDemoApp","usr/Source/DemoApp")
         env:
           schemeName: ${{ 'USRDemoApp' }}
           exportPath: ${{ 'usr/Source/DemoApp' }}
@@ -96,7 +99,8 @@ jobs:
            
               
       - name: Build PIM Demo App
-        #"PIMDemoApp","pim/Source/DemoApp"
+        #runBuildWithIPA(true,"PIMDemoApp","pim/Source/DemoApp")
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
         env:
           schemeName: ${{ 'PIMDemoApp' }}
           exportPath: ${{ 'pim/Source/DemoApp' }}
@@ -130,7 +134,7 @@ jobs:
 
       
       - name: Publish Zips
-        #if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
         shell: bash
         run: |
              chmod -R 755 .
