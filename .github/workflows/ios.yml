@@ -33,9 +33,9 @@ jobs:
              rm -rf ~/Library/Developer/Xcode/DerivedData
              rm -rf Source/DerivedData
              ./ci-build-support/update_version.sh
-             rm -rf ./Source/Library/Podfile.lock
+             rm -rf ./Source/Podfile.lock
              echo "Running pod install for ${podfilePath}"
-             cd ./Source/Library && pod cache clean --all && pod repo update && pod install
+             cd ./Source && pod cache clean --all && pod repo update && pod install
       
       - name: Zip Components
         #if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
