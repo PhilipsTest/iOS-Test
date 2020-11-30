@@ -78,11 +78,6 @@ jobs:
 
               xcodebuild clean archive -workspace "PLF-IOS-WORKSPACE.xcworkspace" -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
               xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
-             
-              if [ \$? != 0 ]
-                 then
-                     exit 1
-              fi
               
       - name: Build Demo Apps
         env:
