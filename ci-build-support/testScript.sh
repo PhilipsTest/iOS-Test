@@ -12,7 +12,7 @@ export LC_CTYPE=en_US.UTF-8
 xcodebuild test \
         -workspace PLF-IOS-WORKSPACE.xcworkspace \
         -scheme $1 CLANG_WARN_DOCUMENTATION_COMMENTS='NO'\
-        -destination \'platform=iOS Simulator,name=iPhone 8,OS=latest\' \
+        -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest' \
         -UseModernBuildSystem='YES'\
         -resultBundlePath ${resultBundlePath} \
         | xcpretty --report junit --report html
