@@ -45,13 +45,32 @@ jobs:
              ./ci-build-support/zip_components.sh 
       
       - name: Run Unit Tests
-       # env:
-        #  testSchemeName: ${{ 'ConsentWidgetsDev' }}
-         # frameworkName: ${{ 'CSW Test Report' }}
-          #resultBundlePath: ${{ 'results/$testSchemeName' }}
+        #./ci-build-support/testScript.sh PhilipsPRXClientDev PhilipsPRXClient Test Report
+        env:
+          shouldForceUnitTests: false
         run: |
+             if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
+                then
+                    shouldForceUnitTests=true
+             fi
+             
              chmod -R 755 .
              ./ci-build-support/testScript.sh AppFramework AppFramework
+             if $shouldForceUnitTests; then
+                ./ci-build-support/testScript.sh PhilipsConsumerCareDev PhilipsConsumerCare
+                ./ci-build-support/testScript.sh PhilipsProductRegistrationDev PhilipsProductRegistration
+                
+                ./ci-build-support/testScript.sh InAppPurchaseDev InAppPurchase
+                ./ci-build-support/testScript.sh PhilipsRegistrationDev PhilipsRegistration
+                ./ci-build-support/testScript.sh AppInfraDev AppInfra
+                ./ci-build-support/testScript.sh UAPPFrameworkDev UAPPFramework
+                ./ci-build-support/testScript.sh PlatformInterfacesDev PlatformInterfaces
+                ./ci-build-support/testScript.sh PhilipsProductSelectionDev PhilipsProductSelection
+                ./ci-build-support/testScript.sh PIMDev PIM
+                ./ci-build-support/testScript.sh PhilipsEcommerceSDKDev PhilipsEcommerceSDK
+                ./ci-build-support/testScript.sh MobileEcommerceDev MobileEcommerce
+                ./ci-build-support/testScript.sh ConversationalChatbotDev ConversationalChatbot
+             fi
      
       - name: Build Ref App
         if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
