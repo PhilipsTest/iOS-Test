@@ -24,7 +24,7 @@ if [ -d $GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/ProfileData
         echo "Directory exists in iet-iOS-blr-001"
             if [ "$1" == "AppFramework" ]
                 then
-                    xcrun llvm-cov show $GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/products/Debug-iphonesimulator/$1.app/$1 -instr-profile=$GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/ProfileData/4B0465A0-EB0F-47D0-97A6-15FCB16B26E4/Coverage.profdata -arch=x86_64 &> ${{github.workspace}}/Source/Coverage/llvm-cov-show-AppFramework_Profile.txt
+                    xcrun llvm-cov show $GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/products/Debug-iphonesimulator/$1.app/$1 -instr-profile=$GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/ProfileData/4B0465A0-EB0F-47D0-97A6-15FCB16B26E4/Coverage.profdata -arch=x86_64 &> $GITHUB_WORKSPACE/Source/Coverage/llvm-cov-show-AppFramework_Profile.txt
             elif [ "$1" == "AppInfraDev" ] 
                 then
                     xcrun llvm-cov show $GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/products/Debug-iphonesimulator/$2.framework/$2 -instr-profile=$GITHUB_WORKSPACE/Source/DerivedData/PLF-IOS-WORKSPACE/Build/ProfileData/4B0465A0-EB0F-47D0-97A6-15FCB16B26E4/Coverage.profdata -arch=x86_64 &> $GITHUB_WORKSPACE/Source/Coverage/llvm-cov-show-$1_Profile.txt
