@@ -50,6 +50,7 @@ jobs:
          # frameworkName: ${{ 'CSW Test Report' }}
           #resultBundlePath: ${{ 'results/$testSchemeName' }}
         run: |
+             chmod -R 755 .
              ./ci-build-support/testScript.sh AppFramework AppFramework
      
       - name: Build Ref App
