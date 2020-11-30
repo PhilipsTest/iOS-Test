@@ -5,7 +5,7 @@ killall Simulator || true
 xcrun simctl erase all || true
 
 cd Source
-resultBundlePath = "results/$1"
+resultBundlePath="results/$1"
 
 #Set XCPretty output format
 export LC_CTYPE=en_US.UTF-8
