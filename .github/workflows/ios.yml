@@ -44,25 +44,13 @@ jobs:
              chmod -R 755 .
              ./ci-build-support/zip_components.sh 
       
-      #- name: Run Unit Tests
+      - name: Run Unit Tests
        # env:
         #  testSchemeName: ${{ 'ConsentWidgetsDev' }}
          # frameworkName: ${{ 'CSW Test Report' }}
           #resultBundlePath: ${{ 'results/$testSchemeName' }}
-        #run: |
-         #    export PATH=/.rbenv/shims:/usr/local/bin/xcpretty/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
-          #   killall Simulator || true
-           #  xcrun simctl erase all || true
-            # cd Source/Library
-             
-             #export LC_CTYPE=en_US.UTF-8
-             #xcodebuild clean test \
-              #       -workspace "ConsentWidgets.xcworkspace" \
-               #      -scheme ${testSchemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO'\
-                #     -destination 'platform=iOS Simulator,name=iPhone 8,OS=latest'\
-                 #    -UseModernBuildSystem='NO'\
-                  #   -resultBundlePath ${resultBundlePath} \
-                   #  | xcpretty --report junit --report html
+        run: |
+             ./ci-build-support/testScript.sh AppFramework AppFramework
      
       - name: Build Ref App
         if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
@@ -162,8 +150,8 @@ jobs:
           #   artifactoryBasePath=$(./ci-build-support/getArtifactoryBasePath.sh)
            #  versionNumber=$(ci-build-support/getCDP2PlatformVersionNumber.sh)
              
-            # echo $artifactoryBasePath
-             #echo $versionNumber
+            # echo "Using Artifactory BasePath $artifactoryBasePath"
+             #echo "using versionNumber $versionNumber"
              
              #set -e
              #if [ -z "$artifactoryBasePath" ]
