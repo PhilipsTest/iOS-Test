@@ -89,15 +89,11 @@ jobs:
              killall Simulator || true
              export LC_CTYPE=en_US.UTF-8
 
-             cd ${"Source"}
+             cd Source
              
              xcodebuild clean archive -workspace "PLF-IOS-WORKSPACE.xcworkspace" -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
              xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
-             
-             if [ \$? != 0 ]
-                 then
-                     exit 1
-             fi
+           
               
       - name: Build PIM Demo App
         #"PIMDemoApp","pim/Source/DemoApp"
@@ -110,15 +106,11 @@ jobs:
              killall Simulator || true
              export LC_CTYPE=en_US.UTF-8
 
-             cd ${"Source"}
+             cd Source
 
              xcodebuild clean archive -workspace "PLF-IOS-WORKSPACE.xcworkspace" -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
              xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
              
-              if [ \$? != 0 ]
-                 then
-                     exit 1
-              fi
       
       - name: Build PSRA App
         #runBuildWithIPA(true,"PSRARelease","rap/Source/App/AppFramework")
@@ -131,15 +123,11 @@ jobs:
              killall Simulator || true
              export LC_CTYPE=en_US.UTF-8
 
-             cd ${"Source"}
+             cd Source
 
              xcodebuild clean archive -workspace "PLF-IOS-WORKSPACE.xcworkspace" -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
              xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
 
-              if [ \$? != 0 ]
-                 then
-                     exit 1
-              fi
       
       - name: Publish Zips
         #if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
