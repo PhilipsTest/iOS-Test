@@ -1,7 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
-source 'git@github.com:PhilipsTest/csw-iOS-podspecs.git'
+source 'https://github.com/PhilipsTest/csw-iOS-podspecs.git'
 source 'ssh://tfsemea1.ta.philips.com:22/tfs/TPC_Region14/UID/_git/mobile-dls-cocoapod-specs'
-source 'git@github.com:PhilipsTest/mobile-iOS-podspecs-develop.git'
+source 'https://github.com/PhilipsTest/mobile-iOS-podspecs-develop.git'
 
 use_frameworks!
 require_relative '../ci-build-support/Versions'
