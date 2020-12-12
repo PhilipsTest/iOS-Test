@@ -50,11 +50,11 @@ selectPodspecRepo() {
 	if [[ "$BRANCH" == develop* ]]
 	then
 		PODSPEC_REPO_ALIAS="PI-cocoapod-specs-develop"
-		PODSPEC_REPO_URL="ssh://tfsemea1.ta.philips.com/tfs/TPC_Region02/Innersource/_git/mobile-ios-podspecs-develop"
+		PODSPEC_REPO_URL="https://github.com/PhilipsTest/mobile-iOS-podspecs-develop.git"
 	elif [[ "$BRANCH" == release/*  ||  "$BRANCH" == master* ]]
 	then
 		PODSPEC_REPO_ALIAS="EHPMAT-cocoapod-specs"
-		PODSPEC_REPO_URL="ssh://tfsemea1.ta.philips.com/tfs/TPC_Region02/Innersource/_git/mobile-ios-podspecs-release"
+		PODSPEC_REPO_URL="https://github.com/PhilipsTest/mobile-plf-iOS-podspecs-release.git"
 	else
 		echo "[fatal] please check your selected branch! Must be one of the following: develop, release or master!"
 		exit 1
