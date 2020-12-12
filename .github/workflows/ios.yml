@@ -155,19 +155,33 @@ jobs:
              chmod -R 755 .
              ./ci-build-support/publish_zips.sh   
              
-      #- name: Publish Podspecs
-       # if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
-       # #publish("./ConsentWidgets.podspec", "./Source/Library/Podfile.lock")
-        ##def publish(String podspecPath, String podfileLockPath)  
-        #env:
-         # podspecPath: ${{ './ConsentWidgets.podspec' }}
-          #podfileLockPath: ${{ './Source/Library/Podfile.lock' }}
-        #run: |
-         #    echo "${{ github.ref }}"
-          #   echo "${GITHUB_REF#refs/heads/}"
-           #  chmod 755 ./ci-build-support/substitute_version.groovy
-            # ci-build-support/substitute_version.groovy ${podspecPath}
-             #ci-build-support/podspec_push.sh ${podspecPath} ${GITHUB_REF#refs/heads/}
+      - name: Publish Podspecs
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        run: |
+             echo "${{ github.ref }}"
+             echo "${GITHUB_REF#refs/heads/}"
+             chmod -R 755 .
+             ./ci-build-support/publish_podspecs.sh ./PlatformInterfaces.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./AppInfra.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./AppInfraMicroApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsPRXClient.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./UAPPFramework.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsRegistration.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsRegistrationMicroApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsProductSelection.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./InAppPurchase.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./InAppPurchaseDemoUApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsConsumerCare.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./ConsumerCareMicroApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsProductRegistration.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsProductRegistrationUApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PIM.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PIMDemoUApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./PhilipsEcommerceSDK.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./MobileEcommerce.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./ConversationalChatbotDemoUApp.podspec ./Source/Podfile.lock
+             ./ci-build-support/publish_podspecs.sh ./ConversationalChatbot.podspec ./Source/Podfile.lock
+            
       
       - name: Publish API Docs
         if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')  
