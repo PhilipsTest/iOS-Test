@@ -89,6 +89,13 @@ jobs:
               xcodebuild clean archive -workspace "PLF-IOS-WORKSPACE.xcworkspace" -configuration Release -scheme ${schemeName} CLANG_WARN_DOCUMENTATION_COMMENTS='NO' -archivePath build/${schemeName} -UseModernBuildSystem='YES'
               xcodebuild -exportArchive -exportOptionsPlist ${exportPath}/exportOptions.plist -archivePath "build/${schemeName}.xcarchive/" -exportPath "build/" -UseModernBuildSystem='YES'
               
+      - name: Generate API Documentation
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')  
+        shell: bash
+        run: |
+             chmod -R 755 .
+             ./ci-build-support/generateApiDocs.sh.sh
+         
       - name: Build Demo Apps
         #runBuildWithIPA(true,"USRDemoApp","usr/Source/DemoApp")
         env:
@@ -162,24 +169,24 @@ jobs:
             # ci-build-support/substitute_version.groovy ${podspecPath}
              #ci-build-support/podspec_push.sh ${podspecPath} ${GITHUB_REF#refs/heads/}
       
-      #- name: Publish API Docs
-       # if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')  
-        #shell: bash
-        #run: |
-         #    chmod -R 755 .
-          #   artifactoryBasePath=$(./ci-build-support/getArtifactoryBasePath.sh)
-           #  versionNumber=$(ci-build-support/getCDP2PlatformVersionNumber.sh)
+      - name: Publish API Docs
+        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')  
+        shell: bash
+        run: |
+             chmod -R 755 .
+             artifactoryBasePath=$(./ci-build-support/getArtifactoryBasePath.sh)
+             versionNumber=$(ci-build-support/getCDP2PlatformVersionNumber.sh)
              
-            # echo "Using Artifactory BasePath $artifactoryBasePath"
-             #echo "using versionNumber $versionNumber"
+             echo "Using Artifactory BasePath $artifactoryBasePath"
+             echo "using versionNumber $versionNumber"
              
-             #set -e
-             #if [ -z "$artifactoryBasePath" ]
-             #then
-              #   echo "Not published as build is not on a develop or release branch" . ${GITHUB_REF#refs/heads/}
-               #  exit 0
-             #fi
+             set -e
+             if [ -z "$artifactoryBasePath" ]
+             then
+                 echo "Not published as build is not on a develop or release branch" . ${GITHUB_REF#refs/heads/}
+                 exit 0
+             fi
              
-             #API_DOC_ZIP="API_DOCS_${versionNumber}.zip"
-             #zip -r $API_DOC_ZIP . -i Test
-             #curl -L -u 320049003:AP4ZB7JSmiC4pZmeKfKTGLsFvV9 -X PUT "$artifactoryBasePath"/API_DOCS/ -T $API_DOC_ZIP
+             API_DOC_ZIP="API_DOCS_${versionNumber}.zip"
+             zip -r $API_DOC_ZIP . -i Test
+             curl -L -u 320049003:AP4ZB7JSmiC4pZmeKfKTGLsFvV9 -X PUT "$artifactoryBasePath"/API_DOCS/ -T $API_DOC_ZIP
