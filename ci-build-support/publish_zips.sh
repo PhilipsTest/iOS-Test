@@ -1,6 +1,6 @@
 #!/bin/bash -l
 PODSPEC_PATH="ci-build-support/Versions.rb"
-VERSION_REGEX="VersionCDP2Platform[^'|\\"]*['|\\"]([^'|\\"]*)['|\\"]"
+VERSION_REGEX="VersionCDP2Platform[^\'|\"]*[\'|\"]([^\'|\"]*)[\'|\"]"
 COMPONENT_VERSION=`cat $PODSPEC_PATH | egrep -o $VERSION_REGEX | sed -E "s/$VERSION_REGEX/\\1/"`
 if [ '''+ReleaseBranch+''' = true ]
 then
