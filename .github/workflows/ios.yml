@@ -50,9 +50,10 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
+             echo $GITHUB_ENV
              if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
                 then
-                    $shouldForceUnitTests = true
+                    $GITHUB_ENV = true
              fi
              
              chmod -R 755 .
