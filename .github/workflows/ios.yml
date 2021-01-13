@@ -51,7 +51,7 @@ jobs:
         run: |
              if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
                 then
-                    shouldForceUnitTests=true
+                    echo "shouldForceUnitTests=True" >> $GITHUB_ENV
              fi
              
              chmod -R 755 .
