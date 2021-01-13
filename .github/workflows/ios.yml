@@ -50,7 +50,7 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
-             echo $GITHUB_ENV
+             echo "$GITHUB_ENV"
              if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
                 then
                     $GITHUB_ENV = true
