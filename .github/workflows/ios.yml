@@ -46,12 +46,13 @@ jobs:
       
       - name: Run Unit Tests
         #./ci-build-support/testScript.sh PhilipsPRXClientDev PhilipsPRXClient Test Report
+        #echo "shouldForceUnitTests=True" >> $GITHUB_ENV
         env:
           shouldForceUnitTests: false
         run: |
              if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
                 then
-                    echo "shouldForceUnitTests=True" >> $GITHUB_ENV
+                    shouldForceUnitTests=true
              fi
              
              chmod -R 755 .
