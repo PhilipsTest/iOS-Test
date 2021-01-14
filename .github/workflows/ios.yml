@@ -49,7 +49,7 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
-             if [ ${GITHUB_REF#refs/heads/} = develop* ] || [ ${GITHUB_REF#refs/heads/} = release/platform_* ]
+             if [ ${GITHUB_REF#refs/heads/}=develop* ] || [ ${GITHUB_REF#refs/heads/}=release/platform_* ]
                 then
                     shouldForceUnitTests=true
              fi
