@@ -51,6 +51,8 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
+             updatedComponents=$(ci-build-support/getUpdatedComponents.groovy)
+             echo $updatedComponents
              if [ "${GITHUB_REF#refs/heads/}" == 'develop*' ] || [ "${GITHUB_REF#refs/heads/}" == 'release/platform_*' ]
                 then
                     shouldForceUnitTests=true
