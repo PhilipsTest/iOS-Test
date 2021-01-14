@@ -50,12 +50,12 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
-             echo $shouldForceUnitTests
              if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
                 then
                     shouldForceUnitTests=true
              fi
              
+             echo $shouldForceUnitTests
              chmod -R 755 .
              ./ci-build-support/testScript.sh AppFramework AppFramework
              if [ shouldForceUnitTests = true ] then
