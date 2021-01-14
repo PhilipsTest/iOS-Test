@@ -51,7 +51,7 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
-             if [ ${GITHUB_REF#refs/heads/} == develop* ]
+             if [ "${GITHUB_REF#refs/heads/}" == 'develop*' ]
                 then
                     shouldForceUnitTests=true
              fi
