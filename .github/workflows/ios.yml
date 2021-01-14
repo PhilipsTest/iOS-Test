@@ -50,15 +50,15 @@ jobs:
         env:
           shouldForceUnitTests: false
         run: |
-             echo "$GITHUB_ENV"
+             echo $shouldForceUnitTests
              if [ "${GITHUB_REF#refs/heads/} = develop*" ] || [ "${GITHUB_REF#refs/heads/} = release/platform_*" ]
                 then
-                    $GITHUB_ENV = true
+                    shouldForceUnitTests = true
              fi
              
              chmod -R 755 .
              ./ci-build-support/testScript.sh AppFramework AppFramework
-             if $shouldForceUnitTests; then
+             if [ shouldForceUnitTests = true ] then
                 ./ci-build-support/testScript.sh PhilipsConsumerCareDev PhilipsConsumerCare
                 ./ci-build-support/testScript.sh PhilipsProductRegistrationDev PhilipsProductRegistration
                 
