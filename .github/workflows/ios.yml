@@ -52,7 +52,7 @@ jobs:
           shouldForceUnitTests: false
         run: |
              chmod -R 755 .
-             updatedComponents=$(ci-build-support/getUpdatedComponents.groovy)
+             updatedComponents=$(ci-build-support/getUpdatedComponents.sh)
              echo $updatedComponents
              if [ "${GITHUB_REF#refs/heads/}" == 'develop*' ] || [ "${GITHUB_REF#refs/heads/}" == 'release/platform_*' ]
                 then
