@@ -54,6 +54,7 @@ jobs:
                     echo "shouldForceUnitTests=True" >> $GITHUB_ENV
              fi
              
+             echo $shouldForceUnitTests
              chmod -R 755 .
              ./ci-build-support/testScript.sh AppFramework AppFramework
              if $shouldForceUnitTests; then
