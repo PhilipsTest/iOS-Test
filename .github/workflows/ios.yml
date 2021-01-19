@@ -54,7 +54,7 @@ jobs:
              chmod -R 755 .
              updatedComponents=./ci-build-support/getUpdatedComponents.sh
              echo $updatedComponents
-             git diff --name-only refs/remotes/origin/develop
+             git diff --name-only refs/remotes/origin/feature/test
              if [ "${GITHUB_REF#refs/heads/}" == 'develop*' ] || [ "${GITHUB_REF#refs/heads/}" == 'release/platform_*' ]
                 then
                     shouldForceUnitTests=true
