@@ -1,2 +1,2 @@
 #!/bin/bash -l
-chmod 755 ./ci-build-support/getUpdatedComponents.groovy
+git diff --name-only origin/develop
