@@ -1,5 +1,5 @@
-def updatedComponents = getUpdatedComponents();
-
+//def updatedComponents = getUpdatedComponents();
+updatedComponents = $(getUpdatedComponents)
 def getUpdatedComponents() {
     releaseBranchPattern = "release/platform_*"
     developBranchPattern = "develop"
