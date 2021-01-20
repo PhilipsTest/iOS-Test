@@ -1,6 +1,4 @@
-def updatedComponents = ["rap"]
-
-updatedComponents = getUpdatedComponents()
+def updatedComponents = getUpdatedComponents();
 
 def getUpdatedComponents() {
     releaseBranchPattern = "release/platform_*"
