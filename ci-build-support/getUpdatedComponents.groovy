@@ -1,4 +1,3 @@
-//def updatedComponents = getUpdatedComponents();
 updatedComponents = $(getUpdatedComponents)
 def getUpdatedComponents() {
     releaseBranchPattern = "release/platform_*"
