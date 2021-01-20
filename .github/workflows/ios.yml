@@ -22,27 +22,27 @@ jobs:
           submodules: true
           lfs: false
       
-      - name: Initialize
-        env:
-          podfilePath: ${{ 'Source' }}
-        shell: bash
-        run: |
-             pwd
-             rm -rf Source/results/*
-             rm -rf Source/build/*.ipa
-             rm -rf ~/Library/Developer/Xcode/DerivedData
-             rm -rf Source/DerivedData
-             ./ci-build-support/update_version.sh
-             rm -rf ./Source/Podfile.lock
-             echo "Running pod install for ${podfilePath}"
-             cd ./Source && pod cache clean --all && pod repo update && pod install
+      #- name: Initialize
+       # env:
+        #  podfilePath: ${{ 'Source' }}
+        #shell: bash
+        #run: |
+         #    pwd
+          #   rm -rf Source/results/*
+           #  rm -rf Source/build/*.ipa
+            # rm -rf ~/Library/Developer/Xcode/DerivedData
+            # rm -rf Source/DerivedData
+             #./ci-build-support/update_version.sh
+             #rm -rf ./Source/Podfile.lock
+             #echo "Running pod install for ${podfilePath}"
+             #cd ./Source && pod cache clean --all && pod repo update && pod install
       
-      - name: Zip Components
-        if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
-        shell: bash
-        run: |
-             chmod -R 755 .
-             ./ci-build-support/zip_components.sh 
+      #- name: Zip Components
+       # if: startsWith(github.ref, 'refs/heads/develop') || startsWith(github.ref, 'refs/heads/release/platform_')
+        #shell: bash
+        #run: |
+         #    chmod -R 755 .
+          #   ./ci-build-support/zip_components.sh 
       
       - name: Run Unit Tests
         #./ci-build-support/testScript.sh PhilipsPRXClientDev PhilipsPRXClient Test Report
@@ -52,7 +52,7 @@ jobs:
           shouldForceUnitTests: false
         run: |
              chmod -R 755 .
-             updatedComponents=./ci-build-support/getUpdatedComponents.sh
+             ./ci-build-support/getUpdatedComponents.groovy
              echo $updatedComponents
              git diff --name-only refs/remotes/origin/feature/test
              if [ "${GITHUB_REF#refs/heads/}" == 'develop*' ] || [ "${GITHUB_REF#refs/heads/}" == 'release/platform_*' ]
